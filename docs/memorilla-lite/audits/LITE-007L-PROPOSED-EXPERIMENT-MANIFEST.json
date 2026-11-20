@@ -1,0 +1,19 @@
+{
+  "milestone":"LITE-007L-proposed",
+  "authorization_status":"not_authorized_stop_for_owner_review",
+  "optimizer_updates_proposed":480,
+  "updates_per_model":240,
+  "episodes_per_model":30,
+  "updates_per_episode":8,
+  "architecture":"lite006-associative-v1 preserved; direct-bilinear-v1 control",
+  "associative_initialization":"fresh explicit associative initialization seed 20261120",
+  "direct_initialization":"explicit zero bilinear matrix; selected because historical direct initial checkpoint is zero and identity/cosine are read-only controls, not trained controls",
+  "schedule":{"persistent_scheduler_required":true,"unique_examples_per_model":240,"collection_size_counts":{"8":80,"16":80,"32":80},"identical_order_between_models":true,"evaluation_updates":[0,40,80,120,160,200,240]},
+  "budgets":{"associative":240,"direct":240,"shared_budget":false,"episode_limit":8},
+  "evaluation":{"independent_sizes":[8,16,32],"larger_sizes":[64,128],"metrics":["hit_rate_at_k","recall_at_k","standard_mrr","complete_required_evidence_at_5","partial_multi_evidence_coverage_at_5","abstention_accuracy"],"representation":["normalized_attention_entropy","required_evidence_attention_enrichment_vs_uniform","slot_diversity","query_sensitivity"]},
+  "thresholds":{"complete_required_evidence_at_5":"associative must exceed both conventional cosine and direct control on the independent corpus without lowering hit_rate_at_1 by more than 0.05 relative to the better trainable-control baseline","first_result":"associative hit_rate_at_1 must not regress more than 0.05 against the predeclared direct control","resource":"all guards pass and no run exceeds established limits"},
+  "mandatory_stops":["scheduler identity/order mismatch","duplicate or missing exposure","budget overrun","checkpoint mutation outside authorized path","resource guard failure","holdout access","any attempt to interpret this as latent-language-model conditioning"],
+  "scientific_scope":"query-conditioned associative memory versus conventional retrieval and trainable direct ranking; not language-model latent conditioning",
+  "holdout_access":false,
+  "weights_generated":false
+}

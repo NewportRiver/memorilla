@@ -1,0 +1,33 @@
+{
+  "associative_runner_fields": [
+    "absolute_peak_rss_bytes",
+    "rss_delta_bytes",
+    "available_ram_bytes",
+    "wall_seconds",
+    "numerical_threads",
+    "computational_subprocesses",
+    "resource_guard_status"
+  ],
+  "direct_inference_probe": {
+    "computational_subprocesses": 1,
+    "examples": 8,
+    "ru_maxrss_delta_kib": 208296,
+    "ru_maxrss_kib": 240408,
+    "threads": 1,
+    "wall_seconds": 1.2655367970000952
+  },
+  "direct_runner_fields": [
+    "absolute_peak_rss_bytes",
+    "rss_delta_bytes",
+    "available_ram_bytes",
+    "wall_seconds",
+    "numerical_threads",
+    "computational_subprocesses",
+    "resource_guard_status"
+  ],
+  "external_inference": false,
+  "optimizer_updates": 0,
+  "qualification_mode": "read-only code-path qualification and inference probe; no optimizer updates",
+  "resource_limits_preserved": true,
+  "status": "qualified_for_future_runs_only"
+}

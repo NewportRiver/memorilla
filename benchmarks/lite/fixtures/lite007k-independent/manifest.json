@@ -4,6 +4,7 @@
     16,
     32
   ],
+  "dataset_sha256": "88845e6ac3a01f5216ad0ea246e877114892dff488c84357f0c69180d8b92237",
   "dataset_version": "lite007k-independent-dev-eval-v1",
   "holdout_included": false,
   "purpose": "independent development-evaluation only; no final holdout",

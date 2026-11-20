@@ -131,7 +131,7 @@ class PreparedTrainingSet:
 
         self.path = Path(artifact)
         self.metadata = json.loads(self.path.with_suffix('.json').read_text(encoding='utf-8'))
-        allowed = ('train', 'validation') if allow_validation else ('train',)
+        allowed = ('train', 'validation', 'development_evaluation') if allow_validation else ('train',)
         if self.metadata.get('holdout_included') or self.metadata.get('partition') not in allowed:
             raise ValueError('prepared artifact is not an authorized training partition')
         if _sha256(self.path) != self.metadata.get('content_sha256'):

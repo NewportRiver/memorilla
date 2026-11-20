@@ -19,11 +19,30 @@ def test_scheduler_rejects_identity_mismatch(tmp_path):
 
 def test_metrics_distinguish_any_hit_from_complete_evidence():
  r=ranking_metrics([{'ranked_ids':['a','x','b'],'required_ids':['a','b']}])
- assert r['recall_at_1']==1.0
+ assert r['hit_rate_at_1']==1.0
+ assert r['recall_at_1']==0.5
  assert r['recall_at_3']==1.0
  assert r['multi_evidence_coverage']==1.0
  assert r['complete_required_evidence']==1.0
  r=ranking_metrics([{'ranked_ids':['a','x','y'],'required_ids':['a','b']}])
- assert r['recall_at_1']==1.0
+ assert r['hit_rate_at_1']==1.0
+ assert r['recall_at_1']==0.5
  assert r['multi_evidence_coverage']==0.5
  assert r['complete_required_evidence']==0.0
+
+def test_metrics_cover_missing_evidence_and_abstention():
+ r=ranking_metrics([
+  {'ranked_ids':['a'],'required_ids':['a']},
+  {'ranked_ids':[],'required_ids':['missing']},
+  {'ranked_ids':[],'required_ids':[],'answerable':False},
+ ])
+ assert r['answerable_denominator']==2
+ assert r['abstention_denominator']==1
+ assert r['recall_at_1']==0.5
+ assert r['mrr']==0.5
+ assert r['abstention_accuracy']==1.0
+
+def test_mrr_is_at_least_hit_at_one_for_identical_answerable_rows():
+ rows=[{'ranked_ids':['a','b'],'required_ids':['a']},{'ranked_ids':['x','b'],'required_ids':['b']}]
+ r=ranking_metrics(rows)
+ assert r['mrr'] >= r['recall_at_1']

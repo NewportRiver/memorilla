@@ -14,8 +14,13 @@ def ranking_metrics(rows, cutoffs=(1, 3, 5)) -> dict[str, Any]:
     abstention = [r for r in rows if not r.get('answerable', bool(r.get('required_ids')))]
     result = {'examples': len(rows), 'answerable_denominator': len(answerable), 'abstention_denominator': len(abstention)}
     for k in cutoffs:
-        hits = [bool(set(r.get('required_ids', ())) & set(r.get('ranked_ids', ())[:k])) for r in answerable]
-        result[f'recall_at_{k}'] = sum(hits) / len(hits) if hits else None
+        hit = []; recall = []; complete = []
+        for r in answerable:
+            required = set(r.get('required_ids', ())); retrieved = required & set(r.get('ranked_ids', ())[:k])
+            hit.append(bool(retrieved)); recall.append(len(retrieved) / len(required) if required else 0.0); complete.append(bool(required) and retrieved == required)
+        result[f'hit_rate_at_{k}'] = sum(hit) / len(hit) if hit else None
+        result[f'recall_at_{k}'] = sum(recall) / len(recall) if recall else None
+        result[f'complete_required_evidence_at_{k}'] = sum(complete) / len(complete) if complete else None
     rr = []
     coverage = []
     unsupported = 0

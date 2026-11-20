@@ -1,0 +1,103 @@
+{
+  "eligible_inventory": {
+    "16": 180,
+    "32": 180,
+    "8": 180
+  },
+  "eligible_total": 540,
+  "models": {
+    "associative": {
+      "collection_size_counts_first_240": {
+        "16": 80,
+        "32": 80,
+        "8": 80
+      },
+      "dataset_identity": "prepared-train-identity",
+      "episodes": 30,
+      "interruption_recovered": true,
+      "order_digest": "44730c802652fd08b7e8ebb0eb42565d54c4a051da6d4f3868c1126505e90212",
+      "reserved_updates": 240,
+      "subprocess_exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        97,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique_reserved_first_240": 240
+    },
+    "direct": {
+      "collection_size_counts_first_240": {
+        "16": 80,
+        "32": 80,
+        "8": 80
+      },
+      "dataset_identity": "prepared-train-identity",
+      "episodes": 30,
+      "interruption_recovered": true,
+      "order_digest": "44730c802652fd08b7e8ebb0eb42565d54c4a051da6d4f3868c1126505e90212",
+      "reserved_updates": 240,
+      "subprocess_exit_codes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        97,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "unique_reserved_first_240": 240
+    }
+  },
+  "parameter_mutations": 0,
+  "target_per_collection_size": 80,
+  "target_unique_examples": 240
+}

@@ -9,11 +9,12 @@ class PersistentSampleScheduler:
     silently replay an example. Separate model schedulers must share the same
     order digest and dataset identity for matched exposure.
     """
-    def __init__(self, path, dataset_identity, eligible_indices, seed=0):
+    def __init__(self, path, dataset_identity, eligible_indices, seed=0, order=None):
         self.path=Path(path); self.path.parent.mkdir(parents=True,exist_ok=True)
         indices=[int(x) for x in eligible_indices]
         if not indices: raise ValueError('scheduler requires eligible examples')
-        order=sorted(indices, key=lambda x: hashlib.sha256(f'{seed}:{x}'.encode()).hexdigest())
+        order=([int(x) for x in order] if order is not None else sorted(indices, key=lambda x: hashlib.sha256(f'{seed}:{x}'.encode()).hexdigest()))
+        if sorted(order)!=sorted(indices): raise ValueError('scheduler order must contain each eligible index exactly once')
         self.order=order; self.order_digest=hashlib.sha256(json.dumps(order,separators=(',',':')).encode()).hexdigest()
         if self.path.exists():
             self.state=json.loads(self.path.read_text())

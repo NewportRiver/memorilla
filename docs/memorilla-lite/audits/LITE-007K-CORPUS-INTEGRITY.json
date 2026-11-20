@@ -1,0 +1,30 @@
+{
+  "category_queries": {
+    "configuration": 60,
+    "installation": 60,
+    "network": 60,
+    "permissions": 60,
+    "recovery": 60,
+    "storage": 60
+  },
+  "collection_size_queries": {
+    "16": 120,
+    "32": 120,
+    "8": 120
+  },
+  "eligible_queries": 360,
+  "embedding_artifact_sha256": "e9c0e43e1b39bb4ad96dd60397170be2d829324c71f19041fc4f0122cbcdfc13",
+  "exact_content_duplicates": 0,
+  "expected_abstention_queries": 0,
+  "holdout_included": false,
+  "max_off_diagonal_cosine": 0.9918638467788696,
+  "normalized_template_groups_gt1": 6,
+  "positive_evidence_min_max": [
+    1,
+    2
+  ],
+  "queries": 360,
+  "records": 1680,
+  "scenarios": 90,
+  "semantic_near_duplicate_pairs_cosine_gt_0.995": 0
+}
