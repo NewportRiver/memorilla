@@ -1,0 +1,56 @@
+{
+  "attention_distribution": "not exposed by current native forward cache",
+  "slot_similarity": "not exposed by current checkpoint schema",
+  "snapshots": [
+    {
+      "all_finite": true,
+      "parameter_norm": 45.413570404052734,
+      "slot_count": 3,
+      "slot_norm": 8.517181396484375,
+      "updates": 0
+    },
+    {
+      "all_finite": true,
+      "parameter_norm": 45.41356658935547,
+      "slot_count": 3,
+      "slot_norm": 8.517152786254883,
+      "updates": 40
+    },
+    {
+      "all_finite": true,
+      "parameter_norm": 45.4135627746582,
+      "slot_count": 3,
+      "slot_norm": 8.517139434814453,
+      "updates": 80
+    },
+    {
+      "all_finite": true,
+      "parameter_norm": 45.41355514526367,
+      "slot_count": 3,
+      "slot_norm": 8.51712703704834,
+      "updates": 120
+    },
+    {
+      "all_finite": true,
+      "parameter_norm": 45.413543701171875,
+      "slot_count": 3,
+      "slot_norm": 8.517114639282227,
+      "updates": 160
+    },
+    {
+      "all_finite": true,
+      "parameter_norm": 45.413536071777344,
+      "slot_count": 3,
+      "slot_norm": 8.51710033416748,
+      "updates": 200
+    },
+    {
+      "all_finite": true,
+      "parameter_norm": 45.41353225708008,
+      "slot_count": 3,
+      "slot_norm": 8.517083168029785,
+      "updates": 240
+    }
+  ],
+  "status": "task_level_and_weight_level_only"
+}

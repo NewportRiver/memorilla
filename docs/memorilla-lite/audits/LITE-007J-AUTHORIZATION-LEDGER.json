@@ -1,9 +1,37 @@
 {
-  "experiment_id":"LITE-007J-CONTROLLED-COMPARISON-R1",
-  "associative":{"authorized_updates":0,"used_updates":0,"remaining_updates":0,"status":"not_authorized"},
-  "direct_bilinear":{"authorized_updates":0,"used_updates":0,"remaining_updates":0,"status":"not_authorized"},
-  "combined_global":{"authorized_updates":0,"used_updates":0,"remaining_updates":0,"status":"not_authorized"},
-  "prior_feasibility_updates":{"LITE-007H":8,"LITE-007I":8,"not_part_of_J_budget":true},
-  "owner_approval":"not supplied in this mission; sustained training not executed",
-  "transfer_between_models":false
+  "associative": {
+    "completed": 30,
+    "episodes": 30,
+    "interrupted": 0,
+    "total": 240,
+    "used": 240
+  },
+  "associative_subset_tensors": 27,
+  "associative_telemetry": {
+    "computational_subprocesses": 1,
+    "max_episode_wall_seconds": 1.1907247659983113,
+    "minimum_available_ram_bytes": 1425125376,
+    "peak_rss_bytes": 124809216,
+    "phase_events": 2070,
+    "threads": 1
+  },
+  "direct": {
+    "completed": 30,
+    "episodes": 30,
+    "interrupted": 0,
+    "total": 240,
+    "used": 240
+  },
+  "frozen": {
+    "out_b": {
+      "byte_identical": true,
+      "final": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "initial": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca"
+    },
+    "out_w": {
+      "byte_identical": true,
+      "final": "4e55514c6a553a04e429a1d1fae7649e0f36e60e102df87a3dec4b3c74043a2a",
+      "initial": "4e55514c6a553a04e429a1d1fae7649e0f36e60e102df87a3dec4b3c74043a2a"
+    }
+  }
 }

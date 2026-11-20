@@ -50,4 +50,4 @@ Not completed:
 No complete LITE-007 pass claim is permitted. Scoring-head and projection-only adaptation succeeded; no additional neural-component update or production APEX integration occurred.
 ## LITE-007J status
 
-Pre-training controlled comparison prerequisites are implemented. Identity-bound resumable evaluation completed five neural baseline ledgers across 1,200 queries, with conventional and ablation controls persisted separately. Episode interruption accounting is conservative. Sustained training remains blocked pending owner approval and direct checkpoint-publication fault injection.
+LITE-007J authorized comparative training completed 240 associative and 240 direct-bilinear updates with separate ledgers, scheduled validation and recovery evidence. No holdout or production acceptance is implied. Direct-model phase telemetry remains a documented limitation; owner review is required before any LITE-008 work.

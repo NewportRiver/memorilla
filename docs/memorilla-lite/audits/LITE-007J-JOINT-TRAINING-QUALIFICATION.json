@@ -1,9 +1,18 @@
 {
   "milestone":"LITE-007J",
-  "status":"not_executed_pending_owner_authorization",
-  "reason":"No explicit owner approval for the proposed 240+240 optimizer budget was supplied in this mission.",
-  "qualification_episode":{"updates":0,"status":"not_run"},
-  "required_before_training":["owner approval","final manifest acceptance","checkpoint-write process fault injection beyond ledger simulation"],
-  "no_fallback_spending":true,
-  "stop_condition":"joint qualification failure would stop the experiment"
+  "updates":8,
+  "trainable_tensor_count":27,
+  "trainable_tensor_policy":"all model state tensors except out_w and out_b",
+  "initialization":"fresh NeuralConfig(seed=20261120)",
+  "loss_start":0.6521326899528503,
+  "loss_end":0.6343272924423218,
+  "checkpoint":"~/.cache/memorilla-lite/LITE-007J/associative/episode-000/checkpoint",
+  "final_checksum":"d3f9b2af92051f1cbc41be5f58a8159aa79bf3c6536e67cae051e51360e11b15",
+  "frozen_out_w":true,
+  "frozen_out_b":true,
+  "reload_equivalence":true,
+  "finite_gradients_and_parameters":true,
+  "resource_guards":true,
+  "authorization_consumed":8,
+  "status":"passed"
 }

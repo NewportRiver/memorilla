@@ -1,0 +1,56 @@
+{
+  "direct_cosine": {
+    "128": {
+      "complete_required_top5": 0.225,
+      "denominator": 240,
+      "mrr": 0.12141408391435844,
+      "recall_at_1": 0.25,
+      "recall_at_3": 0.25,
+      "recall_at_5": 0.25
+    },
+    "64": {
+      "complete_required_top5": 0.24583333333333332,
+      "denominator": 240,
+      "mrr": 0.14880316957041864,
+      "recall_at_1": 0.25,
+      "recall_at_3": 0.25,
+      "recall_at_5": 0.25
+    }
+  },
+  "hybrid": {
+    "128": {
+      "complete_required_top5": 0.2,
+      "denominator": 240,
+      "mrr": 0.10444751718782766,
+      "recall_at_1": 0.25,
+      "recall_at_3": 0.25,
+      "recall_at_5": 0.25
+    },
+    "64": {
+      "complete_required_top5": 0.24583333333333332,
+      "denominator": 240,
+      "mrr": 0.14559015792127497,
+      "recall_at_1": 0.25,
+      "recall_at_3": 0.25,
+      "recall_at_5": 0.25
+    }
+  },
+  "lexical": {
+    "128": {
+      "complete_required_top5": 0.0,
+      "denominator": 240,
+      "mrr": 0.018066824102829542,
+      "recall_at_1": 0.25,
+      "recall_at_3": 0.25,
+      "recall_at_5": 0.25
+    },
+    "64": {
+      "complete_required_top5": 0.0,
+      "denominator": 240,
+      "mrr": 0.033776379870129866,
+      "recall_at_1": 0.25,
+      "recall_at_3": 0.25,
+      "recall_at_5": 0.25
+    }
+  }
+}

@@ -1,12 +1,14 @@
 {
   "milestone":"LITE-007J",
-  "budget_model":"EpisodeBudget",
-  "simulated_fault_phases":["after_reservation","after_accounting_before_mutation","after_mutation_before_checkpoint","during_checkpoint_temp","before_atomic_publish","after_publish_before_finish"],
-  "implemented_verification":["reservation persistence","conservative interrupted consumption","atomic state","identity mismatch","concurrent claims","checkpoint metadata identity"],
-  "actual_conservative_case":{"requested":2,"accounted_before_interruption":1,"used_after_recovery":2,"remaining_after_recovery":0},
-  "uncertain_updates_consume_authorization":true,
-  "budget_increase_on_recovery":false,
-  "checkpoint_dataset_identity_agreement":"verified by runner metadata binding",
-  "limitations":["checkpoint-write fault phases are simulated at ledger/test level, not by killing an actual optimizer subprocess during filesystem publication"],
-  "status":"partial_but_conservative"
+  "subprocess_exit_code":97,
+  "fault_boundary":"after npz publication before metadata publication",
+  "disposable_checkpoint":true,
+  "observed_interruption":true,
+  "partial_pair_rejected_by_load_model":true,
+  "recover_checkpoint_restored_previous_generation":true,
+  "previous_generation_reloaded":true,
+  "partial_checkpoint_authoritative":false,
+  "automatic_retry":false,
+  "remaining_authorization_increased":false,
+  "status":"passed_for_actual_publication_boundary"
 }

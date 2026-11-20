@@ -1,13 +1,7 @@
 {
-  "experiment_id":"LITE-007J-CONTROLLED-COMPARISON-R1",
-  "process_start_rss_bytes":null,
-  "peak_rss_bytes":null,
-  "minimum_available_ram_bytes":null,
-  "wall_seconds":null,
-  "numerical_threads":1,
-  "computational_subprocesses":1,
-  "training_status":"no_J_training_executed",
-  "evaluation_status":"per-evaluation ledgers record process-specific telemetry separately; aggregate neural baseline run completed without training",
-  "limits":{"min_ram_bytes":1342177280,"abort_ram_bytes":1073741824,"max_rss_bytes":268435456,"target_rss_bytes":134217728,"max_wall_seconds":30,"max_records":32,"max_threads":1,"max_subprocesses":1},
-  "historical_H_I_telemetry_not_reused_as_J_training_telemetry":true
+  "milestone":"LITE-007J",
+  "associative":{"updates":240,"episodes":30,"completed":30,"interrupted":0,"peak_rss_bytes":124809216,"minimum_available_ram_bytes":1425125376,"max_episode_wall_seconds":1.1907247659983113},
+  "direct_bilinear":{"updates":240,"episodes":30,"completed":30,"interrupted":0,"peak_rss_bytes":"not_instrumented_in_direct_runner","minimum_available_ram_bytes":"not_instrumented_in_direct_runner","max_episode_wall_seconds":"not_instrumented_in_direct_runner"},
+  "global":{"updates":480,"max_rss_limit_bytes":268435456,"target_rss_bytes":134217728,"min_ram_bytes":1342177280,"abort_ram_bytes":1073741824,"max_wall_seconds":30,"threads":1,"computational_subprocesses":1},
+  "resource_guard_result":"associative passed; direct training resource telemetry incomplete and is a scientific reporting limitation"
 }

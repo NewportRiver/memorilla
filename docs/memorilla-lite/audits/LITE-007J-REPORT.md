@@ -1,41 +1,87 @@
-# LITE-007J Report
+# LITE-007J Authorized Comparative Training Report
 
-Status: pre-training comparative qualification is complete; sustained training is intentionally not executed.
+Status: authorized experiment executed; LITE-007 remains scientifically limited and is not a production or holdout certification.
 
-## Baseline
+## Authorization and execution
 
-The `lite006-associative-v1` architecture remains unchanged at 429,312 parameters. All 27 ranking-connected native gradient tensors remain preserved. `out_w` and `out_b` remain frozen and disconnected from the ranking objective. The expanded 14,880-record / 1,200-query curriculum, pinned embeddings, scenario partitions and prior checkpoints were identity-verified.
+The owner directive authorized two non-transferable 240-update budgets. Both were consumed exactly:
 
-Five neural configurations were evaluated with the resumable controller on all 1,200 development queries: fresh untrained associative initialization, scoring-head checkpoint, memory-projection checkpoint, learned-slot/query-conditioning checkpoint and attention/FFN checkpoint. Each has denominator 1,200 and separate train/validation collection-size summaries. Lexical, direct cosine, hybrid, untrained direct-bilinear and query-independent controls are also persisted.
+- Associative memory: 240 updates, 30 completed eight-update episodes, 0 interrupted.
+- Direct bilinear ranking: 240 updates, 30 completed eight-update episodes, 0 interrupted.
+- Combined: 480 updates.
 
-The existing conventional LITE-007I artifact uses a combined development denominator. It is retained but not relabeled as independent validation.
+Previous H/I feasibility updates were not transferred.
 
-## Recovery
+## Recovery qualification
 
-Episode authorization now consumes uncertain reserved updates conservatively when an episode is interrupted. A two-update simulated episode with one pre-mutation accounting event consumed both authorized updates after interruption; remaining authorization did not increase.
+A real disposable subprocess was terminated at the boundary after `.npz` publication and before metadata publication. The mismatched pair was rejected by normal loading. Explicit recovery restored the previous checkpoint generation and reloaded it successfully. No automatic retry occurred. The last valid generation remained recoverable.
 
-The resumable evaluation controller persists identity-bound batches atomically, rejects duplicate result IDs, rejects partial aggregation, and resumes after an injected interruption. Five complete neural evaluation ledgers were produced.
+## Associative qualification
 
-Actual filesystem interruption during the checkpoint publication window remains a limitation; the current verification is ledger/test-level simulation and runner metadata binding.
+The fresh untrained initialization completed the required eight-update qualification with all 27 ranking-connected tensors selected. `out_w` and `out_b` remained byte-identical. Initial/final qualification losses were `0.6521326899528503` and `0.6343272924423218`. Native reload passed and all finite/resource checks passed.
 
-## Training authorization
+## Training curves
 
-No J optimizer updates were authorized or executed. The proposed ledger is zeroed. The 240-update associative and 240-update direct-control budgets remain owner-review proposals only. Existing H/I pilot updates are separate historical feasibility experiments and are not transferred into J authorization.
+The associative per-episode loss declined across the run, but the final update within an episode was not monotonically lower than the first update in every episode. The direct bilinear loss declined gradually from approximately `0.744397` to `0.738132` across its episode sequence.
 
-## Leakage
+Full milestone curves are in `LITE-007J-LEARNING-CURVES.json` for 0, 40, 80, 120, 160, 200 and 240 updates, using validation-only denominators of 480 queries per model.
 
-The normalized numeric-token template audit found no cross-partition normalized template groups. This is a bounded template audit, not proof of semantic independence; scenario-disjointness remains the authoritative partition rule.
+## Validation comparison
+
+Validation queries were restricted to the independent development-validation partition:
+
+- 64-record collections: 240 queries
+- 128-record collections: 240 queries
+- Total validation denominator per model/milestone: 480
+
+The resumable controller completed every model/milestone evaluation without partial aggregation. Conventional lexical, cosine and hybrid results were recomputed on those same validation queries.
+
+The trained associative model did not establish a general superiority claim. At 240 updates, direct bilinear retrieval had high top-1 retrieval on this generated validation set, while associative and conventional metrics varied by collection size and metric. These results are development evidence only and are not holdout evidence.
+
+## Representation analysis
+
+Weight-level snapshots and finite checks are recorded. Slot-specific diversity and attention-distribution analysis were not exposed by the current native checkpoint/forward schema, so no unsupported latent interpretation is claimed. No cognitive-improvement claim is made.
+
+## Resources
+
+Associative telemetry:
+
+- Peak RSS: `124,809,216` bytes
+- Minimum available RAM: `1,425,125,376` bytes
+- Maximum episode wall time: `1.1907247659983113s`
+- Numerical threads: `1`
+- Computational subprocesses: `1`
+- Target RSS below 128 MiB: passed
+- RSS ceiling 256 MiB: passed
+
+Direct runner resource telemetry was not instrumented at episode phase granularity. This is a reporting limitation; no resource guard violation was observed, but direct telemetry is not retrospectively fabricated.
+
+## Checkpoints
+
+Generated weights remain outside Git. Final NPZ hashes and identity metadata are in `LITE-007J-CHECKPOINT-MANIFEST.json`. Frozen output projection hashes are identical before and after associative training.
+
+No holdout access occurred.
 
 ## Regression
 
-The updated LITE inventory must pass in full before commit. No Transformers installation, holdout access, package upgrade, external inference, production integration or resource-limit relaxation occurred.
+Updated complete LITE suite:
 
-## Limitations
+- 76 passed
+- 0 failed
+- 0 skipped
+- 0 timed out
+- 0 unexecuted
+- 7.19 seconds
 
-- No trained-vs-trained scientific comparison exists because J training was not authorized.
-- No learning curves exist beyond pre-training baseline and historical H/I feasibility artifacts.
-- No representation-change analysis exists for J.
-- No Android-device acceptance or holdout evaluation was performed.
-- Direct-bilinear J is currently an untrained deterministic random-matrix control; a trained direct control awaits authorization.
+## Scientific limitations
 
-LITE-007 is not complete. The next step is owner approval of the final manifest, followed by the bounded joint-training qualification episode and then the separately budgeted associative/direct experiments.
+- The dataset is synthetic/generated and the normalized-template audit is bounded; it does not establish semantic independence.
+- No final holdout evaluation was performed.
+- Direct-model episode resource telemetry is incomplete.
+- Representation analysis is limited to checkpoint weight norms and finite checks.
+- The direct bilinear implementation used a deterministic first-positive/first-negative pair per eligible example; this is documented and was matched across its own exposure, but is not equivalent to all possible negative sampling policies.
+- No production, Android-device, external-inference or APEX evaluation occurred.
+
+## Disposition
+
+LITE-007J controlled training executed successfully under the authorized budget. The result does not justify a claim that query-conditioned associative memory improves retrieval over direct bilinear or conventional controls. The next step is owner review of the negative/ambiguous comparative result and the direct telemetry limitation before any LITE-008 design.

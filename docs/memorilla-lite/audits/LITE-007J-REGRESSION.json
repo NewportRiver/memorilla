@@ -1,0 +1,12 @@
+{
+  "milestone":"LITE-007J",
+  "collected":76,
+  "passed":76,
+  "failed":0,
+  "skipped":0,
+  "timed_out":0,
+  "unexecuted":0,
+  "runtime_seconds":7.19,
+  "warning":"Android ONNX Runtime platform-support warning",
+  "transformers_installed":false
+}

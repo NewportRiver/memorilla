@@ -27,7 +27,7 @@ def _state_checksum(state):
 
 def run_authorized_episode(prepared_artifact, output_dir, budget_path, checkpoint_identity,
                            requested_updates=8, learning_rate=0.001, max_records=32,
-                           subset=('slots', 'query_w', 'query_b'), authorized=False,
+                           subset=None, authorized=False, authorization_total_updates=None,
                            min_ram=1280 * 1024**2, abort_ram=1024 * 1024**2,
                            max_rss=256 * 1024**2, max_seconds=30.0,
                            initial_checkpoint=None):
@@ -51,12 +51,14 @@ def run_authorized_episode(prepared_artifact, output_dir, budget_path, checkpoin
         raise RuntimeError('minimum RAM guard blocked episode')
     phase('dataset_loading', 'start'); prepared = PreparedTrainingSet(prepared_artifact); phase('dataset_loading', 'end')
     dataset_identity = prepared.metadata['content_sha256']
-    budget = EpisodeBudget(budget_path, requested_updates, dataset_identity, checkpoint_identity)
+    budget = EpisodeBudget(budget_path, int(authorization_total_updates or requested_updates), dataset_identity, checkpoint_identity)
     episode_id = output.name
     budget.begin_episode(episode_id, requested_updates)
     phase('model_initialization', 'start')
     model = load_model(initial_checkpoint)[0] if initial_checkpoint is not None else NumpyAssociativeMemory(NeuralConfig(seed=20261120))
     phase('model_initialization', 'end')
+    if subset is None:
+        subset = tuple(name for name in model.state if name not in {'out_w', 'out_b'})
     frozen = snapshot_frozen(model.state, subset)
     usable = prepared.eligible_indices()
     rows = []
@@ -73,7 +75,7 @@ def run_authorized_episode(prepared_artifact, output_dir, budget_path, checkpoin
             ex = prepared.get(usable[position % len(usable)])
             mem = ex['memory_embeddings'][:max_records]; pos = ex['positive_mask'][:max_records]; valid = ex['valid_mask'][:max_records]
             phase('forward_backward', 'start'); loss, _, grads, cache = associative_gradients(model, ex['query_embedding'], mem, pos, valid); phase('forward_backward', 'end')
-            selected = {name: grads[name] for name in subset}
+            selected = {name: grads[name] for name in subset if name in grads}
             clipped, norm, scale = clip_gradients(selected, 1.0)
             budget.record_update(episode_id)
             phase('optimizer', 'start'); sgd_step(model.state, clipped, learning_rate); phase('optimizer', 'end')

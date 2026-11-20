@@ -23,7 +23,7 @@ def _marker(path, phase, **extra):
         os.fsync(handle.fileno())
 
 
-def prepare_training_artifact(source, output, progress_path=None, partition='train'):
+def prepare_training_artifact(source, output, progress_path=None, partition='train', embedding_path=None, encoder_manifest_path=None):
     """Prepare only the verified train partition into a deterministic indexed artifact."""
     import numpy as np
 
@@ -32,9 +32,9 @@ def prepare_training_artifact(source, output, progress_path=None, partition='tra
     output.parent.mkdir(parents=True, exist_ok=True)
     progress_path = Path(progress_path or output.with_suffix('.progress.jsonl'))
     dataset_path = source / 'dataset.json'
-    embedding_path = source / 'embeddings.npz'
+    embedding_path = Path(embedding_path or source / 'embeddings.npz')
     manifest_path = source / 'manifest.json'
-    encoder_manifest_path = source / 'embeddings.manifest.json'
+    encoder_manifest_path = Path(encoder_manifest_path or source / 'embeddings.manifest.json')
     _marker(progress_path, 'source_open_start')
     data = json.loads(dataset_path.read_text(encoding='utf-8'))
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))

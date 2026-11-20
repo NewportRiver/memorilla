@@ -1,30 +1,14 @@
 {
-  "attention_ffn": {
-    "architecture_version": "lite006-associative-v1",
-    "parameter_count": 429312,
-    "path": "~/.cache/memorilla-lite/LITE-007I/ATTN-FFN-PILOT/checkpoint",
-    "state_sha256": "e3b6138ed94fdd0ff398d8ca29754e7410a22003991b638b66a192d55027ad10",
-    "training_status": "numpy_authorized_subset_sgd"
-  },
-  "learned_slot_query": {
-    "architecture_version": "lite006-associative-v1",
-    "parameter_count": 429312,
-    "path": "~/.cache/memorilla-lite/LITE-007H-SLOTS-QUERY-PILOT/checkpoint",
-    "state_sha256": "dacc9bd8c83ac0b1984132c2467d0c0bde98b1c372a9dfd258f101b1b04d69a4",
-    "training_status": "numpy_authorized_subset_sgd"
-  },
-  "memory_projection": {
-    "architecture_version": "lite006-associative-v1",
-    "parameter_count": 429312,
-    "path": "~/.cache/memorilla-lite/LITE-007F-NUMPY-PILOT/lite007-numpy-memory-projection",
-    "state_sha256": "4907c76e456652451e0708cb7b8dec90d222e247e7f443699bc0d76b9e1aa4d0",
-    "training_status": "numpy_memory_projection_sgd"
-  },
-  "score_head": {
-    "architecture_version": "lite006-associative-v1",
-    "parameter_count": 429312,
-    "path": "~/.cache/memorilla-lite/LITE-007E-NUMPY-PILOT-FINAL/lite007-numpy-score-head",
-    "state_sha256": "fd0e8e309f59a9b846288e6ebb22dd3beb1e1a3cbda75ddc7f322f8c040a3018",
-    "training_status": "numpy_scoring_head_sgd"
-  }
+  "associative_initial":"~/.cache/memorilla-lite/LITE-007J/associative/initial",
+  "associative_qualification":"~/.cache/memorilla-lite/LITE-007J/associative/episode-000/checkpoint",
+  "associative_final":"~/.cache/memorilla-lite/LITE-007J/associative/episode-029/checkpoint",
+  "direct_initial":"~/.cache/memorilla-lite/LITE-007J/direct/initial",
+  "direct_final":"~/.cache/memorilla-lite/LITE-007J/direct/episode-029/checkpoint",
+  "generated_weights_outside_git":true,
+  "architecture":"lite006-associative-v1",
+  "dataset_identity":"d1e246749953d318c3010cc23241234035186e10ddab1c0acf0e611d0eca663f",
+  "associative_final_npz_sha256":"7c8584bf8e5fa8b0f694caab9e309c8fb6dde17c750530c209cf6a2aae001b00",
+  "direct_final_npz_sha256":"987960633b1fba117dfa075b7b4c998d1b6499cd1abaefaebbe91f261b9f93c4",
+  "holdout_evaluation":false,
+  "native_reload_verified":true
 }

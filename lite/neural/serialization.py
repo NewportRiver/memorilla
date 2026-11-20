@@ -1,5 +1,5 @@
 from __future__ import annotations
-import hashlib,json,os,tempfile
+import hashlib,json,os,tempfile,shutil
 from pathlib import Path
 import numpy as np
 from .config import NeuralConfig
@@ -8,15 +8,22 @@ from .numpy_model import NumpyAssociativeMemory
 def _sha(x): return hashlib.sha256(np.ascontiguousarray(x).tobytes()).hexdigest()
 def save_model(model,path,encoder_compatibility,training_status='untrained'):
  path=Path(path); path.parent.mkdir(parents=True,exist_ok=True); npz=path.with_suffix('.npz'); meta_path=path.with_suffix('.json'); arrays=model.state
+ if npz.exists() and meta_path.exists(): shutil.copy2(npz,npz.with_suffix('.npz.prev')); shutil.copy2(meta_path,meta_path.with_suffix('.json.prev'))
  checks={k:_sha(v) for k,v in sorted(arrays.items())}; meta={'schema_version':1,'architecture_version':model.config.architecture_version,'config':model.config.as_dict(),'parameter_count':model.parameter_count(),'weight_bytes':sum(v.nbytes for v in arrays.values()),'dtypes':{k:str(v.dtype) for k,v in arrays.items()},'shapes':{k:list(v.shape) for k,v in arrays.items()},'checksums':checks,'encoder_compatibility':encoder_compatibility,'initialization_seed':model.config.seed,'training_status':training_status,'executable_serialization':False}
  fd,tmp=tempfile.mkstemp(prefix=path.name+'.',suffix='.npz',dir=str(path.parent)); os.close(fd)
  try:
   np.savez(tmp,**arrays); os.replace(tmp,npz)
+  if os.environ.get('MEMORILLA_FAULT_CHECKPOINT_PHASE') == 'after_npz_publish_before_metadata': os._exit(97)
   meta_tmp=meta_path.with_suffix(meta_path.suffix+'.tmp')
   meta_tmp.write_text(json.dumps(meta,sort_keys=True,indent=2)+'\n'); os.replace(meta_tmp,meta_path)
  finally:
   if os.path.exists(tmp): os.unlink(tmp)
  return meta
+
+def recover_checkpoint(path):
+ path=Path(path); npz=path.with_suffix('.npz'); meta=path.with_suffix('.json'); prev_npz=npz.with_suffix('.npz.prev'); prev_meta=meta.with_suffix('.json.prev')
+ if not prev_npz.exists() or not prev_meta.exists(): raise ValueError('no previous checkpoint generation')
+ shutil.copy2(prev_npz,npz); shutil.copy2(prev_meta,meta); return load_model(path)
 
 def load_model(path,expected_encoder_compatibility=None):
  path=Path(path); meta=json.loads(path.with_suffix('.json').read_text());
