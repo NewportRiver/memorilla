@@ -10,6 +10,8 @@ Architect1 is the preferred training environment, subject to live hardware and m
 
 All LITE-007 runtime operations, dataset inspection, dependency checks, and regression commands must use the verified native Android/Termux Python environment for this checkout. Before any operational command, record the runtime home, Python interpreter, repository root, available memory, available storage, numerical thread count, and active process count. Do not silently initialize a replacement environment or database when an existing artifact is expected. Abort rather than continue if the interpreter or repository root is not the intended one. Computational runs must use one numerical thread, one subprocess, a 30-second wall limit, a 256 MiB RSS ceiling, and the guarded RAM thresholds recorded in the recovery checkpoint. Training and optimizer updates remain separately owner-authorized; offline tests and artifact checks do not authorize training.
 
+The inherited upstream test suite may require `transformers` through `tests/conftest.py` and `tests/helpers.py`; this is not a requirement of the LITE precomputed-embedding training package. Run LITE checks in explicit sequential batches with `--confcutdir=tests/lite`, record timeouts as unexecuted, and never convert collection failures into passes by silently excluding tests. Do not install the upstream dependency solely to make an Android-native LITE check appear complete.
+
 ## Dataset requirements
 
 - Synthetic/public evidence only until separately authorized.

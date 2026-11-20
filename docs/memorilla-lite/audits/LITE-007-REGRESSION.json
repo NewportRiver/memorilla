@@ -1,0 +1,76 @@
+{
+  "milestone": "LITE-007B",
+  "baseline": "5a48a6c22f3227ba82a0eef38c75e1725bf0372c",
+  "branch": "feature/memorilla-lite-android",
+  "dependency_root_cause": {
+    "upstream_root_conftest": "tests/conftest.py imports transformers.PreTrainedTokenizerFast",
+    "upstream_helper": "tests/helpers.py imports transformers.PreTrainedTokenizerFast",
+    "lite_training_imports_transformers": false,
+    "lite_uses_precomputed_embeddings": true,
+    "unnecessary_install_performed": false
+  },
+  "batches": [
+    {
+      "name": "full_lite_pytest_with_root_conftest",
+      "command": "python -m pytest -q tests/lite",
+      "status": "blocked_at_collection",
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "unexecuted": "all",
+      "reason": "ModuleNotFoundError: transformers"
+    },
+    {
+      "name": "isolated_lite_pytest_batch",
+      "command": "python -m pytest -q --confcutdir=tests/lite tests/lite/test_training_abstention.py tests/lite/test_training_integrity.py tests/lite/test_training_objectives.py",
+      "status": "unexecuted_after_wall_limit",
+      "passed": 0,
+      "failed": 0,
+      "skipped": 0,
+      "unexecuted": "all selected tests",
+      "reason": "30-second bounded subprocess expired without a completed report"
+    },
+    {
+      "name": "previous_isolated_lite_attempt",
+      "command": "python -m pytest -q tests/lite --confcutdir=tests/lite",
+      "status": "partial_unreported",
+      "passed_observed_before_stop": 40,
+      "failed": 0,
+      "skipped": 0,
+      "unexecuted": "remaining tests",
+      "reason": "30-second bounded subprocess expired"
+    },
+    {
+      "name": "compileall",
+      "command": "python -m compileall -q lite benchmarks/lite tests/lite",
+      "status": "passed",
+      "passed": "syntax compilation",
+      "failed": 0,
+      "skipped": 0,
+      "unexecuted": 0
+    },
+    {
+      "name": "diff_check",
+      "command": "git diff --check",
+      "status": "passed",
+      "failed": 0,
+      "skipped": 0,
+      "unexecuted": 0
+    }
+  ],
+  "policy": {
+    "sequential_batches": true,
+    "per_subprocess_wall_seconds": 30,
+    "one_numerical_thread": true,
+    "one_computational_subprocess": true,
+    "silent_exclusion": false,
+    "optimizer_updates": 0
+  },
+  "cumulative": {
+    "pytest_passed_confirmed": 0,
+    "pytest_failed_confirmed": 0,
+    "pytest_skipped_confirmed": 0,
+    "pytest_unexecuted_or_unreported": "all full-suite outcomes; one prior partial run observed 40 dots",
+    "non_pytest_checks_passed": 2
+  }
+}
