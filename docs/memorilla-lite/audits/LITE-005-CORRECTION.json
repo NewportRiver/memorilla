@@ -1,0 +1,903 @@
+{
+  "context_recomputation": {
+    "exceeds_count": 111,
+    "note": "Raw is authoritative eligible source text; packet is newline-joined verified excerpts.",
+    "samples": [
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-00-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-00-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-01-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-01-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-02-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-02-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-03-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-03-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-04-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-04-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-05-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-05-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-06-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-06-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-07-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-07-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-08-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-08-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-09-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-09-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q00",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q01",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q02",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q03",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q04",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q05",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q06",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 421,
+        "packet_exceeds_raw": true,
+        "packet_references": 3,
+        "query_id": "scenario-10-q07",
+        "raw_chars": 419
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q08",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-10-q09",
+        "raw_chars": 728
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q00",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q01",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q02",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q03",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q04",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q05",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q06",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q07",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 0,
+        "packet_exceeds_raw": false,
+        "packet_references": 0,
+        "query_id": "scenario-11-q08",
+        "raw_chars": 0
+      },
+      {
+        "packet_chars": 732,
+        "packet_exceeds_raw": true,
+        "packet_references": 5,
+        "query_id": "scenario-11-q09",
+        "raw_chars": 728
+      }
+    ]
+  },
+  "historical_benchmark_preserved": true,
+  "holdout_independent_file_present": false,
+  "methods": {
+    "hybrid": {
+      "all_query_count": 120,
+      "corrected_complete_support_required_only": 1,
+      "corrected_recall_required_only": 1.0,
+      "mean_complete_pipeline_ms": 5.44322525,
+      "mean_query_encoding_ms": 0,
+      "policy_abstention_accuracy": 0.20930232558139536,
+      "policy_abstention_correct": 9,
+      "policy_abstention_expected": 43,
+      "required_evidence_queries": 77
+    },
+    "lexical": {
+      "all_query_count": 120,
+      "corrected_complete_support_required_only": 1,
+      "corrected_recall_required_only": 1.0,
+      "mean_complete_pipeline_ms": 0.46726075833333336,
+      "mean_query_encoding_ms": 0,
+      "policy_abstention_accuracy": 0.20930232558139536,
+      "policy_abstention_correct": 9,
+      "policy_abstention_expected": 43,
+      "required_evidence_queries": 77
+    },
+    "semantic": {
+      "all_query_count": 120,
+      "corrected_complete_support_required_only": 1,
+      "corrected_recall_required_only": 1.0,
+      "mean_complete_pipeline_ms": 5.0131263666666666,
+      "mean_query_encoding_ms": 3.889134175,
+      "policy_abstention_accuracy": 0.20930232558139536,
+      "policy_abstention_correct": 9,
+      "policy_abstention_expected": 43,
+      "required_evidence_queries": 77
+    }
+  },
+  "queries": 120,
+  "ranking_comparison": {
+    "lexical==hybrid": {
+      "identical_fraction": 0.075,
+      "identical_queries": 9,
+      "total_queries": 120
+    },
+    "lexical==semantic": {
+      "identical_fraction": 0.075,
+      "identical_queries": 9,
+      "total_queries": 120
+    },
+    "semantic==hybrid": {
+      "identical_fraction": 0.09166666666666666,
+      "identical_queries": 11,
+      "total_queries": 120
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "lite005_correction_summary": {
+    "holdout_independent_file_present": false,
+    "methods": {
+      "hybrid": {
+        "all_query_count": 120,
+        "corrected_complete_support_required_only": 1,
+        "corrected_recall_required_only": 1.0,
+        "mean_complete_pipeline_ms": 5.44322525,
+        "mean_query_encoding_ms": 0,
+        "policy_abstention_accuracy": 0.20930232558139536,
+        "policy_abstention_correct": 9,
+        "policy_abstention_expected": 43,
+        "required_evidence_queries": 77
+      },
+      "lexical": {
+        "all_query_count": 120,
+        "corrected_complete_support_required_only": 1,
+        "corrected_recall_required_only": 1.0,
+        "mean_complete_pipeline_ms": 0.46726075833333336,
+        "mean_query_encoding_ms": 0,
+        "policy_abstention_accuracy": 0.20930232558139536,
+        "policy_abstention_correct": 9,
+        "policy_abstention_expected": 43,
+        "required_evidence_queries": 77
+      },
+      "semantic": {
+        "all_query_count": 120,
+        "corrected_complete_support_required_only": 1,
+        "corrected_recall_required_only": 1.0,
+        "mean_complete_pipeline_ms": 5.0131263666666666,
+        "mean_query_encoding_ms": 3.889134175,
+        "policy_abstention_accuracy": 0.20930232558139536,
+        "policy_abstention_correct": 9,
+        "policy_abstention_expected": 43,
+        "required_evidence_queries": 77
+      }
+    },
+    "ranking_comparison": {
+      "lexical==hybrid": {
+        "identical_fraction": 0.075,
+        "identical_queries": 9,
+        "total_queries": 120
+      },
+      "lexical==semantic": {
+        "identical_fraction": 0.075,
+        "identical_queries": 9,
+        "total_queries": 120
+      },
+      "semantic==hybrid": {
+        "identical_fraction": 0.09166666666666666,
+        "identical_queries": 11,
+        "total_queries": 120
+      }
+    }
+  },
+  "milestone": "LITE-006",
+  "neural_numpy_benchmark": {
+    "config": {
+      "architecture_version": "lite006-associative-v1",
+      "blocks": 1,
+      "ffn_dim": 256,
+      "heads": 4,
+      "input_dim": 384,
+      "latent_dim": 128,
+      "output_dim": 384,
+      "score_dim": 64,
+      "seed": 20261120,
+      "slots": 8
+    },
+    "initialization_ms": 20.927656,
+    "parameter_count": 429312,
+    "resource": {
+      "max_rss_bytes": 101720064,
+      "max_threads": 2,
+      "training": "not_run"
+    },
+    "sizes": [
+      {
+        "collection_passes_streamed": 2,
+        "database_stats": {
+          "database_bytes": 212992,
+          "invalid": 0,
+          "total": 100,
+          "valid": 100,
+          "vector_bytes": 76800
+        },
+        "evidence_scoring_ms": 2.400664,
+        "evidence_verification_ms": 0.023789,
+        "evidence_verification_warm_median_ms": 0.00543,
+        "finite": true,
+        "initialization_ms": 20.927656,
+        "memory_projection_note": "included in attention pipeline; SQLite traversal measured separately",
+        "output_shape": [
+          8,
+          384
+        ],
+        "query_conditioned_full_ms": 2.987929,
+        "query_conditioned_warm_median_ms": 2.235703,
+        "query_projection_note": "included in query-conditioned pipeline; no duplicate projection timing claimed",
+        "records": 100,
+        "rss_bytes": 39923712,
+        "sqlite_traversal_ms": 7.637343,
+        "sqlite_traversal_warm_median_ms": 6.839961,
+        "stream_full_allclose": true,
+        "stream_full_max_abs_error": 6.452005596457866e-10,
+        "streamed_cross_attention_ms": 2.883711,
+        "verified_results": 5
+      },
+      {
+        "collection_passes_streamed": 2,
+        "database_stats": {
+          "database_bytes": 1777664,
+          "invalid": 0,
+          "total": 1000,
+          "valid": 1000,
+          "vector_bytes": 768000
+        },
+        "evidence_scoring_ms": 12.486875,
+        "evidence_verification_ms": 0.022266,
+        "evidence_verification_warm_median_ms": 0.004922,
+        "finite": true,
+        "initialization_ms": 20.927656,
+        "memory_projection_note": "included in attention pipeline; SQLite traversal measured separately",
+        "output_shape": [
+          8,
+          384
+        ],
+        "query_conditioned_full_ms": 12.175937,
+        "query_conditioned_warm_median_ms": 11.386953,
+        "query_projection_note": "included in query-conditioned pipeline; no duplicate projection timing claimed",
+        "records": 1000,
+        "rss_bytes": 54558720,
+        "sqlite_traversal_ms": 71.580156,
+        "sqlite_traversal_warm_median_ms": 69.834062,
+        "stream_full_allclose": true,
+        "stream_full_max_abs_error": 3.5990199709345916e-10,
+        "streamed_cross_attention_ms": 15.99875,
+        "verified_results": 5
+      },
+      {
+        "collection_passes_streamed": 2,
+        "database_stats": {
+          "database_bytes": 8785920,
+          "invalid": 0,
+          "total": 5000,
+          "valid": 5000,
+          "vector_bytes": 3840000
+        },
+        "evidence_scoring_ms": 58.483437,
+        "evidence_verification_ms": 0.033281,
+        "evidence_verification_warm_median_ms": 0.005508,
+        "finite": true,
+        "initialization_ms": 20.927656,
+        "memory_projection_note": "included in attention pipeline; SQLite traversal measured separately",
+        "output_shape": [
+          8,
+          384
+        ],
+        "query_conditioned_full_ms": 55.243125,
+        "query_conditioned_warm_median_ms": 54.71414,
+        "query_projection_note": "included in query-conditioned pipeline; no duplicate projection timing claimed",
+        "records": 5000,
+        "rss_bytes": 101720064,
+        "sqlite_traversal_ms": 397.164883,
+        "sqlite_traversal_warm_median_ms": 396.654414,
+        "stream_full_allclose": true,
+        "stream_full_max_abs_error": 5.39239763952537e-10,
+        "streamed_cross_attention_ms": 73.890469,
+        "verified_results": 5
+      }
+    ],
+    "status": "passed",
+    "weight_bytes": 1717248
+  },
+  "optimizer_updates": false,
+  "pytorch_smoke": {
+    "finite": true,
+    "gradient_tensors": 29,
+    "loss": 1.6987107992172241,
+    "max_gradient": 0.3034112751483917,
+    "max_rss_bytes": 225116160,
+    "nonzero_gradient_tensors": 21,
+    "numpy_max_abs_error": 1.5631572263252735e-06,
+    "numpy_torch_allclose": true,
+    "output_shape": [
+      1,
+      8,
+      384
+    ],
+    "parameter_count": 429312,
+    "status": "passed",
+    "torch_version": "2.11.0"
+  },
+  "schema_version": 1,
+  "status": "bounded_architecture_validation",
+  "training_performed": false
+}

@@ -42,6 +42,8 @@ For each method and category:
 - Expected-abstention behavior
 - Representation ranking agreement
 
+The original LITE-005 artifacts remain immutable historical records. Before LITE-006, an encoder-interface defect was found: `MiniLMEncoder` exposes `.encode(text)` while the first semantic retriever called it as a callable, causing silent lexical fallback. Corrected per-query rankings and denominator results are published separately in `audits/LITE-005-CORRECTION.*` and `audits/LITE-005-BENCHMARK-CORRECTED.json`. Future neural comparisons must use the corrected control.
+
 Relevance and evidence verification are separate outcomes. Cosine similarity is never treated as factual proof.
 
 ## Holdout protection

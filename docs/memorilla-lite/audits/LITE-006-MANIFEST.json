@@ -1,0 +1,143 @@
+{
+  "artifacts": {
+    "LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "benchmarks/lite/lite005_correction_audit.py": {
+      "bytes": 4762,
+      "sha256": "50232c8971d3b380cb1e3619eb39b03e8239873762e5f901ff2f1e5b24b597f1"
+    },
+    "benchmarks/lite/neural_benchmark.py": {
+      "bytes": 4755,
+      "sha256": "a2a966224c58ed9dcb8447354f1b40644d4c8d0d8a2b5182b0da140d69041aae"
+    },
+    "benchmarks/lite/neural_torch_smoke.py": {
+      "bytes": 1690,
+      "sha256": "68e9dffcc97503c7b58533abb50938e9fdc968d6b42f0e23bf7d12695d52e082"
+    },
+    "docs/memorilla-lite/EVALUATION_PROTOCOL.md": {
+      "bytes": 3822,
+      "sha256": "ae21f855563efeedf3a0e7e417bc4462ec053c9021163e1087d7130392c38725"
+    },
+    "docs/memorilla-lite/NEURAL_ARCHITECTURE.md": {
+      "bytes": 5011,
+      "sha256": "afb41f526794f3e4d313eddc73fd718e5dbd1553792678ef80007403326a020f"
+    },
+    "docs/memorilla-lite/TRAINING_PROTOCOL.md": {
+      "bytes": 3898,
+      "sha256": "b215e82ff24e470981a7d0fd5efc0347321b27deba89dccace62fee0eabfec29"
+    },
+    "docs/memorilla-lite/audits/LITE-005-BENCHMARK-CORRECTED.json": {
+      "bytes": 40742,
+      "sha256": "03a054cf67c7565dc59f4a8077e204aef708df040d6355e702624b7e405d5082"
+    },
+    "docs/memorilla-lite/audits/LITE-005-CORRECTION.json": {
+      "bytes": 23312,
+      "sha256": "884076882437b4863c1b6d8df2705027ae6febbb6774609767b572724a6cd9a9"
+    },
+    "docs/memorilla-lite/audits/LITE-005-CORRECTION.md": {
+      "bytes": 3359,
+      "sha256": "6c6a009312971808c66b6be7122e77d0d38da3d04a21cbbee932931546fd3264"
+    },
+    "docs/memorilla-lite/audits/LITE-006-BENCHMARK.json": {
+      "bytes": 6537,
+      "sha256": "7762b61e138fc4609a8ffcaad4f8e91bb452fb15d4a3a7d9a6b392d932104fb0"
+    },
+    "docs/memorilla-lite/audits/LITE-006-EVALUATION-AUDIT.md": {
+      "bytes": 4561,
+      "sha256": "b42b9a59572f495eca5b54c9bf3de000fd2eac4d746a0b285d35a454d5a8caa7"
+    },
+    "docs/memorilla-lite/audits/LITE-006-NEURAL.md": {
+      "bytes": 2333,
+      "sha256": "193b8d386fe12e064d454d5c4eaf1267f63eb64abca2e128b7715d1b41369152"
+    },
+    "docs/memorilla-lite/milestones/LITE-006.md": {
+      "bytes": 2542,
+      "sha256": "75ed539e432bea6f1ee0c7858640d336bbf96de3f92801908f7069956b364ee6"
+    },
+    "lite/neural/__init__.py": {
+      "bytes": 667,
+      "sha256": "e1380c59c6315ee0f5e1c9d811809633fc4c06650cc8cee7882e9fc8fe65314a"
+    },
+    "lite/neural/attention.py": {
+      "bytes": 813,
+      "sha256": "d10b647423afdfcbdb7eb36024adb4cd93fcceac71314b9d6c942851106d66d9"
+    },
+    "lite/neural/config.py": {
+      "bytes": 1423,
+      "sha256": "3e1a298275213411cf11cadf745a162d1ad9c817186f2979435431fadc13534e"
+    },
+    "lite/neural/numpy_model.py": {
+      "bytes": 6858,
+      "sha256": "58db26e7052da3910051f2a1b641d88c4faa60d5dd0361565e0ad6fd69bb98d0"
+    },
+    "lite/neural/objectives.py": {
+      "bytes": 1416,
+      "sha256": "eaaa9cefce7be000c7b5596437a8c2e178ea7fecff702d24d5d433933ffc2c4a"
+    },
+    "lite/neural/scoring.py": {
+      "bytes": 2662,
+      "sha256": "ccba1008429c1827666456e49f36a439b5c622324e244e663aa66a7819562a39"
+    },
+    "lite/neural/serialization.py": {
+      "bytes": 2376,
+      "sha256": "cd1d572fadbed7b0da249a356a469bc0b7b8ac6de0a27a5fa401b1158c9e0269"
+    },
+    "lite/neural/torch_model.py": {
+      "bytes": 5686,
+      "sha256": "c939f67653e03edb7e989d7472068717f7a92ce58d829734211158c44f49c389"
+    },
+    "lite/retrieval/cosine.py": {
+      "bytes": 1581,
+      "sha256": "10cf9ea5a9d3be66e3413c4ec3bf9b4c1d35e54b070ccc122d35f6578f545e45"
+    },
+    "memorilla/memory.py": {
+      "bytes": 20403,
+      "sha256": "0cf5b4560b36eb6b77f15e4ad4d8001abd397f2a2bf6b96b583797c1cd3f25db"
+    },
+    "tests/lite/test_neural_architecture.py": {
+      "bytes": 1503,
+      "sha256": "a8a8b9a5316cde51dfa5175ddfcc67d0a0374a147370ca5e34683c7c043a7ccb"
+    },
+    "tests/lite/test_neural_attention.py": {
+      "bytes": 825,
+      "sha256": "f7bf00277ee944e12dc31839ed1dd3fc41308a9c17252290feb463bff047fdcf"
+    },
+    "tests/lite/test_neural_evidence_policy.py": {
+      "bytes": 1385,
+      "sha256": "01ff06910cadc0e090ac1fb99b3504ff791d5dbd717a6a0f8f65c8ed281da49b"
+    },
+    "tests/lite/test_neural_serialization.py": {
+      "bytes": 1081,
+      "sha256": "ffb372e7c97236f9166da3419663315c96e051670d5e02886c5ef30f5fa759fc"
+    }
+  },
+  "baseline_commit": "b69634218cb346309b3f90e5e8b673fbe613893b",
+  "branch": "feature/memorilla-lite-android",
+  "config": {
+    "blocks": 1,
+    "ffn_dim": 256,
+    "heads": 4,
+    "input_dim": 384,
+    "latent_dim": 128,
+    "output_dim": 384,
+    "parameter_count": 429312,
+    "seed": 20261120,
+    "slots": 8,
+    "weight_bytes_float32": 1717248
+  },
+  "holdout_labels_present": false,
+  "license_reference": "LICENSE",
+  "milestone": "LITE-006",
+  "notes": [
+    "Random/untrained weights only.",
+    "PyTorch smoke was isolated and did not update weights.",
+    "Original LITE-005 benchmark remains immutable; corrected artifacts are separate."
+  ],
+  "repository": "NewportRiver/memorilla",
+  "schema_version": 1,
+  "status": "bounded_architecture_validation",
+  "training_performed": false,
+  "upstream_reference": "memorilla/memory.py"
+}
