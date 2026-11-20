@@ -1,0 +1,13 @@
+{
+  "experiment_id":"LITE-007J-CONTROLLED-COMPARISON-R1",
+  "process_start_rss_bytes":null,
+  "peak_rss_bytes":null,
+  "minimum_available_ram_bytes":null,
+  "wall_seconds":null,
+  "numerical_threads":1,
+  "computational_subprocesses":1,
+  "training_status":"no_J_training_executed",
+  "evaluation_status":"per-evaluation ledgers record process-specific telemetry separately; aggregate neural baseline run completed without training",
+  "limits":{"min_ram_bytes":1342177280,"abort_ram_bytes":1073741824,"max_rss_bytes":268435456,"target_rss_bytes":134217728,"max_wall_seconds":30,"max_records":32,"max_threads":1,"max_subprocesses":1},
+  "historical_H_I_telemetry_not_reused_as_J_training_telemetry":true
+}

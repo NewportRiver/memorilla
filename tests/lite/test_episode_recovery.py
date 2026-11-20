@@ -30,6 +30,6 @@ def test_budget_counts_interrupted_update_conservatively(tmp_path):
     budget.record_update('ep')
     budget.finish_episode('ep', 'interrupted')
     resumed = EpisodeBudget(tmp_path / 'budget.json', 2, 'd', 'c')
-    assert resumed.state['used_updates'] == 1
+    assert resumed.state['used_updates'] == 2
     with pytest.raises(ValueError):
         resumed.begin_episode('next', 2)

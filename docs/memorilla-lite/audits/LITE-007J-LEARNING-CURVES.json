@@ -1,0 +1,8 @@
+{
+  "experiment_id":"LITE-007J-CONTROLLED-COMPARISON-R1",
+  "training_updates":0,
+  "episodes":0,
+  "validation_milestones":[0,40,80,120,160,200,240],
+  "status":"pretraining_only",
+  "note":"No sustained optimizer updates were authorized or executed. Existing H/I feasibility pilot losses remain separate artifacts."
+}

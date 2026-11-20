@@ -1,0 +1,11 @@
+{
+  "milestone":"LITE-007J",
+  "controls":"see LITE-007J-COMPARATIVE-EVALUATION.json",
+  "models":["lexical","direct_cosine","hybrid","untrained","score_head_trained","memory_projection_trained","direct_bilinear_untrained","query_independent","learned_slot_query","attention_ffn"],
+  "collection_levels":[8,16,32,64,128],
+  "neural_denominator_per_level":240,
+  "neural_partition_keys":["train","validation"],
+  "conventional_partition_note":"inherited LITE-007I conventional artifact uses combined development denominator and is not relabeled as independent validation",
+  "holdout_accessed":false,
+  "status":"complete_for_pretraining_controls"
+}

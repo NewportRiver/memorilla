@@ -1,0 +1,7 @@
+{
+  "method": "normalized numeric-token template SHA-256",
+  "normalized_template_groups": 50,
+  "cross_partition_groups": 0,
+  "largest_cross_group": 0,
+  "status": "passed"
+}

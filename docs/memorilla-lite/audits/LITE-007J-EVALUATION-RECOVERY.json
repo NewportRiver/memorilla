@@ -1,0 +1,15 @@
+{
+  "milestone":"LITE-007J",
+  "controller":"lite.training.resumable_evaluation.ResumableEvaluation",
+  "batch_size":8,
+  "query_count_per_model":1200,
+  "models_completed":["untrained","score_head_trained","memory_projection_trained","learned_slot_query","attention_ffn"],
+  "per_model_denominator":1200,
+  "interruption_test":"first batch atomically persisted, controller resumed, final denominator verified",
+  "identity_binding":["evaluation_id","model_identity","dataset_identity","partition","ordered_query_ids","batch_size"],
+  "duplicate_result_rejection":true,
+  "partial_aggregation_rejected":true,
+  "atomic_batch_writes":true,
+  "automatic_retry_after_resource_exhaustion":false,
+  "status":"passed"
+}

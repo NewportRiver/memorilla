@@ -110,3 +110,6 @@ LITE-006 is not an exact reproduction. Newport River adaptations are:
 - safe non-executable weight serialization with checksums and encoder compatibility.
 
 Upstream source and Apache licensing/attribution remain preserved. The new `lite/neural` implementation is a Newport River mobile adaptation and does not claim Stanford model equivalence.
+## LITE-007J evaluation boundary
+
+The controlled J comparison uses the existing `lite006-associative-v1` architecture and does not add parameters or objectives. The 27 ranking-connected tensors remain the only trainable associative set; `out_w` and `out_b` remain frozen and disconnected. J baseline results are pre-training development measurements until owner authorization permits bounded optimizer qualification.

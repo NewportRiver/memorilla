@@ -99,3 +99,6 @@ Every returned evidence ID must resolve through the authoritative resolver, matc
 ## Android export
 
 Export only versioned, non-executable tensor data compatible with the frozen encoder contract. Validate tensor shapes, dtypes, checksums, architecture version, seed, training status, and encoder revision before loading. Randomly initialized or partially trained weights must remain explicitly labeled.
+## LITE-007J controlled comparison gate
+
+LITE-007J adds identity-bound resumable evaluation and conservative interrupted-episode accounting. The proposed associative and direct-ranking budgets are 240 updates each, but remain zero-authorized until owner approval. No sustained J optimizer updates are implied by this protocol entry. All validation is development-only, scenario-disjoint, and holdout-free. See `docs/memorilla-lite/audits/LITE-007J-REPORT.md`.

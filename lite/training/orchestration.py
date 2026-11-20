@@ -61,7 +61,7 @@ class EpisodeBudget:
             reserved = sum(x['requested_updates'] for x in self.state['episodes'] if x['status'] == 'active')
             if requested_updates <= 0 or self.state['used_updates'] + reserved + requested_updates > self.total_updates:
                 raise ValueError('episode exceeds persistent authorization budget')
-            row = {'episode_id': str(episode_id), 'requested_updates': requested_updates, 'completed_updates': 0, 'status': 'active'}
+            row = {'episode_id': str(episode_id), 'requested_updates': requested_updates, 'completed_updates': 0, 'consumed_updates': 0, 'last_phase': 'reserved', 'status': 'active'}
             self.state['episodes'].append(row)
             self._commit()
         return row.copy()
@@ -75,6 +75,8 @@ class EpisodeBudget:
             if row['completed_updates'] >= row['requested_updates']:
                 raise ValueError('episode update budget exhausted')
             row['completed_updates'] += 1
+            row['consumed_updates'] += 1
+            row['last_phase'] = 'durably_accounted_before_mutation'
             self.state['used_updates'] += 1
             self._commit()
 
@@ -83,7 +85,16 @@ class EpisodeBudget:
             rows = [x for x in self.state['episodes'] if x['episode_id'] == str(episode_id) and x['status'] == 'active']
             if len(rows) != 1:
                 raise ValueError('unknown or inactive episode')
-            rows[0]['status'] = str(status)
+            row = rows[0]
+            if status == 'interrupted':
+                uncertain = row['requested_updates'] - row['consumed_updates']
+                if uncertain > 0:
+                    self.state['used_updates'] += uncertain
+                    row['consumed_updates'] += uncertain
+                row['last_phase'] = 'interrupted_conservatively_consumed'
+            else:
+                row['last_phase'] = 'completed'
+            row['status'] = str(status)
             self._commit()
 
     @property

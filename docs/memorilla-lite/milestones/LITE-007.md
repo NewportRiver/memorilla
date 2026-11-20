@@ -48,3 +48,6 @@ Not completed:
 - complete neural-control evaluation on the expanded curriculum and sustained training;
 
 No complete LITE-007 pass claim is permitted. Scoring-head and projection-only adaptation succeeded; no additional neural-component update or production APEX integration occurred.
+## LITE-007J status
+
+Pre-training controlled comparison prerequisites are implemented. Identity-bound resumable evaluation completed five neural baseline ledgers across 1,200 queries, with conventional and ablation controls persisted separately. Episode interruption accounting is conservative. Sustained training remains blocked pending owner approval and direct checkpoint-publication fault injection.

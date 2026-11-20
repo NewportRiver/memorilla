@@ -1,0 +1,9 @@
+{
+  "milestone":"LITE-007J",
+  "status":"not_executed_pending_owner_authorization",
+  "reason":"No explicit owner approval for the proposed 240+240 optimizer budget was supplied in this mission.",
+  "qualification_episode":{"updates":0,"status":"not_run"},
+  "required_before_training":["owner approval","final manifest acceptance","checkpoint-write process fault injection beyond ledger simulation"],
+  "no_fallback_spending":true,
+  "stop_condition":"joint qualification failure would stop the experiment"
+}
