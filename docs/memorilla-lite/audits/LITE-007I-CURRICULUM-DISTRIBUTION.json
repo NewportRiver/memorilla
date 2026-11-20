@@ -1,0 +1,14 @@
+{
+  "milestone":"LITE-007I",
+  "dataset_version":"lite007i-dev-v1",
+  "scenario_count":300,
+  "record_count":14880,
+  "query_count":1200,
+  "scenario_partition":{"train":180,"validation":120,"scenario_disjoint":true},
+  "collection_distribution":{"8":{"scenarios":60,"queries":240,"eligible_records_per_example":8,"masked_records":0,"required_evidence_distribution":{"0":60,"1":0,"2":180}},"16":{"scenarios":60,"queries":240,"eligible_records_per_example":16,"masked_records":0,"required_evidence_distribution":{"0":60,"1":0,"2":180}},"32":{"scenarios":60,"queries":240,"eligible_records_per_example":32,"masked_records":0,"required_evidence_distribution":{"0":60,"1":0,"2":180}},"64":{"scenarios":60,"queries":240,"eligible_records_per_example":64,"masked_records":0,"required_evidence_distribution":{"0":60,"1":0,"2":180}},"128":{"scenarios":60,"queries":240,"eligible_records_per_example":128,"masked_records":0,"required_evidence_distribution":{"0":60,"1":0,"2":180}}},
+  "hard_negatives":"one or more unrelated/hard-negative records per scenario; no duplicated evidence used to reach collection sizes",
+  "generation_seed":20261120,
+  "dataset_sha256":"d1e246749953d318c3010cc23241234035186e10ddab1c0acf0e611d0eca663f",
+  "holdout_included":false,
+  "original_corpus_unchanged":true
+}

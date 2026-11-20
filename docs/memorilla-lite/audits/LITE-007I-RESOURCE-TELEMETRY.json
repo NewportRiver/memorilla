@@ -1,0 +1,16 @@
+{
+  "milestone":"LITE-007I",
+  "pilot":"ATTN-FFN-PILOT",
+  "phase_events":69,
+  "phases":["process_start","dataset_loading","model_initialization","forward_backward","optimizer","checkpoint_serialization","update"],
+  "process_start_rss_bytes":62070784,
+  "peak_observed_rss_bytes":62070784,
+  "minimum_available_ram_bytes":1582854144,
+  "total_wall_seconds":0.49210304699954577,
+  "numerical_threads":1,
+  "computational_subprocesses":1,
+  "guard_limits":{"minimum_available_ram_bytes":1342177280,"abort_ram_bytes":1073741824,"maximum_rss_bytes":268435456,"maximum_wall_seconds":30,"maximum_records":32},
+  "guard_outcome":"passed",
+  "flush_recovery":"phases.jsonl flushed after every event; pilot completed normally",
+  "historical_lite007h_telemetry":"not retrospectively certified"
+}

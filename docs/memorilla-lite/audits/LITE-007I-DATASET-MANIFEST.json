@@ -1,0 +1,19 @@
+{
+  "collection_levels": [
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "dataset_sha256": "d1e246749953d318c3010cc23241234035186e10ddab1c0acf0e611d0eca663f",
+  "dataset_version": "lite007i-dev-v1",
+  "holdout_accessed": false,
+  "manifest_sha256": "49cdfac772fdbdb8d11a66f1e83cc237eb51d813e4eee1a66956764372116e55",
+  "milestone": "LITE-007I",
+  "near_duplicate_leakage": "not independently scanned; source construction uses scenario-specific identities and tokens",
+  "positive_labels": "independently resolvable record IDs; two required records for answerable multi-evidence queries",
+  "source_identity": "synthetic development only",
+  "train_scenarios": 180,
+  "validation_scenarios": 120
+}

@@ -80,6 +80,8 @@ LITE-007G inventories all 29 tensors. Learned slots, query conditioning, attenti
 
 LITE-007H adds verified native gradients for all 27 tensors connected to the ranking objective, including learned slots, query conditioning, attention Q/K/V/output, both layer norms, both feed-forward layers, memory projections, and the score head. The output projection remains intentionally disconnected.
 
+LITE-007I persists a reusable 27-tensor gradient fixture bound to architecture version, model-weight hash, input seeds, objective margin, masks, positive indices, and numerical tolerance. The fixture is stored outside Git under the LITE-007I cache and its manifest is recorded in the audit directory.
+
 ## Training objective preparation
 
 The primary proposed objective is multi-positive pairwise logistic ranking: each authoritative positive evidence ID is compared against valid negatives. Optional terms are hard-negative weighting, multi-evidence coverage, slot diversity regularization, and evidence-selection abstention. Labels must resolve to authoritative evidence IDs and may not originate from future, unauthorized, or sealed holdout records.

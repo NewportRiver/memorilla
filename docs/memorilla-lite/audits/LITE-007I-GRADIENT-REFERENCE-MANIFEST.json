@@ -1,0 +1,18 @@
+{
+  "milestone":"LITE-007I",
+  "fixture":"~/.cache/memorilla-lite/LITE-007I/gradient-reference/gradients.npz",
+  "manifest":"~/.cache/memorilla-lite/LITE-007I/gradient-reference/manifest.json",
+  "architecture_version":"lite006-associative-v1",
+  "tensor_count":27,
+  "excluded":["out_w","out_b"],
+  "weights_sha256":"fa9abb6d8c68ead212a9a606d26e0e26487c5ff95badfabd73a636d3d017c89b",
+  "fixture_sha256":"ebe3ceb9efa7b84022ef9548e91077f4a0fcd2308e048879f34d40a583e3769b",
+  "seed":20261120,
+  "input_seed":2718,
+  "objective":"softplus(margin + negative_score - positive_score)",
+  "margin":0.1,
+  "valid_count":16,
+  "positive_indices":[1,7],
+  "tolerance":0.001,
+  "status":"persisted"
+}

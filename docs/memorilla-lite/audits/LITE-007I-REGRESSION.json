@@ -1,0 +1,14 @@
+{
+  "milestone":"LITE-007I",
+  "collected":71,
+  "passed":71,
+  "failed":0,
+  "skipped":0,
+  "timed_out":0,
+  "unexecuted":0,
+  "batches":[{"name":"runtime_encoder_attention_quantization","collected":22,"passed":22},{"name":"gradient_controls_episode_embedding","collected":26,"passed":26},{"name":"storage_retrieval_training","collected":23,"passed":23}],
+  "isolated_timeout_test":"tests/lite/test_training_abstention.py::test_policy_and_insufficient_examples_are_distinct",
+  "timeout_root_cause":"repeated compressed NpzFile decompression in eager load_development loop; fixed by materializing archive arrays once",
+  "full_inventory_command":"pytest --confcutdir=tests/lite tests/lite",
+  "transformers_installed":false
+}

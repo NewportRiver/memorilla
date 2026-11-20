@@ -30,6 +30,7 @@ Completed:
 - paired development controls and representation-change analysis.
 - complete architecture parameter inventory, staged native-differentiation boundary, curriculum specification, evaluation-control registry, and persistent episode-budget orchestration.
 - all 27 ranking-connected native parameter gradients, operational episode integration, and one bounded learned-slot/query-conditioning feasibility pilot.
+- expanded 8/16/32/64/128-record development curriculum, resumable pinned-encoder preparation, complete LITE regression, and one telemetry-qualified attention/FFN feasibility pilot.
 
 Not completed:
 
@@ -44,5 +45,6 @@ Not completed:
 - holdout release/evaluation and Android trained-checkpoint inference acceptance;
 - complete associative-memory training or any additional neural-component updates;
 - full cumulative regression certification, resumable embedding preparation, and complete evaluation of all new controls;
+- complete neural-control evaluation on the expanded curriculum and sustained training;
 
 No complete LITE-007 pass claim is permitted. Scoring-head and projection-only adaptation succeeded; no additional neural-component update or production APEX integration occurred.

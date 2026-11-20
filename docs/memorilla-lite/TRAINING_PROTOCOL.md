@@ -24,6 +24,8 @@ LITE-007G adds no optimizer episode. Future episodes must use a persistent ident
 
 LITE-007H operational episodes use the persistent budget with exclusive locking, conservative pre-update accounting, atomic checkpoints, and phase telemetry. A newly supported subset may receive at most eight updates per explicit episode; no sustained or multi-episode training is authorized by this milestone.
 
+LITE-007I adds actual 8/16/32/64/128-record development collections, resumable identity-bound embedding preparation, and phase-level resource telemetry. The 64- and 128-record levels remain evaluation-only. Expanded neural comparison must complete within the bounded Android evaluation budget before any interpretation is accepted.
+
 ## Dataset requirements
 
 - Synthetic/public evidence only until separately authorized.

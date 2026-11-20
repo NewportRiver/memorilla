@@ -1,0 +1,14 @@
+{
+  "milestone":"LITE-007I",
+  "encoder":"pinned MiniLM ONNX encoder, one thread",
+  "source_sha256":"d1e246749953d318c3010cc23241234035186e10ddab1c0acf0e611d0eca663f",
+  "record_count":14880,
+  "query_count":1200,
+  "unique_texts":16080,
+  "final_artifact_sha256":"9aaf5993ac1528d368fe74729bf47bd83162cc0dd3a2568abafa1e286b788933",
+  "interruption":{"after_items":7776,"progress_persisted":true,"partial_output_published":false},
+  "resume":{"additional_items":8304,"reused_progress_items":14304,"newly_encoded":1776,"completed":true},
+  "duplicate_encoding_avoidance":{"duplicate_texts":0,"source_content_reuse_count":14304,"note":"All generated texts were unique; persisted progress/cache reuse was measured during resume."},
+  "fault_tests":["interrupted progress recovery","source identity mismatch rejection","atomic output publication","nonfinite output rejection"],
+  "status":"passed_with_bounded_resume"
+}
