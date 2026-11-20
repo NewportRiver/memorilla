@@ -1,0 +1,149 @@
+{
+  "android": {
+    "abi": "arm64-v8a",
+    "android_release": "17",
+    "battery": {
+      "termux_battery_status": "unavailable"
+    },
+    "cpu_instruction_features": [
+      "fp",
+      "asimd",
+      "evtstrm",
+      "aes",
+      "pmull",
+      "sha1",
+      "sha2",
+      "crc32",
+      "atomics",
+      "fphp",
+      "asimdhp",
+      "cpuid",
+      "asimdrdm",
+      "lrcpc",
+      "dcpop",
+      "asimddp"
+    ],
+    "kernel": "6.1.162-android14-11",
+    "load": {
+      "proc_loadavg": "permission_denied"
+    },
+    "logical_cpu_count": 8,
+    "meminfo_kib": {
+      "MemAvailable_snapshots": [
+        1370360,
+        1339296,
+        1339468
+      ],
+      "MemFree_snapshots": [
+        254992,
+        134304,
+        119380
+      ],
+      "MemTotal": 5528084,
+      "SwapFree_snapshots": [
+        5496912,
+        5536960,
+        5540288
+      ],
+      "SwapTotal": 8388604
+    },
+    "model": "SM-A376U",
+    "process_restrictions": {
+      "android_version_observed": "17",
+      "direct_background_policy_verification": "unavailable",
+      "note": "Android process/thermal constraints remain a runtime risk; no stress test performed",
+      "phantom_process_override": "false"
+    },
+    "sdk": "37",
+    "soc_manufacturer": "Samsung",
+    "soc_model": "s5e8845",
+    "storage": {
+      "available": "6.9G",
+      "measured_mount": "/data/misc/profiles/ref/com.termux",
+      "size": "105G",
+      "use_percent": "94%",
+      "used": "98G"
+    },
+    "thermal": {
+      "readable_sysfs_zones": 0,
+      "status": "unavailable_without_accessible_thermal_zone"
+    }
+  },
+  "architect1": {
+    "audit_performed": false,
+    "authorized_endpoint": "not configured",
+    "known_hosts_present": true,
+    "reason": "No authorized SSH host/configuration or endpoint was available; arbitrary host probing was not attempted",
+    "ssh_config_present": false,
+    "status": "unavailable"
+  },
+  "authorization": "APPROVED",
+  "baseline_commit": "3ce549702461c786c4dea77b594d62ad363fce36",
+  "branch": "feature/memorilla-lite-android",
+  "captured_at": "2026-11-19T21:21:00-05:00",
+  "manifest_content_sha256": "9776663b3b4b0d451d3888ce3487ae64fc8c087ce802c8a833fe94047de0a2ae",
+  "mission_id": "LITE-001",
+  "repository": "NewportRiver/memorilla",
+  "research_report": {
+    "bytes": 28640,
+    "path": "docs/memorilla-lite/research/memorilla.txt",
+    "sha256": "771571b065a279d87506fa0b5bfc374772d8e605305f5c7517e0ce4575b8a864"
+  },
+  "runtime": {
+    "arm64_libraries_observed": [
+      "python-numpy",
+      "python-torch",
+      "libsqlite",
+      "clang"
+    ],
+    "clang": {
+      "version": "21.1.8"
+    },
+    "cmake": "absent",
+    "fts5": true,
+    "g++": "present",
+    "gcc": "present",
+    "gguf_models_found": 0,
+    "git": "2.54.0",
+    "llama_cli": "absent",
+    "llama_cpp_python": "absent",
+    "llama_server": "absent",
+    "ninja": "absent",
+    "numpy": "2.4.4",
+    "onnx": "absent",
+    "onnx_models_found": 0,
+    "onnxruntime": "absent",
+    "pip": {
+      "version": "26.1.2"
+    },
+    "pkg_config": "0.29.2",
+    "python": {
+      "path": "$PREFIX/bin/python",
+      "version": "3.13.13"
+    },
+    "python_sqlite": "3.53.1",
+    "sentence_transformers": "absent",
+    "sqlite_cli": "absent",
+    "torch": "2.11.0",
+    "transformers": "absent"
+  },
+  "safety": {
+    "brokerage_activity": false,
+    "cloud_expense": false,
+    "model_downloads": false,
+    "package_changes": false,
+    "production_apex_changes": false,
+    "root_used": false,
+    "sensitive_identifiers_published": false,
+    "services_disrupted": false,
+    "stress_test": false
+  },
+  "schema_version": 1,
+  "scope": "read-only feasibility audit; no installs/upgrades/downloads/stress tests",
+  "source_resolution": {
+    "unresolved_citation_token_count": 36,
+    "upstream_license": "Apache-2.0 in LICENSE",
+    "upstream_repository_commit": "3ce549702461c786c4dea77b594d62ad363fce36",
+    "web_search_status": "unavailable: BRAVE_SEARCH_API_KEY not set"
+  }
+}
