@@ -1,0 +1,1 @@
+"""Reference mathematical attention implementation."""

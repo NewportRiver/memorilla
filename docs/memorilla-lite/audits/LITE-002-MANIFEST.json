@@ -1,0 +1,97 @@
+{
+  "android_observations": {
+    "battery": "unavailable",
+    "cpu_load": "unavailable_permission_denied",
+    "preflight_available_ram_bytes": 1361924096,
+    "smoke_peak_rss_bytes": 34664448,
+    "smoke_threads": 1,
+    "swap_free_bytes_after_smoke": 5436137472,
+    "swap_total_bytes": 8589930496,
+    "thermal": "unavailable_no_readable_zones"
+  },
+  "authorization": "APPROVED",
+  "baseline_commit": "76e5348a69875c5bcc714d842e748ecc3586bdf4",
+  "branch": "feature/memorilla-lite-android",
+  "captured_at": "2026-11-19T21:30:00-05:00",
+  "limits": {
+    "abort_available_ram_bytes": 805306368,
+    "max_concurrent_processes": 1,
+    "max_new_storage_bytes": 52428800,
+    "max_rss_bytes": 268435456,
+    "max_threads": 2,
+    "min_available_ram_bytes": 1073741824,
+    "rss_enforcement": "observation only; Android does not provide reliable user-space hard RSS enforcement here",
+    "target_rss_bytes": 134217728,
+    "timeout_seconds": 30
+  },
+  "manifest_content_sha256": "f7147266d11193b82a3295bec094528d09761f84be42ce5c2ce55057fbd8ff58",
+  "mission_id": "LITE-002",
+  "repository": "NewportRiver/memorilla",
+  "results": {
+    "benchmark_status": "passed",
+    "corpus_sizes": [
+      100,
+      1000,
+      5000
+    ],
+    "max_chunk_error": 8.940696716308594e-08,
+    "output_shape": [
+      8,
+      384
+    ],
+    "pytorch_subprocess": {
+      "peak_rss_bytes": 221339648,
+      "returncode": 0,
+      "shape": [
+        256,
+        256
+      ],
+      "status": "passed",
+      "threads": 2,
+      "timeout_seconds": 30,
+      "version": "2.11.0"
+    },
+    "smoke": "passed",
+    "targeted_pytest": "9 passed"
+  },
+  "runtime_inventory": {
+    "cmake": "absent",
+    "fts5": true,
+    "llama_cpp": "absent",
+    "ninja": "absent",
+    "numpy": "2.4.4",
+    "onnxruntime": "absent",
+    "python": "3.13.13",
+    "sqlite_python": "3.53.1",
+    "termux_package_candidates": {
+      "cmake": "4.3.4",
+      "llama-cpp": "0.0.0-b9590-0",
+      "onnxruntime": "1.27.0",
+      "python-onnxruntime": "1.27.0"
+    },
+    "torch": "2.11.0"
+  },
+  "safety": {
+    "brokerage": false,
+    "cloud_expense": false,
+    "endurance": false,
+    "models_downloaded": false,
+    "packages_changed": false,
+    "production_apex_changes": false,
+    "root": false,
+    "training": false
+  },
+  "schema_version": 1,
+  "source_hashes": {
+    "benchmarks/lite/runtime_benchmark.py": "7c9504e4defb713c33322dca6b77c4a361e84a227cb2e3905dca404c9640f97e",
+    "lite/__init__.py": "2df271322d027afeb96370bae2da502e5744cc377b90d69d440faa4862d2b377",
+    "lite/attention/reference.py": "b96765394ab2c81a24b7b7a85e67052070cd428fcea33ca381799d9487c8d79e",
+    "lite/runtime/preflight.py": "40fa35f28595b462a45ba08617a68b5ae9ef7e693d6b6c6245196fd9761f3e3f",
+    "lite/runtime/smoke_test.py": "6d0e58390abc68f6c9dad4fdc33083f4979e3053b6858d94662f6e37594a3410",
+    "lite/runtime/telemetry.py": "3658ad8d08c1c2cb183696556671eac0dfe86f6b09c6a607f51ccbb55c687750",
+    "tests/lite/test_attention_reference.py": "9b871cee00c0f59d4fab5a167aa34b828708aa41f7283c7a9a985b7cb1b71582",
+    "tests/lite/test_runtime.py": "434da530985541e099797d7339c27affe0496671d51b41b23c551cde4d363ccd"
+  },
+  "strategy": "NumPy/Python/SQLite reference runtime; ONNX investigated without installation; PyTorch isolated subprocess only after preflight",
+  "temporary_artifacts": "Benchmark and smoke databases were created under temporary directories and not committed"
+}
