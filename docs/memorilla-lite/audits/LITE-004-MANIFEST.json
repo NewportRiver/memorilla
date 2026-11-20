@@ -1,0 +1,64 @@
+{
+  "artifacts": "Databases, WAL/SHM files, caches and model weights remain outside Git",
+  "authorization": "APPROVED \u2014 bounded development only",
+  "baseline_commit": "f8ac4989571809ba9463b95e7c20fdcd9d733815",
+  "branch": "feature/memorilla-lite-android",
+  "derived_store": {
+    "authoritative_source": "external evidence resolver and original artifacts; never copied into derived DB",
+    "checksum": "SHA-256 over vector bytes",
+    "float16_serialization": "little-endian IEEE-754 binary16",
+    "float32_serialization": "little-endian IEEE-754 binary32",
+    "idempotency": "SHA-256 canonical source identity plus scope/chunk/model/artifact/tokenizer/preprocessing contract",
+    "int8_serialization": "little-endian int8 bytes; symmetric per-vector scale=max(abs(vector))/127, minimum positive float32; reconstructed=value*scale",
+    "journal_mode": "WAL",
+    "schema_version": 1,
+    "synchronous": "FULL",
+    "technology": "SQLite",
+    "vector_formats": [
+      "float32",
+      "float16",
+      "int8"
+    ]
+  },
+  "encoder": {
+    "artifact_sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "dimension": 384,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "preprocessing_identity": "mean-mask-l2-v1",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "tokenizer_identity": "bert-wordpiece-vocab-fb140275"
+  },
+  "implementation_hashes": {
+    "benchmarks/lite/memory_benchmark.py": "ff07def148e74224e1f01ce5248d60be992bee83a8540cc5ed742cca91c5ab73",
+    "lite/attention/reference.py": "99de3716857ae1fe7a0e84b26c38f997b2fc24a1adb5a5881ce47d4c38eb62b3",
+    "lite/memory/iterator.py": "94a5d43088ea18c06ac25452eb157822ac0d466ea804e85ef566ea545e73312d",
+    "lite/memory/provenance.py": "3259603f910b58dacd817b5bbfc58a21cae0fd40b77d2ec3cefc8e05bb17c644",
+    "lite/memory/quantization.py": "145fd7fa74858c5cff6282da520cd60f21908806ecf55a8fb28c640ddefa48b3",
+    "lite/memory/schema.py": "c793fb27ef6d70583887aab50335954cc0a39df22dc3d06d79380f1461a8aef5",
+    "lite/memory/store.py": "78af7024329bd704d5eb8ea7df3fa10a9e15a00be65e0b4b198231e06b1461cb"
+  },
+  "manifest_content_sha256": "5b98af5f384a919d90c7bbd706c5e2cdda229dcbbb7fc75eadbfcf992522a7d7",
+  "mission_id": "LITE-004",
+  "repository": "NewportRiver/memorilla",
+  "resource_limits": {
+    "abort_ram_bytes": 805306368,
+    "concurrent_processes": 1,
+    "max_new_storage_bytes": 134217728,
+    "max_rss_bytes": 268435456,
+    "max_threads": 2,
+    "min_ram_bytes": 1073741824,
+    "min_storage_bytes": 5368709120,
+    "target_rss_bytes": 201326592,
+    "timeout_seconds": 30
+  },
+  "schema_version": 1,
+  "validation": {
+    "benchmark": "passed with INT8 top-5 minimum overlap limitation",
+    "model_downloads": false,
+    "new_dependencies": false,
+    "package_repair": false,
+    "production_apex": false,
+    "targeted_tests": "25 passed, 1 warning",
+    "training": false
+  }
+}

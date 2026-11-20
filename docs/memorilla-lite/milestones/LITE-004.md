@@ -28,4 +28,4 @@ Drop/rebuild derived store.
 Report schema, hashes, overhead, and failures.
 
 ## Status
-Not started. Owner authorization required before execution.
+Completed as a synthetic/public-fixture disposable SQLite vector bank. Schema version 1, evidence-linked provenance, idempotent ingestion, restart recovery, source/model invalidation, corruption rejection, bounded iteration, and streaming attention compatibility are implemented. Full bounded regression: 25 passed, 1 warning. INT8 mean cosine and mean top-five overlap targets passed, but minimum top-five overlap was 80%, below the suggested 95% per-query target; Float16/Float32 remain safer ranking formats. No production APEX integration. LITE-005 requires separate owner authorization.

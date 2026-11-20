@@ -8,7 +8,7 @@ APEX authoritative SQLite records and content-addressed artifacts remain the sou
 
 1. Snapshot exporter: deterministic, sanitized, hash-verified records.
 2. Frozen encoder: initially 384-D ONNX Runtime ARM64 candidate.
-3. Derived store: artifact ID, source hash, encoder revision, chunk revision, quantized vector, scale, cluster metadata.
+3. Derived store: disposable SQLite schema containing artifact ID, source hash, encoder revision, chunk revision, quantized vector, scale, checksum, validity and provenance metadata; original evidence remains external and authoritative.
 4. Memory module: query-conditioned slots, initially 8 slots and one compact refinement block.
 5. Evidence resolver: exact IDs, artifact hashes, provenance and integrity failures.
 6. Optional bridge: bounded textual output first; raw embedding prefix only as an experimental matched-decoder path.

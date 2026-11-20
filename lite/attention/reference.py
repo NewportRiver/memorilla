@@ -45,3 +45,18 @@ def attention(memory,query,weights=None,dim=384,slots=8,chunk_size=None):
 
 def quantize_per_tensor(x):
     x=_finite(x,'values'); scale=max(float(np.max(np.abs(x)))/127.0, np.finfo(np.float32).tiny); q=np.clip(np.rint(x/scale),-127,127).astype(np.int8); return q,np.float32(scale)
+
+def attention_stream(chunks,query,weights=None,dim=384,slots=8):
+    """Two-pass global-normalized attention over a restartable chunk iterator."""
+    w=weights or deterministic_weights(dim,slots); q=_finite(query,'query')
+    s=initialize_slots(q,w,dim,slots); scale=np.float32(1/np.sqrt(dim)); maxes=np.full(slots,-np.inf,np.float32); seen=0
+    for chunk in chunks:
+        m=_finite(chunk,'memory');
+        if m.ndim!=2 or m.shape[1]!=dim or m.shape[0]==0: raise ValueError('memory chunks must be non-empty [records, dim]')
+        maxes=np.maximum(maxes,np.max((s@(m@w['key_projection']).T)*scale,axis=1)); seen+=m.shape[0]
+    if seen==0: raise ValueError('memory stream is empty')
+    denom=np.zeros(slots,np.float32); numer=np.zeros((slots,dim),np.float32)
+    for chunk in chunks:
+        m=_finite(chunk,'memory'); k=m@w['key_projection']; v=m@w['value_projection']; e=np.exp((s@k.T)*scale-maxes[:,None]); denom+=e.sum(axis=1); numer+=e@v
+    if np.any(denom==0) or not np.isfinite(denom).all(): raise ValueError('stream normalization failed')
+    return (numer/denom[:,None]).astype(np.float32)
