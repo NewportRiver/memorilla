@@ -1,0 +1,19 @@
+{
+  "milestone": "LITE-007C",
+  "pilot_telemetry_artifact": "~/.cache/memorilla-lite/LITE-007C-NUMPY-PILOT/phases.jsonl",
+  "phases": [
+    {
+      "phase": "process_start",
+      "event": "start",
+      "rss_bytes": 219283456,
+      "available_ram_bytes": 1333682176,
+      "elapsed_ns": 261289
+    }
+  ],
+  "unreached_phases": ["numpy_import", "dataset_loading", "model_initialization", "forward_and_gradient", "optimizer_execution", "checkpoint_serialization", "evaluation"],
+  "stop_reason": "minimum RAM guard",
+  "minimum_required_ram_bytes": 1342177280,
+  "observed_available_ram_bytes": 1333682176,
+  "automatic_retry": false,
+  "optimizer_updates": 0
+}

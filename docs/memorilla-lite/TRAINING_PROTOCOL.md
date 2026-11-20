@@ -12,6 +12,8 @@ All LITE-007 runtime operations, dataset inspection, dependency checks, and regr
 
 The inherited upstream test suite may require `transformers` through `tests/conftest.py` and `tests/helpers.py`; this is not a requirement of the LITE precomputed-embedding training package. Run LITE checks in explicit sequential batches with `--confcutdir=tests/lite`, record timeouts as unexecuted, and never convert collection failures into passes by silently excluding tests. Do not install the upstream dependency solely to make an Android-native LITE check appear complete.
 
+LITE-007C's native NumPy path must not import PyTorch. The scoring-head pilot may train only `score_slot_w`, `score_slot_b`, `score_mem_w`, and `score_mem_b`; all other architecture state is frozen and byte-checked. Use plain SGD before considering AdamW. A pilot that fails the RAM/RSS/time guards is a blocked run with zero updates, not a failed training result and must not be retried automatically.
+
 ## Dataset requirements
 
 - Synthetic/public evidence only until separately authorized.

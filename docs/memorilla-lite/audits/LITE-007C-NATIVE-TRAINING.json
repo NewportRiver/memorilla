@@ -1,0 +1,30 @@
+{
+  "milestone": "LITE-007C",
+  "status": "blocked_before_training",
+  "pilot_authorization": "explicitly requested in LITE-007C mission",
+  "configuration": {
+    "updates_requested": 8,
+    "learning_rate": 0.001,
+    "batch_size": 1,
+    "max_records_per_example": 32,
+    "gradient_clip_norm": 1.0,
+    "threads": 1,
+    "max_seconds": 30,
+    "minimum_available_ram_bytes": 1342177280,
+    "abort_available_ram_bytes": 1073741824,
+    "max_rss_bytes": 268435456
+  },
+  "actual": {
+    "updates": 0,
+    "initial_loss": null,
+    "final_loss": null,
+    "checkpoint": null,
+    "reason": "available RAM 1333682176 bytes was below the 1342177280-byte minimum",
+    "automatic_retry": false
+  },
+  "implementation": {
+    "trainable_parameters": ["score_slot_w", "score_slot_b", "score_mem_w", "score_mem_b"],
+    "frozen_parameters": "all other architecture tensors",
+    "optimizer": "plain NumPy SGD; no momentum or AdamW state"
+  }
+}

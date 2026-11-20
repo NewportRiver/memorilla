@@ -17,6 +17,9 @@ Completed:
 - NumPy training feasibility analysis distinguishing scoring-head adaptation from full associative-memory training;
 - Architect1 availability reconfirmed as unavailable;
 - holdout descriptor-only status and independent custody procedure.
+- native NumPy scoring-head gradient implementation and SGD pilot guard;
+- finite-difference and isolated PyTorch gradient parity verification;
+- atomic scoring-head checkpoint path and flushed phase telemetry.
 
 Not completed:
 
@@ -27,5 +30,6 @@ Not completed:
 - final holdout evaluation;
 - Android trained-checkpoint inference validation.
 - complete bounded pytest regression report; inherited Transformers dependency remains unavailable.
+- successful resource-qualified NumPy pilot with optimizer updates;
 
 No complete LITE-007 pass claim is permitted. No optimizer update, substantial training, package change, or production APEX integration occurred.

@@ -11,7 +11,9 @@ def save_model(model,path,encoder_compatibility,training_status='untrained'):
  checks={k:_sha(v) for k,v in sorted(arrays.items())}; meta={'schema_version':1,'architecture_version':model.config.architecture_version,'config':model.config.as_dict(),'parameter_count':model.parameter_count(),'weight_bytes':sum(v.nbytes for v in arrays.values()),'dtypes':{k:str(v.dtype) for k,v in arrays.items()},'shapes':{k:list(v.shape) for k,v in arrays.items()},'checksums':checks,'encoder_compatibility':encoder_compatibility,'initialization_seed':model.config.seed,'training_status':training_status,'executable_serialization':False}
  fd,tmp=tempfile.mkstemp(prefix=path.name+'.',suffix='.npz',dir=str(path.parent)); os.close(fd)
  try:
-  np.savez(tmp,**arrays); os.replace(tmp,npz); meta_path.write_text(json.dumps(meta,sort_keys=True,indent=2)+'\n')
+  np.savez(tmp,**arrays); os.replace(tmp,npz)
+  meta_tmp=meta_path.with_suffix(meta_path.suffix+'.tmp')
+  meta_tmp.write_text(json.dumps(meta,sort_keys=True,indent=2)+'\n'); os.replace(meta_tmp,meta_path)
  finally:
   if os.path.exists(tmp): os.unlink(tmp)
  return meta

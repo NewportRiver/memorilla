@@ -51,7 +51,7 @@ class NumpyAssociativeMemory:
   return q,m,mask
  def _full_block(self,slots,memory,mask,i,return_attention=False):
   p=f'b{i}.'; s=self.state; q=_linear(_ln(slots,s[p+'ln1_g'],s[p+'ln1_b']),s[p+'q_w'],s[p+'q_b']); k=_linear(memory,s[p+'k_w'],s[p+'k_b']); v=_linear(memory,s[p+'v_w'],s[p+'v_b']); h=self.config.heads; d=self.config.latent_dim//h; q=q.reshape(self.config.slots,h,d); k=k.reshape(-1,h,d); v=v.reshape(-1,h,d); logits=np.einsum('shd,nhd->shn',q,k)/np.sqrt(d); probs=np.transpose(_softmax(logits.reshape(self.config.slots*h,-1),mask).reshape(self.config.slots,h,-1),(0,1,2)); ctx=np.einsum('shn,nhd->shd',probs,v).reshape(self.config.slots,self.config.latent_dim); slots=slots+_linear(ctx,s[p+'attn_out_w'],s[p+'attn_out_b']); z=_ln(slots,s[p+'ln2_g'],s[p+'ln2_b']); slots=slots+_linear(_gelu(_linear(z,s[p+'ff1_w'],s[p+'ff1_b'])),s[p+'ff2_w'],s[p+'ff2_b']); return slots,probs.mean(axis=1) if return_attention else None
- def forward(self,query,memory,memory_mask=None,return_attention=False):
+ def forward(self,query,memory,memory_mask=None,return_attention=False,return_latent=False):
   q,m,mask=self._inputs(query,memory,memory_mask); c=self.config; s=self.state; slots=s['slots']+_linear(q,s['query_w'],s['query_b'])[None,:]
   if m.shape[0] and np.any(mask):
    wk=_linear(m,s['mem_k_w'],s['mem_k_b']); wv=_linear(m,s['mem_v_w'],s['mem_v_b']); summary=(wk[mask]+wv[mask]).mean(axis=0); slots=slots+summary[None,:]
@@ -61,7 +61,7 @@ class NumpyAssociativeMemory:
    else:
     p=f'b{i}.'; z=_ln(slots,s[p+'ln2_g'],s[p+'ln2_b']); slots=slots+_linear(_gelu(_linear(z,s[p+'ff1_w'],s[p+'ff1_b'])),s[p+'ff2_w'],s[p+'ff2_b']); a=np.zeros((c.slots,m.shape[0]),np.float32)
    if return_attention: att.append(a)
-  out=_linear(slots,s['out_w'],s['out_b']); return (out,att) if return_attention else out
+  out=_linear(slots,s['out_w'],s['out_b']); result=(out,att) if return_attention else out; return (result,slots) if return_latent else result
  def _stream_block(self,slots,chunks,i):
   p=f'b{i}.'; s=self.state; q=_linear(_ln(slots,s[p+'ln1_g'],s[p+'ln1_b']),s[p+'q_w'],s[p+'q_b']).reshape(self.config.slots,self.config.heads,-1); d=q.shape[-1]; mx=np.full((self.config.slots,self.config.heads),-np.inf,np.float32); seen=0
   for m,mask in chunks:

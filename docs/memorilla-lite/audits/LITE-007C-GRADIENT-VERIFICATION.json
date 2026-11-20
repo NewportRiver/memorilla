@@ -1,0 +1,30 @@
+{
+  "milestone": "LITE-007C",
+  "fixture": "lite007-gradient-fixture-seed-23",
+  "finite_difference": {
+    "parameter": "score_slot_w[0,0]",
+    "epsilon": 0.001,
+    "analytic": 0.0041931974701583385,
+    "finite_difference": 0.004202127456665039,
+    "absolute_error": 8.929986506700516e-06,
+    "status": "passed"
+  },
+  "pytorch_reference": {
+    "numpy_loss": 0.6547580361366272,
+    "torch_loss": 0.6547580361366272,
+    "loss_absolute_error": 0.0,
+    "max_gradient_absolute_error": 5.587935447692871e-09,
+    "status": "passed",
+    "isolated_process": true
+  },
+  "numpy_unit_tests": {
+    "command": "python -m pytest -q --confcutdir=tests/lite tests/lite/test_numpy_gradients.py",
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 0.19
+  },
+  "covered": ["multi_positive_loss", "hard_negatives", "empty_positive_set", "nonfinite_input", "determinism", "gradient_clipping", "frozen_parameter_preservation"],
+  "objective_correction": "PyTorch pairwise loss sign corrected to margin + negative - positive so positive evidence is ranked above negatives; NumPy and PyTorch now agree.",
+  "optimizer_updates": 0
+}

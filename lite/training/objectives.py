@@ -15,7 +15,7 @@ def pairwise_loss(scores,positive_mask,valid_mask,margin=0.0):
  for s,p,v in zip(scores,positive_mask,valid_mask):
   pos=s[p & v]; neg=s[(~p) & v]
   if pos.numel()==0 or neg.numel()==0: continue
-  losses.append(F.softplus(margin-neg[:,None]+pos[None,:]).mean())
+  losses.append(F.softplus(margin + neg[:,None] - pos[None,:]).mean())
  if not losses: return scores.sum()*0.0
  return torch.stack(losses).mean()
 
