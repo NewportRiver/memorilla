@@ -1,3 +1,115 @@
+# Memorilla-Lite — Android Associative Memory Research
+
+**Newport River Company** · Open Research. Innovation. Imagination.
+
+An experimental, resource-constrained adaptation of Stanford's [Memorilla](https://github.com/snap-stanford/memorilla) research, investigating trainable query-conditioned memory on Android ARM64 / Termux.
+
+**Status:** Native training demonstrated; scientific effectiveness inconclusive. Not production-ready.
+
+## Research objective
+
+Investigate whether a compact learned memory can compress evidence into a fixed number of query-conditioned latent slots, eventually providing useful conditioning to a local language model. This fork is not an official Stanford release or a reproduction of the original model's published results.
+
+## Architecture
+
+```mermaid
+flowchart TD
+ A[Authoritative evidence] --> B[Pinned MiniLM encoder]
+ B --> C[Disposable SQLite embedding bank]
+ C --> D[Eligibility and provenance checks]
+ D --> E[Eight query-conditioned memory slots]
+ E --> F[Experimental evidence ranking]
+ E -. Future research .-> G[Local decoder latent conditioning]
+```
+
+The experimental associative model contains 429,312 parameters, uses 384-dimensional input embeddings and eight memory slots. Native NumPy reverse-mode differentiation covers all 27 tensors connected to the ranking objective. The output projections remain frozen because the current objective does not consume them.
+
+## Development roadmap
+
+| Milestone | Status |
+|---|---|
+| LITE-001 Hardware assessment | Complete |
+| LITE-002 Computational runtime | Complete |
+| LITE-003 Semantic encoder | Complete |
+| LITE-004 Persistent memory bank | Complete |
+| LITE-005 Retrieval baseline | Complete, corrected audit retained |
+| LITE-006 Neural memory architecture | Complete |
+| LITE-007 Associative memory training | Engineering demonstrated; scientific acceptance pending owner review |
+| LITE-008 Latent token injection | Blocked pending review |
+| LITE-009 Resource optimization | Pending; preliminary optimization demonstrated |
+| LITE-010 Hierarchical scaling | Pending |
+| LITE-011 Cognitive evaluation | Pending |
+| LITE-012 Integration | Pending |
+
+## Measured engineering results
+
+| Measurement | Reported result |
+|---|---:|
+| Development evidence records | 14,880 |
+| Development queries | 1,200 |
+| Associative optimizer updates | 240 |
+| Direct bilinear optimizer updates | 240 |
+| Completed training episodes | 60/60 |
+| Peak associative training RSS | 119.0 MiB |
+| Maximum associative episode duration | 1.19 s |
+| LITE-007J regression baseline | 76 passing tests |
+
+Measured in the Android/Termux research environment; not a general device compatibility or endurance certification. Historical direct-model phase telemetry is missing.
+
+## Scientific findings and limitations
+
+The [scientific comparison](docs/memorilla-lite/audits/LITE-007J-SCIENTIFIC-COMPARISON.md) reports higher complete-required-evidence top-5 retrieval for the trained associative model than the trained direct bilinear control (75% versus 25% at both 64 and 128 records), while the direct model has higher reported R@1. These are synthetic development results, not independent holdout results. Metric definitions and denominators must be considered when interpreting them.
+
+The [final acceptance audit](docs/memorilla-lite/audits/LITE-007-FINAL-ACCEPTANCE.md) discovered that training repeated only eight unique examples. The experiment therefore does not establish broad generalization or associative superiority. Conventional retrieval remains the operational baseline. Decoder conditioning, independent holdout evaluation and production acceptance remain outstanding.
+
+## Getting started
+
+Clone the experimental branch:
+
+```sh
+git clone --branch feature/memorilla-lite-android --single-branch https://github.com/NewportRiver/memorilla.git
+cd memorilla
+```
+
+The tested mobile runtime uses native Termux Python, NumPy, SQLite/FTS5 and a pinned MiniLM ONNX encoder. PyTorch is used separately for reference verification, not native training. Consult the runtime and encoder audits before provisioning dependencies or downloading models; the upstream GPU installation instructions below are not the Android installation procedure.
+
+In an already provisioned environment, run the isolated LITE tests:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest tests/lite --confcutdir=tests/lite -q
+```
+
+Use bounded sequential batches if needed. Do not launch training automatically. Existing training policy requires explicit optimizer authorization, one numerical thread and computational subprocess, eight updates per episode, 30-second subprocess time limit, 1,280 MiB available RAM preflight, 1,024 MiB abort threshold, 256 MiB observed RSS ceiling and 5 GiB free storage.
+
+## Documentation
+
+- [Research background](docs/memorilla-lite/RESEARCH.md)
+- [Development plan](docs/memorilla-lite/DEVELOPMENT_PLAN.md)
+- [Architecture](docs/memorilla-lite/ARCHITECTURE.md)
+- [Neural architecture](docs/memorilla-lite/NEURAL_ARCHITECTURE.md)
+- [Training protocol](docs/memorilla-lite/TRAINING_PROTOCOL.md)
+- [Evaluation protocol](docs/memorilla-lite/EVALUATION_PROTOCOL.md)
+- [Milestones](docs/memorilla-lite/milestones/)
+- [Engineering audits and benchmarks](docs/memorilla-lite/audits/)
+- [Android runtime audit](docs/memorilla-lite/audits/LITE-002-RUNTIME.md)
+- [Encoder audit](docs/memorilla-lite/audits/LITE-003-ENCODER.md)
+- [Final training acceptance](docs/memorilla-lite/audits/LITE-007-FINAL-ACCEPTANCE.md)
+- [Latent conditioning readiness](docs/memorilla-lite/audits/LITE-008-READINESS.md)
+
+## Contributions and reproducibility
+
+Contributions should preserve evidence provenance, deterministic evaluation, resource limits and negative results. Keep generated weights, credentials, private evidence and final holdout content out of public commits. Report measured results separately from hypotheses. Do not claim upstream endorsement.
+
+## Attribution and licensing
+
+This independent research fork builds on Stanford's Memorilla project. See the [original paper](https://arxiv.org/abs/2610.21375), [research website](https://memory.stanford.edu/) and [repository license](LICENSE). External model weights and datasets may have separate licensing terms.
+
+---
+
+## Original upstream README (preserved)
+
+The following original documentation is retained for attribution and reference. Its GPU setup and benchmarks describe upstream Memorilla, not this Android fork.
+
 <h1 align="center">
   <img src="assets/gorilla.png" alt="" height="60" align="absmiddle" />
   &nbsp;Memorilla: Latent Semantic Memory for LLMs
