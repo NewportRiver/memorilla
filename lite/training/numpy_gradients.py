@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import numpy as np
+from lite.neural.numpy_model import _gelu, _softmax
 
 _TRAINABLE = ('score_slot_w', 'score_slot_b', 'score_mem_w', 'score_mem_b')
 
@@ -92,6 +93,92 @@ def scoring_head_gradients(latent, memory, state, positive_mask, valid_mask):
     if not all(np.isfinite(x).all() for x in grads.values()):
         raise FloatingPointError('non-finite scoring-head gradient')
     return loss, scores, grads
+
+
+def _ln_backward(dy, x, gamma, eps=1e-5):
+    mean = x.mean(axis=-1, keepdims=True)
+    centered = x - mean
+    inv = 1.0 / np.sqrt((centered * centered).mean(axis=-1, keepdims=True) + eps)
+    n = x.shape[-1]
+    return (gamma * inv / n) * (n * dy - dy.sum(axis=-1, keepdims=True)
+                                - centered * inv * inv * (dy * centered).sum(axis=-1, keepdims=True))
+
+
+def _gelu_backward(dy, x):
+    a = np.sqrt(2.0 / np.pi)
+    t = a * (x + 0.044715 * x ** 3)
+    return dy * (0.5 * (1.0 + np.tanh(t)) + 0.5 * x * (1.0 - np.tanh(t) ** 2) * a * (1.0 + 3.0 * 0.044715 * x ** 2))
+
+
+def _score_head_latent_gradient(latent, memory, state, positive_mask, valid_mask):
+    scores, chosen, cache = score_head_forward(latent, memory, state, valid_mask)
+    loss, dscore = pairwise_loss_and_score_gradient(scores, positive_mask, valid_mask)
+    a, b, similarities = cache
+    da = np.zeros_like(a, dtype=np.float64)
+    for i, slot in enumerate(chosen):
+        if slot < 0 or dscore[i] == 0.0:
+            continue
+        g = float(dscore[i]); av = a[slot].astype(np.float64); bv = b[i].astype(np.float64)
+        da[slot] += g * (bv - similarities[slot, i] * av)
+    raw = latent @ state['score_slot_w'] + state['score_slot_b']
+    norm = np.linalg.norm(raw, axis=1, keepdims=True)
+    draw = (da - a.astype(np.float64) * (da * a.astype(np.float64)).sum(axis=1, keepdims=True)) / norm
+    return loss, scores, (draw @ state['score_slot_w'].astype(np.float64).T).astype(np.float32)
+
+
+def memory_projection_gradients(model, query, memory, positive_mask, valid_mask):
+    """Backpropagate the ranking objective to only mem_k/mem_v initialization projections."""
+    c, s = model.config, model.state
+    query = _finite(query, 'query'); memory = _finite(memory, 'memory')
+    valid = np.asarray(valid_mask, dtype=bool)
+    if valid.shape != (memory.shape[0],) or not np.any(valid):
+        zeros = {k: np.zeros_like(s[k]) for k in ('mem_k_w', 'mem_k_b', 'mem_v_w', 'mem_v_b')}
+        return np.float32(0.0), np.full(memory.shape[0], -np.inf, np.float32), zeros, {'latent': np.zeros((c.slots, c.latent_dim), np.float32)}
+    qlatent = query @ s['query_w'] + s['query_b']
+    mk = memory @ s['mem_k_w'] + s['mem_k_b']; mv = memory @ s['mem_v_w'] + s['mem_v_b']
+    summary = (mk[valid] + mv[valid]).mean(axis=0)
+    slots = s['slots'] + qlatent[None, :] + summary[None, :]
+    caches = []
+    h, d = c.heads, c.latent_dim // c.heads
+    for i in range(c.blocks):
+        p = f'b{i}.'
+        ln1 = (slots - slots.mean(axis=-1, keepdims=True)) / np.sqrt(((slots - slots.mean(axis=-1, keepdims=True)) ** 2).mean(axis=-1, keepdims=True) + 1e-5) * s[p+'ln1_g'] + s[p+'ln1_b']
+        q = (ln1 @ s[p+'q_w'] + s[p+'q_b']).reshape(c.slots, h, d)
+        k = (memory @ s[p+'k_w'] + s[p+'k_b']).reshape(-1, h, d)
+        v = (memory @ s[p+'v_w'] + s[p+'v_b']).reshape(-1, h, d)
+        logits = np.einsum('shd,nhd->shn', q, k) / np.sqrt(d)
+        probs = np.zeros_like(logits); probs_flat = _softmax(logits.reshape(c.slots * h, -1), valid)
+        probs[:] = probs_flat.reshape(c.slots, h, -1)
+        ctx = np.einsum('shn,nhd->shd', probs, v).reshape(c.slots, c.latent_dim)
+        slots_attn = slots + ctx @ s[p+'attn_out_w'] + s[p+'attn_out_b']
+        centered = slots_attn - slots_attn.mean(axis=-1, keepdims=True)
+        ln2 = centered / np.sqrt((centered * centered).mean(axis=-1, keepdims=True) + 1e-5) * s[p+'ln2_g'] + s[p+'ln2_b']
+        ff1 = ln2 @ s[p+'ff1_w'] + s[p+'ff1_b']; ff = _gelu(ff1)
+        slots_out = slots_attn + ff @ s[p+'ff2_w'] + s[p+'ff2_b']
+        caches.append((slots, ln1, q, k, v, probs, slots_attn, ln2, ff1))
+        slots = slots_out
+    loss, scores, dslots = _score_head_latent_gradient(slots, memory, s, positive_mask, valid)
+    for i in range(c.blocks - 1, -1, -1):
+        p = f'b{i}.'; slots_in, ln1, q, k, v, probs, slots_attn, ln2, ff1 = caches[i]
+        dslots_attn = dslots.copy()
+        dff1 = _gelu_backward(dslots @ s[p+'ff2_w'].T, ff1)
+        dln2 = _ln_backward(dff1 @ s[p+'ff1_w'].T, slots_attn, s[p+'ln2_g'])
+        dslots_attn += dln2
+        dctx = dslots_attn @ s[p+'attn_out_w'].T
+        dctx = dctx.reshape(c.slots, h, d)
+        dprobs = np.einsum('shd,nhd->shn', dctx, v)
+        dv = np.einsum('shn,shd->nhd', probs, dctx)
+        dlogits = probs * (dprobs - (dprobs * probs).sum(axis=-1, keepdims=True))
+        dq = np.einsum('shn,nhd->shd', dlogits, k) / np.sqrt(d)
+        dln1 = dq.reshape(c.slots, c.latent_dim) @ s[p+'q_w'].T
+        dslots = dslots_attn + _ln_backward(dln1, slots_in, s[p+'ln1_g'])
+    dsummary = dslots.sum(axis=0) / float(valid.sum())
+    gk = np.zeros((memory.shape[0], c.latent_dim), dtype=np.float32); gv = np.zeros_like(gk)
+    gk[valid] = dsummary; gv[valid] = dsummary
+    grads = {'mem_k_w': (memory.astype(np.float64).T @ gk.astype(np.float64)).astype(np.float32), 'mem_k_b': gk.sum(axis=0).astype(np.float32), 'mem_v_w': (memory.astype(np.float64).T @ gv.astype(np.float64)).astype(np.float32), 'mem_v_b': gv.sum(axis=0).astype(np.float32)}
+    if not all(np.isfinite(x).all() for x in grads.values()):
+        raise FloatingPointError('non-finite memory projection gradient')
+    return loss, scores, grads, {'latent': slots.copy(), 'dslots_initial': dslots.copy(), 'attention': [x[5].mean(axis=1) for x in caches]}
 
 
 def clip_gradients(grads, max_norm):

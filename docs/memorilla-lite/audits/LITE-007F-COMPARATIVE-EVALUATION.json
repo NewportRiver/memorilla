@@ -1,0 +1,18 @@
+{
+  "milestone": "LITE-007F",
+  "partition": "validation",
+  "artifact": "~/.cache/memorilla-lite/LITE-007F/validation.npz",
+  "examples": 240,
+  "answerable_examples": 175,
+  "abstention_examples": 65,
+  "controls": {
+    "A_untrained_original": {"mean_ranking_loss": 0.7003154887471881, "recall_at_1": 0.3657142857142857, "recall_at_3": 0.8342857142857143, "recall_at_5": 1.0, "mrr": 0.6153333333333334, "false_abstention_top5": 0},
+    "B_scoring_head_trained": {"mean_ranking_loss": 0.7001796419279916, "recall_at_1": 0.3657142857142857, "recall_at_3": 0.8342857142857143, "recall_at_5": 1.0, "mrr": 0.6153333333333334, "false_abstention_top5": 0},
+    "C_memory_projection_trained": {"mean_ranking_loss": 0.7002519631385803, "recall_at_1": 0.3657142857142857, "recall_at_3": 0.8342857142857143, "recall_at_5": 1.0, "mrr": 0.6143809523809525, "false_abstention_top5": 0},
+    "D_both_trained": {"mean_ranking_loss": 0.7001167219025748, "recall_at_1": 0.36, "recall_at_3": 0.8342857142857143, "recall_at_5": 1.0, "mrr": 0.6124761904761905, "false_abstention_top5": 0},
+    "E_direct_query_evidence": {"mean_ranking_loss": null, "recall_at_1": 0.64, "recall_at_3": 0.9371428571428572, "recall_at_5": 1.0, "mrr": 0.7792380952380952, "false_abstention_top5": 0}
+  },
+  "paired_evaluation": true,
+  "holdout_accessed": false,
+  "interpretation": "Direct cosine is stronger on this synthetic validation fixture; associative projection training does not establish generalization improvement."
+}

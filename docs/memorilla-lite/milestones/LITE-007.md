@@ -25,6 +25,9 @@ Completed:
 - deterministic train-only prepared dataset artifact with source/encoder hashes and lazy indexed retrieval;
 - loader equivalence and integrity verification;
 - first successful bounded native scoring-head pilot with eight SGD updates and frozen-parameter verification.
+- full-path NumPy gradients for `mem_k_*` and `mem_v_*` with finite-difference and PyTorch parity verification;
+- first successful bounded projection-only pilot with eight updates;
+- paired development controls and representation-change analysis.
 
 Not completed:
 
@@ -37,5 +40,6 @@ Not completed:
 - complete bounded pytest regression report; inherited Transformers dependency remains unavailable.
 - memory-projection training and associative-memory effectiveness evaluation;
 - holdout release/evaluation and Android trained-checkpoint inference acceptance;
+- complete associative-memory training or any additional neural-component updates;
 
-No complete LITE-007 pass claim is permitted. Scoring-head-only adaptation succeeded; no memory-projection update or production APEX integration occurred.
+No complete LITE-007 pass claim is permitted. Scoring-head and projection-only adaptation succeeded; no additional neural-component update or production APEX integration occurred.

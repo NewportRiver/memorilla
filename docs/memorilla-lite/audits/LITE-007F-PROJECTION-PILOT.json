@@ -1,0 +1,19 @@
+{
+  "milestone": "LITE-007F",
+  "status": "passed_pilot",
+  "updates": 8,
+  "trainable_parameters": ["mem_k_w", "mem_k_b", "mem_v_w", "mem_v_b"],
+  "frozen_parameters": ["slots", "query_w", "query_b", "out_w", "out_b", "score_slot_w", "score_slot_b", "score_mem_w", "score_mem_b", "b0.*"],
+  "diagnostic_query_id": "scenario-001-q0",
+  "initial_loss": 0.6864654421806335,
+  "final_loss": 0.6862652897834778,
+  "loss_delta": -0.00020015239715576172,
+  "initial_weights_checksum": "2ad7d0171a5f0448a774e112bbcea34878fc6351ecbe61023c8c7bb7e3e8f320",
+  "final_weights_checksum": "63290d20aafe2f89e99818dfb48a9b22662f2b3d532fa9b22ea29674063daa07",
+  "frozen_parameters_verified": true,
+  "peak_rss_bytes": 69693440,
+  "duration_seconds": 0.538305117,
+  "stop_reason": "max_updates",
+  "eligible_examples": 715,
+  "optimization_interpretation": "controlled diagnostic loss improved; no cognition or generalization claim"
+}

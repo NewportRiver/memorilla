@@ -1,0 +1,14 @@
+{
+  "milestone": "LITE-007F",
+  "diagnostic_query_id": "scenario-001-q0",
+  "latent_l2_delta": 0.03267541626606615,
+  "latent_relative_delta": 0.001485759712655861,
+  "slot_cosine_mean": 0.9999988976767781,
+  "initial_slot_mean_pairwise_cosine_abs": 0.5110789175339812,
+  "final_slot_mean_pairwise_cosine_abs": 0.5110883155432282,
+  "attention_l1_delta": 4.531714183678149e-06,
+  "attention_entropy_initial": 1.3861939596431996,
+  "attention_entropy_final": 1.3861938138588914,
+  "attribution": "only mem_k_* and mem_v_* changed; all other tensors were byte-verified frozen",
+  "interpretation": "small internal representation change observed; not evidence of improved cognition"
+}

@@ -1,0 +1,23 @@
+{
+  "milestone": "LITE-007F",
+  "preserved_scoring_head_checkpoint": {
+    "path": "~/.cache/memorilla-lite/LITE-007E-NUMPY-PILOT-FINAL/lite007-numpy-score-head",
+    "initial_loss": 0.6864654421806335,
+    "final_loss": 0.6860795617103577,
+    "updates": 8,
+    "initial_weights_checksum": "2ad7d0171a5f0448a774e112bbcea34878fc6351ecbe61023c8c7bb7e3e8f320",
+    "final_weights_checksum": "9e2e71051f2119b1a807f4988553ad8960abc99a695a10df21e35c75e03bbfbf",
+    "reload": "passed"
+  },
+  "projection_checkpoint": {
+    "path": "~/.cache/memorilla-lite/LITE-007F-NUMPY-PILOT/lite007-numpy-memory-projection",
+    "status": "passed",
+    "reload_inference_equivalence": true,
+    "non_executable": true,
+    "atomic_write": true,
+    "corruption_rejection": "passed by existing serialization integrity tests",
+    "encoder_compatibility": "passed",
+    "trainable_parameter_authorization": ["mem_k_w", "mem_k_b", "mem_v_w", "mem_v_b"]
+  },
+  "invalidated_initial_pilot_preserved": "LITE-007E report; no weights published"
+}

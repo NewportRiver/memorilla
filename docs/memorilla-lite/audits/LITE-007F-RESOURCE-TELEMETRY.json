@@ -1,0 +1,18 @@
+{
+  "milestone": "LITE-007F",
+  "pilot": {
+    "duration_seconds": 0.538305117,
+    "peak_rss_bytes": 69693440,
+    "initialization_rss_bytes": 38006784,
+    "minimum_available_ram_bytes": 1412775936,
+    "wall_limit_seconds": 30,
+    "rss_limit_bytes": 268435456,
+    "threads": 1,
+    "subprocesses": 1,
+    "memory_projection_gradients": "bounded reverse-mode intermediates; no full Jacobian",
+    "torch_imported_by_native_subprocess": false,
+    "onnx_imported_by_native_subprocess": false
+  },
+  "guards": {"ram": "passed", "abort_ram": "passed", "rss": "passed", "wall": "passed", "storage": "passed"},
+  "phase_telemetry": "~/.cache/memorilla-lite/LITE-007F-NUMPY-PILOT/phases.jsonl"
+}

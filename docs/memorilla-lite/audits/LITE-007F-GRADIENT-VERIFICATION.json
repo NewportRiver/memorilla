@@ -1,0 +1,23 @@
+{
+  "milestone": "LITE-007F",
+  "tolerance": {"finite_difference_max_absolute": 0.001, "pytorch_max_absolute": 1e-5},
+  "trainable_parameters": ["mem_k_w", "mem_k_b", "mem_v_w", "mem_v_b"],
+  "finite_difference": {
+    "seeds": [3, 7, 11],
+    "record_counts": [2, 4, 6],
+    "parameters_per_case": ["mem_k_w", "mem_k_b", "mem_v_w", "mem_v_b"],
+    "max_absolute_error": 3.2231095246970654e-05,
+    "max_relative_error": 1.0,
+    "status": "passed"
+  },
+  "pytorch_reference": {
+    "loss_absolute_error": 0.0,
+    "max_gradient_absolute_error": 5.005858838558197e-09,
+    "per_parameter": {"mem_k_w": 5.005858838558197e-09, "mem_k_b": 3.725290298461914e-09, "mem_v_w": 5.005858838558197e-09, "mem_v_b": 3.725290298461914e-09},
+    "status": "passed"
+  },
+  "descent_fixture": "passed",
+  "masked_padded_records": "passed",
+  "empty_eligibility": "fail_closed_zero_gradient",
+  "nonfinite_rejection": "passed"
+}

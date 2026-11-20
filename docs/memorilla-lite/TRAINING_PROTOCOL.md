@@ -18,6 +18,8 @@ The corrected ranking objective is `softplus(margin + negative_score - positive_
 
 The native pilot uses a deterministic, content-addressed, train-only prepared artifact when eager development loading cannot meet the wall limit. The artifact must include source dataset/embedding/encoder hashes, scenario and partition identities, eligibility masks, and atomic metadata. Training retrieves one example at a time and must preserve the original positive-and-negative usable-example filter; abstention examples are not optimization examples.
 
+LITE-007F projection adaptation may update only `mem_k_w`, `mem_k_b`, `mem_v_w`, and `mem_v_b` after finite-difference and isolated autograd parity checks. The score head and all other tensors remain frozen. Projection-only loss reduction is an optimization observation, not a cognition or generalization claim; paired untrained, scoring-head, projection, combined, and direct retrieval controls are required before interpretation.
+
 ## Dataset requirements
 
 - Synthetic/public evidence only until separately authorized.

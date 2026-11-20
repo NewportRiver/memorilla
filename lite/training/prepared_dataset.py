@@ -23,7 +23,7 @@ def _marker(path, phase, **extra):
         os.fsync(handle.fileno())
 
 
-def prepare_training_artifact(source, output, progress_path=None):
+def prepare_training_artifact(source, output, progress_path=None, partition='train'):
     """Prepare only the verified train partition into a deterministic indexed artifact."""
     import numpy as np
 
@@ -51,9 +51,9 @@ def prepare_training_artifact(source, output, progress_path=None):
         query_index = {value: i for i, value in enumerate(query_ids)}
         records = {row['evidence_id']: row for row in data['records']}
         scenarios = {row['scenario_id']: row for row in data['scenarios']}
-        train_queries = [row for row in data['queries'] if scenarios[row['scenario_id']]['split'] == 'train']
-        max_records = max(len(scenarios[row['scenario_id']]['record_ids']) for row in train_queries)
-        n = len(train_queries)
+        selected_queries = [row for row in data['queries'] if scenarios[row['scenario_id']]['split'] == partition]
+        max_records = max(len(scenarios[row['scenario_id']]['record_ids']) for row in selected_queries)
+        n = len(selected_queries)
         q_vectors = np.empty((n, query_embeddings.shape[1]), dtype=np.float32)
         memories = np.zeros((n, max_records, record_embeddings.shape[1]), dtype=np.float32)
         valid = np.zeros((n, max_records), dtype=bool)
@@ -62,7 +62,7 @@ def prepare_training_artifact(source, output, progress_path=None):
         sids = np.empty(n, dtype='U64')
         eids = np.empty((n, max_records), dtype='U96')
         categories = np.empty(n, dtype='U64')
-        for i, query in enumerate(train_queries):
+        for i, query in enumerate(selected_queries):
             scenario = scenarios[query['scenario_id']]
             eligible = []
             required = set(query['required_evidence_ids'])
@@ -107,7 +107,7 @@ def prepare_training_artifact(source, output, progress_path=None):
     metadata = {
         'schema_version': 1,
         'dataset_version': data['dataset_version'],
-        'partition': 'train',
+        'partition': partition,
         'query_count': n,
         'max_records': max_records,
         'source_manifest_sha256': _sha256(manifest_path),
@@ -126,12 +126,13 @@ def prepare_training_artifact(source, output, progress_path=None):
 
 
 class PreparedTrainingSet:
-    def __init__(self, artifact):
+    def __init__(self, artifact, allow_validation=False):
         import numpy as np
 
         self.path = Path(artifact)
         self.metadata = json.loads(self.path.with_suffix('.json').read_text(encoding='utf-8'))
-        if self.metadata.get('holdout_included') or self.metadata.get('partition') != 'train':
+        allowed = ('train', 'validation') if allow_validation else ('train',)
+        if self.metadata.get('holdout_included') or self.metadata.get('partition') not in allowed:
             raise ValueError('prepared artifact is not an authorized training partition')
         if _sha256(self.path) != self.metadata.get('content_sha256'):
             raise ValueError('prepared artifact checksum mismatch')
