@@ -1,0 +1,13 @@
+{
+  "milestone": "LITE-007G",
+  "architecture_version": "lite006-associative-v1",
+  "parameter_count": 429312,
+  "verified_gradient_groups": ["score_head", "memory_summary_projections"],
+  "unsupported_connected_groups": ["learned_slots", "query_conditioning", "attention_query", "attention_key_value", "attention_output", "layer_normalization", "feed_forward"],
+  "disconnected_groups": ["out_w", "out_b"],
+  "finite_difference_tolerance": 0.001,
+  "pytorch_tolerance": 0.00001,
+  "latest_verified_gradient_errors": {"memory_projection_max_finite_difference_abs": 3.2231095246970654e-05, "memory_projection_max_pytorch_abs": 5.005858838558197e-09},
+  "optimizer_updates_in_007G": 0,
+  "status": "inventory_and_staged_verification_complete"
+}

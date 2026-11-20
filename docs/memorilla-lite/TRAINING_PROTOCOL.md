@@ -20,6 +20,8 @@ The native pilot uses a deterministic, content-addressed, train-only prepared ar
 
 LITE-007F projection adaptation may update only `mem_k_w`, `mem_k_b`, `mem_v_w`, and `mem_v_b` after finite-difference and isolated autograd parity checks. The score head and all other tensors remain frozen. Projection-only loss reduction is an optimization observation, not a cognition or generalization claim; paired untrained, scoring-head, projection, combined, and direct retrieval controls are required before interpretation.
 
+LITE-007G adds no optimizer episode. Future episodes must use a persistent identity-bound global authorization budget across fresh subprocesses, atomic checkpoint metadata, deterministic ordering, and fail-closed recovery. Collection levels above 32 records are evaluation-only until separately authorized.
+
 ## Dataset requirements
 
 - Synthetic/public evidence only until separately authorized.

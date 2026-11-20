@@ -76,6 +76,8 @@ The first verified native learning path keeps the encoder, memory slots, query-c
 
 The next bounded associative-memory stage trains only the memory-summary projections `mem_k_*` and `mem_v_*`. Their gradients pass through the frozen slot/attention/FFN stack and corrected evidence-ranking head. No additional neural component is authorized until this stage is independently evaluated against untrained, scoring-head-only, combined, and direct retrieval controls.
 
+LITE-007G inventories all 29 tensors. Learned slots, query conditioning, attention projections, normalization parameters, and feed-forward parameters are connected to the ranking path but do not yet have verified native parameter gradients. `out_w` and `out_b` are disconnected because the present ranking objective consumes latent slots before the output projection; they require an output-space objective or decoder contract. This is an explicit staged limitation, not an implied full-training capability.
+
 ## Training objective preparation
 
 The primary proposed objective is multi-positive pairwise logistic ranking: each authoritative positive evidence ID is compared against valid negatives. Optional terms are hard-negative weighting, multi-evidence coverage, slot diversity regularization, and evidence-selection abstention. Labels must resolve to authoritative evidence IDs and may not originate from future, unauthorized, or sealed holdout records.

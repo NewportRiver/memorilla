@@ -1,0 +1,13 @@
+{
+  "milestone": "LITE-007G",
+  "status": "specification_only",
+  "source_dataset_version": "lite007-dev-v1",
+  "source_dataset_sha256": "db2f78a87885718629dc12e146001f4188dc8133b03869b9da4500b813c5f28d",
+  "source_embeddings_sha256": "ee90683bfef5bafdebe005647c513dd319596f288edb6a0492ff4060fbac3746",
+  "encoder_contract": {"repo":"sentence-transformers/all-MiniLM-L6-v2","revision":"1110a243fdf4706b3f48f1d95db1a4f5529b4d41","sha256":"4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474","dimension":384,"contract":"attention-mask-mean-l2-v1"},
+  "levels": [{"level":1,"records":8,"training":"allowed only with separate authorization","evaluation":"allowed"},{"level":2,"records":16,"training":"allowed only with separate authorization","evaluation":"allowed"},{"level":3,"records":32,"training":"current maximum; separate authorization required","evaluation":"allowed"},{"level":4,"records":64,"training":"not authorized","evaluation":"evaluation only"},{"level":5,"records":128,"training":"not authorized","evaluation":"evaluation only"}],
+  "scenario_families": ["direct_fact","cross_record_relationship","multi_support","conflict_correction_supersession","multi_step","hard_negative","insufficient_evidence","malicious_inert_content","temporal","cross_document","failed_approach_lessons"],
+  "holdout_included": false,
+  "near_duplicate_scan_required": true,
+  "answer_leakage_scan_required": true
+}

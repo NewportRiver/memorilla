@@ -1,0 +1,10 @@
+{
+  "milestone": "LITE-007G",
+  "optimizer_updates": 0,
+  "training_episode_executed": false,
+  "reason": "mission explicitly required orchestration preparation and forbade sustained training; no separate parameter-subset authorization was consumed",
+  "resource_limits_preserved": {"minimum_ram_bytes":1342177280,"abort_ram_bytes":1073741824,"maximum_rss_bytes":268435456,"target_rss_bytes":134217728,"maximum_wall_seconds":30,"minimum_storage_bytes":5368709120,"maximum_threads":1,"maximum_subprocesses":1,"maximum_records_per_example":32},
+  "orchestration_test_resource": "temporary JSON budget only; no model initialized",
+  "automatic_retry": false,
+  "torch_and_onnx_coinitialization": false
+}
