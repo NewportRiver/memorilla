@@ -15,6 +15,7 @@ from .numpy_gradients import associative_gradients, clip_gradients
 from .numpy_optimizer import sgd_step, snapshot_frozen, verify_frozen
 from .orchestration import EpisodeBudget
 from .prepared_dataset import PreparedTrainingSet
+from .sample_scheduler import PersistentSampleScheduler
 from .numpy_telemetry import available_ram_bytes, rss_bytes
 
 
@@ -30,7 +31,7 @@ def run_authorized_episode(prepared_artifact, output_dir, budget_path, checkpoin
                            subset=None, authorized=False, authorization_total_updates=None,
                            min_ram=1280 * 1024**2, abort_ram=1024 * 1024**2,
                            max_rss=256 * 1024**2, max_seconds=30.0,
-                           initial_checkpoint=None):
+                           initial_checkpoint=None, scheduler_path=None, scheduler_seed=0):
     if not authorized:
         raise PermissionError('explicit episode authorization required')
     if requested_updates > 8:
@@ -61,6 +62,8 @@ def run_authorized_episode(prepared_artifact, output_dir, budget_path, checkpoin
         subset = tuple(name for name in model.state if name not in {'out_w', 'out_b'})
     frozen = snapshot_frozen(model.state, subset)
     usable = prepared.eligible_indices()
+    scheduler = PersistentSampleScheduler(scheduler_path, dataset_identity, usable, scheduler_seed) if scheduler_path is not None else None
+    episode_indices = scheduler.reserve(requested_updates, episode_id) if scheduler is not None else [usable[position % len(usable)] for position in range(requested_updates)]
     rows = []
     try:
         for position in range(requested_updates):
@@ -72,7 +75,7 @@ def run_authorized_episode(prepared_artifact, output_dir, budget_path, checkpoin
             if rss_bytes() > max_rss:
                 raise MemoryError('episode RSS guard exceeded')
             phase('update', 'start')
-            ex = prepared.get(usable[position % len(usable)])
+            ex = prepared.get(episode_indices[position])
             mem = ex['memory_embeddings'][:max_records]; pos = ex['positive_mask'][:max_records]; valid = ex['valid_mask'][:max_records]
             phase('forward_backward', 'start'); loss, _, grads, cache = associative_gradients(model, ex['query_embedding'], mem, pos, valid); phase('forward_backward', 'end')
             selected = {name: grads[name] for name in subset if name in grads}

@@ -1,0 +1,9 @@
+{
+  "milestone":"LITE-007K",
+  "status":"corrective_preparation_only_no_training_authorized",
+  "preserves":"LITE-007J checkpoints, historical results, conventional baseline, lite006-associative-v1",
+  "training_updates_authorized":0,
+  "corrections":{"persistent_sample_scheduler":"required; atomic reservation cursor; separate state per model; identical order digest","unique_exposure":"must cover all declared eligible examples before reuse; abort if exposure ledger disagrees","metrics":"use lite.training.evaluation_metrics with stable mergesort ranking and explicit answerable denominators","direct_initialization":"explicit checkpoint required; corrected preparation uses provenance-tagged zero initialization unless owner changes it","independent_corpus":"benchmarks/lite/fixtures/lite007k-independent","telemetry":"associative phase telemetry and direct runner telemetry required for every future episode"},
+  "independent_corpus":{"dataset_sha256":"4d8f2578953682f0045ee97038eb092f45638c1b90b15b94e4af215edcddb0d9","manifest_sha256":"b607fa7f880e671a54a55c590d78eb0dbb55dcd7002c2d41c95cf18f2ef21886","scenarios":90,"queries":360,"records":1680,"collection_sizes":[8,16,32],"holdout_included":false},
+  "next_gate":"owner review of corrective preparation before any optimizer authorization"
+}

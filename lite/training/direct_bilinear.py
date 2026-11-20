@@ -4,6 +4,7 @@ from pathlib import Path
 import numpy as np
 from lite.training.prepared_dataset import PreparedTrainingSet
 from lite.training.orchestration import EpisodeBudget
+from lite.training.sample_scheduler import PersistentSampleScheduler
 
 def _sha(a): return hashlib.sha256(np.ascontiguousarray(a).tobytes()).hexdigest()
 def save(path,W,meta):
@@ -19,6 +20,11 @@ def load(path):
  if list(W.shape)!=m['shape'] or _sha(W)!=m['sha256'] or not np.isfinite(W).all(): raise ValueError('direct checkpoint integrity failure')
  return W,m
 
+def create_initial_checkpoint(path, dimension=384, mode='zeros', seed=None):
+ if mode!='zeros': raise ValueError('only explicit zero initialization is currently supported')
+ W=np.zeros((dimension,dimension),np.float32)
+ return save(path,W,{'initialization_mode':mode,'initialization_seed':seed,'provenance':'LITE-007K-corrected-preparation'})
+
 def inference_telemetry(prepared_path, checkpoint_path, examples=8):
  ds=PreparedTrainingSet(prepared_path, allow_validation=True); W,_=load(checkpoint_path); start=time.perf_counter(); rss0=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss; count=0
  try:
@@ -27,13 +33,14 @@ def inference_telemetry(prepared_path, checkpoint_path, examples=8):
  finally: ds.close()
  rss1=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
  return {'operation':'direct_bilinear_inference_probe','examples':count,'wall_seconds':time.perf_counter()-start,'ru_maxrss_kib':rss1,'ru_maxrss_delta_kib':max(0,rss1-rss0),'threads':1,'computational_subprocesses':1}
-def run_episode(prepared_path,out,budget_path,identity,init=None,requested=8,total=240):
- out=Path(out); ds=PreparedTrainingSet(prepared_path); ident=ds.metadata['content_sha256']; b=EpisodeBudget(budget_path,total,ident,identity); eid=out.name; b.begin_episode(eid,requested); W=load(init)[0] if init else np.zeros((384,384),np.float32); rows=[]
+def run_episode(prepared_path,out,budget_path,identity,init=None,requested=8,total=240,scheduler_path=None,scheduler_seed=0):
+ out=Path(out); ds=PreparedTrainingSet(prepared_path); ident=ds.metadata['content_sha256']; b=EpisodeBudget(budget_path,total,ident,identity); eid=out.name; b.begin_episode(eid,requested)
+ if init is None: raise ValueError('explicit direct initialization checkpoint required')
+ W,init_meta=load(init); scheduler=PersistentSampleScheduler(scheduler_path,ident,ds.eligible_indices(),scheduler_seed) if scheduler_path is not None else None; usable=scheduler.reserve(requested,eid) if scheduler is not None else ds.eligible_indices()[:requested]; rows=[]
  try:
-  usable=ds.eligible_indices()
   for pos in range(requested):
    ex=ds.get(usable[pos])
    q=ex['query_embedding']; mem=ex['memory_embeddings']; valid=ex['valid_mask']; positive=ex['positive_mask']; pi=int(np.flatnonzero(positive)[0]); ni=int(np.flatnonzero(valid & ~positive)[0]); ps=float(q@W@mem[pi]); ns=float(q@W@mem[ni]); z=np.float32(0.1+ns-ps); loss=float(np.logaddexp(0,z)); coeff=np.float32(1/(1+np.exp(-float(z)))); grad=coeff*(np.outer(q,mem[ni])-np.outer(q,mem[pi])); norm=float(np.linalg.norm(grad)); scale=min(1.0,1.0/max(norm,1e-12)); grad=(grad*scale).astype(np.float32); b.record_update(eid); W=(W-np.float32(.001)*grad).astype(np.float32); save(out/'checkpoint',W,{'dataset_identity':ident,'experiment_identity':identity,'training_status':'direct_bilinear_sgd'}); rows.append({'position':pos,'query_id':ex['query_id'],'loss':loss,'gradient_norm':norm,'clip_scale':scale,'checkpoint_sha256':_sha(W)})
  except BaseException:
   b.finish_episode(eid,'interrupted'); ds.close(); raise
- b.finish_episode(eid,'completed'); ds.close(); result={'episode':eid,'updates':len(rows),'rows':rows,'checkpoint':str(out/'checkpoint'),'final_checksum':_sha(W),'parameter_count':int(W.size),'dataset_identity':ident}; (out/'run.json.tmp').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n'); os.replace(out/'run.json.tmp',out/'run.json'); return result
+ b.finish_episode(eid,'completed'); ds.close(); result={'episode':eid,'updates':len(rows),'rows':rows,'checkpoint':str(out/'checkpoint'),'final_checksum':_sha(W),'parameter_count':int(W.size),'dataset_identity':ident,'initialization':init_meta}; (out/'run.json.tmp').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n'); os.replace(out/'run.json.tmp',out/'run.json'); return result

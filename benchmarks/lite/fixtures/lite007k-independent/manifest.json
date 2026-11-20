@@ -1,0 +1,14 @@
+{
+  "collection_sizes": [
+    8,
+    16,
+    32
+  ],
+  "dataset_version": "lite007k-independent-dev-eval-v1",
+  "holdout_included": false,
+  "purpose": "independent development-evaluation only; no final holdout",
+  "query_count": 360,
+  "record_count": 1680,
+  "scenario_count": 90,
+  "seed": 20261121
+}
