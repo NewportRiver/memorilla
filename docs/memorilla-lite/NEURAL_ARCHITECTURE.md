@@ -1,6 +1,6 @@
 # LITE-006 Neural Architecture
 
-Status: bounded architecture implementation and mathematical validation complete. No optimizer update, epoch, checkpoint selection, or full neural training was performed.
+Status: bounded architecture implementation and mathematical validation complete. No optimizer update, epoch, checkpoint selection, or full neural training was performed in LITE-006. LITE-007 separately wires the previously unused top-level memory projections into masked memory-summary slot initialization without changing the 429,312-parameter target.
 
 ## Architectural target
 

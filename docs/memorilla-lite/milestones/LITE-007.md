@@ -1,31 +1,25 @@
-# LITE-007 — Memory module training
+# LITE-007 — Controlled Associative Memory Training
 
-## Objective
-Train the compact module on synthetic and authorized mission-disjoint data.
+Status: partial completion; Gates A and B passed, Gate D partial, Gates C/E/F/G blocked or incomplete.
 
-## Scientific rationale
-Upstream checkpoint dimensions cannot be reused; new endpoint mapping needs new training.
+Completed:
 
-## Dependencies
-LITE-006; owner authorization.
+- corrected Stage-A abstention and fallback audit;
+- independent scenario-partitioned synthetic development corpus;
+- pinned MiniLM embedding compatibility and precomputation;
+- holdout custody audit;
+- bounded training package, objective, telemetry, checkpoint, export, and evaluation scaffolding;
+- repaired disconnected top-level memory projections;
+- independent gradient audit;
+- Android eight-update feasibility attempt, stopped before optimizer update by the RAM guard.
 
-## Implementation steps
-Use synthetic associative tasks, optional bounded distillation, then APEX-format fixtures; maintain provenance.
+Not completed:
 
-## Tests
-Split leakage, checkpoint hash, reproducibility, loss/metric and rollback tests.
+- sustained Architect1 training;
+- trained-memory effectiveness comparison;
+- trained direct-scoring control execution;
+- checkpoint selection;
+- final holdout evaluation;
+- Android trained-checkpoint inference validation.
 
-## Acceptance criteria
-Training artifact reproducible and no holdout/private leakage.
-
-## Resource limits
-No cloud expense; bounded Architect1 budget; no production APEX.
-
-## Rollback
-Delete checkpoints and reset isolated run.
-
-## Completion reporting
-Report data/license manifest, metrics, costs, and limitations.
-
-## Status
-Not started. Owner authorization required before execution.
+No complete LITE-007 pass claim is permitted. No production APEX integration occurred.

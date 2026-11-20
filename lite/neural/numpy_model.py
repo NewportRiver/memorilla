@@ -53,6 +53,8 @@ class NumpyAssociativeMemory:
   p=f'b{i}.'; s=self.state; q=_linear(_ln(slots,s[p+'ln1_g'],s[p+'ln1_b']),s[p+'q_w'],s[p+'q_b']); k=_linear(memory,s[p+'k_w'],s[p+'k_b']); v=_linear(memory,s[p+'v_w'],s[p+'v_b']); h=self.config.heads; d=self.config.latent_dim//h; q=q.reshape(self.config.slots,h,d); k=k.reshape(-1,h,d); v=v.reshape(-1,h,d); logits=np.einsum('shd,nhd->shn',q,k)/np.sqrt(d); probs=np.transpose(_softmax(logits.reshape(self.config.slots*h,-1),mask).reshape(self.config.slots,h,-1),(0,1,2)); ctx=np.einsum('shn,nhd->shd',probs,v).reshape(self.config.slots,self.config.latent_dim); slots=slots+_linear(ctx,s[p+'attn_out_w'],s[p+'attn_out_b']); z=_ln(slots,s[p+'ln2_g'],s[p+'ln2_b']); slots=slots+_linear(_gelu(_linear(z,s[p+'ff1_w'],s[p+'ff1_b'])),s[p+'ff2_w'],s[p+'ff2_b']); return slots,probs.mean(axis=1) if return_attention else None
  def forward(self,query,memory,memory_mask=None,return_attention=False):
   q,m,mask=self._inputs(query,memory,memory_mask); c=self.config; s=self.state; slots=s['slots']+_linear(q,s['query_w'],s['query_b'])[None,:]
+  if m.shape[0] and np.any(mask):
+   wk=_linear(m,s['mem_k_w'],s['mem_k_b']); wv=_linear(m,s['mem_v_w'],s['mem_v_b']); summary=(wk[mask]+wv[mask]).mean(axis=0); slots=slots+summary[None,:]
   att=[]
   for i in range(c.blocks):
    if np.any(mask): slots,a=self._full_block(slots,m,mask,i,return_attention); 
@@ -72,5 +74,11 @@ class NumpyAssociativeMemory:
  def forward_stream(self,query,chunks):
   c=self.config; q=_check(query,(c.input_dim,),'query'); s=self.state; slots=s['slots']+_linear(q,s['query_w'],s['query_b'])[None,:]; chunks=list(chunks)
   if not chunks: return _linear(slots,s['out_w'],s['out_b'])
+  total=None; count=0
+  for m,mask in chunks:
+   m=np.asarray(m,np.float32); mask=np.ones((len(m),),bool) if mask is None else np.asarray(mask,bool)
+   if np.any(mask):
+    wk=_linear(m,s['mem_k_w'],s['mem_k_b']); wv=_linear(m,s['mem_v_w'],s['mem_v_b']); part=(wk[mask]+wv[mask]).sum(axis=0); total=part if total is None else total+part; count+=int(mask.sum())
+  if count: slots=slots+(total/count)[None,None,:]
   for i in range(c.blocks): slots=self._stream_block(slots,chunks,i)
   return _linear(slots,s['out_w'],s['out_b'])

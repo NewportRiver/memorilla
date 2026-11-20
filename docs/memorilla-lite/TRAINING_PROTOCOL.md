@@ -1,10 +1,14 @@
 # LITE-007 Training Protocol Preparation
 
-This document prepares a bounded future training experiment. It authorizes no training in LITE-006.
+This document prepares a bounded training experiment authorized separately by LITE-007. It authorized no training in LITE-006; Android remains limited to the guarded eight-update feasibility pilot.
 
 ## Preferred environment
 
 Architect1 is the preferred training environment, subject to live hardware and memory verification. Android inference architecture is not blocked on Architect1 availability. Any Android training run requires separate authorization.
+
+## Android/Termux operator environment
+
+All LITE-007 runtime operations, dataset inspection, dependency checks, and regression commands must use the verified native Android/Termux Python environment for this checkout. Before any operational command, record the runtime home, Python interpreter, repository root, available memory, available storage, numerical thread count, and active process count. Do not silently initialize a replacement environment or database when an existing artifact is expected. Abort rather than continue if the interpreter or repository root is not the intended one. Computational runs must use one numerical thread, one subprocess, a 30-second wall limit, a 256 MiB RSS ceiling, and the guarded RAM thresholds recorded in the recovery checkpoint. Training and optimizer updates remain separately owner-authorized; offline tests and artifact checks do not authorize training.
 
 ## Dataset requirements
 

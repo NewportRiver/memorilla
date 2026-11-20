@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "queries": 1200,
+    "records": 1500,
+    "scenarios": 300,
+    "train_queries": 960,
+    "train_records": 1200,
+    "train_scenarios": 240,
+    "validation_queries": 240,
+    "validation_records": 300,
+    "validation_scenarios": 60
+  },
+  "dataset_version": "lite007-dev-v1",
+  "files": {
+    "dataset.json": "db2f78a87885718629dc12e146001f4188dc8133b03869b9da4500b813c5f28d"
+  },
+  "holdout_labels_included": false,
+  "schema_version": 1,
+  "seed": 20261120,
+  "source_policy": "synthetic only; no sealed labels; no private mission data",
+  "split_rule": "scenario-disjoint deterministic shuffle by seed; no query-level random split"
+}

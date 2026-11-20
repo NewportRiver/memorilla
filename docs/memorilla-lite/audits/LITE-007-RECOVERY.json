@@ -1,0 +1,37 @@
+{
+  "milestone": "LITE-007",
+  "kind": "recovery_checkpoint",
+  "timestamp": "2026-11-20T08:12:59-05:00",
+  "repository": "memorilla-lite-workspace",
+  "branch": "feature/memorilla-lite-android",
+  "baseline": "f5a58f81b1d35f3013e14d9ceaca23a508a369dd",
+  "working_tree_preserved": true,
+  "resource_policy": {
+    "numerical_threads": 1,
+    "computational_subprocesses": 1,
+    "minimum_available_ram_bytes": 1342177280,
+    "abort_available_ram_bytes": 1073741824,
+    "maximum_observed_process_rss_bytes": 268435456,
+    "maximum_subprocess_wall_seconds": 30,
+    "no_concurrent_pytorch_onnx_initialization": true,
+    "training_authorized": false
+  },
+  "preflight_telemetry": {
+    "available_ram_mib_reported": 1635,
+    "available_swap_mib_reported": 6089,
+    "available_storage_gib_reported": 8.0,
+    "numerical_cpus_reported": 8,
+    "orphaned_processes_detected": false
+  },
+  "recovered_state": {
+    "stage_a_abstention_audit": "passed",
+    "development_dataset": "established_and_hash_manifested",
+    "embeddings": "precomputed_and_manifested",
+    "training_package": "implemented",
+    "gradient_audit": "completed",
+    "optimizer_updates_before_interruption": 0,
+    "checkpoint_produced": false,
+    "holdout_labels_accessed": false
+  },
+  "next_safe_action": "offline regression and artifact integrity verification only"
+}

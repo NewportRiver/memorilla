@@ -16,20 +16,23 @@ if torch is not None:
   def __init__(self,config:NeuralConfig|None=None):
    super().__init__(); self.config=config or NeuralConfig(); c=self.config; g=torch.Generator().manual_seed(c.seed); self.slots=nn.Parameter(torch.randn(c.slots,c.latent_dim,generator=g)/c.latent_dim**0.5); self.query_w=nn.Parameter(torch.randn(c.input_dim,c.latent_dim,generator=g)/c.input_dim**0.5); self.query_b=nn.Parameter(torch.zeros(c.latent_dim)); self.mem_k_w=nn.Parameter(torch.randn(c.input_dim,c.latent_dim,generator=g)/c.input_dim**0.5); self.mem_k_b=nn.Parameter(torch.zeros(c.latent_dim)); self.mem_v_w=nn.Parameter(torch.randn(c.input_dim,c.latent_dim,generator=g)/c.input_dim**0.5); self.mem_v_b=nn.Parameter(torch.zeros(c.latent_dim)); self.out_w=nn.Parameter(torch.randn(c.latent_dim,c.output_dim,generator=g)/c.latent_dim**0.5); self.out_b=nn.Parameter(torch.zeros(c.output_dim)); self.score_slot_w=nn.Parameter(torch.randn(c.latent_dim,c.score_dim,generator=g)/c.latent_dim**0.5); self.score_slot_b=nn.Parameter(torch.zeros(c.score_dim)); self.score_mem_w=nn.Parameter(torch.randn(c.input_dim,c.score_dim,generator=g)/c.input_dim**0.5); self.score_mem_b=nn.Parameter(torch.zeros(c.score_dim)); self.blocks=nn.ModuleList([_Block(c) for _ in range(c.blocks)])
    for b in self.blocks:b.reset(g)
-  def forward(self,query,memory,memory_mask=None,return_attention=False):
+  def forward(self,query,memory,memory_mask=None,return_attention=False,return_latent=False):
    c=self.config
    if query.ndim!=2 or query.shape[1]!=c.input_dim or memory.ndim!=3 or memory.shape[0]!=query.shape[0] or memory.shape[2]!=c.input_dim: raise ValueError('invalid query/memory shapes')
    if not torch.isfinite(query).all() or not torch.isfinite(memory).all(): raise ValueError('non-finite neural input')
    B,N,_=memory.shape; mask=torch.ones((B,N),dtype=torch.bool,device=memory.device) if memory_mask is None else memory_mask.to(torch.bool)
    if mask.shape!=(B,N): raise ValueError('memory mask shape mismatch')
-   slots=self.slots.unsqueeze(0).expand(B,-1,-1)+F.linear(query,self.query_w.T,self.query_b).unsqueeze(1); attns=[]; h=c.heads; d=c.latent_dim//h
+   slots=self.slots.unsqueeze(0).expand(B,-1,-1)+F.linear(query,self.query_w.T,self.query_b).unsqueeze(1)
+   if N and bool(mask.any()):
+    mk=F.linear(memory,self.mem_k_w.T,self.mem_k_b); mv=F.linear(memory,self.mem_v_w.T,self.mem_v_b); weights=mask.float().unsqueeze(-1); summary=((mk+mv)*weights).sum(1)/weights.sum(1).clamp_min(1.0); slots=slots+summary.unsqueeze(1)
+   attns=[]; h=c.heads; d=c.latent_dim//h
    for b in self.blocks:
     q=F.linear(F.layer_norm(slots,(c.latent_dim,),b.ln1_g,b.ln1_b),b.q_w.T,b.q_b).reshape(B,c.slots,h,d); k=F.linear(memory,b.k_w.T,b.k_b).reshape(B,N,h,d); v=F.linear(memory,b.v_w.T,b.v_b).reshape(B,N,h,d)
     if N==0 or not bool(mask.any()): context=torch.zeros_like(slots); probs=torch.zeros((B,h,c.slots,N),device=memory.device,dtype=memory.dtype)
     else:
      logits=torch.einsum('bshd,bnhd->bhsn',q,k)/d**0.5; logits=logits.masked_fill(~mask[:,None,None,:],-torch.inf); probs=torch.softmax(logits,dim=-1); context=torch.einsum('bhsn,bnhd->bshd',probs,v).reshape(B,c.slots,c.latent_dim)
     slots=slots+F.linear(context,b.attn_out_w.T,b.attn_out_b); z=F.layer_norm(slots,(c.latent_dim,),b.ln2_g,b.ln2_b); slots=slots+F.linear(F.gelu(F.linear(z,b.ff1_w.T,b.ff1_b),approximate='tanh'),b.ff2_w.T,b.ff2_b); attns.append(probs)
-   out=F.linear(slots,self.out_w.T,self.out_b); return (out,attns) if return_attention else out
+   out=F.linear(slots,self.out_w.T,self.out_b); result=(out,attns) if return_attention else out; return (result,slots) if return_latent else result
   def load_numpy_state(self,state):
    with torch.no_grad():
     for name,x in state.items():

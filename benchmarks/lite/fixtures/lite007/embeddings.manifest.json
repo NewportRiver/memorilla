@@ -1,0 +1,14 @@
+{
+  "dataset_version": "lite007-dev-v1",
+  "dtype": "float32",
+  "encoder": {
+    "contract": "attention-mask-mean-l2-v1",
+    "dimension": 384,
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474"
+  },
+  "path": "/data/data/com.termux/files/home/memorilla-lite-workspace/benchmarks/lite/fixtures/lite007/embeddings.npz",
+  "query_count": 1200,
+  "record_count": 1500
+}
