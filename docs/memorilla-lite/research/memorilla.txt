@@ -1,0 +1,330 @@
+# Memorilla-Lite for Android and APEX Trader
+
+## Executive conclusion
+
+The practical way to put Stanford Memorilla’s science on the Galaxy A37 is **not** to port Stanford’s released Qwen3-8B/Qwen3-Embedding-4B stack to the phone. The useful scientific idea is much smaller: persist document embeddings once, condition a fixed set of learned slots on each query, let those slots attend across stored memories, and project the resulting slots into either a decoder’s input-embedding space or a controlled textual bridge. That is the essence of Memorilla. Stanford’s implementation uses 16 slots, two cross-attention refinement layers, a 2,560-dimensional Qwen3-Embedding-4B encoder, and a 4B/8B decoder; its 8B memory module alone has about 194 million trainable parameters. citeturn224823view0turn224823view1turn224823view2
+
+For Newport River, I recommend building a **separate Android profile of Memorilla rather than modifying the upstream algorithm in place**. The first usable version should be a CPU-only, query-conditioned embedding-memory service inside Termux, backed by APEX's existing authoritative SQLite/evidence architecture. The second step should replace cosine-only selection with a small learned cross-attention module. Only after those two systems have been benchmarked should we attempt true soft-token injection into a local 0.6B-class decoder. This sequence preserves the project's existing requirement that SQLite and recoverable artifacts remain authoritative and that memory outputs cannot authorize trades, tools, or policy changes. citeturn980912view0turn980912view1
+
+The key finding from this research is encouraging: **true latent-token injection on Android is technically plausible today.** The current `llama.cpp` core has explicit support for raw input embeddings that bypass the token-embedding lookup, and its newer batching code supports embedding-only entries and, where the model/context permits it, mixed token and embedding inputs. That means a Memorilla-style prefix is no longer obviously blocked by `llama.cpp`. It still needs a Qwen3-specific proof on the A37 before we can call it supported for this project. citeturn615191search1turn615191search2turn615191search3
+
+The recommended target is therefore:
+
+**APEX SQLite → immutable memory snapshot → tiny encoder → compact learned query-conditioned memory → evidence resolver → optional local 0.6B decoder or bounded text bridge.**
+
+That gives us most of Memorilla's scientific value while keeping the phone's RAM, thermals, battery and evidence guarantees within controllable bounds.
+
+## What is actually verified about our hardware and software
+
+The Galaxy A37 family is now verifiable rather than hypothetical. Samsung lists 6 GB/128 GB and 8 GB/256 GB configurations in multiple markets; Samsung's product specification gives an octa-core 2.75 GHz/2.0 GHz processor, while Samsung Semiconductor identifies the Exynos 1480 as four Cortex-A78 cores at 2.75 GHz plus four Cortex-A55 cores at 2.0 GHz with an Xclipse 530 GPU. Samsung does **not** let us infer which RAM SKU this particular handset is from the model name alone, so the project's “6 GB” statement remains **unverified for the physical device until we query it locally**. citeturn507950search2turn931124search1turn856967search0
+
+The existing project document likewise labels Architect1's “RTX 4070 Super 12 GB / 128 GB RAM” configuration as subject to verification rather than established fact. That is the correct posture: the development plan explicitly says to measure free VRAM under actual load and not assume the Stanford model fits. citeturn980912view0
+
+Termux is viable but must not be treated like unrestricted desktop Linux. Its maintainers warn that Android 12 and later can terminate excessive-CPU workloads and impose phantom-process restrictions, which matters for long model runs and worker pools. Termux also now provides patched `python-onnxruntime` packages that work on Android even though upstream Python runtime validation may emit an “unsupported platform” warning. The Termux package tree also contains `llama-cpp`. citeturn856967search1turn856967search3turn856967search2
+
+The first device-audit command set should therefore be run before model work:
+
+```bash
+pkg update
+
+uname -a
+getprop ro.product.model
+getprop ro.build.version.release
+getprop ro.build.version.sdk
+getprop ro.product.cpu.abi
+getprop ro.soc.manufacturer
+getprop ro.soc.model
+
+cat /proc/meminfo | head -20
+df -h "$HOME"
+
+nproc
+lscpu 2>/dev/null || true
+```
+
+On Architect1:
+
+```bash
+uname -a
+free -h
+df -h
+nvidia-smi
+nvidia-smi --query-gpu=name,memory.total,memory.free,driver_version \
+  --format=csv,noheader
+python3 --version
+```
+
+Those outputs should be hashed into the reproducibility manifest rather than copied casually into application configuration. That directly implements M1's requirement to measure actual VRAM, RAM, disk, cold/warm behavior and failure conditions. citeturn980912view0
+
+For resource telemetry, a native Android wrapper ultimately gives better thermal information than pure Termux because Android exposes `getCurrentThermalStatus()` and thermal listeners through `PowerManager`; Android's documentation explicitly says non-`NONE` status indicates thermal throttling. Termux:API can expose battery information from the shell, although there have been recent reports of API calls hanging, so it should be telemetry—not a hard dependency for correctness. citeturn417960search0turn417960search12turn417960search11turn417960search18
+
+A useful initial audit installation is:
+
+```bash
+pkg install git clang cmake ninja python python-onnxruntime
+pkg install llama-cpp
+```
+
+The `python-onnxruntime` command is substantiated by the current Termux package implementation, and `llama.cpp`'s own Android documentation explicitly supports running it under Termux. citeturn856967search3turn379802search3
+
+## The mobile architecture I recommend
+
+Stanford Memorilla stores one frozen encoder representation per document, computes a query embedding for each request, conditions learned slots on that query, then uses those slots as the queries in cross-attention against **all** document embeddings. The refined slots are projected into the decoder's embedding dimension and prepended directly to the query's token embeddings. This is importantly different from top-k RAG: the document read is continuous and collection-wide rather than a discrete retrieval choice. citeturn224823view0turn224823view1
+
+We should retain that structure but shrink every dimension.
+
+| Component | Stanford implementation | Android research target |
+|---|---:|---:|
+| Document encoder | Qwen3-Embedding-4B | 20–35M-class encoder |
+| Encoder dimension | 2,560 | 384 |
+| Learned slots | 16 | 8 initially, benchmark 4/8/16 |
+| Refinement blocks | 2 | 1 first, then 2 |
+| Attention heads | 8 | 4 initially |
+| Decoder dimension | 4,096 on Qwen3-8B | 1,024 on Qwen3-0.6B |
+| Decoder | Qwen3-8B | optional Qwen3-0.6B |
+| Persistent truth | external benchmark documents | APEX SQLite/artifacts |
+| Persistent vectors | BF16/FP | INT8 or FP16 |
+| Runtime | CUDA/vLLM | ONNX Runtime + custom C++/ExecuTorch; llama.cpp only for decoder |
+
+Stanford's published configuration establishes that the architecture itself does not require a 2,560-dimensional memory space: the final operation is simply a learned encoder-to-decoder projection. A 384→1,024 projection is therefore scientifically faithful to the design, although it requires a **new trained memory module**; Stanford's released checkpoint cannot simply be resized. citeturn224823view2turn236805view0
+
+For the encoder, `all-MiniLM-L6-v2` is a conservative first candidate: it is Apache-2.0 licensed and outputs 384-dimensional embeddings. BGE-small-en-v1.5 is another 384-dimensional candidate with a longer documented 512-token input window and should be included in the encoder benchmark. citeturn969170search0turn969170search2
+
+At 384 dimensions, raw INT8 vector storage is only **384 bytes per memory record before metadata/scales**. Thus 10,000 records are approximately 3.84 MB of vector payload, 100,000 approximately 38.4 MB, and one million approximately 384 MB. Those are arithmetic storage estimates, not measured SQLite file sizes. The implication is important: **persistent vector size is not the hard Android problem; collection-wide attention bandwidth and decoder RAM are.**
+
+I would store two parallel layers:
+
+```text
+APEX authoritative layer
+  sqlite/artifact_id
+  mission_id
+  timestamp
+  content_hash
+  source_scope
+  immutable original evidence
+
+Derived mobile memory layer
+  artifact_id
+  encoder_revision
+  chunk_revision
+  embedding_q8
+  quant_scale
+  cluster_id
+  created_at
+  source_hash
+```
+
+The derived database is disposable. A source-hash mismatch invalidates its vector automatically. That matches the existing Newport River plan, which says embeddings and caches must remain rebuildable rather than become a second source of truth. citeturn980912view1
+
+### The important distinction: hierarchical routing versus real Memorilla
+
+A hierarchical index is useful on Android, but **it is not equivalent to Stanford Memorilla**.
+
+If we first choose 64 clusters and only let the learned slots see four clusters, we have introduced a discrete routing bottleneck. Stanford's slots attend over every stored document, which is part of what lets the model discover weakly related evidence. citeturn224823view0
+
+The better mobile design is therefore adaptive:
+
+```text
+small corpus
+    query → learned slots → ALL embeddings
+
+large corpus
+    query
+      ↓
+cheap cluster summaries
+      ↓
+candidate shards
+      ↓
+learned slots attend ALL documents in selected shards
+      ↓
+latent memory
+```
+
+We should call the latter **Memorilla-H**, not Memorilla proper, and evaluate recall loss relative to full collection-wide attention. That nomenclature matters scientifically.
+
+A good first threshold is to keep true full-store attention through at least 10,000–25,000 384-D records before introducing hierarchy. This is an **engineering hypothesis**, not a published Stanford threshold; the actual crossover must come from A37 measurements.
+
+## Runtime choice and the latent-token problem
+
+The runtime should be split by job rather than forcing one framework to do everything.
+
+| Runtime | Best role in this project | Assessment |
+|---|---|---|
+| ONNX Runtime | tiny encoder, compact attention module | **Best first choice** |
+| llama.cpp | quantized local decoder and latent-prefix experiment | **Best decoder choice** |
+| ExecuTorch | native-app memory/decoder runtime later | **Strong second-stage choice** |
+| ncnn | optimized mobile inference experiments | **Optional optimization path** |
+
+ONNX Runtime officially supports Android via its Android package and provides CPU, NNAPI and XNNPACK routes. A patched Python ONNX Runtime package also exists in Termux, making it unusually convenient for prototyping the encoder and memory module without first writing an Android application. citeturn379802search20turn379802search6turn856967search3
+
+ExecuTorch is attractive after the algorithm stabilizes because PyTorch now positions it specifically for edge/mobile deployment, and its Android runtime has supported backends including Samsung Exynos targets. Its Android LLM API remains documented as experimental, so I would not make APEX memory correctness depend on that API yet. citeturn379802search16turn379802search33turn615191search7
+
+ncnn has excellent ARM/NEON and Android Vulkan support and publishes ARM64 Android builds, but it brings less direct benefit for our first transformer-memory prototype than ONNX Runtime. I would only evaluate it after profiling identifies encoder or attention inference as a bottleneck. citeturn379802search0turn379802search14
+
+### True soft-token injection is now worth attempting
+
+This was the largest uncertainty in the earlier plan. Current `llama.cpp` internals explicitly implement three decoder-input paths: token embeddings looked up from token IDs, raw embeddings that bypass that lookup, and a mixed path for token IDs plus raw embeddings when supported. The public/common batching interfaces include methods for adding embedding-only entries. citeturn615191search1turn615191search2
+
+That maps closely onto Memorilla's equation:
+
+```text
+[memory_embedding_1 ... memory_embedding_K] + [normal query embeddings]
+```
+
+Stanford requires each memory vector to have exactly the decoder's input embedding dimension; Qwen3-0.6B's published configuration has hidden size 1,024. Therefore a compact memory model can legitimately learn a 384→1,024 projection. citeturn224823view1turn236805view0
+
+However, I would classify this as **“API mechanism verified; Qwen3-0.6B Android integration unverified.”** `llama.cpp` explicitly rejects mixed token/embedding batches where the particular architecture/context does not support the mixed path. We must write a tiny C++ proof that prepends one known 1,024-float embedding to a Qwen3-0.6B prompt and verifies deterministic inference on both Architect1 and the phone before designing the production bridge. citeturn615191search3
+
+Qwen3-0.6B itself is Apache-2.0 licensed and has a 1,024-dimensional hidden state. Official Qwen GGUF releases exist, while third-party Q4 conversions are roughly 0.47 GB on disk; the latter size should be treated as indicative, not our production artifact until we generate or pin an approved quantization ourselves. citeturn969170search4turn236805view0turn969170search15turn969170search37
+
+This suggests four increasingly ambitious modes:
+
+| Mode | Memory algorithm | Decoder | Phone feasibility | Scientific value |
+|---|---|---|---|---|
+| A | cosine/top-k | existing APEX provider or none | High | baseline only |
+| B | learned query-conditioned slots → evidence IDs/text | existing provider | High | most Memorilla memory science |
+| C | learned slots → bounded local textual summary | Qwen3-0.6B local | Medium-high | tests local associative decoding |
+| D | learned slots → **true 1,024-D soft tokens** | matched Qwen3-0.6B local | Experimental | closest to actual Memorilla |
+
+Mode B should be our first target for APEX. Mode D should be our research target.
+
+## Training, distillation and desktop feasibility
+
+We cannot reuse Stanford's memory checkpoint with MiniLM/BGE and Qwen3-0.6B because the checkpoint is trained around a 2,560-dimensional Qwen3 embedding space and a 4,096-dimensional Qwen3-8B decoder space. Stanford freezes both encoder and decoder and trains only the memory network and projection; changing either endpoint changes the learned mapping. citeturn224823view1turn224823view2
+
+The good news is that a mobile version can be orders of magnitude smaller. A two-layer 384-dimensional cross-attention module with four heads, a conventional 4× feed-forward expansion, query-conditioning attention and a 384→1,024 projection is roughly **4–5 million trainable parameters**, depending on exact normalization/bias choices. That is an engineering derivation from the standard transformer projection sizes, not a published model.
+
+This dramatically changes Architect1's role. Stanford trained approximately 194 million memory parameters with frozen 4B/8B backbones using four H100 80 GB GPUs and a three-stage curriculum comprising about 1.98 million Wikipedia reconstruction examples followed by 1.34 million mixed QA/summarization examples. Their full three stages took about 19 hours on four H100s. citeturn224823view2turn774609view0
+
+We should **not reproduce that training recipe**. It would be wasteful and unrelated to the specific APEX memory problem.
+
+Instead, train in four progressively more expensive regimes:
+
+1. **Synthetic associative pretraining.** Generate small multi-record tasks in which two or more documents jointly determine an answer, plus negative/contradictory examples. Train the 384-D memory module while freezing the encoder.
+
+2. **Distillation.** Use the upstream Memorilla system or a strong text teacher offline to produce target answers or relevance structures for public examples, but never treat teacher-generated evidence IDs as truth.
+
+3. **APEX-format supervised adaptation.** Use synthetic fixtures followed by read-only, mission-disjoint historical APEX records with labels such as “which previous attempt failed for this reason?”, “which two missions conflict?”, and “which source establishes this exact fact?”
+
+4. **Matched-decoder latent training.** Only if Mode B wins its benchmark, freeze Qwen3-0.6B and train the final 384→1,024 memory projection through decoder loss exactly in the spirit of Stanford's supervised objective. Stanford likewise backpropagates answer loss only through the memory module while freezing the decoder. citeturn224823view1
+
+The project's existing plan already requires mission/time splits, no holdout access at runtime or training time, deduplication across splits and full provenance. We should reuse those constraints unchanged. citeturn980912view0
+
+On a genuinely available RTX 4070 Super 12 GB, a 4–5M parameter memory module plus a frozen 0.6B decoder is **plausible** for supervised training with modest sequence lengths, but that is an engineering inference, not yet a measured result. We must verify the GPU first, then run batch-size-1/gradient-accumulation trials. I would not promise that the original Stanford 4B encoder/8B decoder checkpoint can be trained or even conveniently evaluated on 12 GB VRAM; Stanford themselves describe their standard example as requiring an 80 GB GPU. citeturn774609view0turn980912view0
+
+Elapsed-time projections should not be treated as evidence before profiling. More useful planning budgets are:
+
+| Phase | GPU requirement | Storage | External spend |
+|---|---:|---:|---:|
+| Android baseline | none | <1 GB target | $0 |
+| 384-D memory prototype | optional 4070S | <5 GB project data/model artifacts initially | $0 |
+| Qwen3-0.6B latent experiment | 4070S preferred | roughly 1–5 GB working set/files | $0 |
+| Upstream Stanford reproduction | 80 GB-class GPU | ~25 GB example / ~310 GiB full recipe downloads | **do not approve locally** |
+
+The upstream 25 GB example footprint and roughly 310 GiB full-recipe data/embedding download are Stanford's published figures; the smaller figures are Newport River engineering budgets to enforce during development. citeturn774609view0turn137545view0
+
+## Implementation plan, benchmarks and decision gates
+
+The fork's current development plan authorizes M0 and M1 only and explicitly prohibits production APEX changes, brokerage calls, cloud spend, training, new backtests and strategy optimization at this stage. The Android work should therefore be added as an **M1-mobile feasibility track**, not silently treated as authorization to train or integrate. citeturn980912view0turn980912view2
+
+I recommend the following single implementation sequence:
+
+1. **Create `research/memorilla-lite-android`.** Preserve upstream files and add `mobile/`, `benchmarks/mobile/`, and `docs/newportriver/MOBILE_ARCHITECTURE.md`. Pin every Git commit/model revision and SHA-256 hash.
+
+2. **Run the hardware audit above.** Record real RAM SKU, Android API, SoC, storage, Termux version, available memory and battery state. Repeat on Architect1 with `nvidia-smi`. Until these results exist, the labels “6 GB A37” and “4070 Super/128 GB Architect1” stay unverified project assumptions.
+
+3. **Build Mode A.** Export only synthetic APEX-format memory fixtures initially. Embed them with MiniLM or BGE-small under ONNX Runtime. Store embeddings plus authoritative artifact IDs. Implement cosine retrieval and exact evidence resolution. This gives the control condition.
+
+4. **Implement the compact Memorilla module.** Start `h=384`, `K=8`, one query-conditioning block and one document-refinement block. Run full-store attention initially. Export to ONNX and measure Android p50/p95 query time, peak RSS and accuracy. Add a second refinement block only if benchmark improvement justifies it.
+
+5. **Introduce quantized persistent storage.** Compare FP32, FP16 and per-vector INT8. Never quantize authoritative evidence. Measure association accuracy loss and rebuild time.
+
+6. **Add hierarchy only after profiling.** Compare full-store Memorilla against Memorilla-H at 1k, 10k, 25k, 100k and synthetic 1M records. Report missed-evidence rate separately from answer accuracy.
+
+7. **Prototype Mode D on desktop first.** Pin Qwen3-0.6B and a known `llama.cpp` revision. Write a minimal raw-embedding prefill program. Validate one embedding prefix, then eight. Only after deterministic success transfer the binary/model to Android.
+
+8. **Run Android thermal endurance tests.** Use repeated fixed workloads rather than a one-shot benchmark. Record RSS, wall-clock time, encoder time, memory-module time, decoder prefill/tokens-per-second where relevant, battery percentage/current and Android thermal state. Android's official thermal API should eventually be wrapped natively for this purpose. citeturn417960search0turn417960search12
+
+9. **Only after the memory benchmark passes, expose the existing APEX research interface.** The interface already proposed in the fork—`ingest`, `query`, `resolve`, `health`, `invalidate`—is appropriate. Latent output returns hypotheses and evidence candidates; exact claims must still resolve against the immutable record. citeturn980912view1
+
+The benchmark matrix should freeze its metrics before touching the holdout:
+
+| Metric | Gate |
+|---|---:|
+| Evidence IDs resolve to hash-verified artifact | **100%** |
+| Policy/tool/trading authorization from memory | **0 occurrences** |
+| Holdout/future-data leakage | **0** |
+| Exact-fact accuracy | no worse than current retrieval by >2 pp |
+| Cross-record association | must beat cosine-only baseline materially |
+| Repeated-failure recognition | target ≥20% improvement |
+| End-to-end cost/latency | target ≥20% improvement if failure metric does not improve |
+| OOM/process death | 0 during accepted operating envelope |
+| Thermal status | no sustained severe throttling in accepted workload |
+| Fallback after memory failure | deterministic current APEX retrieval |
+| Unsupported claim rate | must not worsen materially |
+
+The core accuracy thresholds already exist in the Newport River plan; thermal/OOM criteria are Android additions. citeturn980912view1
+
+For Android I would add an initial **engineering envelope**, explicitly provisional until measurements exist: memory service ≤250 MB RSS without decoder, total memory+0.6B decoder ≤1.5 GB RSS, encoder request ≤500 ms p50 for short APEX records, memory read ≤250 ms p50 at 10k records, and no continuous inference job allowed to run after Android reports serious thermal pressure. These are design limits, not claims about current A37 performance.
+
+## Security, licensing and final recommendation
+
+The fork is already pointing in the right direction on security. Stanford warns that its code loads Hugging Face models/checkpoints, recommends trusting only known artifacts, uses `weights_only=True` for normal memory checkpoints, and notes public advisories affecting its pinned versions of vLLM, Transformers and PyTorch when processing malicious model/config artifacts. We should not simply inherit those versions onto Android; the mobile implementation should avoid remote-code loading entirely and distribute a signed model manifest containing repository, revision, hashes, license and expected tensor dimensions. citeturn774609view1
+
+No secret, API token, brokerage credential or account identifier should ever become an embedding. The existing fork already excludes credentials/account identifiers and treats exported memory as immutable sanitized snapshots. Preserve that rule. citeturn980912view1
+
+The Stanford Memorilla code is Apache 2.0, but its data repository preserves the licenses of the individual source datasets; PersonalizationV4 is CC BY 4.0. Therefore we cannot treat the entire training-data collection as one commercially unrestricted corpus merely because the code is Apache-licensed. citeturn137545view0
+
+MiniLM's chosen model repository is Apache 2.0, and Qwen3-0.6B is Apache 2.0. Those are comparatively clean candidates for a Newport River implementation, although any additional pretraining/distillation datasets need their own license manifest. citeturn969170search0turn969170search4
+
+The most important design decision is **not to make the phone an 8B Memorilla server**. Make it a compact learned memory processor.
+
+The architecture I would commit to is:
+
+```text
+                    ┌────────────────────────────┐
+                    │ APEX authoritative SQLite │
+                    │ + content-addressed files  │
+                    └─────────────┬──────────────┘
+                                  │ immutable sanitized snapshots
+                                  ▼
+                    ┌────────────────────────────┐
+                    │ 384-D tiny frozen encoder │
+                    │ ONNX Runtime / ARM CPU     │
+                    └─────────────┬──────────────┘
+                                  │ INT8/FP16 vectors
+                                  ▼
+                    ┌────────────────────────────┐
+                    │ Derived memory store       │
+                    │ artifact IDs + hashes      │
+                    └─────────────┬──────────────┘
+                                  │
+                query ───────┐    │
+                             ▼    ▼
+                    ┌────────────────────────────┐
+                    │ Memorilla-Lite             │
+                    │ 8 query-conditioned slots  │
+                    │ compact cross-attention    │
+                    └─────────────┬──────────────┘
+                                  │
+                  ┌───────────────┴────────────────┐
+                  ▼                                ▼
+        evidence candidates                8 × 1024 soft tokens
+                  │                                │
+                  ▼                                ▼
+        authoritative resolver              Qwen3-0.6B
+                  │                           llama.cpp
+                  └───────────────┬────────────────┘
+                                  ▼
+                         bounded hypothesis
+                                  │
+                                  ▼
+                       existing APEX reasoning
+                                  │
+                                  ▼
+                       existing policy/evidence
+```
+
+The immediate research decision is therefore **GO for Mode A and compact Mode B, RESEARCH for Mode D, NO-GO for attempting Stanford's released 4B/8B deployment directly on the A37**. Stanford's own published example assumes an H100-class environment, whereas Android gives us a realistic path through a 384-D encoder, a few-million-parameter learned memory module and optionally a quantized 0.6B decoder. citeturn137545view0turn224823view2
+
+Most importantly, this approach preserves the part of Memorilla that is scientifically interesting: **learning what to remember for a query instead of merely searching for similar text**. The phone can remain the persistent cognitive node, while Architect1 is used only to train and validate the tiny learned readout. APEX's SQLite/evidence system remains the truth layer, so a memory model can become better at association without ever becoming the authority on what actually happened.
