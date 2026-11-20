@@ -1,0 +1,18 @@
+{
+  "historical_direct_training_telemetry": "missing_and_not_retrospectively_certified",
+  "probe": {
+    "operation": "direct_bilinear_inference_probe",
+    "examples": 8,
+    "wall_seconds": 1.4733896870020544,
+    "ru_maxrss_kib": 241460,
+    "ru_maxrss_delta_kib": 209268,
+    "threads": 1,
+    "computational_subprocesses": 1
+  },
+  "associative_training": {
+    "peak_rss_bytes": 124809216,
+    "minimum_available_ram_bytes": 1425125376,
+    "max_episode_wall_seconds": 1.1907247659983113
+  },
+  "status": "direct_instrumentation_verified_for_future_runs_only"
+}

@@ -1,5 +1,5 @@
 from __future__ import annotations
-import hashlib,json,os,tempfile,time
+import hashlib,json,os,tempfile,time,resource
 from pathlib import Path
 import numpy as np
 from lite.training.prepared_dataset import PreparedTrainingSet
@@ -18,6 +18,15 @@ def load(path):
  with np.load(path.with_suffix('.npz'),allow_pickle=False) as z: W=np.asarray(z['W'],np.float32)
  if list(W.shape)!=m['shape'] or _sha(W)!=m['sha256'] or not np.isfinite(W).all(): raise ValueError('direct checkpoint integrity failure')
  return W,m
+
+def inference_telemetry(prepared_path, checkpoint_path, examples=8):
+ ds=PreparedTrainingSet(prepared_path, allow_validation=True); W,_=load(checkpoint_path); start=time.perf_counter(); rss0=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss; count=0
+ try:
+  for index in ds.eligible_indices()[:examples]:
+   ex=ds.get(index); q=ex['query_embedding']; mem=ex['memory_embeddings']; _=q@W@mem.T; count+=1
+ finally: ds.close()
+ rss1=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+ return {'operation':'direct_bilinear_inference_probe','examples':count,'wall_seconds':time.perf_counter()-start,'ru_maxrss_kib':rss1,'ru_maxrss_delta_kib':max(0,rss1-rss0),'threads':1,'computational_subprocesses':1}
 def run_episode(prepared_path,out,budget_path,identity,init=None,requested=8,total=240):
  out=Path(out); ds=PreparedTrainingSet(prepared_path); ident=ds.metadata['content_sha256']; b=EpisodeBudget(budget_path,total,ident,identity); eid=out.name; b.begin_episode(eid,requested); W=load(init)[0] if init else np.zeros((384,384),np.float32); rows=[]
  try:

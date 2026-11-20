@@ -1,0 +1,22 @@
+{
+  "associative_updates": 240,
+  "balanced_schedule_claim": "not met: actual repeated exposure covered only the first 8 eligible examples; 90 updates at size 8, 90 at size 16, 60 at size 32",
+  "collection_size_exposure_updates": {
+    "16": 90,
+    "32": 60,
+    "8": 90
+  },
+  "direct_updates": 240,
+  "identical_order": true,
+  "objective": "softplus(margin + negative_score - positive_score), margin=0.1",
+  "optimizer_match": {
+    "batch_size": 1,
+    "clip_norm": 1.0,
+    "learning_rate": 0.001,
+    "updates": 240
+  },
+  "same_eligible_collections": true,
+  "same_required_labels": true,
+  "unique_examples_associative": 8,
+  "unique_examples_direct": 8
+}

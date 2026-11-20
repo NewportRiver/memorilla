@@ -1,0 +1,10 @@
+{
+  "diagnostic_examples":"fixed 480 validation queries",
+  "initial":{"mean_pairwise_slot_cosine":0.6248647312191611,"slot_diversity_1_minus_cosine":0.37513526878083886,"attention_entropy":4.505444194064049,"required_attention_allocation":0.014609570362157457,"distractor_attention_allocation":0.9853904296378425,"query_conditioning_sensitivity_l2":9.186781233085428},
+  "final":{"mean_pairwise_slot_cosine":0.6274784428993747,"slot_diversity_1_minus_cosine":0.37252155710062523,"attention_entropy":4.505444398609394,"required_attention_allocation":0.014607839417413568,"distractor_attention_allocation":0.9853921605825864,"query_conditioning_sensitivity_l2":9.08178920454418},
+  "changes":{"mean_pairwise_slot_cosine":0.0026137116802136,"slot_diversity":-0.0026137116802136,"attention_entropy":0.000000204545345,"required_attention_allocation":-0.0000017312645895,"distractor_attention_allocation":0.0000017312645895,"query_conditioning_sensitivity_l2":-0.104992028541248},
+  "interpretation":"small slot-similarity increase and sensitivity decrease; attention remained overwhelmingly on distractors under this measurement; no slot-collapse claim from these values alone",
+  "attention_definition":"mean over slots of attention mass assigned to required versus non-required records",
+  "weights_unchanged":false,
+  "holdout_accessed":false
+}
