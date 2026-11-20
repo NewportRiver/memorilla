@@ -1,0 +1,9 @@
+{
+  "descriptor_sha256": "f6917c335f9b8c1ee29e312de2350fb1472d42c8d8181a0bf3c4feeada0d654c",
+  "generation": "external owner-controlled fixture; labels omitted from repository",
+  "partition": "sealed_holdout",
+  "query_count": 40,
+  "scenario_count": 4,
+  "schema_version": 1,
+  "seed": 20261120
+}

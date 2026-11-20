@@ -1,9 +1,9 @@
 from __future__ import annotations
 import numpy as np
 
-def iter_batches(store, collection_id=None, access_scope=None, chunk_size=128, contract=None):
+def iter_batches(store, collection_id=None, access_scope=None, chunk_size=128, contract=None, as_of=None):
     rows=[]
-    for item in store.iter_vectors(collection_id, access_scope, chunk_size, contract):
+    for item in store.iter_vectors(collection_id, access_scope, chunk_size, contract, as_of):
         rows.append(item)
         if len(rows)==chunk_size:
             yield rows

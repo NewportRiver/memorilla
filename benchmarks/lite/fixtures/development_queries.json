@@ -1,0 +1,1879 @@
+{
+  "partition": "development",
+  "queries": [
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-00-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-00?",
+      "query_id": "scenario-00-q00",
+      "required_evidence_ids": [
+        "scenario-00-fact"
+      ],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-00-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-00?",
+      "query_id": "scenario-00-q01",
+      "required_evidence_ids": [
+        "scenario-00-fact"
+      ],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-00-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-00?",
+      "query_id": "scenario-00-q02",
+      "required_evidence_ids": [
+        "scenario-00-failure"
+      ],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-00-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-00?",
+      "query_id": "scenario-00-q03",
+      "required_evidence_ids": [
+        "scenario-00-fix"
+      ],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-00-failure",
+        "scenario-00-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-00?",
+      "query_id": "scenario-00-q04",
+      "required_evidence_ids": [
+        "scenario-00-failure",
+        "scenario-00-fix"
+      ],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-00-fact",
+        "scenario-00-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-00?",
+      "query_id": "scenario-00-q05",
+      "required_evidence_ids": [
+        "scenario-00-fact",
+        "scenario-00-contradiction"
+      ],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-00-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-00?",
+      "query_id": "scenario-00-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-00-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-00?",
+      "query_id": "scenario-00-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-00-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-00?",
+      "query_id": "scenario-00-q08",
+      "required_evidence_ids": [
+        "scenario-00-malicious"
+      ],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-00?",
+      "query_id": "scenario-00-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-00"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-01-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-01?",
+      "query_id": "scenario-01-q00",
+      "required_evidence_ids": [
+        "scenario-01-fact"
+      ],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-01-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-01?",
+      "query_id": "scenario-01-q01",
+      "required_evidence_ids": [
+        "scenario-01-fact"
+      ],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-01-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-01?",
+      "query_id": "scenario-01-q02",
+      "required_evidence_ids": [
+        "scenario-01-failure"
+      ],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-01-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-01?",
+      "query_id": "scenario-01-q03",
+      "required_evidence_ids": [
+        "scenario-01-fix"
+      ],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-01-failure",
+        "scenario-01-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-01?",
+      "query_id": "scenario-01-q04",
+      "required_evidence_ids": [
+        "scenario-01-failure",
+        "scenario-01-fix"
+      ],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-01-fact",
+        "scenario-01-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-01?",
+      "query_id": "scenario-01-q05",
+      "required_evidence_ids": [
+        "scenario-01-fact",
+        "scenario-01-contradiction"
+      ],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-01-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-01?",
+      "query_id": "scenario-01-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-01-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-01?",
+      "query_id": "scenario-01-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-01-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-01?",
+      "query_id": "scenario-01-q08",
+      "required_evidence_ids": [
+        "scenario-01-malicious"
+      ],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-01?",
+      "query_id": "scenario-01-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-01"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-02-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-02?",
+      "query_id": "scenario-02-q00",
+      "required_evidence_ids": [
+        "scenario-02-fact"
+      ],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-02-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-02?",
+      "query_id": "scenario-02-q01",
+      "required_evidence_ids": [
+        "scenario-02-fact"
+      ],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-02-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-02?",
+      "query_id": "scenario-02-q02",
+      "required_evidence_ids": [
+        "scenario-02-failure"
+      ],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-02-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-02?",
+      "query_id": "scenario-02-q03",
+      "required_evidence_ids": [
+        "scenario-02-fix"
+      ],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-02-failure",
+        "scenario-02-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-02?",
+      "query_id": "scenario-02-q04",
+      "required_evidence_ids": [
+        "scenario-02-failure",
+        "scenario-02-fix"
+      ],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-02-fact",
+        "scenario-02-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-02?",
+      "query_id": "scenario-02-q05",
+      "required_evidence_ids": [
+        "scenario-02-fact",
+        "scenario-02-contradiction"
+      ],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-02-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-02?",
+      "query_id": "scenario-02-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-02-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-02?",
+      "query_id": "scenario-02-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-02-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-02?",
+      "query_id": "scenario-02-q08",
+      "required_evidence_ids": [
+        "scenario-02-malicious"
+      ],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-02?",
+      "query_id": "scenario-02-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-02"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-03-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-03?",
+      "query_id": "scenario-03-q00",
+      "required_evidence_ids": [
+        "scenario-03-fact"
+      ],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-03-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-03?",
+      "query_id": "scenario-03-q01",
+      "required_evidence_ids": [
+        "scenario-03-fact"
+      ],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-03-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-03?",
+      "query_id": "scenario-03-q02",
+      "required_evidence_ids": [
+        "scenario-03-failure"
+      ],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-03-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-03?",
+      "query_id": "scenario-03-q03",
+      "required_evidence_ids": [
+        "scenario-03-fix"
+      ],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-03-failure",
+        "scenario-03-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-03?",
+      "query_id": "scenario-03-q04",
+      "required_evidence_ids": [
+        "scenario-03-failure",
+        "scenario-03-fix"
+      ],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-03-fact",
+        "scenario-03-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-03?",
+      "query_id": "scenario-03-q05",
+      "required_evidence_ids": [
+        "scenario-03-fact",
+        "scenario-03-contradiction"
+      ],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-03-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-03?",
+      "query_id": "scenario-03-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-03-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-03?",
+      "query_id": "scenario-03-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-03-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-03?",
+      "query_id": "scenario-03-q08",
+      "required_evidence_ids": [
+        "scenario-03-malicious"
+      ],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-03?",
+      "query_id": "scenario-03-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-03"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-04-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-04?",
+      "query_id": "scenario-04-q00",
+      "required_evidence_ids": [
+        "scenario-04-fact"
+      ],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-04-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-04?",
+      "query_id": "scenario-04-q01",
+      "required_evidence_ids": [
+        "scenario-04-fact"
+      ],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-04-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-04?",
+      "query_id": "scenario-04-q02",
+      "required_evidence_ids": [
+        "scenario-04-failure"
+      ],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-04-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-04?",
+      "query_id": "scenario-04-q03",
+      "required_evidence_ids": [
+        "scenario-04-fix"
+      ],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-04-failure",
+        "scenario-04-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-04?",
+      "query_id": "scenario-04-q04",
+      "required_evidence_ids": [
+        "scenario-04-failure",
+        "scenario-04-fix"
+      ],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-04-fact",
+        "scenario-04-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-04?",
+      "query_id": "scenario-04-q05",
+      "required_evidence_ids": [
+        "scenario-04-fact",
+        "scenario-04-contradiction"
+      ],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-04-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-04?",
+      "query_id": "scenario-04-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-04-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-04?",
+      "query_id": "scenario-04-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-04-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-04?",
+      "query_id": "scenario-04-q08",
+      "required_evidence_ids": [
+        "scenario-04-malicious"
+      ],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-04?",
+      "query_id": "scenario-04-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-04"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-05-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-05?",
+      "query_id": "scenario-05-q00",
+      "required_evidence_ids": [
+        "scenario-05-fact"
+      ],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-05-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-05?",
+      "query_id": "scenario-05-q01",
+      "required_evidence_ids": [
+        "scenario-05-fact"
+      ],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-05-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-05?",
+      "query_id": "scenario-05-q02",
+      "required_evidence_ids": [
+        "scenario-05-failure"
+      ],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-05-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-05?",
+      "query_id": "scenario-05-q03",
+      "required_evidence_ids": [
+        "scenario-05-fix"
+      ],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-05-failure",
+        "scenario-05-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-05?",
+      "query_id": "scenario-05-q04",
+      "required_evidence_ids": [
+        "scenario-05-failure",
+        "scenario-05-fix"
+      ],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-05-fact",
+        "scenario-05-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-05?",
+      "query_id": "scenario-05-q05",
+      "required_evidence_ids": [
+        "scenario-05-fact",
+        "scenario-05-contradiction"
+      ],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-05-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-05?",
+      "query_id": "scenario-05-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-05-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-05?",
+      "query_id": "scenario-05-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-05-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-05?",
+      "query_id": "scenario-05-q08",
+      "required_evidence_ids": [
+        "scenario-05-malicious"
+      ],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-05?",
+      "query_id": "scenario-05-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-05"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-06-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-06?",
+      "query_id": "scenario-06-q00",
+      "required_evidence_ids": [
+        "scenario-06-fact"
+      ],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-06-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-06?",
+      "query_id": "scenario-06-q01",
+      "required_evidence_ids": [
+        "scenario-06-fact"
+      ],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-06-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-06?",
+      "query_id": "scenario-06-q02",
+      "required_evidence_ids": [
+        "scenario-06-failure"
+      ],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-06-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-06?",
+      "query_id": "scenario-06-q03",
+      "required_evidence_ids": [
+        "scenario-06-fix"
+      ],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-06-failure",
+        "scenario-06-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-06?",
+      "query_id": "scenario-06-q04",
+      "required_evidence_ids": [
+        "scenario-06-failure",
+        "scenario-06-fix"
+      ],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-06-fact",
+        "scenario-06-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-06?",
+      "query_id": "scenario-06-q05",
+      "required_evidence_ids": [
+        "scenario-06-fact",
+        "scenario-06-contradiction"
+      ],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-06-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-06?",
+      "query_id": "scenario-06-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-06-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-06?",
+      "query_id": "scenario-06-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-06-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-06?",
+      "query_id": "scenario-06-q08",
+      "required_evidence_ids": [
+        "scenario-06-malicious"
+      ],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-06?",
+      "query_id": "scenario-06-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-06"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-07-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-07?",
+      "query_id": "scenario-07-q00",
+      "required_evidence_ids": [
+        "scenario-07-fact"
+      ],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-07-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-07?",
+      "query_id": "scenario-07-q01",
+      "required_evidence_ids": [
+        "scenario-07-fact"
+      ],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-07-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-07?",
+      "query_id": "scenario-07-q02",
+      "required_evidence_ids": [
+        "scenario-07-failure"
+      ],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-07-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-07?",
+      "query_id": "scenario-07-q03",
+      "required_evidence_ids": [
+        "scenario-07-fix"
+      ],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-07-failure",
+        "scenario-07-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-07?",
+      "query_id": "scenario-07-q04",
+      "required_evidence_ids": [
+        "scenario-07-failure",
+        "scenario-07-fix"
+      ],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-07-fact",
+        "scenario-07-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-07?",
+      "query_id": "scenario-07-q05",
+      "required_evidence_ids": [
+        "scenario-07-fact",
+        "scenario-07-contradiction"
+      ],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-07-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-07?",
+      "query_id": "scenario-07-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-07-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-07?",
+      "query_id": "scenario-07-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-07-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-07?",
+      "query_id": "scenario-07-q08",
+      "required_evidence_ids": [
+        "scenario-07-malicious"
+      ],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-07?",
+      "query_id": "scenario-07-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-07"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-08-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-08?",
+      "query_id": "scenario-08-q00",
+      "required_evidence_ids": [
+        "scenario-08-fact"
+      ],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-08-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-08?",
+      "query_id": "scenario-08-q01",
+      "required_evidence_ids": [
+        "scenario-08-fact"
+      ],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-08-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-08?",
+      "query_id": "scenario-08-q02",
+      "required_evidence_ids": [
+        "scenario-08-failure"
+      ],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-08-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-08?",
+      "query_id": "scenario-08-q03",
+      "required_evidence_ids": [
+        "scenario-08-fix"
+      ],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-08-failure",
+        "scenario-08-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-08?",
+      "query_id": "scenario-08-q04",
+      "required_evidence_ids": [
+        "scenario-08-failure",
+        "scenario-08-fix"
+      ],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-08-fact",
+        "scenario-08-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-08?",
+      "query_id": "scenario-08-q05",
+      "required_evidence_ids": [
+        "scenario-08-fact",
+        "scenario-08-contradiction"
+      ],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-08-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-08?",
+      "query_id": "scenario-08-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-08-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-08?",
+      "query_id": "scenario-08-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-08-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-08?",
+      "query_id": "scenario-08-q08",
+      "required_evidence_ids": [
+        "scenario-08-malicious"
+      ],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-08?",
+      "query_id": "scenario-08-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-08"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-09-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-09?",
+      "query_id": "scenario-09-q00",
+      "required_evidence_ids": [
+        "scenario-09-fact"
+      ],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-09-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-09?",
+      "query_id": "scenario-09-q01",
+      "required_evidence_ids": [
+        "scenario-09-fact"
+      ],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-09-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-09?",
+      "query_id": "scenario-09-q02",
+      "required_evidence_ids": [
+        "scenario-09-failure"
+      ],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-09-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-09?",
+      "query_id": "scenario-09-q03",
+      "required_evidence_ids": [
+        "scenario-09-fix"
+      ],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-09-failure",
+        "scenario-09-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-09?",
+      "query_id": "scenario-09-q04",
+      "required_evidence_ids": [
+        "scenario-09-failure",
+        "scenario-09-fix"
+      ],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-09-fact",
+        "scenario-09-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-09?",
+      "query_id": "scenario-09-q05",
+      "required_evidence_ids": [
+        "scenario-09-fact",
+        "scenario-09-contradiction"
+      ],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-09-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-09?",
+      "query_id": "scenario-09-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-09-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-09?",
+      "query_id": "scenario-09-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-09-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-09?",
+      "query_id": "scenario-09-q08",
+      "required_evidence_ids": [
+        "scenario-09-malicious"
+      ],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-09?",
+      "query_id": "scenario-09-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-09"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-10-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-10?",
+      "query_id": "scenario-10-q00",
+      "required_evidence_ids": [
+        "scenario-10-fact"
+      ],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-10-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-10?",
+      "query_id": "scenario-10-q01",
+      "required_evidence_ids": [
+        "scenario-10-fact"
+      ],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-10-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-10?",
+      "query_id": "scenario-10-q02",
+      "required_evidence_ids": [
+        "scenario-10-failure"
+      ],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-10-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-10?",
+      "query_id": "scenario-10-q03",
+      "required_evidence_ids": [
+        "scenario-10-fix"
+      ],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-10-failure",
+        "scenario-10-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-10?",
+      "query_id": "scenario-10-q04",
+      "required_evidence_ids": [
+        "scenario-10-failure",
+        "scenario-10-fix"
+      ],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-10-fact",
+        "scenario-10-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-10?",
+      "query_id": "scenario-10-q05",
+      "required_evidence_ids": [
+        "scenario-10-fact",
+        "scenario-10-contradiction"
+      ],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-10-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-10?",
+      "query_id": "scenario-10-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-10-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-10?",
+      "query_id": "scenario-10-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-10-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-10?",
+      "query_id": "scenario-10-q08",
+      "required_evidence_ids": [
+        "scenario-10-malicious"
+      ],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-10?",
+      "query_id": "scenario-10-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-10"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-11-fact"
+      ],
+      "access_scope": "public",
+      "category": "exact",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What verified outcome was recorded for scenario-11?",
+      "query_id": "scenario-11-q00",
+      "required_evidence_ids": [
+        "scenario-11-fact"
+      ],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-11-fact"
+      ],
+      "access_scope": "public",
+      "category": "paraphrase",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record says the restart retained the digest identity in scenario-11?",
+      "query_id": "scenario-11-q01",
+      "required_evidence_ids": [
+        "scenario-11-fact"
+      ],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-11-failure"
+      ],
+      "access_scope": "public",
+      "category": "failure",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Why did the initial attempt fail in scenario-11?",
+      "query_id": "scenario-11-q02",
+      "required_evidence_ids": [
+        "scenario-11-failure"
+      ],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-11-fix"
+      ],
+      "access_scope": "public",
+      "category": "correction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What fixed the failed dependency in scenario-11?",
+      "query_id": "scenario-11-q03",
+      "required_evidence_ids": [
+        "scenario-11-fix"
+      ],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-11-failure",
+        "scenario-11-fix"
+      ],
+      "access_scope": "public",
+      "category": "association",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which failure and corrective action belong together in scenario-11?",
+      "query_id": "scenario-11-q04",
+      "required_evidence_ids": [
+        "scenario-11-failure",
+        "scenario-11-fix"
+      ],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-11-fact",
+        "scenario-11-contradiction"
+      ],
+      "access_scope": "public",
+      "category": "contradiction",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which records distinguish the verified result from the earlier success claim in scenario-11?",
+      "query_id": "scenario-11-q05",
+      "required_evidence_ids": [
+        "scenario-11-fact",
+        "scenario-11-contradiction"
+      ],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "negation",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [
+        "scenario-11-failure"
+      ],
+      "query": "Did the initial attempt not fail in scenario-11?",
+      "query_id": "scenario-11-q06",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "public",
+      "category": "superseded",
+      "expected_abstention": true,
+      "historical_cutoff": "2026-01-02",
+      "known_distractors": [
+        "scenario-11-fix"
+      ],
+      "query": "What was known before the corrective action in scenario-11?",
+      "query_id": "scenario-11-q07",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [
+        "scenario-11-malicious"
+      ],
+      "access_scope": "public",
+      "category": "malicious",
+      "expected_abstention": false,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "What historical text contains an embedded command in scenario-11?",
+      "query_id": "scenario-11-q08",
+      "required_evidence_ids": [
+        "scenario-11-malicious"
+      ],
+      "scenario_id": "scenario-11"
+    },
+    {
+      "acceptable_supporting_evidence": [],
+      "access_scope": "private",
+      "category": "missing",
+      "expected_abstention": true,
+      "historical_cutoff": null,
+      "known_distractors": [],
+      "query": "Which record proves the unrecorded battery result in scenario-11?",
+      "query_id": "scenario-11-q09",
+      "required_evidence_ids": [],
+      "scenario_id": "scenario-11"
+    }
+  ],
+  "schema_version": 1,
+  "seed": 20261120
+}

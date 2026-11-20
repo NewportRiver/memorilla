@@ -1,0 +1,81 @@
+{
+  "artifacts": {
+    "benchmarks/lite/cognitive_evaluation.py": {
+      "bytes": 1300,
+      "sha256": "8cb96a1c8591c2ae8f31f17e600f33ff893fc7d794c3439e6f7986ae891781c6"
+    },
+    "benchmarks/lite/fixtures/EVALUATION_PROTOCOL.json": {
+      "bytes": 876,
+      "sha256": "9de30d4d88994eeb5c36db4f498ea3de25eea564822b4894e9898668c843764c"
+    },
+    "benchmarks/lite/fixtures/development_queries.json": {
+      "bytes": 57408,
+      "sha256": "051811db818b02440355ab5b27fc4386b9bd6540995d956fe3fb8bf9fcaa427c"
+    },
+    "benchmarks/lite/fixtures/development_sources.json": {
+      "bytes": 29968,
+      "sha256": "3e285a91072a97e7d4546c2c3765419070be9ff30aaa4cec18c8bca8ddb665ca"
+    },
+    "benchmarks/lite/fixtures/holdout_manifest.json": {
+      "bytes": 299,
+      "sha256": "8efd20470a81102cc31d510fa84b48b0b9ef5c4a29265d0a4a0ffc05f91ccb2c"
+    },
+    "benchmarks/lite/retrieval_benchmark.py": {
+      "bytes": 9405,
+      "sha256": "78a7f9218f372d41f2cc612989d59a63b2eba377d63ea8d52c46991b5fc21cc9"
+    },
+    "docs/memorilla-lite/EVALUATION_PROTOCOL.md": {
+      "bytes": 3345,
+      "sha256": "e923824eb5a038fc19d9489d2a48c9a7afed010b40693363b10cffecdaa4dfba"
+    },
+    "docs/memorilla-lite/audits/LITE-005-BENCHMARK.json": {
+      "bytes": 40719,
+      "sha256": "15d0742013630ccc7bc5b22f534960fda074c0aee56b61f5919bb663857bae2c"
+    },
+    "docs/memorilla-lite/audits/LITE-005-EVALUATION.json": {
+      "bytes": 40894,
+      "sha256": "69c7cec73d043ed197bd6073bcace72aba8679f923c60f37b6ea19ced1a5065e"
+    },
+    "docs/memorilla-lite/audits/LITE-005-RETRIEVAL.md": {
+      "bytes": 6762,
+      "sha256": "2943037efcabe7e0c6900ac4c870af0aa9fb406252a1c41ebaba544fa6d6fab4"
+    },
+    "lite/retrieval/__init__.py": {
+      "bytes": 431,
+      "sha256": "747634d13cc0aeef91840182ba9139b60cda798867166bec443fdfdc49b07636"
+    },
+    "lite/retrieval/controller.py": {
+      "bytes": 2879,
+      "sha256": "a0a1ef98f6b4bc6e23b598eea9652d731f09b471f8ac76c7e02c558af15a3505"
+    },
+    "lite/retrieval/cosine.py": {
+      "bytes": 1515,
+      "sha256": "1bbe69b7833bb1fafd7b2cb1110d92ad53093924f4d3a5eaf947b77eb7bd6b91"
+    },
+    "lite/retrieval/evidence.py": {
+      "bytes": 2892,
+      "sha256": "dd48f28e48dbf9c98a8cd8aaf61cd6eae15a7217b379a44bfb5de9e5a9cd5e77"
+    },
+    "lite/retrieval/fallback.py": {
+      "bytes": 74,
+      "sha256": "e457d59ee9841761cab007ea2a32acd1dc1893ba8634038610c4ad38b7ec2b25"
+    },
+    "lite/retrieval/hybrid.py": {
+      "bytes": 913,
+      "sha256": "d16ea8a0f1d6382d0d1a52e4cb3f8c4b8ed422f32fb0d57711651414474a310e"
+    },
+    "lite/retrieval/lexical.py": {
+      "bytes": 468,
+      "sha256": "1d745140df2409cdc17e7bc582159fccad5188ef7dacf779b34fa45c10464130"
+    }
+  },
+  "baseline_commit": "4ac8b967e28dea6669eae2f0c53a00adbe77307b",
+  "branch": "feature/memorilla-lite-android",
+  "development_queries": 120,
+  "development_sources": 60,
+  "fixture_seed": 20261120,
+  "milestone": "LITE-005",
+  "schema_version": 1,
+  "sealed_holdout_descriptor_sha256": "f6917c335f9b8c1ee29e312de2350fb1472d42c8d8181a0bf3c4feeada0d654c",
+  "sealed_holdout_labels_present": false
+}

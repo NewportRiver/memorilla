@@ -41,12 +41,13 @@ class MemoryStore:
   if scope is not None and row['access_scope']!=scope: raise PermissionError('cross-scope access attempt')
   if contract and (row['encoder_revision']!=contract.encoder_revision or row['artifact_sha256']!=contract.artifact_sha256 or row['tokenizer_identity']!=contract.tokenizer_identity or row['preprocessing_identity']!=contract.preprocessing_identity): raise ValueError('incompatible model or preprocessing configuration')
   source=SourceRecord(row['evidence_id'],'',row['source_hash'],row['provenance'],row['source_revision'],row['access_scope'],row['source_timestamp'],row['collection_id'],row['chunk_id'],row['chunk_start'],row['chunk_end']); self._resolve(source,row['access_scope'])
-  return {'memory_id':row['memory_id'],'evidence_id':row['evidence_id'],'access_scope':row['access_scope'],'collection_id':row['collection_id'],'source_hash':row['source_hash'],'dtype':row['dtype'],'dimension':row['dimension'],'vector':self._row_vector(row),'validity_status':row['validity_status']}
- def iter_vectors(self,collection_id=None,access_scope=None,chunk_size=128,contract=None):
+  return {'memory_id':row['memory_id'],'evidence_id':row['evidence_id'],'access_scope':row['access_scope'],'collection_id':row['collection_id'],'source_hash':row['source_hash'],'source_revision':row['source_revision'],'source_timestamp':row['source_timestamp'],'provenance':row['provenance'],'dtype':row['dtype'],'dimension':row['dimension'],'vector':self._row_vector(row),'validity_status':row['validity_status']}
+ def iter_vectors(self,collection_id=None,access_scope=None,chunk_size=128,contract=None,as_of=None):
   if chunk_size not in (128,256,512): raise ValueError('chunk_size must be 128, 256, or 512')
   clauses=["validity_status='valid'"]; args=[]
   if collection_id is not None: clauses.append('collection_id=?'); args.append(collection_id)
   if access_scope is not None: clauses.append('access_scope=?'); args.append(access_scope)
+  if as_of is not None: clauses.append('source_timestamp<=?'); args.append(as_of)
   if contract: clauses += ['encoder_revision=?','artifact_sha256=?','tokenizer_identity=?','preprocessing_identity=?']; args += [contract.encoder_revision,contract.artifact_sha256,contract.tokenizer_identity,contract.preprocessing_identity]
   cur=self.db.execute('SELECT * FROM embeddings WHERE '+' AND '.join(clauses)+' ORDER BY memory_id',args)
   for row in cur: yield self.get_vector(row['memory_id'],access_scope,contract)

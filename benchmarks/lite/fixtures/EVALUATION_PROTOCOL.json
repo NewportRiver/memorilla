@@ -1,0 +1,48 @@
+{
+  "categories": [
+    "association",
+    "contradiction",
+    "correction",
+    "exact",
+    "failure",
+    "malicious",
+    "missing",
+    "negation",
+    "paraphrase",
+    "superseded"
+  ],
+  "default_dtype": "float16",
+  "development_queries": 120,
+  "development_scenarios": 12,
+  "experimental_dtype": "int8",
+  "holdout_labels": "external sealed fixture; not stored in repository",
+  "methods": [
+    "lexical",
+    "semantic",
+    "hybrid"
+  ],
+  "metrics": [
+    "recall@1",
+    "recall@3",
+    "recall@5",
+    "recall@10",
+    "precision@k",
+    "mrr",
+    "multi_evidence_coverage",
+    "complete_support_rate",
+    "unsupported_return_rate",
+    "scope_violation_rate",
+    "temporal_leakage_rate",
+    "abstention_rate"
+  ],
+  "reference_dtype": "float32",
+  "rrf_k": 60,
+  "schema_version": 1,
+  "seed": 20261120,
+  "top_k": [
+    1,
+    3,
+    5,
+    10
+  ]
+}
