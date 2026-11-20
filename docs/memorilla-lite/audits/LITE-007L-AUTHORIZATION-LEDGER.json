@@ -1,0 +1,33 @@
+{
+  "associative-budget.json": {
+    "active_episodes": 0,
+    "authorized_updates": 240,
+    "completed_episodes": 30,
+    "episodes": 30,
+    "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007L/associative-budget.json",
+    "used_updates": 240
+  },
+  "direct-budget-recovered.json": {
+    "active_episodes": 0,
+    "authorized_updates": 240,
+    "completed_episodes": 30,
+    "episodes": 30,
+    "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007L/direct-budget-recovered.json",
+    "used_updates": 240
+  },
+  "direct-budget.json": {
+    "active_episodes": 1,
+    "authorized_updates": 240,
+    "completed_episodes": 0,
+    "episodes": 1,
+    "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007L/direct-budget.json",
+    "used_updates": 0
+  },
+  "incident": {
+    "direct_initial_runner_failure": true,
+    "optimizer_updates": 0,
+    "preserved_ledger": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007L/direct-budget.json",
+    "resolution": "fresh explicit zero checkpoint and separate recovered ledger; no overwrite",
+    "scheduler_reservation": 0
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "associative": {
+    "architecture_version": "lite006-associative-v1",
+    "checksums": {
+      "b0.attn_out_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "b0.attn_out_w": "f409a5ba26f5c9c3a8d8435b02d7dd69e5e2b5bea4918874ec19b454287869d9",
+      "b0.ff1_b": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "b0.ff1_w": "ee8876e35e2ff3c179c0a322193e31516ffe696d83d55461df3d89f34a882f09",
+      "b0.ff2_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "b0.ff2_w": "e5d5762f3c68218576e3cb0f643bf2f2ba8f17f2f534c7a4e9494e4e000835e8",
+      "b0.k_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "b0.k_w": "cf23a9d1052481128934f0de2528473076eca1e829b0da0fa51ec9226ac18c59",
+      "b0.ln1_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "b0.ln1_g": "02722f124d0f1736a9dd7c4ddcd05630dcf16ee1ce3454e9a876005ce005d4ac",
+      "b0.ln2_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "b0.ln2_g": "02722f124d0f1736a9dd7c4ddcd05630dcf16ee1ce3454e9a876005ce005d4ac",
+      "b0.q_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "b0.q_w": "33e82eb1d3e9e56596e26828720527c26e707e16d988a764844c53653a6eb41c",
+      "b0.v_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "b0.v_w": "b5638deb2bd78080450aeadbf81a3d4cc7aaa8e33d0e3c7e90ed1fe596cf94b5",
+      "mem_k_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "mem_k_w": "0e2ed956864061f54a1c0da83d5d2c52b01cb86ba6c5b35be1be2556594f84c2",
+      "mem_v_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "mem_v_w": "82b16ce8f59a99532c300253021564d04d6b4a72ae4f77751a9c856c0359b2ef",
+      "out_b": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "out_w": "4e55514c6a553a04e429a1d1fae7649e0f36e60e102df87a3dec4b3c74043a2a",
+      "query_b": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+      "query_w": "839c3954850a0a7d4b95ec2fede22b9ef12569d24edfb33e230b5d05d457011c",
+      "score_mem_b": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "score_mem_w": "4c73cb655273e2ae077c9c8332fce2d366be669515680c4143946ff07583b876",
+      "score_slot_b": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "score_slot_w": "8aa15eac008c7eed35288d20fdf98a65b623fdb0c5ec0bd3e09b748edc504303",
+      "slots": "ade1d92348de6be3ad82921e83964277e5237bdb11055f7476d69238668094e0"
+    },
+    "config": {
+      "architecture_version": "lite006-associative-v1",
+      "blocks": 1,
+      "ffn_dim": 256,
+      "heads": 4,
+      "input_dim": 384,
+      "latent_dim": 128,
+      "output_dim": 384,
+      "score_dim": 64,
+      "seed": 20261120,
+      "slots": 8
+    },
+    "dtypes": {
+      "b0.attn_out_b": "float32",
+      "b0.attn_out_w": "float32",
+      "b0.ff1_b": "float32",
+      "b0.ff1_w": "float32",
+      "b0.ff2_b": "float32",
+      "b0.ff2_w": "float32",
+      "b0.k_b": "float32",
+      "b0.k_w": "float32",
+      "b0.ln1_b": "float32",
+      "b0.ln1_g": "float32",
+      "b0.ln2_b": "float32",
+      "b0.ln2_g": "float32",
+      "b0.q_b": "float32",
+      "b0.q_w": "float32",
+      "b0.v_b": "float32",
+      "b0.v_w": "float32",
+      "mem_k_b": "float32",
+      "mem_k_w": "float32",
+      "mem_v_b": "float32",
+      "mem_v_w": "float32",
+      "out_b": "float32",
+      "out_w": "float32",
+      "query_b": "float32",
+      "query_w": "float32",
+      "score_mem_b": "float32",
+      "score_mem_w": "float32",
+      "score_slot_b": "float32",
+      "score_slot_w": "float32",
+      "slots": "float32"
+    },
+    "encoder_compatibility": {
+      "dataset_identity": "e0f8c7db82cf0e68ac4c084577f9865a0cc6b6bb27561d001789e56796711438",
+      "experiment_identity": "LITE-007L-associative-initial"
+    },
+    "executable_serialization": false,
+    "initialization_seed": 20261120,
+    "parameter_count": 429312,
+    "schema_version": 1,
+    "shapes": {
+      "b0.attn_out_b": [
+        128
+      ],
+      "b0.attn_out_w": [
+        128,
+        128
+      ],
+      "b0.ff1_b": [
+        256
+      ],
+      "b0.ff1_w": [
+        128,
+        256
+      ],
+      "b0.ff2_b": [
+        128
+      ],
+      "b0.ff2_w": [
+        256,
+        128
+      ],
+      "b0.k_b": [
+        128
+      ],
+      "b0.k_w": [
+        384,
+        128
+      ],
+      "b0.ln1_b": [
+        128
+      ],
+      "b0.ln1_g": [
+        128
+      ],
+      "b0.ln2_b": [
+        128
+      ],
+      "b0.ln2_g": [
+        128
+      ],
+      "b0.q_b": [
+        128
+      ],
+      "b0.q_w": [
+        128,
+        128
+      ],
+      "b0.v_b": [
+        128
+      ],
+      "b0.v_w": [
+        384,
+        128
+      ],
+      "mem_k_b": [
+        128
+      ],
+      "mem_k_w": [
+        384,
+        128
+      ],
+      "mem_v_b": [
+        128
+      ],
+      "mem_v_w": [
+        384,
+        128
+      ],
+      "out_b": [
+        384
+      ],
+      "out_w": [
+        128,
+        384
+      ],
+      "query_b": [
+        128
+      ],
+      "query_w": [
+        384,
+        128
+      ],
+      "score_mem_b": [
+        64
+      ],
+      "score_mem_w": [
+        384,
+        64
+      ],
+      "score_slot_b": [
+        64
+      ],
+      "score_slot_w": [
+        128,
+        64
+      ],
+      "slots": [
+        8,
+        128
+      ]
+    },
+    "training_status": "untrained_fresh_initialization",
+    "weight_bytes": 1717248
+  },
+  "direct": {
+    "dtype": "float32",
+    "initialization_mode": "zeros",
+    "initialization_seed": 20261120,
+    "model": "direct-bilinear-v1",
+    "parameter_count": 147456,
+    "provenance": "LITE-007K-corrected-preparation",
+    "schema_version": 1,
+    "sha256": "250480ecefa3655c774b6a4e5d4eb16675ee4f181c2285c25020fac6e3aaf3b5",
+    "shape": [
+      384,
+      384
+    ]
+  },
+  "direct_control": "explicit zero 384x384 Float32 matrix; identity and cosine retained read-only",
+  "no_training_updates_before_initialization": true
+}

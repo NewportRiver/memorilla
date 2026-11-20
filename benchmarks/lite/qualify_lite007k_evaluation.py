@@ -10,8 +10,8 @@ from lite.training.evaluation_metrics import ranking_metrics
 
 def main():
  import sys
- artifact=Path(sys.argv[1]); out=Path(sys.argv[2]); base=Path.home()/'.cache/memorilla-lite/LITE-007J'; ds=PreparedTrainingSet(artifact,allow_validation=True); source=Path('benchmarks/lite/fixtures/lite007k-independent/dataset.json') if ds.metadata['dataset_version'].startswith('lite007k') else Path('benchmarks/lite/fixtures/lite007i/dataset.json'); data=json.loads(source.read_text()); qs={q['query_id']:q for q in data['queries']}; sc={s['scenario_id']:s for s in data['scenarios']}
- models=({'associative_final':('assoc',base/'associative/episode-029/checkpoint'),'direct_final':('direct',base/'direct/episode-029/checkpoint'),'cosine':('cosine',None)} if len(sys.argv)<4 or sys.argv[3]=='final' else {'associative_initial':('assoc',base/'associative/initial'),'associative_final':('assoc',base/'associative/episode-029/checkpoint'),'direct_initial':('direct',base/'direct/initial'),'direct_final':('direct',base/'direct/episode-029/checkpoint'),'cosine':('cosine',None)})
+ artifact=Path(sys.argv[1]); out=Path(sys.argv[2]); base=Path.home()/'.cache/memorilla-lite/LITE-007L'; ds=PreparedTrainingSet(artifact,allow_validation=True); source=Path('benchmarks/lite/fixtures/lite007k-independent/dataset.json') if ds.metadata['dataset_version'].startswith('lite007k') else Path('benchmarks/lite/fixtures/lite007i/dataset.json'); data=json.loads(source.read_text()); qs={q['query_id']:q for q in data['queries']}; sc={s['scenario_id']:s for s in data['scenarios']}; step=int(sys.argv[3]) if len(sys.argv)>3 else 240; assoc=base/'associative-initial/checkpoint' if step==0 else base/'associative'/f'episode-{step//8-1:03d}'/'checkpoint'; direct=base/'direct-initial/checkpoint' if step==0 else base/'direct'/f'episode-{step//8-1:03d}'/'checkpoint'
+ models={'associative':('assoc',assoc),'direct':('direct',direct),'cosine':('cosine',None)}
  loaded={k:(load_model(p)[0] if t=='assoc' else load_direct(p)[0] if t=='direct' else None) for k,(t,p) in models.items()}
  def rows_for(kind,model):
   rows=[]; diag=[]

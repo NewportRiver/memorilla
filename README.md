@@ -34,7 +34,7 @@ The experimental associative model contains 429,312 parameters, uses 384-dimensi
 | LITE-004 Persistent memory bank | Complete |
 | LITE-005 Retrieval baseline | Complete, corrected audit retained |
 | LITE-006 Neural memory architecture | Complete |
-| LITE-007 Associative memory training | Engineering demonstrated; scientific acceptance pending owner review |
+| LITE-007 Associative memory training | LITE-007L executed; engineering audit and scientific report recorded |
 | LITE-008 Latent token injection | Blocked pending review |
 | LITE-009 Resource optimization | Pending; preliminary optimization demonstrated |
 | LITE-010 Hierarchical scaling | Pending |
@@ -60,7 +60,11 @@ Measured in the Android/Termux research environment; not a general device compat
 
 The [scientific comparison](docs/memorilla-lite/audits/LITE-007J-SCIENTIFIC-COMPARISON.md) reports higher complete-required-evidence top-5 retrieval for the trained associative model than the trained direct bilinear control (75% versus 25% at both 64 and 128 records), while the direct model has higher reported R@1. These are synthetic development results, not independent holdout results. Metric definitions and denominators must be considered when interpreting them.
 
-The [final acceptance audit](docs/memorilla-lite/audits/LITE-007-FINAL-ACCEPTANCE.md) discovered that training repeated only eight unique examples. The experiment therefore does not establish broad generalization or associative superiority. Conventional retrieval remains the operational baseline. Decoder conditioning, independent holdout evaluation and production acceptance remain outstanding.
+The [final acceptance audit](docs/memorilla-lite/audits/LITE-007-FINAL-ACCEPTANCE.md) discovered that training repeated only eight unique examples. The experiment therefore does not establish broad generalization or associative superiority. Conventional retrieval remains the operational baseline. Decoder conditioning, final holdout evaluation and production acceptance remain outstanding.
+
+### LITE-007L corrected comparative experiment
+
+LITE-007L was owner-authorized from baseline `da0c3b3` and executed with fresh associative and explicit zero direct initialization. Each model consumed exactly 240 FP32 SGD updates across 30 eight-update episodes, using matched persistent scheduling and 240 unique eligible examples (80 at each training collection size 8, 16 and 32). The independent development corpus and larger development-validation corpus were evaluated separately at 0, 40, 80, 120, 160, 200 and 240 updates. See the LITE-007L audit artifacts under `docs/memorilla-lite/audits/`. Results remain synthetic development evidence; no latent language-model conditioning or holdout claim is made.
 
 ## Getting started
 

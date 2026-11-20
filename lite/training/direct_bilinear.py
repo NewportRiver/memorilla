@@ -36,11 +36,17 @@ def inference_telemetry(prepared_path, checkpoint_path, examples=8):
  return {'operation':'direct_bilinear_inference_probe','examples':count,'wall_seconds':time.perf_counter()-start,'ru_maxrss_kib':rss1,'ru_maxrss_delta_kib':max(0,rss1-rss0),'threads':1,'computational_subprocesses':1}
 def run_episode(prepared_path,out,budget_path,identity,init=None,requested=8,total=240,scheduler_path=None,scheduler_seed=0,schedule_order=None):
  if str(identity).startswith(('LITE-007L','LITE-008')) and scheduler_path is None: raise ValueError('persistent scheduler is mandatory for corrected comparative experiments')
- out=Path(out); ds=PreparedTrainingSet(prepared_path); started=time.perf_counter(); rss_start=rss_bytes(); ident=ds.metadata['content_sha256']; b=EpisodeBudget(budget_path,total,ident,identity); eid=out.name; b.begin_episode(eid,requested)
+ out=Path(out); ds=PreparedTrainingSet(prepared_path); started=time.perf_counter(); rss_start=rss_bytes(); ident=ds.metadata['content_sha256'];
+ if available_ram_bytes() and available_ram_bytes() < 1280*1024**2: ds.close(); raise RuntimeError('minimum RAM guard blocked direct episode')
+ if rss_bytes() > 256*1024**2: ds.close(); raise RuntimeError('direct RSS guard exceeded')
+ b=EpisodeBudget(budget_path,total,ident,identity); eid=out.name; b.begin_episode(eid,requested)
  if init is None: raise ValueError('explicit direct initialization checkpoint required')
  W,init_meta=load(init); scheduler=PersistentSampleScheduler(scheduler_path,ident,ds.eligible_indices(),scheduler_seed,schedule_order) if scheduler_path is not None else None; usable=scheduler.reserve(requested,eid) if scheduler is not None else ds.eligible_indices()[:requested]; rows=[]
  try:
   for pos in range(requested):
+   if time.perf_counter()-started > 30: raise TimeoutError('direct episode wall-time guard exceeded')
+   if available_ram_bytes() and available_ram_bytes() < 1024*1024**2: raise MemoryError('direct abort-RAM guard exceeded')
+   if rss_bytes() > 256*1024**2: raise MemoryError('direct RSS guard exceeded')
    ex=ds.get(usable[pos])
    q=ex['query_embedding']; mem=ex['memory_embeddings']; valid=ex['valid_mask']; positive=ex['positive_mask']; pi=int(np.flatnonzero(positive)[0]); ni=int(np.flatnonzero(valid & ~positive)[0]); ps=float(q@W@mem[pi]); ns=float(q@W@mem[ni]); z=np.float32(0.1+ns-ps); loss=float(np.logaddexp(0,z)); coeff=np.float32(1/(1+np.exp(-float(z)))); grad=coeff*(np.outer(q,mem[ni])-np.outer(q,mem[pi])); norm=float(np.linalg.norm(grad)); scale=min(1.0,1.0/max(norm,1e-12)); grad=(grad*scale).astype(np.float32); b.record_update(eid); W=(W-np.float32(.001)*grad).astype(np.float32); save(out/'checkpoint',W,{'dataset_identity':ident,'experiment_identity':identity,'training_status':'direct_bilinear_sgd'}); rows.append({'position':pos,'query_id':ex['query_id'],'loss':loss,'gradient_norm':norm,'clip_scale':scale,'checkpoint_sha256':_sha(W)})
  except BaseException:

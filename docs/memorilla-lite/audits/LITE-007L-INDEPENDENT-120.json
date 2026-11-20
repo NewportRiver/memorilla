@@ -1,0 +1,2809 @@
+{
+  "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007K/prepared-independent",
+  "models": {
+    "associative": {
+      "metrics": {
+        "16": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.0,
+          "hit_rate_at_1": 0.016666666666666666,
+          "mrr": 0.12422970547970548,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.008333333333333333,
+          "recall_at_5": 0.041666666666666664
+        },
+        "32": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.0,
+          "hit_rate_at_1": 0.0,
+          "mrr": 0.06043481624010622,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.0,
+          "recall_at_5": 0.008333333333333333
+        },
+        "8": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.31666666666666665,
+          "hit_rate_at_1": 0.2,
+          "mrr": 0.4137599206349207,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.125,
+          "recall_at_5": 0.525
+        },
+        "answerable": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.10555555555555556,
+          "hit_rate_at_1": 0.07222222222222222,
+          "mrr": 0.19947481411824414,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.044444444444444446,
+          "recall_at_5": 0.19166666666666668
+        },
+        "configuration": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.0,
+          "hit_rate_at_1": 0.03333333333333333,
+          "mrr": 0.12902070152070153,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.016666666666666666,
+          "recall_at_5": 0.041666666666666664
+        },
+        "installation": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.1,
+          "hit_rate_at_1": 0.03333333333333333,
+          "mrr": 0.23958333333333334,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.016666666666666666,
+          "recall_at_5": 0.31666666666666665
+        },
+        "network": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.0,
+          "hit_rate_at_1": 0.0,
+          "mrr": 0.050272168882288575,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.0,
+          "recall_at_5": 0.0
+        },
+        "permissions": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.5333333333333333,
+          "hit_rate_at_1": 0.36666666666666664,
+          "mrr": 0.587936507936508,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.23333333333333334,
+          "recall_at_5": 0.7333333333333333
+        },
+        "recovery": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.0,
+          "hit_rate_at_1": 0.0,
+          "mrr": 0.07059746359792386,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.0,
+          "recall_at_5": 0.016666666666666666
+        },
+        "storage": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.0,
+          "hit_rate_at_1": 0.0,
+          "mrr": 0.11943870943870945,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.0,
+          "recall_at_5": 0.041666666666666664
+        }
+      },
+      "representation": [
+        {
+          "entropy": 2.0794310459324574,
+          "query_sensitivity": 8.51630133305092,
+          "required_attention": 0.24974135593508184,
+          "slot_cosine": 0.6196683838652388,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079431327896584,
+          "query_sensitivity": 8.643850632236228,
+          "required_attention": 0.24972728497036145,
+          "slot_cosine": 0.6199007694684487,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079431185670992,
+          "query_sensitivity": 8.370646593307686,
+          "required_attention": 0.24970359855135862,
+          "slot_cosine": 0.6208971555856735,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794325912207254,
+          "query_sensitivity": 8.25746509385966,
+          "required_attention": 0.12460363145650957,
+          "slot_cosine": 0.6042685555789128,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772580517861905,
+          "query_sensitivity": 7.848656255784748,
+          "required_attention": 0.12491777139857879,
+          "slot_cosine": 0.5978487043913462,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725808751355485,
+          "query_sensitivity": 7.852260337112731,
+          "required_attention": 0.12476015946834498,
+          "slot_cosine": 0.61611837898509,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581493380258,
+          "query_sensitivity": 7.6317371650649095,
+          "required_attention": 0.12462538367134429,
+          "slot_cosine": 0.610749524475133,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725813596618574,
+          "query_sensitivity": 7.887884150747546,
+          "required_attention": 0.0621201345201978,
+          "slot_cosine": 0.6144439143877461,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465726865244554,
+          "query_sensitivity": 8.319018414900277,
+          "required_attention": 0.06242112754533389,
+          "slot_cosine": 0.5576627779096214,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465726517977388,
+          "query_sensitivity": 8.088189162153265,
+          "required_attention": 0.06230506430398765,
+          "slot_cosine": 0.5654795353702196,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657265999188547,
+          "query_sensitivity": 8.003517185549203,
+          "required_attention": 0.06232432053925249,
+          "slot_cosine": 0.5727349489079152,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465726654409575,
+          "query_sensitivity": 8.13502431314752,
+          "required_attention": 0.03111775563132014,
+          "slot_cosine": 0.5512315171018175,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079436566709752,
+          "query_sensitivity": 8.95664681703145,
+          "required_attention": 0.25060159791248243,
+          "slot_cosine": 0.571353449934226,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436517220087,
+          "query_sensitivity": 8.888960783847722,
+          "required_attention": 0.2503083329559711,
+          "slot_cosine": 0.5836936545948888,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436545506474,
+          "query_sensitivity": 8.485088861172592,
+          "required_attention": 0.25016880149785764,
+          "slot_cosine": 0.5696989518170784,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436658653353,
+          "query_sensitivity": 8.478386931514093,
+          "required_attention": 0.1251752014618469,
+          "slot_cosine": 0.564355875617226,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581717859357,
+          "query_sensitivity": 7.355238991291105,
+          "required_attention": 0.12494186328893551,
+          "slot_cosine": 0.5851120621840955,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581959863532,
+          "query_sensitivity": 7.402762424741465,
+          "required_attention": 0.12503415456910888,
+          "slot_cosine": 0.5785062184365933,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582267110619,
+          "query_sensitivity": 7.508549395154922,
+          "required_attention": 0.12446774421555024,
+          "slot_cosine": 0.5810249890792173,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582246056273,
+          "query_sensitivity": 7.486989947780902,
+          "required_attention": 0.062318511929331744,
+          "slot_cosine": 0.5712549767656442,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657274369248876,
+          "query_sensitivity": 7.334157674096249,
+          "required_attention": 0.06234515527585619,
+          "slot_cosine": 0.5460474292342407,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727196585916,
+          "query_sensitivity": 7.185698005727725,
+          "required_attention": 0.06245560558277774,
+          "slot_cosine": 0.5650806374071705,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465726908123483,
+          "query_sensitivity": 7.141975606296973,
+          "required_attention": 0.06230036695468945,
+          "slot_cosine": 0.5706225441591608,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657273139638463,
+          "query_sensitivity": 7.194002026637767,
+          "required_attention": 0.031147805257137277,
+          "slot_cosine": 0.5617190398946479,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794350482798745,
+          "query_sensitivity": 8.24295410667759,
+          "required_attention": 0.2500449912438979,
+          "slot_cosine": 0.6166133981014117,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079434907866357,
+          "query_sensitivity": 8.69112507277982,
+          "required_attention": 0.2497839439469165,
+          "slot_cosine": 0.6393283445568546,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435252065781,
+          "query_sensitivity": 8.642524816977273,
+          "required_attention": 0.24933113412012042,
+          "slot_cosine": 0.6293853542781224,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435560326871,
+          "query_sensitivity": 8.104916649416166,
+          "required_attention": 0.12460276942777543,
+          "slot_cosine": 0.6129539847588342,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772579387709922,
+          "query_sensitivity": 7.882306355624741,
+          "required_attention": 0.12489801426682255,
+          "slot_cosine": 0.5851865409460839,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725789635868274,
+          "query_sensitivity": 8.04928119229686,
+          "required_attention": 0.12496238449153635,
+          "slot_cosine": 0.6115978547134746,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.77257880819142,
+          "query_sensitivity": 8.379481264793556,
+          "required_attention": 0.12475030363667022,
+          "slot_cosine": 0.6115923459125938,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725793659409783,
+          "query_sensitivity": 7.882213950266391,
+          "required_attention": 0.06235807999854713,
+          "slot_cosine": 0.5918215174027909,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283890324355,
+          "query_sensitivity": 8.62235298772449,
+          "required_attention": 0.062343025249210725,
+          "slot_cosine": 0.573398623469048,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728096519721,
+          "query_sensitivity": 8.587426423545258,
+          "required_attention": 0.06237180209735586,
+          "slot_cosine": 0.5861000804769636,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283006863584,
+          "query_sensitivity": 8.32883187933599,
+          "required_attention": 0.0623025755922802,
+          "slot_cosine": 0.5752996696044589,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657284954989978,
+          "query_sensitivity": 8.258643536934464,
+          "required_attention": 0.03108845684409991,
+          "slot_cosine": 0.5649318659136224,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794340597089764,
+          "query_sensitivity": 9.16654370612678,
+          "required_attention": 0.25060299128928665,
+          "slot_cosine": 0.5843563691413891,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079433852267227,
+          "query_sensitivity": 9.324707940872653,
+          "required_attention": 0.2495657508985332,
+          "slot_cosine": 0.5945576409950906,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794342136770485,
+          "query_sensitivity": 9.223862921201096,
+          "required_attention": 0.2496990940407851,
+          "slot_cosine": 0.5955207577281826,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794345303738,
+          "query_sensitivity": 9.04407994584546,
+          "required_attention": 0.12479104305986725,
+          "slot_cosine": 0.577648293454649,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582793527718,
+          "query_sensitivity": 7.1091645629827696,
+          "required_attention": 0.12471480387374254,
+          "slot_cosine": 0.5878696698551046,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725831512817143,
+          "query_sensitivity": 7.208744362115905,
+          "required_attention": 0.12474496499316215,
+          "slot_cosine": 0.5970329007281902,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725832407216187,
+          "query_sensitivity": 7.151338864946328,
+          "required_attention": 0.12454104633099913,
+          "slot_cosine": 0.5976500578086442,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725832987627776,
+          "query_sensitivity": 7.008777349197938,
+          "required_attention": 0.06224000411305503,
+          "slot_cosine": 0.5830603153995695,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728429202313,
+          "query_sensitivity": 7.425535102988778,
+          "required_attention": 0.062421109400812434,
+          "slot_cosine": 0.5599329199068126,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657282341252786,
+          "query_sensitivity": 7.48186192523404,
+          "required_attention": 0.06238337015269146,
+          "slot_cosine": 0.5678089388228219,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727683893892,
+          "query_sensitivity": 7.2481940918034296,
+          "required_attention": 0.06235359122332783,
+          "slot_cosine": 0.5687882806299678,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657278981731894,
+          "query_sensitivity": 7.1831270146885675,
+          "required_attention": 0.031143098831375605,
+          "slot_cosine": 0.5572697181474964,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794348454047453,
+          "query_sensitivity": 8.64107528990598,
+          "required_attention": 0.2501537809279837,
+          "slot_cosine": 0.6226227259882274,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794346924692007,
+          "query_sensitivity": 8.964646485488782,
+          "required_attention": 0.25037126479121813,
+          "slot_cosine": 0.6322407441013816,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794348494417783,
+          "query_sensitivity": 9.101201388571706,
+          "required_attention": 0.249711331150714,
+          "slot_cosine": 0.6351206134388322,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794350989783115,
+          "query_sensitivity": 8.724217015740795,
+          "required_attention": 0.12484197669029945,
+          "slot_cosine": 0.6163574250693189,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725838858559344,
+          "query_sensitivity": 7.716318699972277,
+          "required_attention": 0.12484201154505009,
+          "slot_cosine": 0.5765343736689139,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772584030780424,
+          "query_sensitivity": 7.910465217890482,
+          "required_attention": 0.124836084037486,
+          "slot_cosine": 0.5947805173064438,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772583908054063,
+          "query_sensitivity": 8.03741583973412,
+          "required_attention": 0.12476020482686537,
+          "slot_cosine": 0.5984886075328962,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725837865111216,
+          "query_sensitivity": 7.91857864887973,
+          "required_attention": 0.062297986494319404,
+          "slot_cosine": 0.5924264621082028,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728953611685,
+          "query_sensitivity": 8.494268806948972,
+          "required_attention": 0.062486177817066876,
+          "slot_cosine": 0.5633891315080622,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657288813239724,
+          "query_sensitivity": 8.607651495554405,
+          "required_attention": 0.06241133503239316,
+          "slot_cosine": 0.5789173867657761,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729003863304,
+          "query_sensitivity": 8.54715881355388,
+          "required_attention": 0.06244731093802197,
+          "slot_cosine": 0.5608842363136178,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728885057339,
+          "query_sensitivity": 8.519433965584076,
+          "required_attention": 0.031198660688400184,
+          "slot_cosine": 0.5598698143791737,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079434504069842,
+          "query_sensitivity": 8.866364909171041,
+          "required_attention": 0.25050784047650015,
+          "slot_cosine": 0.5583223419742449,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.07943441138353,
+          "query_sensitivity": 8.955959056550954,
+          "required_attention": 0.25013849385692044,
+          "slot_cosine": 0.568428719122435,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079434734774655,
+          "query_sensitivity": 8.815495161678934,
+          "required_attention": 0.24957611858777828,
+          "slot_cosine": 0.5554912302877345,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794347428451463,
+          "query_sensitivity": 8.565487858843127,
+          "required_attention": 0.12481690434259976,
+          "slot_cosine": 0.5479541038608876,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772584440239143,
+          "query_sensitivity": 7.185358109625377,
+          "required_attention": 0.12517596749653664,
+          "slot_cosine": 0.585768588377231,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725844504299877,
+          "query_sensitivity": 7.303334445427811,
+          "required_attention": 0.12502592225274248,
+          "slot_cosine": 0.5865162182803216,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725845892181917,
+          "query_sensitivity": 7.428824578437129,
+          "required_attention": 0.1248063789546192,
+          "slot_cosine": 0.5768643648277463,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725846661221274,
+          "query_sensitivity": 7.409972878952086,
+          "required_attention": 0.062412534821261384,
+          "slot_cosine": 0.5609543394248789,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729493436206,
+          "query_sensitivity": 7.6143203938724255,
+          "required_attention": 0.06243214584725771,
+          "slot_cosine": 0.5613179802339283,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.46572935930785,
+          "query_sensitivity": 7.627041617943519,
+          "required_attention": 0.06251828500437816,
+          "slot_cosine": 0.558734066244752,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729215743858,
+          "query_sensitivity": 7.794866318778899,
+          "required_attention": 0.06223877664332582,
+          "slot_cosine": 0.5765508880147909,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657292600000855,
+          "query_sensitivity": 7.588175661075004,
+          "required_attention": 0.031170557348048043,
+          "slot_cosine": 0.5619192853718148,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079436704998555,
+          "query_sensitivity": 8.616753478393374,
+          "required_attention": 0.24961692759557896,
+          "slot_cosine": 0.6267881068254156,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794369685018053,
+          "query_sensitivity": 8.805069062398546,
+          "required_attention": 0.2498947950244682,
+          "slot_cosine": 0.6425678181421351,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794369305809797,
+          "query_sensitivity": 8.666507641721003,
+          "required_attention": 0.25005902495590226,
+          "slot_cosine": 0.6326637076263143,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794368202834175,
+          "query_sensitivity": 8.328168018705176,
+          "required_attention": 0.12469485533051586,
+          "slot_cosine": 0.6105322186989424,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725820098584144,
+          "query_sensitivity": 7.507837578602669,
+          "required_attention": 0.12480994154741373,
+          "slot_cosine": 0.5867624853278458,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725820904926595,
+          "query_sensitivity": 7.86286084814551,
+          "required_attention": 0.124932534476686,
+          "slot_cosine": 0.6082541147206751,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.77258220543522,
+          "query_sensitivity": 7.97667859358348,
+          "required_attention": 0.12474924823129258,
+          "slot_cosine": 0.6142299426050347,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725821101595454,
+          "query_sensitivity": 7.814453206385076,
+          "required_attention": 0.062137443008094914,
+          "slot_cosine": 0.5955488019844803,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.46572818325597,
+          "query_sensitivity": 8.692304577390336,
+          "required_attention": 0.06233227447488836,
+          "slot_cosine": 0.5800072362056008,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283621136576,
+          "query_sensitivity": 8.45902896416256,
+          "required_attention": 0.062418687454035233,
+          "slot_cosine": 0.5852529595803496,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657280199449554,
+          "query_sensitivity": 8.392470540510612,
+          "required_attention": 0.06235938525323097,
+          "slot_cosine": 0.5791858958364786,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657278394698894,
+          "query_sensitivity": 8.326172621954528,
+          "required_attention": 0.031070588364334947,
+          "slot_cosine": 0.5698637212785262,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794306865192502,
+          "query_sensitivity": 8.64598137418396,
+          "required_attention": 0.25043409315147447,
+          "slot_cosine": 0.5607692978098467,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794304561821644,
+          "query_sensitivity": 8.772493200884735,
+          "required_attention": 0.24946535944869175,
+          "slot_cosine": 0.5715687803430703,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794303478148963,
+          "query_sensitivity": 8.77081215919774,
+          "required_attention": 0.24947415568233794,
+          "slot_cosine": 0.5682456418659293,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794307857184267,
+          "query_sensitivity": 8.573166741749496,
+          "required_attention": 0.1245039401330183,
+          "slot_cosine": 0.5563740073357448,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582736882172,
+          "query_sensitivity": 7.373073439349803,
+          "required_attention": 0.125023753583641,
+          "slot_cosine": 0.5871571748239418,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725830905276485,
+          "query_sensitivity": 7.278448808434127,
+          "required_attention": 0.1248137213010024,
+          "slot_cosine": 0.5862281818368499,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772583061309432,
+          "query_sensitivity": 7.151807961281919,
+          "required_attention": 0.12479726716752358,
+          "slot_cosine": 0.5841907248204983,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725832353652113,
+          "query_sensitivity": 7.143079668160422,
+          "required_attention": 0.06229903411919409,
+          "slot_cosine": 0.5727130752081692,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657278350507426,
+          "query_sensitivity": 7.4408084359313245,
+          "required_attention": 0.062362907202692594,
+          "slot_cosine": 0.5580288523445931,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657277850833044,
+          "query_sensitivity": 7.422371310966601,
+          "required_attention": 0.06241147987653191,
+          "slot_cosine": 0.5721105811595005,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728031476546,
+          "query_sensitivity": 7.454321656985498,
+          "required_attention": 0.06223726292241685,
+          "slot_cosine": 0.5671431560135037,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727818513602,
+          "query_sensitivity": 7.314227031849876,
+          "required_attention": 0.031081305431730613,
+          "slot_cosine": 0.5643394494145689,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794367642498965,
+          "query_sensitivity": 8.462489838814088,
+          "required_attention": 0.25033998933764223,
+          "slot_cosine": 0.6258215885563762,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436674742846,
+          "query_sensitivity": 8.593640987154926,
+          "required_attention": 0.250577778543983,
+          "slot_cosine": 0.6290936756981055,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436250612491,
+          "query_sensitivity": 8.690334909861582,
+          "required_attention": 0.2504221046912034,
+          "slot_cosine": 0.6329227047491143,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436341247938,
+          "query_sensitivity": 8.204890749624994,
+          "required_attention": 0.12523571390488836,
+          "slot_cosine": 0.6145121068471282,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725814613604944,
+          "query_sensitivity": 7.448546516974671,
+          "required_attention": 0.1248422772207996,
+          "slot_cosine": 0.5625193748067934,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581672238834,
+          "query_sensitivity": 7.711576562282434,
+          "required_attention": 0.12492903103453198,
+          "slot_cosine": 0.5869898280898898,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581626126514,
+          "query_sensitivity": 7.451485083314889,
+          "required_attention": 0.12460882933530393,
+          "slot_cosine": 0.5752386063791317,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.77258213806064,
+          "query_sensitivity": 7.701027673713657,
+          "required_attention": 0.06227965293029242,
+          "slot_cosine": 0.5813285817950956,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728113902559,
+          "query_sensitivity": 8.165854161736638,
+          "required_attention": 0.06241747140098883,
+          "slot_cosine": 0.5592021950482067,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283475753946,
+          "query_sensitivity": 8.078429254702755,
+          "required_attention": 0.06246631904552798,
+          "slot_cosine": 0.576408509070558,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728473384747,
+          "query_sensitivity": 8.181463816349565,
+          "required_attention": 0.062381845552884306,
+          "slot_cosine": 0.5646862818244055,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283039074196,
+          "query_sensitivity": 8.080544614254254,
+          "required_attention": 0.031231865587253233,
+          "slot_cosine": 0.5552612677680419,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794321472538275,
+          "query_sensitivity": 8.725355751780633,
+          "required_attention": 0.2510066020431042,
+          "slot_cosine": 0.5604944079622051,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794319405286616,
+          "query_sensitivity": 8.819575288957106,
+          "required_attention": 0.2504267261213331,
+          "slot_cosine": 0.5745324724461918,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794323029193906,
+          "query_sensitivity": 8.753734380696766,
+          "required_attention": 0.24979379853132605,
+          "slot_cosine": 0.5738892979959852,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079432956793543,
+          "query_sensitivity": 8.639602199921471,
+          "required_attention": 0.1252449787286562,
+          "slot_cosine": 0.566905411693433,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725822549620527,
+          "query_sensitivity": 7.118846113467493,
+          "required_attention": 0.1249457852667676,
+          "slot_cosine": 0.5780488231799092,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725824890296105,
+          "query_sensitivity": 7.151220251952816,
+          "required_attention": 0.12504937033881258,
+          "slot_cosine": 0.5758624651140114,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582641971919,
+          "query_sensitivity": 7.134150167697532,
+          "required_attention": 0.12484239515275998,
+          "slot_cosine": 0.5719568900595542,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725824737035927,
+          "query_sensitivity": 7.167370845484533,
+          "required_attention": 0.06231612665502906,
+          "slot_cosine": 0.5611840582622893,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657282442772566,
+          "query_sensitivity": 7.443614324737629,
+          "required_attention": 0.06238032039884533,
+          "slot_cosine": 0.5577904655737335,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727741531091,
+          "query_sensitivity": 7.504113463944024,
+          "required_attention": 0.06251364256190403,
+          "slot_cosine": 0.5668717165075566,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657276659772105,
+          "query_sensitivity": 7.555731440903908,
+          "required_attention": 0.06235104447526893,
+          "slot_cosine": 0.5743947368435087,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727787296582,
+          "query_sensitivity": 7.64700976610303,
+          "required_attention": 0.031157004837436678,
+          "slot_cosine": 0.5590286139676319,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794354308412597,
+          "query_sensitivity": 8.016321462441296,
+          "required_attention": 0.2497808323957648,
+          "slot_cosine": 0.6118062217481427,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794351337915904,
+          "query_sensitivity": 7.912683758005044,
+          "required_attention": 0.24989953121426917,
+          "slot_cosine": 0.6150454938811647,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794350235374752,
+          "query_sensitivity": 8.334021122974418,
+          "required_attention": 0.2501288840128265,
+          "slot_cosine": 0.62170112973062,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079434963311131,
+          "query_sensitivity": 7.987393088110326,
+          "required_attention": 0.12464363322132166,
+          "slot_cosine": 0.6035380202618722,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725791500555275,
+          "query_sensitivity": 7.675265775324652,
+          "required_attention": 0.12503827994311498,
+          "slot_cosine": 0.5764479780272819,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725798591611537,
+          "query_sensitivity": 7.682773043214022,
+          "required_attention": 0.12489284047841512,
+          "slot_cosine": 0.590165634345354,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725799035179843,
+          "query_sensitivity": 7.474404438398427,
+          "required_attention": 0.12475410454526019,
+          "slot_cosine": 0.5828281039340772,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772579896108768,
+          "query_sensitivity": 7.609881003246577,
+          "required_attention": 0.06230977493730214,
+          "slot_cosine": 0.5738088414053939,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728324594277,
+          "query_sensitivity": 8.104345307527094,
+          "required_attention": 0.06237994589070306,
+          "slot_cosine": 0.5866598077983454,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283704003707,
+          "query_sensitivity": 7.898123428998735,
+          "required_attention": 0.06228566940550075,
+          "slot_cosine": 0.599095814043368,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657280691709706,
+          "query_sensitivity": 7.943875051904556,
+          "required_attention": 0.06228533961738651,
+          "slot_cosine": 0.5818788469063172,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657280793518694,
+          "query_sensitivity": 7.834889986919521,
+          "required_attention": 0.03105957709947972,
+          "slot_cosine": 0.5719117467644931,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794365903769476,
+          "query_sensitivity": 8.592107813994332,
+          "required_attention": 0.2503375994926564,
+          "slot_cosine": 0.5636256895116517,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794362138397218,
+          "query_sensitivity": 8.76855066902077,
+          "required_attention": 0.25051322790511005,
+          "slot_cosine": 0.5672921426972183,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794365865648405,
+          "query_sensitivity": 8.646097370921424,
+          "required_attention": 0.24985500695717028,
+          "slot_cosine": 0.5658948048110962,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794366766263455,
+          "query_sensitivity": 8.541818830080148,
+          "required_attention": 0.12496690128869282,
+          "slot_cosine": 0.5555039552040841,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772583258911662,
+          "query_sensitivity": 7.265392114955442,
+          "required_attention": 0.12505938835226554,
+          "slot_cosine": 0.5591385686200298,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725832991096815,
+          "query_sensitivity": 7.425177927315608,
+          "required_attention": 0.1250826629821088,
+          "slot_cosine": 0.5665430418082475,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725831147867206,
+          "query_sensitivity": 7.3479380615542,
+          "required_attention": 0.12462305349200434,
+          "slot_cosine": 0.5602184681509356,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725833186614586,
+          "query_sensitivity": 7.144363087181531,
+          "required_attention": 0.06240586481032614,
+          "slot_cosine": 0.5522776799800421,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657306650991044,
+          "query_sensitivity": 7.496534341643433,
+          "required_attention": 0.06252031871858864,
+          "slot_cosine": 0.553080886767749,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.46573078491093,
+          "query_sensitivity": 7.360720583367628,
+          "required_attention": 0.06256571149426325,
+          "slot_cosine": 0.5612728371527774,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465730651632076,
+          "query_sensitivity": 7.212012923842363,
+          "required_attention": 0.06254197683340995,
+          "slot_cosine": 0.5635328097435588,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657308024722697,
+          "query_sensitivity": 7.129272844108772,
+          "required_attention": 0.03126228332812161,
+          "slot_cosine": 0.5533507469903369,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079436365469636,
+          "query_sensitivity": 8.196479589496386,
+          "required_attention": 0.2501726610200646,
+          "slot_cosine": 0.6074819786822986,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794365450711485,
+          "query_sensitivity": 8.776451422568982,
+          "required_attention": 0.24990014949296183,
+          "slot_cosine": 0.6217159479785523,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794364391461606,
+          "query_sensitivity": 8.782212992058845,
+          "required_attention": 0.249889327482198,
+          "slot_cosine": 0.6155139922596076,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794367807488063,
+          "query_sensitivity": 8.213621326381297,
+          "required_attention": 0.1248579401662669,
+          "slot_cosine": 0.5987748760246697,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725813953665273,
+          "query_sensitivity": 7.544147763771142,
+          "required_attention": 0.12483757125005376,
+          "slot_cosine": 0.5774971872455906,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725821568275046,
+          "query_sensitivity": 7.912205816929398,
+          "required_attention": 0.1249061004706033,
+          "slot_cosine": 0.6001795734122414,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582195579248,
+          "query_sensitivity": 7.742426856696474,
+          "required_attention": 0.12481128912495495,
+          "slot_cosine": 0.5943925692026386,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582395050555,
+          "query_sensitivity": 7.7673841818525835,
+          "required_attention": 0.06230723637064625,
+          "slot_cosine": 0.5920385579348092,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728482078937,
+          "query_sensitivity": 8.108908012198278,
+          "required_attention": 0.06243633334184822,
+          "slot_cosine": 0.5815385596365695,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727976494767,
+          "query_sensitivity": 8.194227284990331,
+          "required_attention": 0.0623151172477476,
+          "slot_cosine": 0.5832797093669652,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657282212359775,
+          "query_sensitivity": 7.808567551152585,
+          "required_attention": 0.062309150304019574,
+          "slot_cosine": 0.5785125598127756,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283643477315,
+          "query_sensitivity": 7.772241769172107,
+          "required_attention": 0.031152926370309357,
+          "slot_cosine": 0.5768186840148063,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079435976229888,
+          "query_sensitivity": 8.431257701025704,
+          "required_attention": 0.2502097969109266,
+          "slot_cosine": 0.5738746743327915,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794363176195327,
+          "query_sensitivity": 8.552975896053455,
+          "required_attention": 0.250054340519336,
+          "slot_cosine": 0.5741949571713473,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794360511873324,
+          "query_sensitivity": 8.32167714110327,
+          "required_attention": 0.24941566849988112,
+          "slot_cosine": 0.5756637660020268,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794361972692563,
+          "query_sensitivity": 8.120825481794077,
+          "required_attention": 0.12467864092405759,
+          "slot_cosine": 0.5579265516710816,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725814801287187,
+          "query_sensitivity": 6.734079735181437,
+          "required_attention": 0.1252640493445394,
+          "slot_cosine": 0.6025029669230361,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581468638586,
+          "query_sensitivity": 6.787750304107306,
+          "required_attention": 0.12524733439907665,
+          "slot_cosine": 0.6015890286944199,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.77258188708576,
+          "query_sensitivity": 6.952308913657082,
+          "required_attention": 0.12481097327036773,
+          "slot_cosine": 0.6066036573859617,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725823172181743,
+          "query_sensitivity": 6.741923254127193,
+          "required_attention": 0.06256142433804396,
+          "slot_cosine": 0.57898144259057,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657277674000984,
+          "query_sensitivity": 7.506823100492025,
+          "required_attention": 0.06235989659579734,
+          "slot_cosine": 0.5613244819403127,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657276803390635,
+          "query_sensitivity": 7.410414946601394,
+          "required_attention": 0.06249412149355929,
+          "slot_cosine": 0.5701932793075016,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657276033035505,
+          "query_sensitivity": 7.341340401512333,
+          "required_attention": 0.06219907050887706,
+          "slot_cosine": 0.5722037188162469,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657276232361607,
+          "query_sensitivity": 7.37440639561147,
+          "required_attention": 0.031079983446592026,
+          "slot_cosine": 0.5586857855819373,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794354419254226,
+          "query_sensitivity": 8.291761352780881,
+          "required_attention": 0.25008076882153296,
+          "slot_cosine": 0.6193587908353441,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794358982556966,
+          "query_sensitivity": 8.800584155919207,
+          "required_attention": 0.2504581441525369,
+          "slot_cosine": 0.631334995994848,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435864740802,
+          "query_sensitivity": 8.334334727614959,
+          "required_attention": 0.2501618049646398,
+          "slot_cosine": 0.6252317887726144,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794358868159297,
+          "query_sensitivity": 8.220305007504027,
+          "required_attention": 0.1249615197957486,
+          "slot_cosine": 0.6087759807048542,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772580578797087,
+          "query_sensitivity": 7.812015119668763,
+          "required_attention": 0.1250722475921153,
+          "slot_cosine": 0.5887145991292458,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.77258086373932,
+          "query_sensitivity": 7.806261720811009,
+          "required_attention": 0.12492199385925211,
+          "slot_cosine": 0.6113021771943509,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725816679642143,
+          "query_sensitivity": 7.580033393425082,
+          "required_attention": 0.12471509514226184,
+          "slot_cosine": 0.5943720030515794,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725817812177533,
+          "query_sensitivity": 7.487233845997935,
+          "required_attention": 0.062379388917749946,
+          "slot_cosine": 0.5844740638443676,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657276447608862,
+          "query_sensitivity": 8.500058649793887,
+          "required_attention": 0.06236177209772233,
+          "slot_cosine": 0.5986393078023932,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727456379585,
+          "query_sensitivity": 8.31929196159443,
+          "required_attention": 0.06228612176884865,
+          "slot_cosine": 0.6004471907939568,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657276099348335,
+          "query_sensitivity": 8.177413436845033,
+          "required_attention": 0.06233704962103964,
+          "slot_cosine": 0.5999583930198896,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657277052124966,
+          "query_sensitivity": 8.01675016547416,
+          "required_attention": 0.031160504867069293,
+          "slot_cosine": 0.5888800430097935,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794313441185834,
+          "query_sensitivity": 8.509240673152693,
+          "required_attention": 0.25086603030688803,
+          "slot_cosine": 0.5698965250297948,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794313219587797,
+          "query_sensitivity": 8.659297592982272,
+          "required_attention": 0.2496823120823868,
+          "slot_cosine": 0.570870965708308,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794312432190134,
+          "query_sensitivity": 8.414811942609944,
+          "required_attention": 0.24953566773013394,
+          "slot_cosine": 0.5604438308516142,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794317285711656,
+          "query_sensitivity": 8.268733462524883,
+          "required_attention": 0.1248811834027195,
+          "slot_cosine": 0.5597855909430789,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725817877771393,
+          "query_sensitivity": 7.241583336493254,
+          "required_attention": 0.12475268124549084,
+          "slot_cosine": 0.5779187036283456,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725821697296102,
+          "query_sensitivity": 7.071038432867098,
+          "required_attention": 0.12479353653576529,
+          "slot_cosine": 0.5740053981287849,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725821599787603,
+          "query_sensitivity": 7.337566096506307,
+          "required_attention": 0.12427858788064551,
+          "slot_cosine": 0.5820083227375,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725826646064395,
+          "query_sensitivity": 7.122202631026786,
+          "required_attention": 0.06225275911925627,
+          "slot_cosine": 0.5772097855253212,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728837408162,
+          "query_sensitivity": 7.3697078189346374,
+          "required_attention": 0.06238795129150409,
+          "slot_cosine": 0.5607252473541668,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657284224177713,
+          "query_sensitivity": 7.264126200539781,
+          "required_attention": 0.062286249847882676,
+          "slot_cosine": 0.5712526400509313,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657285745591673,
+          "query_sensitivity": 7.3611923098631005,
+          "required_attention": 0.06226873308383017,
+          "slot_cosine": 0.5669901328586335,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657284968594597,
+          "query_sensitivity": 7.162074438984257,
+          "required_attention": 0.031053267854673883,
+          "slot_cosine": 0.5538554802648956,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794328967123548,
+          "query_sensitivity": 8.71086272006171,
+          "required_attention": 0.24957889958734975,
+          "slot_cosine": 0.627788584393276,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794327456620287,
+          "query_sensitivity": 8.70606038768584,
+          "required_attention": 0.25029692332444603,
+          "slot_cosine": 0.638837541962683,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794332729951512,
+          "query_sensitivity": 8.755164838603617,
+          "required_attention": 0.24990126035674154,
+          "slot_cosine": 0.6286090000653222,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079432882353062,
+          "query_sensitivity": 8.367855186650232,
+          "required_attention": 0.1246807228345429,
+          "slot_cosine": 0.6176429175733796,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772579060439119,
+          "query_sensitivity": 7.4853353563249225,
+          "required_attention": 0.12486799088048103,
+          "slot_cosine": 0.5798524769000626,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772579086768924,
+          "query_sensitivity": 7.799113283208656,
+          "required_attention": 0.1248954343237689,
+          "slot_cosine": 0.6055313164926588,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772579100646097,
+          "query_sensitivity": 7.483880087132096,
+          "required_attention": 0.12463384101993123,
+          "slot_cosine": 0.5990213671537212,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725794322884827,
+          "query_sensitivity": 7.58527264560319,
+          "required_attention": 0.06233487675339486,
+          "slot_cosine": 0.5824612294022968,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727805488002,
+          "query_sensitivity": 8.008365491978072,
+          "required_attention": 0.06257678939242428,
+          "slot_cosine": 0.5659641223575405,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727524707097,
+          "query_sensitivity": 7.757401171118074,
+          "required_attention": 0.06242488209973248,
+          "slot_cosine": 0.5579722702533765,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727749283849,
+          "query_sensitivity": 7.840740888048029,
+          "required_attention": 0.06234539921873893,
+          "slot_cosine": 0.5740794075250373,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657277300657463,
+          "query_sensitivity": 7.6910036031893165,
+          "required_attention": 0.031196721089103183,
+          "slot_cosine": 0.5579577252368947,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794344819554325,
+          "query_sensitivity": 8.75151376031266,
+          "required_attention": 0.2507297351813653,
+          "slot_cosine": 0.5658931593552625,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794344429874654,
+          "query_sensitivity": 9.006931589458176,
+          "required_attention": 0.2502713752602922,
+          "slot_cosine": 0.5750554348766845,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079434455992865,
+          "query_sensitivity": 8.708943517198803,
+          "required_attention": 0.25000695466203077,
+          "slot_cosine": 0.5685974241465812,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079434537121057,
+          "query_sensitivity": 8.628781076345494,
+          "required_attention": 0.12524272201592507,
+          "slot_cosine": 0.5620131347921985,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582385390388,
+          "query_sensitivity": 7.1640027559108574,
+          "required_attention": 0.12521519414078397,
+          "slot_cosine": 0.5601756728573789,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582834483715,
+          "query_sensitivity": 7.148925695743774,
+          "required_attention": 0.1247795230186437,
+          "slot_cosine": 0.5582421050593316,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772583059255883,
+          "query_sensitivity": 7.304090543944952,
+          "required_attention": 0.12465338412875342,
+          "slot_cosine": 0.5579342923241765,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725829399698045,
+          "query_sensitivity": 7.243650911018713,
+          "required_attention": 0.06233689067649857,
+          "slot_cosine": 0.5482817746744665,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657266802157296,
+          "query_sensitivity": 7.544416838969557,
+          "required_attention": 0.062467852802930976,
+          "slot_cosine": 0.5500737402166592,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657269493931397,
+          "query_sensitivity": 7.566509903722859,
+          "required_attention": 0.062468682257180816,
+          "slot_cosine": 0.5572174668507207,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465726865473237,
+          "query_sensitivity": 7.68899783611164,
+          "required_attention": 0.0622527328226397,
+          "slot_cosine": 0.5666485610821462,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657269769044214,
+          "query_sensitivity": 7.524894327322061,
+          "required_attention": 0.031155218715819374,
+          "slot_cosine": 0.5527918765711788,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079437091741002,
+          "query_sensitivity": 8.57222718738526,
+          "required_attention": 0.2502878427690429,
+          "slot_cosine": 0.6183866781870836,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794373217279025,
+          "query_sensitivity": 8.754012450937841,
+          "required_attention": 0.2500709931005326,
+          "slot_cosine": 0.6361539820056207,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794373923463,
+          "query_sensitivity": 9.029822541722757,
+          "required_attention": 0.250037378281462,
+          "slot_cosine": 0.6397528090066936,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794372940804395,
+          "query_sensitivity": 8.39135143230288,
+          "required_attention": 0.12491106112190423,
+          "slot_cosine": 0.6072049544060186,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725821224093794,
+          "query_sensitivity": 7.301131006968124,
+          "required_attention": 0.12487360508465782,
+          "slot_cosine": 0.5707093581250638,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725825185235546,
+          "query_sensitivity": 7.509757052383402,
+          "required_attention": 0.12494253581607766,
+          "slot_cosine": 0.5980177770640059,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582302991895,
+          "query_sensitivity": 7.3873608720272985,
+          "required_attention": 0.1247944026377678,
+          "slot_cosine": 0.6041063375950635,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725824397708783,
+          "query_sensitivity": 7.43404180780538,
+          "required_attention": 0.06240825506540895,
+          "slot_cosine": 0.5897611985942891,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727763873926,
+          "query_sensitivity": 8.279225879776511,
+          "required_attention": 0.06242864700850084,
+          "slot_cosine": 0.564732939851257,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657275857037186,
+          "query_sensitivity": 8.2628153412626,
+          "required_attention": 0.06239113782250511,
+          "slot_cosine": 0.5751250139161594,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727865769326,
+          "query_sensitivity": 8.18699172610704,
+          "required_attention": 0.06235780804535174,
+          "slot_cosine": 0.5646917923851493,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727726602908,
+          "query_sensitivity": 8.01725961694075,
+          "required_attention": 0.031155234089476347,
+          "slot_cosine": 0.5578302325250449,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794356096074527,
+          "query_sensitivity": 8.773274297896732,
+          "required_attention": 0.2508005491333124,
+          "slot_cosine": 0.5645816583591848,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794355433085734,
+          "query_sensitivity": 9.16119617386,
+          "required_attention": 0.2502133776809534,
+          "slot_cosine": 0.5749511444350824,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794359773542537,
+          "query_sensitivity": 8.996021274033941,
+          "required_attention": 0.2498806376331512,
+          "slot_cosine": 0.5650337281546661,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436031848849,
+          "query_sensitivity": 8.686230437009238,
+          "required_attention": 0.12511139573123065,
+          "slot_cosine": 0.5608091492027337,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725814045677604,
+          "query_sensitivity": 7.184566882179324,
+          "required_attention": 0.1250206881508877,
+          "slot_cosine": 0.5678945136377223,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581177133284,
+          "query_sensitivity": 7.3877137146345975,
+          "required_attention": 0.12498405283711735,
+          "slot_cosine": 0.5774296094739075,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581802685397,
+          "query_sensitivity": 7.4170101726350195,
+          "required_attention": 0.12475096163045199,
+          "slot_cosine": 0.5694046213035777,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582050660728,
+          "query_sensitivity": 7.3306547881686,
+          "required_attention": 0.062331786784400794,
+          "slot_cosine": 0.5596522138285016,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728744157956,
+          "query_sensitivity": 7.347383488602428,
+          "required_attention": 0.06243742587030006,
+          "slot_cosine": 0.5446895662110457,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.46572867464808,
+          "query_sensitivity": 7.458684691237515,
+          "required_attention": 0.06241011800245964,
+          "slot_cosine": 0.5637191472862344,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728876975337,
+          "query_sensitivity": 7.43101871993266,
+          "required_attention": 0.062407904023341836,
+          "slot_cosine": 0.5705394184011124,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729017404888,
+          "query_sensitivity": 7.322011024697242,
+          "required_attention": 0.0312032940113298,
+          "slot_cosine": 0.561164209732403,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079436576822231,
+          "query_sensitivity": 8.53916054867219,
+          "required_attention": 0.2501875990890522,
+          "slot_cosine": 0.6220813876349656,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794360509042322,
+          "query_sensitivity": 8.879205364443472,
+          "required_attention": 0.2497391855291241,
+          "slot_cosine": 0.6406501998083635,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436172888464,
+          "query_sensitivity": 8.746031182172246,
+          "required_attention": 0.2498173954731565,
+          "slot_cosine": 0.6335973844177717,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436430951721,
+          "query_sensitivity": 8.630073954488287,
+          "required_attention": 0.12470994393839792,
+          "slot_cosine": 0.6219226275612034,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725816399094807,
+          "query_sensitivity": 7.78980434276154,
+          "required_attention": 0.12495328944330061,
+          "slot_cosine": 0.57525810857633,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725813706058013,
+          "query_sensitivity": 7.942658833698121,
+          "required_attention": 0.12484773717387576,
+          "slot_cosine": 0.6001043868881865,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725821445091787,
+          "query_sensitivity": 7.791482774260333,
+          "required_attention": 0.12470617428163196,
+          "slot_cosine": 0.5788969360153333,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582294391394,
+          "query_sensitivity": 7.482378599067051,
+          "required_attention": 0.062289992152709646,
+          "slot_cosine": 0.5647683594486269,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657277098277905,
+          "query_sensitivity": 8.398690185454107,
+          "required_attention": 0.0622934741102152,
+          "slot_cosine": 0.5514183182854131,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657270920766448,
+          "query_sensitivity": 8.357600417683017,
+          "required_attention": 0.06246759088776885,
+          "slot_cosine": 0.5487365546084405,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.46572718862346,
+          "query_sensitivity": 8.364526402457722,
+          "required_attention": 0.06223629312380103,
+          "slot_cosine": 0.5536925983729601,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657270251146834,
+          "query_sensitivity": 8.28636435106013,
+          "required_attention": 0.031202671426147258,
+          "slot_cosine": 0.5455900299992782,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794369502060093,
+          "query_sensitivity": 8.989625216671458,
+          "required_attention": 0.24994740772708704,
+          "slot_cosine": 0.5791176090400844,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079437284470536,
+          "query_sensitivity": 8.88216459388343,
+          "required_attention": 0.2496429214843647,
+          "slot_cosine": 0.5801648052426815,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079437212639908,
+          "query_sensitivity": 8.80815673628608,
+          "required_attention": 0.24944890577935025,
+          "slot_cosine": 0.5744275068221091,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794372655354656,
+          "query_sensitivity": 8.76169236075846,
+          "required_attention": 0.12471829970502657,
+          "slot_cosine": 0.5712790201842763,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.77258007467357,
+          "query_sensitivity": 7.24791156975085,
+          "required_attention": 0.1248687372298143,
+          "slot_cosine": 0.5892578128054666,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772580452480873,
+          "query_sensitivity": 7.57519020145822,
+          "required_attention": 0.1245992383049573,
+          "slot_cosine": 0.6031601903817843,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725810568369766,
+          "query_sensitivity": 7.571544128418941,
+          "required_attention": 0.12451195047335156,
+          "slot_cosine": 0.5958649243433046,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725807384073446,
+          "query_sensitivity": 7.339240706532893,
+          "required_attention": 0.06221980096218882,
+          "slot_cosine": 0.5843311689629881,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729345925289,
+          "query_sensitivity": 7.3095878606824645,
+          "required_attention": 0.0625258222135089,
+          "slot_cosine": 0.5399364575993336,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729175129919,
+          "query_sensitivity": 7.333488121661973,
+          "required_attention": 0.06259089170523102,
+          "slot_cosine": 0.5584486361604519,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657293091513726,
+          "query_sensitivity": 7.410688437542919,
+          "required_attention": 0.062456204225116864,
+          "slot_cosine": 0.5503018930568647,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657292688037287,
+          "query_sensitivity": 7.498587143229711,
+          "required_attention": 0.03127511943813094,
+          "slot_cosine": 0.544480885994276,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079436367650584,
+          "query_sensitivity": 8.636584547992257,
+          "required_attention": 0.24999554793332782,
+          "slot_cosine": 0.6170339568605998,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.07943584278763,
+          "query_sensitivity": 9.049992124473874,
+          "required_attention": 0.2500473401276425,
+          "slot_cosine": 0.6353189370166623,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435877274089,
+          "query_sensitivity": 8.896503570933495,
+          "required_attention": 0.2503041263508476,
+          "slot_cosine": 0.6285516319333873,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435939035932,
+          "query_sensitivity": 8.589686004035691,
+          "required_attention": 0.12479941045641046,
+          "slot_cosine": 0.6087716121762365,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725778852576646,
+          "query_sensitivity": 7.546937812717151,
+          "required_attention": 0.1249539207554551,
+          "slot_cosine": 0.5797298262043229,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725778387184317,
+          "query_sensitivity": 7.785433393861389,
+          "required_attention": 0.1248414541126334,
+          "slot_cosine": 0.599983256566239,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772578542940586,
+          "query_sensitivity": 7.706007851748263,
+          "required_attention": 0.12472997239463365,
+          "slot_cosine": 0.5966162917728778,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725785198522237,
+          "query_sensitivity": 7.6939333490253885,
+          "required_attention": 0.062302926894957276,
+          "slot_cosine": 0.5903128021326108,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657286512321024,
+          "query_sensitivity": 8.524502576764707,
+          "required_attention": 0.062251340074997163,
+          "slot_cosine": 0.5592910896298705,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283932331695,
+          "query_sensitivity": 8.557624786353792,
+          "required_attention": 0.06225676379536592,
+          "slot_cosine": 0.5702627945228812,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657285896060364,
+          "query_sensitivity": 8.372334078766912,
+          "required_attention": 0.0621599291947386,
+          "slot_cosine": 0.5618409313884087,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657284347767896,
+          "query_sensitivity": 8.176199898930623,
+          "required_attention": 0.031049753746640155,
+          "slot_cosine": 0.5581976318397652,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794380665662384,
+          "query_sensitivity": 8.95316796980777,
+          "required_attention": 0.250403948369585,
+          "slot_cosine": 0.5710273137145054,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079438133608494,
+          "query_sensitivity": 9.086252937421628,
+          "required_attention": 0.24985768779330647,
+          "slot_cosine": 0.5933702780952855,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079438289507543,
+          "query_sensitivity": 8.992590062042993,
+          "required_attention": 0.2503819811641307,
+          "slot_cosine": 0.577441350883403,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.07943833543972,
+          "query_sensitivity": 8.661852965034758,
+          "required_attention": 0.12523940504392012,
+          "slot_cosine": 0.5655904975040065,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725841202614108,
+          "query_sensitivity": 7.573285382580357,
+          "required_attention": 0.12505614913577823,
+          "slot_cosine": 0.5876986271330163,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772583832560597,
+          "query_sensitivity": 7.520288391536847,
+          "required_attention": 0.1251300993998926,
+          "slot_cosine": 0.5880606815234498,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772584007665051,
+          "query_sensitivity": 7.564869470734912,
+          "required_attention": 0.12483541454826155,
+          "slot_cosine": 0.5841851581697102,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772584066643832,
+          "query_sensitivity": 7.491304158328251,
+          "required_attention": 0.06248239693320843,
+          "slot_cosine": 0.5801754845660587,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729263384576,
+          "query_sensitivity": 7.740045131115671,
+          "required_attention": 0.062443339274732335,
+          "slot_cosine": 0.5432794074137218,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729167714379,
+          "query_sensitivity": 7.552977349100099,
+          "required_attention": 0.062445606885942126,
+          "slot_cosine": 0.5508528683225383,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729110832763,
+          "query_sensitivity": 7.475700788653774,
+          "required_attention": 0.06235036607040601,
+          "slot_cosine": 0.5513642610106515,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657291258476013,
+          "query_sensitivity": 7.529255328240641,
+          "required_attention": 0.03116130045860581,
+          "slot_cosine": 0.5391447199017868,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794346000771906,
+          "query_sensitivity": 8.549585715867945,
+          "required_attention": 0.2500890092459118,
+          "slot_cosine": 0.6068544154236137,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794350737060987,
+          "query_sensitivity": 8.956241637748096,
+          "required_attention": 0.24959363904219095,
+          "slot_cosine": 0.6221873887783111,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435234004401,
+          "query_sensitivity": 8.744725581660886,
+          "required_attention": 0.25009984779536587,
+          "slot_cosine": 0.6150350610736257,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435116506078,
+          "query_sensitivity": 8.390052872864656,
+          "required_attention": 0.12490161343977071,
+          "slot_cosine": 0.5940262840516051,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725766230031104,
+          "query_sensitivity": 7.95945635777941,
+          "required_attention": 0.1250565035525078,
+          "slot_cosine": 0.5750275152209113,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772576376316274,
+          "query_sensitivity": 8.117627569218866,
+          "required_attention": 0.1250147491095268,
+          "slot_cosine": 0.5926885526186721,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725776582738653,
+          "query_sensitivity": 7.738174803537974,
+          "required_attention": 0.1250563242198083,
+          "slot_cosine": 0.593538975650925,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725779626473623,
+          "query_sensitivity": 7.690660931190864,
+          "required_attention": 0.06244668785612767,
+          "slot_cosine": 0.585912392082862,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657281928716763,
+          "query_sensitivity": 8.400651521513266,
+          "required_attention": 0.062431922981125154,
+          "slot_cosine": 0.5551266815610799,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465727974172915,
+          "query_sensitivity": 8.39070969129127,
+          "required_attention": 0.0624080979126604,
+          "slot_cosine": 0.5557409526161953,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728130724612,
+          "query_sensitivity": 8.502258858597878,
+          "required_attention": 0.06231415709247873,
+          "slot_cosine": 0.5494409302410015,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657281740042594,
+          "query_sensitivity": 8.528816860657635,
+          "required_attention": 0.031167601045547624,
+          "slot_cosine": 0.5543238560046625,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794369695026527,
+          "query_sensitivity": 8.813972209710503,
+          "required_attention": 0.2505859751878198,
+          "slot_cosine": 0.5497828499267897,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794369599436386,
+          "query_sensitivity": 9.209992844840308,
+          "required_attention": 0.250355351603539,
+          "slot_cosine": 0.5689396130531242,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079437024795517,
+          "query_sensitivity": 8.968600271848747,
+          "required_attention": 0.2501361865618433,
+          "slot_cosine": 0.5602054430580503,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079437238910823,
+          "query_sensitivity": 8.61387546111973,
+          "required_attention": 0.1251747467592505,
+          "slot_cosine": 0.5395565711457143,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772583064462041,
+          "query_sensitivity": 7.463116972933281,
+          "required_attention": 0.12475178812571472,
+          "slot_cosine": 0.5737110935870112,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725830546370425,
+          "query_sensitivity": 7.583262197857551,
+          "required_attention": 0.12476451805487028,
+          "slot_cosine": 0.5739961559509928,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772583269962987,
+          "query_sensitivity": 7.427993084908787,
+          "required_attention": 0.12453093197280182,
+          "slot_cosine": 0.5597034767193255,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772583074303878,
+          "query_sensitivity": 7.2862965017767864,
+          "required_attention": 0.062289667616429484,
+          "slot_cosine": 0.5544934112121306,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657309056211814,
+          "query_sensitivity": 7.718758124630486,
+          "required_attention": 0.062452614591101706,
+          "slot_cosine": 0.5403835827653368,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657309189635117,
+          "query_sensitivity": 7.6219080050507815,
+          "required_attention": 0.06245167596860239,
+          "slot_cosine": 0.5456024849890664,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657310019872543,
+          "query_sensitivity": 7.619947703827041,
+          "required_attention": 0.06244632630771235,
+          "slot_cosine": 0.5515474731241488,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465730870767337,
+          "query_sensitivity": 7.598677310467605,
+          "required_attention": 0.031166151554860154,
+          "slot_cosine": 0.5476154130938825,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079435967682249,
+          "query_sensitivity": 8.56717243575452,
+          "required_attention": 0.2501848920439315,
+          "slot_cosine": 0.6085861335722669,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436068823403,
+          "query_sensitivity": 8.779308536493827,
+          "required_attention": 0.25047985994791594,
+          "slot_cosine": 0.6193804508446299,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436235275793,
+          "query_sensitivity": 8.839611373476389,
+          "required_attention": 0.24998796633561374,
+          "slot_cosine": 0.6168176335674523,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794366544341263,
+          "query_sensitivity": 8.348602212770876,
+          "required_attention": 0.12499471287984579,
+          "slot_cosine": 0.5927507193930757,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581341655223,
+          "query_sensitivity": 7.666156149492565,
+          "required_attention": 0.12501252366209883,
+          "slot_cosine": 0.5794595875021153,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581534187603,
+          "query_sensitivity": 7.856580816288687,
+          "required_attention": 0.1251175424556938,
+          "slot_cosine": 0.6167936504967176,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725817909666564,
+          "query_sensitivity": 7.8090027585329045,
+          "required_attention": 0.12472750774194175,
+          "slot_cosine": 0.6006169266115203,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725817901376324,
+          "query_sensitivity": 7.801303433493477,
+          "required_attention": 0.06243427457880117,
+          "slot_cosine": 0.5925870567731389,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729324551213,
+          "query_sensitivity": 8.506552527484361,
+          "required_attention": 0.062284702297832915,
+          "slot_cosine": 0.5855796469083746,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657288989868724,
+          "query_sensitivity": 8.433941658116327,
+          "required_attention": 0.0623961262726045,
+          "slot_cosine": 0.5882955331017875,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465729098222399,
+          "query_sensitivity": 8.523366421870298,
+          "required_attention": 0.062324530176603554,
+          "slot_cosine": 0.5964892340942892,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657290413974895,
+          "query_sensitivity": 8.522283784918558,
+          "required_attention": 0.031162080908702074,
+          "slot_cosine": 0.5862122501283362,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794355710001793,
+          "query_sensitivity": 8.990136022851157,
+          "required_attention": 0.24996197053808816,
+          "slot_cosine": 0.5474273248771543,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435137736053,
+          "query_sensitivity": 8.926779964452326,
+          "required_attention": 0.24990163275735194,
+          "slot_cosine": 0.558031438123352,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079435186536182,
+          "query_sensitivity": 8.918496340599638,
+          "required_attention": 0.24988549844685368,
+          "slot_cosine": 0.552360593302291,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794354014018004,
+          "query_sensitivity": 8.799970481792235,
+          "required_attention": 0.12471989297678777,
+          "slot_cosine": 0.5464701571826202,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725824269328814,
+          "query_sensitivity": 7.224136414205934,
+          "required_attention": 0.12514629684224127,
+          "slot_cosine": 0.5751853150907389,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725825393469137,
+          "query_sensitivity": 7.134111152500465,
+          "required_attention": 0.12488525410355356,
+          "slot_cosine": 0.5692722198334739,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582492319391,
+          "query_sensitivity": 7.175087356581318,
+          "required_attention": 0.1251720108995154,
+          "slot_cosine": 0.5678397013406907,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725827786854604,
+          "query_sensitivity": 7.181261097655097,
+          "required_attention": 0.06235849711014807,
+          "slot_cosine": 0.5563810693317865,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657283837911077,
+          "query_sensitivity": 7.788145207908539,
+          "required_attention": 0.06228246306647012,
+          "slot_cosine": 0.5395935255142859,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728221517054,
+          "query_sensitivity": 7.677802580669662,
+          "required_attention": 0.062340015356778904,
+          "slot_cosine": 0.5497668116411569,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657282979704958,
+          "query_sensitivity": 7.787152417610832,
+          "required_attention": 0.0622426302639555,
+          "slot_cosine": 0.5544584772692581,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657279196026343,
+          "query_sensitivity": 7.986973725712699,
+          "required_attention": 0.031072015032064762,
+          "slot_cosine": 0.555981248243741,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.0794366377984588,
+          "query_sensitivity": 8.242315820519087,
+          "required_attention": 0.2501674375089343,
+          "slot_cosine": 0.6234449235538104,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794369952966196,
+          "query_sensitivity": 8.479648672869779,
+          "required_attention": 0.2501954268550261,
+          "slot_cosine": 0.624029355512607,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079436882035431,
+          "query_sensitivity": 8.504555183589172,
+          "required_attention": 0.2504446193181109,
+          "slot_cosine": 0.629431521189305,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794370610340556,
+          "query_sensitivity": 8.204860283943106,
+          "required_attention": 0.1252573389443198,
+          "slot_cosine": 0.6071146783926318,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772581587750099,
+          "query_sensitivity": 7.798783283759707,
+          "required_attention": 0.12467475814814348,
+          "slot_cosine": 0.5743831691845546,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725819729528687,
+          "query_sensitivity": 7.747358680416674,
+          "required_attention": 0.12489492769781818,
+          "slot_cosine": 0.5935110264308282,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772582221617637,
+          "query_sensitivity": 7.933515460231547,
+          "required_attention": 0.12462837693652275,
+          "slot_cosine": 0.5946550617112464,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725821034922435,
+          "query_sensitivity": 7.794965420814895,
+          "required_attention": 0.06221846589296792,
+          "slot_cosine": 0.5938092913979868,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728742632122,
+          "query_sensitivity": 8.260546309778555,
+          "required_attention": 0.06240002623436776,
+          "slot_cosine": 0.5722800323783456,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728753691755,
+          "query_sensitivity": 8.239883042575167,
+          "required_attention": 0.06244923059273793,
+          "slot_cosine": 0.5848510736712996,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657290226673645,
+          "query_sensitivity": 8.236846431156483,
+          "required_attention": 0.062237446500503675,
+          "slot_cosine": 0.5868557311245972,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657291112421724,
+          "query_sensitivity": 7.868264401535616,
+          "required_attention": 0.03115624128302417,
+          "slot_cosine": 0.5718670739987078,
+          "uniform_required_attention": 0.03125
+        },
+        {
+          "entropy": 2.079438564344069,
+          "query_sensitivity": 8.776509993016475,
+          "required_attention": 0.2502635664745329,
+          "slot_cosine": 0.5556640845338253,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079438579968896,
+          "query_sensitivity": 8.989735768688911,
+          "required_attention": 0.2499686681658298,
+          "slot_cosine": 0.5675439053304476,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.079438484790301,
+          "query_sensitivity": 8.863919761097922,
+          "required_attention": 0.24997424856760467,
+          "slot_cosine": 0.5747227447247697,
+          "uniform_required_attention": 0.25
+        },
+        {
+          "entropy": 2.0794386338219453,
+          "query_sensitivity": 8.74192226344957,
+          "required_attention": 0.12497769327619893,
+          "slot_cosine": 0.5558360594248622,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772584481664837,
+          "query_sensitivity": 6.962986345680663,
+          "required_attention": 0.12497596414037458,
+          "slot_cosine": 0.5706496813346146,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725845724223674,
+          "query_sensitivity": 7.5640437083631715,
+          "required_attention": 0.12492295884134097,
+          "slot_cosine": 0.5881667939141827,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.772584797941367,
+          "query_sensitivity": 7.309465078092594,
+          "required_attention": 0.12484417608904942,
+          "slot_cosine": 0.5700914037456829,
+          "uniform_required_attention": 0.125
+        },
+        {
+          "entropy": 2.7725848766103374,
+          "query_sensitivity": 7.2054270573987225,
+          "required_attention": 0.062327860866802184,
+          "slot_cosine": 0.5611134965679854,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728987976057,
+          "query_sensitivity": 7.730992295905146,
+          "required_attention": 0.0624075619357088,
+          "slot_cosine": 0.5419972213266132,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.465728660853147,
+          "query_sensitivity": 7.690375058330853,
+          "required_attention": 0.06242996182291333,
+          "slot_cosine": 0.556151020296318,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.46572850504855,
+          "query_sensitivity": 7.736148610657854,
+          "required_attention": 0.062308309607136445,
+          "slot_cosine": 0.5538515332673629,
+          "uniform_required_attention": 0.0625
+        },
+        {
+          "entropy": 3.4657285528685473,
+          "query_sensitivity": 7.796987876991132,
+          "required_attention": 0.03114164595876092,
+          "slot_cosine": 0.5524385869484584,
+          "uniform_required_attention": 0.03125
+        }
+      ]
+    },
+    "cosine": {
+      "metrics": {
+        "16": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.11666666666666667,
+          "hit_rate_at_1": 0.14166666666666666,
+          "mrr": 0.32081254393754394,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.07916666666666666,
+          "recall_at_5": 0.325
+        },
+        "32": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.016666666666666666,
+          "hit_rate_at_1": 0.075,
+          "mrr": 0.1669393776889759,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.0375,
+          "recall_at_5": 0.1125
+        },
+        "8": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.425,
+          "hit_rate_at_1": 0.225,
+          "mrr": 0.4532738095238095,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.11666666666666667,
+          "recall_at_5": 0.625
+        },
+        "answerable": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.18611111111111112,
+          "hit_rate_at_1": 0.14722222222222223,
+          "mrr": 0.31367524371677646,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.07777777777777778,
+          "recall_at_5": 0.3541666666666667
+        },
+        "configuration": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.2,
+          "hit_rate_at_1": 0.15,
+          "mrr": 0.3614492683242683,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.09166666666666666,
+          "recall_at_5": 0.45
+        },
+        "installation": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.23333333333333334,
+          "hit_rate_at_1": 0.11666666666666667,
+          "mrr": 0.35404761904761906,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.058333333333333334,
+          "recall_at_5": 0.4666666666666667
+        },
+        "network": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.03333333333333333,
+          "hit_rate_at_1": 0.1,
+          "mrr": 0.19168088041320755,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.05,
+          "recall_at_5": 0.14166666666666666
+        },
+        "permissions": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.6166666666666667,
+          "hit_rate_at_1": 0.3333333333333333,
+          "mrr": 0.5525,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.175,
+          "recall_at_5": 0.7833333333333333
+        },
+        "recovery": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.0,
+          "hit_rate_at_1": 0.05,
+          "mrr": 0.14219787496474426,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.025,
+          "recall_at_5": 0.08333333333333333
+        },
+        "storage": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.03333333333333333,
+          "hit_rate_at_1": 0.13333333333333333,
+          "mrr": 0.28017581955081955,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.06666666666666667,
+          "recall_at_5": 0.2
+        }
+      }
+    },
+    "direct": {
+      "metrics": {
+        "16": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.325,
+          "hit_rate_at_1": 0.9666666666666667,
+          "mrr": 0.9833333333333333,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.6041666666666666,
+          "recall_at_5": 0.6625
+        },
+        "32": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.25,
+          "hit_rate_at_1": 0.7666666666666667,
+          "mrr": 0.8666666666666667,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.4791666666666667,
+          "recall_at_5": 0.6083333333333333
+        },
+        "8": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.44166666666666665,
+          "hit_rate_at_1": 0.8,
+          "mrr": 0.8916666666666667,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.5,
+          "recall_at_5": 0.7208333333333333
+        },
+        "answerable": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.3388888888888889,
+          "hit_rate_at_1": 0.8444444444444444,
+          "mrr": 0.9138888888888889,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.5277777777777778,
+          "recall_at_5": 0.6638888888888889
+        },
+        "configuration": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.36666666666666664,
+          "hit_rate_at_1": 0.9333333333333333,
+          "mrr": 0.9666666666666667,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.5833333333333334,
+          "recall_at_5": 0.6833333333333333
+        },
+        "installation": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.4166666666666667,
+          "hit_rate_at_1": 0.6666666666666666,
+          "mrr": 0.8166666666666667,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.4166666666666667,
+          "recall_at_5": 0.7083333333333334
+        },
+        "network": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.25,
+          "hit_rate_at_1": 0.8666666666666667,
+          "mrr": 0.9333333333333333,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.5416666666666666,
+          "recall_at_5": 0.625
+        },
+        "permissions": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.4666666666666667,
+          "hit_rate_at_1": 0.9333333333333333,
+          "mrr": 0.9666666666666667,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.5833333333333334,
+          "recall_at_5": 0.7333333333333333
+        },
+        "recovery": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.25,
+          "hit_rate_at_1": 0.6666666666666666,
+          "mrr": 0.8,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.4166666666666667,
+          "recall_at_5": 0.5916666666666667
+        },
+        "storage": {
+          "abstention_accuracy": null,
+          "complete_required_evidence_at_5": 0.2833333333333333,
+          "hit_rate_at_1": 1.0,
+          "mrr": 1.0,
+          "multi_evidence_coverage": 1.0,
+          "recall_at_1": 0.625,
+          "recall_at_5": 0.6416666666666667
+        }
+      }
+    }
+  }
+}

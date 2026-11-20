@@ -1,0 +1,86 @@
+{
+  "architecture": "lite006-associative-v1 preserved; direct-bilinear-v1 control",
+  "associative_initialization": "fresh explicit associative initialization seed 20261120",
+  "authorization": "owner_authorized",
+  "authorization_directive_date": "2026-11-20",
+  "authorization_status": "not_authorized_stop_for_owner_review",
+  "baseline_commit": "da0c3b3",
+  "budgets": {
+    "associative": 240,
+    "direct": 240,
+    "episode_limit": 8,
+    "shared_budget": false
+  },
+  "dataset_manifest_sha256": "bb9bfe82e7b864f5009b3875e90b5714e4ef9569641a5aa35e9ee059e6f981f1",
+  "dataset_sha256": "88845e6ac3a01f5216ad0ea246e877114892dff488c84357f0c69180d8b92237",
+  "direct_initialization": "explicit zero bilinear matrix; selected because historical direct initial checkpoint is zero and identity/cosine are read-only controls, not trained controls",
+  "episodes_per_model": 30,
+  "evaluation": {
+    "independent_sizes": [
+      8,
+      16,
+      32
+    ],
+    "larger_sizes": [
+      64,
+      128
+    ],
+    "metrics": [
+      "hit_rate_at_k",
+      "recall_at_k",
+      "standard_mrr",
+      "complete_required_evidence_at_5",
+      "partial_multi_evidence_coverage_at_5",
+      "abstention_accuracy"
+    ],
+    "representation": [
+      "normalized_attention_entropy",
+      "required_evidence_attention_enrichment_vs_uniform",
+      "slot_diversity",
+      "query_sensitivity"
+    ]
+  },
+  "execution_note": "Executed under owner directive; no manifest threshold or budget changes.",
+  "holdout_access": false,
+  "mandatory_stops": [
+    "scheduler identity/order mismatch",
+    "duplicate or missing exposure",
+    "budget overrun",
+    "checkpoint mutation outside authorized path",
+    "resource guard failure",
+    "holdout access",
+    "any attempt to interpret this as latent-language-model conditioning"
+  ],
+  "milestone": "LITE-007L-proposed",
+  "optimizer_updates_proposed": 480,
+  "proposal_sha256": "091fe3487b4d979a2e55eff43631de8c3f2cbce116a4eb2f0afe5534d9ac80f7",
+  "schedule": {
+    "collection_size_counts": {
+      "16": 80,
+      "32": 80,
+      "8": 80
+    },
+    "evaluation_updates": [
+      0,
+      40,
+      80,
+      120,
+      160,
+      200,
+      240
+    ],
+    "identical_order_between_models": true,
+    "persistent_scheduler_required": true,
+    "unique_examples_per_model": 240
+  },
+  "scientific_scope": "query-conditioned associative memory versus conventional retrieval and trainable direct ranking; not language-model latent conditioning",
+  "status": "executed",
+  "thresholds": {
+    "complete_required_evidence_at_5": "associative must exceed both conventional cosine and direct control on the independent corpus without lowering hit_rate_at_1 by more than 0.05 relative to the better trainable-control baseline",
+    "first_result": "associative hit_rate_at_1 must not regress more than 0.05 against the predeclared direct control",
+    "resource": "all guards pass and no run exceeds established limits"
+  },
+  "updates_per_episode": 8,
+  "updates_per_model": 240,
+  "weights_generated": false
+}

@@ -1,0 +1,28 @@
+{
+  "associative": {
+    "checkpoint_base": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007L/associative/episode-029/checkpoint",
+    "checkpoint_json_sha256": "ad25e02897324d2f560db2f68150782aa9c0dc4efcc60abf4eff8f2be5f2e6df",
+    "checkpoint_npz_sha256": "fb9a273fd96bfe9d6cf35da2145e45492b414ad6a02cd35acfba999886587a7a",
+    "episodes": 30,
+    "updates": 240
+  },
+  "direct": {
+    "checkpoint_base": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007L/direct/episode-029/checkpoint",
+    "checkpoint_json_sha256": "bebf8edb1e9870eb88951983ec822b80dc319e132f4dd1cf8e85bc46fa84e1cb",
+    "checkpoint_npz_sha256": "a9e190cd7a0c81dc4ac070b9299819fced77d3b38432c9534577b8b19691d2c8",
+    "episodes": 30,
+    "updates": 240
+  },
+  "initial": {
+    "associative": {
+      "json_sha256": "45000d9876a9920e63ad7363bd14a4eaceb475b3d644494ca5dc0d11de26e176",
+      "npz_sha256": "051663810e76ad964f8dfc8f55475ff4828aa69d1c5ebbfad612afca71d5b08e",
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007L/associative-initial/checkpoint"
+    },
+    "direct": {
+      "json_sha256": "aac8181956051fba466fe96ed06c9674de74f14e17e24731f2681673dba24999",
+      "npz_sha256": "76b651e5e2350c8eac225012289823c70ef0e155d24a93c1b3f38d3ba9af799b",
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-007L/direct-initial/checkpoint"
+    }
+  }
+}

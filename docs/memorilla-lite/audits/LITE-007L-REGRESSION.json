@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "suite": "python -m pytest -q --confcutdir=tests/lite tests/lite",
+  "passed": 81,
+  "failed": 0,
+  "skipped": 0,
+  "warnings": 1,
+  "warning": "ONNX Runtime reports unsupported Android platform; existing environment warning only."
+}
