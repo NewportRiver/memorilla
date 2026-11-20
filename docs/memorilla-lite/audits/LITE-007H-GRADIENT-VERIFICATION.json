@@ -1,0 +1,8 @@
+{
+  "milestone":"LITE-007H",
+  "finite_difference":{"seed":123,"records":6,"positive_count":2,"max_absolute_error":1.7786794488603482e-05,"tolerance":0.001,"tensor_count":27,"status":"passed"},
+  "pytorch_reference":{"seed":321,"records":6,"positive_count":2,"loss_absolute_error":5.960464477539063e-08,"max_gradient_absolute_error":2.561137080192566e-08,"tolerance":1e-05,"tensor_count":27,"status":"passed"},
+  "cases":{"masked_padded":"passed by existing projection tests and full-path mask coverage","hard_negatives":"passed","near_degenerate":"finite values validated; expanded parity fixture pending","empty_eligibility":"fail-closed zero gradients","nonfinite_rejection":"passed","frozen_downstream":"passed by subset update and byte preservation","directional_loss_reduction":"passed by authorized pilot"},
+  "reference_gradients_persisted":false,
+  "note":"Reference arrays were not persisted; parity values and fixture identities are persisted here."
+}

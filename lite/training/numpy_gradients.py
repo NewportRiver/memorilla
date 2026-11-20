@@ -191,3 +191,60 @@ def clip_gradients(grads, max_norm):
 
 def trainable_names():
     return _TRAINABLE
+
+
+def _ln_param_grads(dy, x):
+    mean = x.mean(axis=-1, keepdims=True)
+    centered = x - mean
+    inv = 1.0 / np.sqrt((centered * centered).mean(axis=-1, keepdims=True) + 1e-5)
+    normed = centered * inv
+    return (dy * normed).sum(axis=0).astype(np.float32), dy.sum(axis=0).astype(np.float32)
+
+
+def associative_gradients(model, query, memory, positive_mask, valid_mask):
+    """Exact native gradients for every tensor connected to the ranking objective.
+
+    `out_w` and `out_b` are intentionally absent because the ranking objective consumes
+    latent slots before the output projection.
+    """
+    c, s = model.config, model.state
+    query = _finite(query, 'query'); memory = _finite(memory, 'memory')
+    valid = np.asarray(valid_mask, dtype=bool)
+    if valid.shape != (memory.shape[0],) or not np.any(valid):
+        return np.float32(0.0), np.full(memory.shape[0], -np.inf, np.float32), {k: np.zeros_like(v) for k, v in s.items() if k not in ('out_w','out_b')}, {'latent': np.zeros((c.slots,c.latent_dim),np.float32)}
+    qlatent = query @ s['query_w'] + s['query_b']
+    mk = memory @ s['mem_k_w'] + s['mem_k_b']; mv = memory @ s['mem_v_w'] + s['mem_v_b']
+    summary = (mk[valid] + mv[valid]).mean(axis=0)
+    slots = s['slots'] + qlatent[None, :] + summary[None, :]
+    caches = []
+    h, d = c.heads, c.latent_dim // c.heads
+    for i in range(c.blocks):
+        p=f'b{i}.'
+        x1=slots; m1=x1.mean(axis=-1,keepdims=True); r1=x1-m1; inv1=1/np.sqrt((r1*r1).mean(axis=-1,keepdims=True)+1e-5); n1=r1*inv1; ln1=n1*s[p+'ln1_g']+s[p+'ln1_b']
+        q=(ln1@s[p+'q_w']+s[p+'q_b']).reshape(c.slots,h,d); k=(memory@s[p+'k_w']+s[p+'k_b']).reshape(-1,h,d); v=(memory@s[p+'v_w']+s[p+'v_b']).reshape(-1,h,d)
+        logits=np.einsum('shd,nhd->shn',q,k)/np.sqrt(d); probs=_softmax(logits.reshape(c.slots*h,-1),valid).reshape(c.slots,h,-1); ctx3=np.einsum('shn,nhd->shd',probs,v); ctx=ctx3.reshape(c.slots,c.latent_dim); x2=x1+ctx@s[p+'attn_out_w']+s[p+'attn_out_b']
+        m2=x2.mean(axis=-1,keepdims=True); r2=x2-m2; inv2=1/np.sqrt((r2*r2).mean(axis=-1,keepdims=True)+1e-5); n2=r2*inv2; ln2=n2*s[p+'ln2_g']+s[p+'ln2_b']; ff1=ln2@s[p+'ff1_w']+s[p+'ff1_b']; ff=_gelu(ff1); x3=x2+ff@s[p+'ff2_w']+s[p+'ff2_b']
+        caches.append((x1,r1,inv1,n1,q,k,v,probs,ctx,x2,r2,inv2,n2,ln2,ff1)); slots=x3
+    loss,scores,dslots=_score_head_latent_gradient(slots,memory,s,positive_mask,valid)
+    grads={k:np.zeros_like(v) for k,v in s.items() if k not in ('out_w','out_b')}
+    _, _, score_grads = scoring_head_gradients(slots, memory, s, positive_mask, valid)
+    for name, value in score_grads.items():
+        grads[name] = value.copy()
+    for i in range(c.blocks-1,-1,-1):
+        p=f'b{i}.'; x1,r1,inv1,n1,q,k,v,probs,ctx,x2,r2,inv2,n2,ln2,ff1=caches[i]
+        dff1=_gelu_backward(dslots@s[p+'ff2_w'].T,ff1)
+        grads[p+'ff2_w'] += ( _gelu(ff1).T @ dslots ).astype(np.float32); grads[p+'ff2_b'] += dslots.sum(axis=0).astype(np.float32)
+        dln2=dff1@s[p+'ff1_w'].T; grads[p+'ff1_w'] += (ln2.T@dff1).astype(np.float32); grads[p+'ff1_b'] += dff1.sum(axis=0).astype(np.float32)
+        grads[p+'ln2_g'] += (dln2*n2).sum(axis=0).astype(np.float32); grads[p+'ln2_b'] += dln2.sum(axis=0).astype(np.float32)
+        dx2=dslots+_ln_backward(dln2,x2,s[p+'ln2_g'])
+        grads[p+'attn_out_w'] += (ctx.T@dx2).astype(np.float32); grads[p+'attn_out_b'] += dx2.sum(axis=0).astype(np.float32)
+        dctx=(dx2@s[p+'attn_out_w'].T).reshape(c.slots,h,d); dprobs=np.einsum('shd,nhd->shn',dctx,v); dv=np.einsum('shn,shd->nhd',probs,dctx); dlogits=probs*(dprobs-(dprobs*probs).sum(axis=-1,keepdims=True)); dq=np.einsum('shn,nhd->shd',dlogits,k)/np.sqrt(d); dk=np.einsum('shn,shd->nhd',dlogits,q)/np.sqrt(d)
+        dq2=dq.reshape(c.slots,c.latent_dim); dk2=dk.reshape(-1,c.latent_dim); dv2=dv.reshape(-1,c.latent_dim)
+        grads[p+'q_w'] += (ln1.T@dq2).astype(np.float32); grads[p+'q_b'] += dq2.sum(axis=0).astype(np.float32)
+        grads[p+'k_w'] += (memory.T@dk2).astype(np.float32); grads[p+'k_b'] += dk2.sum(axis=0).astype(np.float32)
+        grads[p+'v_w'] += (memory.T@dv2).astype(np.float32); grads[p+'v_b'] += dv2.sum(axis=0).astype(np.float32)
+        dln1=dq2@s[p+'q_w'].T; grads[p+'ln1_g'] += (dln1*n1).sum(axis=0).astype(np.float32); grads[p+'ln1_b'] += dln1.sum(axis=0).astype(np.float32); dslots=dx2+_ln_backward(dln1,x1,s[p+'ln1_g'])
+    grads['slots'] += dslots; grads['query_w'] += np.outer(query,dslots.sum(axis=0)).astype(np.float32); grads['query_b'] += dslots.sum(axis=0).astype(np.float32)
+    dsummary=dslots.sum(axis=0)/float(valid.sum()); g=np.zeros((len(memory),c.latent_dim),np.float32); g[valid]=dsummary; grads['mem_k_w'] += (memory.T@g).astype(np.float32); grads['mem_k_b'] += g.sum(axis=0); grads['mem_v_w'] += (memory.T@g).astype(np.float32); grads['mem_v_b'] += g.sum(axis=0)
+    if not all(np.isfinite(x).all() for x in grads.values()): raise FloatingPointError('non-finite associative gradient')
+    return loss,scores,grads,{'latent':slots.copy(),'dslots_initial':dslots.copy(),'attention':[x[7].mean(axis=1) for x in caches]}

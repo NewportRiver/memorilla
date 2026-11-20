@@ -22,6 +22,8 @@ LITE-007F projection adaptation may update only `mem_k_w`, `mem_k_b`, `mem_v_w`,
 
 LITE-007G adds no optimizer episode. Future episodes must use a persistent identity-bound global authorization budget across fresh subprocesses, atomic checkpoint metadata, deterministic ordering, and fail-closed recovery. Collection levels above 32 records are evaluation-only until separately authorized.
 
+LITE-007H operational episodes use the persistent budget with exclusive locking, conservative pre-update accounting, atomic checkpoints, and phase telemetry. A newly supported subset may receive at most eight updates per explicit episode; no sustained or multi-episode training is authorized by this milestone.
+
 ## Dataset requirements
 
 - Synthetic/public evidence only until separately authorized.

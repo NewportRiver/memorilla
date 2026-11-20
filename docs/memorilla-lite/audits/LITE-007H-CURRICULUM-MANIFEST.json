@@ -1,0 +1,23 @@
+{
+  "milestone":"LITE-007H",
+  "dataset_version":"lite007-dev-v1",
+  "generation_seed":20261120,
+  "scenario_groups":300,
+  "record_examples":1500,
+  "query_examples":1200,
+  "train_scenarios":240,
+  "validation_scenarios":60,
+  "train_queries":960,
+  "validation_queries":240,
+  "train_records":1200,
+  "validation_records":300,
+  "scenario_disjoint":true,
+  "holdout_included":false,
+  "source_dataset_sha256":"db2f78a87885718629dc12e146001f4188dc8133b03869b9da4500b813c5f28d",
+  "source_embeddings_sha256":"ee90683bfef5bafdebe005647c513dd319596f288edb6a0492ff4060fbac3746",
+  "source_manifest_sha256":"9c1fb2410c9a3fb2e5bed4bdc9b245b2e00e48e7187baf66e314d0021416ac62",
+  "embedding_manifest_sha256":"5f0ec75a10e9d34ad41e81fd0fce5221a0d082e1dfc556834e8f703fec09dcd6",
+  "families":["installation","resource","dependency","environment","assumption","tool","recovery","recommendation","supersession","combination"],
+  "query_categories":["multi_hop","multi_evidence","insufficient_evidence","access_policy"],
+  "verification":{"answer_leakage":"generator structure audit passed; independent near-duplicate scan not persisted","temporal_consistency":"existing loader cutoff validation","evidence_identity":"prepared artifact equivalence passed","hard_negative_eligibility":"passed","record_levels":[8,16,32,64,128]}
+}

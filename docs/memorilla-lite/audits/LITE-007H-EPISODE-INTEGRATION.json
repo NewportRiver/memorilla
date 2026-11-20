@@ -1,0 +1,11 @@
+{
+  "milestone":"LITE-007H",
+  "episode_id":"LITE-007H-SLOTS-QUERY-PILOT",
+  "requested_updates":8,"actual_updates":8,"subset":["slots","query_w","query_b"],
+  "global_budget":8,"budget_identity":"persisted and consumed atomically","dataset_identity":"68d4d8cbe20213c479945615c37e5706fe92c5884bcb84e065a29aed9094dd49","checkpoint_identity":"LITE-007E-original-seed-20261120",
+  "first_loss":0.6864654421806335,"last_loss":0.6558041572570801,
+  "checkpoint":"~/.cache/memorilla-lite/LITE-007H-SLOTS-QUERY-PILOT/checkpoint",
+  "final_checksum":"687f3eaffc00d9596e95a0b3daa6635d3601b432a37ab676b31765fbdadb2f17",
+  "frozen_parameters_verified":true,
+  "note":"Pilot executed before final phase-telemetry instrumentation was added; no resource values are backfilled."
+}

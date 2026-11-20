@@ -1,0 +1,11 @@
+{
+  "milestone":"LITE-007H",
+  "architecture_version":"lite006-associative-v1",
+  "total_parameter_tensors":29,
+  "total_parameters":429312,
+  "ranking_connected_tensor_count":27,
+  "supported_tensor_count":27,
+  "supported_tensors":["slots","query_w","query_b","mem_k_w","mem_k_b","mem_v_w","mem_v_b","score_slot_w","score_slot_b","score_mem_w","score_mem_b","b0.q_w","b0.q_b","b0.k_w","b0.k_b","b0.v_w","b0.v_b","b0.attn_out_w","b0.attn_out_b","b0.ff1_w","b0.ff1_b","b0.ff2_w","b0.ff2_b","b0.ln1_g","b0.ln1_b","b0.ln2_g","b0.ln2_b"],
+  "unsupported_tensors":["out_w","out_b"],
+  "unsupported_reason":"current pairwise ranking objective consumes latent slots before output projection; requires output-space objective or decoder integration"
+}

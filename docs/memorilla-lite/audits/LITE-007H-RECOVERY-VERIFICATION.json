@@ -1,0 +1,7 @@
+{
+  "milestone":"LITE-007H",
+  "fault_injection":{"budget_identity_corruption":"tested fail-closed by existing orchestration tests","interrupted_episode":"budget status transition tested with temporary fixture","atomic_checkpoint_recovery":"serialization reload tested; operational checkpoint reload passed","concurrent_episode_lock":"fcntl exclusive lock implemented; dedicated concurrent process test pending","conservative_accounting":"record_update committed before optimizer mutation"},
+  "checkpoint_reload_equal":true,
+  "checkpoint_corruption_rejected":true,
+  "status":"partial_pass_concurrency_and_resource_fault_tests_remaining"
+}

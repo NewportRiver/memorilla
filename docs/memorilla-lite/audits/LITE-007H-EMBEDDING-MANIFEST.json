@@ -1,0 +1,12 @@
+{
+  "milestone":"LITE-007H",
+  "encoder":{"repo":"sentence-transformers/all-MiniLM-L6-v2","revision":"1110a243fdf4706b3f48f1d95db1a4f5529b4d41","sha256":"4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474","dimension":384,"contract":"attention-mask-mean-l2-v1"},
+  "record_embeddings":{"count":1500,"shape":[1500,384],"dtype":"float32"},
+  "query_embeddings":{"count":1200,"shape":[1200,384],"dtype":"float32"},
+  "artifact":"benchmarks/lite/fixtures/lite007/embeddings.npz",
+  "artifact_sha256":"ee90683bfef5bafdebe005647c513dd319596f288edb6a0492ff4060fbac3746",
+  "atomic_persistence":"existing builder writes final artifact; resumable preparation not independently executed in H",
+  "duplicate_reuse":"not measured for this already-complete corpus",
+  "lazy_training_feed":"prepared train 960 examples / 715 eligible; validation 240 / 175 eligible",
+  "onnx_pytorch_coinitialization":false
+}

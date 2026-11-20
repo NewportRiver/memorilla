@@ -1,0 +1,8 @@
+{
+  "milestone":"LITE-007H",
+  "pilot_updates":8,
+  "resource_telemetry":"not captured by the first operational episode; no values fabricated",
+  "hard_limits":{"minimum_ram_bytes":1342177280,"abort_ram_bytes":1073741824,"maximum_rss_bytes":268435456,"target_rss_bytes":134217728,"maximum_wall_seconds":30,"minimum_storage_bytes":5368709120,"maximum_threads":1,"maximum_subprocesses":1,"maximum_records_per_example":32},
+  "preflight_in_operational_runner":"OMP_NUM_THREADS check only; RAM/RSS/wall phase guards require follow-up patch",
+  "status":"gate_not_passed"
+}

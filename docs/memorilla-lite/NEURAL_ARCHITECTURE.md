@@ -78,6 +78,8 @@ The next bounded associative-memory stage trains only the memory-summary project
 
 LITE-007G inventories all 29 tensors. Learned slots, query conditioning, attention projections, normalization parameters, and feed-forward parameters are connected to the ranking path but do not yet have verified native parameter gradients. `out_w` and `out_b` are disconnected because the present ranking objective consumes latent slots before the output projection; they require an output-space objective or decoder contract. This is an explicit staged limitation, not an implied full-training capability.
 
+LITE-007H adds verified native gradients for all 27 tensors connected to the ranking objective, including learned slots, query conditioning, attention Q/K/V/output, both layer norms, both feed-forward layers, memory projections, and the score head. The output projection remains intentionally disconnected.
+
 ## Training objective preparation
 
 The primary proposed objective is multi-positive pairwise logistic ranking: each authoritative positive evidence ID is compared against valid negatives. Optional terms are hard-negative weighting, multi-evidence coverage, slot diversity regularization, and evidence-selection abstention. Labels must resolve to authoritative evidence IDs and may not originate from future, unauthorized, or sealed holdout records.

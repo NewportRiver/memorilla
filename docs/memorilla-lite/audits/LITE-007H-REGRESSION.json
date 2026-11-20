@@ -1,0 +1,11 @@
+{
+  "milestone":"LITE-007H",
+  "collection":"tests/lite",
+  "collected":69,
+  "passed_bounded_batches": {"gradient_control_episode_batch":29,"curriculum_training_batch":10},
+  "full_suite_status":"timeout",
+  "outstanding_or_timeout_identities":["tests/lite/test_training_abstention.py::test_policy_and_insufficient_examples_are_distinct","remaining tests after timeout in bounded full-suite invocation"],
+  "upstream_dependency_failures":"not installed or silently excluded; full inherited environment remains separately constrained by upstream Transformers requirements where applicable",
+  "compileall":"passed",
+  "git_diff_check":"pending final commit check"
+}

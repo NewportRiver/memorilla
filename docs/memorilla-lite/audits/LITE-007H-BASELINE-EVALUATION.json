@@ -1,0 +1,8 @@
+{
+  "milestone":"LITE-007H",
+  "partition":"validation",
+  "examples":240,"answerable":175,"abstention":65,
+  "controls":{"direct_cosine":{"implemented":true,"trained":false,"evaluated":true,"recall_at_1":0.64,"recall_at_3":0.9371428571,"recall_at_5":1.0,"mrr":0.7792380952},"untrained_neural":{"implemented":true,"trained":false,"evaluated":true,"ranking_loss":0.7003154887,"recall_at_1":0.3657142857,"mrr":0.6153333333},"scoring_head":{"implemented":true,"trained":true,"evaluated":true,"ranking_loss":0.7001796419,"mrr":0.6153333333},"memory_projection":{"implemented":true,"trained":true,"evaluated":true,"ranking_loss":0.7002519631,"mrr":0.6143809524},"joint":{"implemented":true,"trained":true,"evaluated":true,"ranking_loss":0.7001167219,"mrr":0.6124761905},"lexical":{"implemented":true,"trained":false,"evaluated":false},"hybrid":{"implemented":true,"trained":false,"evaluated":false},"direct_trained":{"implemented":true,"trained":false,"evaluated":false},"query_independent_slots":{"implemented":true,"trained":false,"evaluated":false}},
+  "abstention_policy":"ranking controls do not claim abstention capability; abstention examples are reported separately",
+  "holdout_accessed":false
+}

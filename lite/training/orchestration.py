@@ -3,6 +3,8 @@ from __future__ import annotations
 import json
 import os
 import tempfile
+import fcntl
+from contextlib import contextmanager
 from pathlib import Path
 
 
@@ -40,32 +42,49 @@ class EpisodeBudget:
             if os.path.exists(temp):
                 os.unlink(temp)
 
+    @contextmanager
+    def _exclusive(self):
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        lock_path = self.path.with_suffix(self.path.suffix + '.lock')
+        with lock_path.open('a+') as handle:
+            fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+            if self.path.exists():
+                self.state = self._load_or_initialize()
+            try:
+                yield
+            finally:
+                fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
+
     def begin_episode(self, episode_id, requested_updates):
         requested_updates = int(requested_updates)
-        if requested_updates <= 0 or self.state['used_updates'] + requested_updates > self.total_updates:
-            raise ValueError('episode exceeds persistent authorization budget')
-        row = {'episode_id': str(episode_id), 'requested_updates': requested_updates, 'completed_updates': 0, 'status': 'active'}
-        self.state['episodes'].append(row)
-        self._commit()
+        with self._exclusive():
+            reserved = sum(x['requested_updates'] for x in self.state['episodes'] if x['status'] == 'active')
+            if requested_updates <= 0 or self.state['used_updates'] + reserved + requested_updates > self.total_updates:
+                raise ValueError('episode exceeds persistent authorization budget')
+            row = {'episode_id': str(episode_id), 'requested_updates': requested_updates, 'completed_updates': 0, 'status': 'active'}
+            self.state['episodes'].append(row)
+            self._commit()
         return row.copy()
 
     def record_update(self, episode_id):
-        rows = [x for x in self.state['episodes'] if x['episode_id'] == str(episode_id) and x['status'] == 'active']
-        if len(rows) != 1:
-            raise ValueError('unknown or inactive episode')
-        row = rows[0]
-        if row['completed_updates'] >= row['requested_updates']:
-            raise ValueError('episode update budget exhausted')
-        row['completed_updates'] += 1
-        self.state['used_updates'] += 1
-        self._commit()
+        with self._exclusive():
+            rows = [x for x in self.state['episodes'] if x['episode_id'] == str(episode_id) and x['status'] == 'active']
+            if len(rows) != 1:
+                raise ValueError('unknown or inactive episode')
+            row = rows[0]
+            if row['completed_updates'] >= row['requested_updates']:
+                raise ValueError('episode update budget exhausted')
+            row['completed_updates'] += 1
+            self.state['used_updates'] += 1
+            self._commit()
 
     def finish_episode(self, episode_id, status='completed'):
-        rows = [x for x in self.state['episodes'] if x['episode_id'] == str(episode_id) and x['status'] == 'active']
-        if len(rows) != 1:
-            raise ValueError('unknown or inactive episode')
-        rows[0]['status'] = str(status)
-        self._commit()
+        with self._exclusive():
+            rows = [x for x in self.state['episodes'] if x['episode_id'] == str(episode_id) and x['status'] == 'active']
+            if len(rows) != 1:
+                raise ValueError('unknown or inactive episode')
+            rows[0]['status'] = str(status)
+            self._commit()
 
     @property
     def remaining_updates(self):
