@@ -1,0 +1,28 @@
+{
+  "milestone": "LITE-007D",
+  "pilot": "LITE-007D-NUMPY-PILOT",
+  "status": "terminated_by_30_second_wall_limit",
+  "resource_policy": {
+    "minimum_available_ram_bytes": 1342177280,
+    "abort_available_ram_bytes": 1073741824,
+    "recommended_launch_ram_bytes": 1677721600,
+    "max_rss_bytes": 268435456,
+    "max_wall_seconds": 30,
+    "threads": 1,
+    "subprocesses": 1
+  },
+  "telemetry": [
+    {"phase":"process_start","event":"start","rss_bytes":16281600,"available_ram_bytes":1534373888,"elapsed_ns":425820},
+    {"phase":"numpy_import","event":"start","rss_bytes":16281600,"available_ram_bytes":1534373888,"elapsed_ns":13081172},
+    {"phase":"numpy_import","event":"end","rss_bytes":29470720,"available_ram_bytes":1524322304,"elapsed_ns":129700625},
+    {"phase":"process_start","event":"end","rss_bytes":29470720,"available_ram_bytes":1524322304,"elapsed_ns":131397969},
+    {"phase":"dataset_loading","event":"start","rss_bytes":29470720,"available_ram_bytes":1524322304,"elapsed_ns":131940547}
+  ],
+  "completed_phases": ["process_start", "numpy_import"],
+  "unreached_phases": ["dataset_loading_end", "model_initialization", "forward_and_gradient", "optimizer_execution", "checkpoint_serialization", "evaluation"],
+  "actual_optimizer_updates": 0,
+  "initial_loss": null,
+  "final_loss": null,
+  "automatic_retry": false,
+  "orphaned_process": false
+}

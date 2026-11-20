@@ -14,6 +14,8 @@ The inherited upstream test suite may require `transformers` through `tests/conf
 
 LITE-007C's native NumPy path must not import PyTorch. The scoring-head pilot may train only `score_slot_w`, `score_slot_b`, `score_mem_w`, and `score_mem_b`; all other architecture state is frozen and byte-checked. Use plain SGD before considering AdamW. A pilot that fails the RAM/RSS/time guards is a blocked run with zero updates, not a failed training result and must not be retried automatically.
 
+The corrected ranking objective is `softplus(margin + negative_score - positive_score)`. Every future pilot must perform directional and finite-difference checks before launch. Native startup and dataset-loading phases must be separately flushed to telemetry; a timeout in either phase is an unexecuted pilot, not a zero-loss or training result.
+
 ## Dataset requirements
 
 - Synthetic/public evidence only until separately authorized.
@@ -33,7 +35,7 @@ Start with multi-positive pairwise logistic evidence ranking:
 positive IDs: authoritative evidence required by the query
 negative IDs: valid same-scope/same-collection non-positive records
 score: maximum projected slot-to-evidence similarity
-loss: mean softplus(margin - positive_score + negative_score)
+loss: mean softplus(margin + negative_score - positive_score)
 ```
 
 Optional follow-up terms:

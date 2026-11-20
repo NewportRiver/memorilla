@@ -1,0 +1,15 @@
+{
+  "milestone": "LITE-007D",
+  "status": "blocked_before_training",
+  "attempt": 1,
+  "actual_optimizer_updates": 0,
+  "initial_loss": null,
+  "final_loss": null,
+  "changed_trainable_weights": false,
+  "frozen_parameters_verified": "not applicable; model initialization was not reached",
+  "numerical_values_finite": "not applicable; model initialization was not reached",
+  "checkpoint_serialization": "not reached",
+  "reason": "dataset_loading phase did not complete before the 30-second subprocess wall limit",
+  "automatic_retry": false,
+  "generated_weights_published": false
+}

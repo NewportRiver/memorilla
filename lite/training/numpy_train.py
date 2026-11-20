@@ -6,18 +6,11 @@ import os
 import time
 from pathlib import Path
 
-import numpy as np
-
-from lite.neural.config import NeuralConfig
-from lite.neural.numpy_model import NumpyAssociativeMemory
-from lite.neural.serialization import save_model
-from .dataset import load_development
-from .numpy_gradients import clip_gradients, scoring_head_gradients, trainable_names
-from .numpy_optimizer import sgd_step, snapshot_frozen, verify_frozen
 from .numpy_telemetry import available_ram_bytes, phase_marker, rss_bytes
 
 
 def _checksum(state):
+    import numpy as np
     digest = hashlib.sha256()
     for name in sorted(state):
         digest.update(name.encode())
@@ -36,10 +29,19 @@ def run_pilot(root, output_dir, max_updates=8, learning_rate=0.001, max_records=
     telemetry_path = output / 'phases.jsonl'
     started = time.perf_counter_ns()
     phase_marker(telemetry_path, 'process_start', 'start', started)
+    phase_marker(telemetry_path, 'numpy_import', 'start', started)
+    import numpy as np
+    phase_marker(telemetry_path, 'numpy_import', 'end', started)
     if available_ram_bytes() and available_ram_bytes() < min_ram:
         return {'status': 'blocked', 'reason': 'minimum_ram', 'updates': 0}
     phase_marker(telemetry_path, 'process_start', 'end', started)
     phase_marker(telemetry_path, 'dataset_loading', 'start', started)
+    from lite.neural.config import NeuralConfig
+    from lite.neural.numpy_model import NumpyAssociativeMemory
+    from lite.neural.serialization import save_model
+    from .dataset import load_development
+    from .numpy_gradients import clip_gradients, scoring_head_gradients, trainable_names
+    from .numpy_optimizer import sgd_step, snapshot_frozen, verify_frozen
     examples, data = load_development(Path(root), split='train')
     usable = [x for x in examples if x.positive_mask.any() and x.valid_mask.sum() > x.positive_mask.sum()]
     phase_marker(telemetry_path, 'dataset_loading', 'end', started)
@@ -48,6 +50,12 @@ def run_pilot(root, output_dir, max_updates=8, learning_rate=0.001, max_records=
     initial = {k: v.copy() for k, v in model.state.items()}
     frozen = snapshot_frozen(model.state, trainable_names())
     phase_marker(telemetry_path, 'model_initialization', 'end', started)
+    diagnostic = usable[0]
+    _, diagnostic_latent = model.forward(diagnostic.query_embedding, diagnostic.memory_embeddings,
+                                          diagnostic.valid_mask, return_latent=True)
+    diagnostic_initial_loss = float(scoring_head_gradients(
+        diagnostic_latent, diagnostic.memory_embeddings, model.state,
+        diagnostic.positive_mask, diagnostic.valid_mask)[0])
     rows = []
     stop_reason = 'max_updates'
     for update in range(max_updates):
@@ -86,8 +94,14 @@ def run_pilot(root, output_dir, max_updates=8, learning_rate=0.001, max_records=
                                 {'repo': 'all-MiniLM-L6-v2', 'revision': 'pinned', 'sha256': '4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474',
                                  'dimension': 384, 'contract': 'attention-mask-mean-l2-v1'}, 'numpy_scoring_head_sgd')
     phase_marker(telemetry_path, 'checkpoint_serialization', 'end', started)
+    _, diagnostic_latent = model.forward(diagnostic.query_embedding, diagnostic.memory_embeddings,
+                                          diagnostic.valid_mask, return_latent=True)
+    diagnostic_final_loss = float(scoring_head_gradients(
+        diagnostic_latent, diagnostic.memory_embeddings, model.state,
+        diagnostic.positive_mask, diagnostic.valid_mask)[0])
     result = {'status': 'passed_pilot' if rows else 'blocked', 'stop_reason': stop_reason, 'updates': len(rows),
-              'initial_loss': rows[0]['loss'] if rows else None, 'final_loss': rows[-1]['loss'] if rows else None,
+              'initial_loss': diagnostic_initial_loss, 'final_loss': diagnostic_final_loss,
+              'diagnostic_query_id': diagnostic.query_id,
               'initial_weights_checksum': _checksum(initial), 'final_weights_checksum': _checksum(model.state),
               'trainable_parameters': list(trainable_names()), 'frozen_parameters_verified': verify_frozen(model.state, frozen),
               'telemetry': rows, 'checkpoint': checkpoint, 'peak_rss_bytes': rss_bytes(),

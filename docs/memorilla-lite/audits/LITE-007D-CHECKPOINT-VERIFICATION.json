@@ -1,0 +1,10 @@
+{
+  "milestone": "LITE-007D",
+  "checkpoint": "none produced by LITE-007D attempt",
+  "round_trip_and_corruption_test": "previously passed for existing NumPy serialization path",
+  "atomic_metadata_write": true,
+  "generated_weights_outside_git": true,
+  "checkpoint_reload": "not reached",
+  "corruption_rejection_in_this_attempt": "not reached",
+  "reason": "pilot timed out during dataset loading before checkpoint serialization"
+}

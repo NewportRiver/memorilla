@@ -20,6 +20,8 @@ Completed:
 - native NumPy scoring-head gradient implementation and SGD pilot guard;
 - finite-difference and isolated PyTorch gradient parity verification;
 - atomic scoring-head checkpoint path and flushed phase telemetry.
+- corrected-objective directional audit and multi-parameter finite-difference verification;
+- clean-process import/resource investigation confirming no PyTorch or ONNX import in the native path.
 
 Not completed:
 
@@ -31,5 +33,6 @@ Not completed:
 - Android trained-checkpoint inference validation.
 - complete bounded pytest regression report; inherited Transformers dependency remains unavailable.
 - successful resource-qualified NumPy pilot with optimizer updates;
+- completed dataset-loading phase within the bounded pilot wall time;
 
 No complete LITE-007 pass claim is permitted. No optimizer update, substantial training, package change, or production APEX integration occurred.
