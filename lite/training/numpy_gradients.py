@@ -27,7 +27,10 @@ def score_head_forward(latent, memory, state, valid_mask):
     if latent.ndim != 2 or memory.ndim != 2 or valid.shape != (memory.shape[0],):
         raise ValueError('invalid scoring-head shapes')
     a = _normalize(latent @ state['score_slot_w'] + state['score_slot_b'])
-    b = _normalize(memory @ state['score_mem_w'] + state['score_mem_b'])
+    raw_b = memory @ state['score_mem_w'] + state['score_mem_b']
+    b = np.zeros_like(raw_b, dtype=np.float32)
+    if np.any(valid):
+        b[valid] = _normalize(raw_b[valid])
     similarities = a @ b.T
     scores = np.full((memory.shape[0],), -np.inf, dtype=np.float32)
     slots = np.full((memory.shape[0],), -1, dtype=np.int64)
@@ -77,6 +80,7 @@ def scoring_head_gradients(latent, memory, state, positive_mask, valid_mask):
     mem_raw = memory @ state['score_mem_w'] + state['score_mem_b']
     slot_norm = np.linalg.norm(slot_raw, axis=1, keepdims=True)
     mem_norm = np.linalg.norm(mem_raw, axis=1, keepdims=True)
+    mem_norm = np.maximum(mem_norm, 1e-12)
     da_raw = (da - a.astype(np.float64) * (da * a.astype(np.float64)).sum(axis=1, keepdims=True)) / slot_norm
     db_raw = (db - b.astype(np.float64) * (db * b.astype(np.float64)).sum(axis=1, keepdims=True)) / mem_norm
     grads = {

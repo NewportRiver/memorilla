@@ -1,0 +1,22 @@
+{
+  "milestone": "LITE-007E",
+  "status": "passed",
+  "compared_examples": 100,
+  "partition": "train",
+  "holdout_accessed": false,
+  "identical": {
+    "sample_identities": true,
+    "scenario_membership": true,
+    "eligibility_decisions": true,
+    "positive_negative_labels": true,
+    "embedding_values": true,
+    "deterministic_order": true
+  },
+  "integrity_tests": {
+    "corruption_rejection": "passed",
+    "missing_artifact_rejection": "passed",
+    "wrong_partition_rejection": "passed",
+    "interrupted_preparation_progress_flushed": "passed"
+  },
+  "semantic_note": "The pilot filters to positive-and-negative eligible examples exactly as the original loader path did; abstention examples remain in the prepared artifact but are not optimization examples."
+}

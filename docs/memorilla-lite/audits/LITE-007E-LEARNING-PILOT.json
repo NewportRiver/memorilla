@@ -1,0 +1,19 @@
+{
+  "milestone": "LITE-007E",
+  "status": "passed_pilot",
+  "pilot_artifact": "~/.cache/memorilla-lite/LITE-007E-NUMPY-PILOT-FINAL/run.json",
+  "updates": 8,
+  "initial_loss": 0.6864654421806335,
+  "final_loss": 0.6860795617103577,
+  "diagnostic_query_id": "scenario-001-q0",
+  "loss_delta": -0.0003858804702758789,
+  "trainable_parameters": ["score_slot_w", "score_slot_b", "score_mem_w", "score_mem_b"],
+  "frozen_parameters_verified": true,
+  "initial_weights_checksum": "2ad7d0171a5f0448a774e112bbcea34878fc6351ecbe61023c8c7bb7e3e8f320",
+  "final_weights_checksum": "9e2e71051f2119b1a807f4988553ad8960abc99a695a10df21e35c75e03bbfbf",
+  "peak_rss_bytes": 68620288,
+  "duration_seconds": 0.47014125,
+  "stop_reason": "max_updates",
+  "optimization_interpretation": "controlled diagnostic loss improved; this is not evidence of cognitive or generalization improvement",
+  "superseded_attempt": {"updates": 8, "status": "invalidated", "reason": "included abstention examples and produced zero-loss updates; no weights published"}
+}

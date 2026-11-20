@@ -1,0 +1,48 @@
+{
+  "milestone": "LITE-007E",
+  "source": {
+    "dataset_json_bytes": 1708510,
+    "embeddings_npz_bytes": 3855431,
+    "scenarios": 300,
+    "records": 1500,
+    "queries": 1200,
+    "train_scenarios": 240,
+    "validation_scenarios": 60,
+    "train_queries": 960,
+    "validation_queries": 240,
+    "embedding_dtype": "float32",
+    "embedding_dimension": 384
+  },
+  "original_loader_phases_ms": {
+    "metadata_json": 15.226,
+    "npz_open": 27.996,
+    "record_ids_decode": 29.405,
+    "query_ids_decode": 30.561,
+    "record_embeddings_decode": 45.733,
+    "first_record_access": 45.865,
+    "full_eager_assembly": "exceeded_previous_30_second_bound"
+  },
+  "prepared_artifact": {
+    "path": "~/.cache/memorilla-lite/LITE-007E/prepared-train.npz",
+    "query_count": 960,
+    "max_records": 5,
+    "content_sha256": "68d4d8cbe20213c479945615c37e5706fe92c5884bcb84e065a29aed9094dd49",
+    "preparation_seconds": 0.296234062,
+    "partition": "train",
+    "holdout_included": false
+  },
+  "retrieval_benchmarks": [
+    {"examples": 1, "elapsed_ms": 19.419921},
+    {"examples": 8, "elapsed_ms": 137.675391},
+    {"examples": 32, "elapsed_ms": 517.491055},
+    {"examples": 100, "elapsed_ms": 1536.560742}
+  ],
+  "target_status": {
+    "single_example_under_500ms": true,
+    "eight_example_under_5s": true,
+    "native_initialization_under_64MiB": true,
+    "native_pilot_peak_under_128MiB": true
+  },
+  "torch_imported": false,
+  "onnx_imported": false
+}

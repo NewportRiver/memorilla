@@ -70,6 +70,10 @@ The compact NumPy scoring interface:
 
 This is a Mode B evidence-selection interface, not a language model or text-generation bridge. Diversity is prepared as a separate regularization term rather than assumed from attention weights.
 
+## Native scoring-head preparation path
+
+The first verified native learning path keeps the encoder, memory slots, query-conditioning projections, attention, feed-forward layers, and output projections frozen. Only `score_slot_w`, `score_slot_b`, `score_mem_w`, and `score_mem_b` are updated by plain Float32 SGD. When eager corpus assembly is too slow for Android, `lite.training.prepared_dataset` creates a deterministic train-only indexed artifact from the existing verified embeddings. The artifact is content-addressed to the source dataset, embedding archive, manifest, and encoder contract; it contains no holdout data and is loaded one example at a time. This preparation layer is an execution optimization, not a change to evidence eligibility or training semantics.
+
 ## Training objective preparation
 
 The primary proposed objective is multi-positive pairwise logistic ranking: each authoritative positive evidence ID is compared against valid negatives. Optional terms are hard-negative weighting, multi-evidence coverage, slot diversity regularization, and evidence-selection abstention. Labels must resolve to authoritative evidence IDs and may not originate from future, unauthorized, or sealed holdout records.

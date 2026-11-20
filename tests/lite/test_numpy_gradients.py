@@ -54,3 +54,11 @@ def test_deterministic_fixture_gradients():
     ga = scoring_head_gradients(a[1], a[2], a[0].state, a[3], a[4])[2]
     gb = scoring_head_gradients(b[1], b[2], b[0].state, b[3], b[4])[2]
     assert all(np.array_equal(ga[name], gb[name]) for name in ga)
+
+
+def test_invalid_zero_padded_memory_is_ignored():
+    model, latent, memory, positive, valid = fixture()
+    valid[-1] = False
+    memory[-1] = 0
+    loss, _, gradients = scoring_head_gradients(latent, memory, model.state, positive, valid)
+    assert np.isfinite(loss) and all(np.isfinite(value).all() for value in gradients.values())

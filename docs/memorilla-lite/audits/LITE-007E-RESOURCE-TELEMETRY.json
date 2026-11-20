@@ -1,0 +1,30 @@
+{
+  "milestone": "LITE-007E",
+  "preparation": {
+    "elapsed_seconds": 0.296234062,
+    "source_records": 1500,
+    "source_queries": 1200,
+    "prepared_train_queries": 960,
+    "content_sha256": "68d4d8cbe20213c479945615c37e5706fe92c5884bcb84e065a29aed9094dd49"
+  },
+  "pilot": {
+    "status": "passed_pilot",
+    "updates": 8,
+    "duration_seconds": 0.47014125,
+    "initialization_rss_bytes": 37822464,
+    "peak_rss_bytes": 68620288,
+    "initial_available_ram_bytes": 1437028352,
+    "minimum_observed_available_ram_bytes": 1412775936,
+    "dataset_loading_elapsed_ms": 59.608391,
+    "model_initialization_elapsed_ms": 22.528,
+    "max_update_elapsed_ms": 31.9,
+    "checkpoint_elapsed_ms": 8.649,
+    "hard_rss_limit_bytes": 268435456,
+    "hard_wall_seconds": 30,
+    "threads": 1,
+    "torch_imported": false,
+    "onnx_imported": false
+  },
+  "phase_telemetry_path": "~/.cache/memorilla-lite/LITE-007E-NUMPY-PILOT-FINAL/phases.jsonl",
+  "resource_guards": {"minimum_ram_passed": true, "abort_ram_passed": true, "rss_limit_passed": true, "wall_limit_passed": true}
+}

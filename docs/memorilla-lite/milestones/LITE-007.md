@@ -22,6 +22,9 @@ Completed:
 - atomic scoring-head checkpoint path and flushed phase telemetry.
 - corrected-objective directional audit and multi-parameter finite-difference verification;
 - clean-process import/resource investigation confirming no PyTorch or ONNX import in the native path.
+- deterministic train-only prepared dataset artifact with source/encoder hashes and lazy indexed retrieval;
+- loader equivalence and integrity verification;
+- first successful bounded native scoring-head pilot with eight SGD updates and frozen-parameter verification.
 
 Not completed:
 
@@ -32,7 +35,7 @@ Not completed:
 - final holdout evaluation;
 - Android trained-checkpoint inference validation.
 - complete bounded pytest regression report; inherited Transformers dependency remains unavailable.
-- successful resource-qualified NumPy pilot with optimizer updates;
-- completed dataset-loading phase within the bounded pilot wall time;
+- memory-projection training and associative-memory effectiveness evaluation;
+- holdout release/evaluation and Android trained-checkpoint inference acceptance;
 
-No complete LITE-007 pass claim is permitted. No optimizer update, substantial training, package change, or production APEX integration occurred.
+No complete LITE-007 pass claim is permitted. Scoring-head-only adaptation succeeded; no memory-projection update or production APEX integration occurred.

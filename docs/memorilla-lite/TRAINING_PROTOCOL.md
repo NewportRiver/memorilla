@@ -16,6 +16,8 @@ LITE-007C's native NumPy path must not import PyTorch. The scoring-head pilot ma
 
 The corrected ranking objective is `softplus(margin + negative_score - positive_score)`. Every future pilot must perform directional and finite-difference checks before launch. Native startup and dataset-loading phases must be separately flushed to telemetry; a timeout in either phase is an unexecuted pilot, not a zero-loss or training result.
 
+The native pilot uses a deterministic, content-addressed, train-only prepared artifact when eager development loading cannot meet the wall limit. The artifact must include source dataset/embedding/encoder hashes, scenario and partition identities, eligibility masks, and atomic metadata. Training retrieves one example at a time and must preserve the original positive-and-negative usable-example filter; abstention examples are not optimization examples.
+
 ## Dataset requirements
 
 - Synthetic/public evidence only until separately authorized.

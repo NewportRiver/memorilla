@@ -1,0 +1,14 @@
+{
+  "milestone": "LITE-007E",
+  "checkpoint": "~/.cache/memorilla-lite/LITE-007E-NUMPY-PILOT-FINAL/lite007-numpy-score-head",
+  "status": "passed",
+  "format": "non-executable NumPy tensor archive plus JSON metadata",
+  "atomic_write": true,
+  "reload": "passed",
+  "reloaded_model_inference_equal": true,
+  "encoder_contract_verified": true,
+  "parameter_integrity_verified": true,
+  "frozen_parameters_verified": true,
+  "checkpoint_added_to_git": false,
+  "corruption_rejection": "passed in targeted loader/serialization tests"
+}
