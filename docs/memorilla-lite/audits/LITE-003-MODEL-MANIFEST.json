@@ -1,0 +1,113 @@
+{
+  "architecture": {
+    "bounded_input_length": 128,
+    "heads": 12,
+    "hidden_size": 384,
+    "layers": 6,
+    "max_position_embeddings": 512,
+    "model_type": "bert",
+    "onnx_inputs": [
+      "input_ids",
+      "attention_mask",
+      "token_type_ids"
+    ],
+    "onnx_output": "last_hidden_state [batch,sequence,384]",
+    "pooling": "attention-mask mean pooling followed by L2 normalization",
+    "remote_code": false,
+    "sentence_transformers_max_seq_length": 256,
+    "tokenizer": "dependency-free BasicTokenizer + WordPiece using pinned vocab.txt"
+  },
+  "assets": {
+    "config.json": {
+      "bytes": 612,
+      "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41"
+    },
+    "modules.json": {
+      "bytes": 349,
+      "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+    },
+    "onnx/model_qint8_arm64.onnx": {
+      "bytes": 23026053,
+      "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474"
+    },
+    "sentence_bert_config.json": {
+      "bytes": 53,
+      "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7"
+    },
+    "special_tokens_map.json": {
+      "bytes": 112,
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"
+    },
+    "tokenizer_config.json": {
+      "bytes": 350,
+      "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b"
+    },
+    "vocab.txt": {
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    }
+  },
+  "authorization": "APPROVED",
+  "baseline_commit": "3f0fea2eb4a6c1ba9472486fe67b42549cbb3e04",
+  "branch": "feature/memorilla-lite-android",
+  "cache_location": "external to repository; model weights and tokenizer assets are excluded from Git",
+  "manifest_content_sha256": "9c866a82dff71469d2c45ddfa73a4fcf35555043bed753bc69d58eefde876ed3",
+  "mission_id": "LITE-003",
+  "model_card_license": "Apache-2.0",
+  "model_repo": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "package_changes": {
+    "apt_new": [
+      "libre2",
+      "protobuf",
+      "onnxruntime",
+      "python-onnxruntime"
+    ],
+    "apt_upgrades": 0,
+    "pip_added_by_package_postinstall": [
+      "flatbuffers==25.12.19",
+      "protobuf==7.36.2"
+    ],
+    "unrelated_package_state": "pre-existing 9-package dpkg configuration issue remained; xdg-utils post-install was attempted by apt and failed; no services were intentionally changed"
+  },
+  "repository": "NewportRiver/memorilla",
+  "resource_gates": {
+    "abort_ram_bytes": 805306368,
+    "home_storage_free_bytes": 6829686784,
+    "max_new_storage_bytes": 536870912,
+    "max_rss_bytes": 268435456,
+    "max_threads": 2,
+    "min_ram_bytes": 1073741824,
+    "preflight_available_ram_bytes": 1378140160,
+    "target_rss_bytes": 201326592,
+    "timeout_seconds": 30
+  },
+  "runtime": {
+    "android_warning": "upstream validation warns Android is not an officially listed platform; native Termux execution succeeded",
+    "numpy": "2.4.4",
+    "onnxruntime": "1.27.0",
+    "providers": [
+      "NnapiExecutionProvider",
+      "XnnpackExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "python": "3.13.13",
+    "selected_provider": "CPUExecutionProvider"
+  },
+  "schema_version": 1,
+  "selected_artifact": "onnx/model_qint8_arm64.onnx",
+  "selected_artifact_bytes": 23026053,
+  "selected_artifact_sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+  "standalone_license_file": "not present at pinned revision; model-card metadata used",
+  "validation": {
+    "attention_bridge": "passed in encoder attention test",
+    "benchmark_status": "passed",
+    "brokerage": false,
+    "cloud_expense": false,
+    "encoder_tests": "13 passed, 1 warning",
+    "model_downloads": 1,
+    "production_apex_changes": false,
+    "semantic_top2_queries": "3/3 passed provisional criteria",
+    "training": false
+  }
+}

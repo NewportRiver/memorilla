@@ -28,4 +28,4 @@ Remove derived model/cache; retain manifest.
 Report candidate decision and rejected alternatives.
 
 ## Status
-Not started. Owner authorization required before execution.
+Completed with the native Termux ONNX Runtime 1.27.0 path and one verified `all-MiniLM-L6-v2` ARM64 quantized artifact. Actual text produced finite normalized 384-D embeddings; 13 targeted tests passed; bounded benchmarks passed at 16/32/64/128-word inputs; provisional semantic top-2 criteria passed 3/3 queries; encoder-to-attention compatibility passed. ONNX upstream Android support warning, unavailable thermal/battery telemetry, and the pre-existing dpkg configuration blocker remain documented. LITE-004 requires separate owner authorization.
