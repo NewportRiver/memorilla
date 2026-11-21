@@ -1,0 +1,104 @@
+{
+  "milestone": "LITE-007M",
+  "mode": "read_only_investigation",
+  "holdout_accessed": false,
+  "training_performed": false,
+  "ranked_hypotheses": [
+    {
+      "rank": 1,
+      "hypothesis": "The associative path is optimization-misaligned or poorly conditioned for the pairwise ranking objective.",
+      "supporting_evidence": [
+        "On the independent corpus, associative Hit@1 rises only from 0.0222 at 0 updates to 0.1222 at 240, while direct reaches 0.8861.",
+        "Associative MRR rises from 0.1599 to 0.2446, showing learning but slow and insufficient improvement.",
+        "Direct ranking exposes the query-evidence bilinear interaction directly; associative scoring requires query projection, memory projections, attention, slots, and score-head composition before the ranking signal reaches the relevant evidence."
+      ],
+      "contradictory_evidence": [
+        "Associative gradients and parameter mutations were finite and telemetry passed.",
+        "Associative performance improved monotonically at the reported independent milestones, so the path is not completely nonfunctional."
+      ],
+      "confidence": "high_for_contribution; not_proven_as_sole_cause",
+      "minimal_experiment": "Read-only gradient/Jacobian attribution on a fixed small sample, followed only if separately authorized by a one-variable optimization comparison using the existing architecture and objective.",
+      "expected_observable": "Large attenuation or disagreement between direct ranking gradients and gradients reaching associative score-connected tensors; or markedly slower loss reduction under matched updates.",
+      "resources": "Read-only attribution should fit existing NumPy/FP32 limits; any training follow-up must remain one thread, one subprocess, RSS <= 256 MiB.",
+      "scientific_risk": "Changing objective or optimizer can confound architecture and optimization explanations.",
+      "falsifier": "If associative and direct paths show comparable gradient alignment, conditioning, and loss reduction on matched examples, this hypothesis loses priority."
+    },
+    {
+      "rank": 2,
+      "hypothesis": "The associative bottleneck and slot-attention representation do not preserve evidence distinctions needed by the scoring head.",
+      "supporting_evidence": [
+        "Independent final associative attention is close to uniform relative to uniform baselines; required-evidence attention is not consistently enriched.",
+        "Slot cosine similarities remain substantial, indicating limited slot diversity rather than strongly specialized evidence slots.",
+        "The associative model improves on the larger corpus but remains weak on the independent corpus, consistent with a representation that can fit a structured shortcut without robust evidence discrimination."
+      ],
+      "contradictory_evidence": [
+        "Query sensitivity is nonzero, so the representation is not fully query-insensitive.",
+        "Associative Complete@5 reaches 1.0 on the larger development-validation corpus, showing that the architecture can express a successful ranking on that distribution."
+      ],
+      "confidence": "medium",
+      "minimal_experiment": "Read-only probe of per-evidence latent separability, slot assignment entropy, required-versus-nonrequired score margins, and representation linear separability using existing checkpoints.",
+      "expected_observable": "Low required-evidence margin, low slot specialization, and weak separability despite nonzero query sensitivity.",
+      "resources": "CPU/NumPy analysis only; no new weights or dependencies.",
+      "scientific_risk": "Post-hoc probes can describe failure without identifying whether the cause is architecture or training.",
+      "falsifier": "Strong evidence-specific margins and separable latent representations with poor ranking would shift priority back to the objective or score head."
+    },
+    {
+      "rank": 3,
+      "hypothesis": "The larger validation corpus contains a shortcut or ceiling that inflates associative Complete@5 and is not a reliable generalization measure.",
+      "supporting_evidence": [
+        "Associative Complete@5 progresses from 0.5806 at initialization to 1.0 at 240 on the larger corpus, while independent Complete@5 is only 0.1333.",
+        "The larger corpus has a reported 100% Complete@5 ceiling at both collection sizes 64 and 128.",
+        "The independent corpus was explicitly separated because it has different construction and no expected-abstention examples."
+      ],
+      "contradictory_evidence": [
+        "The larger corpus is a documented development-validation artifact rather than an undocumented test set.",
+        "The same associative checkpoint does not obtain uniformly high scores on the independent corpus."
+      ],
+      "confidence": "high_for_evaluation_limitation; medium_for_specific_shortcut",
+      "minimal_experiment": "Read-only audit of evidence identity overlap, template relationships, query-to-record lexical/embedding shortcuts, and per-scenario required-evidence composition between the larger corpus and training data.",
+      "expected_observable": "Identity/template leakage, easier positive separation, or construction-dependent evidence ordering in the larger corpus.",
+      "resources": "Offline JSON/NumPy analysis; no protected holdout access.",
+      "scientific_risk": "Calling it leakage without an identity audit would overstate the evidence.",
+      "falsifier": "A clean identity and shortcut audit plus matched difficulty distributions would reduce this hypothesis to ordinary distribution shift."
+    },
+    {
+      "rank": 4,
+      "hypothesis": "Direct ranking benefits from a simpler, less bottlenecked query-evidence interaction rather than a special initialization advantage.",
+      "supporting_evidence": [
+        "Direct final independent Hit@1 is 0.8861 versus associative 0.1222.",
+        "Direct final independent Complete@5 is 0.3361 versus associative 0.1333.",
+        "The direct final result is stable under the evaluated evidence-order reversal, while the direct zero-initialized control is order-sensitive only because of ties."
+      ],
+      "contradictory_evidence": [
+        "The direct model has only one bilinear parameter matrix and therefore is not capacity-matched in functional path complexity to the associative model.",
+        "The zero direct control demonstrates that tie behavior can dominate some initial measurements."
+      ],
+      "confidence": "high_for_direct_optimization_advantage; not_proven_as_architecture_superiority",
+      "minimal_experiment": "A frozen, read-only score decomposition comparing direct bilinear scores with associative score-head inputs and margins; any new trained control must be separately authorized.",
+      "expected_observable": "Direct margins remain large before the associative score head while associative latent-to-score margins remain compressed.",
+      "resources": "Existing checkpoints and NumPy only.",
+      "scientific_risk": "A new direct control could win simply because it is easier, not because it is a better memory architecture.",
+      "falsifier": "If associative pre-score evidence margins are strong and only the final score head loses them, the direct advantage is localized rather than end-to-end."
+    },
+    {
+      "rank": 5,
+      "hypothesis": "Evidence order, normalized-template collisions, or candidate construction create residual evaluation confounding.",
+      "supporting_evidence": [
+        "The direct zero initialization changes independent Hit@1 from 1.0 to 0.0 under reversal with 360 tied rows.",
+        "Six normalized-template collision groups were identified.",
+        "The independent corpus has no expected-abstention examples, limiting evaluation of rejection behavior."
+      ],
+      "contradictory_evidence": [
+        "Final associative aggregate metrics are unchanged under the evaluated reversal.",
+        "Final direct aggregate metrics are unchanged under the evaluated reversal, apart from six tie rows."
+      ],
+      "confidence": "medium_for_limitation; low_as_primary_cause_of_final_gap",
+      "minimal_experiment": "Read-only stratified evaluation across collision groups, candidate permutations, required-evidence counts, and scenario categories.",
+      "expected_observable": "If confounding is material, effects will concentrate in collision or tie strata rather than appear uniformly.",
+      "resources": "Offline analysis only.",
+      "scientific_risk": "Permutation tests can become multiple-comparison exercises without predeclared summaries.",
+      "falsifier": "Stable stratified results after removing collision groups would demote this hypothesis."
+    }
+  ],
+  "overall_assessment": "The evidence supports a multi-factor explanation led by optimization/path conditioning and an associative representation bottleneck, with a separate high-confidence limitation in the larger validation corpus. Existing evidence cannot uniquely identify one root cause without new controlled probes."
+}
