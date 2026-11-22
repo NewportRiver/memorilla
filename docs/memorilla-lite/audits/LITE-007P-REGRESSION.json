@@ -1,0 +1,11 @@
+{
+  "command": "PYTHONPATH=. OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest -q --confcutdir=tests/lite tests/lite",
+  "status": "passed",
+  "passed": 82,
+  "failed": 0,
+  "skipped": 0,
+  "warnings": 1,
+  "warning": "ONNX Runtime reports unsupported Android platform; existing environment warning only.",
+  "targeted_gradient_qualification": "passed",
+  "transient_first_attempt": "one runtime preflight failure due live available RAM; rerun passed without changing limits or code"
+}

@@ -1,0 +1,1034 @@
+{
+  "fixture": "deterministic synthetic 16-position FP32 fixture",
+  "interpretation": "Small epsilons are quantization-limited in FP32; epsilon 0.5 is a qualification perturbation, not a local high-precision proof.",
+  "loss_scale": 100000000.0,
+  "results": [
+    {
+      "epsilon": 0.001,
+      "max_relative_error": 1.0,
+      "mean_relative_error": 0.6544162295301967,
+      "passed_tolerance_0_25": false,
+      "per_tensor": [
+        {
+          "analytical": 287.0420530598494,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.attn_out_b"
+        },
+        {
+          "analytical": -17399.63481668383,
+          "numerical": -20861.62567138672,
+          "relative_error": 0.19896916752432772,
+          "tensor": "b0.attn_out_w"
+        },
+        {
+          "analytical": 23.463229581466294,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.ff1_b"
+        },
+        {
+          "analytical": 21464.315068442374,
+          "numerical": 26822.09014892578,
+          "relative_error": 0.24961313992080766,
+          "tensor": "b0.ff1_w"
+        },
+        {
+          "analytical": 455.0738140096655,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.ff2_b"
+        },
+        {
+          "analytical": -20005.388068966568,
+          "numerical": -23841.85791015625,
+          "relative_error": 0.19177182806771045,
+          "tensor": "b0.ff2_w"
+        },
+        {
+          "analytical": 1.7309298000607982e-15,
+          "numerical": 0.0,
+          "relative_error": 1.7309298000607982e-13,
+          "tensor": "b0.k_b"
+        },
+        {
+          "analytical": -438.60823097929824,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.k_w"
+        },
+        {
+          "analytical": -44.89080822622782,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.ln1_b"
+        },
+        {
+          "analytical": -194640.62061160803,
+          "numerical": -193715.09552001953,
+          "relative_error": 0.004755045933784391,
+          "tensor": "b0.ln1_g"
+        },
+        {
+          "analytical": 149.89630017225863,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.ln2_b"
+        },
+        {
+          "analytical": 197985.58205366135,
+          "numerical": 202655.79223632812,
+          "relative_error": 0.023588637789801182,
+          "tensor": "b0.ln2_g"
+        },
+        {
+          "analytical": 114.37406328695943,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.q_b"
+        },
+        {
+          "analytical": 1779.6748579712585,
+          "numerical": 2980.2322387695312,
+          "relative_error": 0.6745936626687242,
+          "tensor": "b0.q_w"
+        },
+        {
+          "analytical": -702.9723747109529,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.v_b"
+        },
+        {
+          "analytical": 9311.43804336898,
+          "numerical": 14901.161193847656,
+          "relative_error": 0.600307183964922,
+          "tensor": "b0.v_w"
+        },
+        {
+          "analytical": 1180.8921044575982,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "mem_k_b"
+        },
+        {
+          "analytical": -3536.5887015359476,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "mem_k_w"
+        },
+        {
+          "analytical": 416.782950196648,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "mem_v_b"
+        },
+        {
+          "analytical": -11225.71702580899,
+          "numerical": -14901.161193847656,
+          "relative_error": 0.3274128645491839,
+          "tensor": "mem_v_w"
+        },
+        {
+          "analytical": -409.4720225111814,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "query_b"
+        },
+        {
+          "analytical": 15949.421504046768,
+          "numerical": 20861.62567138672,
+          "relative_error": 0.30798635336671,
+          "tensor": "query_w"
+        },
+        {
+          "analytical": -29.673697099497076,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "score_mem_b"
+        },
+        {
+          "analytical": 5063.506250735372,
+          "numerical": 2980.2322387695312,
+          "relative_error": 0.41142913799371483,
+          "tensor": "score_mem_w"
+        },
+        {
+          "analytical": 271.62338938069297,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "score_slot_b"
+        },
+        {
+          "analytical": -58883.13753530383,
+          "numerical": -62584.877014160156,
+          "relative_error": 0.06286586676256711,
+          "tensor": "score_slot_w"
+        },
+        {
+          "analytical": 7377.0621384028345,
+          "numerical": 11920.928955078125,
+          "relative_error": 0.6159453087728847,
+          "tensor": "slots"
+        }
+      ],
+      "tensor_count": 27
+    },
+    {
+      "epsilon": 0.01,
+      "max_relative_error": 1.1834694984721332,
+      "mean_relative_error": 0.4360752797647101,
+      "passed_tolerance_0_25": false,
+      "per_tensor": [
+        {
+          "analytical": 287.0420530598494,
+          "numerical": 596.0464477539062,
+          "relative_error": 1.0765126273313972,
+          "tensor": "b0.attn_out_b"
+        },
+        {
+          "analytical": -17399.63481668383,
+          "numerical": -17583.370208740234,
+          "relative_error": 0.010559726913361933,
+          "tensor": "b0.attn_out_w"
+        },
+        {
+          "analytical": 23.463229581466294,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.ff1_b"
+        },
+        {
+          "analytical": 21464.315068442374,
+          "numerical": 21755.695343017578,
+          "relative_error": 0.013575102380210662,
+          "tensor": "b0.ff1_w"
+        },
+        {
+          "analytical": 455.0738140096655,
+          "numerical": 894.0696716308594,
+          "relative_error": 0.9646695637202053,
+          "tensor": "b0.ff2_b"
+        },
+        {
+          "analytical": -20005.388068966568,
+          "numerical": -19967.55599975586,
+          "relative_error": 0.001891093993292501,
+          "tensor": "b0.ff2_w"
+        },
+        {
+          "analytical": 1.7309298000607982e-15,
+          "numerical": 0.0,
+          "relative_error": 1.7309298000607982e-13,
+          "tensor": "b0.k_b"
+        },
+        {
+          "analytical": -438.60823097929824,
+          "numerical": -894.0696716308594,
+          "relative_error": 1.03842428956391,
+          "tensor": "b0.k_w"
+        },
+        {
+          "analytical": -44.89080822622782,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.ln1_b"
+        },
+        {
+          "analytical": -194640.62061160803,
+          "numerical": -194609.1651916504,
+          "relative_error": 0.00016160768424801168,
+          "tensor": "b0.ln1_g"
+        },
+        {
+          "analytical": 149.89630017225863,
+          "numerical": 298.0232238769531,
+          "relative_error": 0.9881959963953026,
+          "tensor": "b0.ln2_b"
+        },
+        {
+          "analytical": 197985.58205366135,
+          "numerical": 198185.44387817383,
+          "relative_error": 0.0010094766620849785,
+          "tensor": "b0.ln2_g"
+        },
+        {
+          "analytical": 114.37406328695943,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.q_b"
+        },
+        {
+          "analytical": 1779.6748579712585,
+          "numerical": 2086.162567138672,
+          "relative_error": 0.17221556386810694,
+          "tensor": "b0.q_w"
+        },
+        {
+          "analytical": -702.9723747109529,
+          "numerical": -1192.0928955078125,
+          "relative_error": 0.6957891069303762,
+          "tensor": "b0.v_b"
+        },
+        {
+          "analytical": 9311.43804336898,
+          "numerical": 9536.7431640625,
+          "relative_error": 0.02419659773755009,
+          "tensor": "b0.v_w"
+        },
+        {
+          "analytical": 1180.8921044575982,
+          "numerical": 1192.0928955078125,
+          "relative_error": 0.009485024929825418,
+          "tensor": "mem_k_b"
+        },
+        {
+          "analytical": -3536.5887015359476,
+          "numerical": -3874.3019104003906,
+          "relative_error": 0.09549123106053398,
+          "tensor": "mem_k_w"
+        },
+        {
+          "analytical": 416.782950196648,
+          "numerical": 298.0232238769531,
+          "relative_error": 0.2849438209112471,
+          "tensor": "mem_v_b"
+        },
+        {
+          "analytical": -11225.71702580899,
+          "numerical": -11622.905731201172,
+          "relative_error": 0.035382034348363435,
+          "tensor": "mem_v_w"
+        },
+        {
+          "analytical": -409.4720225111814,
+          "numerical": -894.0696716308594,
+          "relative_error": 1.1834694984721332,
+          "tensor": "query_b"
+        },
+        {
+          "analytical": 15949.421504046768,
+          "numerical": 15497.207641601562,
+          "relative_error": 0.02835299464187259,
+          "tensor": "query_w"
+        },
+        {
+          "analytical": -29.673697099497076,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "score_mem_b"
+        },
+        {
+          "analytical": 5063.506250735372,
+          "numerical": 4470.348358154297,
+          "relative_error": 0.11714370699057224,
+          "tensor": "score_mem_w"
+        },
+        {
+          "analytical": 271.62338938069297,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "score_slot_b"
+        },
+        {
+          "analytical": -58883.13753530383,
+          "numerical": -59008.59832763672,
+          "relative_error": 0.002130674376134707,
+          "tensor": "score_slot_w"
+        },
+        {
+          "analytical": 7377.0621384028345,
+          "numerical": 7152.557373046875,
+          "relative_error": 0.030432814736269225,
+          "tensor": "slots"
+        }
+      ],
+      "tensor_count": 27
+    },
+    {
+      "epsilon": 0.05,
+      "max_relative_error": 1.008669313282194,
+      "mean_relative_error": 0.19090776579526297,
+      "passed_tolerance_0_25": false,
+      "per_tensor": [
+        {
+          "analytical": 287.0420530598494,
+          "numerical": 298.0232238769531,
+          "relative_error": 0.03825631366569861,
+          "tensor": "b0.attn_out_b"
+        },
+        {
+          "analytical": -17399.63481668383,
+          "numerical": -17404.556274414062,
+          "relative_error": 0.00028284833458198076,
+          "tensor": "b0.attn_out_w"
+        },
+        {
+          "analytical": 23.463229581466294,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.ff1_b"
+        },
+        {
+          "analytical": 21464.315068442374,
+          "numerical": 21398.067474365234,
+          "relative_error": 0.0030864061520667735,
+          "tensor": "b0.ff1_w"
+        },
+        {
+          "analytical": 455.0738140096655,
+          "numerical": 357.62786865234375,
+          "relative_error": 0.2141321745119179,
+          "tensor": "b0.ff2_b"
+        },
+        {
+          "analytical": -20005.388068966568,
+          "numerical": -20027.16064453125,
+          "relative_error": 0.001088335576876775,
+          "tensor": "b0.ff2_w"
+        },
+        {
+          "analytical": 1.7309298000607982e-15,
+          "numerical": 0.0,
+          "relative_error": 1.7309298000607982e-13,
+          "tensor": "b0.k_b"
+        },
+        {
+          "analytical": -438.60823097929824,
+          "numerical": -417.2325134277344,
+          "relative_error": 0.04873533153684198,
+          "tensor": "b0.k_w"
+        },
+        {
+          "analytical": -44.89080822622782,
+          "numerical": 0.0,
+          "relative_error": 1.0,
+          "tensor": "b0.ln1_b"
+        },
+        {
+          "analytical": -194640.62061160803,
+          "numerical": -194609.1651916504,
+          "relative_error": 0.00016160768424801168,
+          "tensor": "b0.ln1_g"
+        },
+        {
+          "analytical": 149.89630017225863,
+          "numerical": 298.0232238769531,
+          "relative_error": 0.9881959963953026,
+          "tensor": "b0.ln2_b"
+        },
+        {
+          "analytical": 197985.58205366135,
+          "numerical": 197947.02529907227,
+          "relative_error": 0.00019474526472655225,
+          "tensor": "b0.ln2_g"
+        },
+        {
+          "analytical": 114.37406328695943,
+          "numerical": 119.20928955078125,
+          "relative_error": 0.042275548536650796,
+          "tensor": "b0.q_b"
+        },
+        {
+          "analytical": 1779.6748579712585,
+          "numerical": 1728.5346984863281,
+          "relative_error": 0.028735675652139962,
+          "tensor": "b0.q_w"
+        },
+        {
+          "analytical": -702.9723747109529,
+          "numerical": -774.8603820800781,
+          "relative_error": 0.1022629195047445,
+          "tensor": "b0.v_b"
+        },
+        {
+          "analytical": 9311.43804336898,
+          "numerical": 9357.929229736328,
+          "relative_error": 0.004992911529971026,
+          "tensor": "b0.v_w"
+        },
+        {
+          "analytical": 1180.8921044575982,
+          "numerical": 1132.4882507324219,
+          "relative_error": 0.04098922631666585,
+          "tensor": "mem_k_b"
+        },
+        {
+          "analytical": -3536.5887015359476,
+          "numerical": -3457.0693969726562,
+          "relative_error": 0.02248474766906199,
+          "tensor": "mem_k_w"
+        },
+        {
+          "analytical": 416.782950196648,
+          "numerical": 476.837158203125,
+          "relative_error": 0.14408988654200464,
+          "tensor": "mem_v_b"
+        },
+        {
+          "analytical": -11225.71702580899,
+          "numerical": -11146.068572998047,
+          "relative_error": 0.007095177317210453,
+          "tensor": "mem_v_w"
+        },
+        {
+          "analytical": -409.4720225111814,
+          "numerical": -357.62786865234375,
+          "relative_error": 0.12661220061114667,
+          "tensor": "query_b"
+        },
+        {
+          "analytical": 15949.421504046768,
+          "numerical": 15974.044799804688,
+          "relative_error": 0.0015438362922236399,
+          "tensor": "query_w"
+        },
+        {
+          "analytical": -29.673697099497076,
+          "numerical": -59.604644775390625,
+          "relative_error": 1.008669313282194,
+          "tensor": "score_mem_b"
+        },
+        {
+          "analytical": 5063.506250735372,
+          "numerical": 5006.7901611328125,
+          "relative_error": 0.0112009518294409,
+          "tensor": "score_mem_w"
+        },
+        {
+          "analytical": 271.62338938069297,
+          "numerical": 357.62786865234375,
+          "relative_error": 0.31663134558383504,
+          "tensor": "score_slot_b"
+        },
+        {
+          "analytical": -58883.13753530383,
+          "numerical": -58829.78439331055,
+          "relative_error": 0.0009060852431869131,
+          "tensor": "score_slot_w"
+        },
+        {
+          "analytical": 7377.0621384028345,
+          "numerical": 7390.9759521484375,
+          "relative_error": 0.0018860914391884687,
+          "tensor": "slots"
+        }
+      ],
+      "tensor_count": 27
+    },
+    {
+      "epsilon": 0.1,
+      "max_relative_error": 2.013003969923291,
+      "mean_relative_error": 0.23194436532591303,
+      "passed_tolerance_0_25": false,
+      "per_tensor": [
+        {
+          "analytical": 287.0420530598494,
+          "numerical": 238.4185791015625,
+          "relative_error": 0.16939494906744113,
+          "tensor": "b0.attn_out_b"
+        },
+        {
+          "analytical": -17399.63481668383,
+          "numerical": -17464.160919189453,
+          "relative_error": 0.003708474527508631,
+          "tensor": "b0.attn_out_w"
+        },
+        {
+          "analytical": 23.463229581466294,
+          "numerical": 59.604644775390625,
+          "relative_error": 1.5403427336564355,
+          "tensor": "b0.ff1_b"
+        },
+        {
+          "analytical": 21464.315068442374,
+          "numerical": 21547.07908630371,
+          "relative_error": 0.003855889069715491,
+          "tensor": "b0.ff1_w"
+        },
+        {
+          "analytical": 455.0738140096655,
+          "numerical": 417.2325134277344,
+          "relative_error": 0.08315420359723755,
+          "tensor": "b0.ff2_b"
+        },
+        {
+          "analytical": -20005.388068966568,
+          "numerical": -19967.55599975586,
+          "relative_error": 0.001891093993292501,
+          "tensor": "b0.ff2_w"
+        },
+        {
+          "analytical": 1.7309298000607982e-15,
+          "numerical": 0.0,
+          "relative_error": 1.7309298000607982e-13,
+          "tensor": "b0.k_b"
+        },
+        {
+          "analytical": -438.60823097929824,
+          "numerical": -417.2325134277344,
+          "relative_error": 0.04873533153684198,
+          "tensor": "b0.k_w"
+        },
+        {
+          "analytical": -44.89080822622782,
+          "numerical": -119.20928955078125,
+          "relative_error": 1.6555389457464091,
+          "tensor": "b0.ln1_b"
+        },
+        {
+          "analytical": -194640.62061160803,
+          "numerical": -194638.9675140381,
+          "relative_error": 8.493075930132368e-06,
+          "tensor": "b0.ln1_g"
+        },
+        {
+          "analytical": 149.89630017225863,
+          "numerical": 178.81393432617188,
+          "relative_error": 0.19291759783718157,
+          "tensor": "b0.ln2_b"
+        },
+        {
+          "analytical": 197985.58205366135,
+          "numerical": 198006.62994384766,
+          "relative_error": 0.00010631021697633045,
+          "tensor": "b0.ln2_g"
+        },
+        {
+          "analytical": 114.37406328695943,
+          "numerical": 89.40696716308594,
+          "relative_error": 0.2182933385975119,
+          "tensor": "b0.q_b"
+        },
+        {
+          "analytical": 1779.6748579712585,
+          "numerical": 1698.7323760986328,
+          "relative_error": 0.0454816122788272,
+          "tensor": "b0.q_w"
+        },
+        {
+          "analytical": -702.9723747109529,
+          "numerical": -715.2557373046875,
+          "relative_error": 0.017473464158225694,
+          "tensor": "b0.v_b"
+        },
+        {
+          "analytical": 9311.43804336898,
+          "numerical": 9268.522262573242,
+          "relative_error": 0.004608931573818506,
+          "tensor": "b0.v_w"
+        },
+        {
+          "analytical": 1180.8921044575982,
+          "numerical": 1132.4882507324219,
+          "relative_error": 0.04098922631666585,
+          "tensor": "mem_k_b"
+        },
+        {
+          "analytical": -3536.5887015359476,
+          "numerical": -3516.674041748047,
+          "relative_error": 0.005631036421976853,
+          "tensor": "mem_k_w"
+        },
+        {
+          "analytical": 416.782950196648,
+          "numerical": 387.43019104003906,
+          "relative_error": 0.07042696718462123,
+          "tensor": "mem_v_b"
+        },
+        {
+          "analytical": -11225.71702580899,
+          "numerical": -11235.475540161133,
+          "relative_error": 0.0008692998700846511,
+          "tensor": "mem_v_w"
+        },
+        {
+          "analytical": -409.4720225111814,
+          "numerical": -357.62786865234375,
+          "relative_error": 0.12661220061114667,
+          "tensor": "query_b"
+        },
+        {
+          "analytical": 15949.421504046768,
+          "numerical": 15944.242477416992,
+          "relative_error": 0.0003247156411573745,
+          "tensor": "query_w"
+        },
+        {
+          "analytical": -29.673697099497076,
+          "numerical": -89.40696716308594,
+          "relative_error": 2.013003969923291,
+          "tensor": "score_mem_b"
+        },
+        {
+          "analytical": 5063.506250735372,
+          "numerical": 5066.394805908203,
+          "relative_error": 0.0005704654106848028,
+          "tensor": "score_mem_w"
+        },
+        {
+          "analytical": 271.62338938069297,
+          "numerical": 268.2209014892578,
+          "relative_error": 0.012526490812123732,
+          "tensor": "score_slot_b"
+        },
+        {
+          "analytical": -58883.13753530383,
+          "numerical": -58889.38903808594,
+          "relative_error": 0.00010616796325362696,
+          "tensor": "score_slot_w"
+        },
+        {
+          "analytical": 7377.0621384028345,
+          "numerical": 7420.778274536133,
+          "relative_error": 0.00592595471112068,
+          "tensor": "slots"
+        }
+      ],
+      "tensor_count": 27
+    },
+    {
+      "epsilon": 0.2,
+      "max_relative_error": 1.5108366416027426,
+      "mean_relative_error": 0.13615105162676724,
+      "passed_tolerance_0_25": false,
+      "per_tensor": [
+        {
+          "analytical": 287.0420530598494,
+          "numerical": 283.12206268310547,
+          "relative_error": 0.013656502017586322,
+          "tensor": "b0.attn_out_b"
+        },
+        {
+          "analytical": -17399.63481668383,
+          "numerical": -17434.358596801758,
+          "relative_error": 0.001995661431045306,
+          "tensor": "b0.attn_out_w"
+        },
+        {
+          "analytical": 23.463229581466294,
+          "numerical": 44.70348358154297,
+          "relative_error": 0.9052570502423265,
+          "tensor": "b0.ff1_b"
+        },
+        {
+          "analytical": 21464.315068442374,
+          "numerical": 21472.573280334473,
+          "relative_error": 0.0003847414588243589,
+          "tensor": "b0.ff1_w"
+        },
+        {
+          "analytical": 455.0738140096655,
+          "numerical": 432.13367462158203,
+          "relative_error": 0.05040971086856746,
+          "tensor": "b0.ff2_b"
+        },
+        {
+          "analytical": -20005.388068966568,
+          "numerical": -19982.457160949707,
+          "relative_error": 0.001146236600750182,
+          "tensor": "b0.ff2_w"
+        },
+        {
+          "analytical": 1.7309298000607982e-15,
+          "numerical": 0.0,
+          "relative_error": 1.7309298000607982e-13,
+          "tensor": "b0.k_b"
+        },
+        {
+          "analytical": -438.60823097929824,
+          "numerical": -417.2325134277344,
+          "relative_error": 0.04873533153684198,
+          "tensor": "b0.k_w"
+        },
+        {
+          "analytical": -44.89080822622782,
+          "numerical": -89.40696716308594,
+          "relative_error": 0.9916542093098069,
+          "tensor": "b0.ln1_b"
+        },
+        {
+          "analytical": -194640.62061160803,
+          "numerical": -194653.86867523193,
+          "relative_error": 6.806422822880729e-05,
+          "tensor": "b0.ln1_g"
+        },
+        {
+          "analytical": 149.89630017225863,
+          "numerical": 149.01161193847656,
+          "relative_error": 0.005902001802348696,
+          "tensor": "b0.ln2_b"
+        },
+        {
+          "analytical": 197985.58205366135,
+          "numerical": 197947.02529907227,
+          "relative_error": 0.00019474526472655225,
+          "tensor": "b0.ln2_g"
+        },
+        {
+          "analytical": 114.37406328695943,
+          "numerical": 104.3081283569336,
+          "relative_error": 0.08800889503043055,
+          "tensor": "b0.q_b"
+        },
+        {
+          "analytical": 1779.6748579712585,
+          "numerical": 1788.1393432617188,
+          "relative_error": 0.0047561976012345224,
+          "tensor": "b0.q_w"
+        },
+        {
+          "analytical": -702.9723747109529,
+          "numerical": -700.3545761108398,
+          "relative_error": 0.0037238996784040084,
+          "tensor": "b0.v_b"
+        },
+        {
+          "analytical": 9311.43804336898,
+          "numerical": 9343.02806854248,
+          "relative_error": 0.0033926043460061044,
+          "tensor": "b0.v_w"
+        },
+        {
+          "analytical": 1180.8921044575982,
+          "numerical": 1177.1917343139648,
+          "relative_error": 0.0031335378817973995,
+          "tensor": "mem_k_b"
+        },
+        {
+          "analytical": -3536.5887015359476,
+          "numerical": -3531.5752029418945,
+          "relative_error": 0.0014176086102055683,
+          "tensor": "mem_k_w"
+        },
+        {
+          "analytical": 416.782950196648,
+          "numerical": 417.2325134277344,
+          "relative_error": 0.0010786507242540606,
+          "tensor": "mem_v_b"
+        },
+        {
+          "analytical": -11225.71702580899,
+          "numerical": -11235.475540161133,
+          "relative_error": 0.0008692998700846511,
+          "tensor": "mem_v_w"
+        },
+        {
+          "analytical": -409.4720225111814,
+          "numerical": -417.2325134277344,
+          "relative_error": 0.018952432620328873,
+          "tensor": "query_b"
+        },
+        {
+          "analytical": 15949.421504046768,
+          "numerical": 15899.53899383545,
+          "relative_error": 0.003127543541228896,
+          "tensor": "query_w"
+        },
+        {
+          "analytical": -29.673697099497076,
+          "numerical": -74.50580596923828,
+          "relative_error": 1.5108366416027426,
+          "tensor": "score_mem_b"
+        },
+        {
+          "analytical": 5063.506250735372,
+          "numerical": 5066.394805908203,
+          "relative_error": 0.0005704654106848028,
+          "tensor": "score_mem_w"
+        },
+        {
+          "analytical": 271.62338938069297,
+          "numerical": 268.2209014892578,
+          "relative_error": 0.012526490812123732,
+          "tensor": "score_slot_b"
+        },
+        {
+          "analytical": -58883.13753530383,
+          "numerical": -58889.38903808594,
+          "relative_error": 0.00010616796325362696,
+          "tensor": "score_slot_w"
+        },
+        {
+          "analytical": 7377.0621384028345,
+          "numerical": 7346.2724685668945,
+          "relative_error": 0.004173703468709849,
+          "tensor": "slots"
+        }
+      ],
+      "tensor_count": 27
+    },
+    {
+      "epsilon": 0.5,
+      "max_relative_error": 0.23789717990306938,
+      "mean_relative_error": 0.01719416084049828,
+      "passed_tolerance_0_25": true,
+      "per_tensor": [
+        {
+          "analytical": 287.0420530598494,
+          "numerical": 286.102294921875,
+          "relative_error": 0.0032739388809293357,
+          "tensor": "b0.attn_out_b"
+        },
+        {
+          "analytical": -17399.63481668383,
+          "numerical": -17404.556274414062,
+          "relative_error": 0.00028284833458198076,
+          "tensor": "b0.attn_out_w"
+        },
+        {
+          "analytical": 23.463229581466294,
+          "numerical": 17.881393432617188,
+          "relative_error": 0.23789717990306938,
+          "tensor": "b0.ff1_b"
+        },
+        {
+          "analytical": 21464.315068442374,
+          "numerical": 21463.632583618164,
+          "relative_error": 3.179625448257698e-05,
+          "tensor": "b0.ff1_w"
+        },
+        {
+          "analytical": 455.0738140096655,
+          "numerical": 452.99530029296875,
+          "relative_error": 0.004567421048429333,
+          "tensor": "b0.ff2_b"
+        },
+        {
+          "analytical": -20005.388068966568,
+          "numerical": -20009.279251098633,
+          "relative_error": 0.0001945067058259923,
+          "tensor": "b0.ff2_w"
+        },
+        {
+          "analytical": 1.7309298000607982e-15,
+          "numerical": 0.0,
+          "relative_error": 1.7309298000607982e-13,
+          "tensor": "b0.k_b"
+        },
+        {
+          "analytical": -438.60823097929824,
+          "numerical": -435.11390686035156,
+          "relative_error": 0.007966845745563783,
+          "tensor": "b0.k_w"
+        },
+        {
+          "analytical": -44.89080822622782,
+          "numerical": -47.6837158203125,
+          "relative_error": 0.06221557829856364,
+          "tensor": "b0.ln1_b"
+        },
+        {
+          "analytical": -194640.62061160803,
+          "numerical": -195944.30923461914,
+          "relative_error": 0.006697926768392982,
+          "tensor": "b0.ln1_g"
+        },
+        {
+          "analytical": 149.89630017225863,
+          "numerical": 143.0511474609375,
+          "relative_error": 0.04566592173025475,
+          "tensor": "b0.ln2_b"
+        },
+        {
+          "analytical": 197985.58205366135,
+          "numerical": 197881.46018981934,
+          "relative_error": 0.0005259062945997232,
+          "tensor": "b0.ln2_g"
+        },
+        {
+          "analytical": 114.37406328695943,
+          "numerical": 119.20928955078125,
+          "relative_error": 0.042275548536650796,
+          "tensor": "b0.q_b"
+        },
+        {
+          "analytical": 1779.6748579712585,
+          "numerical": 1776.2184143066406,
+          "relative_error": 0.0019421770494403745,
+          "tensor": "b0.q_w"
+        },
+        {
+          "analytical": -702.9723747109529,
+          "numerical": -703.3348083496094,
+          "relative_error": 0.0005155730889219322,
+          "tensor": "b0.v_b"
+        },
+        {
+          "analytical": 9311.43804336898,
+          "numerical": 9316.205978393555,
+          "relative_error": 0.0005120514148692448,
+          "tensor": "b0.v_w"
+        },
+        {
+          "analytical": 1180.8921044575982,
+          "numerical": 1180.1719665527344,
+          "relative_error": 0.0006098253194728361,
+          "tensor": "mem_k_b"
+        },
+        {
+          "analytical": -3536.5887015359476,
+          "numerical": -3546.476364135742,
+          "relative_error": 0.0027958192015657165,
+          "tensor": "mem_k_w"
+        },
+        {
+          "analytical": 416.782950196648,
+          "numerical": 417.2325134277344,
+          "relative_error": 0.0010786507242540606,
+          "tensor": "mem_v_b"
+        },
+        {
+          "analytical": -11225.71702580899,
+          "numerical": -11217.594146728516,
+          "relative_error": 0.0007235955673743695,
+          "tensor": "mem_v_w"
+        },
+        {
+          "analytical": -409.4720225111814,
+          "numerical": -411.2720489501953,
+          "relative_error": 0.004395969297181318,
+          "tensor": "query_b"
+        },
+        {
+          "analytical": 15949.421504046768,
+          "numerical": 15956.16340637207,
+          "relative_error": 0.0004227051321950312,
+          "tensor": "query_w"
+        },
+        {
+          "analytical": -29.673697099497076,
+          "numerical": -29.802322387695312,
+          "relative_error": 0.00433465664109702,
+          "tensor": "score_mem_b"
+        },
+        {
+          "analytical": 5063.506250735372,
+          "numerical": 5066.394805908203,
+          "relative_error": 0.0005704654106848028,
+          "tensor": "score_mem_w"
+        },
+        {
+          "analytical": 271.62338938069297,
+          "numerical": 262.26043701171875,
+          "relative_error": 0.03447034657185431,
+          "tensor": "score_slot_b"
+        },
+        {
+          "analytical": -58883.13753530383,
+          "numerical": -58883.4285736084,
+          "relative_error": 4.94264260957295e-06,
+          "tensor": "score_slot_w"
+        },
+        {
+          "analytical": 7377.0621384028345,
+          "numerical": 7379.055023193359,
+          "relative_error": 0.0002701461304155842,
+          "tensor": "slots"
+        }
+      ],
+      "tensor_count": 27
+    }
+  ],
+  "tolerance": 0.25
+}
