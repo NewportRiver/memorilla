@@ -1,0 +1,50 @@
+{
+  "baseline": "9f1b933",
+  "status": "historical_comparison_with_explicit_unavailable_fields",
+  "measurements": {
+    "existing_hybrid": {
+      "independent_hit_at_1": null,
+      "complete_required_evidence": 1.0,
+      "complete_required_evidence_denominator": 77,
+      "mean_pipeline_ms": 5.44322525,
+      "peak_rss_bytes": null,
+      "android_compatibility": "existing Android-first conventional path"
+    },
+    "direct_cosine": {
+      "independent_hit_at_1": null,
+      "complete_at_5_by_collection_size": {"8": 0.4916666667, "16": 0.4208333333, "32": 0.2541666667, "64": 0.2458333333, "128": 0.225},
+      "mean_pipeline_ms": null,
+      "peak_rss_bytes": null,
+      "android_compatibility": "conventional retrieval path"
+    },
+    "direct_bilinear": {
+      "independent_hit_at_1": 0.8861111111,
+      "independent_mrr": 0.9351,
+      "independent_complete_at_5": 0.3361111111,
+      "mean_pipeline_ms": null,
+      "peak_rss_bytes": null,
+      "android_compatibility": "NumPy/CPU feasibility demonstrated"
+    },
+    "associative_memory": {
+      "independent_hit_at_1": 0.1222222222,
+      "independent_mrr": 0.2446388694,
+      "independent_complete_at_5": 0.1333333333,
+      "q_sweep_peak_rss_bytes": 88199168,
+      "q_sweep_runtime_seconds": 51.89120065,
+      "peak_rss_training_bytes": 127680512,
+      "android_compatibility": "CPU/Android feasible; no replacement evidence"
+    }
+  },
+  "resource_qualification": {
+    "threads": 1,
+    "computational_subprocesses": 1,
+    "historical_lite006_neural_peak_rss_bytes": 101720064,
+    "historical_lite006_hybrid_latency_ms": 5.44322525
+  },
+  "provenance": {
+    "independent_comparison": "LITE-007L-COMPARATIVE-EVALUATION.json",
+    "conventional_comparison": "LITE-006-BENCHMARK-CORRECTED.json and LITE-007J-COMPARATIVE-EVALUATION.json",
+    "temperature_sweep": "LITE-007Q-FEASIBILITY.json"
+  },
+  "interpretation": "Cross-protocol measurements are not ranked as if they were one identical benchmark; null denotes unavailable or non-comparable measurement."
+}
