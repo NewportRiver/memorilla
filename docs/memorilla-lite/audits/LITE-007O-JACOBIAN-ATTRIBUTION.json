@@ -1,0 +1,1712 @@
+{
+  "examples": 40,
+  "finite_difference": [
+    {
+      "analytical_directional_derivative": -7.955721230246127e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-000-q0",
+      "relative_error_to_expected": 0.12380718951259619,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -4.3105754343741864e-07,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-000-q0",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -4.3271103322695126e-07,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-000-q0",
+      "relative_error_to_expected": 12.774699556627384,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -4.444393198355101e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-000-q0",
+      "relative_error_to_expected": 1.0116799565838603,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -5.2538754971465096e-05,
+      "finite_difference_directional_derivative": -4.76837158203125e-05,
+      "query_id": "k-scenario-000-q0",
+      "relative_error_to_expected": 0.09240872102487906,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -1.22190149340895e-05,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-000-q0",
+      "relative_error_to_expected": 0.024395254496314054,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 9.352423148811795e-06,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-000-q1",
+      "relative_error_to_expected": 0.3626823356152008,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 8.538775091437856e-07,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-000-q1",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 8.571528837819642e-07,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-000-q1",
+      "relative_error_to_expected": 4.476896940041818,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 2.7372443582862616e-05,
+      "finite_difference_directional_derivative": 2.9802322387695312e-05,
+      "query_id": "k-scenario-000-q1",
+      "relative_error_to_expected": 0.08877098595442898,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.0001454951416235417,
+      "finite_difference_directional_derivative": 0.0001430511474609375,
+      "query_id": "k-scenario-000-q1",
+      "relative_error_to_expected": 0.016797771632319332,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -3.8694935938110575e-05,
+      "finite_difference_directional_derivative": -4.172325134277344e-05,
+      "query_id": "k-scenario-000-q1",
+      "relative_error_to_expected": 0.07826128487475488,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 1.1609535249590408e-05,
+      "finite_difference_directional_derivative": 1.1920928955078125e-05,
+      "query_id": "k-scenario-000-q2",
+      "relative_error_to_expected": 0.026822236962388578,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 4.226936653140001e-06,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-000-q2",
+      "relative_error_to_expected": 1.1151716834145013,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 4.243150669935858e-06,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-000-q2",
+      "relative_error_to_expected": 1.1070891447848932,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -2.999351818289142e-05,
+      "finite_difference_directional_derivative": -2.9802322387695312e-05,
+      "query_id": "k-scenario-000-q2",
+      "relative_error_to_expected": 0.006374570466533945,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -3.1964402296580374e-05,
+      "finite_difference_directional_derivative": -3.2782554626464844e-05,
+      "query_id": "k-scenario-000-q2",
+      "relative_error_to_expected": 0.025595733725701397,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -6.223626405699179e-05,
+      "finite_difference_directional_derivative": -5.9604644775390625e-05,
+      "query_id": "k-scenario-000-q2",
+      "relative_error_to_expected": 0.04228433890555032,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -4.177808023086982e-06,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-000-q3",
+      "relative_error_to_expected": 1.0,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -6.45156933387625e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-000-q3",
+      "relative_error_to_expected": 0.07612176680152344,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -6.4763171394588426e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-000-q3",
+      "relative_error_to_expected": 0.07965216199447646,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -2.521677924960386e-05,
+      "finite_difference_directional_derivative": -2.384185791015625e-05,
+      "query_id": "k-scenario-000-q3",
+      "relative_error_to_expected": 0.054524066132244434,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00011388496932340786,
+      "finite_difference_directional_derivative": 0.00011026859283447266,
+      "query_id": "k-scenario-000-q3",
+      "relative_error_to_expected": 0.031754642517095484,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 5.656778739648871e-05,
+      "finite_difference_directional_derivative": 5.6624412536621094e-05,
+      "query_id": "k-scenario-000-q3",
+      "relative_error_to_expected": 0.0010010138762453586,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 3.708336407726165e-06,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-001-q0",
+      "relative_error_to_expected": 1.0,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 6.216471774678212e-06,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-001-q0",
+      "relative_error_to_expected": 0.04118208952254128,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 6.240317361516645e-06,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-001-q0",
+      "relative_error_to_expected": 0.04484593775685269,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 1.4203046703187283e-05,
+      "finite_difference_directional_derivative": 1.4901161193847656e-05,
+      "query_id": "k-scenario-001-q0",
+      "relative_error_to_expected": 0.04915244632010612,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -8.158288983395323e-05,
+      "finite_difference_directional_derivative": -8.344650268554688e-05,
+      "query_id": "k-scenario-001-q0",
+      "relative_error_to_expected": 0.022843182625507382,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 8.076433732639998e-05,
+      "finite_difference_directional_derivative": 7.748603820800781e-05,
+      "query_id": "k-scenario-001-q0",
+      "relative_error_to_expected": 0.04059092449608411,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 2.7788048100774176e-05,
+      "finite_difference_directional_derivative": 2.9802322387695312e-05,
+      "query_id": "k-scenario-001-q1",
+      "relative_error_to_expected": 0.07248707356545199,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 5.083498308522394e-06,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-001-q1",
+      "relative_error_to_expected": 0.4137438319251085,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 5.102998329675756e-06,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-001-q1",
+      "relative_error_to_expected": 0.4159840849959881,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -2.4985993718473765e-07,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-001-q1",
+      "relative_error_to_expected": 12.927611414414358,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00047099022776819766,
+      "finite_difference_directional_derivative": 0.00047385692596435547,
+      "query_id": "k-scenario-001-q1",
+      "relative_error_to_expected": 0.006086534342212905,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -6.121837213868275e-05,
+      "finite_difference_directional_derivative": -5.9604644775390625e-05,
+      "query_id": "k-scenario-001-q1",
+      "relative_error_to_expected": 0.026360180888776744,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.0830724022525828e-05,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-001-q2",
+      "relative_error_to_expected": 0.4496707269853391,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -1.5939049262669869e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-001-q2",
+      "relative_error_to_expected": 4.609303647268471,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -1.6000188907128177e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-001-q2",
+      "relative_error_to_expected": 4.587869473419443,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 5.443034297059057e-06,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-001-q2",
+      "relative_error_to_expected": 0.09506281831800684,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -1.9043633074034005e-05,
+      "finite_difference_directional_derivative": -2.384185791015625e-05,
+      "query_id": "k-scenario-001-q2",
+      "relative_error_to_expected": 0.25195952985801984,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -1.401964073011186e-05,
+      "finite_difference_directional_derivative": -1.7881393432617188e-05,
+      "query_id": "k-scenario-001-q2",
+      "relative_error_to_expected": 0.2754530431162137,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 9.267048426409019e-07,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-001-q3",
+      "relative_error_to_expected": 2.2159454678973454,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -7.665295015613083e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-001-q3",
+      "relative_error_to_expected": 0.2224089920350789,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -7.6946980698267e-06,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-001-q3",
+      "relative_error_to_expected": 0.612690165133841,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -2.2747317416360602e-05,
+      "finite_difference_directional_derivative": -2.086162567138672e-05,
+      "query_id": "k-scenario-001-q3",
+      "relative_error_to_expected": 0.08289732413096029,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 7.678521797060966e-05,
+      "finite_difference_directional_derivative": 7.450580596923828e-05,
+      "query_id": "k-scenario-001-q3",
+      "relative_error_to_expected": 0.029685557475969557,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 8.517470268998295e-05,
+      "finite_difference_directional_derivative": 8.344650268554688e-05,
+      "query_id": "k-scenario-001-q3",
+      "relative_error_to_expected": 0.020290062070734086,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -3.7088028648213367e-07,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-002-q0",
+      "relative_error_to_expected": 1.0,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -9.558306146573159e-07,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-002-q0",
+      "relative_error_to_expected": 2.117950181830076,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -9.594971288606757e-07,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-002-q0",
+      "relative_error_to_expected": 2.106035598364232,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 2.474860957590863e-05,
+      "finite_difference_directional_derivative": 2.384185791015625e-05,
+      "query_id": "k-scenario-002-q0",
+      "relative_error_to_expected": 0.0366384892440605,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -0.00025007963995449245,
+      "finite_difference_directional_derivative": -0.00025331974029541016,
+      "query_id": "k-scenario-002-q0",
+      "relative_error_to_expected": 0.01295627401537892,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -2.0014317669847514e-06,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-002-q0",
+      "relative_error_to_expected": 1.0,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -2.1348983025859525e-08,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-002-q1",
+      "relative_error_to_expected": 138.59598146476793,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -3.422393319851835e-07,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-002-q1",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -3.435521307437739e-07,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-002-q1",
+      "relative_error_to_expected": 7.674759875066038,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -2.2710783014190383e-05,
+      "finite_difference_directional_derivative": -2.384185791015625e-05,
+      "query_id": "k-scenario-002-q1",
+      "relative_error_to_expected": 0.04980343017055541,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -0.00010125226253876463,
+      "finite_difference_directional_derivative": -0.0001043081283569336,
+      "query_id": "k-scenario-002-q1",
+      "relative_error_to_expected": 0.03018071637657503,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -4.4312742829788476e-05,
+      "finite_difference_directional_derivative": -4.172325134277344e-05,
+      "query_id": "k-scenario-002-q1",
+      "relative_error_to_expected": 0.05843672320085539,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.0454312359797768e-05,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-002-q2",
+      "relative_error_to_expected": 0.42985590324810574,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 5.206950390856946e-06,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-002-q2",
+      "relative_error_to_expected": 0.14471312959025626,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 5.226923804002581e-06,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-002-q2",
+      "relative_error_to_expected": 0.14033888785116086,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 6.0247795772738755e-05,
+      "finite_difference_directional_derivative": 6.556510925292969e-05,
+      "query_id": "k-scenario-002-q2",
+      "relative_error_to_expected": 0.08825739451528514,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.0001961788657354191,
+      "finite_difference_directional_derivative": 0.0001996755599975586,
+      "query_id": "k-scenario-002-q2",
+      "relative_error_to_expected": 0.017824011006646313,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 0.00011898754019057378,
+      "finite_difference_directional_derivative": 0.00011920928955078125,
+      "query_id": "k-scenario-002-q2",
+      "relative_error_to_expected": 0.0018636351323198066,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.7602236766833812e-05,
+      "finite_difference_directional_derivative": -2.384185791015625e-05,
+      "query_id": "k-scenario-002-q3",
+      "relative_error_to_expected": 0.35447887822297397,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -2.0504838175838813e-05,
+      "finite_difference_directional_derivative": -2.682209014892578e-05,
+      "query_id": "k-scenario-002-q3",
+      "relative_error_to_expected": 0.3080859219133312,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -2.0583491277648136e-05,
+      "finite_difference_directional_derivative": -2.682209014892578e-05,
+      "query_id": "k-scenario-002-q3",
+      "relative_error_to_expected": 0.3030874979917627,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -2.683256934687961e-05,
+      "finite_difference_directional_derivative": -2.086162567138672e-05,
+      "query_id": "k-scenario-002-q3",
+      "relative_error_to_expected": 0.222525975738781,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00019879885076079518,
+      "finite_difference_directional_derivative": 0.0002086162567138672,
+      "query_id": "k-scenario-002-q3",
+      "relative_error_to_expected": 0.04938361522464137,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -0.00014145835302770138,
+      "finite_difference_directional_derivative": -0.00013709068298339844,
+      "query_id": "k-scenario-002-q3",
+      "relative_error_to_expected": 0.030876013687559562,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 5.334178240445908e-06,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-003-q0",
+      "relative_error_to_expected": 1.0,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -1.750963019730989e-05,
+      "finite_difference_directional_derivative": -1.7881393432617188e-05,
+      "query_id": "k-scenario-003-q0",
+      "relative_error_to_expected": 0.02123192957921035,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -1.757679638103582e-05,
+      "finite_difference_directional_derivative": -2.086162567138672e-05,
+      "query_id": "k-scenario-003-q0",
+      "relative_error_to_expected": 0.18688441392511146,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 1.8386524970992468e-05,
+      "finite_difference_directional_derivative": 2.086162567138672e-05,
+      "query_id": "k-scenario-003-q0",
+      "relative_error_to_expected": 0.1346149261102409,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 2.0467305148486048e-05,
+      "finite_difference_directional_derivative": 2.086162567138672e-05,
+      "query_id": "k-scenario-003-q0",
+      "relative_error_to_expected": 0.019265874038617067,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 3.478903818177059e-05,
+      "finite_difference_directional_derivative": 3.5762786865234375e-05,
+      "query_id": "k-scenario-003-q0",
+      "relative_error_to_expected": 0.02799010074311353,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 2.268980551889399e-06,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-003-q1",
+      "relative_error_to_expected": 1.6269350226804429,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 3.960939011449227e-06,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-003-q1",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 3.976133029937046e-06,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-003-q1",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 3.287853178335354e-05,
+      "finite_difference_directional_derivative": 3.2782554626464844e-05,
+      "query_id": "k-scenario-003-q1",
+      "relative_error_to_expected": 0.0029191436381988014,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 9.63221609708853e-05,
+      "finite_difference_directional_derivative": 9.5367431640625e-05,
+      "query_id": "k-scenario-003-q1",
+      "relative_error_to_expected": 0.009911834624940429,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -5.138379128766246e-05,
+      "finite_difference_directional_derivative": -4.76837158203125e-05,
+      "query_id": "k-scenario-003-q1",
+      "relative_error_to_expected": 0.07200861156071156,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 1.6047919416450895e-05,
+      "finite_difference_directional_derivative": 1.1920928955078125e-05,
+      "query_id": "k-scenario-003-q2",
+      "relative_error_to_expected": 0.2571666989517749,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 4.08707956012222e-06,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-003-q2",
+      "relative_error_to_expected": 1.1875514251161854,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 4.102756975044031e-06,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-003-q2",
+      "relative_error_to_expected": 1.1791923749548052,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -8.753552720008884e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-003-q2",
+      "relative_error_to_expected": 0.31908053013553866,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00012680585496127605,
+      "finite_difference_directional_derivative": 0.00012218952178955078,
+      "query_id": "k-scenario-003-q2",
+      "relative_error_to_expected": 0.03640473204596908,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -4.4096326746512204e-05,
+      "finite_difference_directional_derivative": -4.76837158203125e-05,
+      "query_id": "k-scenario-003-q2",
+      "relative_error_to_expected": 0.08135346724960577,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -9.929382031259593e-06,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-003-q3",
+      "relative_error_to_expected": 0.2005710846403897,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -5.596863843493338e-07,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-003-q3",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -5.618333034362877e-07,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-003-q3",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -2.4021857825573534e-05,
+      "finite_difference_directional_derivative": -2.086162567138672e-05,
+      "query_id": "k-scenario-003-q3",
+      "relative_error_to_expected": 0.13155652560820877,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 5.089587648399174e-05,
+      "finite_difference_directional_derivative": 5.066394805908203e-05,
+      "query_id": "k-scenario-003-q3",
+      "relative_error_to_expected": 0.004556919753266441,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 9.244465763913468e-05,
+      "finite_difference_directional_derivative": 8.940696716308594e-05,
+      "query_id": "k-scenario-003-q3",
+      "relative_error_to_expected": 0.032859556772946386,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -4.63110063719796e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-004-q0",
+      "relative_error_to_expected": 0.2870513824863525,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -8.497957423969638e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-004-q0",
+      "relative_error_to_expected": 0.05209949523754381,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -8.530554623575881e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-004-q0",
+      "relative_error_to_expected": 0.04807918251870793,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -1.1440127309469972e-05,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-004-q0",
+      "relative_error_to_expected": 0.478986175913875,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.000249014759901911,
+      "finite_difference_directional_derivative": 0.0002473592758178711,
+      "query_id": "k-scenario-004-q0",
+      "relative_error_to_expected": 0.006648136378309605,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -9.076823516807053e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-004-q0",
+      "relative_error_to_expected": 0.014997184890330962,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 1.0611377547320444e-05,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-004-q1",
+      "relative_error_to_expected": 0.15744240778933796,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 1.282995526707964e-05,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-004-q1",
+      "relative_error_to_expected": 0.30313890187524567,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 1.2879169844381977e-05,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-004-q1",
+      "relative_error_to_expected": 0.30580178502664784,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 7.858373464841861e-06,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-004-q1",
+      "relative_error_to_expected": 0.2415142262955546,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -8.434006304014474e-05,
+      "finite_difference_directional_derivative": -8.64267349243164e-05,
+      "query_id": "k-scenario-004-q1",
+      "relative_error_to_expected": 0.024741170553529666,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 4.565703420666978e-05,
+      "finite_difference_directional_derivative": 5.066394805908203e-05,
+      "query_id": "k-scenario-004-q1",
+      "relative_error_to_expected": 0.10966358063793863,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 7.711205398663878e-06,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-004-q2",
+      "relative_error_to_expected": 0.1594421694249967,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 1.372650785924634e-05,
+      "finite_difference_directional_derivative": 2.086162567138672e-05,
+      "query_id": "k-scenario-004-q2",
+      "relative_error_to_expected": 0.5198057572475784,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 1.377916123601608e-05,
+      "finite_difference_directional_derivative": 1.4901161193847656e-05,
+      "query_id": "k-scenario-004-q2",
+      "relative_error_to_expected": 0.08142730450812087,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 2.730769119807519e-05,
+      "finite_difference_directional_derivative": 2.9802322387695312e-05,
+      "query_id": "k-scenario-004-q2",
+      "relative_error_to_expected": 0.09135269516289092,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -6.050315641914494e-05,
+      "finite_difference_directional_derivative": -5.9604644775390625e-05,
+      "query_id": "k-scenario-004-q2",
+      "relative_error_to_expected": 0.014850657336449365,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 4.528198405751027e-05,
+      "finite_difference_directional_derivative": 5.066394805908203e-05,
+      "query_id": "k-scenario-004-q2",
+      "relative_error_to_expected": 0.118854421103466,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.566190621815622e-05,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-004-q3",
+      "relative_error_to_expected": 0.23885836187304768,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -9.1618503574864e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-004-q3",
+      "relative_error_to_expected": 0.024138534526172026,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -9.19699505175231e-06,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-004-q3",
+      "relative_error_to_expected": 0.29617651069702616,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -8.152645932568703e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-004-q3",
+      "relative_error_to_expected": 0.09666196597496478,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00032456140615977347,
+      "finite_difference_directional_derivative": 0.00033080577850341797,
+      "query_id": "k-scenario-004-q3",
+      "relative_error_to_expected": 0.01923941733408239,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 1.1932036613870878e-05,
+      "finite_difference_directional_derivative": 1.1920928955078125e-05,
+      "query_id": "k-scenario-004-q3",
+      "relative_error_to_expected": 0.0009309105521718083,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -3.696524402130308e-07,
+      "finite_difference_directional_derivative": 5.9604644775390625e-06,
+      "query_id": "k-scenario-005-q0",
+      "relative_error_to_expected": 17.124510023805186,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -1.0720500540628564e-05,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-005-q0",
+      "relative_error_to_expected": 0.11197503417869124,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -1.0761623343569227e-05,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-005-q0",
+      "relative_error_to_expected": 0.1077259047726902,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 2.3131949546950636e-06,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-005-q0",
+      "relative_error_to_expected": 2.288361896484596,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -1.293304012506269e-05,
+      "finite_difference_directional_derivative": -1.4901161193847656e-05,
+      "query_id": "k-scenario-005-q0",
+      "relative_error_to_expected": 0.15217775942494627,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 0.00011410392471589148,
+      "finite_difference_directional_derivative": 0.00011026859283447266,
+      "query_id": "k-scenario-005-q0",
+      "relative_error_to_expected": 0.0336126201703268,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 2.6047877327073365e-05,
+      "finite_difference_directional_derivative": 2.086162567138672e-05,
+      "query_id": "k-scenario-005-q1",
+      "relative_error_to_expected": 0.1991045792547639,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -4.331431046011858e-05,
+      "finite_difference_directional_derivative": -4.470348358154297e-05,
+      "query_id": "k-scenario-005-q1",
+      "relative_error_to_expected": 0.03207192049619411,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -4.348046059021726e-05,
+      "finite_difference_directional_derivative": -4.470348358154297e-05,
+      "query_id": "k-scenario-005-q1",
+      "relative_error_to_expected": 0.028128105699066035,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -0.00010469258268130943,
+      "finite_difference_directional_derivative": -9.834766387939453e-05,
+      "query_id": "k-scenario-005-q1",
+      "relative_error_to_expected": 0.06060523715638211,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00014661216118838638,
+      "finite_difference_directional_derivative": 0.0001430511474609375,
+      "query_id": "k-scenario-005-q1",
+      "relative_error_to_expected": 0.024288665405274443,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -8.11240024631843e-05,
+      "finite_difference_directional_derivative": -8.046627044677734e-05,
+      "query_id": "k-scenario-005-q1",
+      "relative_error_to_expected": 0.008107736260984476,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -3.5058374123764224e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-005-q2",
+      "relative_error_to_expected": 0.7001542788314241,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -4.721296591014834e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-005-q2",
+      "relative_error_to_expected": 0.2624634700735612,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -4.7394073590112384e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-005-q2",
+      "relative_error_to_expected": 0.25763919959447584,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 3.251066300435923e-05,
+      "finite_difference_directional_derivative": 3.2782554626464844e-05,
+      "query_id": "k-scenario-005-q2",
+      "relative_error_to_expected": 0.008363152177768765,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -0.00028125132666900754,
+      "finite_difference_directional_derivative": -0.000286102294921875,
+      "query_id": "k-scenario-005-q2",
+      "relative_error_to_expected": 0.017247805762624382,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -3.9360351365758106e-05,
+      "finite_difference_directional_derivative": -4.470348358154297e-05,
+      "query_id": "k-scenario-005-q2",
+      "relative_error_to_expected": 0.13574909853150266,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 3.842853766400367e-05,
+      "finite_difference_directional_derivative": 4.470348358154297e-05,
+      "query_id": "k-scenario-005-q3",
+      "relative_error_to_expected": 0.163288698945656,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 8.048703602980822e-05,
+      "finite_difference_directional_derivative": 8.344650268554688e-05,
+      "query_id": "k-scenario-005-q3",
+      "relative_error_to_expected": 0.036769482412579074,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 8.079577673925087e-05,
+      "finite_difference_directional_derivative": 7.748603820800781e-05,
+      "query_id": "k-scenario-005-q3",
+      "relative_error_to_expected": 0.0409642516579109,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 0.0001633498613955453,
+      "finite_difference_directional_derivative": 0.0001609325408935547,
+      "query_id": "k-scenario-005-q3",
+      "relative_error_to_expected": 0.014798423955421481,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.0008066887967288494,
+      "finite_difference_directional_derivative": 0.000807642936706543,
+      "query_id": "k-scenario-005-q3",
+      "relative_error_to_expected": 0.0011827857056681931,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -0.0004573129117488861,
+      "finite_difference_directional_derivative": -0.00046193599700927734,
+      "query_id": "k-scenario-005-q3",
+      "relative_error_to_expected": 0.01010923842651048,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.4131732314126566e-05,
+      "finite_difference_directional_derivative": -1.4901161193847656e-05,
+      "query_id": "k-scenario-006-q0",
+      "relative_error_to_expected": 0.054446890347048436,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 1.0727779226726852e-05,
+      "finite_difference_directional_derivative": 1.4901161193847656e-05,
+      "query_id": "k-scenario-006-q0",
+      "relative_error_to_expected": 0.3890257134229022,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 1.0768929314508568e-05,
+      "finite_difference_directional_derivative": 1.1920928955078125e-05,
+      "query_id": "k-scenario-006-q0",
+      "relative_error_to_expected": 0.10697438964684365,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 6.38236670056358e-05,
+      "finite_difference_directional_derivative": 6.854534149169922e-05,
+      "query_id": "k-scenario-006-q0",
+      "relative_error_to_expected": 0.07397999374818881,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -0.00010267419565934688,
+      "finite_difference_directional_derivative": -0.00010728836059570312,
+      "query_id": "k-scenario-006-q0",
+      "relative_error_to_expected": 0.0449398693286593,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -0.0002256619045510888,
+      "finite_difference_directional_derivative": -0.00022351741790771484,
+      "query_id": "k-scenario-006-q0",
+      "relative_error_to_expected": 0.009503095560768275,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.1253378943365533e-05,
+      "finite_difference_directional_derivative": -1.7881393432617188e-05,
+      "query_id": "k-scenario-006-q1",
+      "relative_error_to_expected": 0.5889799430560563,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -3.3543699373694835e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-006-q1",
+      "relative_error_to_expected": 0.7769252017007086,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -3.367237013662816e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-006-q1",
+      "relative_error_to_expected": 0.7701351147406708,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -1.8178998288931325e-05,
+      "finite_difference_directional_derivative": -1.7881393432617188e-05,
+      "query_id": "k-scenario-006-q1",
+      "relative_error_to_expected": 0.016370806112861604,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -8.753159818297718e-06,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-006-q1",
+      "relative_error_to_expected": 0.6595249829050744,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -0.0003004346217494458,
+      "finite_difference_directional_derivative": -0.0003069639205932617,
+      "query_id": "k-scenario-006-q1",
+      "relative_error_to_expected": 0.021732844256748738,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -6.058035069145262e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-006-q2",
+      "relative_error_to_expected": 0.016105979990631868,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -2.219672978753806e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-006-q2",
+      "relative_error_to_expected": 1.6852894703820083,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -2.228187440778129e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-006-q2",
+      "relative_error_to_expected": 1.6750283070698693,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 1.0060375643661246e-05,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-006-q2",
+      "relative_error_to_expected": 0.11129593635582878,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -6.419021519832313e-05,
+      "finite_difference_directional_derivative": -5.9604644775390625e-05,
+      "query_id": "k-scenario-006-q2",
+      "relative_error_to_expected": 0.07143721841038939,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 2.675027099030558e-05,
+      "finite_difference_directional_derivative": 2.682209014892578e-05,
+      "query_id": "k-scenario-006-q2",
+      "relative_error_to_expected": 0.00268480116131267,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -2.6915049602393992e-05,
+      "finite_difference_directional_derivative": -2.9802322387695312e-05,
+      "query_id": "k-scenario-006-q3",
+      "relative_error_to_expected": 0.10727354502235464,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -2.1064553948235698e-05,
+      "finite_difference_directional_derivative": -1.4901161193847656e-05,
+      "query_id": "k-scenario-006-q3",
+      "relative_error_to_expected": 0.29259545535756615,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -2.114535527653061e-05,
+      "finite_difference_directional_derivative": -1.4901161193847656e-05,
+      "query_id": "k-scenario-006-q3",
+      "relative_error_to_expected": 0.2952986129116228,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 9.098363989323843e-06,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-006-q3",
+      "relative_error_to_expected": 0.017329189423533578,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 7.749845826765522e-05,
+      "finite_difference_directional_derivative": 7.748603820800781e-05,
+      "query_id": "k-scenario-006-q3",
+      "relative_error_to_expected": 0.00016026202230392947,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 0.000142561286338605,
+      "finite_difference_directional_derivative": 0.0001430511474609375,
+      "query_id": "k-scenario-006-q3",
+      "relative_error_to_expected": 0.0034361440957330998,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -2.381029844400473e-05,
+      "finite_difference_directional_derivative": -2.384185791015625e-05,
+      "query_id": "k-scenario-007-q0",
+      "relative_error_to_expected": 0.0013254544551694633,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -3.209519127267413e-05,
+      "finite_difference_directional_derivative": -2.9802322387695312e-05,
+      "query_id": "k-scenario-007-q0",
+      "relative_error_to_expected": 0.07143963921258716,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -3.221830411348492e-05,
+      "finite_difference_directional_derivative": -3.2782554626464844e-05,
+      "query_id": "k-scenario-007-q0",
+      "relative_error_to_expected": 0.017513352378586512,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -3.642215597210452e-05,
+      "finite_difference_directional_derivative": -3.8743019104003906e-05,
+      "query_id": "k-scenario-007-q0",
+      "relative_error_to_expected": 0.06372119030177455,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -0.0002461411349941045,
+      "finite_difference_directional_derivative": -0.00024437904357910156,
+      "query_id": "k-scenario-007-q0",
+      "relative_error_to_expected": 0.0071588660507523345,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -9.281179518438876e-05,
+      "finite_difference_directional_derivative": -9.5367431640625e-05,
+      "query_id": "k-scenario-007-q0",
+      "relative_error_to_expected": 0.027535686074803018,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -5.623874585580779e-06,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-007-q1",
+      "relative_error_to_expected": 1.1197003549194628,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -6.267626758926781e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-007-q1",
+      "relative_error_to_expected": 0.426488375935061,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -6.291668796620797e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-007-q1",
+      "relative_error_to_expected": 0.4210374076128367,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -2.0262204998289235e-05,
+      "finite_difference_directional_derivative": -1.4901161193847656e-05,
+      "query_id": "k-scenario-007-q1",
+      "relative_error_to_expected": 0.26458343526255995,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -0.00013428859529085457,
+      "finite_difference_directional_derivative": -0.00012814998626708984,
+      "query_id": "k-scenario-007-q1",
+      "relative_error_to_expected": 0.04571206520158444,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 9.930607484420761e-05,
+      "finite_difference_directional_derivative": 0.00010132789611816406,
+      "query_id": "k-scenario-007-q1",
+      "relative_error_to_expected": 0.020359492378772413,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 2.2496718884212896e-05,
+      "finite_difference_directional_derivative": 2.384185791015625e-05,
+      "query_id": "k-scenario-007-q2",
+      "relative_error_to_expected": 0.05979267611719623,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 2.443328412482515e-05,
+      "finite_difference_directional_derivative": 2.682209014892578e-05,
+      "query_id": "k-scenario-007-q2",
+      "relative_error_to_expected": 0.09776851985581068,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 2.4527009372832254e-05,
+      "finite_difference_directional_derivative": 2.682209014892578e-05,
+      "query_id": "k-scenario-007-q2",
+      "relative_error_to_expected": 0.09357360863716682,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 6.823227158747613e-05,
+      "finite_difference_directional_derivative": 7.152557373046875e-05,
+      "query_id": "k-scenario-007-q2",
+      "relative_error_to_expected": 0.048266048694721946,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.0004937269259244204,
+      "finite_difference_directional_derivative": 0.0004976987838745117,
+      "query_id": "k-scenario-007-q2",
+      "relative_error_to_expected": 0.0080446452108212,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -2.9353674108278938e-05,
+      "finite_difference_directional_derivative": -3.2782554626464844e-05,
+      "query_id": "k-scenario-007-q2",
+      "relative_error_to_expected": 0.1168126519882164,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.197302572109038e-05,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-007-q3",
+      "relative_error_to_expected": 0.004351177991749162,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -2.8599532015505247e-05,
+      "finite_difference_directional_derivative": -2.682209014892578e-05,
+      "query_id": "k-scenario-007-q3",
+      "relative_error_to_expected": 0.0621493339686756,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -2.87092370854225e-05,
+      "finite_difference_directional_derivative": -2.682209014892578e-05,
+      "query_id": "k-scenario-007-q3",
+      "relative_error_to_expected": 0.06573309248454198,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -7.734978862572461e-05,
+      "finite_difference_directional_derivative": -8.046627044677734e-05,
+      "query_id": "k-scenario-007-q3",
+      "relative_error_to_expected": 0.040290760665585915,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00019145144324284047,
+      "finite_difference_directional_derivative": 0.00019073486328125,
+      "query_id": "k-scenario-007-q3",
+      "relative_error_to_expected": 0.0037428809595420284,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 6.769101310055703e-05,
+      "finite_difference_directional_derivative": 6.854534149169922e-05,
+      "query_id": "k-scenario-007-q3",
+      "relative_error_to_expected": 0.0126210016959424,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 1.3252000826469157e-05,
+      "finite_difference_directional_derivative": 1.1920928955078125e-05,
+      "query_id": "k-scenario-008-q0",
+      "relative_error_to_expected": 0.10044308695879252,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -3.3533743248881365e-07,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-008-q0",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -3.3662374221421487e-07,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-008-q0",
+      "relative_error_to_expected": 1.0,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -1.5189058331088745e-06,
+      "finite_difference_directional_derivative": 0.0,
+      "query_id": "k-scenario-008-q0",
+      "relative_error_to_expected": 1.0,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 6.638037302764133e-05,
+      "finite_difference_directional_derivative": 6.258487701416016e-05,
+      "query_id": "k-scenario-008-q0",
+      "relative_error_to_expected": 0.05717798560578583,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 3.874940739478916e-05,
+      "finite_difference_directional_derivative": 4.470348358154297e-05,
+      "query_id": "k-scenario-008-q0",
+      "relative_error_to_expected": 0.15365592887891458,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -3.874295998684829e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-008-q1",
+      "relative_error_to_expected": 0.53846388597113,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 6.148288321128348e-06,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-008-q1",
+      "relative_error_to_expected": 0.5152744824070657,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 6.171872428240022e-06,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-008-q1",
+      "relative_error_to_expected": 0.5171267271933264,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 3.996400846517645e-05,
+      "finite_difference_directional_derivative": 3.8743019104003906e-05,
+      "query_id": "k-scenario-008-q1",
+      "relative_error_to_expected": 0.030552224565673358,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00022739080304745585,
+      "finite_difference_directional_derivative": 0.00022649765014648438,
+      "query_id": "k-scenario-008-q1",
+      "relative_error_to_expected": 0.003927832124261743,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 9.862557635642588e-05,
+      "finite_difference_directional_derivative": 9.5367431640625e-05,
+      "query_id": "k-scenario-008-q1",
+      "relative_error_to_expected": 0.03303549480944148,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.2164172176198917e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-008-q2",
+      "relative_error_to_expected": 3.9000165331444685,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -7.086872528816457e-07,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-008-q2",
+      "relative_error_to_expected": 3.2052855143808334,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -7.11405732545245e-07,
+      "finite_difference_directional_derivative": -2.9802322387695312e-06,
+      "query_id": "k-scenario-008-q2",
+      "relative_error_to_expected": 3.189215945880771,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -1.5542296750936657e-05,
+      "finite_difference_directional_derivative": -1.4901161193847656e-05,
+      "query_id": "k-scenario-008-q2",
+      "relative_error_to_expected": 0.04125101761748069,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -0.000216309170355089,
+      "finite_difference_directional_derivative": -0.00021457672119140625,
+      "query_id": "k-scenario-008-q2",
+      "relative_error_to_expected": 0.008009134152004759,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -9.327876614406705e-05,
+      "finite_difference_directional_derivative": -9.5367431640625e-05,
+      "query_id": "k-scenario-008-q2",
+      "relative_error_to_expected": 0.02239165013538078,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 0.00017547281458973885,
+      "finite_difference_directional_derivative": 0.00016987323760986328,
+      "query_id": "k-scenario-008-q3",
+      "relative_error_to_expected": 0.03191136469183308,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 6.262520037125796e-05,
+      "finite_difference_directional_derivative": 6.556510925292969e-05,
+      "query_id": "k-scenario-008-q3",
+      "relative_error_to_expected": 0.04694450260028242,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 6.286542338784784e-05,
+      "finite_difference_directional_derivative": 6.556510925292969e-05,
+      "query_id": "k-scenario-008-q3",
+      "relative_error_to_expected": 0.042943890609407835,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -0.00039979483699426055,
+      "finite_difference_directional_derivative": -0.00040531158447265625,
+      "query_id": "k-scenario-008-q3",
+      "relative_error_to_expected": 0.01379894627922596,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -0.0014778997283428907,
+      "finite_difference_directional_derivative": -0.0014722347259521484,
+      "query_id": "k-scenario-008-q3",
+      "relative_error_to_expected": 0.0038331439421091444,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 0.00022595663904212415,
+      "finite_difference_directional_derivative": 0.00021755695343017578,
+      "query_id": "k-scenario-008-q3",
+      "relative_error_to_expected": 0.03717388277483828,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 9.313993359683082e-06,
+      "finite_difference_directional_derivative": 8.940696716308594e-06,
+      "query_id": "k-scenario-009-q0",
+      "relative_error_to_expected": 0.04007911847890662,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 8.450198038190138e-06,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-009-q0",
+      "relative_error_to_expected": 0.6473180598489456,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 8.482611519866623e-06,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-009-q0",
+      "relative_error_to_expected": 0.6486657167088572,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 8.040223474381492e-05,
+      "finite_difference_directional_derivative": 8.344650268554688e-05,
+      "query_id": "k-scenario-009-q0",
+      "relative_error_to_expected": 0.03786297671242459,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": -5.31367513758596e-05,
+      "finite_difference_directional_derivative": -5.6624412536621094e-05,
+      "query_id": "k-scenario-009-q0",
+      "relative_error_to_expected": 0.06563557369346368,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 7.639261457370594e-05,
+      "finite_difference_directional_derivative": 8.046627044677734e-05,
+      "query_id": "k-scenario-009-q0",
+      "relative_error_to_expected": 0.05332525789048644,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": 1.4699828170705587e-05,
+      "finite_difference_directional_derivative": 1.4901161193847656e-05,
+      "query_id": "k-scenario-009-q1",
+      "relative_error_to_expected": 0.013696284120061634,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": 7.933169399620965e-06,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-009-q1",
+      "relative_error_to_expected": 0.6243327113483896,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": 7.963600182847586e-06,
+      "finite_difference_directional_derivative": 2.9802322387695312e-06,
+      "query_id": "k-scenario-009-q1",
+      "relative_error_to_expected": 0.6257682241270086,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 2.308160583197605e-05,
+      "finite_difference_directional_derivative": 2.384185791015625e-05,
+      "query_id": "k-scenario-009-q1",
+      "relative_error_to_expected": 0.03293757304905484,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 6.174204463604838e-05,
+      "finite_difference_directional_derivative": 5.9604644775390625e-05,
+      "query_id": "k-scenario-009-q1",
+      "relative_error_to_expected": 0.03461822285376375,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 2.3751790649839677e-05,
+      "finite_difference_directional_derivative": 2.384185791015625e-05,
+      "query_id": "k-scenario-009-q1",
+      "relative_error_to_expected": 0.003792019795239355,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -7.019483291514916e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-009-q2",
+      "relative_error_to_expected": 0.27369727158066204,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -4.557497959467582e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-009-q2",
+      "relative_error_to_expected": 0.307837004108144,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -4.574980266625062e-06,
+      "finite_difference_directional_derivative": -5.9604644775390625e-06,
+      "query_id": "k-scenario-009-q2",
+      "relative_error_to_expected": 0.30283938512724234,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": 3.3266951504629105e-05,
+      "finite_difference_directional_derivative": 3.2782554626464844e-05,
+      "query_id": "k-scenario-009-q2",
+      "relative_error_to_expected": 0.014560903727438254,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 3.1366333132609725e-05,
+      "finite_difference_directional_derivative": 2.9802322387695312e-05,
+      "query_id": "k-scenario-009-q2",
+      "relative_error_to_expected": 0.049862721864941326,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": -6.74813927616924e-05,
+      "finite_difference_directional_derivative": -6.258487701416016e-05,
+      "query_id": "k-scenario-009-q2",
+      "relative_error_to_expected": 0.07256097639869527,
+      "tensor": "score_slot_w"
+    },
+    {
+      "analytical_directional_derivative": -1.6428188246209174e-05,
+      "finite_difference_directional_derivative": -1.7881393432617188e-05,
+      "query_id": "k-scenario-009-q3",
+      "relative_error_to_expected": 0.08845803107614998,
+      "tensor": "query_w"
+    },
+    {
+      "analytical_directional_derivative": -1.4925518371455837e-05,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-009-q3",
+      "relative_error_to_expected": 0.20130553201581328,
+      "tensor": "mem_k_w"
+    },
+    {
+      "analytical_directional_derivative": -1.4982771062932443e-05,
+      "finite_difference_directional_derivative": -1.1920928955078125e-05,
+      "query_id": "k-scenario-009-q3",
+      "relative_error_to_expected": 0.20435753139346516,
+      "tensor": "mem_v_w"
+    },
+    {
+      "analytical_directional_derivative": -7.626895239809528e-06,
+      "finite_difference_directional_derivative": -8.940696716308594e-06,
+      "query_id": "k-scenario-009-q3",
+      "relative_error_to_expected": 0.17225901696427082,
+      "tensor": "b0.attn_out_w"
+    },
+    {
+      "analytical_directional_derivative": 3.108721648459323e-05,
+      "finite_difference_directional_derivative": 3.5762786865234375e-05,
+      "query_id": "k-scenario-009-q3",
+      "relative_error_to_expected": 0.15040170556789323,
+      "tensor": "slots"
+    },
+    {
+      "analytical_directional_derivative": 1.8615472072269768e-05,
+      "finite_difference_directional_derivative": 1.7881393432617188e-05,
+      "query_id": "k-scenario-009-q3",
+      "relative_error_to_expected": 0.03943379124648084,
+      "tensor": "score_slot_w"
+    }
+  ],
+  "groups": {
+    "attention_output": {
+      "gradient_l2_mean": 0.08739846087733108,
+      "gradient_rms_mean": 0.0046316631418254145
+    },
+    "final_scoring": {
+      "gradient_l2_mean": 0.3070270705411171,
+      "gradient_rms_mean": 0.00787927422362639
+    },
+    "key_projection": {
+      "gradient_l2_mean": 0.10406965983912919,
+      "gradient_rms_mean": 0.0026733700194921882
+    },
+    "latent_slots": {
+      "gradient_l2_mean": 0.08826409620150075,
+      "gradient_rms_mean": 0.0027582530062968988
+    },
+    "query_projection": {
+      "gradient_l2_mean": 0.1046410804363889,
+      "gradient_rms_mean": 0.004630543697174821
+    },
+    "value_projection": {
+      "gradient_l2_mean": 0.14446385682393434,
+      "gradient_rms_mean": 0.004545084286073316
+    }
+  },
+  "interpretation": "Finite differences perturb copied in-memory states only; checkpoint files are untouched."
+}

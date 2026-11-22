@@ -1,0 +1,110 @@
+{
+  "final": {
+    "activation_scales": {
+      "b0.post_attention_slots": {
+        "l2_mean": 4.215142094167344,
+        "rms_mean": 0.1317231904427295
+      },
+      "final_slots": {
+        "l2_mean": 21.14331102174149,
+        "rms_mean": 0.6607284694294215
+      },
+      "initial_slots": {
+        "l2_mean": 3.917681008637046,
+        "rms_mean": 0.12242753151990776
+      },
+      "memory_embedding": {
+        "l2_mean": 4.161760458829952,
+        "rms_mean": 0.05103103629979213
+      },
+      "memory_key_projection": {
+        "l2_mean": 2.4222988156484675,
+        "rms_mean": 0.0514067637935447
+      },
+      "memory_value_projection": {
+        "l2_mean": 2.4326492528600916,
+        "rms_mean": 0.0517401874969523
+      },
+      "query_embedding": {
+        "l2_mean": 1.0000000017036064,
+        "rms_mean": 0.05103103639491968
+      },
+      "query_projection": {
+        "l2_mean": 0.561962584273086,
+        "rms_mean": 0.049670944264076984
+      }
+    },
+    "attention_axis": "softmax over eligible evidence positions for each slot and head; reported entropy averages slot/head rows",
+    "attention_entropy_by_position_count": {
+      "16": 2.772561572241163,
+      "32": 3.4657082192193944,
+      "8": 2.0794171081738044
+    },
+    "attention_entropy_mean": 2.7725622998781203,
+    "attention_logits_std_mean": 0.0070101760977978106,
+    "attention_position_count_explanation": "Entropy near ln(16)=2.77259 occurs for 16 eligible evidence positions and near-uniform attention; it is not an attention axis of 16 slots.",
+    "eligible_position_counts": [
+      8,
+      16,
+      32
+    ],
+    "examples": 360
+  },
+  "initial": {
+    "activation_scales": {
+      "b0.post_attention_slots": {
+        "l2_mean": 4.205017072771928,
+        "rms_mean": 0.13140678352412274
+      },
+      "final_slots": {
+        "l2_mean": 21.084643104045437,
+        "rms_mean": 0.6588950970014199
+      },
+      "initial_slots": {
+        "l2_mean": 3.9155748034278632,
+        "rms_mean": 0.12236171260712081
+      },
+      "memory_embedding": {
+        "l2_mean": 4.161760458829952,
+        "rms_mean": 0.05103103629979213
+      },
+      "memory_key_projection": {
+        "l2_mean": 2.4235214958715043,
+        "rms_mean": 0.051432305339864155
+      },
+      "memory_value_projection": {
+        "l2_mean": 2.421021613498102,
+        "rms_mean": 0.051484469702678115
+      },
+      "query_embedding": {
+        "l2_mean": 1.0000000017036064,
+        "rms_mean": 0.05103103639491968
+      },
+      "query_projection": {
+        "l2_mean": 0.5638460465320451,
+        "rms_mean": 0.04983742038100435
+      }
+    },
+    "attention_axis": "softmax over eligible evidence positions for each slot and head; reported entropy averages slot/head rows",
+    "attention_entropy_by_position_count": {
+      "16": 2.7725611492694138,
+      "32": 3.465707781178737,
+      "8": 2.0794168280388097
+    },
+    "attention_entropy_mean": 2.7725619194956534,
+    "attention_logits_std_mean": 0.007062620946453735,
+    "attention_position_count_explanation": "Entropy near ln(16)=2.77259 occurs for 16 eligible evidence positions and near-uniform attention; it is not an attention axis of 16 slots.",
+    "eligible_position_counts": [
+      8,
+      16,
+      32
+    ],
+    "examples": 360
+  },
+  "resource": {
+    "computational_subprocesses": 1,
+    "ru_maxrss_delta_kib": 87528,
+    "ru_maxrss_kib": 118784,
+    "threads": 1
+  }
+}
