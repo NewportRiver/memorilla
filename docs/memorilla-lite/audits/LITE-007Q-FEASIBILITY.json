@@ -1,0 +1,95 @@
+{
+  "baseline_commit": "dd8bec3",
+  "derivative_checks": [
+    {
+      "analytical": 0.5204862763008578,
+      "numerical": 0.0,
+      "relative_error": 1.0,
+      "scale": 0.5,
+      "tensor": "b0.q_w",
+      "tolerance": 0.25
+    },
+    {
+      "analytical": 1.0383336856989445,
+      "numerical": 0.0,
+      "relative_error": 1.0,
+      "scale": 1.0,
+      "tensor": "b0.q_w",
+      "tolerance": 0.25
+    },
+    {
+      "analytical": 2.066084370255794,
+      "numerical": 17.881393432617188,
+      "relative_error": 7.654725668537612,
+      "scale": 2.0,
+      "tensor": "b0.q_w",
+      "tolerance": 0.25
+    },
+    {
+      "analytical": 4.0896090069963975,
+      "numerical": 0.0,
+      "relative_error": 1.0,
+      "scale": 4.0,
+      "tensor": "b0.q_w",
+      "tolerance": 0.25
+    }
+  ],
+  "holdout_accessed": false,
+  "interpretation": "Frozen diagnostic sweep only; no scale was selected as an unbiased final estimate.",
+  "optimizer_updates": 0,
+  "resource": {
+    "computational_subprocesses": 1,
+    "ru_maxrss_delta_kib": 53012,
+    "ru_maxrss_kib": 86132,
+    "threads": 1
+  },
+  "results": {
+    "0.5": {
+      "examples": 360,
+      "hit_at_1": 0.12222222222222222,
+      "mean_attention_entropy": 2.7725870216868533,
+      "mean_attention_logit_spread": 0.020790861374734945,
+      "mean_margin": -0.02927463503761424,
+      "mean_required_evidence_enrichment": 0.9993813126593927,
+      "median_margin": -0.032522402703762054,
+      "wall_seconds": 13.06349593802588
+    },
+    "1.0": {
+      "examples": 360,
+      "hit_at_1": 0.12222222222222222,
+      "mean_attention_entropy": 2.7725819207045883,
+      "mean_attention_logit_spread": 0.04158172274946989,
+      "mean_margin": -0.029274649617986547,
+      "mean_required_evidence_enrichment": 0.9987631374716629,
+      "median_margin": -0.03252163901925087,
+      "wall_seconds": 12.923169843968935
+    },
+    "2.0": {
+      "examples": 360,
+      "hit_at_1": 0.12222222222222222,
+      "mean_attention_entropy": 2.7725615209032544,
+      "mean_attention_logit_spread": 0.08316344549893978,
+      "mean_margin": -0.029274674008289973,
+      "mean_required_evidence_enrichment": 0.9975283547665285,
+      "median_margin": -0.03252021223306656,
+      "wall_seconds": 13.107676093000919
+    },
+    "4.0": {
+      "examples": 360,
+      "hit_at_1": 0.12222222222222222,
+      "mean_attention_entropy": 2.7724799455521594,
+      "mean_attention_logit_spread": 0.16632689099787956,
+      "mean_margin": -0.029274706149266826,
+      "mean_required_evidence_enrichment": 0.9950652757102632,
+      "median_margin": -0.0325171984732151,
+      "wall_seconds": 12.796859024034347
+    }
+  },
+  "scale_1_reproduction_max_abs_difference": 0.0,
+  "scales": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ]
+}

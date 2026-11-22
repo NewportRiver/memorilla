@@ -146,7 +146,7 @@ def memory_projection_gradients(model, query, memory, positive_mask, valid_mask)
         q = (ln1 @ s[p+'q_w'] + s[p+'q_b']).reshape(c.slots, h, d)
         k = (memory @ s[p+'k_w'] + s[p+'k_b']).reshape(-1, h, d)
         v = (memory @ s[p+'v_w'] + s[p+'v_b']).reshape(-1, h, d)
-        logits = np.einsum('shd,nhd->shn', q, k) / np.sqrt(d)
+        logits = c.attention_logit_scale * np.einsum('shd,nhd->shn', q, k) / np.sqrt(d)
         probs = np.zeros_like(logits); probs_flat = _softmax(logits.reshape(c.slots * h, -1), valid)
         probs[:] = probs_flat.reshape(c.slots, h, -1)
         ctx = np.einsum('shn,nhd->shd', probs, v).reshape(c.slots, c.latent_dim)
@@ -169,7 +169,7 @@ def memory_projection_gradients(model, query, memory, positive_mask, valid_mask)
         dprobs = np.einsum('shd,nhd->shn', dctx, v)
         dv = np.einsum('shn,shd->nhd', probs, dctx)
         dlogits = probs * (dprobs - (dprobs * probs).sum(axis=-1, keepdims=True))
-        dq = np.einsum('shn,nhd->shd', dlogits, k) / np.sqrt(d)
+        dq = c.attention_logit_scale * np.einsum('shn,nhd->shd', dlogits, k) / np.sqrt(d)
         dln1 = dq.reshape(c.slots, c.latent_dim) @ s[p+'q_w'].T
         dslots = dslots_attn + _ln_backward(dln1, slots_in, s[p+'ln1_g'])
     dsummary = dslots.sum(axis=0) / float(valid.sum())
@@ -222,7 +222,7 @@ def associative_gradients(model, query, memory, positive_mask, valid_mask):
         p=f'b{i}.'
         x1=slots; m1=x1.mean(axis=-1,keepdims=True); r1=x1-m1; inv1=1/np.sqrt((r1*r1).mean(axis=-1,keepdims=True)+1e-5); n1=r1*inv1; ln1=n1*s[p+'ln1_g']+s[p+'ln1_b']
         q=(ln1@s[p+'q_w']+s[p+'q_b']).reshape(c.slots,h,d); k=(memory@s[p+'k_w']+s[p+'k_b']).reshape(-1,h,d); v=(memory@s[p+'v_w']+s[p+'v_b']).reshape(-1,h,d)
-        logits=np.einsum('shd,nhd->shn',q,k)/np.sqrt(d); probs=_softmax(logits.reshape(c.slots*h,-1),valid).reshape(c.slots,h,-1); ctx3=np.einsum('shn,nhd->shd',probs,v); ctx=ctx3.reshape(c.slots,c.latent_dim); x2=x1+ctx@s[p+'attn_out_w']+s[p+'attn_out_b']
+        logits=c.attention_logit_scale*np.einsum('shd,nhd->shn',q,k)/np.sqrt(d); probs=_softmax(logits.reshape(c.slots*h,-1),valid).reshape(c.slots,h,-1); ctx3=np.einsum('shn,nhd->shd',probs,v); ctx=ctx3.reshape(c.slots,c.latent_dim); x2=x1+ctx@s[p+'attn_out_w']+s[p+'attn_out_b']
         m2=x2.mean(axis=-1,keepdims=True); r2=x2-m2; inv2=1/np.sqrt((r2*r2).mean(axis=-1,keepdims=True)+1e-5); n2=r2*inv2; ln2=n2*s[p+'ln2_g']+s[p+'ln2_b']; ff1=ln2@s[p+'ff1_w']+s[p+'ff1_b']; ff=_gelu(ff1); x3=x2+ff@s[p+'ff2_w']+s[p+'ff2_b']
         caches.append((x1,r1,inv1,n1,q,k,v,probs,ctx,x2,r2,inv2,n2,ln2,ff1)); slots=x3
     loss,scores,dslots=_score_head_latent_gradient(slots,memory,s,positive_mask,valid)
@@ -238,7 +238,7 @@ def associative_gradients(model, query, memory, positive_mask, valid_mask):
         grads[p+'ln2_g'] += (dln2*n2).sum(axis=0).astype(np.float32); grads[p+'ln2_b'] += dln2.sum(axis=0).astype(np.float32)
         dx2=dslots+_ln_backward(dln2,x2,s[p+'ln2_g'])
         grads[p+'attn_out_w'] += (ctx.T@dx2).astype(np.float32); grads[p+'attn_out_b'] += dx2.sum(axis=0).astype(np.float32)
-        dctx=(dx2@s[p+'attn_out_w'].T).reshape(c.slots,h,d); dprobs=np.einsum('shd,nhd->shn',dctx,v); dv=np.einsum('shn,shd->nhd',probs,dctx); dlogits=probs*(dprobs-(dprobs*probs).sum(axis=-1,keepdims=True)); dq=np.einsum('shn,nhd->shd',dlogits,k)/np.sqrt(d); dk=np.einsum('shn,shd->nhd',dlogits,q)/np.sqrt(d)
+        dctx=(dx2@s[p+'attn_out_w'].T).reshape(c.slots,h,d); dprobs=np.einsum('shd,nhd->shn',dctx,v); dv=np.einsum('shn,shd->nhd',probs,dctx); dlogits=probs*(dprobs-(dprobs*probs).sum(axis=-1,keepdims=True)); dq=c.attention_logit_scale*np.einsum('shn,nhd->shd',dlogits,k)/np.sqrt(d); dk=c.attention_logit_scale*np.einsum('shn,shd->nhd',dlogits,q)/np.sqrt(d)
         dq2=dq.reshape(c.slots,c.latent_dim); dk2=dk.reshape(-1,c.latent_dim); dv2=dv.reshape(-1,c.latent_dim)
         grads[p+'q_w'] += (ln1.T@dq2).astype(np.float32); grads[p+'q_b'] += dq2.sum(axis=0).astype(np.float32)
         grads[p+'k_w'] += (memory.T@dk2).astype(np.float32); grads[p+'k_b'] += dk2.sum(axis=0).astype(np.float32)

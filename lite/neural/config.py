@@ -11,10 +11,12 @@ class NeuralConfig:
  output_dim:int=384
  score_dim:int=64
  seed:int=20261120
+ attention_logit_scale:float=1.0
  architecture_version:str='lite006-associative-v1'
  def __post_init__(self):
   if self.input_dim<=0 or self.latent_dim<=0 or self.slots<=0 or self.heads<=0 or self.blocks<=0 or self.ffn_dim<=0 or self.output_dim<=0: raise ValueError('dimensions must be positive')
   if self.latent_dim%self.heads: raise ValueError('latent_dim must divide heads')
+  if not self.attention_logit_scale>0: raise ValueError('attention_logit_scale must be positive')
   if self.slots>64: raise ValueError('slot count exceeds bounded limit')
   if self.parameter_count()>500000: raise ValueError('parameter target exceeded')
  def parameter_count(self):
