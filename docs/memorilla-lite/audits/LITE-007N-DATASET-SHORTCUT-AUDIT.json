@@ -1,0 +1,75 @@
+{
+  "claim_boundary": "Distribution similarity is not labeled leakage; final holdout was not accessed.",
+  "collision_analysis": {
+    "collision_group_excluded": {
+      "eligible_query_count": 0,
+      "eligible_scenario_count": 0,
+      "reason": "all 90 independent scenarios participate in at least one normalized-template collision group",
+      "status": "unavailable"
+    },
+    "collision_group_inclusive": "reported by primary diagnostics",
+    "interpretation": "Collision participation is a corpus-wide construction property here; exclusion cannot provide an independent sensitivity estimate."
+  },
+  "independent_artifact": {
+    "content_sha256": "cf33381044617b285cedf97d08860ad64129d821fd9000625466912ef5fc0252",
+    "dataset_version": "lite007k-independent-dev-eval-v1",
+    "encoder": "pinned MiniLM ONNX encoder",
+    "encoder_manifest_sha256": "8a3a043ad9fe1464b5bef56c0b49596dab6463dc35d4a524c6b66548e3911892",
+    "holdout_included": false,
+    "max_records": 32,
+    "partition": "development_evaluation",
+    "query_count": 360,
+    "schema_version": 1,
+    "source_dataset_sha256": "88845e6ac3a01f5216ad0ea246e877114892dff488c84357f0c69180d8b92237",
+    "source_embeddings_sha256": "e9c0e43e1b39bb4ad96dd60397170be2d829324c71f19041fc4f0122cbcdfc13",
+    "source_manifest_sha256": "b607fa7f880e671a54a55c590d78eb0dbb55dcd7002c2d41c95cf18f2ef21886"
+  },
+  "independent_dataset": {
+    "collision_group_sizes": [
+      120,
+      240,
+      480,
+      120,
+      240,
+      480
+    ],
+    "expected_abstention_count": 0,
+    "holdout_included": false,
+    "normalized_collision_group_count": 6,
+    "queries": 360,
+    "records": 1680,
+    "required_evidence_counts": {
+      "1": 90,
+      "2": 270
+    },
+    "scenarios": 90
+  },
+  "larger_artifact": {
+    "content_sha256": "160e2f11ddac255e7006dc53d2b804cc86177f621713bb8c37f157694c308feb",
+    "dataset_version": "lite007i-dev-v1",
+    "encoder": "pinned MiniLM ONNX encoder",
+    "encoder_manifest_sha256": "8a3a043ad9fe1464b5bef56c0b49596dab6463dc35d4a524c6b66548e3911892",
+    "holdout_included": false,
+    "max_records": 128,
+    "partition": "validation",
+    "query_count": 480,
+    "schema_version": 1,
+    "source_dataset_sha256": "d1e246749953d318c3010cc23241234035186e10ddab1c0acf0e611d0eca663f",
+    "source_embeddings_sha256": "9aaf5993ac1528d368fe74729bf47bd83162cc0dd3a2568abafa1e286b788933",
+    "source_manifest_sha256": "49cdfac772fdbdb8d11a66f1e83cc237eb51d813e4eee1a66956764372116e55"
+  },
+  "training_artifact": {
+    "content_sha256": "e0f8c7db82cf0e68ac4c084577f9865a0cc6b6bb27561d001789e56796711438",
+    "dataset_version": "lite007i-dev-v1",
+    "encoder": "pinned MiniLM ONNX encoder",
+    "encoder_manifest_sha256": "8a3a043ad9fe1464b5bef56c0b49596dab6463dc35d4a524c6b66548e3911892",
+    "holdout_included": false,
+    "max_records": 32,
+    "partition": "train",
+    "query_count": 720,
+    "schema_version": 1,
+    "source_dataset_sha256": "d1e246749953d318c3010cc23241234035186e10ddab1c0acf0e611d0eca663f",
+    "source_embeddings_sha256": "9aaf5993ac1528d368fe74729bf47bd83162cc0dd3a2568abafa1e286b788933",
+    "source_manifest_sha256": "49cdfac772fdbdb8d11a66f1e83cc237eb51d813e4eee1a66956764372116e55"
+  }
+}

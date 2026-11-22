@@ -1,0 +1,455 @@
+{
+  "associative_global_gradient_norm_mean": 0.4677045213327541,
+  "associative_score_gradient_norm_mean": 0.38102084783988943,
+  "associative_tensor_gradient_norms": {
+    "b0.attn_out_b": {
+      "mean": 0.07721992047463762,
+      "nonzero_incidence": 1.0,
+      "rms": 0.0930232940012768
+    },
+    "b0.attn_out_w": {
+      "mean": 0.04827030726637396,
+      "nonzero_incidence": 1.0,
+      "rms": 0.05811742593967393
+    },
+    "b0.ff1_b": {
+      "mean": 0.010296845567800278,
+      "nonzero_incidence": 1.0,
+      "rms": 0.012465238685354476
+    },
+    "b0.ff1_w": {
+      "mean": 0.13501025565103542,
+      "nonzero_incidence": 1.0,
+      "rms": 0.18062992242102685
+    },
+    "b0.ff2_b": {
+      "mean": 0.012111573790218712,
+      "nonzero_incidence": 1.0,
+      "rms": 0.012394935931291274
+    },
+    "b0.ff2_w": {
+      "mean": 0.17146803565643853,
+      "nonzero_incidence": 1.0,
+      "rms": 0.21425958674077117
+    },
+    "b0.k_b": {
+      "mean": 3.706427943556934e-19,
+      "nonzero_incidence": 1.0,
+      "rms": 5.878762075595734e-19
+    },
+    "b0.k_w": {
+      "mean": 3.163755438515316e-05,
+      "nonzero_incidence": 1.0,
+      "rms": 4.539397242030154e-05
+    },
+    "b0.ln1_b": {
+      "mean": 1.2033356202023075e-06,
+      "nonzero_incidence": 1.0,
+      "rms": 1.4836714128619684e-06
+    },
+    "b0.ln1_g": {
+      "mean": 1.573489029159744e-06,
+      "nonzero_incidence": 1.0,
+      "rms": 2.2527511900070037e-06
+    },
+    "b0.ln2_b": {
+      "mean": 0.010163402869431423,
+      "nonzero_incidence": 1.0,
+      "rms": 0.01229519272424087
+    },
+    "b0.ln2_g": {
+      "mean": 0.011449371537426787,
+      "nonzero_incidence": 1.0,
+      "rms": 0.015331541843759245
+    },
+    "b0.q_b": {
+      "mean": 1.2301500185259027e-06,
+      "nonzero_incidence": 1.0,
+      "rms": 1.5330930660154057e-06
+    },
+    "b0.q_w": {
+      "mean": 1.7918436351660307e-05,
+      "nonzero_incidence": 1.0,
+      "rms": 2.5780703974164932e-05
+    },
+    "b0.v_b": {
+      "mean": 0.07493319841843096,
+      "nonzero_incidence": 1.0,
+      "rms": 0.0914308113698877
+    },
+    "b0.v_w": {
+      "mean": 0.0741501223209661,
+      "nonzero_incidence": 1.0,
+      "rms": 0.09046900191317511
+    },
+    "mem_k_b": {
+      "mean": 0.0772200890681858,
+      "nonzero_incidence": 1.0,
+      "rms": 0.09302363116771126
+    },
+    "mem_k_w": {
+      "mean": 0.07641312075829448,
+      "nonzero_incidence": 1.0,
+      "rms": 0.09204559292726014
+    },
+    "mem_v_b": {
+      "mean": 0.0772200890681858,
+      "nonzero_incidence": 1.0,
+      "rms": 0.09302363116771126
+    },
+    "mem_v_w": {
+      "mean": 0.07641312075829448,
+      "nonzero_incidence": 1.0,
+      "rms": 0.09204559292726014
+    },
+    "query_b": {
+      "mean": 0.0772200891035604,
+      "nonzero_incidence": 1.0,
+      "rms": 0.0930236312524518
+    },
+    "query_w": {
+      "mean": 0.07722008915797486,
+      "nonzero_incidence": 1.0,
+      "rms": 0.09302363126425704
+    },
+    "score_mem_b": {
+      "mean": 0.1394657457750653,
+      "nonzero_incidence": 1.0,
+      "rms": 0.26146340385388134
+    },
+    "score_mem_w": {
+      "mean": 0.2439802797602733,
+      "nonzero_incidence": 1.0,
+      "rms": 0.3059686926814777
+    },
+    "score_slot_b": {
+      "mean": 0.011953051487906905,
+      "nonzero_incidence": 1.0,
+      "rms": 0.012182946922008097
+    },
+    "score_slot_w": {
+      "mean": 0.1370405680796162,
+      "nonzero_incidence": 1.0,
+      "rms": 0.1763050361340032
+    },
+    "slots": {
+      "mean": 0.09600222819916474,
+      "nonzero_incidence": 1.0,
+      "rms": 0.1334285950114674
+    }
+  },
+  "direct_gradient_norm_mean": 0.11807915920184718,
+  "direct_gradient_norm_median": 0.11627358198165894,
+  "elapsed_seconds": 31.07514273497509,
+  "examples": 360,
+  "gradient_direction_alignment_to_associative_mean_sample": {
+    "max": 0.4777653300185729,
+    "mean": 0.22706440413960988,
+    "min": -0.34551927007037636,
+    "n": 20
+  },
+  "interpretation": "Raw gradient norms are not optimization-effectiveness proof; gradients were calculated and discarded. Direction alignment is against the aggregate associative gradient over the analyzed corpus, using the first 20 examples as a bounded sample.",
+  "nonfinite_example_count": 0,
+  "per_example_sample": [
+    {
+      "global_gradient_norm": 0.30378947249068666,
+      "loss": 0.693746030330658,
+      "query_id": "k-scenario-000-q0",
+      "score_gradient_norm": 0.26744355594295643
+    },
+    {
+      "global_gradient_norm": 0.45710047504122536,
+      "loss": 0.6853032112121582,
+      "query_id": "k-scenario-000-q1",
+      "score_gradient_norm": 0.35705630146363304
+    },
+    {
+      "global_gradient_norm": 0.24408308465102502,
+      "loss": 0.6993219256401062,
+      "query_id": "k-scenario-000-q2",
+      "score_gradient_norm": 0.2301421464980456
+    },
+    {
+      "global_gradient_norm": 0.4714032359668493,
+      "loss": 0.6866021156311035,
+      "query_id": "k-scenario-000-q3",
+      "score_gradient_norm": 0.3891815782983531
+    },
+    {
+      "global_gradient_norm": 0.2565614320154372,
+      "loss": 0.7062743306159973,
+      "query_id": "k-scenario-001-q0",
+      "score_gradient_norm": 0.2383198513313858
+    },
+    {
+      "global_gradient_norm": 0.41346928427481205,
+      "loss": 0.7014029622077942,
+      "query_id": "k-scenario-001-q1",
+      "score_gradient_norm": 0.3515892733344635
+    },
+    {
+      "global_gradient_norm": 0.24760588279907844,
+      "loss": 0.6982392072677612,
+      "query_id": "k-scenario-001-q2",
+      "score_gradient_norm": 0.21392021985911586
+    },
+    {
+      "global_gradient_norm": 0.3385183241309159,
+      "loss": 0.7072399258613586,
+      "query_id": "k-scenario-001-q3",
+      "score_gradient_norm": 0.3160724133599731
+    },
+    {
+      "global_gradient_norm": 0.2791688876126631,
+      "loss": 0.7013418674468994,
+      "query_id": "k-scenario-002-q0",
+      "score_gradient_norm": 0.25365562487519394
+    },
+    {
+      "global_gradient_norm": 0.28550068915417887,
+      "loss": 0.6875635385513306,
+      "query_id": "k-scenario-002-q1",
+      "score_gradient_norm": 0.2487250444555721
+    },
+    {
+      "global_gradient_norm": 0.2501894253124263,
+      "loss": 0.6942018270492554,
+      "query_id": "k-scenario-002-q2",
+      "score_gradient_norm": 0.2114681890391512
+    },
+    {
+      "global_gradient_norm": 0.33776428275921383,
+      "loss": 0.6915863156318665,
+      "query_id": "k-scenario-002-q3",
+      "score_gradient_norm": 0.29894428637955905
+    },
+    {
+      "global_gradient_norm": 0.2740882373130654,
+      "loss": 0.6889157295227051,
+      "query_id": "k-scenario-003-q0",
+      "score_gradient_norm": 0.2171145886514817
+    },
+    {
+      "global_gradient_norm": 0.2599672241697737,
+      "loss": 0.6899945139884949,
+      "query_id": "k-scenario-003-q1",
+      "score_gradient_norm": 0.2089783322494676
+    },
+    {
+      "global_gradient_norm": 0.2308855227654445,
+      "loss": 0.6902138590812683,
+      "query_id": "k-scenario-003-q2",
+      "score_gradient_norm": 0.18759861305994807
+    },
+    {
+      "global_gradient_norm": 0.3262649078979848,
+      "loss": 0.6836839914321899,
+      "query_id": "k-scenario-003-q3",
+      "score_gradient_norm": 0.2645834256108739
+    },
+    {
+      "global_gradient_norm": 0.3280783268606922,
+      "loss": 0.7082334160804749,
+      "query_id": "k-scenario-004-q0",
+      "score_gradient_norm": 0.2796318762964412
+    },
+    {
+      "global_gradient_norm": 0.25906942205935457,
+      "loss": 0.7041884064674377,
+      "query_id": "k-scenario-004-q1",
+      "score_gradient_norm": 0.23474126402855494
+    },
+    {
+      "global_gradient_norm": 0.24181511419368995,
+      "loss": 0.7027144432067871,
+      "query_id": "k-scenario-004-q2",
+      "score_gradient_norm": 0.2235473249758168
+    },
+    {
+      "global_gradient_norm": 0.4232519590531184,
+      "loss": 0.710125744342804,
+      "query_id": "k-scenario-004-q3",
+      "score_gradient_norm": 0.34903530040044517
+    },
+    {
+      "global_gradient_norm": 0.33980602623389433,
+      "loss": 0.7056224346160889,
+      "query_id": "k-scenario-005-q0",
+      "score_gradient_norm": 0.2690815460507819
+    },
+    {
+      "global_gradient_norm": 2.0323696789163104,
+      "loss": 0.7016541361808777,
+      "query_id": "k-scenario-005-q1",
+      "score_gradient_norm": 1.5919060965953276
+    },
+    {
+      "global_gradient_norm": 0.3346641626888043,
+      "loss": 0.7085166573524475,
+      "query_id": "k-scenario-005-q2",
+      "score_gradient_norm": 0.2943166032668134
+    },
+    {
+      "global_gradient_norm": 1.88288359261134,
+      "loss": 0.7017412781715393,
+      "query_id": "k-scenario-005-q3",
+      "score_gradient_norm": 1.4824658165953761
+    },
+    {
+      "global_gradient_norm": 0.35837435912110427,
+      "loss": 0.7026185393333435,
+      "query_id": "k-scenario-006-q0",
+      "score_gradient_norm": 0.3065729796301683
+    },
+    {
+      "global_gradient_norm": 0.2572846130369235,
+      "loss": 0.6980304718017578,
+      "query_id": "k-scenario-006-q1",
+      "score_gradient_norm": 0.23381123069763393
+    },
+    {
+      "global_gradient_norm": 0.2707184844146835,
+      "loss": 0.694755494594574,
+      "query_id": "k-scenario-006-q2",
+      "score_gradient_norm": 0.23136155182424273
+    },
+    {
+      "global_gradient_norm": 0.37426567272761574,
+      "loss": 0.6924295425415039,
+      "query_id": "k-scenario-006-q3",
+      "score_gradient_norm": 0.31614563523656836
+    },
+    {
+      "global_gradient_norm": 0.34499176414315197,
+      "loss": 0.7070260047912598,
+      "query_id": "k-scenario-007-q0",
+      "score_gradient_norm": 0.2926506843346812
+    },
+    {
+      "global_gradient_norm": 0.272067362614491,
+      "loss": 0.7063231468200684,
+      "query_id": "k-scenario-007-q1",
+      "score_gradient_norm": 0.242580544083934
+    },
+    {
+      "global_gradient_norm": 0.34878229646317604,
+      "loss": 0.7043375968933105,
+      "query_id": "k-scenario-007-q2",
+      "score_gradient_norm": 0.27305581465155193
+    },
+    {
+      "global_gradient_norm": 0.4060604166775158,
+      "loss": 0.708576500415802,
+      "query_id": "k-scenario-007-q3",
+      "score_gradient_norm": 0.3508277529531836
+    },
+    {
+      "global_gradient_norm": 0.2890938624372391,
+      "loss": 0.7074114680290222,
+      "query_id": "k-scenario-008-q0",
+      "score_gradient_norm": 0.2597804136221771
+    },
+    {
+      "global_gradient_norm": 0.28514368745389185,
+      "loss": 0.6993246674537659,
+      "query_id": "k-scenario-008-q1",
+      "score_gradient_norm": 0.250695099924661
+    },
+    {
+      "global_gradient_norm": 0.26339209205415937,
+      "loss": 0.7027992010116577,
+      "query_id": "k-scenario-008-q2",
+      "score_gradient_norm": 0.22694145025380952
+    },
+    {
+      "global_gradient_norm": 2.249089597295148,
+      "loss": 0.7038809657096863,
+      "query_id": "k-scenario-008-q3",
+      "score_gradient_norm": 1.712538921810168
+    },
+    {
+      "global_gradient_norm": 0.30665550292361204,
+      "loss": 0.6819949746131897,
+      "query_id": "k-scenario-009-q0",
+      "score_gradient_norm": 0.2570507989918022
+    },
+    {
+      "global_gradient_norm": 0.29266718076081316,
+      "loss": 0.6897547245025635,
+      "query_id": "k-scenario-009-q1",
+      "score_gradient_norm": 0.22184379666280943
+    },
+    {
+      "global_gradient_norm": 0.24673078270018023,
+      "loss": 0.6991763710975647,
+      "query_id": "k-scenario-009-q2",
+      "score_gradient_norm": 0.21476382524227824
+    },
+    {
+      "global_gradient_norm": 0.3468235054191141,
+      "loss": 0.6909388899803162,
+      "query_id": "k-scenario-009-q3",
+      "score_gradient_norm": 0.2921922308558429
+    },
+    {
+      "global_gradient_norm": 0.2838038507458405,
+      "loss": 0.708519458770752,
+      "query_id": "k-scenario-010-q0",
+      "score_gradient_norm": 0.24330436444817355
+    },
+    {
+      "global_gradient_norm": 0.2333961340342966,
+      "loss": 0.6995711326599121,
+      "query_id": "k-scenario-010-q1",
+      "score_gradient_norm": 0.2087569055226944
+    },
+    {
+      "global_gradient_norm": 0.2580123280880532,
+      "loss": 0.7085246443748474,
+      "query_id": "k-scenario-010-q2",
+      "score_gradient_norm": 0.2218755213899783
+    },
+    {
+      "global_gradient_norm": 0.3366840660423227,
+      "loss": 0.7105249166488647,
+      "query_id": "k-scenario-010-q3",
+      "score_gradient_norm": 0.28928725089292623
+    },
+    {
+      "global_gradient_norm": 0.5337287487697082,
+      "loss": 0.7042404413223267,
+      "query_id": "k-scenario-011-q0",
+      "score_gradient_norm": 0.4475429232316006
+    },
+    {
+      "global_gradient_norm": 0.5152748675611355,
+      "loss": 0.6982501149177551,
+      "query_id": "k-scenario-011-q1",
+      "score_gradient_norm": 0.42309917318953605
+    },
+    {
+      "global_gradient_norm": 0.27217702696645635,
+      "loss": 0.7059441804885864,
+      "query_id": "k-scenario-011-q2",
+      "score_gradient_norm": 0.23302087861901755
+    },
+    {
+      "global_gradient_norm": 0.8854144597716831,
+      "loss": 0.7045843601226807,
+      "query_id": "k-scenario-011-q3",
+      "score_gradient_norm": 0.7104126503073771
+    },
+    {
+      "global_gradient_norm": 1.154608381244379,
+      "loss": 0.6973263621330261,
+      "query_id": "k-scenario-012-q0",
+      "score_gradient_norm": 0.9112994630200799
+    },
+    {
+      "global_gradient_norm": 0.21683441112066248,
+      "loss": 0.6943718791007996,
+      "query_id": "k-scenario-012-q1",
+      "score_gradient_norm": 0.19302320455200894
+    }
+  ]
+}

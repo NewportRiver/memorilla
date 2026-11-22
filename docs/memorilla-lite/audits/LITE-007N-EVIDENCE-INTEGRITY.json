@@ -1,0 +1,19 @@
+{
+  "baseline_commit": "e8b4e60",
+  "checkpoint_replacement": false,
+  "checkpoints": {
+    "associative": "fb9a273fd96bfe9d6cf35da2145e45492b414ad6a02cd35acfba999886587a7a",
+    "direct": "a9e190cd7a0c81dc4ac070b9299819fced77d3b38432c9534577b8b19691d2c8"
+  },
+  "dataset_identity": "cf33381044617b285cedf97d08860ad64129d821fd9000625466912ef5fc0252",
+  "encoder_manifest_sha256": "8a3a043ad9fe1464b5bef56c0b49596dab6463dc35d4a524c6b66548e3911892",
+  "holdout_accessed": false,
+  "large_dataset_identity": "160e2f11ddac255e7006dc53d2b804cc86177f621713bb8c37f157694c308feb",
+  "optimizer_updates": 0,
+  "resource": {
+    "computational_subprocesses": 1,
+    "ru_maxrss_delta_kib": 221124,
+    "ru_maxrss_kib": 252120,
+    "threads": 1
+  }
+}

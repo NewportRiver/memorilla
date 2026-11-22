@@ -1,0 +1,63 @@
+{
+  "milestone": "LITE-007N",
+  "baseline": "e8b4e60",
+  "zero_optimizer_updates": true,
+  "mechanisms": [
+    {
+      "mechanism": "attention-routing gradient attenuation",
+      "classification": "supported_as_measurable_bottleneck",
+      "evidence": {
+        "b0.q_w_mean_gradient_norm": 1.7918436351660307e-05,
+        "b0.k_w_mean_gradient_norm": 3.163755438515316e-05,
+        "score_mem_w_mean_gradient_norm": 0.2439802797602733,
+        "score_slot_w_mean_gradient_norm": 0.1370405680796162,
+        "nonfinite_examples": 0,
+        "direction_alignment_sample_mean": 0.2270642700700000
+      },
+      "interpretation": "The native gradients are finite and nonzero, but query/key attention projections receive orders-of-magnitude smaller raw parameter gradients than score and memory projection tensors. This is a plausible path-conditioning bottleneck, not proof of poor optimization because tensor scale and dimensionality differ.",
+      "falsifier": "Per-parameter normalized gradients, Jacobian gains, or a one-variable authorized pilot showing no improvement after addressing routing attenuation."
+    },
+    {
+      "mechanism": "weak evidence-selective slot representation",
+      "classification": "supported",
+      "evidence": {
+        "attention_entropy_mean": 2.7725819207045883,
+        "required_attention_enrichment_vs_uniform_mean": 0.9987631374716629,
+        "slot_cosine_mean": 0.5862782053441382,
+        "query_conditioning_sensitivity_mean": 7.994285591560333
+      },
+      "interpretation": "Attention is close to uniform relative to the required-evidence baseline and slot vectors remain similar. Query conditioning is present but does not produce strong evidence-selective routing.",
+      "falsifier": "Strong required-evidence margins and slot specialization after controlling for attention and candidate construction."
+    },
+    {
+      "mechanism": "direct model advantage caused by initialization ties",
+      "classification": "contradicted_as_primary_final_cause",
+      "evidence": {
+        "direct_initial_ordinary_hit_at_1": 1.0,
+        "direct_initial_reversed_hit_at_1": 0.0,
+        "direct_final_ordinary_hit_at_1": 0.8861111111111111,
+        "direct_final_reversed_hit_at_1": 0.8861111111111111
+      },
+      "interpretation": "The zero control is order-sensitive because of ties, but final direct performance is stable under the evaluated reversal."
+    },
+    {
+      "mechanism": "larger-validation shortcut or distribution mismatch",
+      "classification": "supported_as_evaluation_limitation",
+      "evidence": {
+        "associative_independent_complete_at_5": 0.13333333333333333,
+        "associative_larger_complete_at_5": 1.0,
+        "normalized_collision_groups": 6,
+        "collision_scenarios": 90,
+        "independent_expected_abstention_queries": 0
+      },
+      "interpretation": "The larger corpus cannot be treated as a sufficient generalization proxy. Specific leakage is not proven."
+    },
+    {
+      "mechanism": "single unique root cause isolated",
+      "classification": "unresolved",
+      "interpretation": "Existing frozen evidence cannot distinguish architecture, optimization conditioning, and distribution effects completely."
+    }
+  ],
+  "smallest_falsifiable_intervention": "Read-only gradient/Jacobian normalization and score-path attribution first; if the attenuation signal survives scale normalization, authorize only a single-variable <=40-update pilot addressing that path. Otherwise retain conventional retrieval and do not expand the associative architecture.",
+  "resource_constraints": "One numerical thread, one computational subprocess, 256 MiB maximum observed RSS, existing RAM/storage guards, no dependencies or holdout access."
+}
