@@ -1,0 +1,51 @@
+{
+  "baseline": "3def301",
+  "environment": "Android Termux ARM64",
+  "measurement_method": "read-only shell inspection; no installs, downloads, model loads, or training",
+  "memory": {
+    "total_bytes": 5660758016,
+    "available_bytes": 1622192128,
+    "swap_total_bytes": 8589934592,
+    "swap_free_bytes": 5416673280
+  },
+  "storage": {
+    "filesystem": "/data/misc/profiles/ref/com.termux",
+    "available_bytes": 7481962496,
+    "note": "df reports approximately 7.48 GB available; existing storage guards remain authoritative"
+  },
+  "process_resource_policy": {
+    "max_observed_rss_bytes": 268435456,
+    "numerical_threads": 1,
+    "computational_subprocesses": 1,
+    "cpu_only": true,
+    "gpu": false,
+    "cloud_inference": false,
+    "new_dependencies": false,
+    "existing_ram_and_storage_guards": true
+  },
+  "module_availability": {
+    "torch": true,
+    "onnxruntime": true,
+    "transformers": false,
+    "vllm": false,
+    "safetensors": false
+  },
+  "encoder_artifact": {
+    "path": "~/.cache/memorilla-lite/minilm-1110a243/onnx/model_qint8_arm64.onnx",
+    "bytes": 23026053,
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "threads_supported_by_wrapper": "1 or 2; future experiment must use 1"
+  },
+  "decoder_resource_status": {
+    "local_decoder_found": false,
+    "default_decoder": "Qwen/Qwen3-8B",
+    "compatible_cpu_decoder_rss_measurement": null,
+    "compatible_decoder_latency_measurement": null,
+    "status": "blocked before measurement because no compatible local decoder exists"
+  },
+  "protected_data": {
+    "final_holdout_accessed": false,
+    "checkpoint_mutated": false,
+    "training_state_mutated": false
+  }
+}

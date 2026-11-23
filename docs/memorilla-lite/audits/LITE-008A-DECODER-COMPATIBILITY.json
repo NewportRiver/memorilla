@@ -1,0 +1,52 @@
+{
+  "baseline": "3def301",
+  "branch": "feature/memorilla-lite-android",
+  "decoder_candidates": [
+    {
+      "identity": "Qwen/Qwen3-8B",
+      "source": "memorilla/paths.py:16",
+      "local_artifact": false,
+      "interface": "memorilla.llm.MemoryLLM / memorilla.vllm.MemoryVLLM",
+      "conditioning": "<|memory|> token embedding replacement / vLLM prompt embeddings",
+      "required_dependencies": ["transformers", "vllm", "safetensors", "torch"],
+      "android_cpu_compatible_now": false,
+      "reason": "No local decoder artifact; vLLM/Transformers unavailable; default path downloads or loads a large decoder and expects decoder-width memory tokens."
+    },
+    {
+      "identity": "tests.test_vllm.FakeEngine",
+      "source": "tests/test_vllm.py:25-51",
+      "local_artifact": true,
+      "interface": "test-only fake generate API",
+      "conditioning": "records prompt embeddings and returns fixed text",
+      "android_cpu_compatible_now": true,
+      "usable_as_scientific_decoder": false,
+      "reason": "Test double does not decode or evaluate language behavior."
+    },
+    {
+      "identity": "lite.neural.NumpyAssociativeMemory",
+      "source": "lite/neural/numpy_model.py",
+      "local_artifact": true,
+      "interface": "query-conditioned evidence ranking",
+      "conditioning": "returns latent slots for score-head ranking",
+      "android_cpu_compatible_now": true,
+      "usable_as_decoder": false,
+      "reason": "No tokenizer, vocabulary, decoder forward pass, or generation interface; output is retrieval-oriented 384-dimensional state."
+    }
+  ],
+  "encoder": {
+    "identity": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "bytes": 23026053,
+    "output_dim": 384,
+    "interface": "CPU ONNX Runtime"
+  },
+  "conditioning_arms": {
+    "A_conventional_context": {"available": true, "decoder": false, "retrieval": true},
+    "B_compact_latent_memory": {"representation_available": true, "compatible_decoder_interface": false},
+    "C_no_evidence": {"decoder": false, "retrieval_control": true}
+  },
+  "decision": "NO-GO",
+  "decision_scope": "Current Android/Termux environment and stated no-download/no-install/no-implementation restrictions"
+}
