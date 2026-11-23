@@ -1,0 +1,58 @@
+{
+  "schema": "LITE-008D-resource-telemetry-v1",
+  "status": "blocked_before_acquisition",
+  "baseline": "4ae5245",
+  "timestamp_utc": "2026-11-23T13:17:35Z",
+  "environment": "Android ARM64 / Termux",
+  "limits": {
+    "max_decoder_rss_bytes": 268435456,
+    "numerical_threads": 1,
+    "computational_subprocesses": 1,
+    "cpu_only": true,
+    "swap_relaxation": false
+  },
+  "preflight": {
+    "physical_ram_bytes": 5660758016,
+    "available_ram_bytes": 1512271872,
+    "free_swap_bytes": 5225291776,
+    "free_storage_kib": 7197260,
+    "temperature_celsius": null,
+    "temperature_status": "no readable thermal_zone temp file",
+    "cmake_present": false,
+    "clang_version": "21.1.8",
+    "python_version": "3.13.13",
+    "miniLM_sha256_verified": true,
+    "protected_holdout_accessed": false,
+    "sqlite_opened_or_modified": false,
+    "decoder_cache_present_before_run": false
+  },
+  "decoder": {
+    "model_repo": "HuggingFaceTB/SmolLM2-135M",
+    "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+    "runtime_repo": "ggml-org/llama.cpp",
+    "runtime_commit": "969d7333172c522d6a60fffb8dd35288ce8df236",
+    "acquired": false,
+    "built": false,
+    "converted": false,
+    "executed": false
+  },
+  "measurements": {
+    "model_load_time_seconds": null,
+    "peak_rss_bytes": null,
+    "prefill_latency_ms": null,
+    "generation_latency_ms": null,
+    "tokens_per_second": null,
+    "kv_cache_bytes": null,
+    "cpu_utilization": null,
+    "thermal_observation": null,
+    "process_exit_status": null,
+    "oom_or_termination": null
+  },
+  "blocker": {
+    "type": "missing_dependency",
+    "package": "cmake",
+    "phase": "preflight_before_acquisition",
+    "installation_authorized": false,
+    "action": "stopped_without_download_or_install"
+  }
+}
