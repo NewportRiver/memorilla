@@ -1,0 +1,58 @@
+{
+  "schema": "LITE-008D-R2-resource-preflight-v1",
+  "status": "cmake_ready_decoder_not_started",
+  "baseline": "b055852",
+  "branch": "feature/memorilla-lite-android",
+  "timestamp_utc": "2026-11-23T20:36:56Z",
+  "transaction": {
+    "method": "apt-get download-only followed by explicit dpkg unpack/configure of five packages",
+    "forced_options_used": false,
+    "manual_deb_extraction": false,
+    "unrelated_x11_configured": false,
+    "repository_changed": false,
+    "upgrades": 0,
+    "removals": 0,
+    "temporary_staging_removed": true
+  },
+  "packages": {
+    "cmake": {"version":"4.3.4","architecture":"aarch64","installed":true,"sha256":"c674ce9eeabe36e69f3586dd958f5455877a8215a71eaf5867caa417aa312e7"},
+    "libarchive": {"version":"3.8.8","architecture":"aarch64","installed":true,"sha256":"d0409f55c5b745cf113f7d901be90abfcea108a4255d3778221579efc0f51f33"},
+    "jsoncpp": {"version":"1.9.8","architecture":"aarch64","installed":true,"sha256":"9089651dddba30095f4406b596549765c323b295d8cec7ae59619ebb1c880c21"},
+    "libuv": {"version":"1.52.1","architecture":"aarch64","installed":true,"sha256":"203b0bff16017016a47c1023e827a7ad6b484b4f3b83b331098f09591c69de5e"},
+    "rhash": {"version":"1.4.6-1","architecture":"aarch64","installed":true,"sha256":"8a7dee7fde53702231c729bb89181fc6aa41322f819741b01b8a7a7e4b248bef"}
+  },
+  "cmake": {
+    "version_output": "cmake version 4.3.4",
+    "path": "/data/data/com.termux/files/usr/bin/cmake",
+    "elf": "64-bit LSB shared object, ARM aarch64, Android 30",
+    "dpkg_verify_warnings": false
+  },
+  "resources": {
+    "physical_ram_bytes": 5660758016,
+    "available_ram_bytes": 1527545856,
+    "free_swap_bytes": 4859260928,
+    "free_storage_before_kib": 7364564,
+    "free_storage_after_cleanup_kib": 7251664,
+    "observed_storage_delta_kib": 112900,
+    "decoder_rss_ceiling_bytes": 268435456,
+    "numerical_threads": 1,
+    "computational_subprocesses": 1,
+    "cpu_only": true
+  },
+  "memorilla_integrity": {
+    "minilm_sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "associative_checkpoint_sha256": "fb9a273fd96bfe9d6cf35da2145e45492b414ad6a02cd35acfba999886587a7a",
+    "direct_checkpoint_sha256": "a9e190cd7a0c81dc4ac070b9299819fced77d3b38432c9534577b8b19691d2c8",
+    "sqlite_modified": false,
+    "holdout_accessed": false,
+    "neural_architecture_changed": false
+  },
+  "decoder": {
+    "model_downloaded": false,
+    "llama_cpp_acquired": false,
+    "built": false,
+    "converted": false,
+    "executed": false
+  },
+  "pending_unrelated_packages": ["kf6-kwindowsystem","liblxqt","libqtxdg","obconf-qt","qt6-qtbase","qt6-qtdeclarative","qt6-qtlanguageserver","qt6-qtsvg","xdg-utils"]
+}
