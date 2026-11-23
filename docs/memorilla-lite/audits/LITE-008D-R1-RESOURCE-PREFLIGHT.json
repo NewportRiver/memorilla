@@ -1,0 +1,58 @@
+{
+  "schema": "LITE-008D-R1-resource-preflight-v1",
+  "status": "blocked_before_install",
+  "baseline": "cfcfb69",
+  "branch": "feature/memorilla-lite-android",
+  "environment": "Android ARM64 / Termux",
+  "timestamp_utc": "2026-11-23T13:17:35Z",
+  "limits": {
+    "max_decoder_rss_bytes": 268435456,
+    "numerical_threads": 1,
+    "computational_subprocesses": 1,
+    "cpu_only": true,
+    "swap_relaxation": false
+  },
+  "resources": {
+    "physical_ram_bytes": 5660758016,
+    "available_ram_bytes": 1438486528,
+    "free_swap_bytes": 5379932160,
+    "free_storage_kib": 7314616,
+    "temperature_celsius": null,
+    "temperature_status": "not measured: no readable thermal value in prior preflight"
+  },
+  "encoder": {
+    "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/minilm-1110a243/onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "verified": true
+  },
+  "checkpoints": {
+    "associative_episode_029_sha256": "fb9a273fd96bfe9d6cf35da2145e45492b414ad6a02cd35acfba999886587a7a",
+    "direct_episode_029_sha256": "a9e190cd7a0c81dc4ac070b9299819fced77d3b38432c9534577b8b19691d2c8",
+    "mutated": false
+  },
+  "package": {
+    "name": "cmake",
+    "candidate_version": "4.3.4",
+    "architecture": "aarch64",
+    "origin": "https://termux.net stable/main",
+    "download_bytes": 10061972,
+    "installed_size_kib": 52616,
+    "sha256": "c674ce9eeabe36e69f3586dd958f5455877a8215a71eaf5867caa417aa312e7",
+    "installed": false,
+    "signature_source": "/data/data/com.termux/files/usr/etc/apt/trusted.gpg.d/termux-packages.gpg"
+  },
+  "transaction": {
+    "simulation_command": "apt-get -s --no-remove --no-upgrade --no-install-recommends install cmake",
+    "strict_new_packages": ["cmake", "jsoncpp", "libarchive", "libuv", "rhash"],
+    "upgrades": 0,
+    "removals": 0,
+    "unrelated_pending_configuration_count": 9,
+    "unrelated_pending_configuration": ["qt6-qtsvg", "qt6-qtdeclarative", "kf6-kwindowsystem", "liblxqt", "qt6-qtbase", "qt6-qtlanguageserver", "libqtxdg", "obconf-qt", "xdg-utils"],
+    "executed": false,
+    "stop_reason": "transaction would configure unrelated pre-existing X11 packages"
+  },
+  "model_downloaded": false,
+  "llama_cpp_acquired": false,
+  "sqlite_or_checkpoint_modified": false,
+  "holdout_accessed": false
+}
