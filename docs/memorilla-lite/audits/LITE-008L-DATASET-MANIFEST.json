@@ -1,0 +1,15 @@
+{
+  "schema":"LITE-008L-textual-dataset-v1",
+  "seed":20261124,
+  "rows":12,
+  "calibration_rows":4,
+  "development_rows":8,
+  "familiar_associations":4,
+  "randomized_entity_assignments":8,
+  "prompt_formats":["question_answer","evidence_question","completion"],
+  "conditions":["query_only","relevant","counterfactual","unrelated","conflicting"],
+  "answers_revealed_in_ordinary_queries":false,
+  "protected_final_holdout_accessed":false,
+  "manifest_sha256":"7cb6143abb2ce868a145e04a89fbc582dd0d3341f2691fcd6549a82ff6c838fe",
+  "tokenizer_sha256":"9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c"
+}

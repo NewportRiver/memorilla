@@ -1,0 +1,8 @@
+{
+  "schema":"LITE-008L-resource-telemetry-v1",
+  "textual_competence":{"wall_seconds":64.5563003120,"forward_count":120,"resource_monitor_attempts":"one monitor invocation lacked PYTHONPATH and produced no scientific result; corrected direct run completed"},
+  "bf16_precision":{"wall_seconds":33.4841742963,"peak_rss_bytes":766132224,"peak_pss_bytes":764624896,"minimum_available_bytes":1190797312,"exit_status":0,"resource_violation":null},
+  "float32_precision":{"wall_seconds":6.3880383590,"peak_rss_bytes":1079508992,"peak_pss_bytes":1016716288,"minimum_available_bytes":1200824320,"exit_status":-15,"termination":"rss_ceiling","resource_violation":"rss_ceiling"},
+  "limits":{"training_rss_ceiling_bytes":1073741824,"inference_rss_ceiling_bytes":268435456,"available_reserve_bytes":536870912,"timeout_seconds":300,"threads":1,"subprocesses":1,"batch_size":1},
+  "persistent_processes":false
+}

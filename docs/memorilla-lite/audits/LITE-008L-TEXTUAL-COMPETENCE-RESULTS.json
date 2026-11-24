@@ -1,0 +1,14 @@
+{
+  "schema":"LITE-008L-textual-competence-v1",
+  "status":"passed_textual_prerequisite",
+  "selected_format":"question_answer",
+  "development_rows":8,
+  "candidate_ranking_accuracy":{"query_only":0.875,"relevant":1.0,"counterfactual":1.0,"unrelated":1.0,"conflicting":1.0},
+  "mean_a_minus_b_margin":{"relevant":3.3442403227,"counterfactual":-3.1392471045,"unrelated":2.1040484011,"conflicting":0.8298274279},
+  "relevant_minus_unrelated_margin_advantage":1.2401922174,
+  "forward_count":120,
+  "ordinary_token_id_inference":true,
+  "decoder_parameters_updated":false,
+  "protected_final_holdout_accessed":false,
+  "interpretation":"candidate-ranking competence on this controlled synthetic task; not unrestricted generation competence"
+}

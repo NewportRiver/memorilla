@@ -1,0 +1,8 @@
+{
+  "schema":"LITE-008L-numerical-precision-v1",
+  "status":"not_passed",
+  "bf16_master_float32_loss":{"gradient_norm":5.2456059456,"gradient_finite":true,"all_tested_perturbations_representable":true,"directions":4,"epsilons":[0.0625,0.125,0.25,0.5,1.0,2.0],"best_relative_error":0.0298438981,"worst_relative_error":2.3911156468,"single_epsilon_all_direction_threshold_le_0_25":false},
+  "float32_decoder_reference":{"status":"aborted_resource_ceiling","peak_rss_bytes":1079508992,"rss_ceiling_bytes":1073741824,"peak_pss_bytes":1016716288,"minimum_available_bytes":1200824320,"forward_count":0,"backward_count":0,"optimizer_updates_attempted":0,"optimizer_updates_completed":0},
+  "acceptance_criteria":{"relative_error_le_0_25_for_all_four_directions_at_one_common_epsilon":false,"direction_agreement_ge_0_75":false},
+  "interpretation":"continuous Float32-master gradients are finite, but the numerical prerequisite is not passed"
+}

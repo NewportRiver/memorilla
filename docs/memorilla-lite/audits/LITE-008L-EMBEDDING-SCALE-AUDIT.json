@@ -1,0 +1,13 @@
+{
+  "schema":"LITE-008L-embedding-scale-v1",
+  "status":"completed",
+  "decoder_embedding_rms":0.1346630454,
+  "decoder_embedding_mean_abs":0.0980513170,
+  "token_norm_quantiles":{"0":1.7569003105,"0.01":2.1337687969,"0.1":2.4742033482,"0.5":3.1308832169,"0.9":3.9118378162,"0.99":4.9268813133,"1":7.4675855637},
+  "eos_norm":2.9788949490,
+  "zero_norm":0.0,
+  "scale_matched_random_norm":3.3042740822,
+  "lite008j_optimized_norm":3.5002696514,
+  "lite008j_optimized_rms":0.1458445787,
+  "conclusion":"LITE-008J optimized scale is within ordinary token norm range; no arbitrary normalization or clipping introduced"
+}

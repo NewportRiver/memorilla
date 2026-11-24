@@ -1,0 +1,13 @@
+{
+  "schema":"LITE-008L-scoring-verification-v1",
+  "status":"passed",
+  "ordinary_token_id_and_teacher_forced_scoring":"implemented",
+  "full_answer_tokenization":"verified",
+  "leading_space_tokenization":"verified",
+  "causal_answer_start":"prompt_length_minus_one",
+  "multi_token_scoring":"implemented",
+  "candidate_length_metrics":"total_and_mean_logprob_recorded",
+  "counterfactual_orientation":"B_success_when_A_minus_B_margin_less_than_zero",
+  "greedy_generation":"reported_separately",
+  "synthetic_unit_tests":"passed"
+}

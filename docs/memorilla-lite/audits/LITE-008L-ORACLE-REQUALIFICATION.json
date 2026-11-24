@@ -1,0 +1,12 @@
+{
+  "schema":"LITE-008L-oracle-requalification-v1",
+  "status":"not_executed",
+  "reason":"Numerical precision prerequisite failed after textual prerequisite passed",
+  "textual_prerequisite":"passed",
+  "numerical_prerequisite":"not_passed",
+  "answer_nll_only":"unexecuted",
+  "contrastive":"unexecuted",
+  "matched_controls":"unexecuted",
+  "optimizer_updates":0,
+  "generalized_bridge_training":"prohibited_and_not_executed"
+}

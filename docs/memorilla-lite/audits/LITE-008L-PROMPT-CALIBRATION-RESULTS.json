@@ -1,0 +1,13 @@
+{
+  "schema":"LITE-008L-prompt-calibration-v1",
+  "selected_format":"question_answer",
+  "selection_partition":"calibration_only",
+  "calibration_rows":4,
+  "format_scores":{
+    "question_answer":{"query_only":1.0,"relevant":1.0,"counterfactual":0.0,"unrelated":1.0,"conflicting":1.0,"selection_score":3.0},
+    "evidence_question":{"query_only":1.0,"relevant":1.0,"counterfactual":0.0,"unrelated":1.0,"conflicting":1.0,"selection_score":3.0},
+    "completion":{"query_only":1.0,"relevant":1.0,"counterfactual":0.0,"unrelated":1.0,"conflicting":1.0,"selection_score":3.0}
+  },
+  "tie_rule":"first_predeclared_format",
+  "unrestricted_greedy_reported_separately":true
+}
