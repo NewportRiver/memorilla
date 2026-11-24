@@ -1,0 +1,48 @@
+{
+  "schema": "LITE-008D-R3-resource-telemetry-v1",
+  "status": "blocked_at_model_integrity_gate",
+  "baseline": "6e9e1df",
+  "branch": "feature/memorilla-lite-android",
+  "environment": "Android ARM64 / Termux",
+  "limits": {"max_decoder_rss_bytes":268435456,"numerical_threads":1,"computational_subprocesses":1,"cpu_only":true,"swap_relaxation":false},
+  "preflight": {
+    "physical_ram_bytes":5660758016,
+    "available_ram_bytes":1543208960,
+    "free_storage_kib":12881392,
+    "free_swap_bytes":5449437184,
+    "temperature_celsius":null,
+    "temperature_status":"no readable thermal sensor",
+    "cmake":"4.3.4",
+    "clang":"21.1.8",
+    "pending_x11_unchanged":true,
+    "minilm_sha256_verified":true,
+    "holdout_accessed":false,
+    "sqlite_modified":false
+  },
+  "artifacts": {
+    "model_repo":"HuggingFaceTB/SmolLM2-135M",
+    "model_revision":"93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+    "model_size_bytes":269060552,
+    "expected_model_sha256":"8595fbb3d6026b3818e1a9d538e145d63abbdb21e948de9b4968b5a16e96a579",
+    "actual_model_sha256":"80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+    "model_checksum_match":false,
+    "llama_cpp_commit":"969d7333172c522d6a60fffb8dd35288ce8df236",
+    "source_checkout_verified":true
+  },
+  "execution": {
+    "build_started":false,
+    "conversion_started":false,
+    "decoder_executed":false,
+    "peak_rss_bytes":null,
+    "model_load_latency_ms":null,
+    "prefill_latency_ms":null,
+    "generation_latency_ms":null,
+    "tokens_per_second":null,
+    "kv_cache_bytes":null,
+    "cpu_utilization":null,
+    "thermal_observation":null,
+    "exit_status":null,
+    "oom_or_termination":null
+  },
+  "stop_reason":"official model content SHA-256 did not match supplied expected value"
+}
