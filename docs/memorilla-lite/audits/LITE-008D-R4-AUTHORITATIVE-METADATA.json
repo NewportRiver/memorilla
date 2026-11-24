@@ -1,0 +1,40 @@
+{
+  "schema": "LITE-008D-R4-authoritative-model-metadata-v1",
+  "retrieved_utc": "2026-11-24T10:25:01.591364+00:00",
+  "repository": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "file": "model.safetensors",
+  "raw_evidence_directory": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/provenance",
+  "sources": {
+    "revision_api": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-135M/revision/93efa2f097d58c2a74874c7e644dbc9b0cee75a2?blobs=true",
+    "tree_api": "https://huggingface.co/api/models/HuggingFaceTB/SmolLM2-135M/tree/93efa2f097d58c2a74874c7e644dbc9b0cee75a2?expand=true",
+    "download_url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M/resolve/93efa2f097d58c2a74874c7e644dbc9b0cee75a2/model.safetensors"
+  },
+  "identifiers": {
+    "git_blob_id": "ed736e4e5f39dd99c5d435bf84c0d8c222839b1b",
+    "git_lfs_sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+    "xet_hash": "8595fbb3d6026b3818e1a9d538e145d63abbdb21e948de9b4968b5a16e96a579",
+    "http_etag": "8595fbb3d6026b3818e1a9d538e145d63abbdb21e948de9b4968b5a16e96a579"
+  },
+  "authoritative_metadata": {
+    "size_bytes": 269060552,
+    "lfs_pointer_size": 134,
+    "content_sha256_field": "lfs.sha256",
+    "content_sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+    "xet_hash_is_content_sha256": false,
+    "etag_is_content_sha256": false
+  },
+  "local_artifact": {
+    "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R3/model/model.safetensors",
+    "size_bytes": 269060552,
+    "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1"
+  },
+  "acceptance": {
+    "repository_identity_verified": true,
+    "revision_verified": true,
+    "file_path_verified": true,
+    "size_matches": true,
+    "authoritative_content_sha256_matches": true,
+    "integrity_gate": "passed"
+  }
+}

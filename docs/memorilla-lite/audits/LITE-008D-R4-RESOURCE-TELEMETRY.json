@@ -1,0 +1,35 @@
+{
+  "schema": "LITE-008D-R4-resource-telemetry-v1",
+  "status": "qualified",
+  "baseline": "654ae0d",
+  "branch": "feature/memorilla-lite-android",
+  "environment": "Android ARM64 / Termux",
+  "limits": {"max_decoder_rss_bytes": 268435456, "numerical_threads": 1, "computational_subprocesses": 1, "cpu_only": true, "swap_relaxation": false},
+  "preflight": {"physical_ram_bytes": 5660758016, "available_ram_bytes": 1647161344, "free_storage_kib": 12319656, "free_swap_bytes": 5238304768, "temperature_celsius": null, "temperature_status": "no readable thermal sensor", "cmake": "4.3.4", "clang": "21.1.8", "pending_x11_unchanged": true, "minilm_sha256_verified": true, "neural_checkpoints_verified": true, "sqlite_modified": false, "holdout_accessed": false},
+  "provenance": {"repository": "HuggingFaceTB/SmolLM2-135M", "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2", "model_lfs_sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1", "model_size_bytes": 269060552, "llama_cpp_commit": "969d7333172c522d6a60fffb8dd35288ce8df236"},
+  "conversion": {"f16_peak_rss_bytes": 511741952, "f16_elapsed_seconds": 7.7, "q4_k_m_peak_rss_bytes": 217374720, "q4_k_m_elapsed_seconds": 1.4, "q4_k_m_size_bytes": 105453568, "q4_k_m_sha256": "39f688e705919e7cf51f505cedf283889e5ef813b1e969ac05f8461e7c83f458"},
+  "inference": {
+    "prompt": "The capital of France is",
+    "output_tokens_requested": 32,
+    "output_tokens_observed": 31,
+    "sampling": "temperature 0, top-k 0, top-p 1, min-p 0, greedy chain",
+    "seed_argument": 42,
+    "runtime_logged_seed": 4294967295,
+    "threads": 1,
+    "gpu_layers": 0,
+    "timeout_seconds": 120,
+    "rss_limit_enforced_by_monitor": true,
+    "rss_monitoring": "periodic /proc/<pid>/status sampling; process killed if over ceiling",
+    "contexts": {
+      "requested_128": {"effective_context": 256, "repeat_count": 3, "all_exit_zero": true, "peak_rss_bytes_max": 191946752, "load_ms_range": [140.12, 146.31], "prompt_eval_ms_range": [47.97, 49.82], "generation_ms_range": [391.80, 394.48], "tokens_per_second_range": [78.58, 79.12]},
+      "requested_256": {"effective_context": 256, "repeat_count": 3, "all_exit_zero": true, "peak_rss_bytes_max": 191942656, "load_ms_range": [140.03, 140.73], "prompt_eval_ms_range": [48.04, 48.09], "generation_ms_range": [387.36, 390.45], "tokens_per_second_range": [79.40, 80.03]},
+      "requested_512": {"effective_context": 512, "repeat_count": 3, "all_exit_zero": true, "peak_rss_bytes_max": 198004736, "load_ms_range": [143.54, 146.85], "prompt_eval_ms_range": [48.19, 48.40], "generation_ms_range": [387.74, 390.65], "tokens_per_second_range": [79.35, 79.95]}
+    },
+    "cpu_utilization_percent_sampled": 98.0,
+    "kv_cache_bytes": null,
+    "kv_cache_status": "not separately exposed by runtime output",
+    "oom_or_termination": false,
+    "thermal_observation": null
+  },
+  "decision": "GO"
+}
