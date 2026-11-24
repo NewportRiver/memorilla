@@ -1,0 +1,25 @@
+{
+  "schema": "LITE-008G-resource-telemetry-v1",
+  "rss_ceiling_bytes": 268435456,
+  "cpu_only": true,
+  "threads": 1,
+  "encoder_phase_telemetry": "~/.cache/memorilla-lite/LITE-008G/encoder-resource-diagnosis.json",
+  "encoder_peak_rss_bytes": 92258304,
+  "encoder_peak_pss_bytes": 86238208,
+  "bridge_only_peak_rss_bytes": 38260736,
+  "decoder_qualification_probe_peak_rss_bytes": {"projected": 185942016, "zero": 186310656},
+  "semantic_evaluation": {
+    "teacher_forced_cases": 112,
+    "greedy_generation_cases": 112,
+    "counterfactual_matrix_cases": 32,
+    "cumulative_decoder_evaluations": 256,
+    "recorded_semantic_case_duration_seconds": 80.47180960798869,
+    "aggregate_decoder_rss": null,
+    "aggregate_decoder_rss_note": "The valid semantic run did not sample child RSS. A later /proc-instrumented retry hung on the first case and was killed at the bounded stop boundary; no RSS value is reconstructed. The independent native qualification probe remains the only decoder RSS evidence for this run class."
+  },
+  "thermal_telemetry": null,
+  "kv_cache_separate_measurement": null,
+  "oom_or_forced_termination_in_valid_run": false,
+  "protected_final_holdout_accessed": false,
+  "whole_pipeline_qualification": false
+}

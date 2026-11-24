@@ -41,3 +41,28 @@ def test_linear_bridge_sgd_reduces_alignment_loss():
     bridge.train_sgd(x, target, steps=30, lr=0.05)
     final = float(np.mean((bridge.forward(x) - target) ** 2))
     assert final < initial
+
+
+def test_mse_gradients_match_weight_and_bias_finite_differences():
+    rng = np.random.default_rng(8)
+    x = rng.normal(size=(3, 384)).astype(np.float32)
+    x /= np.linalg.norm(x, axis=1, keepdims=True)
+    target = rng.normal(size=(3, 576)).astype(np.float32)
+    bridge = LinearEmbeddingBridge(seed=9)
+    grad_w, grad_b = bridge.mse_gradients(x, target)
+    h = 1e-3
+    old_w = float(bridge.weight[0, 0])
+    bridge.weight[0, 0] = old_w + h
+    plus = float(np.mean((bridge.forward(x) - target) ** 2))
+    bridge.weight[0, 0] = old_w - h
+    minus = float(np.mean((bridge.forward(x) - target) ** 2))
+    bridge.weight[0, 0] = old_w
+    numeric_w = (plus - minus) / (2 * h)
+    old_b = float(bridge.bias[0])
+    bridge.bias[0] = old_b + h
+    plus = float(np.mean((bridge.forward(x) - target) ** 2))
+    bridge.bias[0] = old_b - h
+    minus = float(np.mean((bridge.forward(x) - target) ** 2))
+    numeric_b = (plus - minus) / (2 * h)
+    assert abs(numeric_w - float(grad_w[0, 0])) < 2e-4
+    assert abs(numeric_b - float(grad_b[0])) < 2e-4

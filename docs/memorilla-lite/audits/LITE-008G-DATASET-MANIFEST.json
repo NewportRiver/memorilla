@@ -1,0 +1,253 @@
+{
+  "schema": "LITE-008G-dataset-v1",
+  "seed": 20261124,
+  "value_set": [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "purple",
+    "orange",
+    "white",
+    "black"
+  ],
+  "templates": [
+    "What is the code for {entity}? Answer:",
+    "Which code belongs to {entity}? Answer:"
+  ],
+  "rows": [
+    {
+      "id": 0,
+      "entity": "person cobalt 00",
+      "value": "purple",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 1,
+      "entity": "person linen 01",
+      "value": "orange",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 2,
+      "entity": "person marble 02",
+      "value": "purple",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 3,
+      "entity": "person cedar 03",
+      "value": "red",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 4,
+      "entity": "person orbit 04",
+      "value": "yellow",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 5,
+      "entity": "person quartz 05",
+      "value": "red",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 6,
+      "entity": "person velvet 06",
+      "value": "white",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 7,
+      "entity": "person harbor 07",
+      "value": "green",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 8,
+      "entity": "person meadow 08",
+      "value": "orange",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 9,
+      "entity": "person signal 09",
+      "value": "orange",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 10,
+      "entity": "person lantern 10",
+      "value": "yellow",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 11,
+      "entity": "person willow 11",
+      "value": "black",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 12,
+      "entity": "person granite 12",
+      "value": "black",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 13,
+      "entity": "person saffron 13",
+      "value": "white",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 14,
+      "entity": "person ripple 14",
+      "value": "purple",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 15,
+      "entity": "person thistle 15",
+      "value": "black",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 16,
+      "entity": "person plume 16",
+      "value": "orange",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 17,
+      "entity": "person canyon 17",
+      "value": "blue",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 18,
+      "entity": "person silver 18",
+      "value": "green",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 19,
+      "entity": "person maple 19",
+      "value": "white",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 20,
+      "entity": "person comet 20",
+      "value": "white",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 21,
+      "entity": "person tundra 21",
+      "value": "red",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 22,
+      "entity": "person pepper 22",
+      "value": "blue",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 23,
+      "entity": "person island 23",
+      "value": "black",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 24,
+      "entity": "person raven 24",
+      "value": "purple",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 25,
+      "entity": "person copper 25",
+      "value": "red",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 26,
+      "entity": "person violet 26",
+      "value": "blue",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 27,
+      "entity": "person forest 27",
+      "value": "green",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 28,
+      "entity": "person sunset 28",
+      "value": "yellow",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 29,
+      "entity": "person anchor 29",
+      "value": "green",
+      "template": "Which code belongs to {entity}? Answer:"
+    },
+    {
+      "id": 30,
+      "entity": "person canvas 30",
+      "value": "yellow",
+      "template": "What is the code for {entity}? Answer:"
+    },
+    {
+      "id": 31,
+      "entity": "person breeze 31",
+      "value": "blue",
+      "template": "Which code belongs to {entity}? Answer:"
+    }
+  ],
+  "partitions": {
+    "train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "calibration": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "development": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "protected_final_holdout_accessed": false
+}

@@ -46,11 +46,46 @@ class LinearEmbeddingBridge:
             pred = self.forward(x)
             err = pred - target
             loss = float(np.mean(err * err))
+            grad_w, grad_b = self.mse_gradients(x, target)
+            self.weight = (self.weight - lr * grad_w).astype(np.float32)
+            self.bias = (self.bias - lr * grad_b).astype(np.float32)
+            history.append(loss)
+        return history
+
+    def mse_gradients(self, x: np.ndarray, target: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+        """Return gradients of the reported mean squared error objective.
+
+        The mean is over every batch/output element, so both gradients include
+        the factor ``2 / (batch_size * output_dim)``.
+        """
+        x = np.asarray(x, dtype=np.float32)
+        target = np.asarray(target, dtype=np.float32)
+        if x.ndim != 2 or x.shape[1] != self.input_dim:
+            raise ValueError("input shape invalid")
+        if target.shape != (x.shape[0], self.output_dim):
+            raise ValueError("target shape invalid")
+        err = self.forward(x).astype(np.float64) - target.astype(np.float64)
+        scale = 2.0 / float(x.shape[0] * self.output_dim)
+        grad_w = (x.astype(np.float64).T @ err * scale).astype(np.float32)
+        grad_b = (err.sum(axis=0) * scale).astype(np.float32)
+        return grad_w, grad_b
+
+    def train_sgd_legacy_unscaled(self, x: np.ndarray, target: np.ndarray, steps: int = 200, lr: float = 0.05) -> list[float]:
+        """Reproduce the pre-LITE-008G update rule without relabeling it MSE-correct."""
+        x = np.asarray(x, dtype=np.float32)
+        target = np.asarray(target, dtype=np.float32)
+        if target.shape != (x.shape[0], self.output_dim):
+            raise ValueError("target shape invalid")
+        history: list[float] = []
+        n = float(x.shape[0])
+        for _ in range(steps):
+            pred = self.forward(x)
+            err = pred - target
+            history.append(float(np.mean(err * err)))
             grad_w = (x.astype(np.float64).T @ err.astype(np.float64) / n).astype(np.float32)
             grad_b = err.mean(axis=0).astype(np.float32)
             self.weight = (self.weight - lr * grad_w).astype(np.float32)
             self.bias = (self.bias - lr * grad_b).astype(np.float32)
-            history.append(loss)
         return history
 
     def state(self) -> dict[str, np.ndarray]:

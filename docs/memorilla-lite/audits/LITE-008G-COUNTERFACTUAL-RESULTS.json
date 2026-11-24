@@ -1,0 +1,13 @@
+{
+  "schema": "LITE-008G-counterfactual-v1",
+  "n_pairs": 8,
+  "n_directional_comparisons": 16,
+  "mean_margin": 0.04582500000000006,
+  "margin_95ci": [
+    -0.5042058124999997,
+    0.5919625156249991
+  ],
+  "positive_margin_count": 8,
+  "raw_evidence": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008G/counterfactual-matrix.json",
+  "interpretation": "inconclusive; not consistent directional sensitivity"
+}

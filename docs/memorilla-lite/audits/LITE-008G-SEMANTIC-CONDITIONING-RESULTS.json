@@ -1,0 +1,209 @@
+{
+  "schema": "LITE-008G-semantic-results-v1",
+  "dataset_manifest_sha256": "d3e21dd572db3e5026fbc90d321a478e8b142dbf9c6cb700fe923d41e61278ce",
+  "model_sha256": "39f688e705919e7cf51f505cedf283889e5ef813b1e969ac05f8461e7c83f458",
+  "encoder_features_sha256": "99877dd1cbeacdd82bb74ee21753644e216b3f1df2968c71d06b2d8174f8143a",
+  "calibration": {
+    "counterfactual_text": {
+      "n": 8,
+      "mean_nll": 6.1480175,
+      "mean_nll_95ci": [
+        5.16354928125,
+        7.062360156249999
+      ],
+      "greedy_exact_accuracy": 0.0
+    },
+    "irrelevant_text": {
+      "n": 8,
+      "mean_nll": 5.9587875,
+      "mean_nll_95ci": [
+        5.05859,
+        6.753645
+      ],
+      "greedy_exact_accuracy": 0.0
+    },
+    "query_only": {
+      "n": 8,
+      "mean_nll": 9.097255,
+      "mean_nll_95ci": [
+        8.339155499999999,
+        9.793682843749998
+      ],
+      "greedy_exact_accuracy": 0.0
+    },
+    "relevant_text": {
+      "n": 8,
+      "mean_nll": 4.2656975,
+      "mean_nll_95ci": [
+        3.907346625,
+        4.64041675
+      ],
+      "greedy_exact_accuracy": 0.0
+    }
+  },
+  "development": {
+    "constant_mean": {
+      "n": 8,
+      "mean_nll": 8.1133075,
+      "mean_nll_95ci": [
+        7.1503587500000005,
+        8.9926183125
+      ],
+      "greedy_exact_accuracy": 0.0,
+      "paired_improvement_vs_query_nll": 0.6387387499999999,
+      "paired_improvement_95ci": [
+        0.35725874999999974,
+        0.91796834375
+      ]
+    },
+    "corrected": {
+      "n": 8,
+      "mean_nll": 7.9258162500000005,
+      "mean_nll_95ci": [
+        7.01354665625,
+        8.760538749999998
+      ],
+      "greedy_exact_accuracy": 0.0,
+      "paired_improvement_vs_query_nll": 0.8262300000000004,
+      "paired_improvement_95ci": [
+        0.4166310000000004,
+        1.2799353125000004
+      ]
+    },
+    "counterfactual_projected": {
+      "n": 8,
+      "mean_nll": 7.99675375,
+      "mean_nll_95ci": [
+        7.022035000000001,
+        8.88986375
+      ],
+      "greedy_exact_accuracy": 0.0
+    },
+    "historical": {
+      "n": 8,
+      "mean_nll": 7.9258162500000005,
+      "mean_nll_95ci": [
+        7.01354665625,
+        8.760538749999998
+      ],
+      "greedy_exact_accuracy": 0.0,
+      "paired_improvement_vs_query_nll": 0.8262300000000004,
+      "paired_improvement_95ci": [
+        0.4166310000000004,
+        1.2799353125000004
+      ]
+    },
+    "mismatched": {
+      "n": 8,
+      "mean_nll": 8.088645,
+      "mean_nll_95ci": [
+        7.06481871875,
+        8.9994366875
+      ],
+      "greedy_exact_accuracy": 0.0,
+      "paired_improvement_vs_query_nll": 0.6634012500000004,
+      "paired_improvement_95ci": [
+        0.34508628125000035,
+        0.9728111562500005
+      ]
+    },
+    "oracle": {
+      "n": 8,
+      "mean_nll": 7.54330875,
+      "mean_nll_95ci": [
+        6.63744115625,
+        8.388447500000002
+      ],
+      "greedy_exact_accuracy": 0.0,
+      "paired_improvement_vs_query_nll": 1.2087375,
+      "paired_improvement_95ci": [
+        0.7480737500000001,
+        1.7144237500000001
+      ]
+    },
+    "query_only": {
+      "n": 8,
+      "mean_nll": 8.752046250000001,
+      "mean_nll_95ci": [
+        7.740103187500001,
+        9.62428
+      ],
+      "greedy_exact_accuracy": 0.0
+    },
+    "random": {
+      "n": 8,
+      "mean_nll": 8.705134999999999,
+      "mean_nll_95ci": [
+        7.60682371875,
+        9.584657499999999
+      ],
+      "greedy_exact_accuracy": 0.0,
+      "paired_improvement_vs_query_nll": 0.04691125000000029,
+      "paired_improvement_95ci": [
+        -0.24206999999999967,
+        0.29873625000000037
+      ]
+    },
+    "untrained": {
+      "n": 8,
+      "mean_nll": 8.699043750000001,
+      "mean_nll_95ci": [
+        7.6297125,
+        9.51685440625
+      ],
+      "greedy_exact_accuracy": 0.0,
+      "paired_improvement_vs_query_nll": 0.053002500000000285,
+      "paired_improvement_95ci": [
+        -0.1301857499999997,
+        0.2154837500000002
+      ]
+    },
+    "zero": {
+      "n": 8,
+      "mean_nll": 8.589295,
+      "mean_nll_95ci": [
+        7.533455437500001,
+        9.5224625
+      ],
+      "greedy_exact_accuracy": 0.0,
+      "paired_improvement_vs_query_nll": 0.16275125000000012,
+      "paired_improvement_95ci": [
+        0.011521125000000083,
+        0.29240250000000034
+      ]
+    }
+  },
+  "counterfactual": {
+    "n_directional_comparisons": 16,
+    "mean_supplied_vs_alternate_logprob_margin": 0.04582500000000006,
+    "margin_95ci": [
+      -0.5042058124999997,
+      0.5919625156249991
+    ],
+    "positive_margin_count": 8,
+    "margins": [
+      0.5634999999999994,
+      -0.4391999999999996,
+      -0.5187799999999996,
+      0.6346300000000005,
+      1.2423099999999998,
+      -1.33073,
+      0.8477700000000006,
+      -0.8816400000000009,
+      1.5828500000000005,
+      -1.4272600000000004,
+      -0.66038,
+      0.64269,
+      1.4088399999999996,
+      -1.1490099999999988,
+      1.7539599999999993,
+      -1.5363499999999997
+    ]
+  },
+  "raw_evidence_paths": [
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008G/semantic-raw.json",
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008G/counterfactual-matrix.json"
+  ],
+  "protected_final_holdout_accessed": false,
+  "production_memory_modified": false
+}

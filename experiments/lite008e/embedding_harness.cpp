@@ -12,7 +12,7 @@
 #include <vector>
 
 struct Args {
-    std::string model, ids, embd, out, mode = "token";
+    std::string model, ids, embd, targets, out, mode = "token";
     int ctx = 256, steps = 4, threads = 1, external_index = -1;
 };
 
@@ -27,6 +27,7 @@ static Args parse(int argc, char ** argv) {
         if (x == "--model") a.model = arg_str(argc, argv, i);
         else if (x == "--ids") a.ids = arg_str(argc, argv, i);
         else if (x == "--embd") a.embd = arg_str(argc, argv, i);
+        else if (x == "--targets") a.targets = arg_str(argc, argv, i);
         else if (x == "--out") a.out = arg_str(argc, argv, i);
         else if (x == "--mode") a.mode = arg_str(argc, argv, i);
         else if (x == "--ctx") a.ctx = arg_int(argc, argv, i);
@@ -57,6 +58,14 @@ static std::vector<float> read_floats(const std::string & path) {
     std::vector<float> v(static_cast<size_t>(n) / sizeof(float));
     f.read(reinterpret_cast<char *>(v.data()), n); return v;
 }
+static double logprob(const float * logits, int32_t n_vocab, int32_t target) {
+    if (target < 0 || target >= n_vocab) die("target token out of vocabulary");
+    float mx = logits[0];
+    for (int32_t i = 1; i < n_vocab; ++i) mx = std::max(mx, logits[i]);
+    double sum = 0.0;
+    for (int32_t i = 0; i < n_vocab; ++i) sum += std::exp(static_cast<double>(logits[i] - mx));
+    return static_cast<double>(logits[target] - mx) - std::log(sum);
+}
 static void write_floats(const std::string & path, const std::vector<float> & v) {
     std::ofstream f(path, std::ios::binary); if (!f) die("cannot write output");
     f.write(reinterpret_cast<const char *>(v.data()), static_cast<std::streamsize>(v.size() * sizeof(float)));
@@ -71,6 +80,7 @@ int main(int argc, char ** argv) {
         const Args a = parse(argc, argv);
         const auto ids = read_ids(a.ids);
         const auto embd = read_floats(a.embd);
+        const auto targets = a.targets.empty() ? std::vector<int32_t>{} : read_ids(a.targets);
         llama_backend_init();
         llama_model_params mp = llama_model_default_params();
         mp.n_gpu_layers = 0;
@@ -100,6 +110,7 @@ int main(int argc, char ** argv) {
 
         std::vector<float> final_logits;
         std::vector<int32_t> generated;
+        std::vector<double> target_logprobs;
         const auto submit = [&](int32_t id, const float * row, llama_pos pos, bool output) {
             llama_batch_ext_clear(batch);
             int32_t idx;
@@ -119,11 +130,15 @@ int main(int argc, char ** argv) {
         const float * logits = llama_get_logits(ctx);
         if (!logits) die("logits unavailable");
         final_logits.assign(logits, logits + n_vocab);
-        for (int step = 0; step < a.steps; ++step) {
+        const int scoring_steps = static_cast<int>(targets.size());
+        const int total_steps = targets.empty() ? a.steps : scoring_steps;
+        for (int step = 0; step < total_steps; ++step) {
+            if (step < scoring_steps) target_logprobs.push_back(logprob(final_logits.data(), n_vocab, targets[step]));
             const int32_t next = greedy(final_logits.data(), n_vocab);
-            generated.push_back(next);
+            const int32_t submitted = step < scoring_steps ? targets[step] : next;
+            if (targets.empty()) generated.push_back(next);
             const llama_pos pos = static_cast<llama_pos>(ids.size() + step);
-            submit(next, nullptr, pos, true);
+            submit(submitted, nullptr, pos, true);
             logits = llama_get_logits(ctx); if (!logits) die("continuation logits unavailable");
             final_logits.assign(logits, logits + n_vocab);
         }
@@ -131,7 +146,16 @@ int main(int argc, char ** argv) {
         std::ofstream meta(a.out); if (!meta) die("cannot write metadata");
         meta << "{\"mode\":\"" << a.mode << "\",\"n_embd\":" << n_embd << ",\"n_vocab\":" << n_vocab << ",\"input_tokens\":" << ids.size() << ",\"ctx\":" << a.ctx << ",\"generated\":[";
         for (size_t i = 0; i < generated.size(); ++i) { if (i) meta << ','; meta << generated[i]; }
-        meta << "]}\n";
+        meta << "]";
+        if (!targets.empty()) {
+            double total = 0.0; for (double v : target_logprobs) total += v;
+            meta << ",\"target_tokens\":[";
+            for (size_t i = 0; i < targets.size(); ++i) { if (i) meta << ','; meta << targets[i]; }
+            meta << "],\"target_logprobs\":[";
+            for (size_t i = 0; i < target_logprobs.size(); ++i) { if (i) meta << ','; meta << target_logprobs[i]; }
+            meta << "],\"total_log_likelihood\":" << total << ",\"mean_nll\":" << (-total / targets.size());
+        }
+        meta << "}\n";
         llama_batch_ext_free(batch); llama_free(ctx); llama_model_free(model); llama_backend_free();
         return 0;
     } catch (const std::exception & e) { std::cerr << "HARNESS_ERROR: " << e.what() << '\n'; return 2; }
