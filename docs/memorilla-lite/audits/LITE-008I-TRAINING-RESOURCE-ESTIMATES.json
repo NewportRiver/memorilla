@@ -1,0 +1,34 @@
+{
+  "schema": "LITE-008I-training-resource-estimates-v1",
+  "ceiling_bytes": 268435456,
+  "official_model_parameter_reference": 135000000,
+  "frozen_weights": {
+    "float32_bytes": 540000000,
+    "float16_bfloat16_bytes": 270000000,
+    "observed_safetensors_bytes": 269060552,
+    "interpretation": "the serialized bfloat16 artifact alone exceeds the 256 MiB ceiling"
+  },
+  "memory_module_default": {
+    "embedding_dim": 384,
+    "output_dim": 576,
+    "num_memories": 16,
+    "cross_attention_layers": 2,
+    "parameters": 4370496,
+    "bfloat16_bytes": 8740992,
+    "float32_bytes": 17481984
+  },
+  "activation_estimates": {
+    "hidden_state_lower_bound_bfloat16_bytes_for_30x128x576": 4423680,
+    "vocabulary_logits_bfloat16_bytes_for_128x49152": 12582912,
+    "input_embedding_gradient_one_576_vector_bfloat16_bytes": 1152,
+    "note": "These exclude attention workspaces, saved intermediates, allocator fragmentation, Python/runtime overhead, and backward graphs; they are lower bounds, not peak measurements"
+  },
+  "optimizer_state": {
+    "decoder": "zero by design because decoder is frozen",
+    "memory_adamw_bfloat16_parameter_plus_two_state_lower_bound_bytes": 26222976,
+    "note": "Actual optimizer dtype and framework allocations may differ"
+  },
+  "runtime_overhead": "not safely reducible to a single static number; must be measured under an approved larger envelope",
+  "peak_process_memory": "not measured for full-model backward because preflight blocked execution",
+  "conclusion": "full-model differentiable diagnostic is not authorized under 268435456 bytes"
+}

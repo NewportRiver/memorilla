@@ -1,0 +1,18 @@
+{
+  "synthetic_only": true,
+  "decoder_parameter_count": 104,
+  "decoder_parameters_frozen": true,
+  "decoder_parameter_grads_absent": true,
+  "external_embedding_gradient_finite": true,
+  "answer_only_position": 2,
+  "ignored_positions": [
+    0,
+    1
+  ],
+  "analytic_gradient": -0.7706963419914246,
+  "numerical_gradient": -0.7707476019859314,
+  "relative_error": 6.651127261663622e-05,
+  "loss_before": 1.4727082252502441,
+  "loss_after": 0.11250591278076172,
+  "embedding_optimization_reduced_loss": true
+}
