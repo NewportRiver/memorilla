@@ -1,0 +1,19 @@
+{
+  "schema":"LITE-008N-gradient-usefulness-v1",
+  "status":"completed_bounded_examples",
+  "examples":3,
+  "steps":[0.0625,0.125,0.25],
+  "directions":["negative_fp32","negative_bf16","positive_bf16","scale_matched_random"],
+  "nll_and_preference_margins_recorded":true,
+  "negative_fp32_reduced_correct_nll_all_examples":true,
+  "negative_bf16_reduced_correct_nll_all_examples":true,
+  "positive_bf16_increased_correct_nll_all_examples":true,
+  "no_update_control":true,
+  "no_update_nlls": [{"correct":1.5655006170,"alternate":7.6981334686},{"correct":5.0923938751,"alternate":6.0646924973},{"correct":4.5427522659,"alternate":6.6110410690}],
+  "random_direction_control":true,
+  "full_raw_results":"$HOME/.cache/memorilla-lite/LITE-008N/full-qualification-results.json",
+  "generalized_training":false,
+  "counterfactual_oracle_requalification":false,
+  "interpretation":"bounded isolated descent supports practical usefulness of both full-model gradients; it is not bridge or associative-memory training evidence",
+  "no_update_nlls_are_measured":true
+}

@@ -1,0 +1,22 @@
+{
+  "schema":"LITE-008N-full-model-reference-v1",
+  "status":"qualified",
+  "layers":30,
+  "stored_weight_dtype":"bfloat16",
+  "computation_dtype":"float32",
+  "loss_external":1.5655006170,
+  "loss_token_embedding":1.5655006170,
+  "ordinary_external_loss_abs_error":0.0,
+  "ordinary_external_logit_max_abs_error":0.0,
+  "external_gradient_norm":22.4311141968,
+  "gradient_finite":true,
+  "forward_count":60,
+  "backward_vjp_count":30,
+  "decoder_parameters_frozen":true,
+  "rss_ceiling_bytes":1073741824,
+  "peak_rss_bytes":746901504,
+  "peak_pss_bytes":738988032,
+  "minimum_available_bytes":1342730240,
+  "wall_seconds":10.4098356639,
+  "protected_final_holdout_accessed":false
+}

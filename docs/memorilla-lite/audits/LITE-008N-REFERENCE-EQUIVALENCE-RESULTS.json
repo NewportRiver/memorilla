@@ -1,0 +1,14 @@
+{
+  "schema":"LITE-008N-reference-equivalence-v1",
+  "status":"passed",
+  "reduced_configuration_layers":2,
+  "comparison":"conventional_FP32_two_layer_composition_vs_manual_layerwise_VJP",
+  "loss_absolute_error":0.0,
+  "logit_max_absolute_error":0.0,
+  "external_gradient_max_absolute_error":0.0,
+  "gradient_cosine":0.9999998808,
+  "gradient_norm_ratio":1.0,
+  "tolerance_contract":{"loss_absolute_error_max":1e-6,"logit_max_absolute_error_max":1e-5,"gradient_cosine_min":0.99,"gradient_norm_ratio_range":[0.9,1.1]},
+  "all_reduced_tolerances_passed":true,
+  "method":"sequential_FP32_layer_materialization_plus_manual_VJP"
+}

@@ -1,0 +1,10 @@
+{
+  "schema":"LITE-008N-transformer-component-v1",
+  "status":"completed",
+  "official_decoder_layers":30,
+  "components_included":["RMSNorm","q_projection","k_projection","v_projection","grouped_query_attention","rotary_position_embeddings","attention_output_projection","residual_connections","gated_feed_forward","final_RMSNorm","tied_vocabulary_projection"],
+  "reduced_two_layer":{"loss_abs_error":0.0,"logit_max_abs_error":0.0,"gradient_max_abs_error":0.0,"gradient_cosine":0.9999998808,"gradient_norm_ratio":1.0},
+  "complete_reference":{"layers_executed":30,"external_gradient_norm":22.4311141968,"gradient_finite":true,"decoder_parameters_frozen":true},
+  "external_position_precedes_query":true,
+  "protected_final_holdout_accessed":false
+}

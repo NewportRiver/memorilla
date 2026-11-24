@@ -1,0 +1,10 @@
+{
+  "schema":"LITE-008N-resource-telemetry-v1",
+  "full_layerwise_reference":{"peak_rss_bytes":746901504,"peak_pss_bytes":738988032,"minimum_available_bytes":1342730240,"wall_seconds":10.4098356639,"forward_count":60,"backward_vjp_count":30},
+  "full_qualification_with_usefulness":{"peak_rss_bytes":745340928,"peak_pss_bytes":736741376,"minimum_available_bytes":1150545920,"wall_seconds":235.072221133,"finite_difference_and_usefulness_completed":true},
+  "phase_sampling":{"after_model_load":346533888,"after_embedding_fp32":347222016,"after_forward":557424640,"forward_peak_rss":571572224,"after_backward":700932096,"backward_peak_rss":743833600,"wall_seconds":2.4426788670},
+  "reduced_equivalence":{"peak_rss_bytes":696393728,"peak_pss_bytes":688616448,"minimum_available_bytes":1051303936,"wall_seconds":11.344402695},
+  "limits":{"training_rss_ceiling_bytes":1073741824,"inference_rss_ceiling_bytes":268435456,"minimum_available_bytes":536870912,"threads":1,"subprocesses":1,"max_sequence_length":32,"timeout_seconds":300,"cumulative_execution_minutes":30},
+  "termination_reasons":[],
+  "persistent_processes":false
+}

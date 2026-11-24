@@ -1,0 +1,13 @@
+{
+  "schema":"LITE-008N-bf16-gradient-comparison-v1",
+  "status":"partial_threshold_failure",
+  "same_inputs_positions_objective":true,
+  "gradient_cosine":0.9952204227,
+  "coordinate_sign_agreement":0.9704861045,
+  "norm_ratio_bf16_over_fp32":1.0040143728,
+  "relative_l2_error":0.0980508253,
+  "forward_loss_difference":0.1153918505,
+  "retained_thresholds":{"gradient_cosine_min":0.99,"coordinate_sign_agreement_min":0.98,"norm_ratio_range":[0.9,1.1]},
+  "threshold_results":{"gradient_cosine":true,"coordinate_sign_agreement":false,"norm_ratio":true},
+  "interpretation":"full BF16 gradient is directionally close but does not meet every retained criterion; no retrospective threshold change"
+}
