@@ -1,0 +1,288 @@
+{
+  "schema": "LITE-008P-fresh-counterfactual-v1",
+  "seed": 20261125,
+  "values": [
+    "amber",
+    "violet",
+    "copper",
+    "silver",
+    "cedar",
+    "coral",
+    "linen",
+    "marble"
+  ],
+  "rows": [
+    {
+      "case_id": "case_00",
+      "partition": "calibration",
+      "entity": "feldspar_5335815812",
+      "query": "Which stored value belongs to record feldspar_5335815812?",
+      "answer_a": "marble",
+      "answer_b": "cedar",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record feldspar_5335815812 stores value marble.",
+      "counterfactual_evidence": "Record feldspar_5335815812 stores value cedar.",
+      "unrelated_evidence": "Record feldspar_9748786801 stores value marble."
+    },
+    {
+      "case_id": "case_01",
+      "partition": "calibration",
+      "entity": "feldspar_2703867149",
+      "query": "Which stored value belongs to record feldspar_2703867149?",
+      "answer_a": "marble",
+      "answer_b": "linen",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record feldspar_2703867149 stores value marble.",
+      "counterfactual_evidence": "Record feldspar_2703867149 stores value linen.",
+      "unrelated_evidence": "Record feldspar_5187908837 stores value marble."
+    },
+    {
+      "case_id": "case_02",
+      "partition": "calibration",
+      "entity": "feldspar_7977074686",
+      "query": "Which stored value belongs to record feldspar_7977074686?",
+      "answer_a": "amber",
+      "answer_b": "linen",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record feldspar_7977074686 stores value amber.",
+      "counterfactual_evidence": "Record feldspar_7977074686 stores value linen.",
+      "unrelated_evidence": "Record feldspar_8544299737 stores value amber."
+    },
+    {
+      "case_id": "case_03",
+      "partition": "calibration",
+      "entity": "feldspar_1186595216",
+      "query": "Which stored value belongs to record feldspar_1186595216?",
+      "answer_a": "cedar",
+      "answer_b": "coral",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record feldspar_1186595216 stores value cedar.",
+      "counterfactual_evidence": "Record feldspar_1186595216 stores value coral.",
+      "unrelated_evidence": "Record feldspar_1354142412 stores value cedar."
+    },
+    {
+      "case_id": "case_04",
+      "partition": "calibration",
+      "entity": "feldspar_6483125167",
+      "query": "Which stored value belongs to record feldspar_6483125167?",
+      "answer_a": "coral",
+      "answer_b": "linen",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record feldspar_6483125167 stores value coral.",
+      "counterfactual_evidence": "Record feldspar_6483125167 stores value linen.",
+      "unrelated_evidence": "Record feldspar_6333405207 stores value coral."
+    },
+    {
+      "case_id": "case_05",
+      "partition": "calibration",
+      "entity": "feldspar_2405553264",
+      "query": "Which stored value belongs to record feldspar_2405553264?",
+      "answer_a": "coral",
+      "answer_b": "marble",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record feldspar_2405553264 stores value coral.",
+      "counterfactual_evidence": "Record feldspar_2405553264 stores value marble.",
+      "unrelated_evidence": "Record feldspar_7187923719 stores value coral."
+    },
+    {
+      "case_id": "case_06",
+      "partition": "calibration",
+      "entity": "feldspar_2987645257",
+      "query": "Which stored value belongs to record feldspar_2987645257?",
+      "answer_a": "marble",
+      "answer_b": "violet",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record feldspar_2987645257 stores value marble.",
+      "counterfactual_evidence": "Record feldspar_2987645257 stores value violet.",
+      "unrelated_evidence": "Record feldspar_6270783425 stores value marble."
+    },
+    {
+      "case_id": "case_07",
+      "partition": "calibration",
+      "entity": "feldspar_2883586743",
+      "query": "Which stored value belongs to record feldspar_2883586743?",
+      "answer_a": "marble",
+      "answer_b": "amber",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record feldspar_2883586743 stores value marble.",
+      "counterfactual_evidence": "Record feldspar_2883586743 stores value amber.",
+      "unrelated_evidence": "Record feldspar_5236688156 stores value marble."
+    },
+    {
+      "case_id": "case_08",
+      "partition": "oracle",
+      "entity": "feldspar_6598566453",
+      "query": "Which stored value belongs to record feldspar_6598566453?",
+      "answer_a": "violet",
+      "answer_b": "amber",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record feldspar_6598566453 stores value violet.",
+      "counterfactual_evidence": "Record feldspar_6598566453 stores value amber.",
+      "unrelated_evidence": "Record feldspar_8188999263 stores value violet."
+    },
+    {
+      "case_id": "case_09",
+      "partition": "oracle",
+      "entity": "feldspar_3314635447",
+      "query": "Which stored value belongs to record feldspar_3314635447?",
+      "answer_a": "coral",
+      "answer_b": "cedar",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record feldspar_3314635447 stores value coral.",
+      "counterfactual_evidence": "Record feldspar_3314635447 stores value cedar.",
+      "unrelated_evidence": "Record feldspar_2897781094 stores value coral."
+    },
+    {
+      "case_id": "case_10",
+      "partition": "oracle",
+      "entity": "feldspar_9245901158",
+      "query": "Which stored value belongs to record feldspar_9245901158?",
+      "answer_a": "amber",
+      "answer_b": "coral",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record feldspar_9245901158 stores value amber.",
+      "counterfactual_evidence": "Record feldspar_9245901158 stores value coral.",
+      "unrelated_evidence": "Record feldspar_1082416206 stores value amber."
+    },
+    {
+      "case_id": "case_11",
+      "partition": "oracle",
+      "entity": "feldspar_2344619202",
+      "query": "Which stored value belongs to record feldspar_2344619202?",
+      "answer_a": "cedar",
+      "answer_b": "linen",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record feldspar_2344619202 stores value cedar.",
+      "counterfactual_evidence": "Record feldspar_2344619202 stores value linen.",
+      "unrelated_evidence": "Record feldspar_6868282811 stores value cedar."
+    },
+    {
+      "case_id": "case_12",
+      "partition": "oracle",
+      "entity": "feldspar_8765401881",
+      "query": "Which stored value belongs to record feldspar_8765401881?",
+      "answer_a": "linen",
+      "answer_b": "marble",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record feldspar_8765401881 stores value linen.",
+      "counterfactual_evidence": "Record feldspar_8765401881 stores value marble.",
+      "unrelated_evidence": "Record feldspar_1297290216 stores value linen."
+    },
+    {
+      "case_id": "case_13",
+      "partition": "oracle",
+      "entity": "feldspar_3969159905",
+      "query": "Which stored value belongs to record feldspar_3969159905?",
+      "answer_a": "coral",
+      "answer_b": "silver",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record feldspar_3969159905 stores value coral.",
+      "counterfactual_evidence": "Record feldspar_3969159905 stores value silver.",
+      "unrelated_evidence": "Record feldspar_7232049346 stores value coral."
+    },
+    {
+      "case_id": "case_14",
+      "partition": "oracle",
+      "entity": "feldspar_3619728104",
+      "query": "Which stored value belongs to record feldspar_3619728104?",
+      "answer_a": "amber",
+      "answer_b": "linen",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record feldspar_3619728104 stores value amber.",
+      "counterfactual_evidence": "Record feldspar_3619728104 stores value linen.",
+      "unrelated_evidence": "Record feldspar_5221527757 stores value amber."
+    },
+    {
+      "case_id": "case_15",
+      "partition": "oracle",
+      "entity": "feldspar_4053156335",
+      "query": "Which stored value belongs to record feldspar_4053156335?",
+      "answer_a": "marble",
+      "answer_b": "copper",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record feldspar_4053156335 stores value marble.",
+      "counterfactual_evidence": "Record feldspar_4053156335 stores value copper.",
+      "unrelated_evidence": "Record feldspar_7811244492 stores value marble."
+    }
+  ],
+  "calibration_case_ids": [
+    "case_00",
+    "case_01",
+    "case_02",
+    "case_03",
+    "case_04",
+    "case_05",
+    "case_06",
+    "case_07"
+  ],
+  "oracle_case_ids": [
+    "case_08",
+    "case_09",
+    "case_10",
+    "case_11",
+    "case_12",
+    "case_13",
+    "case_14",
+    "case_15"
+  ],
+  "entity_disjoint": true,
+  "primary_token_lengths": {
+    "amber": 1,
+    "violet": 1,
+    "copper": 1,
+    "silver": 1,
+    "cedar": 1,
+    "coral": 1,
+    "linen": 1,
+    "marble": 1
+  },
+  "protected_final_holdout_accessed": false
+}

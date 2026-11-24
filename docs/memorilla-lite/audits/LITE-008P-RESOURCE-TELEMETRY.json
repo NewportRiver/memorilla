@@ -1,0 +1,40 @@
+{
+  "schema": "LITE-008P-resource-telemetry-v1",
+  "limits": {
+    "training_rss": 1073741824,
+    "inference_rss": 268435456,
+    "available_reserve": 536870912,
+    "subprocess_seconds": 300,
+    "cumulative_minutes": 30,
+    "max_updates": 256
+  },
+  "measured": {
+    "calibration_64": {
+      "wall_seconds": 264.78,
+      "peak_rss": 744722432,
+      "peak_pss": 739073024,
+      "minimum_available": 1160794112
+    },
+    "fresh_08_09_64": {
+      "wall_seconds": 233.64,
+      "peak_rss": 744484864,
+      "peak_pss": 736552960,
+      "minimum_available": 1034342400
+    },
+    "fresh_10_11_64": {
+      "wall_seconds": 253.26,
+      "peak_rss": 742981632,
+      "peak_pss": 737355776,
+      "minimum_available": 1196638208
+    },
+    "textual_prerequisite_seconds": 76.62,
+    "multislot_controls_seconds": 6.63
+  },
+  "not_sampled": {
+    "low_rate_and_capacity_processes": "resource wrapper not used; no values fabricated",
+    "q4_inference_rss": "unavailable due first wrapper telemetry gap and terminated pipe-hang rerun"
+  },
+  "optimizer_updates_completed": 224,
+  "resource_violations": [],
+  "persistent_processes": false
+}

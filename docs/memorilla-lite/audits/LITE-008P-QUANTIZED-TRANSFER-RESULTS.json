@@ -1,0 +1,193 @@
+{
+  "schema": "LITE-008P-quantized-transfer-v1",
+  "status": "completed_separate_diagnostic",
+  "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+  "results": [
+    {
+      "mode": "embd",
+      "n_embd": 576,
+      "n_vocab": 49152,
+      "input_tokens": 26,
+      "ctx": 256,
+      "generated": [],
+      "target_tokens": [
+        33871,
+        35115
+      ],
+      "target_logprobs": [
+        -16.2069,
+        -11.6581
+      ],
+      "total_log_likelihood": -27.865,
+      "mean_nll": 13.9325,
+      "condition": "case_08-A",
+      "exit": 0,
+      "seconds": 0.6770725000533275,
+      "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+      "stderr": "   6.37 MiB\nsched_reserve: graph: nodes = 939, splits = 1, input objects = 4, input tensors = 9\nsched_reserve: reserve took 8.56 ms, sched copies = 1\nset_n_threads: n_threads = 1, n_threads_batch = 1\n~llama_context:        CPU compute buffer size is   6.3684 MiB, matches expectation of   6.3684 MiB\n"
+    },
+    {
+      "mode": "embd",
+      "n_embd": 576,
+      "n_vocab": 49152,
+      "input_tokens": 26,
+      "ctx": 256,
+      "generated": [],
+      "target_tokens": [
+        33871,
+        35115
+      ],
+      "target_logprobs": [
+        -16.5303,
+        -11.4638
+      ],
+      "total_log_likelihood": -27.9942,
+      "mean_nll": 13.9971,
+      "condition": "case_08-B",
+      "exit": 0,
+      "seconds": 0.5069326560478657,
+      "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+      "stderr": "   6.37 MiB\nsched_reserve: graph: nodes = 939, splits = 1, input objects = 4, input tensors = 9\nsched_reserve: reserve took 6.89 ms, sched copies = 1\nset_n_threads: n_threads = 1, n_threads_batch = 1\n~llama_context:        CPU compute buffer size is   6.3684 MiB, matches expectation of   6.3684 MiB\n"
+    },
+    {
+      "mode": "embd",
+      "n_embd": 576,
+      "n_vocab": 49152,
+      "input_tokens": 26,
+      "ctx": 256,
+      "generated": [],
+      "target_tokens": [
+        12536,
+        33952
+      ],
+      "target_logprobs": [
+        -20.8271,
+        -15.0309
+      ],
+      "total_log_likelihood": -35.858,
+      "mean_nll": 17.929,
+      "condition": "case_09-A",
+      "exit": 0,
+      "seconds": 0.5232991399825551,
+      "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+      "stderr": "   6.37 MiB\nsched_reserve: graph: nodes = 939, splits = 1, input objects = 4, input tensors = 9\nsched_reserve: reserve took 6.97 ms, sched copies = 1\nset_n_threads: n_threads = 1, n_threads_batch = 1\n~llama_context:        CPU compute buffer size is   6.3684 MiB, matches expectation of   6.3684 MiB\n"
+    },
+    {
+      "mode": "embd",
+      "n_embd": 576,
+      "n_vocab": 49152,
+      "input_tokens": 26,
+      "ctx": 256,
+      "generated": [],
+      "target_tokens": [
+        12536,
+        33952
+      ],
+      "target_logprobs": [
+        -10.5211,
+        -16.6729
+      ],
+      "total_log_likelihood": -27.194,
+      "mean_nll": 13.597,
+      "condition": "case_09-B",
+      "exit": 0,
+      "seconds": 0.5070198830217123,
+      "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+      "stderr": "   6.37 MiB\nsched_reserve: graph: nodes = 939, splits = 1, input objects = 4, input tensors = 9\nsched_reserve: reserve took 6.48 ms, sched copies = 1\nset_n_threads: n_threads = 1, n_threads_batch = 1\n~llama_context:        CPU compute buffer size is   6.3684 MiB, matches expectation of   6.3684 MiB\n"
+    },
+    {
+      "mode": "embd",
+      "n_embd": 576,
+      "n_vocab": 49152,
+      "input_tokens": 26,
+      "ctx": 256,
+      "generated": [],
+      "target_tokens": [
+        35115,
+        12536
+      ],
+      "target_logprobs": [
+        -17.3961,
+        -9.79606
+      ],
+      "total_log_likelihood": -27.1922,
+      "mean_nll": 13.5961,
+      "condition": "case_10-A",
+      "exit": 0,
+      "seconds": 0.49957855499815196,
+      "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+      "stderr": "   6.37 MiB\nsched_reserve: graph: nodes = 939, splits = 1, input objects = 4, input tensors = 9\nsched_reserve: reserve took 6.70 ms, sched copies = 1\nset_n_threads: n_threads = 1, n_threads_batch = 1\n~llama_context:        CPU compute buffer size is   6.3684 MiB, matches expectation of   6.3684 MiB\n"
+    },
+    {
+      "mode": "embd",
+      "n_embd": 576,
+      "n_vocab": 49152,
+      "input_tokens": 26,
+      "ctx": 256,
+      "generated": [],
+      "target_tokens": [
+        35115,
+        12536
+      ],
+      "target_logprobs": [
+        -20.519,
+        -10.6143
+      ],
+      "total_log_likelihood": -31.1332,
+      "mean_nll": 15.5666,
+      "condition": "case_10-B",
+      "exit": 0,
+      "seconds": 0.5080186720006168,
+      "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+      "stderr": "   6.37 MiB\nsched_reserve: graph: nodes = 939, splits = 1, input objects = 4, input tensors = 9\nsched_reserve: reserve took 6.92 ms, sched copies = 1\nset_n_threads: n_threads = 1, n_threads_batch = 1\n~llama_context:        CPU compute buffer size is   6.3684 MiB, matches expectation of   6.3684 MiB\n"
+    },
+    {
+      "mode": "embd",
+      "n_embd": 576,
+      "n_vocab": 49152,
+      "input_tokens": 26,
+      "ctx": 256,
+      "generated": [],
+      "target_tokens": [
+        33952,
+        28522
+      ],
+      "target_logprobs": [
+        -13.6489,
+        -12.9818
+      ],
+      "total_log_likelihood": -26.6307,
+      "mean_nll": 13.3153,
+      "condition": "case_11-A",
+      "exit": 0,
+      "seconds": 0.5015495310071856,
+      "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+      "stderr": "   6.37 MiB\nsched_reserve: graph: nodes = 939, splits = 1, input objects = 4, input tensors = 9\nsched_reserve: reserve took 6.47 ms, sched copies = 1\nset_n_threads: n_threads = 1, n_threads_batch = 1\n~llama_context:        CPU compute buffer size is   6.3684 MiB, matches expectation of   6.3684 MiB\n"
+    },
+    {
+      "mode": "embd",
+      "n_embd": 576,
+      "n_vocab": 49152,
+      "input_tokens": 26,
+      "ctx": 256,
+      "generated": [],
+      "target_tokens": [
+        33952,
+        28522
+      ],
+      "target_logprobs": [
+        -15.9019,
+        -10.4418
+      ],
+      "total_log_likelihood": -26.3437,
+      "mean_nll": 13.1719,
+      "condition": "case_11-B",
+      "exit": 0,
+      "seconds": 0.5009018360287882,
+      "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf",
+      "stderr": "   6.37 MiB\nsched_reserve: graph: nodes = 939, splits = 1, input objects = 4, input tensors = 9\nsched_reserve: reserve took 6.97 ms, sched copies = 1\nset_n_threads: n_threads = 1, n_threads_batch = 1\n~llama_context:        CPU compute buffer size is   6.3684 MiB, matches expectation of   6.3684 MiB\n"
+    }
+  ],
+  "interpretation": "Q4 interface execution completed, but FP32 preference directions did not transfer consistently; no quantized semantic-memory qualification",
+  "inference_rss": "unavailable; first successful wrapper did not sample it and telemetry rerun was terminated after a pipe-induced false hang"
+}

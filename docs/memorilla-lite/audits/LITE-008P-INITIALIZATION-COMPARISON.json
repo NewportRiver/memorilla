@@ -1,0 +1,304 @@
+{
+  "schema": "LITE-008P-initialization-comparison-v1",
+  "fresh_oracle_controls": [
+    {
+      "case_08": {
+        "initial_eos": {
+          "margin": 1.849588394165039,
+          "nll_a": 11.07135009765625,
+          "nll_b": 12.920938491821289,
+          "greedy_id": 378,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "zero": {
+          "margin": 1.2599239349365234,
+          "nll_a": 10.860843658447266,
+          "nll_b": 12.120767593383789,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "scale_matched_random": {
+          "margin": 0.10422420501708984,
+          "nll_a": 10.123311996459961,
+          "nll_b": 10.22753620147705,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "genuine_answer_a": {
+          "margin": 1.74432373046875,
+          "nll_a": 8.760318756103516,
+          "nll_b": 10.504642486572266,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "genuine_answer_b": {
+          "margin": -0.15528583526611328,
+          "nll_a": 10.511436462402344,
+          "nll_b": 10.35615062713623,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "optimized_A": {
+          "margin": 2.689526081085205,
+          "nll_a": 5.790502071380615,
+          "nll_b": 8.48002815246582,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "optimized_B": {
+          "margin": -6.315213203430176,
+          "nll_a": 14.455309867858887,
+          "nll_b": 8.140096664428711,
+          "greedy_id": 330,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        }
+      }
+    },
+    {
+      "case_09": {
+        "initial_eos": {
+          "margin": -1.2312564849853516,
+          "nll_a": 13.749279022216797,
+          "nll_b": 12.518022537231445,
+          "greedy_id": 378,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "zero": {
+          "margin": -1.2381219863891602,
+          "nll_a": 13.902458190917969,
+          "nll_b": 12.664336204528809,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "scale_matched_random": {
+          "margin": -1.480107307434082,
+          "nll_a": 13.726367950439453,
+          "nll_b": 12.246260643005371,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "genuine_answer_a": {
+          "margin": -0.016793251037597656,
+          "nll_a": 11.575640678405762,
+          "nll_b": 11.558847427368164,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "genuine_answer_b": {
+          "margin": -1.7339258193969727,
+          "nll_a": 12.800882339477539,
+          "nll_b": 11.066956520080566,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "optimized_A": {
+          "margin": 1.750417709350586,
+          "nll_a": 8.711701393127441,
+          "nll_b": 10.462119102478027,
+          "greedy_id": 253,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "optimized_B": {
+          "margin": -2.0615758895874023,
+          "nll_a": 16.053789138793945,
+          "nll_b": 13.992213249206543,
+          "greedy_id": 198,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        }
+      }
+    },
+    {
+      "case_10": {
+        "initial_eos": {
+          "margin": 1.0075740814208984,
+          "nll_a": 12.793539047241211,
+          "nll_b": 13.80111312866211,
+          "greedy_id": 378,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "zero": {
+          "margin": 1.855422019958496,
+          "nll_a": 12.035579681396484,
+          "nll_b": 13.89100170135498,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "scale_matched_random": {
+          "margin": 1.7045783996582031,
+          "nll_a": 11.744597434997559,
+          "nll_b": 13.449175834655762,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "genuine_answer_a": {
+          "margin": 3.3751754760742188,
+          "nll_a": 10.32568645477295,
+          "nll_b": 13.700861930847168,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "genuine_answer_b": {
+          "margin": -0.2536945343017578,
+          "nll_a": 11.799442291259766,
+          "nll_b": 11.545747756958008,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "optimized_A": {
+          "margin": 8.201416015625,
+          "nll_a": 9.271102905273438,
+          "nll_b": 17.472518920898438,
+          "greedy_id": 330,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "optimized_B": {
+          "margin": -3.398601531982422,
+          "nll_a": 9.37657642364502,
+          "nll_b": 5.977974891662598,
+          "greedy_id": 378,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        }
+      }
+    },
+    {
+      "case_11": {
+        "initial_eos": {
+          "margin": -0.37213134765625,
+          "nll_a": 12.623520851135254,
+          "nll_b": 12.251389503479004,
+          "greedy_id": 378,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "zero": {
+          "margin": -0.2378988265991211,
+          "nll_a": 12.798896789550781,
+          "nll_b": 12.56099796295166,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "scale_matched_random": {
+          "margin": 0.5611991882324219,
+          "nll_a": 12.04275894165039,
+          "nll_b": 12.603958129882812,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "genuine_answer_a": {
+          "margin": 0.7039051055908203,
+          "nll_a": 11.092266082763672,
+          "nll_b": 11.796171188354492,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "genuine_answer_b": {
+          "margin": -1.7844734191894531,
+          "nll_a": 12.115571975708008,
+          "nll_b": 10.331098556518555,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "optimized_A": {
+          "margin": 2.5138397216796875,
+          "nll_a": 7.9868268966674805,
+          "nll_b": 10.500666618347168,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        },
+        "optimized_B": {
+          "margin": -5.180809020996094,
+          "nll_a": 10.901300430297852,
+          "nll_b": 5.720491409301758,
+          "greedy_id": 216,
+          "forwards": 1,
+          "layers": 30,
+          "recomputations": 0,
+          "vjps": 0
+        }
+      }
+    }
+  ],
+  "primary_initialization": "EOS embedding",
+  "answer_embedding_control": "measured diagnostic only; not counted as independent learning",
+  "random_control": "scale-matched random forward-only controls"
+}

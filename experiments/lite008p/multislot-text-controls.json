@@ -1,0 +1,17 @@
+{
+  "schema": "LITE-008P-multislot-text-controls-v1",
+  "multislot_gradient_norms": [
+    3.936006784439087,
+    2.7742340564727783
+  ],
+  "finite_difference_directional_derivative": 0.2567736431956291,
+  "analytic_directional_derivative": 0.2568781077861786,
+  "finite_difference_relative_error": 0.00040666988498850096,
+  "text_exact_embedding_max_logit_abs_diff": 0.5000190734863281,
+  "text_candidate_margin_standard": 7.84375,
+  "text_candidate_margin_injected": 7.823150634765625,
+  "slot_count": 2,
+  "wall_seconds": 6.632054882997181,
+  "decoder_parameters_frozen": true,
+  "protected_final_holdout_accessed": false
+}

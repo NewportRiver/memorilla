@@ -1,0 +1,38 @@
+{
+  "schema": "LITE-008P-compressed-text-controls-v1",
+  "case_id": "case_00",
+  "evidence_token_count": 19,
+  "results": {
+    "1": {
+      "margin": 3.112668037414551,
+      "nll_a": 10.444092750549316,
+      "nll_b": 13.556760787963867,
+      "greedy_id": 216,
+      "forwards": 1,
+      "layers": 30,
+      "recomputations": 0,
+      "vjps": 0
+    },
+    "2": {
+      "margin": 3.5553035736083984,
+      "nll_a": 10.242181777954102,
+      "nll_b": 13.7974853515625,
+      "greedy_id": 216,
+      "forwards": 1,
+      "layers": 30,
+      "recomputations": 0,
+      "vjps": 0
+    },
+    "4": {
+      "margin": 2.909423828125,
+      "nll_a": 11.786495208740234,
+      "nll_b": 14.695919036865234,
+      "greedy_id": 216,
+      "forwards": 1,
+      "layers": 30,
+      "recomputations": 0,
+      "vjps": 0
+    }
+  },
+  "interpretation": "compressed representations are diagnostics, not independent learned memory"
+}
