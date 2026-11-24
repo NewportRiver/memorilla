@@ -1,0 +1,385 @@
+{
+  "schema": "LITE-008O-counterfactual-oracle-v1",
+  "seed": 20261124,
+  "values": [
+    "amber",
+    "violet",
+    "copper",
+    "silver",
+    "cedar",
+    "coral",
+    "linen",
+    "marble"
+  ],
+  "rows": [
+    {
+      "case_id": "case_00",
+      "partition": "calibration",
+      "entity": "quartz_6177527982",
+      "query": "Which stored value belongs to record quartz_6177527982?",
+      "answer_a": "amber",
+      "answer_b": "silver",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record quartz_6177527982 stores value amber.",
+      "counterfactual_evidence": "Record quartz_6177527982 stores value silver.",
+      "unrelated_evidence": "Record quartz_7657165202 stores value amber.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_01",
+      "partition": "calibration",
+      "entity": "quartz_3807876435",
+      "query": "Which stored value belongs to record quartz_3807876435?",
+      "answer_a": "cedar",
+      "answer_b": "violet",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record quartz_3807876435 stores value cedar.",
+      "counterfactual_evidence": "Record quartz_3807876435 stores value violet.",
+      "unrelated_evidence": "Record quartz_6352390816 stores value cedar.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_02",
+      "partition": "calibration",
+      "entity": "quartz_1386599459",
+      "query": "Which stored value belongs to record quartz_1386599459?",
+      "answer_a": "copper",
+      "answer_b": "coral",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record quartz_1386599459 stores value copper.",
+      "counterfactual_evidence": "Record quartz_1386599459 stores value coral.",
+      "unrelated_evidence": "Record quartz_1836773939 stores value copper.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_03",
+      "partition": "calibration",
+      "entity": "quartz_0311661132",
+      "query": "Which stored value belongs to record quartz_0311661132?",
+      "answer_a": "linen",
+      "answer_b": "silver",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record quartz_0311661132 stores value linen.",
+      "counterfactual_evidence": "Record quartz_0311661132 stores value silver.",
+      "unrelated_evidence": "Record quartz_3651391134 stores value linen.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_04",
+      "partition": "calibration",
+      "entity": "quartz_0014695724",
+      "query": "Which stored value belongs to record quartz_0014695724?",
+      "answer_a": "cedar",
+      "answer_b": "marble",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record quartz_0014695724 stores value cedar.",
+      "counterfactual_evidence": "Record quartz_0014695724 stores value marble.",
+      "unrelated_evidence": "Record quartz_0530601840 stores value cedar.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_05",
+      "partition": "calibration",
+      "entity": "quartz_4048022777",
+      "query": "Which stored value belongs to record quartz_4048022777?",
+      "answer_a": "amber",
+      "answer_b": "coral",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record quartz_4048022777 stores value amber.",
+      "counterfactual_evidence": "Record quartz_4048022777 stores value coral.",
+      "unrelated_evidence": "Record quartz_1705914365 stores value amber.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_06",
+      "partition": "calibration",
+      "entity": "quartz_6828088552",
+      "query": "Which stored value belongs to record quartz_6828088552?",
+      "answer_a": "linen",
+      "answer_b": "violet",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record quartz_6828088552 stores value linen.",
+      "counterfactual_evidence": "Record quartz_6828088552 stores value violet.",
+      "unrelated_evidence": "Record quartz_4622847708 stores value linen.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_07",
+      "partition": "calibration",
+      "entity": "quartz_3538602242",
+      "query": "Which stored value belongs to record quartz_3538602242?",
+      "answer_a": "copper",
+      "answer_b": "marble",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record quartz_3538602242 stores value copper.",
+      "counterfactual_evidence": "Record quartz_3538602242 stores value marble.",
+      "unrelated_evidence": "Record quartz_6146615969 stores value copper.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_08",
+      "partition": "oracle",
+      "entity": "quartz_4998183547",
+      "query": "Which stored value belongs to record quartz_4998183547?",
+      "answer_a": "amber",
+      "answer_b": "silver",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record quartz_4998183547 stores value amber.",
+      "counterfactual_evidence": "Record quartz_4998183547 stores value silver.",
+      "unrelated_evidence": "Record quartz_2096092613 stores value amber.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_09",
+      "partition": "oracle",
+      "entity": "quartz_7693860216",
+      "query": "Which stored value belongs to record quartz_7693860216?",
+      "answer_a": "cedar",
+      "answer_b": "violet",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record quartz_7693860216 stores value cedar.",
+      "counterfactual_evidence": "Record quartz_7693860216 stores value violet.",
+      "unrelated_evidence": "Record quartz_1981073066 stores value cedar.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_10",
+      "partition": "oracle",
+      "entity": "quartz_6898047967",
+      "query": "Which stored value belongs to record quartz_6898047967?",
+      "answer_a": "copper",
+      "answer_b": "coral",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record quartz_6898047967 stores value copper.",
+      "counterfactual_evidence": "Record quartz_6898047967 stores value coral.",
+      "unrelated_evidence": "Record quartz_8300381570 stores value copper.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_11",
+      "partition": "oracle",
+      "entity": "quartz_8486783987",
+      "query": "Which stored value belongs to record quartz_8486783987?",
+      "answer_a": "linen",
+      "answer_b": "silver",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record quartz_8486783987 stores value linen.",
+      "counterfactual_evidence": "Record quartz_8486783987 stores value silver.",
+      "unrelated_evidence": "Record quartz_0415628049 stores value linen.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_12",
+      "partition": "oracle",
+      "entity": "quartz_6565858081",
+      "query": "Which stored value belongs to record quartz_6565858081?",
+      "answer_a": "cedar",
+      "answer_b": "marble",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record quartz_6565858081 stores value cedar.",
+      "counterfactual_evidence": "Record quartz_6565858081 stores value marble.",
+      "unrelated_evidence": "Record quartz_8036028736 stores value cedar.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_13",
+      "partition": "oracle",
+      "entity": "quartz_3112695745",
+      "query": "Which stored value belongs to record quartz_3112695745?",
+      "answer_a": "amber",
+      "answer_b": "coral",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record quartz_3112695745 stores value amber.",
+      "counterfactual_evidence": "Record quartz_3112695745 stores value coral.",
+      "unrelated_evidence": "Record quartz_9512887804 stores value amber.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_14",
+      "partition": "oracle",
+      "entity": "quartz_2441887935",
+      "query": "Which stored value belongs to record quartz_2441887935?",
+      "answer_a": "linen",
+      "answer_b": "violet",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "relevant_evidence": "Record quartz_2441887935 stores value linen.",
+      "counterfactual_evidence": "Record quartz_2441887935 stores value violet.",
+      "unrelated_evidence": "Record quartz_5857742190 stores value linen.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    },
+    {
+      "case_id": "case_15",
+      "partition": "oracle",
+      "entity": "quartz_7036557493",
+      "query": "Which stored value belongs to record quartz_7036557493?",
+      "answer_a": "copper",
+      "answer_b": "marble",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "relevant_evidence": "Record quartz_7036557493 stores value copper.",
+      "counterfactual_evidence": "Record quartz_7036557493 stores value marble.",
+      "unrelated_evidence": "Record quartz_9303171904 stores value copper.",
+      "eligibility_rule": {
+        "query_only_abs_margin_max": 4.0,
+        "relevant_correct_margin_min": 1.0,
+        "counterfactual_reversal_margin_max": -1.0,
+        "unrelated_margin_min": -1.0
+      }
+    }
+  ],
+  "calibration_case_ids": [
+    "case_00",
+    "case_01",
+    "case_02",
+    "case_03",
+    "case_04",
+    "case_05",
+    "case_06",
+    "case_07"
+  ],
+  "oracle_case_ids": [
+    "case_08",
+    "case_09",
+    "case_10",
+    "case_11",
+    "case_12",
+    "case_13",
+    "case_14",
+    "case_15"
+  ],
+  "partitions_entity_disjoint": true,
+  "primary_candidate_token_lengths": {
+    "amber": 1,
+    "violet": 1,
+    "copper": 1,
+    "silver": 1,
+    "cedar": 1,
+    "coral": 1,
+    "linen": 1,
+    "marble": 1
+  },
+  "protected_final_holdout_accessed": false,
+  "manifest_sha256": "d3bf43df7fd780887e92346e291abe471ad340390d3ef42ca8d5007345c7626b"
+}

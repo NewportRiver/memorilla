@@ -1,0 +1,6 @@
+{
+  "schema": "LITE-008O-quantized-transfer-v1",
+  "status": "unexecuted_gated",
+  "reason": "FP32 oracle failed 4/4",
+  "q4_artifact_unchanged": true
+}

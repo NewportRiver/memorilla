@@ -1,0 +1,45 @@
+{
+  "schema": "LITE-008O-resource-telemetry-v1",
+  "preflight": {
+    "schema": "LITE-008O-preflight-v1",
+    "objective_seconds": 3.120986679045018,
+    "gradient_norm": 14.07987117767334,
+    "objective": 17.16707992553711,
+    "forward_margin": -4.0908203125,
+    "expected_updates": 96,
+    "resource_policy": "existing 1GiB RSS/536MiB reserve/300s subprocess/30min cumulative",
+    "protected_final_holdout_accessed": false
+  },
+  "textual_forward": {
+    "wall_seconds": 69.39741433603922,
+    "forward_count": 64
+  },
+  "contrastive": {
+    "wall_seconds": 272.1685377340182,
+    "updates": 64,
+    "peak_rss_bytes": 748822528,
+    "peak_pss_bytes": 739986432,
+    "minimum_available_bytes": 1067044864
+  },
+  "nll_only": {
+    "wall_seconds": 112.36015757801943,
+    "updates": 32,
+    "peak_rss_bytes": 746274816,
+    "peak_pss_bytes": 737593344,
+    "minimum_available_bytes": 1469153280
+  },
+  "final_forward_evaluation": {
+    "wall_seconds": 7.175025194999762,
+    "forward_count": 8
+  },
+  "limits": {
+    "rss_ceiling_bytes": 1073741824,
+    "available_reserve_bytes": 536870912,
+    "subprocess_timeout_seconds": 300,
+    "cumulative_minutes": 30,
+    "max_updates_authorized": 256
+  },
+  "total_optimizer_updates": 96,
+  "resource_violations": [],
+  "persistent_processes": false
+}

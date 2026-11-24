@@ -1,0 +1,10 @@
+{
+  "schema": "LITE-008O-preflight-v1",
+  "objective_seconds": 3.120986679045018,
+  "gradient_norm": 14.07987117767334,
+  "objective": 17.16707992553711,
+  "forward_margin": -4.0908203125,
+  "expected_updates": 96,
+  "resource_policy": "existing 1GiB RSS/536MiB reserve/300s subprocess/30min cumulative",
+  "protected_final_holdout_accessed": false
+}

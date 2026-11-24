@@ -1,0 +1,188 @@
+{
+  "schema": "LITE-008O-counterfactual-oracle-v1",
+  "status": "failed_primary_gate",
+  "required_successes": 4,
+  "successful_pairs": 0,
+  "pairs": [
+    {
+      "case_id": "case_08",
+      "initial_margin": -4.0908203125,
+      "final_margin_M_A": -0.516258716583252,
+      "final_margin_M_B": -3.0599842071533203,
+      "M_A_passes": false,
+      "M_B_passes": true,
+      "pair_passes": false,
+      "margin_change_M_A": 3.574561595916748,
+      "margin_change_M_B": 1.0308361053466797,
+      "greedy_rows": [
+        {
+          "case_id": "case_08",
+          "mode": "contrastive",
+          "target_direction": "A",
+          "a_token": " amber",
+          "b_token": " silver",
+          "greedy_next_token": " ",
+          "greedy_next_token_id": 216,
+          "answer_nll": {
+            "a": 8.051313400268555,
+            "b": 7.535054683685303
+          },
+          "margin_a_minus_b": -0.516258716583252,
+          "forward_count": 1,
+          "backward_vjps": 0
+        },
+        {
+          "case_id": "case_08",
+          "mode": "contrastive",
+          "target_direction": "B",
+          "a_token": " amber",
+          "b_token": " silver",
+          "greedy_next_token": " The",
+          "greedy_next_token_id": 378,
+          "answer_nll": {
+            "a": 10.849618911743164,
+            "b": 7.789634704589844
+          },
+          "margin_a_minus_b": -3.0599842071533203,
+          "forward_count": 1,
+          "backward_vjps": 0
+        }
+      ]
+    },
+    {
+      "case_id": "case_09",
+      "initial_margin": -1.6357145309448242,
+      "final_margin_M_A": -1.0176239013671875,
+      "final_margin_M_B": -3.082010269165039,
+      "M_A_passes": false,
+      "M_B_passes": true,
+      "pair_passes": false,
+      "margin_change_M_A": 0.6180906295776367,
+      "margin_change_M_B": -1.4462957382202148,
+      "greedy_rows": [
+        {
+          "case_id": "case_09",
+          "mode": "contrastive",
+          "target_direction": "A",
+          "a_token": " cedar",
+          "b_token": " violet",
+          "greedy_next_token": " ",
+          "greedy_next_token_id": 216,
+          "answer_nll": {
+            "a": 12.656886100769043,
+            "b": 11.639262199401855
+          },
+          "margin_a_minus_b": -1.0176239013671875,
+          "forward_count": 1,
+          "backward_vjps": 0
+        },
+        {
+          "case_id": "case_09",
+          "mode": "contrastive",
+          "target_direction": "B",
+          "a_token": " cedar",
+          "b_token": " violet",
+          "greedy_next_token": " ",
+          "greedy_next_token_id": 216,
+          "answer_nll": {
+            "a": 11.021636009216309,
+            "b": 7.9396257400512695
+          },
+          "margin_a_minus_b": -3.082010269165039,
+          "forward_count": 1,
+          "backward_vjps": 0
+        }
+      ]
+    },
+    {
+      "case_id": "case_10",
+      "initial_margin": 0.3558311462402344,
+      "final_margin_M_A": 1.827101707458496,
+      "final_margin_M_B": 0.6200284957885742,
+      "M_A_passes": true,
+      "M_B_passes": false,
+      "pair_passes": false,
+      "margin_change_M_A": 1.4712705612182617,
+      "margin_change_M_B": 0.26419734954833984,
+      "greedy_rows": [
+        {
+          "case_id": "case_10",
+          "mode": "contrastive",
+          "target_direction": "A",
+          "a_token": " copper",
+          "b_token": " coral",
+          "greedy_next_token": " ",
+          "greedy_next_token_id": 216,
+          "answer_nll": {
+            "a": 12.210814476013184,
+            "b": 14.03791618347168
+          },
+          "margin_a_minus_b": 1.827101707458496,
+          "forward_count": 1,
+          "backward_vjps": 0
+        },
+        {
+          "case_id": "case_10",
+          "mode": "contrastive",
+          "target_direction": "B",
+          "a_token": " copper",
+          "b_token": " coral",
+          "greedy_next_token": " ",
+          "greedy_next_token_id": 216,
+          "answer_nll": {
+            "a": 9.113250732421875,
+            "b": 9.73327922821045
+          },
+          "margin_a_minus_b": 0.6200284957885742,
+          "forward_count": 1,
+          "backward_vjps": 0
+        }
+      ]
+    },
+    {
+      "case_id": "case_11",
+      "initial_margin": -1.6870603561401367,
+      "final_margin_M_A": -0.40250587463378906,
+      "final_margin_M_B": -5.823603630065918,
+      "M_A_passes": false,
+      "M_B_passes": true,
+      "pair_passes": false,
+      "margin_change_M_A": 1.2845544815063477,
+      "margin_change_M_B": -4.136543273925781,
+      "greedy_rows": [
+        {
+          "case_id": "case_11",
+          "mode": "contrastive",
+          "target_direction": "A",
+          "a_token": " linen",
+          "b_token": " silver",
+          "greedy_next_token": " quartz",
+          "greedy_next_token_id": 24802,
+          "answer_nll": {
+            "a": 7.845921516418457,
+            "b": 7.443415641784668
+          },
+          "margin_a_minus_b": -0.40250587463378906,
+          "forward_count": 1,
+          "backward_vjps": 0
+        },
+        {
+          "case_id": "case_11",
+          "mode": "contrastive",
+          "target_direction": "B",
+          "a_token": " linen",
+          "b_token": " silver",
+          "greedy_next_token": " ",
+          "greedy_next_token_id": 216,
+          "answer_nll": {
+            "a": 11.355599403381348,
+            "b": 5.53199577331543
+          },
+          "margin_a_minus_b": -5.823603630065918,
+          "forward_count": 1,
+          "backward_vjps": 0
+        }
+      ]
+    }
+  ]
+}

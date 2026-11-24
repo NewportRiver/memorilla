@@ -1,0 +1,7 @@
+{
+  "schema": "LITE-008O-bf16-comparison-v1",
+  "status": "unexecuted_gated",
+  "reason": "FP32 oracle failed 4/4",
+  "historical_lite008n_coordinate_sign_failure_preserved": true,
+  "thresholds_changed": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "LITE-008O-forward-only-qualification-v1",
+  "status": "completed",
+  "textual_forward_count": 64,
+  "textual_backward_vjps": 0,
+  "final_embedding_forward_count": 8,
+  "final_embedding_backward_vjps": 0,
+  "separate_paths": true,
+  "decoder_parameters_frozen": true,
+  "protected_final_holdout_accessed": false
+}
