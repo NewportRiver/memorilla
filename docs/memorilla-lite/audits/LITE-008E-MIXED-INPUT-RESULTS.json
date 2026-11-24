@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "input_token_ids": [504, 3575, 282, 4649, 314],
+  "external_embedding_index": 1,
+  "external_position": 1,
+  "sequence_id": 0,
+  "context": 256,
+  "repetitions": 3,
+  "comparison": "all-token sequence versus token, external embedding, token, token sequential batches",
+  "logit_max_abs_error": 0.0,
+  "logit_rmse": 0.0,
+  "greedy_continuation_token_ids": [260, 3575, 282, 260],
+  "exit_statuses": [0, 0, 0],
+  "result": "external insertion preserved causal position and KV continuation"
+}

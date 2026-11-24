@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "contexts": [256, 512],
+  "slots": [1, 2, 4, 8],
+  "rss_ceiling_bytes": 268435456,
+  "measurements": [
+    {"slots":1,"context":256,"peak_rss_bytes":185417728,"exit":0},
+    {"slots":1,"context":512,"peak_rss_bytes":191336448,"exit":0},
+    {"slots":2,"context":256,"peak_rss_bytes":185974784,"exit":0},
+    {"slots":2,"context":512,"peak_rss_bytes":191873024,"exit":0},
+    {"slots":4,"context":256,"peak_rss_bytes":186019840,"exit":0},
+    {"slots":4,"context":512,"peak_rss_bytes":191938560,"exit":0},
+    {"slots":8,"context":256,"peak_rss_bytes":186019840,"exit":0},
+    {"slots":8,"context":512,"peak_rss_bytes":191954944,"exit":0}
+  ],
+  "thermal_measurement": null,
+  "kv_cache_separate_measurement": null,
+  "monitoring": "sampled /proc/<pid>/status VmRSS; not hard enforcement",
+  "result": "all slot/context runs remained below the approved decoder RSS ceiling"
+}

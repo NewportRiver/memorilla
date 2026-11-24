@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "prompt_token_ids": [504, 3575, 282, 4649, 314],
+  "shape": [5, 576],
+  "dtype": "float32",
+  "seed": 20261124,
+  "conditions": {
+    "genuine": {"max_abs_vs_genuine": 0.0, "rmse_vs_genuine": 0.0, "top10_overlap": 10, "generated": []},
+    "zero": {"max_abs_vs_genuine": 22.484546661376953, "rmse_vs_genuine": 4.18038272857666, "top10_overlap": 0, "generated": [0, 39707, 28, 216]},
+    "random_normal_0.02": {"max_abs_vs_genuine": 20.58419418334961, "rmse_vs_genuine": 4.541227340698242, "top10_overlap": 0, "generated": [9612, 14195, 141, 116]},
+    "perturbed_normal_0.01": {"max_abs_vs_genuine": 1.2411503791809082, "rmse_vs_genuine": 0.45875284075737, "top10_overlap": 8, "generated": [260, 2240, 282, 7042]},
+    "permuted_rows": {"max_abs_vs_genuine": 18.29340171813965, "rmse_vs_genuine": 8.508923530578613, "top10_overlap": 1, "generated": [3432, 5261, 282, 3575]}
+  },
+  "repetitions": 3,
+  "interpretation": "the decoder consumes continuous embedding values; this is interface sensitivity evidence, not evidence of learned semantic memory"
+}

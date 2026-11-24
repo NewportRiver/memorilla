@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "prompt": "The capital of France is",
+  "token_ids": [504, 3575, 282, 4649, 314],
+  "tokens": ["The", "Ġcapital", "Ġof", "ĠFrance", "Ġis"],
+  "embedding_shape": [5, 576],
+  "embedding_dtype": "float32",
+  "embedding_source": "dequantized token_embd.weight from the qualified Q4_K_M GGUF",
+  "ids_sha256": "669771446a7323f8217e4f023890f55e12b142270e9b9668a89dae5e77d52c08",
+  "embedding_sha256": "81b635a6918aafaac1811e542fd0f5dc1172f0272b1a9ac7857f04e85e492f55",
+  "runtime_input_width": 576,
+  "context": 256,
+  "repetitions": 3,
+  "logit_max_abs_error": 0.0,
+  "logit_rmse": 0.0,
+  "top_k_overlap": {"1": 1, "5": 5, "10": 10},
+  "greedy_continuation_token_ids": [260, 3575, 282, 260],
+  "result": "ordinary token and genuine external embedding paths were bit-identical for the tested final logits and continuation"
+}
