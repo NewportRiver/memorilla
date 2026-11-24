@@ -1,0 +1,15 @@
+{
+  "schema":"LITE-008M-textual-competence-v1",
+  "status":"completed_corrected_dataset",
+  "format":"fixed_question_answer_no_development_selection",
+  "primary_development_pairs":24,
+  "multi_token_pairs":4,
+  "calibration_pairs":8,
+  "primary_single_token_accuracy":{"query_only":0.5416666667,"relevant":1.0,"counterfactual_reversal":0.875,"unrelated":0.8333333333,"conflicting":0.7083333333},
+  "multi_token_accuracy":{"query_only":0.5,"relevant":1.0,"counterfactual_reversal":1.0,"unrelated":1.0,"conflicting":0.75},
+  "forward_count":200,
+  "peak_rss_bytes":623648768,
+  "minimum_available_bytes":1086119936,
+  "protected_final_holdout_accessed":false,
+  "interpretation":"balanced-data textual competence is mixed: relevant evidence is reliable, query-only preference is near chance, and conflicting evidence is imperfect"
+}

@@ -1,0 +1,16 @@
+{
+  "schema":"LITE-008M-component-reference-v1",
+  "status":"completed_component_only",
+  "components":["input_embedding","rms_norm","tied_output_projection"],
+  "full_transformer_layers_included":false,
+  "peak_rss_bytes":401334272,
+  "peak_pss_bytes":397729792,
+  "minimum_available_bytes":772505600,
+  "bf16_loss":125.4375,
+  "fp32_loss":125.4573287964,
+  "gradient_cosine":0.9999796748,
+  "gradient_norm_ratio_bf16_over_fp32":1.0010023117,
+  "coordinate_sign_agreement":0.9965277910,
+  "negative_gradient_reduced_loss":true,
+  "interpretation":"qualifies the genuine reduced component path only; does not qualify the complete decoder"
+}

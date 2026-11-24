@@ -1,0 +1,12 @@
+{
+  "schema":"LITE-008M-gradient-usefulness-v1",
+  "status":"component_only",
+  "matched_steps":[0.0625,0.125,0.25],
+  "negative_bf16_gradient_reduced_bf16_loss":true,
+  "negative_fp32_gradient_reduced_bf16_loss":true,
+  "positive_bf16_gradient_increased_bf16_loss":true,
+  "no_update_control":"base loss retained",
+  "random_direction":"not selected retrospectively; recorded as a fixed seeded control",
+  "generalized_training":false,
+  "interpretation":"practical gradient usefulness is supported only for the reduced genuine-component path"
+}

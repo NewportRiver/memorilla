@@ -1,0 +1,8 @@
+{
+  "schema":"LITE-008M-bf16-gradient-comparison-v1",
+  "status":"component_only",
+  "full_model_comparison":"unavailable_because_fp32_full_reference_hit_rss_ceiling",
+  "reduced_component":{"gradient_cosine":0.9999796748,"norm_ratio":1.0010023117,"coordinate_sign_agreement":0.9965277910,"forward_loss_difference":0.0198287964},
+  "rounded_forward_interpretation":"BF16 and FP32 component paths are highly aligned in this reduced configuration; this does not establish complete-decoder alignment",
+  "historical_lite008l_bf16_criterion":"preserved_as_failed_historical_result"
+}

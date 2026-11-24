@@ -1,0 +1,10 @@
+{
+  "schema":"LITE-008M-resource-telemetry-v1",
+  "balanced_textual":{"peak_rss_bytes":623648768,"peak_pss_bytes":610023424,"minimum_available_bytes":1086119936,"wall_seconds":282.652449453},
+  "fp32_loading_lowmem_true":{"peak_rss_bytes":1047269376,"peak_pss_bytes":993795072,"minimum_available_bytes":982413312,"wall_seconds":16.398402813},
+  "fp32_loading_lowmem_false":{"peak_rss_bytes":1086488576,"peak_pss_bytes":1078855680,"minimum_available_bytes":1104330752,"termination":"rss_ceiling"},
+  "fp32_reference_lowmem_true":{"peak_rss_bytes":1075937280,"peak_pss_bytes":1063825408,"minimum_available_bytes":759472128,"termination":"rss_ceiling"},
+  "component_reference":{"peak_rss_bytes":401334272,"peak_pss_bytes":397729792,"minimum_available_bytes":772505600,"wall_seconds":21.770537578},
+  "limits":{"rss_ceiling_bytes":1073741824,"available_reserve_bytes":536870912,"timeout_seconds":300,"threads":1,"subprocesses":1},
+  "persistent_processes":false
+}

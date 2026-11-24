@@ -1,0 +1,14 @@
+{
+  "schema":"LITE-008M-fp32-reference-v1",
+  "status":"blocked_by_rss_ceiling",
+  "loading_configuration":"low_cpu_mem_usage=True, safetensors, Float32",
+  "peak_rss_bytes":1075937280,
+  "rss_ceiling_bytes":1073741824,
+  "minimum_available_bytes":759472128,
+  "forward_count":0,
+  "backward_count":0,
+  "ordinary_vs_external_forward":"unexecuted",
+  "gradient":"unexecuted",
+  "optimizer_updates":0,
+  "interpretation":"memory-efficient loading is compatible, but complete FP32 numerical reference remains infeasible under the unchanged envelope"
+}

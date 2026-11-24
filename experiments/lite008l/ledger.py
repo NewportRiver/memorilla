@@ -8,7 +8,7 @@ LEDGER=ROOT/'experiment-ledger.jsonl'
 
 def record(phase: str, status: str, **fields):
     ROOT.mkdir(parents=True,exist_ok=True)
-    event={'event_id':uuid.uuid4().hex,'timestamp_unix':time.time(),'experiment':'LITE-008L', 'phase':phase,'status':status,**fields}
+    event={'event_id':uuid.uuid4().hex,'timestamp_unix':time.time(),'experiment':os.environ.get('HERMES_EXPERIMENT','LITE-008L'), 'phase':phase,'status':status,**fields}
     with LEDGER.open('a',encoding='utf-8') as f:
         f.write(json.dumps(event,sort_keys=True)+'\n');f.flush();os.fsync(f.fileno())
     return event

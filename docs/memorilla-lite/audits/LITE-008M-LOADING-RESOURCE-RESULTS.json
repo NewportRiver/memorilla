@@ -1,0 +1,9 @@
+{
+  "schema":"LITE-008M-loading-resource-v1",
+  "conventional_false":{"status":"aborted_rss_ceiling","peak_rss_bytes":1086488576,"peak_pss_bytes":1078855680,"minimum_available_bytes":1104330752,"exit_status":-15},
+  "memory_efficient_true":{"status":"completed","peak_rss_bytes":1047269376,"peak_pss_bytes":993795072,"minimum_available_bytes":982413312,"loading_seconds":2.20458558598,"parameter_count":134515008,"tied_weights":true,"sampled_source_max_abs_diff":0.0},
+  "float32_forward_backward":{"status":"aborted_rss_ceiling","peak_rss_bytes":1075937280,"peak_pss_bytes":1063825408,"minimum_available_bytes":759472128,"forward_count":0,"backward_count":0},
+  "resource_ceiling_bytes":1073741824,
+  "no_dependency_install":true,
+  "no_model_download":true
+}

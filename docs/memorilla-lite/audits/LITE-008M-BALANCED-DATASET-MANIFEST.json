@@ -1,0 +1,16 @@
+{
+  "schema":"LITE-008M-balanced-textual-dataset-v1",
+  "seed":20261124,
+  "development_pairs":28,
+  "primary_single_token_pairs":24,
+  "multi_token_pairs":4,
+  "calibration_pairs":8,
+  "single_token_answer_frequency":{"black":3,"blue":3,"green":3,"orange":3,"purple":3,"red":3,"white":3,"yellow":3},
+  "single_token_candidate_frequency_balanced":true,
+  "correct_answer_orientation":{"A":12,"B":12},
+  "candidate_order_counterbalanced":true,
+  "entity_overlap_between_partitions":false,
+  "protected_final_holdout_accessed":false,
+  "manifest_sha256":"6d85ceeae7eb25799463243f8e8319057432195d12f5b519328212f405be79d3",
+  "tokenizer_sha256":"9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c"
+}
