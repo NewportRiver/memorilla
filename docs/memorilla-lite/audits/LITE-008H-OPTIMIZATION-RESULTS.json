@@ -1,0 +1,18 @@
+{
+  "schema": "LITE-008H-optimization-v1",
+  "status": "oracle_prerequisite_failed",
+  "algorithm_executed": "SPSA",
+  "coefficients": 16,
+  "basis_shape": [16, 576],
+  "iterations": 8,
+  "epsilon": 0.05,
+  "learning_rate": 0.4,
+  "decoder_evaluations": 148,
+  "initial_margin_nats": 0.6154,
+  "optimized_margin_nats": 0.5328,
+  "budget_matched_random_best_margin_nats": 0.80785,
+  "general_bridge_optimization_executed": false,
+  "memory_independent_soft_prompt_optimization_executed": false,
+  "reason_not_executed": "oracle optimization failed before the authorized stop boundary",
+  "protected_final_holdout_accessed": false
+}

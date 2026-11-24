@@ -1,0 +1,22 @@
+{
+  "schema": "LITE-008H-resource-telemetry-v1",
+  "rss_ceiling_bytes": 268435456,
+  "cpu_only": true,
+  "threads": 1,
+  "monitor_qualification": {
+    "short_child": {"exit_status": 0, "timed_out": false, "peak_rss_bytes": 10711040, "peak_pss_bytes": 6511616, "wall_seconds": 0.1411632419913076},
+    "timeout_child": {"exit_status": -15, "timed_out": true, "peak_rss_bytes": 10833920, "peak_pss_bytes": 6519808, "wall_seconds": 0.20731695304857567}
+  },
+  "capability_run": {
+    "decoder_calls": 96,
+    "peak_rss_bytes": 186310656,
+    "peak_pss_bytes": 168755200,
+    "sum_case_wall_seconds": 14.121349770284723
+  },
+  "oracle_run": {"decoder_calls": 52, "aggregate_peak_rss_bytes": null, "aggregate_wall_seconds": null, "note": "raw per-call telemetry was not retained in the oracle summary; no value reconstructed"},
+  "total_recorded_decoder_evaluations": 148,
+  "oom_or_forced_termination": false,
+  "thermal_telemetry": null,
+  "protected_final_holdout_accessed": false,
+  "whole_pipeline_qualification": false
+}

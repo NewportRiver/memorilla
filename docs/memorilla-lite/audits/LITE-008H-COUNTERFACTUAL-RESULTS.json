@@ -1,0 +1,15 @@
+{
+  "schema": "LITE-008H-counterfactual-v1",
+  "status": "textual_capability_only",
+  "textual_calibration": {
+    "relevant_candidate_ranking_accuracy": 1.0,
+    "counterfactual_text_candidate_ranking_accuracy": 0.0,
+    "query_candidate_ranking_accuracy": 0.625,
+    "irrelevant_candidate_ranking_accuracy": 0.0
+  },
+  "latent_counterfactual_optimization": "not executed after oracle prerequisite failure",
+  "oracle_initial_margin_nats": 0.6154,
+  "oracle_optimized_margin_nats": 0.5328,
+  "random_search_best_margin_nats": 0.80785,
+  "interpretation": "textual evidence reversibility was not demonstrated for the latent diagnostic"
+}

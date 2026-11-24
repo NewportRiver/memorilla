@@ -1,0 +1,9 @@
+{
+  "schema": "LITE-008H-capability-summary-v1",
+  "calibration_examples": 8,
+  "candidate_ranking_accuracy": {"query": 0.625, "relevant": 1.0, "irrelevant": 0.0, "counterfactual": 0.0},
+  "unrestricted_greedy_exact_answer_accuracy": {"query": 0.0, "relevant": 0.0, "irrelevant": 0.0, "counterfactual": 0.0},
+  "raw_evidence": "~/.cache/memorilla-lite/LITE-008H/capability-results.json",
+  "textual_prerequisite": "passed_for_candidate_ranking_only",
+  "generation_prerequisite": "failed"
+}

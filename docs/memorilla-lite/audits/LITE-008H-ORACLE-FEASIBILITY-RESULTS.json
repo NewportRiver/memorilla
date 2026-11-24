@@ -1,0 +1,78 @@
+{
+  "schema": "LITE-008H-oracle-v1",
+  "train_entity": {
+    "id": 0,
+    "entity": "entity cobalt 00",
+    "value": "green"
+  },
+  "alternate_value": "yellow",
+  "parameterization": "z = theta @ fixed_basis",
+  "coefficients": 16,
+  "basis_shape": [
+    16,
+    576
+  ],
+  "trace": [
+    {
+      "iteration": 0,
+      "plus": 0.568950000000001,
+      "minus": 0.6349799999999988,
+      "theta_norm": 1.056480050086975
+    },
+    {
+      "iteration": 1,
+      "plus": 0.6847799999999999,
+      "minus": 0.6944400000000002,
+      "theta_norm": 1.0866743326187134
+    },
+    {
+      "iteration": 2,
+      "plus": 0.6676099999999998,
+      "minus": 0.8756599999999999,
+      "theta_norm": 3.7271370887756348
+    },
+    {
+      "iteration": 3,
+      "plus": 0.6755499999999994,
+      "minus": 0.6786899999999996,
+      "theta_norm": 3.738407850265503
+    },
+    {
+      "iteration": 4,
+      "plus": 0.5749399999999998,
+      "minus": 0.5935100000000002,
+      "theta_norm": 3.8410446643829346
+    },
+    {
+      "iteration": 5,
+      "plus": 0.5577299999999994,
+      "minus": 0.6508099999999999,
+      "theta_norm": 4.244804382324219
+    },
+    {
+      "iteration": 6,
+      "plus": 0.7732899999999994,
+      "minus": 0.7844499999999996,
+      "theta_norm": 4.248538494110107
+    },
+    {
+      "iteration": 7,
+      "plus": 0.7971400000000006,
+      "minus": 0.6668600000000016,
+      "theta_norm": 4.513334274291992
+    }
+  ],
+  "initial_margin": 0.6153999999999993,
+  "optimized_margin": 0.5327999999999999,
+  "random_search_margins": [
+    0.6050899999999988,
+    0.7225699999999993,
+    0.7397399999999994,
+    0.657919999999999,
+    0.50779,
+    0.5770299999999988,
+    0.8078500000000002,
+    0.5590700000000002
+  ],
+  "decoder_evaluations": 148
+}
