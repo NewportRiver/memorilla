@@ -1,0 +1,31 @@
+{
+  "status": "conditional_feasibility",
+  "method": "B_decoder_embedding_space_alignment",
+  "seed": 20261124,
+  "input_dim": 384,
+  "output_dim": 576,
+  "parameter_count": 221760,
+  "train_entities": 16,
+  "development_entities": 8,
+  "steps": 300,
+  "learning_rate": 0.08,
+  "initial_development_mse": 0.00559703353792429,
+  "final_training_mse": 0.00021031187498010695,
+  "final_development_mse": 0.0003530752728693187,
+  "bridge_only_peak_rss_bytes": 38260736,
+  "combined_encoder_plus_training_peak_rss_bytes": 892514304,
+  "training_duration_seconds": 1.5470689450157806,
+  "finite_difference": {"h": 0.001, "max_abs_error": 2.8569593268912286e-07, "selected_parameters": 8},
+  "bridge_weight_sha256": "5ff7be8671ba5091bbc84c8ad0966d6d686c61856c82d2033f0148b877a1c0a1",
+  "bridge_bias_sha256": "ca98001c993f2be00888c64bfc7ecf8056e0e68e5d606caebb96adf3e0c258bd",
+  "decoder_downstream_probe": {
+    "projected_generated_ids": [216, 33, 41, 41],
+    "zero_generated_ids": [42, 9612, 14195, 141],
+    "projected_peak_rss_bytes": 185942016,
+    "zero_peak_rss_bytes": 186310656,
+    "both_exit_status": 0,
+    "interpretation": "different outputs confirm conditioning sensitivity, not semantic correctness"
+  },
+  "protected_holdout_accessed": false,
+  "production_memory_modified": false
+}

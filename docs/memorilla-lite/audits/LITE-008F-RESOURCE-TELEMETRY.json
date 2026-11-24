@@ -1,0 +1,17 @@
+{
+  "schema": "LITE-008F-resource-telemetry-v1",
+  "rss_ceiling_bytes": 268435456,
+  "cpu_only": true,
+  "threads": 1,
+  "measurements": {
+    "encoder_feature_extraction": {"peak_rss_bytes": 892514304, "rows": 24, "status": "measured_separately; exceeds decoder ceiling and is not claimed as whole-pipeline compliant"},
+    "bridge_only_training": {"peak_rss_bytes": 38260736, "duration_seconds": 1.5470689450157806, "steps": 300, "status": "within ceiling"},
+    "decoder_projected_probe": {"peak_rss_bytes": 185942016, "exit": 0, "status": "within ceiling"},
+    "decoder_zero_probe": {"peak_rss_bytes": 186310656, "exit": 0, "status": "within ceiling"}
+  },
+  "monitoring": "process peak RSS from resource.getrusage for Python stages; sampled /proc VmRSS for native decoder stages",
+  "thermal_telemetry": null,
+  "kv_cache_separate_measurement": null,
+  "oom_or_forced_termination": false,
+  "whole_pipeline_compliance": "not established"
+}
