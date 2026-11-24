@@ -1,0 +1,8 @@
+{
+  "schema": "LITE-008J-counterfactual-v1",
+  "status": "not_executed",
+  "reason": "The one-example optimization reduced loss, but the finite-difference check was limited and the authorized diagnostic was sufficient to qualify the mechanism without spending a second counterfactual optimization run.",
+  "same_query_both_values": false,
+  "counterfactual_directions": null,
+  "general_memory_claim": false
+}

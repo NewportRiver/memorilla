@@ -1,0 +1,14 @@
+{
+  "schema": "LITE-008J-embedding-optimization-v1",
+  "updates": 32,
+  "learning_rate": 0.2,
+  "optimizer": "SGD on one external 576-dimensional embedding only",
+  "decoder_updates": 0,
+  "initial": {"correct_loss": 9.25, "alternate_loss": 9.875, "correct_over_alternate_margin_nats": 0.625},
+  "zero": {"correct_loss": 6.8125, "alternate_loss": 7.5625, "correct_over_alternate_margin_nats": 0.75},
+  "random": {"correct_loss": 8.75, "alternate_loss": 8.875, "correct_over_alternate_margin_nats": 0.125},
+  "optimized": {"correct_loss": 6.0, "alternate_loss": 6.25, "correct_over_alternate_margin_nats": 0.25},
+  "initial_to_final_correct_loss_decreased": true,
+  "generalization_claim": false,
+  "per_example_only": true
+}

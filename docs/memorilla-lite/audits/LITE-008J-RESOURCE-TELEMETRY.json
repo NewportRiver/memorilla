@@ -1,0 +1,22 @@
+{
+  "schema": "LITE-008J-resource-telemetry-v1",
+  "training_monitor": {
+    "exit_status": 0,
+    "timed_out": false,
+    "peak_rss_bytes": 622157824,
+    "peak_pss_bytes": 616001536,
+    "minimum_available_bytes": 1037422592,
+    "maximum_swap_used_bytes": 3334971392,
+    "resource_violation": null,
+    "wall_seconds": 100.73143902298762,
+    "rss_ceiling_bytes": 1073741824,
+    "available_reserve_bytes": 536870912
+  },
+  "q4_transfer_processes": [
+    {"target": "correct", "exit_status": 0, "peak_rss_bytes": 186077184, "peak_pss_bytes": 183482368, "minimum_available_bytes": 1388199936, "resource_violation": null, "wall_seconds": 0.40584515599766746},
+    {"target": "alternate", "exit_status": 0, "peak_rss_bytes": 186134528, "peak_pss_bytes": 183501824, "minimum_available_bytes": 1388265472, "resource_violation": null, "wall_seconds": 0.2712743359734304}
+  ],
+  "persistent_training_service": false,
+  "process_cleanup_verified": true,
+  "oom_or_forced_termination": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "LITE-008J-quantized-transfer-v1",
+  "status": "diagnostic_candidate_ranking_agreement",
+  "training_decoder": {"dtype": "bfloat16", "correct_nll": 6.0, "alternate_nll": 6.25, "margin_nats": 0.25},
+  "q4_k_m_decoder": {"correct_nll": 6.69325, "alternate_nll": 6.88573, "margin_nats": 0.19248, "peak_rss_bytes": 186134528, "inference_ceiling_bytes": 268435456},
+  "candidate_preference_agreement": true,
+  "causal_position": 1,
+  "embedding_dtype_submitted": "float32 serialized external sequence",
+  "general_transfer_claim": false,
+  "note": "Single per-example diagnostic; no generalized compatibility claim"
+}

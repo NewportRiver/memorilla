@@ -1,0 +1,16 @@
+{
+  "schema": "LITE-008J-backward-v1",
+  "loss": 9.25,
+  "gradient_shape": [1, 576],
+  "gradient_dtype": "torch.bfloat16",
+  "gradient_norm": 6.085544586181641,
+  "gradient_finite": true,
+  "gradient_nonzero": true,
+  "backward_seconds": 2.779789297026582,
+  "decoder_parameters_frozen": true,
+  "decoder_parameter_grads_absent": true,
+  "decoder_weights_updated": false,
+  "process_exit_status": 0,
+  "peak_rss_bytes": 622157824,
+  "minimum_available_bytes": 1037422592
+}

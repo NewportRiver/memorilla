@@ -1,0 +1,18 @@
+{
+  "schema": "LITE-008J-resource-preflight-v1",
+  "baseline": "4ed0419",
+  "initial_mem_available_bytes": 1590580000,
+  "required_reserve_bytes": 536870912,
+  "initial_swap_free_bytes": 5026996000,
+  "storage_free_bytes": null,
+  "cpu_only": true,
+  "numerical_threads": 1,
+  "computational_subprocesses": 1,
+  "qualified_venv": {"torch": "2.11.0", "transformers": true, "safetensors": true, "gguf": true},
+  "dtype_smoke": {"float32": true, "float16": true, "bfloat16": true},
+  "monitor_normal_exit": true,
+  "monitor_timeout_cleanup": true,
+  "unrelated_processes_terminated": false,
+  "swap_configuration_changed": false,
+  "protected_final_holdout_accessed": false
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "LITE-008J-forward-v1",
+  "sequence_length": 6,
+  "hidden_size": 576,
+  "external_slot_index": 1,
+  "max_abs_logit_difference_token_vs_equivalent_external": 0.0,
+  "predeclared_tolerance": 0.02,
+  "equivalent": true,
+  "forward_seconds_recorded_in_child": 1.4370152350165881,
+  "full_process_wall_seconds": 100.73143902298762,
+  "process_exit_status": 0,
+  "peak_rss_bytes": 622157824,
+  "minimum_available_bytes": 1037422592
+}

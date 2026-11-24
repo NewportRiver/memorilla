@@ -1,0 +1,13 @@
+{
+  "schema": "LITE-008J-gradient-verification-v1",
+  "method": "BF16 directional finite difference",
+  "epsilon": 0.5,
+  "analytic_directional_gradient": 0.19542647898197174,
+  "numerical_directional_gradient": 0.125,
+  "relative_error": 0.3603732684989358,
+  "analytic_gradient_finite": true,
+  "qualification_status": "limited_not_passed",
+  "reason": "BF16 input perturbations are quantized at coordinate scale; the selected epsilon produced a material directional discrepancy",
+  "stronger_claim": false,
+  "backward_path_status": "passed by finite nonzero gradient and decoder-freezing checks"
+}

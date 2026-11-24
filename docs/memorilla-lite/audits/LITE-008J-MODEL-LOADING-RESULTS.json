@@ -1,0 +1,15 @@
+{
+  "schema": "LITE-008J-model-loading-v1",
+  "model_path": "~/.cache/memorilla-lite/LITE-008D-R3/model",
+  "parameter_count": 134515008,
+  "parameter_dtype": "torch.bfloat16",
+  "serialized_safetensors_bytes": 269060552,
+  "loading_seconds": 0.6099767580162734,
+  "training_process_peak_rss_bytes": 622157824,
+  "training_process_peak_pss_bytes": 616001536,
+  "minimum_system_available_bytes": 1037422592,
+  "rss_ceiling_bytes": 1073741824,
+  "available_reserve_bytes": 536870912,
+  "resource_violation": null,
+  "decoder_weights_updated": false
+}
