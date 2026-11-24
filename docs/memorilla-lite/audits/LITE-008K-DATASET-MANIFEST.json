@@ -1,0 +1,16 @@
+{
+  "schema": "LITE-008K-dataset-manifest-v1",
+  "cache_manifest": "~/.cache/memorilla-lite/LITE-008K/dataset-manifest.json",
+  "feature_manifest": "~/.cache/memorilla-lite/LITE-008K/features.json",
+  "seed": 20261124,
+  "rows": 18,
+  "partitions": {"train": 8, "calibration": 4, "development": 6},
+  "entity_overlap": {"train_calibration": [], "train_development": [], "calibration_development": []},
+  "answer_in_ordinary_query": false,
+  "unrelated_control": "different entity record",
+  "counterfactual_control": "same query entity with alternate value",
+  "encoder": {"repo": "sentence-transformers/all-MiniLM-L6-v2", "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41", "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474"},
+  "feature_sha256": "145015ed6fef44472de56bf7a84a321e1a919c5f0adc7a91d365688b7c62b890",
+  "protected_final_holdout_accessed": false,
+  "note": "Full cache manifest remains authoritative; this report omits no data-bearing payloads"
+}

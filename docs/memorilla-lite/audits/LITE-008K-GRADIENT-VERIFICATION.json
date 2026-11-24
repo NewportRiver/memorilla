@@ -1,0 +1,21 @@
+{
+  "schema": "LITE-008K-gradient-verification-v1",
+  "status": "not_passed",
+  "decoder_dtype": "torch.bfloat16",
+  "master_parameter_dtype": "torch.float32",
+  "loss_dtype": "torch.float32",
+  "objective_compared": "full answer_NLL + 0.5*softplus(-margin)",
+  "directions": 3,
+  "perturbations": [0.25, 0.5, 1.0, 2.0],
+  "gradient_norm": 7.141290664672852,
+  "gradient_finite": true,
+  "relative_errors": {
+    "direction_0": {"0.25": 1.4854102185650546, "0.5": 0.9444239410382906, "1.0": 0.9207979931950027, "2.0": 1.246166812135745},
+    "direction_1": {"0.25": 1.0337305669221895, "0.5": 0.37800964829331596, "1.0": 0.45172811160715287, "2.0": 0.8654668059354891},
+    "direction_2": {"0.25": 0.18891094006952885, "0.5": 0.4355818452007119, "1.0": 0.20242867881650217, "2.0": 1.8606458569653497}
+  },
+  "best_relative_error": 0.18891094006952885,
+  "predeclared_tolerance": "dtype-aware exploratory only; no pass threshold accepted without consistent multi-direction agreement",
+  "float32_decoder_reference": "not executed",
+  "conclusion": "BF16-cast numerical correctness remains unresolved; generalized bridge training blocked"
+}

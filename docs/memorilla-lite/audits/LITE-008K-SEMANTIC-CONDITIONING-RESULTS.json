@@ -1,0 +1,15 @@
+{
+  "schema": "LITE-008K-semantic-conditioning-v1",
+  "status": "calibration_only",
+  "partition": "calibration",
+  "rows": 4,
+  "candidate_ranking_accuracy": {
+    "query_only": 0.25,
+    "relevant_text": 0.5,
+    "unrelated_text": 0.5,
+    "counterfactual_text": 0.0
+  },
+  "latent_bridge": "not evaluated",
+  "unrestricted_greedy_generation": "not evaluated in LITE-008K",
+  "claim_scope": "textual candidate-ranking calibration only; no generalized latent semantic claim"
+}

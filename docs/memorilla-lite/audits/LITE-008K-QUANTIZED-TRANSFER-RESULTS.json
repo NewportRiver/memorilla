@@ -1,0 +1,9 @@
+{
+  "schema": "LITE-008K-quantized-transfer-v1",
+  "status": "not_executed",
+  "reason": "No generalized bridge artifact passed the semantic prerequisites; per-example LITE-008J transfer remains historical and is not reused as bridge evidence",
+  "q4_checksum_verified": "39f688e705919e7cf51f505cedf283889e5ef813b1e969ac05f8461e7c83f458",
+  "inference_ceiling_bytes": 268435456,
+  "candidate_ranking_transfer": null,
+  "counterfactual_transfer": null
+}

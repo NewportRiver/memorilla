@@ -1,0 +1,12 @@
+{
+  "schema": "LITE-008K-resource-telemetry-v1",
+  "successful_oracle_rerun": {"exit_status": 0, "timed_out": false, "peak_rss_bytes": 625565696, "peak_pss_bytes": 619600896, "minimum_available_bytes": 1203486720, "wall_seconds": 136.75693558598869, "resource_violation": null, "persisted_optimizer_updates": 24},
+  "first_oracle_attempt": {"exit_status": -15, "timed_out": true, "peak_rss_bytes": 601772032, "peak_pss_bytes": 596013056, "minimum_available_bytes": 1067237376, "wall_seconds": 300.1351327729644, "resource_violation": null, "durable_result": false, "exact_updates": "unavailable"},
+  "cumulative_budget_upper_bound_updates": 72,
+  "additional_attempts": ["objective-comparison serialization failure before durable write; no scientific result accepted", "final corrected rerun used for reports"],
+  "rss_ceiling_bytes": 1073741824,
+  "available_reserve_bytes": 536870912,
+  "process_cleanup_verified": true,
+  "persistent_training_service": false,
+  "thermal_telemetry": "unavailable"
+}

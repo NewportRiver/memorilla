@@ -1,0 +1,21 @@
+{
+  "schema": "LITE-008K-counterfactual-oracle-v1",
+  "status": "failed_prerequisite",
+  "pairs": 4,
+  "required_successful_reversals": 4,
+  "successful_reversals": 1,
+  "optimizer": "SGD",
+  "updates_per_direction": 3,
+  "persisted_optimizer_updates": 24,
+  "objective": "answer_NLL + 0.5*softplus(-margin)",
+  "final_margins_nats": {
+    "pair_0": {"A_embedding_A_minus_B": 1.0625, "B_embedding_A_minus_B": 0.625},
+    "pair_1": {"A_embedding_A_minus_B": 0.25, "B_embedding_A_minus_B": 2.5624990463256836},
+    "pair_2": {"A_embedding_A_minus_B": 0.5, "B_embedding_A_minus_B": -0.25},
+    "pair_3": {"A_embedding_A_minus_B": -1.5, "B_embedding_A_minus_B": -1.609375}
+  },
+  "criterion": "A embedding must prefer A and B embedding must prefer B for every pair",
+  "passed": false,
+  "generalized_bridge_training_authorized_after_result": false,
+  "protected_final_holdout_accessed": false
+}

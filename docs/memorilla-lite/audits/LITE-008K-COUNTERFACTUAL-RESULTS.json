@@ -1,0 +1,8 @@
+{
+  "schema": "LITE-008K-counterfactual-v1",
+  "status": "not_executed_for_generalized_bridge",
+  "oracle_status": "failed at 1/4",
+  "development_counterfactual_matrix": "not executed",
+  "directional_accuracy": null,
+  "reason": "Stopping boundary was reached before generalized bridge training"
+}
