@@ -1,0 +1,15 @@
+{
+  "schema": "LITE-008S-resource-telemetry-v1",
+  "status": "completed",
+  "cpu_only": true,
+  "threads": 1,
+  "subprocesses": 1,
+  "training_rss_ceiling_bytes": 1073741824,
+  "inference_rss_ceiling_bytes": 268435456,
+  "minimum_available_bytes": 536870912,
+  "max_individual_duration_seconds": 300,
+  "cumulative_duration_seconds": 1800,
+  "diagnose_wall_seconds": 20.631264413997997,
+  "optimizer_updates": 0,
+  "persistent_processes": false
+}

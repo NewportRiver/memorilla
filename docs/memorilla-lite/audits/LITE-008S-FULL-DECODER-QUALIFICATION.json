@@ -1,0 +1,8 @@
+{
+  "schema": "LITE-008S-full-decoder-qualification-v1",
+  "status": "qualified",
+  "source": "/data/data/com.termux/files/home/memorilla-lite-workspace/experiments/lite008s/gradient-qualification-s.json",
+  "layers": 30,
+  "qualified_epsilon": 0.1,
+  "optimizer_updates": 0
+}

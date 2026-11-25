@@ -1,0 +1,11 @@
+{
+  "schema": "LITE-008S-reduced-qualification-v1",
+  "status": "qualified",
+  "source": "/data/data/com.termux/files/home/memorilla-lite-workspace/experiments/lite008s/gradient-qualification-s.json",
+  "stages": [
+    "A",
+    "B",
+    "C"
+  ],
+  "optimizer_updates": 0
+}

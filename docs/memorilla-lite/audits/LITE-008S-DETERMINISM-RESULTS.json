@@ -1,0 +1,13 @@
+{
+  "schema": "LITE-008S-determinism-v1",
+  "status": "pass",
+  "cases": 6,
+  "depths": [
+    0,
+    1,
+    2
+  ],
+  "repetitions": 3,
+  "max_repeated_forward_loss_delta": 0.0,
+  "optimizer_updates": 0
+}

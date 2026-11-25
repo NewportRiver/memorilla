@@ -1,0 +1,19 @@
+{
+  "schema": "LITE-008S-component-vjp-v1",
+  "status": "pass",
+  "identity": "directional finite difference equals reverse VJP after correction",
+  "inputs": [
+    "eos",
+    "eos_perturbed",
+    "random_scale_matched",
+    "initialized_bridge",
+    "optimized_P",
+    "historical_Q_bridge"
+  ],
+  "depths": [
+    1,
+    2
+  ],
+  "forward_only": true,
+  "optimizer_updates": 0
+}

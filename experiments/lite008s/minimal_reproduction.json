@@ -1,0 +1,894 @@
+{
+  "schema": "LITE-008S-minimal-reproduction-v1",
+  "status": "completed",
+  "optimizer_updates": 0,
+  "seed": 20261126,
+  "decoder_layers": 30,
+  "query_ids": [
+    [
+      0,
+      17872,
+      42,
+      10366,
+      6314,
+      1685,
+      12698,
+      288,
+      2004,
+      24361,
+      79,
+      39,
+      35,
+      35,
+      35,
+      39,
+      32,
+      36,
+      35,
+      38,
+      35,
+      47,
+      19842,
+      42
+    ]
+  ],
+  "target": [
+    35115
+  ],
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  },
+  "cases": {
+    "eos": {
+      "input": {
+        "sha256": "ff9d038786de6f336822a5c4dd672356d0a63de46957e6d326413dfb4c736543",
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          576
+        ],
+        "strides": [
+          13824,
+          1
+        ],
+        "contiguous": true,
+        "norm": 2.9788949489593506,
+        "storage_offset": 0,
+        "storage_aliases_hidden": false
+      },
+      "0": {
+        "loss_conventional": 142.0411376953125,
+        "loss_manual": 142.0411376953125,
+        "loss_forward_only": 142.0411376953125,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          142.0411376953125,
+          142.0411376953125,
+          142.0411376953125
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.0,
+          "norm_ratio": 0.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.0
+          ],
+          "analytic_manual": [
+            0.0
+          ],
+          "finite_difference": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "1": {
+        "loss_conventional": 33.55291748046875,
+        "loss_manual": 33.55291748046875,
+        "loss_forward_only": 33.55291748046875,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000003576278687,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          33.55291748046875,
+          33.55291748046875,
+          33.55291748046875
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.19626133143901825
+          ],
+          "analytic_manual": [
+            -0.19626133143901825
+          ],
+          "finite_difference": [
+            -0.1983642429113388,
+            -0.1949310302734375,
+            -0.19542694091796875
+          ]
+        }
+      },
+      "2": {
+        "loss_conventional": 46.77090072631836,
+        "loss_manual": 46.77090072631836,
+        "loss_forward_only": 46.77090072631836,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999997019767761,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          46.77090072631836,
+          46.77090072631836,
+          46.77090072631836
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999999403953552,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.0957551822066307
+          ],
+          "analytic_manual": [
+            -0.0957551822066307
+          ],
+          "finite_difference": [
+            -0.0991821214556694,
+            -0.095367431640625,
+            -0.09515762329101562
+          ]
+        }
+      }
+    },
+    "eos_perturbed": {
+      "input": {
+        "sha256": "425ee07d1abaa62ffd8d4f4062b655cb01839f567f8b32cacf4811bd0d9527e7",
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          576
+        ],
+        "strides": [
+          576,
+          1
+        ],
+        "contiguous": true,
+        "norm": 2.979172468185425,
+        "storage_offset": 0,
+        "storage_aliases_hidden": false
+      },
+      "0": {
+        "loss_conventional": 142.0411376953125,
+        "loss_manual": 142.0411376953125,
+        "loss_forward_only": 142.0411376953125,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          142.0411376953125,
+          142.0411376953125,
+          142.0411376953125
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.0,
+          "norm_ratio": 0.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.0
+          ],
+          "analytic_manual": [
+            0.0
+          ],
+          "finite_difference": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "1": {
+        "loss_conventional": 33.55023193359375,
+        "loss_manual": 33.55023193359375,
+        "loss_forward_only": 33.55023193359375,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999991655349731,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          33.55023193359375,
+          33.55023193359375,
+          33.55023193359375
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999998807907104,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.19316279888153076
+          ],
+          "analytic_manual": [
+            -0.19316279888153076
+          ],
+          "finite_difference": [
+            -0.1831054538488388,
+            -0.1926422119140625,
+            -0.19220352172851562
+          ]
+        }
+      },
+      "2": {
+        "loss_conventional": 46.76959991455078,
+        "loss_manual": 46.76959991455078,
+        "loss_forward_only": 46.76959991455078,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.999999463558197,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          46.76959991455078,
+          46.76959991455078,
+          46.76959991455078
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.0965426042675972
+          ],
+          "analytic_manual": [
+            -0.0965426042675972
+          ],
+          "finite_difference": [
+            -0.0934600755572319,
+            -0.09613037109375,
+            -0.0959014892578125
+          ]
+        }
+      }
+    },
+    "random_scale_matched": {
+      "input": {
+        "sha256": "8fe60407e5a0ee1f8a2fe160dff17e756796fd07d7fcdd2238bff00cd329fbad",
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          576
+        ],
+        "strides": [
+          13824,
+          1
+        ],
+        "contiguous": true,
+        "norm": 2.9788947105407715,
+        "storage_offset": 0,
+        "storage_aliases_hidden": false
+      },
+      "0": {
+        "loss_conventional": 142.0411376953125,
+        "loss_manual": 142.0411376953125,
+        "loss_forward_only": 142.0411376953125,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          142.0411376953125,
+          142.0411376953125,
+          142.0411376953125
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.0,
+          "norm_ratio": 0.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.0
+          ],
+          "analytic_manual": [
+            0.0
+          ],
+          "finite_difference": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "1": {
+        "loss_conventional": 34.68501281738281,
+        "loss_manual": 34.68501281738281,
+        "loss_forward_only": 34.68501281738281,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          34.68501281738281,
+          34.68501281738281,
+          34.68501281738281
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.000000238418579,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.004699843004345894
+          ],
+          "analytic_manual": [
+            0.004699843004345894
+          ],
+          "finite_difference": [
+            0.0038146970327943563,
+            0.00457763671875,
+            0.00476837158203125
+          ]
+        }
+      },
+      "2": {
+        "loss_conventional": 47.88987731933594,
+        "loss_manual": 47.88987731933594,
+        "loss_forward_only": 47.88987731933594,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          47.88987731933594,
+          47.88987731933594,
+          47.88987731933594
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.0015650643035769463
+          ],
+          "analytic_manual": [
+            -0.0015650643035769463
+          ],
+          "finite_difference": [
+            -0.0038146970327943563,
+            -0.00152587890625,
+            -0.001506805419921875
+          ]
+        }
+      }
+    },
+    "initialized_bridge": {
+      "input": {
+        "sha256": "3697fedfab9c98aabe2b0e24b4797fc3a486e22e45df8eea37bbe5de25bd80dd",
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          576
+        ],
+        "strides": [
+          576,
+          1
+        ],
+        "contiguous": true,
+        "norm": 2.9788334369659424,
+        "storage_offset": 0,
+        "storage_aliases_hidden": false
+      },
+      "0": {
+        "loss_conventional": 142.0411376953125,
+        "loss_manual": 142.0411376953125,
+        "loss_forward_only": 142.0411376953125,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          142.0411376953125,
+          142.0411376953125,
+          142.0411376953125
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.0,
+          "norm_ratio": 0.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.0
+          ],
+          "analytic_manual": [
+            0.0
+          ],
+          "finite_difference": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "1": {
+        "loss_conventional": 33.552738189697266,
+        "loss_manual": 33.552738189697266,
+        "loss_forward_only": 33.552738189697266,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000008344650269,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          33.552738189697266,
+          33.552738189697266,
+          33.552738189697266
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999995827674866,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.19869869947433472
+          ],
+          "analytic_manual": [
+            -0.19869869947433472
+          ],
+          "finite_difference": [
+            -0.2002715915441513,
+            -0.199127197265625,
+            -0.19781112670898438
+          ]
+        }
+      },
+      "2": {
+        "loss_conventional": 46.7734375,
+        "loss_manual": 46.7734375,
+        "loss_forward_only": 46.7734375,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000003576278687,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          46.7734375,
+          46.7734375,
+          46.7734375
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999997615814209,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.09856356680393219
+          ],
+          "analytic_manual": [
+            -0.09856356680393219
+          ],
+          "finite_difference": [
+            -0.0991821214556694,
+            -0.098419189453125,
+            -0.09790420532226562
+          ]
+        }
+      }
+    },
+    "optimized_P": {
+      "input": {
+        "sha256": "f45cd28b07dcb2f833022dada2dabebb1155bae7eaf3618b2d148b5b52ae25a1",
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          576
+        ],
+        "strides": [
+          576,
+          1
+        ],
+        "contiguous": true,
+        "norm": 3.500269651412964,
+        "storage_offset": 0,
+        "storage_aliases_hidden": false
+      },
+      "0": {
+        "loss_conventional": 142.0411376953125,
+        "loss_manual": 142.0411376953125,
+        "loss_forward_only": 142.0411376953125,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          142.0411376953125,
+          142.0411376953125,
+          142.0411376953125
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.0,
+          "norm_ratio": 0.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.0
+          ],
+          "analytic_manual": [
+            0.0
+          ],
+          "finite_difference": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "1": {
+        "loss_conventional": 34.826358795166016,
+        "loss_manual": 34.826358795166016,
+        "loss_forward_only": 34.826358795166016,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.000000238418579,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          34.826358795166016,
+          34.826358795166016,
+          34.826358795166016
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000004768371582,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.06634591519832611
+          ],
+          "analytic_manual": [
+            0.06634591519832611
+          ],
+          "finite_difference": [
+            0.072479248046875,
+            0.06542205810546875,
+            0.06626129150390625
+          ]
+        }
+      },
+      "2": {
+        "loss_conventional": 47.996673583984375,
+        "loss_manual": 47.996673583984375,
+        "loss_forward_only": 47.996673583984375,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          47.996673583984375,
+          47.996673583984375,
+          47.996673583984375
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.042185500264167786
+          ],
+          "analytic_manual": [
+            0.042185500264167786
+          ],
+          "finite_difference": [
+            0.0457763634622097,
+            0.041961669921875,
+            0.0421142578125
+          ]
+        }
+      }
+    },
+    "historical_Q_bridge": {
+      "input": {
+        "sha256": "680597bb4cdf5beed5fadcea1b9364e53b0f2161c87bdb38b96c5caf649f718e",
+        "dtype": "torch.float32",
+        "shape": [
+          1,
+          576
+        ],
+        "strides": [
+          576,
+          1
+        ],
+        "contiguous": true,
+        "norm": 112.4014663696289,
+        "storage_offset": 0,
+        "storage_aliases_hidden": false
+      },
+      "0": {
+        "loss_conventional": 142.0411376953125,
+        "loss_manual": 142.0411376953125,
+        "loss_forward_only": 142.0411376953125,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000001192092896,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          142.0411376953125,
+          142.0411376953125,
+          142.0411376953125
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.0,
+          "norm_ratio": 0.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.0
+          ],
+          "analytic_manual": [
+            0.0
+          ],
+          "finite_difference": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "1": {
+        "loss_conventional": 34.66075134277344,
+        "loss_manual": 34.66075134277344,
+        "loss_forward_only": 34.66075134277344,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000008344650269,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          34.66075134277344,
+          34.66075134277344,
+          34.66075134277344
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999998807907104,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            0.0007585652056150138
+          ],
+          "analytic_manual": [
+            0.0007585652056150138
+          ],
+          "finite_difference": [
+            0.0019073485163971782,
+            0.0003814697265625,
+            0.0006866455078125
+          ]
+        }
+      },
+      "2": {
+        "loss_conventional": 50.60813522338867,
+        "loss_manual": 50.60813522338867,
+        "loss_forward_only": 50.60813522338867,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999997615814209,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          50.60813522338867,
+          50.60813522338867,
+          50.60813522338867
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 0.9999998211860657,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.016273941844701767
+          ],
+          "analytic_manual": [
+            -0.016273941844701767
+          ],
+          "finite_difference": [
+            -0.019073486328125,
+            -0.01697540283203125,
+            -0.016307830810546875
+          ]
+        }
+      }
+    }
+  },
+  "depths": [
+    0,
+    1,
+    2
+  ],
+  "epsilons": [
+    0.001,
+    0.01,
+    0.1
+  ],
+  "wall_seconds": 20.631264413997997
+}

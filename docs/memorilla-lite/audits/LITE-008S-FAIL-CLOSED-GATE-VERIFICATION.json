@@ -1,0 +1,21 @@
+{
+  "schema": "LITE-008S-fail-closed-gate-v1",
+  "status": "verified",
+  "required_schema": "LITE-008S-gradient-qualification-v1",
+  "required_fields": [
+    "status",
+    "stages",
+    "optimizer_updates",
+    "decoder_artifact_identity",
+    "tokenizer_identity",
+    "encoder_identity",
+    "bridge",
+    "qualification_implementation_sha256",
+    "objective",
+    "numerical_configuration",
+    "input_identity",
+    "acceptance_contract_identity"
+  ],
+  "optimizer_boundary": "train_bridge validates before optimizer construction",
+  "scientific_training_executed": false
+}

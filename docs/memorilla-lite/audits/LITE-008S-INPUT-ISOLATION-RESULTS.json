@@ -1,0 +1,104 @@
+{
+  "schema": "LITE-008S-input-isolation-v1",
+  "status": "completed",
+  "cases": {
+    "eos": {
+      "sha256": "ff9d038786de6f336822a5c4dd672356d0a63de46957e6d326413dfb4c736543",
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        576
+      ],
+      "strides": [
+        13824,
+        1
+      ],
+      "contiguous": true,
+      "norm": 2.9788949489593506,
+      "storage_offset": 0,
+      "storage_aliases_hidden": false
+    },
+    "eos_perturbed": {
+      "sha256": "425ee07d1abaa62ffd8d4f4062b655cb01839f567f8b32cacf4811bd0d9527e7",
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        576
+      ],
+      "strides": [
+        576,
+        1
+      ],
+      "contiguous": true,
+      "norm": 2.979172468185425,
+      "storage_offset": 0,
+      "storage_aliases_hidden": false
+    },
+    "random_scale_matched": {
+      "sha256": "8fe60407e5a0ee1f8a2fe160dff17e756796fd07d7fcdd2238bff00cd329fbad",
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        576
+      ],
+      "strides": [
+        13824,
+        1
+      ],
+      "contiguous": true,
+      "norm": 2.9788947105407715,
+      "storage_offset": 0,
+      "storage_aliases_hidden": false
+    },
+    "initialized_bridge": {
+      "sha256": "3697fedfab9c98aabe2b0e24b4797fc3a486e22e45df8eea37bbe5de25bd80dd",
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        576
+      ],
+      "strides": [
+        576,
+        1
+      ],
+      "contiguous": true,
+      "norm": 2.9788334369659424,
+      "storage_offset": 0,
+      "storage_aliases_hidden": false
+    },
+    "optimized_P": {
+      "sha256": "f45cd28b07dcb2f833022dada2dabebb1155bae7eaf3618b2d148b5b52ae25a1",
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        576
+      ],
+      "strides": [
+        576,
+        1
+      ],
+      "contiguous": true,
+      "norm": 3.500269651412964,
+      "storage_offset": 0,
+      "storage_aliases_hidden": false
+    },
+    "historical_Q_bridge": {
+      "sha256": "680597bb4cdf5beed5fadcea1b9364e53b0f2161c87bdb38b96c5caf649f718e",
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        576
+      ],
+      "strides": [
+        576,
+        1
+      ],
+      "contiguous": true,
+      "norm": 112.4014663696289,
+      "storage_offset": 0,
+      "storage_aliases_hidden": false
+    }
+  },
+  "same_detached_tensor_used": true,
+  "storage_aliasing_observed": false
+}

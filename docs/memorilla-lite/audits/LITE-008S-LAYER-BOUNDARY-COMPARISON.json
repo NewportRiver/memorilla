@@ -1,0 +1,12 @@
+{
+  "schema": "LITE-008S-layer-boundary-v1",
+  "status": "completed",
+  "forward_equivalence": "pass",
+  "first_divergent_boundary": "none_after_detached_rotary_boundary",
+  "depths": [
+    0,
+    1,
+    2
+  ],
+  "scope": "initial hidden, positional state, layer outputs, final projection and loss"
+}
