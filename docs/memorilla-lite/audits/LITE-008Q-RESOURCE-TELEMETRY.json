@@ -1,0 +1,22 @@
+{
+  "schema": "LITE-008Q-resource-v1",
+  "limits": {
+    "training_rss": 1073741824,
+    "inference_rss": 268435456,
+    "minimum_available": 536870912,
+    "updates": 256,
+    "wall_seconds": 1800
+  },
+  "q4_corrected": {
+    "peak_rss_bytes": 186470400,
+    "peak_pss_bytes": 183886848,
+    "minimum_available_bytes": 1408606208,
+    "runs": 8
+  },
+  "bridge_runs": {
+    "successful_updates": 160,
+    "phase_local_samples_present": true,
+    "peak_process_rss_global_not_reconstructed": true
+  },
+  "protected_final_holdout_accessed": false
+}

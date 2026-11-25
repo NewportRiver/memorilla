@@ -1,0 +1,25 @@
+{
+  "schema": "LITE-008Q-checkpoints-v1",
+  "checkpoints": [
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008Q/stable-contrastive-bridge.npz",
+      "exists": true,
+      "sha256": "5b0b7fd9a40697f05ded3c452ddd17d9c62f451a15b03397547df3acce5eb96c",
+      "bytes": 887546
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008Q/stable-nll-bridge.npz",
+      "exists": true,
+      "sha256": "e96c6d757d85d13ab24ddcd7939b5a40f8b36a4690e363dacaa356eaed5f99f8",
+      "bytes": 887546
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008Q/stable-soft-soft.npy",
+      "exists": true,
+      "sha256": "eb0568b6556728b344320f39731b856826b8e822fc5d79ada42fd248f41fd395",
+      "bytes": 2432
+    }
+  ],
+  "reload_test": "evaluation loaded stable-contrastive checkpoint successfully",
+  "production_checkpoint_modified": false
+}

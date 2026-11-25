@@ -1,0 +1,103 @@
+{
+  "schema": "LITE-008Q-soft-prompt-training-v1",
+  "mode": "soft",
+  "updates": 16,
+  "history": [
+    {
+      "update": 1,
+      "case_id": "case_00",
+      "margin": -1.000589370727539
+    },
+    {
+      "update": 2,
+      "case_id": "case_00",
+      "margin": -1.5705995559692383
+    },
+    {
+      "update": 3,
+      "case_id": "case_01",
+      "margin": 4.173734664916992
+    },
+    {
+      "update": 4,
+      "case_id": "case_01",
+      "margin": 4.809686660766602
+    },
+    {
+      "update": 5,
+      "case_id": "case_02",
+      "margin": -0.568328857421875
+    },
+    {
+      "update": 6,
+      "case_id": "case_02",
+      "margin": -0.6575498580932617
+    },
+    {
+      "update": 7,
+      "case_id": "case_03",
+      "margin": 2.691814422607422
+    },
+    {
+      "update": 8,
+      "case_id": "case_03",
+      "margin": 1.9189739227294922
+    },
+    {
+      "update": 9,
+      "case_id": "case_04",
+      "margin": -0.1291208267211914
+    },
+    {
+      "update": 10,
+      "case_id": "case_04",
+      "margin": -0.5170211791992188
+    },
+    {
+      "update": 11,
+      "case_id": "case_05",
+      "margin": 0.6886587142944336
+    },
+    {
+      "update": 12,
+      "case_id": "case_05",
+      "margin": -0.3460845947265625
+    },
+    {
+      "update": 13,
+      "case_id": "case_06",
+      "margin": -0.04496002197265625
+    },
+    {
+      "update": 14,
+      "case_id": "case_06",
+      "margin": -0.26999378204345703
+    },
+    {
+      "update": 15,
+      "case_id": "case_07",
+      "margin": -2.9953365325927734
+    },
+    {
+      "update": 16,
+      "case_id": "case_07",
+      "margin": -2.7209725379943848
+    }
+  ],
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  },
+  "wall_seconds": 41.63714246102609
+}

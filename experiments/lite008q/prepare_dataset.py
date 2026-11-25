@@ -1,0 +1,9 @@
+"""Create LITE-008Q shared-bridge train/calibration/development data."""
+import json,random,hashlib
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent;ROOT.mkdir(parents=True,exist_ok=True);rng=random.Random(20261126);vals=['amber','violet','copper','silver','cedar','coral','linen','marble'];qtemps=['Which stored value belongs to record {e}?','What value is assigned to record {e}?'];etemps=['Record {e} stores value {v}.','The ledger entry for {e} contains {v}.','Archive {e} is labeled with value {v}.'];rows=[];used=set()
+for i in range(20):
+ e=f'granite_{rng.randrange(10**9,10**10)}'
+ while e in used:e=f'granite_{rng.randrange(10**9,10**10)}'
+ used.add(e);a,b=rng.sample(vals,2);rows.append({'case_id':f'case_{i:02d}','partition':'train' if i<8 else ('calibration' if i<12 else 'development'),'entity':e,'query':qtemps[i%len(qtemps)].format(e=e),'answer_a':a,'answer_b':b,'candidate_order':['A','B'] if i%2==0 else ['B','A'],'evidence_a':etemps[i%len(etemps)].format(e=e,v=a),'evidence_b':etemps[(i+1)%len(etemps)].format(e=e,v=b),'unrelated_evidence':etemps[(i+2)%len(etemps)].format(e=f'granite_unrelated_{i}',v=a),'conflicting_evidence':etemps[(i+1)%len(etemps)].format(e=e,v=b),'query_template':i%len(qtemps),'evidence_template':i%len(etemps)})
+out={'schema':'LITE-008Q-shared-bridge-v1','seed':20261126,'rows':rows,'train_case_ids':[r['case_id'] for r in rows if r['partition']=='train'],'calibration_case_ids':[r['case_id'] for r in rows if r['partition']=='calibration'],'development_case_ids':[r['case_id'] for r in rows if r['partition']=='development'],'entity_disjoint':True,'answer_values':vals,'protected_final_holdout_accessed':False};(ROOT/'dataset-manifest.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({'sha256':hashlib.sha256((ROOT/'dataset-manifest.json').read_bytes()).hexdigest(),'train':8,'calibration':4,'development':8}))

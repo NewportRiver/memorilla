@@ -1,0 +1,103 @@
+{
+  "schema": "LITE-008Q-soft-prompt-training-v1",
+  "mode": "soft",
+  "updates": 16,
+  "history": [
+    {
+      "update": 1,
+      "case_id": "case_00",
+      "margin": NaN
+    },
+    {
+      "update": 2,
+      "case_id": "case_00",
+      "margin": NaN
+    },
+    {
+      "update": 3,
+      "case_id": "case_01",
+      "margin": NaN
+    },
+    {
+      "update": 4,
+      "case_id": "case_01",
+      "margin": NaN
+    },
+    {
+      "update": 5,
+      "case_id": "case_02",
+      "margin": NaN
+    },
+    {
+      "update": 6,
+      "case_id": "case_02",
+      "margin": NaN
+    },
+    {
+      "update": 7,
+      "case_id": "case_03",
+      "margin": NaN
+    },
+    {
+      "update": 8,
+      "case_id": "case_03",
+      "margin": NaN
+    },
+    {
+      "update": 9,
+      "case_id": "case_04",
+      "margin": NaN
+    },
+    {
+      "update": 10,
+      "case_id": "case_04",
+      "margin": NaN
+    },
+    {
+      "update": 11,
+      "case_id": "case_05",
+      "margin": NaN
+    },
+    {
+      "update": 12,
+      "case_id": "case_05",
+      "margin": NaN
+    },
+    {
+      "update": 13,
+      "case_id": "case_06",
+      "margin": NaN
+    },
+    {
+      "update": 14,
+      "case_id": "case_06",
+      "margin": NaN
+    },
+    {
+      "update": 15,
+      "case_id": "case_07",
+      "margin": NaN
+    },
+    {
+      "update": 16,
+      "case_id": "case_07",
+      "margin": NaN
+    }
+  ],
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  },
+  "wall_seconds": 41.333705234050285
+}

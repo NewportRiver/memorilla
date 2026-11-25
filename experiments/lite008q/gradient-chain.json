@@ -1,0 +1,62 @@
+{
+  "schema": "LITE-008Q-gradient-chain-v1",
+  "status": "completed",
+  "configuration": "two-layer reduced FP32 layer-wise reference",
+  "objective": "answer-token NLL",
+  "bridge": "Linear(384,576)",
+  "finite_difference_epsilon": 0.01,
+  "indices": [
+    0,
+    384,
+    1000,
+    10000,
+    200000
+  ],
+  "analytic_gradients": [
+    -0.006704842671751976,
+    -0.021005619317293167,
+    -0.008294948376715183,
+    8.28116390039213e-05,
+    0.0035249919164925814
+  ],
+  "numeric_gradients": [
+    12.208366394042969,
+    49.979591369628906,
+    -52.510833740234375,
+    606.0258865356445,
+    51.02806091308594
+  ],
+  "relative_errors": [
+    1.0005492006428496,
+    1.0004202839347354,
+    0.9998420335807702,
+    0.9999998633529675,
+    0.9999309205199371
+  ],
+  "max_relative_error": 1.0005492006428496,
+  "finite_bridge_gradients": true,
+  "bridge_output_shape": [
+    1,
+    576
+  ],
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  },
+  "encoder_parameters_frozen": true,
+  "decoder_parameters_frozen": true,
+  "decoder_parameter_gradients_present": false,
+  "external_memory_positions": 1,
+  "protected_final_holdout_accessed": false
+}

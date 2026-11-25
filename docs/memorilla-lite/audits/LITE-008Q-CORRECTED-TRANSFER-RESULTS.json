@@ -1,0 +1,491 @@
+{
+  "schema": "LITE-008Q-corrected-transfer-v1",
+  "status": "completed",
+  "scoring": "independent single-token teacher-forced runs from identical query/memory state",
+  "results": [
+    {
+      "case_id": "case_08",
+      "direction": "A",
+      "fp32_margin": null,
+      "a_id": 33871,
+      "b_id": 35115,
+      "a": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          33871
+        ],
+        "target_logprobs": [
+          -16.2069
+        ],
+        "total_log_likelihood": -16.2069,
+        "mean_nll": 16.2069,
+        "name": "case_08-A-A",
+        "target_id": 33871,
+        "exit": 0,
+        "seconds": 0.5887800780474208,
+        "peak_rss_bytes": 186294272,
+        "peak_pss_bytes": 183846912,
+        "minimum_available_bytes": 1698738176,
+        "target_token_count": 1
+      },
+      "b": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          35115
+        ],
+        "target_logprobs": [
+          -16.5386
+        ],
+        "total_log_likelihood": -16.5386,
+        "mean_nll": 16.5386,
+        "name": "case_08-A-B",
+        "target_id": 35115,
+        "exit": 0,
+        "seconds": 0.48267195298103616,
+        "peak_rss_bytes": 186458112,
+        "peak_pss_bytes": 183886848,
+        "minimum_available_bytes": 1685061632,
+        "target_token_count": 1
+      },
+      "q4_logp_a": -16.2069,
+      "q4_logp_b": -16.5386,
+      "q4_margin": 0.3316999999999979,
+      "q4_nll_a": 16.2069,
+      "q4_nll_b": 16.5386
+    },
+    {
+      "case_id": "case_08",
+      "direction": "B",
+      "fp32_margin": null,
+      "a_id": 33871,
+      "b_id": 35115,
+      "a": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          33871
+        ],
+        "target_logprobs": [
+          -16.5303
+        ],
+        "total_log_likelihood": -16.5303,
+        "mean_nll": 16.5303,
+        "name": "case_08-B-A",
+        "target_id": 33871,
+        "exit": 0,
+        "seconds": 0.4911798440152779,
+        "peak_rss_bytes": 186363904,
+        "peak_pss_bytes": 183734272,
+        "minimum_available_bytes": 1684566016,
+        "target_token_count": 1
+      },
+      "b": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          35115
+        ],
+        "target_logprobs": [
+          -18.1039
+        ],
+        "total_log_likelihood": -18.1039,
+        "mean_nll": 18.1039,
+        "name": "case_08-B-B",
+        "target_id": 35115,
+        "exit": 0,
+        "seconds": 0.4882424609968439,
+        "peak_rss_bytes": 186425344,
+        "peak_pss_bytes": 183707648,
+        "minimum_available_bytes": 1685110784,
+        "target_token_count": 1
+      },
+      "q4_logp_a": -16.5303,
+      "q4_logp_b": -18.1039,
+      "q4_margin": 1.573599999999999,
+      "q4_nll_a": 16.5303,
+      "q4_nll_b": 18.1039
+    },
+    {
+      "case_id": "case_09",
+      "direction": "A",
+      "fp32_margin": null,
+      "a_id": 12536,
+      "b_id": 33952,
+      "a": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          12536
+        ],
+        "target_logprobs": [
+          -20.8271
+        ],
+        "total_log_likelihood": -20.8271,
+        "mean_nll": 20.8271,
+        "name": "case_09-A-A",
+        "target_id": 12536,
+        "exit": 0,
+        "seconds": 0.483715038979426,
+        "peak_rss_bytes": 186306560,
+        "peak_pss_bytes": 183877632,
+        "minimum_available_bytes": 1687224320,
+        "target_token_count": 1
+      },
+      "b": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          33952
+        ],
+        "target_logprobs": [
+          -20.2905
+        ],
+        "total_log_likelihood": -20.2905,
+        "mean_nll": 20.2905,
+        "name": "case_09-A-B",
+        "target_id": 33952,
+        "exit": 0,
+        "seconds": 0.4909686330356635,
+        "peak_rss_bytes": 186388480,
+        "peak_pss_bytes": 183700480,
+        "minimum_available_bytes": 1678946304,
+        "target_token_count": 1
+      },
+      "q4_logp_a": -20.8271,
+      "q4_logp_b": -20.2905,
+      "q4_margin": -0.5366,
+      "q4_nll_a": 20.8271,
+      "q4_nll_b": 20.2905
+    },
+    {
+      "case_id": "case_09",
+      "direction": "B",
+      "fp32_margin": null,
+      "a_id": 12536,
+      "b_id": 33952,
+      "a": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          12536
+        ],
+        "target_logprobs": [
+          -10.5211
+        ],
+        "total_log_likelihood": -10.5211,
+        "mean_nll": 10.5211,
+        "name": "case_09-B-A",
+        "target_id": 12536,
+        "exit": 0,
+        "seconds": 0.5012480079894885,
+        "peak_rss_bytes": 186421248,
+        "peak_pss_bytes": 183784448,
+        "minimum_available_bytes": 1680801792,
+        "target_token_count": 1
+      },
+      "b": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          33952
+        ],
+        "target_logprobs": [
+          -12.7595
+        ],
+        "total_log_likelihood": -12.7595,
+        "mean_nll": 12.7595,
+        "name": "case_09-B-B",
+        "target_id": 33952,
+        "exit": 0,
+        "seconds": 0.5135255469940603,
+        "peak_rss_bytes": 186261504,
+        "peak_pss_bytes": 183717888,
+        "minimum_available_bytes": 1679855616,
+        "target_token_count": 1
+      },
+      "q4_logp_a": -10.5211,
+      "q4_logp_b": -12.7595,
+      "q4_margin": 2.2383999999999986,
+      "q4_nll_a": 10.5211,
+      "q4_nll_b": 12.7595
+    },
+    {
+      "case_id": "case_10",
+      "direction": "A",
+      "fp32_margin": null,
+      "a_id": 35115,
+      "b_id": 12536,
+      "a": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          35115
+        ],
+        "target_logprobs": [
+          -17.3961
+        ],
+        "total_log_likelihood": -17.3961,
+        "mean_nll": 17.3961,
+        "name": "case_10-A-A",
+        "target_id": 35115,
+        "exit": 0,
+        "seconds": 0.748269297007937,
+        "peak_rss_bytes": 186245120,
+        "peak_pss_bytes": 183768064,
+        "minimum_available_bytes": 1543028736,
+        "target_token_count": 1
+      },
+      "b": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          12536
+        ],
+        "target_logprobs": [
+          -18.2238
+        ],
+        "total_log_likelihood": -18.2238,
+        "mean_nll": 18.2238,
+        "name": "case_10-A-B",
+        "target_id": 12536,
+        "exit": 0,
+        "seconds": 0.6077430080040358,
+        "peak_rss_bytes": 186290176,
+        "peak_pss_bytes": 183626752,
+        "minimum_available_bytes": 1439199232,
+        "target_token_count": 1
+      },
+      "q4_logp_a": -17.3961,
+      "q4_logp_b": -18.2238,
+      "q4_margin": 0.8277000000000001,
+      "q4_nll_a": 17.3961,
+      "q4_nll_b": 18.2238
+    },
+    {
+      "case_id": "case_10",
+      "direction": "B",
+      "fp32_margin": null,
+      "a_id": 35115,
+      "b_id": 12536,
+      "a": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          35115
+        ],
+        "target_logprobs": [
+          -20.519
+        ],
+        "total_log_likelihood": -20.519,
+        "mean_nll": 20.519,
+        "name": "case_10-B-A",
+        "target_id": 35115,
+        "exit": 0,
+        "seconds": 0.49938593700062484,
+        "peak_rss_bytes": 186302464,
+        "peak_pss_bytes": 183809024,
+        "minimum_available_bytes": 1408606208,
+        "target_token_count": 1
+      },
+      "b": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          12536
+        ],
+        "target_logprobs": [
+          -18.5125
+        ],
+        "total_log_likelihood": -18.5125,
+        "mean_nll": 18.5125,
+        "name": "case_10-B-B",
+        "target_id": 12536,
+        "exit": 0,
+        "seconds": 0.5276557430042885,
+        "peak_rss_bytes": 186355712,
+        "peak_pss_bytes": 183864320,
+        "minimum_available_bytes": 1420451840,
+        "target_token_count": 1
+      },
+      "q4_logp_a": -20.519,
+      "q4_logp_b": -18.5125,
+      "q4_margin": -2.006499999999999,
+      "q4_nll_a": 20.519,
+      "q4_nll_b": 18.5125
+    },
+    {
+      "case_id": "case_11",
+      "direction": "A",
+      "fp32_margin": null,
+      "a_id": 33952,
+      "b_id": 28522,
+      "a": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          33952
+        ],
+        "target_logprobs": [
+          -13.6489
+        ],
+        "total_log_likelihood": -13.6489,
+        "mean_nll": 13.6489,
+        "name": "case_11-A-A",
+        "target_id": 33952,
+        "exit": 0,
+        "seconds": 0.4877822660491802,
+        "peak_rss_bytes": 186347520,
+        "peak_pss_bytes": 183589888,
+        "minimum_available_bytes": 1484255232,
+        "target_token_count": 1
+      },
+      "b": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          28522
+        ],
+        "target_logprobs": [
+          -14.1507
+        ],
+        "total_log_likelihood": -14.1507,
+        "mean_nll": 14.1507,
+        "name": "case_11-A-B",
+        "target_id": 28522,
+        "exit": 0,
+        "seconds": 0.5027256250032224,
+        "peak_rss_bytes": 186388480,
+        "peak_pss_bytes": 183573504,
+        "minimum_available_bytes": 1484980224,
+        "target_token_count": 1
+      },
+      "q4_logp_a": -13.6489,
+      "q4_logp_b": -14.1507,
+      "q4_margin": 0.5018000000000011,
+      "q4_nll_a": 13.6489,
+      "q4_nll_b": 14.1507
+    },
+    {
+      "case_id": "case_11",
+      "direction": "B",
+      "fp32_margin": null,
+      "a_id": 33952,
+      "b_id": 28522,
+      "a": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          33952
+        ],
+        "target_logprobs": [
+          -15.9019
+        ],
+        "total_log_likelihood": -15.9019,
+        "mean_nll": 15.9019,
+        "name": "case_11-B-A",
+        "target_id": 33952,
+        "exit": 0,
+        "seconds": 0.48897152295103297,
+        "peak_rss_bytes": 186470400,
+        "peak_pss_bytes": 183651328,
+        "minimum_available_bytes": 1480171520,
+        "target_token_count": 1
+      },
+      "b": {
+        "mode": "embd",
+        "n_embd": 576,
+        "n_vocab": 49152,
+        "input_tokens": 26,
+        "ctx": 256,
+        "generated": [],
+        "target_tokens": [
+          28522
+        ],
+        "target_logprobs": [
+          -12.5632
+        ],
+        "total_log_likelihood": -12.5632,
+        "mean_nll": 12.5632,
+        "name": "case_11-B-B",
+        "target_id": 28522,
+        "exit": 0,
+        "seconds": 0.4830201169825159,
+        "peak_rss_bytes": 186351616,
+        "peak_pss_bytes": 183588864,
+        "minimum_available_bytes": 1477660672,
+        "target_token_count": 1
+      },
+      "q4_logp_a": -15.9019,
+      "q4_logp_b": -12.5632,
+      "q4_margin": -3.3386999999999993,
+      "q4_nll_a": 15.9019,
+      "q4_nll_b": 12.5632
+    }
+  ],
+  "reversal_rate": "2/4",
+  "semantic_qualification": "NO-GO",
+  "tokenizer_compatible": true,
+  "protected_final_holdout_accessed": false
+}
