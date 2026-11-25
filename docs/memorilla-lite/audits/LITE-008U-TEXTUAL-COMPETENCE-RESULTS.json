@@ -1,0 +1,24 @@
+{
+  "schema": "LITE-008U-textual-competence-v1",
+  "source": "/data/data/com.termux/files/home/memorilla-lite-workspace/experiments/lite008p/textual-results.json",
+  "eligible_training_cases": [
+    "case_00",
+    "case_01",
+    "case_02",
+    "case_03",
+    "case_04",
+    "case_06",
+    "case_07"
+  ],
+  "rejected_training_case": [
+    "case_05"
+  ],
+  "criteria": {
+    "query_abs_margin_max": 4,
+    "relevant_margin_min": 1,
+    "counterfactual_margin_max": -1,
+    "unrelated_margin_min": -1
+  },
+  "latent_outcomes_used_for_selection": false,
+  "protected_final_holdout_accessed": false
+}

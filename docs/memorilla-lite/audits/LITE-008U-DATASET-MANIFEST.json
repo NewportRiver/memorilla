@@ -1,0 +1,25 @@
+{
+  "schema": "LITE-008U-dataset-manifest-v1",
+  "source": "/data/data/com.termux/files/home/memorilla-lite-workspace/experiments/lite008q/dataset-manifest.json",
+  "teacher_training_cases": [
+    "case_00",
+    "case_01",
+    "case_02",
+    "case_03"
+  ],
+  "teacher_updates_actual": 128,
+  "student_updates": 128,
+  "development_cases": [
+    "case_12",
+    "case_13",
+    "case_14",
+    "case_15",
+    "case_16",
+    "case_17",
+    "case_18",
+    "case_19"
+  ],
+  "selection_before_latent_outcomes": true,
+  "case_05_rejected_textual_prerequisite": true,
+  "protected_final_holdout_accessed": false
+}

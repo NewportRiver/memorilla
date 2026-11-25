@@ -1,0 +1,22 @@
+{
+  "schema": "LITE-008U-teacher-artifact-manifest-v1",
+  "status": "reload_verified",
+  "location": "/data/data/com.termux/files/home/memorilla-lite-workspace/experiments/lite008u/teacher-dataset.json",
+  "source_cache": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008P/lite008u-teachers.json",
+  "artifact_format": "JSON float32 vectors; no binary checkpoint committed",
+  "records": 8,
+  "identities": {
+    "fact_ids": [
+      "case_00",
+      "case_01",
+      "case_02",
+      "case_03"
+    ],
+    "encoder": "MiniLM LITE-003",
+    "decoder": "SmolLM2-135M LITE-008D-R3",
+    "initialization": "EOS input embedding",
+    "updates": 16,
+    "lr": 0.05
+  },
+  "protected_final_holdout_accessed": false
+}

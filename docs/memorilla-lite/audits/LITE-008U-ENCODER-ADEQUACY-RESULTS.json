@@ -1,0 +1,17 @@
+{
+  "schema": "LITE-008U-encoder-adequacy-v1",
+  "status": "partial",
+  "frozen_encoder": "MiniLM LITE-003",
+  "feature_dimension": 384,
+  "l2_normalized": true,
+  "evidence_cosine_range": [
+    0.4373629987,
+    0.6604889035
+  ],
+  "textual_prerequisite": "pass for selected training cases",
+  "paraphrase_probe": "not executed",
+  "answer_only_probe": "not executed",
+  "entity_only_probe": "not executed",
+  "unrelated_evidence": "textual prerequisite measured",
+  "semantic_memory_claim": "not established"
+}

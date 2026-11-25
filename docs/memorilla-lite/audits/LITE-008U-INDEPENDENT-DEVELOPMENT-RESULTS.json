@@ -1,0 +1,7 @@
+{
+  "schema": "LITE-008U-independent-development-v1",
+  "status": "blocked",
+  "reason": "mandatory training semantic gate failed; no student development inference executed",
+  "target_pairs": 8,
+  "historical_T_result": "0/8 for direct bridge is not a U student result"
+}

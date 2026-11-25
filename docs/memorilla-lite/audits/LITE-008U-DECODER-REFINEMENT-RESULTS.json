@@ -1,0 +1,7 @@
+{
+  "schema": "LITE-008U-decoder-refinement-v1",
+  "status": "blocked",
+  "reason": "training semantic gate failed at 0/4; cumulative update budget exhausted",
+  "qualification_artifact": "not created",
+  "updates": 0
+}

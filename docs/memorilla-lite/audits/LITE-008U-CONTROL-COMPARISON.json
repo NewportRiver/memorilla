@@ -1,0 +1,24 @@
+{
+  "schema": "LITE-008U-control-comparison-v1",
+  "status": "blocked",
+  "controls": [
+    "query-only",
+    "zero memory",
+    "scale-matched random",
+    "untrained student",
+    "mean teacher",
+    "mismatched evidence",
+    "memory-independent soft prompt",
+    "ordinary textual evidence",
+    "supervised student",
+    "refined student"
+  ],
+  "executed": [
+    "supervised student training-set semantic"
+  ],
+  "unexecuted": [
+    "independent controls",
+    "refined student",
+    "soft prompt"
+  ]
+}

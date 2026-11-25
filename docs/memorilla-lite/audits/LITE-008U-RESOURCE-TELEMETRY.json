@@ -1,0 +1,27 @@
+{
+  "schema": "LITE-008U-resource-telemetry-v1",
+  "limits": {
+    "rss_training": 1073741824,
+    "rss_inference": 268435456,
+    "reserve": 536870912,
+    "wall_seconds": 1800,
+    "updates": 256
+  },
+  "phases": {
+    "textual_seconds": 84.29074265697272,
+    "teacher_seconds": 457.590333945991,
+    "alignment_seconds": 5.876030469022226,
+    "semantic_seconds": 6.830877070024144
+  },
+  "optimizer_updates": {
+    "teachers": 128,
+    "student_alignment": 128,
+    "decoder_refinement": 0,
+    "total": 256
+  },
+  "cpu_only": true,
+  "threads": 1,
+  "subprocesses": 1,
+  "protected_final_holdout_accessed": false,
+  "persistent_processes": false
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "LITE-008U-training-semantic-v1",
+  "status": "failed",
+  "qualified_pairs": 4,
+  "successful_reversals": 0,
+  "minimum_rate": 0.75,
+  "rate": 0.0,
+  "rows": [
+    {
+      "case_id": "case_00",
+      "student_A": {
+        "margin": -1.0198554992675781,
+        "nll_a": 10.497238159179688,
+        "nll_b": 9.47738265991211,
+        "greedy_id": 216,
+        "forwards": 1,
+        "layers": 30,
+        "recomputations": 0,
+        "vjps": 0,
+        "slot_norm": 5.559954643249512,
+        "teacher_cosine": 0.9260851740837097
+      },
+      "student_B": {
+        "margin": -0.7048158645629883,
+        "nll_a": 14.569355010986328,
+        "nll_b": 13.86453914642334,
+        "greedy_id": 216,
+        "forwards": 1,
+        "layers": 30,
+        "recomputations": 0,
+        "vjps": 0,
+        "slot_norm": 5.750115394592285,
+        "teacher_cosine": 0.8528977036476135
+      },
+      "reversal": false,
+      "A_correct": false,
+      "B_correct": true
+    },
+    {
+      "case_id": "case_01",
+      "student_A": {
+        "margin": 2.0637035369873047,
+        "nll_a": 11.14715576171875,
+        "nll_b": 13.210859298706055,
+        "greedy_id": 216,
+        "forwards": 1,
+        "layers": 30,
+        "recomputations": 0,
+        "vjps": 0,
+        "slot_norm": 5.415037155151367,
+        "teacher_cosine": 0.9133449792861938
+      },
+      "student_B": {
+        "margin": 2.70748233795166,
+        "nll_a": 11.965142250061035,
+        "nll_b": 14.672624588012695,
+        "greedy_id": 378,
+        "forwards": 1,
+        "layers": 30,
+        "recomputations": 0,
+        "vjps": 0,
+        "slot_norm": 5.186473846435547,
+        "teacher_cosine": 0.8819975852966309
+      },
+      "reversal": false,
+      "A_correct": true,
+      "B_correct": false
+    },
+    {
+      "case_id": "case_02",
+      "student_A": {
+        "margin": -1.678049087524414,
+        "nll_a": 10.096080780029297,
+        "nll_b": 8.418031692504883,
+        "greedy_id": 216,
+        "forwards": 1,
+        "layers": 30,
+        "recomputations": 0,
+        "vjps": 0,
+        "slot_norm": 5.698164463043213,
+        "teacher_cosine": 0.9242314100265503
+      },
+      "student_B": {
+        "margin": -1.7531719207763672,
+        "nll_a": 11.29011344909668,
+        "nll_b": 9.536941528320312,
+        "greedy_id": 216,
+        "forwards": 1,
+        "layers": 30,
+        "recomputations": 0,
+        "vjps": 0,
+        "slot_norm": 5.406553745269775,
+        "teacher_cosine": 0.8223928809165955
+      },
+      "reversal": false,
+      "A_correct": false,
+      "B_correct": true
+    },
+    {
+      "case_id": "case_03",
+      "student_A": {
+        "margin": 1.8183155059814453,
+        "nll_a": 11.11655330657959,
+        "nll_b": 12.934868812561035,
+        "greedy_id": 657,
+        "forwards": 1,
+        "layers": 30,
+        "recomputations": 0,
+        "vjps": 0,
+        "slot_norm": 5.525746822357178,
+        "teacher_cosine": 0.915481686592102
+      },
+      "student_B": {
+        "margin": 2.1355695724487305,
+        "nll_a": 12.241791725158691,
+        "nll_b": 14.377361297607422,
+        "greedy_id": 216,
+        "forwards": 1,
+        "layers": 30,
+        "recomputations": 0,
+        "vjps": 0,
+        "slot_norm": 5.7214789390563965,
+        "teacher_cosine": 0.8511127233505249
+      },
+      "reversal": false,
+      "A_correct": true,
+      "B_correct": false
+    }
+  ],
+  "wall_seconds": 6.830877070024144,
+  "independent_evaluation_authorized": false,
+  "decoder_refinement_authorized": false
+}

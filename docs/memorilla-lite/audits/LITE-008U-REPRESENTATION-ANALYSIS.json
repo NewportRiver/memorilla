@@ -1,0 +1,28 @@
+{
+  "schema": "LITE-008U-representation-analysis-v1",
+  "status": "completed_bounded",
+  "norm_range": [
+    6.449561595916748,
+    8.047264099121094
+  ],
+  "counterfactual_pair_distances": [
+    7.766808986663818,
+    6.8742756843566895,
+    10.010297775268555,
+    7.365118980407715
+  ],
+  "same_answer_cosine_mean": 0.4475015128652255,
+  "different_answer_cosine_mean": 0.4027385674417019,
+  "centered_singular_values": [
+    7.8022747,
+    6.3816295,
+    5.562952,
+    4.697853,
+    4.540382,
+    3.985138,
+    3.867771,
+    1.539e-06
+  ],
+  "effective_rank_99": 7,
+  "interpretation": "not collapsed in this small sample; reusable semantic structure unproven"
+}
