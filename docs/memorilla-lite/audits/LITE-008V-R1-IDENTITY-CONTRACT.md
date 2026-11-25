@@ -1,0 +1,5 @@
+# LITE-008V-R1 Identity Contract
+
+The experimental contract in experiments/lite008vr1/identity.py requires the complete originating manifest SHA256, case identifier, partition, entity, evidence text, query text, ordered candidate answer strings and token-ID arrays, factual direction, model-file hashes, generation configuration, vector hash and diagnostic purpose. Canonical JSON SHA256 seals each record; vectors are hashed as canonical JSON float lists. This is an integrity format, not a signature.
+
+validate(expected, supplied, vector) must be called with a trusted corrected-manifest record as expected, never a caller-generated expected identity. It rejects incomplete records, altered seals, any field mismatch, non-calibration use and corrupt vectors. case_id is only a locator, never authorization. All eight historical P/Q associations are regression-tested. No production pathways or historical reports are rewritten. No decoder or feature consumer was executed in this resource-blocked milestone.

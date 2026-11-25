@@ -1,0 +1,5 @@
+# LITE-008V-R1 Scientific Limitations
+
+Corrected provenance is established retrospectively with the limitations recorded in the manifest. Teacher behavior has NOT been requalified. The original full-resident BF16 decoder path requires 269030016 bytes of tensor payload, exceeding the 268435456-byte inference RSS ceiling before Python, activations or FP32 materialization. The approved training allowance is not silently applied to forward-only inference. No model load was attempted. This preflight blocks the existing path; it is not a proof that a separately engineered and qualified layer-streaming implementation cannot fit.
+
+All solver, encoder-feature, teacher/functional, sensitivity and student-specific coordinate measurements remain unavailable. No update, teacher regeneration, Q4 transfer, model/package installation, production mutation or protected holdout access occurred. No generalization, capacity, optimization, encoder information-loss or decoder-sensitivity conclusion is supported. No Gates D/E/F success is claimed. Production state was not globally snapshotted; non-mutation is scoped to the executed experiment, not an audit of unrelated processes.

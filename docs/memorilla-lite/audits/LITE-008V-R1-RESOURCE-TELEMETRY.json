@@ -1,0 +1,227 @@
+{
+  "phase": "provenance_recovery",
+  "optimizer_updates": 0,
+  "solver_operations": 0,
+  "decoder_forwards": 0,
+  "rss_ceiling_bytes": 268435456,
+  "reserve_bytes": 536870912,
+  "timeout_seconds": 300,
+  "samples": [
+    {
+      "seconds": 0.012171640992164612,
+      "rss_bytes": 991232,
+      "available_bytes": 1075224576
+    },
+    {
+      "seconds": 0.06355562503449619,
+      "rss_bytes": 6729728,
+      "available_bytes": 1061965824
+    },
+    {
+      "seconds": 0.11429097596555948,
+      "rss_bytes": 8470528,
+      "available_bytes": 1080926208
+    },
+    {
+      "seconds": 0.16523000004235655,
+      "rss_bytes": 9871360,
+      "available_bytes": 1079980032
+    },
+    {
+      "seconds": 0.21645078097935766,
+      "rss_bytes": 12038144,
+      "available_bytes": 1082597376
+    },
+    {
+      "seconds": 0.2680401559919119,
+      "rss_bytes": 13549568,
+      "available_bytes": 1086119936
+    },
+    {
+      "seconds": 0.31993835896719247,
+      "rss_bytes": 14696448,
+      "available_bytes": 1077125120
+    },
+    {
+      "seconds": 0.37201671896036714,
+      "rss_bytes": 17944576,
+      "available_bytes": 1076334592
+    },
+    {
+      "seconds": 0.4229084369726479,
+      "rss_bytes": 20709376,
+      "available_bytes": 1070432256
+    },
+    {
+      "seconds": 0.4738152730278671,
+      "rss_bytes": 20709376,
+      "available_bytes": 1097297920
+    },
+    {
+      "seconds": 0.524725039023906,
+      "rss_bytes": 22712320,
+      "available_bytes": 1096314880
+    },
+    {
+      "seconds": 0.5783389450516552,
+      "rss_bytes": 22757376,
+      "available_bytes": 1113501696
+    },
+    {
+      "seconds": 0.6304417969658971,
+      "rss_bytes": 23248896,
+      "available_bytes": 1124175872
+    },
+    {
+      "seconds": 0.6812806250527501,
+      "rss_bytes": 22712320,
+      "available_bytes": 1139142656
+    },
+    {
+      "seconds": 0.7330910159507766,
+      "rss_bytes": 23248896,
+      "available_bytes": 1208680448
+    },
+    {
+      "seconds": 0.7839509369805455,
+      "rss_bytes": 22712320,
+      "available_bytes": 1250934784
+    },
+    {
+      "seconds": 0.8356555469799787,
+      "rss_bytes": 23519232,
+      "available_bytes": 1257119744
+    },
+    {
+      "seconds": 0.8894047259818763,
+      "rss_bytes": 22712320,
+      "available_bytes": 1259208704
+    },
+    {
+      "seconds": 0.940973671968095,
+      "rss_bytes": 22712320,
+      "available_bytes": 1253748736
+    },
+    {
+      "seconds": 0.9927223440026864,
+      "rss_bytes": 22712320,
+      "available_bytes": 1253474304
+    },
+    {
+      "seconds": 1.0445815230486915,
+      "rss_bytes": 22978560,
+      "available_bytes": 1280086016
+    },
+    {
+      "seconds": 1.098094452987425,
+      "rss_bytes": 23248896,
+      "available_bytes": 1293168640
+    },
+    {
+      "seconds": 1.150324726011604,
+      "rss_bytes": 22712320,
+      "available_bytes": 1277087744
+    },
+    {
+      "seconds": 1.2013298829551786,
+      "rss_bytes": 22712320,
+      "available_bytes": 1304313856
+    },
+    {
+      "seconds": 1.2582129299407825,
+      "rss_bytes": 22712320,
+      "available_bytes": 1375961088
+    },
+    {
+      "seconds": 1.310045351041481,
+      "rss_bytes": 22712320,
+      "available_bytes": 1390727168
+    },
+    {
+      "seconds": 1.362292069941759,
+      "rss_bytes": 22712320,
+      "available_bytes": 1407520768
+    },
+    {
+      "seconds": 1.4140874609583989,
+      "rss_bytes": 22712320,
+      "available_bytes": 1431838720
+    },
+    {
+      "seconds": 1.4651715620420873,
+      "rss_bytes": 22712320,
+      "available_bytes": 1445429248
+    },
+    {
+      "seconds": 1.5161805079551414,
+      "rss_bytes": 22712320,
+      "available_bytes": 1442553856
+    },
+    {
+      "seconds": 1.5681182419648394,
+      "rss_bytes": 22712320,
+      "available_bytes": 1453752320
+    },
+    {
+      "seconds": 1.6202809369424358,
+      "rss_bytes": 22712320,
+      "available_bytes": 1482186752
+    },
+    {
+      "seconds": 1.6721896480303258,
+      "rss_bytes": 23248896,
+      "available_bytes": 1530925056
+    },
+    {
+      "seconds": 1.7241032420424744,
+      "rss_bytes": 23273472,
+      "available_bytes": 1547730944
+    },
+    {
+      "seconds": 1.7760351169854403,
+      "rss_bytes": 39002112,
+      "available_bytes": 1545261056
+    },
+    {
+      "seconds": 1.828500819974579,
+      "rss_bytes": 37605376,
+      "available_bytes": 1553362944
+    },
+    {
+      "seconds": 1.8809618749655783,
+      "rss_bytes": 43335680,
+      "available_bytes": 1570619392
+    },
+    {
+      "seconds": 1.9335215230239555,
+      "rss_bytes": 36286464,
+      "available_bytes": 1591881728
+    }
+  ],
+  "enforcement": "50ms sampled child RSS/reserve; not kernel hard RSS enforcement",
+  "status": "completed",
+  "exit_code": 0,
+  "violation": null,
+  "wall_seconds": 1.9839437890332192,
+  "peak_sampled_rss_bytes": 43335680,
+  "minimum_sampled_available_bytes": 1061965824,
+  "protected_postchecks": {
+    "model.safetensors": true,
+    "config.json": true,
+    "tokenizer.json": true,
+    "tokenizer_config.json": true,
+    "special_tokens_map.json": true
+  },
+  "targeted_tests": "34 passed in 8.37s",
+  "full_regression_blocker": "Inherited conftest imports missing datasets; collection exit 4; no install.",
+  "historical_source_unchanged_since_U": {
+    "experiments/lite008p/p_experiment.py": true,
+    "experiments/lite008p/dataset-manifest.json": true
+  },
+  "experiment_process_matches": [],
+  "preflight_conclusion": "Full-resident decoder blocked: payload exceeds inference RSS ceiling; no decoder loaded.",
+  "harness_failures": [
+    "Postcheck sandbox import lacked repo path",
+    "Sandbox denied git subprocess; postchecks moved to normal terminal. Neither attempt ran scientific operations."
+  ]
+}

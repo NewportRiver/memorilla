@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED",
+  "reason": "Original exact full-resident BF16 decoder tensor payload exceeds inference RSS ceiling; teacher requalification prerequisite not passed.",
+  "optimizer_updates": 0,
+  "teacher_regeneration": false,
+  "solver_operations": 0,
+  "decoder_forwards": 0,
+  "measurements": null,
+  "student_specific_analysis": "unavailable: deleted U checkpoint; no replay or approximation"
+}

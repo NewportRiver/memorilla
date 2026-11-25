@@ -1,0 +1,411 @@
+{
+  "status": "corrected_provenance_recovered_not_functionally_requalified",
+  "source_manifest": "/data/data/com.termux/files/home/memorilla-lite-workspace/experiments/lite008p/dataset-manifest.json",
+  "source_manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+  "generation_implementation_sha256": "b509ca17b57ec0bb464c1851a521248aff431ec56487a4b2169eeb29e98dae49",
+  "records": [
+    {
+      "identity": {
+        "manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+        "partition": "calibration",
+        "entity": "feldspar_5335815812",
+        "case_id": "case_00",
+        "evidence": "Record feldspar_5335815812 stores value marble.",
+        "query": "Which stored value belongs to record feldspar_5335815812?",
+        "candidate_answers": [
+          "marble",
+          "cedar"
+        ],
+        "candidate_token_ids": [
+          [
+            18540
+          ],
+          [
+            33952
+          ]
+        ],
+        "direction": "A",
+        "model": {
+          "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        "generation": {
+          "slots": 1,
+          "init": "eos",
+          "objective_kind": "contrastive",
+          "lr": 0.05,
+          "updates": 16
+        },
+        "vector_sha256": "b2ea033b279504028125422bdd644ae78f07c5adde7adcd6b87db2f3a565a55d",
+        "purpose": "historical_reconstruction_diagnostic"
+      },
+      "identity_sha256": "0a2b3350c5fb75c37f6b295d70efedc97335f40a571d3a1a607d8fcde183fb57",
+      "source_result_key": [
+        "case_00",
+        "A"
+      ],
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "vector_dimensions": 576,
+      "historical_final_margin": 6.372413635253906,
+      "evidence_note": "Associated P factual evidence; isolated generation consumed query and target, not evidence embeddings."
+    },
+    {
+      "identity": {
+        "manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+        "partition": "calibration",
+        "entity": "feldspar_5335815812",
+        "case_id": "case_00",
+        "evidence": "Record feldspar_5335815812 stores value cedar.",
+        "query": "Which stored value belongs to record feldspar_5335815812?",
+        "candidate_answers": [
+          "marble",
+          "cedar"
+        ],
+        "candidate_token_ids": [
+          [
+            18540
+          ],
+          [
+            33952
+          ]
+        ],
+        "direction": "B",
+        "model": {
+          "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        "generation": {
+          "slots": 1,
+          "init": "eos",
+          "objective_kind": "contrastive",
+          "lr": 0.05,
+          "updates": 16
+        },
+        "vector_sha256": "cc033b9eb8d9dbb4fccd6e72a300eff5b14f46af7aea8e7e2aa9bfc08ead0a54",
+        "purpose": "historical_reconstruction_diagnostic"
+      },
+      "identity_sha256": "f82b9153c0e99719a76be7c9c2474d0160c422c1c15789cd02000c3484b201a1",
+      "source_result_key": [
+        "case_00",
+        "B"
+      ],
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "vector_dimensions": 576,
+      "historical_final_margin": -3.563206672668457,
+      "evidence_note": "Associated P factual evidence; isolated generation consumed query and target, not evidence embeddings."
+    },
+    {
+      "identity": {
+        "manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+        "partition": "calibration",
+        "entity": "feldspar_2703867149",
+        "case_id": "case_01",
+        "evidence": "Record feldspar_2703867149 stores value marble.",
+        "query": "Which stored value belongs to record feldspar_2703867149?",
+        "candidate_answers": [
+          "marble",
+          "linen"
+        ],
+        "candidate_token_ids": [
+          [
+            18540
+          ],
+          [
+            28522
+          ]
+        ],
+        "direction": "A",
+        "model": {
+          "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        "generation": {
+          "slots": 1,
+          "init": "eos",
+          "objective_kind": "contrastive",
+          "lr": 0.05,
+          "updates": 16
+        },
+        "vector_sha256": "225a67c3ee7ccaa713aeb1bbc69a2f974b7d753324a8c5b42446cc988b763a2a",
+        "purpose": "historical_reconstruction_diagnostic"
+      },
+      "identity_sha256": "2d471419abb7f829ca08cc7ecafbab2530615d42eb211d50867f8725c4ea947c",
+      "source_result_key": [
+        "case_01",
+        "A"
+      ],
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "vector_dimensions": 576,
+      "historical_final_margin": 3.383671760559082,
+      "evidence_note": "Associated P factual evidence; isolated generation consumed query and target, not evidence embeddings."
+    },
+    {
+      "identity": {
+        "manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+        "partition": "calibration",
+        "entity": "feldspar_2703867149",
+        "case_id": "case_01",
+        "evidence": "Record feldspar_2703867149 stores value linen.",
+        "query": "Which stored value belongs to record feldspar_2703867149?",
+        "candidate_answers": [
+          "marble",
+          "linen"
+        ],
+        "candidate_token_ids": [
+          [
+            18540
+          ],
+          [
+            28522
+          ]
+        ],
+        "direction": "B",
+        "model": {
+          "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        "generation": {
+          "slots": 1,
+          "init": "eos",
+          "objective_kind": "contrastive",
+          "lr": 0.05,
+          "updates": 16
+        },
+        "vector_sha256": "935f2a1aba067481dc38c9c7e5bf7d9ea629162d80f12d3e3d0ac67cc7e14427",
+        "purpose": "historical_reconstruction_diagnostic"
+      },
+      "identity_sha256": "d9c0825ee0d71f28b767faa467f11ca5f2f2ec4232c92237cac34466ed9fa03d",
+      "source_result_key": [
+        "case_01",
+        "B"
+      ],
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "vector_dimensions": 576,
+      "historical_final_margin": -2.088136672973633,
+      "evidence_note": "Associated P factual evidence; isolated generation consumed query and target, not evidence embeddings."
+    },
+    {
+      "identity": {
+        "manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+        "partition": "calibration",
+        "entity": "feldspar_7977074686",
+        "case_id": "case_02",
+        "evidence": "Record feldspar_7977074686 stores value amber.",
+        "query": "Which stored value belongs to record feldspar_7977074686?",
+        "candidate_answers": [
+          "amber",
+          "linen"
+        ],
+        "candidate_token_ids": [
+          [
+            35115
+          ],
+          [
+            28522
+          ]
+        ],
+        "direction": "A",
+        "model": {
+          "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        "generation": {
+          "slots": 1,
+          "init": "eos",
+          "objective_kind": "contrastive",
+          "lr": 0.05,
+          "updates": 16
+        },
+        "vector_sha256": "c4cdfcc7c75baf172b6aa81d248316aaecb657d780eb841479cd38af5b00a18f",
+        "purpose": "historical_reconstruction_diagnostic"
+      },
+      "identity_sha256": "5f1f1e1367b18e9bbc838026aefe3354043d2cb61f3e58f64494fb83c4699baa",
+      "source_result_key": [
+        "case_02",
+        "A"
+      ],
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "vector_dimensions": 576,
+      "historical_final_margin": 3.3187522888183594,
+      "evidence_note": "Associated P factual evidence; isolated generation consumed query and target, not evidence embeddings."
+    },
+    {
+      "identity": {
+        "manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+        "partition": "calibration",
+        "entity": "feldspar_7977074686",
+        "case_id": "case_02",
+        "evidence": "Record feldspar_7977074686 stores value linen.",
+        "query": "Which stored value belongs to record feldspar_7977074686?",
+        "candidate_answers": [
+          "amber",
+          "linen"
+        ],
+        "candidate_token_ids": [
+          [
+            35115
+          ],
+          [
+            28522
+          ]
+        ],
+        "direction": "B",
+        "model": {
+          "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        "generation": {
+          "slots": 1,
+          "init": "eos",
+          "objective_kind": "contrastive",
+          "lr": 0.05,
+          "updates": 16
+        },
+        "vector_sha256": "73d8f1392346b33fb13cb6e1ab2997d13815196098d8881dca2f824f85090f2c",
+        "purpose": "historical_reconstruction_diagnostic"
+      },
+      "identity_sha256": "39e075de12f316b86ebec7144e90660d58320a41492ba505e17feb4b0412f3f8",
+      "source_result_key": [
+        "case_02",
+        "B"
+      ],
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "vector_dimensions": 576,
+      "historical_final_margin": -2.6652374267578125,
+      "evidence_note": "Associated P factual evidence; isolated generation consumed query and target, not evidence embeddings."
+    },
+    {
+      "identity": {
+        "manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+        "partition": "calibration",
+        "entity": "feldspar_1186595216",
+        "case_id": "case_03",
+        "evidence": "Record feldspar_1186595216 stores value cedar.",
+        "query": "Which stored value belongs to record feldspar_1186595216?",
+        "candidate_answers": [
+          "cedar",
+          "coral"
+        ],
+        "candidate_token_ids": [
+          [
+            33952
+          ],
+          [
+            12536
+          ]
+        ],
+        "direction": "A",
+        "model": {
+          "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        "generation": {
+          "slots": 1,
+          "init": "eos",
+          "objective_kind": "contrastive",
+          "lr": 0.05,
+          "updates": 16
+        },
+        "vector_sha256": "c0e0c0ca09eb12f3e6097f1ce445e1e76500a04b0e9c9c1199bcfaaf9c3b6b9d",
+        "purpose": "historical_reconstruction_diagnostic"
+      },
+      "identity_sha256": "e5ec588d136c0e047e820e68deae39f5f7b5a37ba0631735730d4fa3963b485c",
+      "source_result_key": [
+        "case_03",
+        "A"
+      ],
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "vector_dimensions": 576,
+      "historical_final_margin": 2.559880256652832,
+      "evidence_note": "Associated P factual evidence; isolated generation consumed query and target, not evidence embeddings."
+    },
+    {
+      "identity": {
+        "manifest_sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+        "partition": "calibration",
+        "entity": "feldspar_1186595216",
+        "case_id": "case_03",
+        "evidence": "Record feldspar_1186595216 stores value coral.",
+        "query": "Which stored value belongs to record feldspar_1186595216?",
+        "candidate_answers": [
+          "cedar",
+          "coral"
+        ],
+        "candidate_token_ids": [
+          [
+            33952
+          ],
+          [
+            12536
+          ]
+        ],
+        "direction": "B",
+        "model": {
+          "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        "generation": {
+          "slots": 1,
+          "init": "eos",
+          "objective_kind": "contrastive",
+          "lr": 0.05,
+          "updates": 16
+        },
+        "vector_sha256": "68e03620c78f0681653f3ce36330b3376fe7e9e66a1f57134568f7edd74f3533",
+        "purpose": "historical_reconstruction_diagnostic"
+      },
+      "identity_sha256": "494bb638b04191d09c8433cc87fba4c54e77085a9fd2667fa717d055a737be5f",
+      "source_result_key": [
+        "case_03",
+        "B"
+      ],
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "vector_dimensions": 576,
+      "historical_final_margin": -3.1695785522460938,
+      "evidence_note": "Associated P factual evidence; isolated generation consumed query and target, not evidence embeddings."
+    }
+  ],
+  "retained_artifacts": [
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R1/original-generation.json",
+      "bytes": 204764,
+      "sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "reload_verified": true
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R1/original-p-manifest.json",
+      "bytes": 9410,
+      "sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373",
+      "reload_verified": true
+    }
+  ],
+  "identity_limitations": "Historical generation output did not embed manifest/model hashes; recovery combines unchanged repository source, recorded invocation and current content checks against T. Not cryptographic proof of historical runtime custody.",
+  "candidate_tokenization": "Frozen tokenizer.json backend; original single-token space-prefixed answer encoding, no special tokens.",
+  "decoder_resident_tensor_payload_bytes": 269030016,
+  "inference_rss_ceiling_bytes": 268435456,
+  "original_decoder_path_preflight": "blocked"
+}
