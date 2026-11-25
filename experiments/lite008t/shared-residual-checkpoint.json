@@ -1,0 +1,22 @@
+{
+  "schema": "LITE-008T-shared-residual-checkpoint-v1",
+  "lr": 0.0001,
+  "updates": 64,
+  "parameterization": "z=EOS+W*x",
+  "checkpoint_sha256": "3354c43bf86484308d860adb2b754fcdb6bac15054d5c1c9834fe1066e0d7651",
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  }
+}

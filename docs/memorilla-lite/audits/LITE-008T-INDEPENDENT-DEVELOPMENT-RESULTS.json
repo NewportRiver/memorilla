@@ -1,0 +1,728 @@
+{
+  "schema": "LITE-008T-independent-development-v1",
+  "status": "completed",
+  "pairs": [
+    {
+      "case_id": "case_12",
+      "margin_A": -1.0798406600952148,
+      "margin_B": -0.9213991165161133,
+      "reversal": false
+    },
+    {
+      "case_id": "case_13",
+      "margin_A": 1.3304595947265625,
+      "margin_B": 1.3810253143310547,
+      "reversal": false
+    },
+    {
+      "case_id": "case_14",
+      "margin_A": 4.567530632019043,
+      "margin_B": 4.485807418823242,
+      "reversal": false
+    },
+    {
+      "case_id": "case_15",
+      "margin_A": 1.9915857315063477,
+      "margin_B": 1.8639144897460938,
+      "reversal": false
+    },
+    {
+      "case_id": "case_16",
+      "margin_A": 2.065336227416992,
+      "margin_B": 2.0430965423583984,
+      "reversal": false
+    },
+    {
+      "case_id": "case_17",
+      "margin_A": -1.4698848724365234,
+      "margin_B": -1.896681785583496,
+      "reversal": false
+    },
+    {
+      "case_id": "case_18",
+      "margin_A": -3.3024978637695312,
+      "margin_B": -3.069612503051758,
+      "reversal": false
+    },
+    {
+      "case_id": "case_19",
+      "margin_A": -1.1920604705810547,
+      "margin_B": -1.2123470306396484,
+      "reversal": false
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "case_12",
+      "evidence_target": "A",
+      "control": "learned_A",
+      "margin": -1.0798406600952148,
+      "nll_a": 10.666248321533203,
+      "nll_b": 9.586407661437988,
+      "greedy_id": 216,
+      "latent_norm": 3.0311577320098877
+    },
+    {
+      "case_id": "case_12",
+      "evidence_target": "B",
+      "control": "learned_B",
+      "margin": -0.9213991165161133,
+      "nll_a": 10.557042121887207,
+      "nll_b": 9.635643005371094,
+      "greedy_id": 216,
+      "latent_norm": 3.0203444957733154
+    },
+    {
+      "case_id": "case_12",
+      "evidence_target": "A",
+      "control": "query_only",
+      "margin": -0.6779136657714844,
+      "nll_a": 12.311196327209473,
+      "nll_b": 11.633282661437988,
+      "greedy_id": 378,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_12",
+      "evidence_target": "A",
+      "control": "zero",
+      "margin": -1.123708724975586,
+      "nll_a": 11.688809394836426,
+      "nll_b": 10.56510066986084,
+      "greedy_id": 216,
+      "latent_norm": 0.0
+    },
+    {
+      "case_id": "case_12",
+      "evidence_target": "A",
+      "control": "scale_matched_random",
+      "margin": -0.6873664855957031,
+      "nll_a": 11.350561141967773,
+      "nll_b": 10.66319465637207,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_12",
+      "evidence_target": "A",
+      "control": "untrained_bridge",
+      "margin": -0.6779136657714844,
+      "nll_a": 12.311196327209473,
+      "nll_b": 11.633282661437988,
+      "greedy_id": 378,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_12",
+      "evidence_target": "B",
+      "control": "mismatched_evidence",
+      "margin": -1.0086383819580078,
+      "nll_a": 10.580694198608398,
+      "nll_b": 9.57205581665039,
+      "greedy_id": 216,
+      "latent_norm": 3.0411977767944336
+    },
+    {
+      "case_id": "case_12",
+      "evidence_target": "A",
+      "control": "mean_training_memory",
+      "margin": -1.042642593383789,
+      "nll_a": 10.612503051757812,
+      "nll_b": 9.569860458374023,
+      "greedy_id": 216,
+      "latent_norm": 3.036975145339966
+    },
+    {
+      "case_id": "case_13",
+      "evidence_target": "A",
+      "control": "learned_A",
+      "margin": 1.3304595947265625,
+      "nll_a": 10.736334800720215,
+      "nll_b": 12.066794395446777,
+      "greedy_id": 216,
+      "latent_norm": 3.0411977767944336
+    },
+    {
+      "case_id": "case_13",
+      "evidence_target": "B",
+      "control": "learned_B",
+      "margin": 1.3810253143310547,
+      "nll_a": 10.588235855102539,
+      "nll_b": 11.969261169433594,
+      "greedy_id": 216,
+      "latent_norm": 3.03145170211792
+    },
+    {
+      "case_id": "case_13",
+      "evidence_target": "A",
+      "control": "query_only",
+      "margin": 2.094846725463867,
+      "nll_a": 11.632608413696289,
+      "nll_b": 13.727455139160156,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_13",
+      "evidence_target": "A",
+      "control": "zero",
+      "margin": 1.587672233581543,
+      "nll_a": 11.569428443908691,
+      "nll_b": 13.157100677490234,
+      "greedy_id": 216,
+      "latent_norm": 0.0
+    },
+    {
+      "case_id": "case_13",
+      "evidence_target": "A",
+      "control": "scale_matched_random",
+      "margin": 1.3290271759033203,
+      "nll_a": 12.227758407592773,
+      "nll_b": 13.556785583496094,
+      "greedy_id": 216,
+      "latent_norm": 2.9788947105407715
+    },
+    {
+      "case_id": "case_13",
+      "evidence_target": "A",
+      "control": "untrained_bridge",
+      "margin": 2.094846725463867,
+      "nll_a": 11.632608413696289,
+      "nll_b": 13.727455139160156,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_13",
+      "evidence_target": "B",
+      "control": "mismatched_evidence",
+      "margin": 1.3800430297851562,
+      "nll_a": 10.608867645263672,
+      "nll_b": 11.988910675048828,
+      "greedy_id": 216,
+      "latent_norm": 3.036151885986328
+    },
+    {
+      "case_id": "case_13",
+      "evidence_target": "A",
+      "control": "mean_training_memory",
+      "margin": 1.2862224578857422,
+      "nll_a": 10.727554321289062,
+      "nll_b": 12.013776779174805,
+      "greedy_id": 216,
+      "latent_norm": 3.036975145339966
+    },
+    {
+      "case_id": "case_14",
+      "evidence_target": "A",
+      "control": "learned_A",
+      "margin": 4.567530632019043,
+      "nll_a": 6.0588483810424805,
+      "nll_b": 10.626379013061523,
+      "greedy_id": 216,
+      "latent_norm": 3.036151885986328
+    },
+    {
+      "case_id": "case_14",
+      "evidence_target": "B",
+      "control": "learned_B",
+      "margin": 4.485807418823242,
+      "nll_a": 5.931204795837402,
+      "nll_b": 10.417012214660645,
+      "greedy_id": 216,
+      "latent_norm": 3.046370029449463
+    },
+    {
+      "case_id": "case_14",
+      "evidence_target": "A",
+      "control": "query_only",
+      "margin": 4.671980381011963,
+      "nll_a": 7.855964183807373,
+      "nll_b": 12.527944564819336,
+      "greedy_id": 378,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_14",
+      "evidence_target": "A",
+      "control": "zero",
+      "margin": 4.614730358123779,
+      "nll_a": 6.868836879730225,
+      "nll_b": 11.483567237854004,
+      "greedy_id": 216,
+      "latent_norm": 0.0
+    },
+    {
+      "case_id": "case_14",
+      "evidence_target": "A",
+      "control": "scale_matched_random",
+      "margin": 4.82119083404541,
+      "nll_a": 6.728959083557129,
+      "nll_b": 11.550149917602539,
+      "greedy_id": 216,
+      "latent_norm": 2.9788951873779297
+    },
+    {
+      "case_id": "case_14",
+      "evidence_target": "A",
+      "control": "untrained_bridge",
+      "margin": 4.671980381011963,
+      "nll_a": 7.855964183807373,
+      "nll_b": 12.527944564819336,
+      "greedy_id": 378,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_14",
+      "evidence_target": "B",
+      "control": "mismatched_evidence",
+      "margin": 4.566253662109375,
+      "nll_a": 5.987823486328125,
+      "nll_b": 10.5540771484375,
+      "greedy_id": 216,
+      "latent_norm": 3.044665813446045
+    },
+    {
+      "case_id": "case_14",
+      "evidence_target": "A",
+      "control": "mean_training_memory",
+      "margin": 4.570522308349609,
+      "nll_a": 5.9778594970703125,
+      "nll_b": 10.548381805419922,
+      "greedy_id": 216,
+      "latent_norm": 3.036975145339966
+    },
+    {
+      "case_id": "case_15",
+      "evidence_target": "A",
+      "control": "learned_A",
+      "margin": 1.9915857315063477,
+      "nll_a": 8.985260963439941,
+      "nll_b": 10.976846694946289,
+      "greedy_id": 216,
+      "latent_norm": 3.044665813446045
+    },
+    {
+      "case_id": "case_15",
+      "evidence_target": "B",
+      "control": "learned_B",
+      "margin": 1.8639144897460938,
+      "nll_a": 8.992536544799805,
+      "nll_b": 10.856451034545898,
+      "greedy_id": 216,
+      "latent_norm": 3.01863169670105
+    },
+    {
+      "case_id": "case_15",
+      "evidence_target": "A",
+      "control": "query_only",
+      "margin": 2.125351905822754,
+      "nll_a": 10.717751502990723,
+      "nll_b": 12.843103408813477,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_15",
+      "evidence_target": "A",
+      "control": "zero",
+      "margin": 3.3564720153808594,
+      "nll_a": 9.252758026123047,
+      "nll_b": 12.609230041503906,
+      "greedy_id": 216,
+      "latent_norm": 0.0
+    },
+    {
+      "case_id": "case_15",
+      "evidence_target": "A",
+      "control": "scale_matched_random",
+      "margin": 2.681638717651367,
+      "nll_a": 9.570198059082031,
+      "nll_b": 12.251836776733398,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_15",
+      "evidence_target": "A",
+      "control": "untrained_bridge",
+      "margin": 2.125351905822754,
+      "nll_a": 10.717751502990723,
+      "nll_b": 12.843103408813477,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_15",
+      "evidence_target": "B",
+      "control": "mismatched_evidence",
+      "margin": 1.8591136932373047,
+      "nll_a": 8.996517181396484,
+      "nll_b": 10.855630874633789,
+      "greedy_id": 216,
+      "latent_norm": 3.0189006328582764
+    },
+    {
+      "case_id": "case_15",
+      "evidence_target": "A",
+      "control": "mean_training_memory",
+      "margin": 1.8794517517089844,
+      "nll_a": 9.025381088256836,
+      "nll_b": 10.90483283996582,
+      "greedy_id": 216,
+      "latent_norm": 3.036975145339966
+    },
+    {
+      "case_id": "case_16",
+      "evidence_target": "A",
+      "control": "learned_A",
+      "margin": 2.065336227416992,
+      "nll_a": 9.578498840332031,
+      "nll_b": 11.643835067749023,
+      "greedy_id": 216,
+      "latent_norm": 3.0189006328582764
+    },
+    {
+      "case_id": "case_16",
+      "evidence_target": "B",
+      "control": "learned_B",
+      "margin": 2.0430965423583984,
+      "nll_a": 9.428650856018066,
+      "nll_b": 11.471747398376465,
+      "greedy_id": 216,
+      "latent_norm": 3.0399324893951416
+    },
+    {
+      "case_id": "case_16",
+      "evidence_target": "A",
+      "control": "query_only",
+      "margin": 2.391948699951172,
+      "nll_a": 11.508968353271484,
+      "nll_b": 13.900917053222656,
+      "greedy_id": 378,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_16",
+      "evidence_target": "A",
+      "control": "zero",
+      "margin": 2.0139427185058594,
+      "nll_a": 10.584877014160156,
+      "nll_b": 12.598819732666016,
+      "greedy_id": 216,
+      "latent_norm": 0.0
+    },
+    {
+      "case_id": "case_16",
+      "evidence_target": "A",
+      "control": "scale_matched_random",
+      "margin": 1.9514617919921875,
+      "nll_a": 9.902734756469727,
+      "nll_b": 11.854196548461914,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_16",
+      "evidence_target": "A",
+      "control": "untrained_bridge",
+      "margin": 2.391948699951172,
+      "nll_a": 11.508968353271484,
+      "nll_b": 13.900917053222656,
+      "greedy_id": 378,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_16",
+      "evidence_target": "B",
+      "control": "mismatched_evidence",
+      "margin": 1.9922256469726562,
+      "nll_a": 9.438590049743652,
+      "nll_b": 11.430815696716309,
+      "greedy_id": 216,
+      "latent_norm": 3.0470948219299316
+    },
+    {
+      "case_id": "case_16",
+      "evidence_target": "A",
+      "control": "mean_training_memory",
+      "margin": 2.1198177337646484,
+      "nll_a": 9.450536727905273,
+      "nll_b": 11.570354461669922,
+      "greedy_id": 216,
+      "latent_norm": 3.036975145339966
+    },
+    {
+      "case_id": "case_17",
+      "evidence_target": "A",
+      "control": "learned_A",
+      "margin": -1.4698848724365234,
+      "nll_a": 10.540242195129395,
+      "nll_b": 9.070357322692871,
+      "greedy_id": 216,
+      "latent_norm": 3.0470948219299316
+    },
+    {
+      "case_id": "case_17",
+      "evidence_target": "B",
+      "control": "learned_B",
+      "margin": -1.896681785583496,
+      "nll_a": 10.913296699523926,
+      "nll_b": 9.01661491394043,
+      "greedy_id": 216,
+      "latent_norm": 3.0420985221862793
+    },
+    {
+      "case_id": "case_17",
+      "evidence_target": "A",
+      "control": "query_only",
+      "margin": -0.9280481338500977,
+      "nll_a": 11.57741641998291,
+      "nll_b": 10.649368286132812,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_17",
+      "evidence_target": "A",
+      "control": "zero",
+      "margin": -2.2560243606567383,
+      "nll_a": 11.517494201660156,
+      "nll_b": 9.261469841003418,
+      "greedy_id": 216,
+      "latent_norm": 0.0
+    },
+    {
+      "case_id": "case_17",
+      "evidence_target": "A",
+      "control": "scale_matched_random",
+      "margin": -1.7722244262695312,
+      "nll_a": 12.341715812683105,
+      "nll_b": 10.569491386413574,
+      "greedy_id": 216,
+      "latent_norm": 2.9788947105407715
+    },
+    {
+      "case_id": "case_17",
+      "evidence_target": "A",
+      "control": "untrained_bridge",
+      "margin": -0.9280481338500977,
+      "nll_a": 11.57741641998291,
+      "nll_b": 10.649368286132812,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_17",
+      "evidence_target": "B",
+      "control": "mismatched_evidence",
+      "margin": -1.7735710144042969,
+      "nll_a": 11.083137512207031,
+      "nll_b": 9.309566497802734,
+      "greedy_id": 216,
+      "latent_norm": 3.0448975563049316
+    },
+    {
+      "case_id": "case_17",
+      "evidence_target": "A",
+      "control": "mean_training_memory",
+      "margin": -1.6466569900512695,
+      "nll_a": 10.72861385345459,
+      "nll_b": 9.08195686340332,
+      "greedy_id": 216,
+      "latent_norm": 3.036975145339966
+    },
+    {
+      "case_id": "case_18",
+      "evidence_target": "A",
+      "control": "learned_A",
+      "margin": -3.3024978637695312,
+      "nll_a": 11.590548515319824,
+      "nll_b": 8.288050651550293,
+      "greedy_id": 216,
+      "latent_norm": 3.0448975563049316
+    },
+    {
+      "case_id": "case_18",
+      "evidence_target": "B",
+      "control": "learned_B",
+      "margin": -3.069612503051758,
+      "nll_a": 11.639535903930664,
+      "nll_b": 8.569923400878906,
+      "greedy_id": 216,
+      "latent_norm": 3.0386667251586914
+    },
+    {
+      "case_id": "case_18",
+      "evidence_target": "A",
+      "control": "query_only",
+      "margin": -2.117384910583496,
+      "nll_a": 13.880759239196777,
+      "nll_b": 11.763374328613281,
+      "greedy_id": 378,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_18",
+      "evidence_target": "A",
+      "control": "zero",
+      "margin": -1.938673973083496,
+      "nll_a": 12.617036819458008,
+      "nll_b": 10.678362846374512,
+      "greedy_id": 216,
+      "latent_norm": 0.0
+    },
+    {
+      "case_id": "case_18",
+      "evidence_target": "A",
+      "control": "scale_matched_random",
+      "margin": -1.9291648864746094,
+      "nll_a": 12.321510314941406,
+      "nll_b": 10.392345428466797,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_18",
+      "evidence_target": "A",
+      "control": "untrained_bridge",
+      "margin": -2.117384910583496,
+      "nll_a": 13.880759239196777,
+      "nll_b": 11.763374328613281,
+      "greedy_id": 378,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_18",
+      "evidence_target": "B",
+      "control": "mismatched_evidence",
+      "margin": -2.7083654403686523,
+      "nll_a": 11.565407752990723,
+      "nll_b": 8.85704231262207,
+      "greedy_id": 216,
+      "latent_norm": 3.0218288898468018
+    },
+    {
+      "case_id": "case_18",
+      "evidence_target": "A",
+      "control": "mean_training_memory",
+      "margin": -2.897109031677246,
+      "nll_a": 11.494900703430176,
+      "nll_b": 8.59779167175293,
+      "greedy_id": 216,
+      "latent_norm": 3.036975145339966
+    },
+    {
+      "case_id": "case_19",
+      "evidence_target": "A",
+      "control": "learned_A",
+      "margin": -1.1920604705810547,
+      "nll_a": 11.007269859313965,
+      "nll_b": 9.81520938873291,
+      "greedy_id": 216,
+      "latent_norm": 3.0218288898468018
+    },
+    {
+      "case_id": "case_19",
+      "evidence_target": "B",
+      "control": "learned_B",
+      "margin": -1.2123470306396484,
+      "nll_a": 11.034639358520508,
+      "nll_b": 9.82229232788086,
+      "greedy_id": 216,
+      "latent_norm": 3.040203332901001
+    },
+    {
+      "case_id": "case_19",
+      "evidence_target": "A",
+      "control": "query_only",
+      "margin": -0.24936294555664062,
+      "nll_a": 12.983692169189453,
+      "nll_b": 12.734329223632812,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_19",
+      "evidence_target": "A",
+      "control": "zero",
+      "margin": -1.825216293334961,
+      "nll_a": 12.716001510620117,
+      "nll_b": 10.890785217285156,
+      "greedy_id": 216,
+      "latent_norm": 0.0
+    },
+    {
+      "case_id": "case_19",
+      "evidence_target": "A",
+      "control": "scale_matched_random",
+      "margin": -0.8078517913818359,
+      "nll_a": 12.588322639465332,
+      "nll_b": 11.780470848083496,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_19",
+      "evidence_target": "A",
+      "control": "untrained_bridge",
+      "margin": -0.24936294555664062,
+      "nll_a": 12.983692169189453,
+      "nll_b": 12.734329223632812,
+      "greedy_id": 216,
+      "latent_norm": 2.9788949489593506
+    },
+    {
+      "case_id": "case_19",
+      "evidence_target": "B",
+      "control": "mismatched_evidence",
+      "margin": -1.1576776504516602,
+      "nll_a": 11.165833473205566,
+      "nll_b": 10.008155822753906,
+      "greedy_id": 216,
+      "latent_norm": 3.0311577320098877
+    },
+    {
+      "case_id": "case_19",
+      "evidence_target": "A",
+      "control": "mean_training_memory",
+      "margin": -1.1212873458862305,
+      "nll_a": 11.093792915344238,
+      "nll_b": 9.972505569458008,
+      "greedy_id": 216,
+      "latent_norm": 3.036975145339966
+    }
+  ],
+  "controls": [
+    "query_only",
+    "zero",
+    "scale_matched_random",
+    "untrained_bridge",
+    "mismatched_evidence",
+    "mean_training_memory"
+  ],
+  "ordinary_textual_evidence": "historical LITE-008O textual prerequisite only; no new textual optimizer/control updates",
+  "memory_independent_soft_prompt": "not executed; reserved control would require optimizer updates",
+  "threshold": "at least 6/8 reversals and improvement over untrained/memory-independent controls",
+  "reversal_count": 0,
+  "pair_count": 8,
+  "checkpoint_sha256": "3354c43bf86484308d860adb2b754fcdb6bac15054d5c1c9834fe1066e0d7651",
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  },
+  "optimizer_updates": 0,
+  "protected_final_holdout_accessed": false,
+  "wall_seconds": 49.33593929599738
+}

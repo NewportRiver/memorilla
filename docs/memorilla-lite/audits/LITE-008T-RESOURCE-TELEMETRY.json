@@ -1,0 +1,28 @@
+{
+  "schema": "LITE-008T-resource-telemetry-v1",
+  "limits": {
+    "training_rss": 1073741824,
+    "inference_rss": 268435456,
+    "available_reserve": 536870912,
+    "subprocess_seconds": 300,
+    "cumulative_minutes": 30,
+    "max_updates": 256
+  },
+  "phases": {
+    "contrastive_qualification_seconds": 86.45195261703338,
+    "calibration_seconds": 81.78752296901075,
+    "training_seconds": 162.98609925695928,
+    "evaluation_seconds": 49.33593929599738
+  },
+  "optimizer_updates": {
+    "qualification": 0,
+    "calibration": 32,
+    "training": 64,
+    "total": 96
+  },
+  "cpu_only": true,
+  "threads": 1,
+  "subprocesses": 1,
+  "protected_final_holdout_accessed": false,
+  "persistent_processes": false
+}

@@ -509,7 +509,24 @@
     "tokenizer_dir": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R3/model",
     "eos_token_id": 0
   },
-  "qualification_implementation_sha256": "1b68a074ab84ba185af6c2b4afb3b4864c900ef739b83cead357b4735b604802",
+  "decoder_content_hashes": {
+    "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+    "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843"
+  },
+  "tokenizer_content_hashes": {
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+    "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3",
+    "vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+    "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510"
+  },
+  "bridge_architecture": "Linear(384,576)",
+  "parameterization": "eos_bias_plus_linear",
+  "objective_implementation_hash": "b509ca17b57ec0bb464c1851a521248aff431ec56487a4b2169eeb29e98dae49",
+  "decoder_differentiation_hash": "85ee0f876043061f49e00b0387cde5543008cc6dcb94c2e7a872ad7f6b20e98d",
+  "objective_implementation": "answer-token cross-entropy in layerwise_reference",
+  "decoder_differentiation_implementation": "layerwise_reference.manual_vjp",
+  "qualification_implementation_sha256": "4e60dc329072ac7e7987bec4b75c71ba988cc1b04f630feb4be4548c690b755a",
   "acceptance_contract_identity": "LITE-008S-contract-v1",
   "input_identity": {
     "feature_sha256": "a3b216afcf31392f8ac554b43417febd36203cc879dfa0adebbca38daeba6e6e",
@@ -522,5 +539,5 @@
     "detached_position_state": true
   },
   "protected_final_holdout_accessed": false,
-  "wall_seconds": 28.073614961002022
+  "wall_seconds": 28.096197656006552
 }

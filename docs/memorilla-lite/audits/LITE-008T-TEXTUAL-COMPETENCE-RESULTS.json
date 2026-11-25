@@ -1,0 +1,7 @@
+{
+  "schema": "LITE-008T-textual-competence-v1",
+  "status": "historical_prerequisite_passed",
+  "source": "/data/data/com.termux/files/home/memorilla-lite-workspace/docs/memorilla-lite/audits/LITE-008O-TEXTUAL-PREREQUISITE-RESULTS.json",
+  "fresh_rerun": "not executed",
+  "protected_final_holdout_accessed": false
+}

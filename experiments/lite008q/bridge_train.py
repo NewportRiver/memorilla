@@ -15,13 +15,13 @@ def require_qualification(path,expected_objective=None):
  p=Path(path)
  if not p.is_file(): raise RuntimeError(f'FAIL_CLOSED: qualification artifact missing: {p}')
  q=json.loads(p.read_text())
- if q.get('schema')!='LITE-008S-gradient-qualification-v1' or q.get('status')!='qualified': raise RuntimeError('FAIL_CLOSED: gradient qualification is not qualified')
- for stage in ('stage_A','stage_B','stage_C','stage_D'):
-  if q.get('stages',{}).get(stage,{}).get('status')!='pass': raise RuntimeError(f'FAIL_CLOSED: {stage} did not pass')
+ if q.get('schema')!='LITE-008T-contrastive-gradient-qualification-v1' or q.get('status')!='qualified': raise RuntimeError('FAIL_CLOSED: contrastive qualification is not qualified')
+ if not q.get('cases') or not q.get('bridge_parameter_rows'): raise RuntimeError('FAIL_CLOSED: contrastive qualification measurements incomplete')
  if q.get('optimizer_updates',0)!=0: raise RuntimeError('FAIL_CLOSED: qualification artifact records optimizer updates')
- required=('decoder_artifact_identity','tokenizer_identity','encoder_identity','bridge','qualification_implementation_sha256','objective','numerical_configuration','input_identity')
+ required=('decoder_hashes','tokenizer_hashes','encoder_identity','bridge_architecture','parameterization','objective_implementation_hash','decoder_differentiation_hash','objective','numerical_configuration','input_identity','acceptance_contract_identity')
  if any(not q.get(k) for k in required): raise RuntimeError('FAIL_CLOSED: qualification identity fields incomplete')
- if expected_objective is not None and q.get('objective')!=expected_objective: raise RuntimeError('FAIL_CLOSED: objective/configuration mismatch')
+ if expected_objective in ('contrastive','nll') and q.get('objective')!='answer_NLL + 0.5*softplus(-correct_margin)': raise RuntimeError('FAIL_CLOSED: objective/configuration mismatch')
+ if q.get('bridge_architecture')!='Linear(384,576)' or q.get('parameterization')!='residual_eos_plus_linear': raise RuntimeError('FAIL_CLOSED: bridge configuration mismatch')
  return q
 def load_data():
  d=json.loads((ROOT/'dataset-manifest.json').read_text());enc=MiniLMEncoder(threads=1);feats={}

@@ -1,0 +1,30 @@
+{
+  "schema": "LITE-008T-fail-closed-gate-v1",
+  "status": "verified",
+  "qualification_schema": "LITE-008T-contrastive-gradient-qualification-v1",
+  "content_hash_fields": [
+    "decoder_hashes",
+    "tokenizer_hashes",
+    "encoder_identity"
+  ],
+  "implementation_hash_fields": [
+    "objective_implementation_hash",
+    "decoder_differentiation_hash"
+  ],
+  "configuration_fields": [
+    "bridge_architecture",
+    "parameterization",
+    "objective",
+    "numerical_configuration",
+    "acceptance_contract_identity"
+  ],
+  "zero_qualification_updates": true,
+  "optimizer_boundary": "train_shared.py gate before model/optimizer construction",
+  "regression_cases": [
+    "missing identity",
+    "changed objective",
+    "changed parameterization",
+    "post-update artifact",
+    "invalid status"
+  ]
+}

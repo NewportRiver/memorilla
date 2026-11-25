@@ -1,0 +1,405 @@
+{
+  "schema": "LITE-008Q-shared-bridge-v1",
+  "seed": 20261126,
+  "rows": [
+    {
+      "case_id": "case_00",
+      "partition": "train",
+      "entity": "granite_7333704363",
+      "query": "Which stored value belongs to record granite_7333704363?",
+      "answer_a": "amber",
+      "answer_b": "cedar",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "Record granite_7333704363 stores value amber.",
+      "evidence_b": "The ledger entry for granite_7333704363 contains cedar.",
+      "unrelated_evidence": "Archive granite_unrelated_0 is labeled with value amber.",
+      "conflicting_evidence": "The ledger entry for granite_7333704363 contains cedar.",
+      "query_template": 0,
+      "evidence_template": 0
+    },
+    {
+      "case_id": "case_01",
+      "partition": "train",
+      "entity": "granite_6546283050",
+      "query": "What value is assigned to record granite_6546283050?",
+      "answer_a": "silver",
+      "answer_b": "coral",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "The ledger entry for granite_6546283050 contains silver.",
+      "evidence_b": "Archive granite_6546283050 is labeled with value coral.",
+      "unrelated_evidence": "Record granite_unrelated_1 stores value silver.",
+      "conflicting_evidence": "Archive granite_6546283050 is labeled with value coral.",
+      "query_template": 1,
+      "evidence_template": 1
+    },
+    {
+      "case_id": "case_02",
+      "partition": "train",
+      "entity": "granite_7985723412",
+      "query": "Which stored value belongs to record granite_7985723412?",
+      "answer_a": "violet",
+      "answer_b": "silver",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "Archive granite_7985723412 is labeled with value violet.",
+      "evidence_b": "Record granite_7985723412 stores value silver.",
+      "unrelated_evidence": "The ledger entry for granite_unrelated_2 contains violet.",
+      "conflicting_evidence": "Record granite_7985723412 stores value silver.",
+      "query_template": 0,
+      "evidence_template": 2
+    },
+    {
+      "case_id": "case_03",
+      "partition": "train",
+      "entity": "granite_2482081066",
+      "query": "What value is assigned to record granite_2482081066?",
+      "answer_a": "copper",
+      "answer_b": "cedar",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "Record granite_2482081066 stores value copper.",
+      "evidence_b": "The ledger entry for granite_2482081066 contains cedar.",
+      "unrelated_evidence": "Archive granite_unrelated_3 is labeled with value copper.",
+      "conflicting_evidence": "The ledger entry for granite_2482081066 contains cedar.",
+      "query_template": 1,
+      "evidence_template": 0
+    },
+    {
+      "case_id": "case_04",
+      "partition": "train",
+      "entity": "granite_7036723999",
+      "query": "Which stored value belongs to record granite_7036723999?",
+      "answer_a": "coral",
+      "answer_b": "copper",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "The ledger entry for granite_7036723999 contains coral.",
+      "evidence_b": "Archive granite_7036723999 is labeled with value copper.",
+      "unrelated_evidence": "Record granite_unrelated_4 stores value coral.",
+      "conflicting_evidence": "Archive granite_7036723999 is labeled with value copper.",
+      "query_template": 0,
+      "evidence_template": 1
+    },
+    {
+      "case_id": "case_05",
+      "partition": "train",
+      "entity": "granite_6172430027",
+      "query": "What value is assigned to record granite_6172430027?",
+      "answer_a": "violet",
+      "answer_b": "cedar",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "Archive granite_6172430027 is labeled with value violet.",
+      "evidence_b": "Record granite_6172430027 stores value cedar.",
+      "unrelated_evidence": "The ledger entry for granite_unrelated_5 contains violet.",
+      "conflicting_evidence": "Record granite_6172430027 stores value cedar.",
+      "query_template": 1,
+      "evidence_template": 2
+    },
+    {
+      "case_id": "case_06",
+      "partition": "train",
+      "entity": "granite_4119550991",
+      "query": "Which stored value belongs to record granite_4119550991?",
+      "answer_a": "violet",
+      "answer_b": "copper",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "Record granite_4119550991 stores value violet.",
+      "evidence_b": "The ledger entry for granite_4119550991 contains copper.",
+      "unrelated_evidence": "Archive granite_unrelated_6 is labeled with value violet.",
+      "conflicting_evidence": "The ledger entry for granite_4119550991 contains copper.",
+      "query_template": 0,
+      "evidence_template": 0
+    },
+    {
+      "case_id": "case_07",
+      "partition": "train",
+      "entity": "granite_9569908120",
+      "query": "What value is assigned to record granite_9569908120?",
+      "answer_a": "cedar",
+      "answer_b": "marble",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "The ledger entry for granite_9569908120 contains cedar.",
+      "evidence_b": "Archive granite_9569908120 is labeled with value marble.",
+      "unrelated_evidence": "Record granite_unrelated_7 stores value cedar.",
+      "conflicting_evidence": "Archive granite_9569908120 is labeled with value marble.",
+      "query_template": 1,
+      "evidence_template": 1
+    },
+    {
+      "case_id": "case_08",
+      "partition": "calibration",
+      "entity": "granite_6865881862",
+      "query": "Which stored value belongs to record granite_6865881862?",
+      "answer_a": "amber",
+      "answer_b": "silver",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "Archive granite_6865881862 is labeled with value amber.",
+      "evidence_b": "Record granite_6865881862 stores value silver.",
+      "unrelated_evidence": "The ledger entry for granite_unrelated_8 contains amber.",
+      "conflicting_evidence": "Record granite_6865881862 stores value silver.",
+      "query_template": 0,
+      "evidence_template": 2
+    },
+    {
+      "case_id": "case_09",
+      "partition": "calibration",
+      "entity": "granite_2271849578",
+      "query": "What value is assigned to record granite_2271849578?",
+      "answer_a": "copper",
+      "answer_b": "silver",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "Record granite_2271849578 stores value copper.",
+      "evidence_b": "The ledger entry for granite_2271849578 contains silver.",
+      "unrelated_evidence": "Archive granite_unrelated_9 is labeled with value copper.",
+      "conflicting_evidence": "The ledger entry for granite_2271849578 contains silver.",
+      "query_template": 1,
+      "evidence_template": 0
+    },
+    {
+      "case_id": "case_10",
+      "partition": "calibration",
+      "entity": "granite_2455990777",
+      "query": "Which stored value belongs to record granite_2455990777?",
+      "answer_a": "copper",
+      "answer_b": "violet",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "The ledger entry for granite_2455990777 contains copper.",
+      "evidence_b": "Archive granite_2455990777 is labeled with value violet.",
+      "unrelated_evidence": "Record granite_unrelated_10 stores value copper.",
+      "conflicting_evidence": "Archive granite_2455990777 is labeled with value violet.",
+      "query_template": 0,
+      "evidence_template": 1
+    },
+    {
+      "case_id": "case_11",
+      "partition": "calibration",
+      "entity": "granite_7969109368",
+      "query": "What value is assigned to record granite_7969109368?",
+      "answer_a": "marble",
+      "answer_b": "cedar",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "Archive granite_7969109368 is labeled with value marble.",
+      "evidence_b": "Record granite_7969109368 stores value cedar.",
+      "unrelated_evidence": "The ledger entry for granite_unrelated_11 contains marble.",
+      "conflicting_evidence": "Record granite_7969109368 stores value cedar.",
+      "query_template": 1,
+      "evidence_template": 2
+    },
+    {
+      "case_id": "case_12",
+      "partition": "development",
+      "entity": "granite_8612861969",
+      "query": "Which stored value belongs to record granite_8612861969?",
+      "answer_a": "linen",
+      "answer_b": "cedar",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "Record granite_8612861969 stores value linen.",
+      "evidence_b": "The ledger entry for granite_8612861969 contains cedar.",
+      "unrelated_evidence": "Archive granite_unrelated_12 is labeled with value linen.",
+      "conflicting_evidence": "The ledger entry for granite_8612861969 contains cedar.",
+      "query_template": 0,
+      "evidence_template": 0
+    },
+    {
+      "case_id": "case_13",
+      "partition": "development",
+      "entity": "granite_7239313870",
+      "query": "What value is assigned to record granite_7239313870?",
+      "answer_a": "violet",
+      "answer_b": "linen",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "The ledger entry for granite_7239313870 contains violet.",
+      "evidence_b": "Archive granite_7239313870 is labeled with value linen.",
+      "unrelated_evidence": "Record granite_unrelated_13 stores value violet.",
+      "conflicting_evidence": "Archive granite_7239313870 is labeled with value linen.",
+      "query_template": 1,
+      "evidence_template": 1
+    },
+    {
+      "case_id": "case_14",
+      "partition": "development",
+      "entity": "granite_3259821890",
+      "query": "Which stored value belongs to record granite_3259821890?",
+      "answer_a": "marble",
+      "answer_b": "violet",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "Archive granite_3259821890 is labeled with value marble.",
+      "evidence_b": "Record granite_3259821890 stores value violet.",
+      "unrelated_evidence": "The ledger entry for granite_unrelated_14 contains marble.",
+      "conflicting_evidence": "Record granite_3259821890 stores value violet.",
+      "query_template": 0,
+      "evidence_template": 2
+    },
+    {
+      "case_id": "case_15",
+      "partition": "development",
+      "entity": "granite_3582584942",
+      "query": "What value is assigned to record granite_3582584942?",
+      "answer_a": "silver",
+      "answer_b": "cedar",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "Record granite_3582584942 stores value silver.",
+      "evidence_b": "The ledger entry for granite_3582584942 contains cedar.",
+      "unrelated_evidence": "Archive granite_unrelated_15 is labeled with value silver.",
+      "conflicting_evidence": "The ledger entry for granite_3582584942 contains cedar.",
+      "query_template": 1,
+      "evidence_template": 0
+    },
+    {
+      "case_id": "case_16",
+      "partition": "development",
+      "entity": "granite_5655317088",
+      "query": "Which stored value belongs to record granite_5655317088?",
+      "answer_a": "cedar",
+      "answer_b": "coral",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "The ledger entry for granite_5655317088 contains cedar.",
+      "evidence_b": "Archive granite_5655317088 is labeled with value coral.",
+      "unrelated_evidence": "Record granite_unrelated_16 stores value cedar.",
+      "conflicting_evidence": "Archive granite_5655317088 is labeled with value coral.",
+      "query_template": 0,
+      "evidence_template": 1
+    },
+    {
+      "case_id": "case_17",
+      "partition": "development",
+      "entity": "granite_8825796839",
+      "query": "What value is assigned to record granite_8825796839?",
+      "answer_a": "violet",
+      "answer_b": "silver",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "Archive granite_8825796839 is labeled with value violet.",
+      "evidence_b": "Record granite_8825796839 stores value silver.",
+      "unrelated_evidence": "The ledger entry for granite_unrelated_17 contains violet.",
+      "conflicting_evidence": "Record granite_8825796839 stores value silver.",
+      "query_template": 1,
+      "evidence_template": 2
+    },
+    {
+      "case_id": "case_18",
+      "partition": "development",
+      "entity": "granite_8132456426",
+      "query": "Which stored value belongs to record granite_8132456426?",
+      "answer_a": "coral",
+      "answer_b": "silver",
+      "candidate_order": [
+        "A",
+        "B"
+      ],
+      "evidence_a": "Record granite_8132456426 stores value coral.",
+      "evidence_b": "The ledger entry for granite_8132456426 contains silver.",
+      "unrelated_evidence": "Archive granite_unrelated_18 is labeled with value coral.",
+      "conflicting_evidence": "The ledger entry for granite_8132456426 contains silver.",
+      "query_template": 0,
+      "evidence_template": 0
+    },
+    {
+      "case_id": "case_19",
+      "partition": "development",
+      "entity": "granite_4327290934",
+      "query": "What value is assigned to record granite_4327290934?",
+      "answer_a": "cedar",
+      "answer_b": "copper",
+      "candidate_order": [
+        "B",
+        "A"
+      ],
+      "evidence_a": "The ledger entry for granite_4327290934 contains cedar.",
+      "evidence_b": "Archive granite_4327290934 is labeled with value copper.",
+      "unrelated_evidence": "Record granite_unrelated_19 stores value cedar.",
+      "conflicting_evidence": "Archive granite_4327290934 is labeled with value copper.",
+      "query_template": 1,
+      "evidence_template": 1
+    }
+  ],
+  "train_case_ids": [
+    "case_00",
+    "case_01",
+    "case_02",
+    "case_03",
+    "case_04",
+    "case_05",
+    "case_06",
+    "case_07"
+  ],
+  "calibration_case_ids": [
+    "case_08",
+    "case_09",
+    "case_10",
+    "case_11"
+  ],
+  "development_case_ids": [
+    "case_12",
+    "case_13",
+    "case_14",
+    "case_15",
+    "case_16",
+    "case_17",
+    "case_18",
+    "case_19"
+  ],
+  "entity_disjoint": true,
+  "answer_values": [
+    "amber",
+    "violet",
+    "copper",
+    "silver",
+    "cedar",
+    "coral",
+    "linen",
+    "marble"
+  ],
+  "protected_final_holdout_accessed": false,
+  "historical_q_development_diagnostic_only": true
+}

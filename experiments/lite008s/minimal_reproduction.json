@@ -605,7 +605,7 @@
     },
     "optimized_P": {
       "input": {
-        "sha256": "f45cd28b07dcb2f833022dada2dabebb1155bae7eaf3618b2d148b5b52ae25a1",
+        "sha256": "10598e614adca4f9fe66d53ed4e405dd4445dbc4785f2cace989618ff0c0da4d",
         "dtype": "torch.float32",
         "shape": [
           1,
@@ -616,7 +616,7 @@
           1
         ],
         "contiguous": true,
-        "norm": 3.500269651412964,
+        "norm": 6.999352931976318,
         "storage_offset": 0,
         "storage_aliases_hidden": false
       },
@@ -661,24 +661,10 @@
         }
       },
       "1": {
-        "loss_conventional": 34.826358795166016,
-        "loss_manual": 34.826358795166016,
-        "loss_forward_only": 34.826358795166016,
+        "loss_conventional": 34.73516845703125,
+        "loss_manual": 34.73516845703125,
+        "loss_forward_only": 34.73516845703125,
         "forward_conventional_vs_forward_only": {
-          "absolute_max": 0.0,
-          "absolute_l2": 0.0,
-          "reference_relative_l2": 0.0,
-          "symmetric_relative_l2": 0.0,
-          "cosine": 1.000000238418579,
-          "norm_ratio": 1.0
-        },
-        "repeated_forward_losses": [
-          34.826358795166016,
-          34.826358795166016,
-          34.826358795166016
-        ],
-        "repeated_forward_max_abs_delta": 0.0,
-        "conventional_vs_manual_gradient": {
           "absolute_max": 0.0,
           "absolute_l2": 0.0,
           "reference_relative_l2": 0.0,
@@ -686,36 +672,10 @@
           "cosine": 1.0000004768371582,
           "norm_ratio": 1.0
         },
-        "directional_derivatives": {
-          "analytic_conventional": [
-            0.06634591519832611
-          ],
-          "analytic_manual": [
-            0.06634591519832611
-          ],
-          "finite_difference": [
-            0.072479248046875,
-            0.06542205810546875,
-            0.06626129150390625
-          ]
-        }
-      },
-      "2": {
-        "loss_conventional": 47.996673583984375,
-        "loss_manual": 47.996673583984375,
-        "loss_forward_only": 47.996673583984375,
-        "forward_conventional_vs_forward_only": {
-          "absolute_max": 0.0,
-          "absolute_l2": 0.0,
-          "reference_relative_l2": 0.0,
-          "symmetric_relative_l2": 0.0,
-          "cosine": 1.0,
-          "norm_ratio": 1.0
-        },
         "repeated_forward_losses": [
-          47.996673583984375,
-          47.996673583984375,
-          47.996673583984375
+          34.73516845703125,
+          34.73516845703125,
+          34.73516845703125
         ],
         "repeated_forward_max_abs_delta": 0.0,
         "conventional_vs_manual_gradient": {
@@ -723,20 +683,60 @@
           "absolute_l2": 0.0,
           "reference_relative_l2": 0.0,
           "symmetric_relative_l2": 0.0,
-          "cosine": 1.0000001192092896,
+          "cosine": 0.9999998807907104,
           "norm_ratio": 1.0
         },
         "directional_derivatives": {
           "analytic_conventional": [
-            0.042185500264167786
+            0.030682815238833427
           ],
           "analytic_manual": [
-            0.042185500264167786
+            0.030682815238833427
           ],
           "finite_difference": [
-            0.0457763634622097,
-            0.041961669921875,
-            0.0421142578125
+            0.03051757626235485,
+            0.02994537353515625,
+            0.0307464599609375
+          ]
+        }
+      },
+      "2": {
+        "loss_conventional": 48.10920333862305,
+        "loss_manual": 48.10920333862305,
+        "loss_forward_only": 48.10920333862305,
+        "forward_conventional_vs_forward_only": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0000007152557373,
+          "norm_ratio": 1.0
+        },
+        "repeated_forward_losses": [
+          48.10920333862305,
+          48.10920333862305,
+          48.10920333862305
+        ],
+        "repeated_forward_max_abs_delta": 0.0,
+        "conventional_vs_manual_gradient": {
+          "absolute_max": 0.0,
+          "absolute_l2": 0.0,
+          "reference_relative_l2": 0.0,
+          "symmetric_relative_l2": 0.0,
+          "cosine": 1.0,
+          "norm_ratio": 1.0
+        },
+        "directional_derivatives": {
+          "analytic_conventional": [
+            -0.03591429442167282
+          ],
+          "analytic_manual": [
+            -0.03591429442167282
+          ],
+          "finite_difference": [
+            -0.03814697265625,
+            -0.0362396240234375,
+            -0.03589630126953125
           ]
         }
       }
@@ -890,5 +890,5 @@
     0.01,
     0.1
   ],
-  "wall_seconds": 20.631264413997997
+  "wall_seconds": 22.27122859400697
 }

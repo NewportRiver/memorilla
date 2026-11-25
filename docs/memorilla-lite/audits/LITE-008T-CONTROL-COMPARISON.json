@@ -1,0 +1,19 @@
+{
+  "schema": "LITE-008T-control-comparison-v1",
+  "status": "completed_partial",
+  "controls": [
+    "query_only",
+    "zero",
+    "scale_matched_random",
+    "untrained_bridge",
+    "mismatched_evidence",
+    "mean_training_memory"
+  ],
+  "learned_mean_margin_A": 0.36382853984832764,
+  "learned_mean_margin_B": 0.3342254161834717,
+  "query_only_mean_margin": 0.9139272570610046,
+  "random_mean_margin": 0.6983388662338257,
+  "mismatched_mean_margin": 0.3936729431152344,
+  "soft_prompt": "not executed",
+  "ordinary_textual_evidence": "historical O prerequisite only"
+}

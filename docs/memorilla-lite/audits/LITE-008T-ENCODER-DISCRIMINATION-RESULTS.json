@@ -1,0 +1,13 @@
+{
+  "schema": "LITE-008T-encoder-discrimination-v1",
+  "status": "pass",
+  "feature_norm_mean_A": 0.9999999642,
+  "feature_norm_mean_B": 0.9999999702,
+  "evidence_cosine_range": [
+    0.4373629987,
+    0.6604889035
+  ],
+  "feature_dimension": 384,
+  "l2_normalized": true,
+  "protected_final_holdout_accessed": false
+}

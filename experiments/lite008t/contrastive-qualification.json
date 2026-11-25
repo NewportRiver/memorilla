@@ -1,0 +1,549 @@
+{
+  "schema": "LITE-008T-contrastive-gradient-qualification-v1",
+  "status": "qualified",
+  "optimizer_updates": 0,
+  "objective": "answer_NLL + 0.5*softplus(-correct_margin)",
+  "cases": [
+    {
+      "label": "initialized_bridge",
+      "target": "A",
+      "external_embedding": {
+        "absolute_max": 0.0,
+        "absolute_l2": 0.0,
+        "reference_relative_l2": 0.0,
+        "symmetric_relative_l2": 0.0,
+        "cosine": 1.0000001192092896,
+        "gradient_norm_ratio": 1.0
+      },
+      "conventional_manual_loss": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "conventional_forward_only": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "external_directional": [
+        {
+          "epsilon": 0.01,
+          "numeric": 0.6585121154785156,
+          "analytic": 0.658394455909729,
+          "metrics": {
+            "absolute_error": 0.0001176595687866211,
+            "reference_relative_error": 0.00017867487328023171,
+            "symmetric_relative_error": 0.00017869083706156588
+          }
+        },
+        {
+          "epsilon": 0.1,
+          "numeric": 0.6605100631713867,
+          "analytic": 0.658394455909729,
+          "metrics": {
+            "absolute_error": 0.002115607261657715,
+            "reference_relative_error": 0.0032029902035099877,
+            "symmetric_relative_error": 0.0032081280047954706
+          }
+        }
+      ],
+      "operation_counts": {
+        "conventional_backward": 1,
+        "manual_backward_vjps": 30,
+        "forward_only_backward_vjps": 0
+      }
+    },
+    {
+      "label": "initialized_bridge",
+      "target": "B",
+      "external_embedding": {
+        "absolute_max": 0.0,
+        "absolute_l2": 0.0,
+        "reference_relative_l2": 0.0,
+        "symmetric_relative_l2": 0.0,
+        "cosine": 1.0,
+        "gradient_norm_ratio": 1.0
+      },
+      "conventional_manual_loss": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "conventional_forward_only": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "external_directional": [
+        {
+          "epsilon": 0.01,
+          "numeric": 0.7181167602539062,
+          "analytic": 0.7176835536956787,
+          "metrics": {
+            "absolute_error": 0.00043320655822753906,
+            "reference_relative_error": 0.000603253652058433,
+            "symmetric_relative_error": 0.0006034356644426115
+          }
+        },
+        {
+          "epsilon": 0.1,
+          "numeric": 0.7183837890625,
+          "analytic": 0.7176835536956787,
+          "metrics": {
+            "absolute_error": 0.0007002353668212891,
+            "reference_relative_error": 0.0009747371495327103,
+            "symmetric_relative_error": 0.0009752124374284342
+          }
+        }
+      ],
+      "operation_counts": {
+        "conventional_backward": 1,
+        "manual_backward_vjps": 30,
+        "forward_only_backward_vjps": 0
+      }
+    },
+    {
+      "label": "perturbed_bridge",
+      "target": "A",
+      "external_embedding": {
+        "absolute_max": 0.0,
+        "absolute_l2": 0.0,
+        "reference_relative_l2": 0.0,
+        "symmetric_relative_l2": 0.0,
+        "cosine": 0.9999998211860657,
+        "gradient_norm_ratio": 1.0
+      },
+      "conventional_manual_loss": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "conventional_forward_only": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "external_directional": [
+        {
+          "epsilon": 0.01,
+          "numeric": 0.6539344787597656,
+          "analytic": 0.6537940502166748,
+          "metrics": {
+            "absolute_error": 0.0001404285430908203,
+            "reference_relative_error": 0.00021474405716785766,
+            "symmetric_relative_error": 0.00021476711714889907
+          }
+        },
+        {
+          "epsilon": 0.1,
+          "numeric": 0.655827522277832,
+          "analytic": 0.6537940502166748,
+          "metrics": {
+            "absolute_error": 0.0020334720611572266,
+            "reference_relative_error": 0.003100620196747057,
+            "symmetric_relative_error": 0.0031054345833414496
+          }
+        }
+      ],
+      "operation_counts": {
+        "conventional_backward": 1,
+        "manual_backward_vjps": 30,
+        "forward_only_backward_vjps": 0
+      }
+    },
+    {
+      "label": "perturbed_bridge",
+      "target": "B",
+      "external_embedding": {
+        "absolute_max": 0.0,
+        "absolute_l2": 0.0,
+        "reference_relative_l2": 0.0,
+        "symmetric_relative_l2": 0.0,
+        "cosine": 0.9999998807907104,
+        "gradient_norm_ratio": 1.0
+      },
+      "conventional_manual_loss": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "conventional_forward_only": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "external_directional": [
+        {
+          "epsilon": 0.01,
+          "numeric": 0.7187843322753906,
+          "analytic": 0.7185795307159424,
+          "metrics": {
+            "absolute_error": 0.0002048015594482422,
+            "reference_relative_error": 0.000284927690062359,
+            "symmetric_relative_error": 0.0002849682877403425
+          }
+        },
+        {
+          "epsilon": 0.1,
+          "numeric": 0.7192134857177734,
+          "analytic": 0.7185795307159424,
+          "metrics": {
+            "absolute_error": 0.0006339550018310547,
+            "reference_relative_error": 0.000881455943777763,
+            "symmetric_relative_error": 0.000881844597358678
+          }
+        }
+      ],
+      "operation_counts": {
+        "conventional_backward": 1,
+        "manual_backward_vjps": 30,
+        "forward_only_backward_vjps": 0
+      }
+    },
+    {
+      "label": "P_embedding",
+      "target": "A",
+      "external_embedding": {
+        "absolute_max": 0.0,
+        "absolute_l2": 0.0,
+        "reference_relative_l2": 0.0,
+        "symmetric_relative_l2": 0.0,
+        "cosine": 0.9999999403953552,
+        "gradient_norm_ratio": 1.0
+      },
+      "conventional_manual_loss": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "conventional_forward_only": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "external_directional": [
+        {
+          "epsilon": 0.01,
+          "numeric": 0.5075931549072266,
+          "analytic": 0.5074509382247925,
+          "metrics": {
+            "absolute_error": 0.00014221668243408203,
+            "reference_relative_error": 0.0002801784875528417,
+            "symmetric_relative_error": 0.00028021774304455755
+          }
+        },
+        {
+          "epsilon": 0.1,
+          "numeric": 0.507349967956543,
+          "analytic": 0.5074509382247925,
+          "metrics": {
+            "absolute_error": 0.00010097026824951172,
+            "reference_relative_error": 0.0001990150283367325,
+            "symmetric_relative_error": 0.0001989952268163806
+          }
+        }
+      ],
+      "operation_counts": {
+        "conventional_backward": 1,
+        "manual_backward_vjps": 30,
+        "forward_only_backward_vjps": 0
+      }
+    },
+    {
+      "label": "P_embedding",
+      "target": "B",
+      "external_embedding": {
+        "absolute_max": 0.0,
+        "absolute_l2": 0.0,
+        "reference_relative_l2": 0.0,
+        "symmetric_relative_l2": 0.0,
+        "cosine": 1.0000001192092896,
+        "gradient_norm_ratio": 1.0
+      },
+      "conventional_manual_loss": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "conventional_forward_only": {
+        "absolute_error": 0.0,
+        "reference_relative_error": 0.0,
+        "symmetric_relative_error": 0.0
+      },
+      "external_directional": [
+        {
+          "epsilon": 0.01,
+          "numeric": 0.18944740295410156,
+          "analytic": 0.1897599995136261,
+          "metrics": {
+            "absolute_error": 0.00031259655952453613,
+            "reference_relative_error": 0.001650044047319406,
+            "symmetric_relative_error": 0.0016486838468357146
+          }
+        },
+        {
+          "epsilon": 0.1,
+          "numeric": 0.18800735473632812,
+          "analytic": 0.1897599995136261,
+          "metrics": {
+            "absolute_error": 0.0017526447772979736,
+            "reference_relative_error": 0.009322213908897231,
+            "symmetric_relative_error": 0.009278963666819741
+          }
+        }
+      ],
+      "operation_counts": {
+        "conventional_backward": 1,
+        "manual_backward_vjps": 30,
+        "forward_only_backward_vjps": 0
+      }
+    }
+  ],
+  "bridge_parameter_rows": [
+    {
+      "target": "A",
+      "kind": "weight",
+      "index": 0,
+      "epsilon": 0.01,
+      "numeric": -0.013017654418945312,
+      "analytic": -0.012153657153248787,
+      "metrics": {
+        "absolute_error": 0.0008639972656965256,
+        "reference_relative_error": 0.0663711939102564,
+        "symmetric_relative_error": 0.06864936403639406
+      }
+    },
+    {
+      "target": "A",
+      "kind": "weight",
+      "index": 0,
+      "epsilon": 0.1,
+      "numeric": -0.012164115905761719,
+      "analytic": -0.012153657153248787,
+      "metrics": {
+        "absolute_error": 1.0458752512931824e-05,
+        "reference_relative_error": 0.0008598037534300275,
+        "symmetric_relative_error": 0.0008601735436507434
+      }
+    },
+    {
+      "target": "A",
+      "kind": "weight",
+      "index": 1000,
+      "epsilon": 0.01,
+      "numeric": 0.0019550323486328125,
+      "analytic": 0.0025690628681331873,
+      "metrics": {
+        "absolute_error": 0.0006140305195003748,
+        "reference_relative_error": 0.3140769102515244,
+        "symmetric_relative_error": 0.2714489815443397
+      }
+    },
+    {
+      "target": "A",
+      "kind": "weight",
+      "index": 1000,
+      "epsilon": 0.1,
+      "numeric": 0.002574920654296875,
+      "analytic": 0.0025690628681331873,
+      "metrics": {
+        "absolute_error": 5.857786163687706e-06,
+        "reference_relative_error": 0.0022749385127314816,
+        "symmetric_relative_error": 0.002277529132099722
+      }
+    },
+    {
+      "target": "A",
+      "kind": "bias",
+      "index": 221759,
+      "epsilon": 0.01,
+      "numeric": 0.3636360168457031,
+      "analytic": 0.3639274537563324,
+      "metrics": {
+        "absolute_error": 0.00029143691062927246,
+        "reference_relative_error": 0.0008014522685549436,
+        "symmetric_relative_error": 0.0008011312343323607
+      }
+    },
+    {
+      "target": "A",
+      "kind": "bias",
+      "index": 221759,
+      "epsilon": 0.1,
+      "numeric": 0.36417484283447266,
+      "analytic": 0.3639274537563324,
+      "metrics": {
+        "absolute_error": 0.0002473890781402588,
+        "reference_relative_error": 0.000679314024589842,
+        "symmetric_relative_error": 0.0006795448367588159
+      }
+    },
+    {
+      "target": "B",
+      "kind": "weight",
+      "index": 0,
+      "epsilon": 0.01,
+      "numeric": -0.0091552734375,
+      "analytic": -0.0084126777946949,
+      "metrics": {
+        "absolute_error": 0.0007425956428050995,
+        "reference_relative_error": 0.08111124674479167,
+        "symmetric_relative_error": 0.08453981149995728
+      }
+    },
+    {
+      "target": "B",
+      "kind": "weight",
+      "index": 0,
+      "epsilon": 0.1,
+      "numeric": -0.008425712585449219,
+      "analytic": -0.0084126777946949,
+      "metrics": {
+        "absolute_error": 1.3034790754318237e-05,
+        "reference_relative_error": 0.0015470253254102999,
+        "symmetric_relative_error": 0.001548222895424601
+      }
+    },
+    {
+      "target": "B",
+      "kind": "weight",
+      "index": 1000,
+      "epsilon": 0.01,
+      "numeric": -0.0041961669921875,
+      "analytic": -0.004325558431446552,
+      "metrics": {
+        "absolute_error": 0.00012939143925905228,
+        "reference_relative_error": 0.03083562677556818,
+        "symmetric_relative_error": 0.030367427446136575
+      }
+    },
+    {
+      "target": "B",
+      "kind": "weight",
+      "index": 1000,
+      "epsilon": 0.1,
+      "numeric": -0.00431060791015625,
+      "analytic": -0.004325558431446552,
+      "metrics": {
+        "absolute_error": 1.4950521290302277e-05,
+        "reference_relative_error": 0.0034683092505530975,
+        "symmetric_relative_error": 0.0034623050781876397
+      }
+    },
+    {
+      "target": "B",
+      "kind": "bias",
+      "index": 221759,
+      "epsilon": 0.01,
+      "numeric": 0.10704994201660156,
+      "analytic": 0.10609786212444305,
+      "metrics": {
+        "absolute_error": 0.0009520798921585083,
+        "reference_relative_error": 0.008893791759465478,
+        "symmetric_relative_error": 0.008933518184672416
+      }
+    },
+    {
+      "target": "B",
+      "kind": "bias",
+      "index": 221759,
+      "epsilon": 0.1,
+      "numeric": 0.10628223419189453,
+      "analytic": 0.10609786212444305,
+      "metrics": {
+        "absolute_error": 0.00018437206745147705,
+        "reference_relative_error": 0.001734740230607026,
+        "symmetric_relative_error": 0.0017362461986725637
+      }
+    }
+  ],
+  "thresholds": {
+    "reference_relative_error": 0.1,
+    "near_zero_absolute_tolerance": 0.001
+  },
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  },
+  "p_embedding_identity": {
+    "source": "/data/data/com.termux/files/home/memorilla-lite-workspace/docs/memorilla-lite/audits/LITE-008P-CONVERGENCE-RESULTS.json",
+    "case_id": "case_00",
+    "target": "A",
+    "updates": 16,
+    "lr": 0.05,
+    "sha256": "10598e614adca4f9fe66d53ed4e405dd4445dbc4785f2cace989618ff0c0da4d",
+    "norm": 6.999352931976318
+  },
+  "input_identity": {
+    "feature_sha256": "a3b216afcf31392f8ac554b43417febd36203cc879dfa0adebbca38daeba6e6e",
+    "query_ids": [
+      [
+        0,
+        17872,
+        42,
+        10366,
+        6314,
+        1685,
+        12698,
+        288,
+        2004,
+        24361,
+        79,
+        39,
+        35,
+        35,
+        35,
+        39,
+        32,
+        36,
+        35,
+        38,
+        35,
+        47,
+        19842,
+        42
+      ]
+    ]
+  },
+  "decoder_hashes": {
+    "model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "config.json": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843"
+  },
+  "tokenizer_hashes": {
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "tokenizer_config.json": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+    "special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3",
+    "vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+    "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510"
+  },
+  "bridge_architecture": "Linear(384,576)",
+  "parameterization": "residual_eos_plus_linear",
+  "objective_implementation_hash": "b509ca17b57ec0bb464c1851a521248aff431ec56487a4b2169eeb29e98dae49",
+  "decoder_differentiation_hash": "85ee0f876043061f49e00b0387cde5543008cc6dcb94c2e7a872ad7f6b20e98d",
+  "acceptance_contract_identity": "LITE-008T-contract-v1",
+  "numerical_configuration": {
+    "seed": 20261126,
+    "threads": 1,
+    "dtype": "bf16-stored-fp32-master",
+    "sequence_length_max": 32,
+    "external_slots": 1,
+    "finite_difference_epsilons": [
+      0.01,
+      0.1
+    ]
+  },
+  "implementation_hash": "ea56cb17a5230a57961acf2f2fb713aea8f84d192842b7697951e54fecc123b7",
+  "wall_seconds": 86.45195261703338
+}
