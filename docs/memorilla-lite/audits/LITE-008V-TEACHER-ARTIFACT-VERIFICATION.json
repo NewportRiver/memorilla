@@ -1,0 +1,251 @@
+{
+  "schema": "LITE-008V-provenance-v1",
+  "status": "blocked_incompatible_identities",
+  "rows": [
+    {
+      "case_id": "case_00",
+      "target": "A",
+      "dimensions": 576,
+      "recorded_hash_matches": true,
+      "source_vector_equal": true,
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "identity_mismatches": {
+        "entity": {
+          "source": "feldspar_5335815812",
+          "claimed": "granite_7333704363"
+        },
+        "query": {
+          "source": "Which stored value belongs to record feldspar_5335815812?",
+          "claimed": "Which stored value belongs to record granite_7333704363?"
+        },
+        "answer_a": {
+          "source": "marble",
+          "claimed": "amber"
+        },
+        "partition": {
+          "source": "calibration",
+          "claimed": "train"
+        }
+      },
+      "historical_margin": 6.372413635253906
+    },
+    {
+      "case_id": "case_00",
+      "target": "B",
+      "dimensions": 576,
+      "recorded_hash_matches": true,
+      "source_vector_equal": true,
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "identity_mismatches": {
+        "entity": {
+          "source": "feldspar_5335815812",
+          "claimed": "granite_7333704363"
+        },
+        "query": {
+          "source": "Which stored value belongs to record feldspar_5335815812?",
+          "claimed": "Which stored value belongs to record granite_7333704363?"
+        },
+        "answer_a": {
+          "source": "marble",
+          "claimed": "amber"
+        },
+        "partition": {
+          "source": "calibration",
+          "claimed": "train"
+        }
+      },
+      "historical_margin": -3.563206672668457
+    },
+    {
+      "case_id": "case_01",
+      "target": "A",
+      "dimensions": 576,
+      "recorded_hash_matches": true,
+      "source_vector_equal": true,
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "identity_mismatches": {
+        "entity": {
+          "source": "feldspar_2703867149",
+          "claimed": "granite_6546283050"
+        },
+        "query": {
+          "source": "Which stored value belongs to record feldspar_2703867149?",
+          "claimed": "What value is assigned to record granite_6546283050?"
+        },
+        "answer_a": {
+          "source": "marble",
+          "claimed": "silver"
+        },
+        "answer_b": {
+          "source": "linen",
+          "claimed": "coral"
+        },
+        "partition": {
+          "source": "calibration",
+          "claimed": "train"
+        }
+      },
+      "historical_margin": 3.383671760559082
+    },
+    {
+      "case_id": "case_01",
+      "target": "B",
+      "dimensions": 576,
+      "recorded_hash_matches": true,
+      "source_vector_equal": true,
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "identity_mismatches": {
+        "entity": {
+          "source": "feldspar_2703867149",
+          "claimed": "granite_6546283050"
+        },
+        "query": {
+          "source": "Which stored value belongs to record feldspar_2703867149?",
+          "claimed": "What value is assigned to record granite_6546283050?"
+        },
+        "answer_a": {
+          "source": "marble",
+          "claimed": "silver"
+        },
+        "answer_b": {
+          "source": "linen",
+          "claimed": "coral"
+        },
+        "partition": {
+          "source": "calibration",
+          "claimed": "train"
+        }
+      },
+      "historical_margin": -2.088136672973633
+    },
+    {
+      "case_id": "case_02",
+      "target": "A",
+      "dimensions": 576,
+      "recorded_hash_matches": true,
+      "source_vector_equal": true,
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "identity_mismatches": {
+        "entity": {
+          "source": "feldspar_7977074686",
+          "claimed": "granite_7985723412"
+        },
+        "query": {
+          "source": "Which stored value belongs to record feldspar_7977074686?",
+          "claimed": "Which stored value belongs to record granite_7985723412?"
+        },
+        "answer_a": {
+          "source": "amber",
+          "claimed": "violet"
+        },
+        "answer_b": {
+          "source": "linen",
+          "claimed": "silver"
+        },
+        "partition": {
+          "source": "calibration",
+          "claimed": "train"
+        }
+      },
+      "historical_margin": 3.3187522888183594
+    },
+    {
+      "case_id": "case_02",
+      "target": "B",
+      "dimensions": 576,
+      "recorded_hash_matches": true,
+      "source_vector_equal": true,
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "identity_mismatches": {
+        "entity": {
+          "source": "feldspar_7977074686",
+          "claimed": "granite_7985723412"
+        },
+        "query": {
+          "source": "Which stored value belongs to record feldspar_7977074686?",
+          "claimed": "Which stored value belongs to record granite_7985723412?"
+        },
+        "answer_a": {
+          "source": "amber",
+          "claimed": "violet"
+        },
+        "answer_b": {
+          "source": "linen",
+          "claimed": "silver"
+        },
+        "partition": {
+          "source": "calibration",
+          "claimed": "train"
+        }
+      },
+      "historical_margin": -2.6652374267578125
+    },
+    {
+      "case_id": "case_03",
+      "target": "A",
+      "dimensions": 576,
+      "recorded_hash_matches": true,
+      "source_vector_equal": true,
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "identity_mismatches": {
+        "entity": {
+          "source": "feldspar_1186595216",
+          "claimed": "granite_2482081066"
+        },
+        "query": {
+          "source": "Which stored value belongs to record feldspar_1186595216?",
+          "claimed": "What value is assigned to record granite_2482081066?"
+        },
+        "answer_a": {
+          "source": "cedar",
+          "claimed": "copper"
+        },
+        "answer_b": {
+          "source": "coral",
+          "claimed": "cedar"
+        },
+        "partition": {
+          "source": "calibration",
+          "claimed": "train"
+        }
+      },
+      "historical_margin": 2.559880256652832
+    },
+    {
+      "case_id": "case_03",
+      "target": "B",
+      "dimensions": 576,
+      "recorded_hash_matches": true,
+      "source_vector_equal": true,
+      "source_file_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "identity_mismatches": {
+        "entity": {
+          "source": "feldspar_1186595216",
+          "claimed": "granite_2482081066"
+        },
+        "query": {
+          "source": "Which stored value belongs to record feldspar_1186595216?",
+          "claimed": "What value is assigned to record granite_2482081066?"
+        },
+        "answer_a": {
+          "source": "cedar",
+          "claimed": "copper"
+        },
+        "answer_b": {
+          "source": "coral",
+          "claimed": "cedar"
+        },
+        "partition": {
+          "source": "calibration",
+          "claimed": "train"
+        }
+      },
+      "historical_margin": -3.1695785522460938
+    }
+  ],
+  "optimizer_updates": 0,
+  "student_checkpoint_present": false,
+  "decoder_reload_evaluation": "not executed: stopped at incompatible provenance",
+  "candidate_token_verification": "not executed: answer-text identities already conflict",
+  "encoder_feature_recovery": "blocked: no unambiguous qualified training identity"
+}

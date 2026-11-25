@@ -1,0 +1,6 @@
+{
+  "status": "blocked",
+  "reason": "Teacher source P identities differ from U claimed Q training identities; directive section 3 requires stop.",
+  "optimizer_updates": 0,
+  "solver_operations": 0
+}

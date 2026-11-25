@@ -1,0 +1,3 @@
+# LITE-008V Student Convergence Audit
+
+Audit stopped before numerical analysis. U analyze_teachers.py joins P-generated vectors onto Q identities by case_id alone. U align_student.py then uses Q evidence, while generation used the P manifest. The student checkpoint was deleted in U; exact coordinate errors and student interpolation cannot be recovered from aggregate MSE/cosine. Do not rerun optimizer updates to recreate it. U gradient verification also compares finite differences at final W with autograd at a different, mostly zero Wref; its reported error is not a valid matched-state qualification.
