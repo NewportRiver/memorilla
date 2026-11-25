@@ -1,0 +1,71 @@
+{
+  "shape": [
+    8,
+    384
+  ],
+  "rank": 8,
+  "singular_values": [
+    2.4939648483194525,
+    0.8041313155005586,
+    0.7047854162989202,
+    0.5489676066190644,
+    0.5235576283609037,
+    0.1647105450233343,
+    0.1455628125472494,
+    0.11398966949798414
+  ],
+  "condition_number": 21.878867263173856,
+  "feature_norms": [
+    1.0000000062705547,
+    1.0000000309235377,
+    1.0000000365523118,
+    0.9999999717212132,
+    1.00000000135775,
+    0.9999999839962467,
+    0.9999999908692692,
+    1.0000000204951836
+  ],
+  "feature_pair_distances": [
+    0.7987500288506679,
+    0.7147695270421821,
+    0.6819644935061356,
+    0.8264196655101177
+  ],
+  "feature_dtypes": [
+    "float32_source",
+    "float64_solver"
+  ],
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  },
+  "counterfactual_feature_separation": [
+    [
+      "case_00",
+      0.7987500288506679
+    ],
+    [
+      "case_01",
+      0.7147695270421821
+    ],
+    [
+      "case_02",
+      0.6819644935061356
+    ],
+    [
+      "case_03",
+      0.8264196655101177
+    ]
+  ]
+}

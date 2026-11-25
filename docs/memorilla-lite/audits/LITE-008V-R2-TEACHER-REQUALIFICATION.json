@@ -1,0 +1,336 @@
+{
+  "status": "PASS",
+  "tolerance_margin_abs": 0.0001,
+  "records": [
+    {
+      "case_id": "case_00",
+      "target": "A",
+      "query": "Which stored value belongs to record feldspar_5335815812?",
+      "candidate_answers": [
+        "marble",
+        "cedar"
+      ],
+      "candidate_token_ids": [
+        18540,
+        33952
+      ],
+      "evidence": "Record feldspar_5335815812 stores value marble.",
+      "historical_margin": 6.372413635253906,
+      "reloaded_margin": 6.372413635253906,
+      "margin_delta": 0.0,
+      "nll_a": 4.368534088134766,
+      "nll_b": 10.740947723388672,
+      "norm": 6.999352931976318,
+      "preference": "A",
+      "historical_preference": "A",
+      "vector_sha256": "a079b37324dde00ca62bac47f4452d8988271f0e197a717b1a262f689f92c283",
+      "feature_sha256": "209afe5ab6c3ab137afdb192dd00567ed1b1f910e1382d09f2f85ef5fdf8fd50",
+      "feature_norm": 1.0,
+      "feature_dim": 384,
+      "encoder_identity": {
+        "repo": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "artifact": "onnx/model_qint8_arm64.onnx",
+        "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+        "license": "Apache-2.0",
+        "dimension": 384,
+        "max_input_tokens": 128,
+        "runtime": "1.27.0",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "threads": 1,
+        "pooling": "attention-mask mean then L2 normalization"
+      }
+    },
+    {
+      "case_id": "case_00",
+      "target": "B",
+      "query": "Which stored value belongs to record feldspar_5335815812?",
+      "candidate_answers": [
+        "marble",
+        "cedar"
+      ],
+      "candidate_token_ids": [
+        18540,
+        33952
+      ],
+      "evidence": "Record feldspar_5335815812 stores value cedar.",
+      "historical_margin": -3.563206672668457,
+      "reloaded_margin": -3.563206672668457,
+      "margin_delta": 0.0,
+      "nll_a": 9.083976745605469,
+      "nll_b": 5.520770072937012,
+      "norm": 7.279113292694092,
+      "preference": "B",
+      "historical_preference": "B",
+      "vector_sha256": "cb5fddcc1552627a58c0bc50028203ac297a1dfbe4fac0525ffa7aa9e4fad114",
+      "feature_sha256": "a3fbf228850c0cdc93c14f7eeb48c0fe2ed50f858b1eebed4756dacfd1508db2",
+      "feature_norm": 1.0,
+      "feature_dim": 384,
+      "encoder_identity": {
+        "repo": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "artifact": "onnx/model_qint8_arm64.onnx",
+        "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+        "license": "Apache-2.0",
+        "dimension": 384,
+        "max_input_tokens": 128,
+        "runtime": "1.27.0",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "threads": 1,
+        "pooling": "attention-mask mean then L2 normalization"
+      }
+    },
+    {
+      "case_id": "case_01",
+      "target": "A",
+      "query": "Which stored value belongs to record feldspar_2703867149?",
+      "candidate_answers": [
+        "marble",
+        "linen"
+      ],
+      "candidate_token_ids": [
+        18540,
+        28522
+      ],
+      "evidence": "Record feldspar_2703867149 stores value marble.",
+      "historical_margin": 3.383671760559082,
+      "reloaded_margin": 3.383671760559082,
+      "margin_delta": 0.0,
+      "nll_a": 5.686497688293457,
+      "nll_b": 9.070169448852539,
+      "norm": 6.872679233551025,
+      "preference": "A",
+      "historical_preference": "A",
+      "vector_sha256": "52da3aa115ef81461436eb1d83460f581f7b073b2f0664c152ecf3c54f8d17df",
+      "feature_sha256": "c86cf49b3f4ec4c8391832ee380282b54c8e154caeeac7aac840c6df49cc8925",
+      "feature_norm": 1.0,
+      "feature_dim": 384,
+      "encoder_identity": {
+        "repo": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "artifact": "onnx/model_qint8_arm64.onnx",
+        "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+        "license": "Apache-2.0",
+        "dimension": 384,
+        "max_input_tokens": 128,
+        "runtime": "1.27.0",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "threads": 1,
+        "pooling": "attention-mask mean then L2 normalization"
+      }
+    },
+    {
+      "case_id": "case_01",
+      "target": "B",
+      "query": "Which stored value belongs to record feldspar_2703867149?",
+      "candidate_answers": [
+        "marble",
+        "linen"
+      ],
+      "candidate_token_ids": [
+        18540,
+        28522
+      ],
+      "evidence": "Record feldspar_2703867149 stores value linen.",
+      "historical_margin": -2.088136672973633,
+      "reloaded_margin": -2.088136672973633,
+      "margin_delta": 0.0,
+      "nll_a": 7.196859359741211,
+      "nll_b": 5.108722686767578,
+      "norm": 6.449561595916748,
+      "preference": "B",
+      "historical_preference": "B",
+      "vector_sha256": "fd1dcf090c122e3bf711df70dd06cdf33d30ec9eef753a4256c02596faa5dfdb",
+      "feature_sha256": "3e833393603513b43d675b157469dc786c6c5082fdda5f9d967de4711cf0caec",
+      "feature_norm": 0.9999999403953552,
+      "feature_dim": 384,
+      "encoder_identity": {
+        "repo": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "artifact": "onnx/model_qint8_arm64.onnx",
+        "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+        "license": "Apache-2.0",
+        "dimension": 384,
+        "max_input_tokens": 128,
+        "runtime": "1.27.0",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "threads": 1,
+        "pooling": "attention-mask mean then L2 normalization"
+      }
+    },
+    {
+      "case_id": "case_02",
+      "target": "A",
+      "query": "Which stored value belongs to record feldspar_7977074686?",
+      "candidate_answers": [
+        "amber",
+        "linen"
+      ],
+      "candidate_token_ids": [
+        35115,
+        28522
+      ],
+      "evidence": "Record feldspar_7977074686 stores value amber.",
+      "historical_margin": 3.3187522888183594,
+      "reloaded_margin": 3.3187522888183594,
+      "margin_delta": 0.0,
+      "nll_a": 7.904070854187012,
+      "nll_b": 11.222823143005371,
+      "norm": 8.047264099121094,
+      "preference": "A",
+      "historical_preference": "A",
+      "vector_sha256": "014eea92cd36fe6b55a47ac9c1e9fef68bdd04f50658ac84a40e1b541fe8c918",
+      "feature_sha256": "9c061a656fe43b460d610f070e017a59dc3a1611209ac122c391ce9a3d26eb43",
+      "feature_norm": 1.0,
+      "feature_dim": 384,
+      "encoder_identity": {
+        "repo": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "artifact": "onnx/model_qint8_arm64.onnx",
+        "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+        "license": "Apache-2.0",
+        "dimension": 384,
+        "max_input_tokens": 128,
+        "runtime": "1.27.0",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "threads": 1,
+        "pooling": "attention-mask mean then L2 normalization"
+      }
+    },
+    {
+      "case_id": "case_02",
+      "target": "B",
+      "query": "Which stored value belongs to record feldspar_7977074686?",
+      "candidate_answers": [
+        "amber",
+        "linen"
+      ],
+      "candidate_token_ids": [
+        35115,
+        28522
+      ],
+      "evidence": "Record feldspar_7977074686 stores value linen.",
+      "historical_margin": -2.6652374267578125,
+      "reloaded_margin": -2.6652374267578125,
+      "margin_delta": 0.0,
+      "nll_a": 10.892731666564941,
+      "nll_b": 8.227494239807129,
+      "norm": 7.123194217681885,
+      "preference": "B",
+      "historical_preference": "B",
+      "vector_sha256": "bcd7cab020b0b08214cf75e5365ad825d633032585743c7bc12092e01b134dc7",
+      "feature_sha256": "d4611d8e716e9a0a6051a532f1317a60aaf487628a4db3c037b2e53e76585404",
+      "feature_norm": 0.9999999403953552,
+      "feature_dim": 384,
+      "encoder_identity": {
+        "repo": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "artifact": "onnx/model_qint8_arm64.onnx",
+        "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+        "license": "Apache-2.0",
+        "dimension": 384,
+        "max_input_tokens": 128,
+        "runtime": "1.27.0",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "threads": 1,
+        "pooling": "attention-mask mean then L2 normalization"
+      }
+    },
+    {
+      "case_id": "case_03",
+      "target": "A",
+      "query": "Which stored value belongs to record feldspar_1186595216?",
+      "candidate_answers": [
+        "cedar",
+        "coral"
+      ],
+      "candidate_token_ids": [
+        33952,
+        12536
+      ],
+      "evidence": "Record feldspar_1186595216 stores value cedar.",
+      "historical_margin": 2.559880256652832,
+      "reloaded_margin": 2.559880256652832,
+      "margin_delta": 0.0,
+      "nll_a": 8.749436378479004,
+      "nll_b": 11.309316635131836,
+      "norm": 7.082710266113281,
+      "preference": "A",
+      "historical_preference": "A",
+      "vector_sha256": "153a6a88d59435e7c41a01c25ead5e7ea930983d1ea9aa7b25f44bcebf39f750",
+      "feature_sha256": "7fd9cc6ae9ca44b613f0f28fa08512846d6129c369217567383404ea7d8c0add",
+      "feature_norm": 1.0,
+      "feature_dim": 384,
+      "encoder_identity": {
+        "repo": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "artifact": "onnx/model_qint8_arm64.onnx",
+        "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+        "license": "Apache-2.0",
+        "dimension": 384,
+        "max_input_tokens": 128,
+        "runtime": "1.27.0",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "threads": 1,
+        "pooling": "attention-mask mean then L2 normalization"
+      }
+    },
+    {
+      "case_id": "case_03",
+      "target": "B",
+      "query": "Which stored value belongs to record feldspar_1186595216?",
+      "candidate_answers": [
+        "cedar",
+        "coral"
+      ],
+      "candidate_token_ids": [
+        33952,
+        12536
+      ],
+      "evidence": "Record feldspar_1186595216 stores value coral.",
+      "historical_margin": -3.1695785522460938,
+      "reloaded_margin": -3.1695785522460938,
+      "margin_delta": 0.0,
+      "nll_a": 10.717782974243164,
+      "nll_b": 7.54820442199707,
+      "norm": 6.9979567527771,
+      "preference": "B",
+      "historical_preference": "B",
+      "vector_sha256": "a9c12b4639cae7faf3decbeb47f7e2f9955015a2242bd5c72fa5e03d7c4258cd",
+      "feature_sha256": "971b6703f37a413d00933154f5dc978488e2cf7c014ffd7f380dc3e2338ac406",
+      "feature_norm": 0.9999999403953552,
+      "feature_dim": 384,
+      "encoder_identity": {
+        "repo": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "artifact": "onnx/model_qint8_arm64.onnx",
+        "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+        "license": "Apache-2.0",
+        "dimension": 384,
+        "max_input_tokens": 128,
+        "runtime": "1.27.0",
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "threads": 1,
+        "pooling": "attention-mask mean then L2 normalization"
+      }
+    }
+  ],
+  "optimizer_updates": 0,
+  "teacher_regeneration": false
+}

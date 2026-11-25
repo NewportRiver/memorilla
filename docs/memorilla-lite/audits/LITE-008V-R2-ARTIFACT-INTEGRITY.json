@@ -1,0 +1,32 @@
+{
+  "status": "verified",
+  "artifacts": [
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R2/features.json",
+      "exists": true,
+      "bytes": 94009,
+      "sha256": "4dbceffce6a1002640fa4347779844c7b3bd04f62edc29987f0b44cf60fb0b4c"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R2/reconstruction.pt",
+      "exists": true,
+      "bytes": 1774560,
+      "sha256": "73812ebd5810bee8115275f1dc6e291ace59895c41ff74951ebddb0721ac84fd"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R1/original-generation.json",
+      "exists": true,
+      "bytes": 204764,
+      "sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R1/original-p-manifest.json",
+      "exists": true,
+      "bytes": 9410,
+      "sha256": "bb4beb4ee715f00d09ca3f957ef49174983ba01b0761632f498f3b80a6f17373"
+    }
+  ],
+  "reload_verified": true,
+  "outside_git": true,
+  "optimizer_updates": 0
+}

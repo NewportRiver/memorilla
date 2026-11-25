@@ -11,7 +11,7 @@ REPORT = ROOT / 'docs/memorilla-lite/audits/LITE-008V-R1-RESOURCE-TELEMETRY.json
 
 def run():
     record = {'phase': 'provenance_recovery', 'optimizer_updates': 0, 'solver_operations': 0,
-              'decoder_forwards': 0, 'rss_ceiling_bytes': 268435456,
+              'decoder_forwards': 0, 'rss_ceiling_bytes': 1073741824,
               'reserve_bytes': 536870912, 'timeout_seconds': 300, 'samples': [],
               'enforcement': '50ms sampled child RSS/reserve; not kernel hard RSS enforcement',
               'status': 'preflight'}

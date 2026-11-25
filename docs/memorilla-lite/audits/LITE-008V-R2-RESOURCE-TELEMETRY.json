@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "classification": "scientific_reference_evaluation",
+  "optimizer_updates": 0,
+  "solver_operations": 2,
+  "decoder_forwards": 160,
+  "wall_seconds": 290.25510464794934,
+  "peak_rss_bytes": 300404736,
+  "minimum_available_bytes": 1734193152,
+  "rss_ceiling_bytes": 1073741824,
+  "production_rss_ceiling_bytes": 268435456,
+  "peak_rss_external_sampled": "unavailable; final in-process RSS only",
+  "reference_wall_seconds": 290.2582697259495,
+  "minimum_available_bytes_external_preflight": 1199267840,
+  "production_inference_ceiling_unchanged": 268435456
+}
