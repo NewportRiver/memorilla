@@ -1,0 +1,37 @@
+{
+  "schema": "LITE-008R-scale-analysis-v1",
+  "status": "completed_from_preserved_Q_telemetry",
+  "q_bridge_output_norm": {
+    "min": 20.259939193725586,
+    "max": 103.39999389648438,
+    "first": 20.259939193725586,
+    "last": 102.382080078125
+  },
+  "q_gradient_norm": {
+    "min": 0.1594732403755188,
+    "max": 23.209022521972656
+  },
+  "q_rss_bytes": {
+    "max": 629215232
+  },
+  "q_available_bytes": {
+    "min": 1280737280
+  },
+  "eos_and_decoder_embedding_distributions": "not independently regenerated in R; Q telemetry and protected local artifacts retained",
+  "minilm_feature_norm_distribution": "not independently regenerated in R",
+  "weight_bias_norms": "not recorded by Q; unavailable without reconstructing historical state",
+  "per_update_parameter_displacement": "not recorded by Q; unavailable",
+  "adam_state_statistics": "not recorded by Q; unavailable",
+  "gradient_clipping_frequency": "not recorded by Q; unavailable",
+  "interpretation": "Q output growth is measured; its exact optimizer-state attribution is unavailable",
+  "lite008p_optimized_oracle_slot_norms": {
+    "min": 2.9788949489593506,
+    "mean": 5.109788693049374,
+    "max": 7.953468322753906,
+    "samples": 136
+  },
+  "protected_q4_runtime_hashes": {
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-f16.gguf": "ca34c0c300472a0811e283b68df3864b6c4e9870bc4e4020fd3e86e0310f39be",
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/runtime/SmolLM2-135M-Q4_K_M.gguf": "39f688e705919e7cf51f505cedf283889e5ef813b1e969ac05f8461e7c83f458"
+  }
+}

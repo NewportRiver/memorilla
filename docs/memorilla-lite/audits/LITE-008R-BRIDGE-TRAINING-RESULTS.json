@@ -1,0 +1,8 @@
+{
+  "schema": "LITE-008R-bridge-training-results-v1",
+  "status": "blocked_by_fail_closed_gate",
+  "optimizer_updates": 0,
+  "qualification_artifact": "/data/data/com.termux/files/home/memorilla-lite-workspace/experiments/lite008r/gradient-qualification.json",
+  "historical_Q_updates_not_counted_as_R": "160",
+  "scientific_training_started": false
+}

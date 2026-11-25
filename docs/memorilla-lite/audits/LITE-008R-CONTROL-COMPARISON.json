@@ -1,0 +1,13 @@
+{
+  "schema": "LITE-008R-control-comparison-v1",
+  "status": "blocked",
+  "controls": [
+    "untrained bridge",
+    "zero memory",
+    "mismatched evidence",
+    "memory-independent soft prompt",
+    "scale-matched random memory",
+    "ordinary textual evidence"
+  ],
+  "executed": false
+}

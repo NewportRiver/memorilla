@@ -1,0 +1,22 @@
+{
+  "schema": "LITE-008R-resource-telemetry-v1",
+  "status": "completed_for_qualification",
+  "cpu_only": true,
+  "threads": 1,
+  "subprocesses": 1,
+  "training_rss_ceiling_bytes": 1073741824,
+  "inference_rss_ceiling_bytes": 268435456,
+  "minimum_available_bytes": 536870912,
+  "max_individual_duration_seconds": 300,
+  "cumulative_duration_budget_seconds": 1800,
+  "r_qualification_wall_seconds": 76.68073285097489,
+  "qualification_optimizer_updates": 0,
+  "q_historical_sampled_rss_max": 629215232,
+  "q_historical_min_available_bytes": 1280737280,
+  "package_state_changed": false,
+  "persistent_processes": false,
+  "protected_hashes": {
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R3/model/model.safetensors": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R3/model/tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c"
+  }
+}

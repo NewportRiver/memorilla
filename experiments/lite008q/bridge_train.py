@@ -10,6 +10,16 @@ ROOT=Path(__file__).resolve().parent;CACHE=Path.home()/'.cache/memorilla-lite/LI
 def append(p,x):
  p.parent.mkdir(parents=True,exist_ok=True)
  with p.open('a') as f:f.write(json.dumps(x,sort_keys=True)+'\n');f.flush();os.fsync(f.fileno())
+def require_qualification(path):
+ if not path: raise RuntimeError('FAIL_CLOSED: --qualification is required before bridge training')
+ p=Path(path)
+ if not p.is_file(): raise RuntimeError(f'FAIL_CLOSED: qualification artifact missing: {p}')
+ q=json.loads(p.read_text())
+ if q.get('schema')!='LITE-008R-gradient-qualification-v1' or q.get('status')!='qualified': raise RuntimeError('FAIL_CLOSED: gradient qualification is not qualified')
+ for stage in ('stage_A','stage_B','stage_C','stage_D'):
+  if q.get(stage,{}).get('status')!='pass': raise RuntimeError(f'FAIL_CLOSED: {stage} did not pass')
+ if q.get('optimizer_updates',0)!=0: raise RuntimeError('FAIL_CLOSED: qualification artifact records optimizer updates')
+ return q
 def load_data():
  d=json.loads((ROOT/'dataset-manifest.json').read_text());enc=MiniLMEncoder(threads=1);feats={}
  for r in d['rows']:
@@ -39,9 +49,9 @@ def train_soft(m,t,d,feats,updates,lr):
   r,target=ex[u%len(ex)];ids=ids_for(t,r['query'],1);a=tokid(t,r['answer_a']);bb=tokid(t,r['answer_b']);pre=objective(m,ids,p.detach().unsqueeze(0),a,bb,target,'contrastive');p.grad=pre['grad'][0];torch.nn.utils.clip_grad_norm_([p],1.0);opt.step();opt.zero_grad(set_to_none=True);hist.append({'update':u+1,'case_id':r['case_id'],'margin':run_forward(m,ids,p.detach().unsqueeze(0),a,bb)['margin']})
  return p.detach(),hist
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--mode',choices=['contrastive','nll','soft'],required=True);ap.add_argument('--updates',type=int,default=48);ap.add_argument('--tag',default='q');args=ap.parse_args();torch.set_num_threads(1);st=time.monotonic();CACHE.mkdir(parents=True,exist_ok=True);d,feats,encid=load_data();t=AutoTokenizer.from_pretrained(str(TOKDIR),local_files_only=True,use_fast=True);m=AutoModelForCausalLM.from_pretrained(str(MODEL),local_files_only=True,use_safetensors=True,torch_dtype=torch.bfloat16,low_cpu_mem_usage=True);m.requires_grad_(False);m.eval();ledger=CACHE/'update-ledger.jsonl'
- if args.mode=='soft':p,hist=train_soft(m,t,d,feats,args.updates,.05);np.save(CACHE/f'{args.tag}-soft.npy',p.numpy());out={'schema':'LITE-008Q-soft-prompt-training-v1','mode':'soft','updates':args.updates,'history':hist,'encoder_identity':encid}
+ ap=argparse.ArgumentParser();ap.add_argument('--mode',choices=['contrastive','nll','soft'],required=True);ap.add_argument('--updates',type=int,default=48);ap.add_argument('--tag',default='q');ap.add_argument('--lr',type=float,default=.05);ap.add_argument('--qualification');args=ap.parse_args();qualification=require_qualification(args.qualification);torch.set_num_threads(1);st=time.monotonic();CACHE.mkdir(parents=True,exist_ok=True);d,feats,encid=load_data();t=AutoTokenizer.from_pretrained(str(TOKDIR),local_files_only=True,use_fast=True);m=AutoModelForCausalLM.from_pretrained(str(MODEL),local_files_only=True,use_safetensors=True,torch_dtype=torch.bfloat16,low_cpu_mem_usage=True);m.requires_grad_(False);m.eval();ledger=CACHE/'update-ledger.jsonl'
+ if args.mode=='soft':p,hist=train_soft(m,t,d,feats,args.updates,args.lr);np.save(CACHE/f'{args.tag}-soft.npy',p.numpy());out={'schema':'LITE-008Q-soft-prompt-training-v1','mode':'soft','updates':args.updates,'history':hist,'encoder_identity':encid}
  else:
-  b,initial,tr=train_bridge(m,t,d,feats,args.mode,args.updates,.05,ledger);arr={'weight':b.weight.detach().numpy(),'bias':b.bias.detach().numpy()};np.savez(CACHE/f'{args.tag}-bridge.npz',**arr);h=hashlib.sha256();h.update(arr['weight'].tobytes());h.update(arr['bias'].tobytes());out={'schema':'LITE-008Q-bridge-training-v1','mode':args.mode,'updates':args.updates,'parameter_count':221760,'checkpoint':str(CACHE/f'{args.tag}-bridge.npz'),'checkpoint_sha256':h.hexdigest(),'encoder_identity':encid,'trajectory':tr,'initial_weight_sha256':hashlib.sha256(initial['weight'].numpy().tobytes()).hexdigest(),'decoder_parameters_frozen':True}
+  b,initial,tr=train_bridge(m,t,d,feats,args.mode,args.updates,args.lr,ledger);arr={'weight':b.weight.detach().numpy(),'bias':b.bias.detach().numpy()};np.savez(CACHE/f'{args.tag}-bridge.npz',**arr);h=hashlib.sha256();h.update(arr['weight'].tobytes());h.update(arr['bias'].tobytes());out={'schema':'LITE-008Q-bridge-training-v1','mode':args.mode,'updates':args.updates,'learning_rate':args.lr,'qualification_artifact':args.qualification,'parameter_count':221760,'checkpoint':str(CACHE/f'{args.tag}-bridge.npz'),'checkpoint_sha256':h.hexdigest(),'encoder_identity':encid,'trajectory':tr,'initial_weight_sha256':hashlib.sha256(initial['weight'].numpy().tobytes()).hexdigest(),'decoder_parameters_frozen':True}
  out['wall_seconds']=time.monotonic()-st;(ROOT/f'{args.tag}-training.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({'tag':args.tag,'updates':args.updates,'seconds':out['wall_seconds']}))
 if __name__=='__main__':main()

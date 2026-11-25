@@ -1,0 +1,32 @@
+{
+  "schema": "LITE-008R-stabilization-comparison-v1",
+  "status": "blocked_before_training",
+  "candidates": [
+    {
+      "name": "lr_0.001",
+      "status": "unexecuted"
+    },
+    {
+      "name": "lr_0.0001",
+      "status": "unexecuted"
+    },
+    {
+      "name": "eos_residual_projection",
+      "status": "unexecuted"
+    },
+    {
+      "name": "output_norm_regularization",
+      "status": "unexecuted"
+    },
+    {
+      "name": "bounded_residual_parameterization",
+      "status": "unexecuted"
+    },
+    {
+      "name": "normalized_features",
+      "status": "unexecuted"
+    }
+  ],
+  "reason": "Stage C/D gradient qualification failed; fail-closed gate prevented scientific training",
+  "updates": 0
+}

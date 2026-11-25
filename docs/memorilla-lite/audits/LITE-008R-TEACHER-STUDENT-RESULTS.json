@@ -1,0 +1,7 @@
+{
+  "schema": "LITE-008R-teacher-student-results-v1",
+  "status": "blocked",
+  "teacher_embeddings_generated": 0,
+  "student_updates": 0,
+  "reason": "gradient qualification failed"
+}

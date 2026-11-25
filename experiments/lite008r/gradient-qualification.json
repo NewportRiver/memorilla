@@ -1,0 +1,177 @@
+{
+  "schema": "LITE-008R-gradient-qualification-v1",
+  "status": "failed",
+  "thresholds": {
+    "relative_error": 0.1,
+    "absolute_error": 0.001,
+    "stage_c_cosine": 0.999
+  },
+  "stage_A": {
+    "status": "pass",
+    "max_relative_error": 0.000402902252972126,
+    "closed_form_shape": [
+      384,
+      576
+    ],
+    "autograd_finite": true,
+    "objective": "mean squared error",
+    "threshold": 0.1
+  },
+  "stage_B": {
+    "status": "pass",
+    "max_absolute_error": 0.0,
+    "max_relative_error": 0.0,
+    "output_shape": [
+      1,
+      576
+    ],
+    "finite": true,
+    "threshold": 0.001
+  },
+  "stage_C": {
+    "status": "fail",
+    "gradient_cosine": 0.27950167655944824,
+    "relative_error": 0.9933052062988281,
+    "reference_conventional_vs_manual_cosine": 0.8000390529632568,
+    "reference_conventional_vs_manual_relative_error": 1.0,
+    "auto_norm": 1636.1005859375,
+    "reference_norm": 5899057152.0,
+    "manual_norm": 40.88533401489258,
+    "threshold": 0.1
+  },
+  "stage_D": {
+    "status": "fail",
+    "manual_slot_gradient_finite": true,
+    "directions": [
+      {
+        "epsilon": 0.001,
+        "parameter_index": 0,
+        "numeric": 662.4956130981445,
+        "analytic": -43870348.0,
+        "relative_error": 1.0000151012162726
+      },
+      {
+        "epsilon": 0.001,
+        "parameter_index": 384,
+        "numeric": 44.15750503540039,
+        "analytic": -143272848.0,
+        "relative_error": 1.0000003082056765
+      },
+      {
+        "epsilon": 0.001,
+        "parameter_index": 1000,
+        "numeric": 1108.6888313293457,
+        "analytic": 439018432.0,
+        "relative_error": 0.9999974746189442
+      },
+      {
+        "epsilon": 0.001,
+        "parameter_index": 10000,
+        "numeric": -202.02064514160156,
+        "analytic": -19596766.0,
+        "relative_error": 0.9999896911232629
+      },
+      {
+        "epsilon": 0.001,
+        "parameter_index": 200000,
+        "numeric": 986.7310523986816,
+        "analytic": -170701152.0,
+        "relative_error": 1.0000057804592462
+      },
+      {
+        "epsilon": 0.01,
+        "parameter_index": 0,
+        "numeric": -52.41212844848633,
+        "analytic": -43870348.0,
+        "relative_error": 0.999998805294901
+      },
+      {
+        "epsilon": 0.01,
+        "parameter_index": 384,
+        "numeric": -32.60855674743652,
+        "analytic": -143272848.0,
+        "relative_error": 0.9999997724023972
+      },
+      {
+        "epsilon": 0.01,
+        "parameter_index": 1000,
+        "numeric": 38.22946548461914,
+        "analytic": 439018432.0,
+        "relative_error": 0.9999999129205912
+      },
+      {
+        "epsilon": 0.01,
+        "parameter_index": 10000,
+        "numeric": -55.44309616088867,
+        "analytic": -19596766.0,
+        "relative_error": 0.9999971708037867
+      },
+      {
+        "epsilon": 0.01,
+        "parameter_index": 200000,
+        "numeric": 222.89652824401855,
+        "analytic": -170701152.0,
+        "relative_error": 1.000001305770498
+      },
+      {
+        "epsilon": 0.1,
+        "parameter_index": 0,
+        "numeric": 9.883403778076172,
+        "analytic": -43870348.0,
+        "relative_error": 1.000000225286651
+      },
+      {
+        "epsilon": 0.1,
+        "parameter_index": 384,
+        "numeric": -2.820258140563965,
+        "analytic": -143272848.0,
+        "relative_error": 0.9999999803154738
+      },
+      {
+        "epsilon": 0.1,
+        "parameter_index": 1000,
+        "numeric": 2.638416290283203,
+        "analytic": 439018432.0,
+        "relative_error": 0.9999999939901925
+      },
+      {
+        "epsilon": 0.1,
+        "parameter_index": 10000,
+        "numeric": -19.21450138092041,
+        "analytic": -19596766.0,
+        "relative_error": 0.9999990195065155
+      },
+      {
+        "epsilon": 0.1,
+        "parameter_index": 200000,
+        "numeric": 5.006604194641113,
+        "analytic": -170701152.0,
+        "relative_error": 1.000000029329645
+      }
+    ],
+    "max_relative_error": 1.0000151012162726,
+    "threshold": 0.1,
+    "qualification_blocked": true
+  },
+  "encoder_identity": {
+    "repo": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "artifact": "onnx/model_qint8_arm64.onnx",
+    "sha256": "4278337fd0ff3c68bfb6291042cad8ab363e1d9fbc43dcb499fe91c871902474",
+    "license": "Apache-2.0",
+    "dimension": 384,
+    "max_input_tokens": 128,
+    "runtime": "1.27.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "pooling": "attention-mask mean then L2 normalization"
+  },
+  "decoder_layers": 30,
+  "bridge": "Linear(384,576)",
+  "seed": 20261126,
+  "optimizer_updates": 0,
+  "wall_seconds": 76.68073285097489,
+  "protected_final_holdout_accessed": false
+}

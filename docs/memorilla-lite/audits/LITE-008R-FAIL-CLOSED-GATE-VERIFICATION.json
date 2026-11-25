@@ -1,0 +1,14 @@
+{
+  "schema": "LITE-008R-fail-closed-gate-v1",
+  "status": "verified",
+  "checks": {
+    "missing_artifact": "raises FAIL_CLOSED",
+    "failed_artifact": "raises FAIL_CLOSED",
+    "incomplete_artifact": "raises FAIL_CLOSED",
+    "post_update_artifact": "raises FAIL_CLOSED",
+    "qualification_required_before_model_training_path": true
+  },
+  "optimizer_updates_authorized": 0,
+  "tests": "tests/lite/test_lite008r_gate.py",
+  "scientific_training_started": false
+}

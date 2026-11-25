@@ -1,0 +1,9 @@
+{
+  "schema": "LITE-008R-dataset-manifest-v1",
+  "status": "historical_Q_manifest_preserved",
+  "source": "experiments/lite008q/dataset-manifest.json",
+  "new_entity_disjoint_cases_generated": false,
+  "fresh_development_evaluation": "blocked",
+  "ordinary_textual_control": "blocked",
+  "protected_final_holdout_accessed": false
+}
