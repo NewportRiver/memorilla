@@ -1,0 +1,41 @@
+{
+  "schema": "LITE-008V-R2-reference-preflight-v1",
+  "status": "PASS",
+  "classification": "scientific_reference_evaluation",
+  "baseline_commit": "3a45d6e56f230b7b06b81387c0e09f7ff64a2b48",
+  "branch": "feature/memorilla-lite-android",
+  "authorization": "Owner directive LITE-008V-R2; isolated forward-only reference evaluation; zero optimizer updates",
+  "limits": {
+    "production_inference_max_rss_bytes": 268435456,
+    "scientific_reference_evaluation_max_rss_bytes": 1073741824,
+    "experimental_training_max_rss_bytes": 1073741824,
+    "minimum_available_system_memory_bytes": 536870912,
+    "cpu_only": true,
+    "numerical_threads": 1,
+    "computational_subprocesses": 1,
+    "decoder_batch_size": 1,
+    "max_decoder_sequence_length": 32,
+    "latent_memory_slots": 1,
+    "max_subprocess_duration_seconds": 300,
+    "max_cumulative_experimental_seconds": 1800,
+    "optimizer_updates": 0
+  },
+  "checks": {
+    "original_p_teacher_implementation_reused": true,
+    "q4_or_alternative_path_used": false,
+    "production_checkpoints_modified": false,
+    "authoritative_sqlite_modified": false,
+    "protected_holdout_accessed": false,
+    "teacher_regenerated": false,
+    "persistent_experimental_process_present": false,
+    "system_swap_or_configuration_modified": false
+  },
+  "live_observation": {
+    "timestamp_utc": "2026-11-26T22:54:52.067794+00:00",
+    "command_exit_code": 0,
+    "raw_observation": "timestamp_epoch 1795733691.8936317\ncpu_count 8\nmeminfo\nMemTotal:        5528084 kB\nMemAvailable:    1790280 kB\nSwapTotal:       8388604 kB\nSwapFree:        6044776 kB\ndisk usage(total=112778543104, used=103289425920, free=9354899456)\nthreads_env {}\npython Python 3.13.13\nprocesses",
+    "available_memory_parser": "/proc/meminfo MemAvailable; captured read-only",
+    "disk_parser": "shutil.disk_usage; captured read-only"
+  },
+  "decision": "PASS; authorized reference evaluation prerequisites are satisfied by recorded R2 execution and current host preflight. This is not production qualification."
+}
