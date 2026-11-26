@@ -1,0 +1,1 @@
+{"status":"BLOCKED","pairs_required":8,"pairs_evaluated":0,"acceptance_threshold_reversals":6,"controls_completed":[],"reason":"fresh teacher generation did not publish valid artifacts; no development teachers or per-example optimization were used","independent_generalization_claim":false,"gates_d_e_f":"NOT_CLAIMED"}

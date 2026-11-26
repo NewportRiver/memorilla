@@ -1,0 +1,233 @@
+{
+  "schema": "LITE-008W-R2-content-bound-dataset-v1",
+  "status": "FROZEN_MANIFEST_TEACHERS_UNGENERATED",
+  "historical_exclusion": true,
+  "protected_final_holdout_accessed": false,
+  "seed": 8008,
+  "partitions": {
+    "teacher_training": [
+      "wtrain_00",
+      "wtrain_01",
+      "wtrain_02",
+      "wtrain_03",
+      "wtrain_04",
+      "wtrain_05"
+    ],
+    "calibration": [
+      "wcal_00",
+      "wcal_01"
+    ],
+    "independent_development": [
+      "wdev_00",
+      "wdev_01",
+      "wdev_02",
+      "wdev_03",
+      "wdev_04",
+      "wdev_05",
+      "wdev_06",
+      "wdev_07"
+    ]
+  },
+  "candidate_vocabulary": [
+    "marble",
+    "cedar",
+    "linen",
+    "amber"
+  ],
+  "rows": [
+    {
+      "id": "wtrain_00",
+      "entity": "entity_w_00",
+      "partition": "teacher_training",
+      "query": "Which stored value belongs to record quartz_8000?",
+      "answer_a": "marble",
+      "answer_b": "cedar",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_8000 stores value marble.",
+      "evidence_b": "Record quartz_8000 stores value cedar.",
+      "unrelated_evidence": "Record basalt_9000 stores value linen."
+    },
+    {
+      "id": "wtrain_01",
+      "entity": "entity_w_01",
+      "partition": "teacher_training",
+      "query": "Which stored value belongs to record quartz_8001?",
+      "answer_a": "cedar",
+      "answer_b": "linen",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_8001 stores value cedar.",
+      "evidence_b": "Record quartz_8001 stores value linen.",
+      "unrelated_evidence": "Record basalt_9001 stores value amber."
+    },
+    {
+      "id": "wtrain_02",
+      "entity": "entity_w_02",
+      "partition": "teacher_training",
+      "query": "Which stored value belongs to record quartz_8002?",
+      "answer_a": "linen",
+      "answer_b": "amber",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_8002 stores value linen.",
+      "evidence_b": "Record quartz_8002 stores value amber.",
+      "unrelated_evidence": "Record basalt_9002 stores value marble."
+    },
+    {
+      "id": "wtrain_03",
+      "entity": "entity_w_03",
+      "partition": "teacher_training",
+      "query": "Which stored value belongs to record quartz_8003?",
+      "answer_a": "amber",
+      "answer_b": "marble",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_8003 stores value amber.",
+      "evidence_b": "Record quartz_8003 stores value marble.",
+      "unrelated_evidence": "Record basalt_9003 stores value cedar."
+    },
+    {
+      "id": "wtrain_04",
+      "entity": "entity_w_04",
+      "partition": "teacher_training",
+      "query": "Which stored value belongs to record quartz_8004?",
+      "answer_a": "marble",
+      "answer_b": "linen",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_8004 stores value marble.",
+      "evidence_b": "Record quartz_8004 stores value linen.",
+      "unrelated_evidence": "Record basalt_9004 stores value amber."
+    },
+    {
+      "id": "wtrain_05",
+      "entity": "entity_w_05",
+      "partition": "teacher_training",
+      "query": "Which stored value belongs to record quartz_8005?",
+      "answer_a": "cedar",
+      "answer_b": "amber",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_8005 stores value cedar.",
+      "evidence_b": "Record quartz_8005 stores value amber.",
+      "unrelated_evidence": "Record basalt_9005 stores value marble."
+    },
+    {
+      "id": "wcal_00",
+      "entity": "entity_w_wcal_00",
+      "partition": "calibration",
+      "query": "Which stored value belongs to record quartz_wcal_00?",
+      "answer_a": "marble",
+      "answer_b": "cedar",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wcal_00 stores value marble.",
+      "evidence_b": "Record quartz_wcal_00 stores value cedar.",
+      "unrelated_evidence": "Record basalt_wcal_00 stores value amber."
+    },
+    {
+      "id": "wcal_01",
+      "entity": "entity_w_wcal_01",
+      "partition": "calibration",
+      "query": "Which stored value belongs to record quartz_wcal_01?",
+      "answer_a": "cedar",
+      "answer_b": "linen",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wcal_01 stores value cedar.",
+      "evidence_b": "Record quartz_wcal_01 stores value linen.",
+      "unrelated_evidence": "Record basalt_wcal_01 stores value amber."
+    },
+    {
+      "id": "wdev_00",
+      "entity": "entity_w_wdev_00",
+      "partition": "independent_development",
+      "query": "Which stored value belongs to record quartz_wdev_00?",
+      "answer_a": "linen",
+      "answer_b": "amber",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wdev_00 stores value linen.",
+      "evidence_b": "Record quartz_wdev_00 stores value amber.",
+      "unrelated_evidence": "Record basalt_wdev_00 stores value amber."
+    },
+    {
+      "id": "wdev_01",
+      "entity": "entity_w_wdev_01",
+      "partition": "independent_development",
+      "query": "Which stored value belongs to record quartz_wdev_01?",
+      "answer_a": "amber",
+      "answer_b": "marble",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wdev_01 stores value amber.",
+      "evidence_b": "Record quartz_wdev_01 stores value marble.",
+      "unrelated_evidence": "Record basalt_wdev_01 stores value amber."
+    },
+    {
+      "id": "wdev_02",
+      "entity": "entity_w_wdev_02",
+      "partition": "independent_development",
+      "query": "Which stored value belongs to record quartz_wdev_02?",
+      "answer_a": "marble",
+      "answer_b": "linen",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wdev_02 stores value marble.",
+      "evidence_b": "Record quartz_wdev_02 stores value linen.",
+      "unrelated_evidence": "Record basalt_wdev_02 stores value amber."
+    },
+    {
+      "id": "wdev_03",
+      "entity": "entity_w_wdev_03",
+      "partition": "independent_development",
+      "query": "Which stored value belongs to record quartz_wdev_03?",
+      "answer_a": "cedar",
+      "answer_b": "amber",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wdev_03 stores value cedar.",
+      "evidence_b": "Record quartz_wdev_03 stores value amber.",
+      "unrelated_evidence": "Record basalt_wdev_03 stores value amber."
+    },
+    {
+      "id": "wdev_04",
+      "entity": "entity_w_wdev_04",
+      "partition": "independent_development",
+      "query": "Which stored value belongs to record quartz_wdev_04?",
+      "answer_a": "linen",
+      "answer_b": "marble",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wdev_04 stores value linen.",
+      "evidence_b": "Record quartz_wdev_04 stores value marble.",
+      "unrelated_evidence": "Record basalt_wdev_04 stores value amber."
+    },
+    {
+      "id": "wdev_05",
+      "entity": "entity_w_wdev_05",
+      "partition": "independent_development",
+      "query": "Which stored value belongs to record quartz_wdev_05?",
+      "answer_a": "amber",
+      "answer_b": "cedar",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wdev_05 stores value amber.",
+      "evidence_b": "Record quartz_wdev_05 stores value cedar.",
+      "unrelated_evidence": "Record basalt_wdev_05 stores value amber."
+    },
+    {
+      "id": "wdev_06",
+      "entity": "entity_w_wdev_06",
+      "partition": "independent_development",
+      "query": "Which stored value belongs to record quartz_wdev_06?",
+      "answer_a": "marble",
+      "answer_b": "amber",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wdev_06 stores value marble.",
+      "evidence_b": "Record quartz_wdev_06 stores value amber.",
+      "unrelated_evidence": "Record basalt_wdev_06 stores value amber."
+    },
+    {
+      "id": "wdev_07",
+      "entity": "entity_w_wdev_07",
+      "partition": "independent_development",
+      "query": "Which stored value belongs to record quartz_wdev_07?",
+      "answer_a": "cedar",
+      "answer_b": "marble",
+      "candidate_token_ids_unresolved": true,
+      "evidence_a": "Record quartz_wdev_07 stores value cedar.",
+      "evidence_b": "Record quartz_wdev_07 stores value marble.",
+      "unrelated_evidence": "Record basalt_wdev_07 stores value amber."
+    }
+  ],
+  "development_generation": "Rows are frozen before any teacher generation; no independent development teachers are permitted.",
+  "identity_contract": "Each generated artifact must bind manifest_sha256, row_id, entity, partition, exact query/evidence strings, candidate strings and token IDs, factual direction, encoder identity, decoder identity, teacher configuration, and artifact hash."
+}

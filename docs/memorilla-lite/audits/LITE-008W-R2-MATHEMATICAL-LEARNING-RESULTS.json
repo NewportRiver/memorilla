@@ -1,0 +1,1 @@
+{"status":"BLOCKED_FRESH_TEACHERS","historical_projection":"not reused as W fresh-training result","fresh_training_projection":"UNEXECUTED","minimum_norm":"UNEXECUTED","ridge":"UNEXECUTED","execution_dtype_verification":"UNEXECUTED","optimizer_updates":126,"algebraic_solver_operations":0,"reason":"no valid fresh teacher artifact was published"}
