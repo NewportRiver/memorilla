@@ -18,11 +18,19 @@ def metrics(pred,y):
 def main():
  torch.set_num_threads(1); torch.set_num_interop_threads(1)
  d=json.loads(R1.read_text()); f=json.loads(F.read_text())
- # The retained artifacts contain 8 rows in target order and matching feature hashes.
- Y=torch.tensor([r['final_slots'][0] for r in d['results']],dtype=torch.float64)
- X=torch.tensor([r['feature'] for r in f['features']],dtype=torch.float64)
+ # Permanent content-bound identity contract: never infer association from row position.
+ teacher_by_key={(r['case_id'],r['target']):r for r in d['results']}
+ feature_by_key={(r['case_id'],r['target']):r for r in f['features']}
+ keys=list(teacher_by_key)
+ if set(keys)!=set(feature_by_key) or len(keys)!=8: raise RuntimeError('FAIL_CLOSED: teacher/feature identity key mismatch')
+ if sha(F)!='4dbceffce6a1002640fa4347779844c7b3bd04f62edc29987f0b44cf60fb0b4c': raise RuntimeError('FAIL_CLOSED: feature artifact hash mismatch')
+ # Explicit key ordering is used only after identity equality has been verified.
+ Y=torch.tensor([teacher_by_key[k]['final_slots'][0] for k in keys],dtype=torch.float64)
+ X=torch.tensor([feature_by_key[k]['feature'] for k in keys],dtype=torch.float64)
  # R2 EOS is recovered from the reconstruction bundle; use residual targets.
- bundle=torch.load(Path.home()/'.cache/memorilla-lite/LITE-008V-R2/reconstruction.pt',map_location='cpu') if (Path.home()/'.cache/memorilla-lite/LITE-008V-R2/reconstruction.pt').exists() else None
+ bundle_path=Path.home()/'.cache/memorilla-lite/LITE-008V-R2/reconstruction.pt'
+ if bundle_path.exists() and sha(bundle_path)!='73812ebd5810bee8115275f1dc6e291ace59895c41ff74951ebddb0721ac84fd': raise RuntimeError('FAIL_CLOSED: reconstruction bundle hash mismatch')
+ bundle=torch.load(bundle_path,map_location='cpu') if bundle_path.exists() else None
  # R2 bundle location is authoritative in the R2 integrity report.
  if bundle is None:
   p=Path.home()/'.cache/memorilla-lite/LITE-008V-R2/reconstruction.pt'

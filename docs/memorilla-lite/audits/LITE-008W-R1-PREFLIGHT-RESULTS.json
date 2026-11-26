@@ -1,0 +1,80 @@
+{
+  "schema": "LITE-008W-R1-preflight-v1",
+  "status": "PASS",
+  "interpreter": {
+    "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/venv/bin/python",
+    "version": "3.13.13 (main, Apr 10 2026, 13:09:22) [Clang 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f0",
+    "platform": "Android-17-aarch64-64bit-ELF",
+    "machine": "aarch64",
+    "venv_root": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/venv"
+  },
+  "packages": {
+    "torch": {
+      "version": "2.11.0",
+      "location": "/data/data/com.termux/files/usr/lib/python3.13/site-packages/torch/__init__.py"
+    },
+    "numpy": {
+      "version": "2.4.4",
+      "location": "/data/data/com.termux/files/usr/lib/python3.13/site-packages/numpy/__init__.py"
+    },
+    "onnxruntime": {
+      "version": "1.27.0",
+      "location": "/data/data/com.termux/files/usr/lib/python3.13/site-packages/onnxruntime/__init__.py"
+    },
+    "transformers": {
+      "version": "4.57.6",
+      "location": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/venv/lib/python3.13/site-packages/transformers/__init__.py"
+    },
+    "tokenizers": {
+      "version": "0.22.2",
+      "location": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/venv/lib/python3.13/site-packages/tokenizers/__init__.py"
+    },
+    "safetensors": {
+      "version": "0.8.0",
+      "location": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/venv/lib/python3.13/site-packages/safetensors/__init__.py"
+    }
+  },
+  "files": {
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R3/model/tokenizer.json": {
+      "exists": true,
+      "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+      "bytes": 2104556
+    },
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R2/reconstruction.pt": {
+      "exists": true,
+      "sha256": "73812ebd5810bee8115275f1dc6e291ace59895c41ff74951ebddb0721ac84fd",
+      "bytes": 1774560
+    }
+  },
+  "checks": {
+    "torch": true,
+    "numpy": true,
+    "onnxruntime": true,
+    "transformers": true,
+    "tokenizers": true,
+    "safetensors": true,
+    "interpreter_identity": true,
+    "tokenizer": true,
+    "r2_bundle": true,
+    "cpu_only": true,
+    "one_thread_env": true,
+    "storage": true,
+    "memory": true
+  },
+  "resource_classification": {
+    "classification": "scientific_reference_evaluation",
+    "production_rss_ceiling_bytes": 268435456,
+    "scientific_rss_ceiling_bytes": 1073741824,
+    "training_rss_ceiling_bytes": 1073741824,
+    "minimum_available_bytes": 536870912,
+    "cpu_only": true,
+    "numerical_threads": 1,
+    "subprocesses": 1,
+    "batch_size": 1,
+    "max_sequence_length": 32,
+    "latent_slots": 1,
+    "max_subprocess_seconds": 300,
+    "max_cumulative_seconds": 1800,
+    "optimizer_updates": 0
+  }
+}

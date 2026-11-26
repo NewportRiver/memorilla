@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "decoder_model_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R3/model",
+  "tokenizer_sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+  "r2_bundle_sha256": "73812ebd5810bee8115275f1dc6e291ace59895c41ff74951ebddb0721ac84fd",
+  "teacher_source_sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+  "r2_report_sha256": "52e2155750485715e193f875c87dbc0cf45e78478ca78d1434f693dd2029d922",
+  "records": [
+    {
+      "case_id": "case_00",
+      "target": "A",
+      "candidate_token_ids": [
+        18540,
+        33952
+      ],
+      "historical_margin": 6.372413635253906,
+      "teacher_margin": 6.372413635253906,
+      "reconstructed_margin": 6.372418403625488,
+      "teacher_preference": "A",
+      "reconstructed_preference": "A",
+      "teacher_margin_delta": 0.0,
+      "reconstructed_matches_r2_preference": true
+    },
+    {
+      "case_id": "case_00",
+      "target": "B",
+      "candidate_token_ids": [
+        18540,
+        33952
+      ],
+      "historical_margin": -3.563206672668457,
+      "teacher_margin": -3.563206672668457,
+      "reconstructed_margin": -3.5632076263427734,
+      "teacher_preference": "B",
+      "reconstructed_preference": "B",
+      "teacher_margin_delta": 0.0,
+      "reconstructed_matches_r2_preference": true
+    },
+    {
+      "case_id": "case_01",
+      "target": "A",
+      "candidate_token_ids": [
+        18540,
+        28522
+      ],
+      "historical_margin": 3.383671760559082,
+      "teacher_margin": 3.383671760559082,
+      "reconstructed_margin": 3.3836708068847656,
+      "teacher_preference": "A",
+      "reconstructed_preference": "A",
+      "teacher_margin_delta": 0.0,
+      "reconstructed_matches_r2_preference": true
+    },
+    {
+      "case_id": "case_01",
+      "target": "B",
+      "candidate_token_ids": [
+        18540,
+        28522
+      ],
+      "historical_margin": -2.088136672973633,
+      "teacher_margin": -2.088136672973633,
+      "reconstructed_margin": -2.0881595611572266,
+      "teacher_preference": "B",
+      "reconstructed_preference": "B",
+      "teacher_margin_delta": 0.0,
+      "reconstructed_matches_r2_preference": true
+    },
+    {
+      "case_id": "case_02",
+      "target": "A",
+      "candidate_token_ids": [
+        35115,
+        28522
+      ],
+      "historical_margin": 3.3187522888183594,
+      "teacher_margin": 3.3187522888183594,
+      "reconstructed_margin": 3.31874942779541,
+      "teacher_preference": "A",
+      "reconstructed_preference": "A",
+      "teacher_margin_delta": 0.0,
+      "reconstructed_matches_r2_preference": true
+    },
+    {
+      "case_id": "case_02",
+      "target": "B",
+      "candidate_token_ids": [
+        35115,
+        28522
+      ],
+      "historical_margin": -2.6652374267578125,
+      "teacher_margin": -2.6652374267578125,
+      "reconstructed_margin": -2.6652374267578125,
+      "teacher_preference": "B",
+      "reconstructed_preference": "B",
+      "teacher_margin_delta": 0.0,
+      "reconstructed_matches_r2_preference": true
+    },
+    {
+      "case_id": "case_03",
+      "target": "A",
+      "candidate_token_ids": [
+        33952,
+        12536
+      ],
+      "historical_margin": 2.559880256652832,
+      "teacher_margin": 2.559880256652832,
+      "reconstructed_margin": 2.5598621368408203,
+      "teacher_preference": "A",
+      "reconstructed_preference": "A",
+      "teacher_margin_delta": 0.0,
+      "reconstructed_matches_r2_preference": true
+    },
+    {
+      "case_id": "case_03",
+      "target": "B",
+      "candidate_token_ids": [
+        33952,
+        12536
+      ],
+      "historical_margin": -3.1695785522460938,
+      "teacher_margin": -3.1695785522460938,
+      "reconstructed_margin": -3.1695713996887207,
+      "teacher_preference": "B",
+      "reconstructed_preference": "B",
+      "teacher_margin_delta": 0.0,
+      "reconstructed_matches_r2_preference": true
+    }
+  ],
+  "teacher_reversals": 8,
+  "reconstructed_reversals": 8,
+  "optimizer_updates": 0,
+  "teacher_regeneration": false,
+  "deterministic_repeat": "not repeated in this bounded qualification; R2 repeat evidence retained"
+}
