@@ -1,0 +1,492 @@
+{
+  "status": "COMPLETED_ALGEBRAIC_ONLY",
+  "schedule": [
+    0.0,
+    1e-06,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "selection_rule": "no independent development selection; report all values",
+  "note": "functional margin and reversal fields require frozen decoder and are blocked",
+  "optimizer_updates": 0,
+  "folds": [
+    {
+      "entity_index": 0,
+      "held_out_indices": [
+        0,
+        1
+      ],
+      "training_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "regularization": [
+        {
+          "lambda": 0.0,
+          "fit": {
+            "mse": 7.971825741340012e-32,
+            "max_abs": 1.0408340855860843e-15,
+            "relative_l2": 1.100398282367898e-15,
+            "pred_norm_mean": 6.124855658846865
+          },
+          "excluded": {
+            "mse": 0.05988744436891277,
+            "max_abs": 0.7460537419716782,
+            "relative_l2": 0.9563192775242564,
+            "pred_norm_mean": 5.571745267723903
+          },
+          "weight_norm": 35.093520985950505,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 1e-06,
+          "fit": {
+            "mse": 9.403107410012955e-12,
+            "max_abs": 1.7276636084861963e-05,
+            "relative_l2": 1.1951067627485209e-05,
+            "pred_norm_mean": 6.124821988075676
+          },
+          "excluded": {
+            "mse": 0.059887284131592916,
+            "max_abs": 0.7460520373581488,
+            "relative_l2": 0.9563179981397204,
+            "pred_norm_mean": 5.5717321746578286
+          },
+          "weight_norm": 35.092594940786775,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.001,
+          "fit": {
+            "mse": 8.729410320089093e-06,
+            "max_abs": 0.016626218059944575,
+            "relative_l2": 0.011514987193369993,
+            "pred_norm_mean": 6.092333646887872
+          },
+          "excluded": {
+            "mse": 0.059729797033503944,
+            "max_abs": 0.7443742214686954,
+            "relative_l2": 0.9550597436269945,
+            "pred_norm_mean": 5.558786043656548
+          },
+          "weight_norm": 34.206354993634655,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.01,
+          "fit": {
+            "mse": 0.0005003602272710932,
+            "max_abs": 0.1242969669845182,
+            "relative_l2": 0.08717910296416827,
+            "pred_norm_mean": 5.870326924296418
+          },
+          "excluded": {
+            "mse": 0.0584769986068217,
+            "max_abs": 0.7309577818544366,
+            "relative_l2": 0.9449907492718049,
+            "pred_norm_mean": 5.450858529334973
+          },
+          "weight_norm": 28.673702959976406,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.1,
+          "fit": {
+            "mse": 0.006010489838760451,
+            "max_abs": 0.3619308167813402,
+            "relative_l2": 0.30215232408073406,
+            "pred_norm_mean": 4.956661181130975
+          },
+          "excluded": {
+            "mse": 0.05162940791295228,
+            "max_abs": 0.7067024792354816,
+            "relative_l2": 0.8879399425385742,
+            "pred_norm_mean": 4.705403402357811
+          },
+          "weight_norm": 16.991274356663677,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 1.0,
+          "fit": {
+            "mse": 0.028174810050893975,
+            "max_abs": 0.5547052773667704,
+            "relative_l2": 0.6541863888344198,
+            "pred_norm_mean": 3.1440322573783193
+          },
+          "excluded": {
+            "mse": 0.04828031574478173,
+            "max_abs": 0.691057500486968,
+            "relative_l2": 0.8586577043294435,
+            "pred_norm_mean": 3.011179507616543
+          },
+          "weight_norm": 5.948398707484853,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        }
+      ]
+    },
+    {
+      "entity_index": 1,
+      "held_out_indices": [
+        2,
+        3
+      ],
+      "training_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "regularization": [
+        {
+          "lambda": 0.0,
+          "fit": {
+            "mse": 4.712493098204329e-32,
+            "max_abs": 9.43689570931383e-16,
+            "relative_l2": 8.23829561326972e-16,
+            "pred_norm_mean": 6.299565237982222
+          },
+          "excluded": {
+            "mse": 0.06172786022803502,
+            "max_abs": 0.854344196578745,
+            "relative_l2": 1.0624459825354167,
+            "pred_norm_mean": 5.874597507350316
+          },
+          "weight_norm": 40.48341529374298,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 1e-06,
+          "fit": {
+            "mse": 2.199649889765011e-11,
+            "max_abs": 2.389538328659291e-05,
+            "relative_l2": 1.7798720722897597e-05,
+            "pred_norm_mean": 6.299521264563874
+          },
+          "excluded": {
+            "mse": 0.06172741412287196,
+            "max_abs": 0.8543425484588769,
+            "relative_l2": 1.0624421433978466,
+            "pred_norm_mean": 5.8745679814136125
+          },
+          "weight_norm": 40.481537387840525,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.001,
+          "fit": {
+            "mse": 1.948646831346107e-05,
+            "max_abs": 0.022459003508529196,
+            "relative_l2": 0.01675245946792644,
+            "pred_norm_mean": 6.258218526422966
+          },
+          "excluded": {
+            "mse": 0.061305981717815206,
+            "max_abs": 0.8527237002406935,
+            "relative_l2": 1.0588091190575946,
+            "pred_norm_mean": 5.846336313351876
+          },
+          "weight_norm": 38.72994751605285,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.01,
+          "fit": {
+            "mse": 0.000845663699049923,
+            "max_abs": 0.1456910263717244,
+            "relative_l2": 0.11035978666191998,
+            "pred_norm_mean": 6.01860209505936
+          },
+          "excluded": {
+            "mse": 0.05872594040738174,
+            "max_abs": 0.8397874223922936,
+            "relative_l2": 1.0362898331507462,
+            "pred_norm_mean": 5.657307964603982
+          },
+          "weight_norm": 29.613647689660464,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.1,
+          "fit": {
+            "mse": 0.006524901643439208,
+            "max_abs": 0.32933663464734114,
+            "relative_l2": 0.30654835698984984,
+            "pred_norm_mean": 5.15532962397585
+          },
+          "excluded": {
+            "mse": 0.049944312130929994,
+            "max_abs": 0.7537955176388762,
+            "relative_l2": 0.9556728878887245,
+            "pred_norm_mean": 4.766795068518462
+          },
+          "weight_norm": 16.875097243716418,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 1.0,
+          "fit": {
+            "mse": 0.028240961888835184,
+            "max_abs": 0.5699749305505059,
+            "relative_l2": 0.6377518842207586,
+            "pred_norm_mean": 3.370571117008332
+          },
+          "excluded": {
+            "mse": 0.046251194254496815,
+            "max_abs": 0.7654409428656123,
+            "relative_l2": 0.9196609007996943,
+            "pred_norm_mean": 3.1799224722944643
+          },
+          "weight_norm": 6.086122251486526,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        }
+      ]
+    },
+    {
+      "entity_index": 2,
+      "held_out_indices": [
+        4,
+        5
+      ],
+      "training_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "regularization": [
+        {
+          "lambda": 0.0,
+          "fit": {
+            "mse": 8.722562347171901e-32,
+            "max_abs": 1.1102230246251565e-15,
+            "relative_l2": 1.2040783018723503e-15,
+            "pred_norm_mean": 5.880316150181109
+          },
+          "excluded": {
+            "mse": 0.07751888589045729,
+            "max_abs": 0.8963199702521393,
+            "relative_l2": 0.9693555725209115,
+            "pred_norm_mean": 4.444277220267375
+          },
+          "weight_norm": 48.68599800012013,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 1e-06,
+          "fit": {
+            "mse": 3.847900740592578e-11,
+            "max_abs": 2.658782527645287e-05,
+            "relative_l2": 2.5289754842648976e-05,
+            "pred_norm_mean": 5.880249810186231
+          },
+          "excluded": {
+            "mse": 0.07751850597400584,
+            "max_abs": 0.8963141918716369,
+            "relative_l2": 0.9693531971347306,
+            "pred_norm_mean": 4.44424870350077
+          },
+          "weight_norm": 48.683266382303245,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.001,
+          "fit": {
+            "mse": 3.391017598544705e-05,
+            "max_abs": 0.024780004694964775,
+            "relative_l2": 0.023740929091622294,
+            "pred_norm_mean": 5.818666077609258
+          },
+          "excluded": {
+            "mse": 0.07716594717880608,
+            "max_abs": 0.8908149968753682,
+            "relative_l2": 0.967146346934494,
+            "pred_norm_mean": 4.41752627306178
+          },
+          "weight_norm": 46.13345250281766,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.01,
+          "fit": {
+            "mse": 0.001436875394921,
+            "max_abs": 0.15360434396188433,
+            "relative_l2": 0.15454047509780428,
+            "pred_norm_mean": 5.496889764045593
+          },
+          "excluded": {
+            "mse": 0.07528328585740583,
+            "max_abs": 0.8572069703752205,
+            "relative_l2": 0.9552754861916507,
+            "pred_norm_mean": 4.2648493688935805
+          },
+          "weight_norm": 32.62673739504641,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.1,
+          "fit": {
+            "mse": 0.008651814924562254,
+            "max_abs": 0.34097031867959215,
+            "relative_l2": 0.37921569127981264,
+            "pred_norm_mean": 4.745784668754968
+          },
+          "excluded": {
+            "mse": 0.070428798140393,
+            "max_abs": 0.8254097217083455,
+            "relative_l2": 0.923962805186559,
+            "pred_norm_mean": 3.759750830742014
+          },
+          "weight_norm": 14.601126200645574,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 1.0,
+          "fit": {
+            "mse": 0.024511921519945124,
+            "max_abs": 0.6251247775036353,
+            "relative_l2": 0.6382948902662499,
+            "pred_norm_mean": 3.1962431567754765
+          },
+          "excluded": {
+            "mse": 0.06846892760606262,
+            "max_abs": 0.7852305516601111,
+            "relative_l2": 0.9110162276233946,
+            "pred_norm_mean": 2.756073960336838
+          },
+          "weight_norm": 5.557158276989467,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        }
+      ]
+    },
+    {
+      "entity_index": 3,
+      "held_out_indices": [
+        6,
+        7
+      ],
+      "training_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "regularization": [
+        {
+          "lambda": 0.0,
+          "fit": {
+            "mse": 1.3452126654601807e-31,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_l2": 1.4111265263700425e-15,
+            "pred_norm_mean": 6.205776949487917
+          },
+          "excluded": {
+            "mse": 0.05508740845908401,
+            "max_abs": 0.7758333759574756,
+            "relative_l2": 0.9556187254961576,
+            "pred_norm_mean": 4.936424396116791
+          },
+          "weight_norm": 44.809972014924504,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 1e-06,
+          "fit": {
+            "mse": 2.2165868740694022e-11,
+            "max_abs": 1.8288661875753842e-05,
+            "relative_l2": 1.811393731816098e-05,
+            "pred_norm_mean": 6.205721162008579
+          },
+          "excluded": {
+            "mse": 0.055087056781794506,
+            "max_abs": 0.7758273843720227,
+            "relative_l2": 0.9556156751626156,
+            "pred_norm_mean": 4.9363992701462305
+          },
+          "weight_norm": 44.808262384188616,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.001,
+          "fit": {
+            "mse": 2.022650159617404e-05,
+            "max_abs": 0.017375525600227926,
+            "relative_l2": 0.01730337693601604,
+            "pred_norm_mean": 6.152760380865847
+          },
+          "excluded": {
+            "mse": 0.05475428703154626,
+            "max_abs": 0.7701115881909859,
+            "relative_l2": 0.952724962647118,
+            "pred_norm_mean": 4.912401044114226
+          },
+          "weight_norm": 43.18394879579591,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.01,
+          "fit": {
+            "mse": 0.001042115851150286,
+            "max_abs": 0.12146432937423068,
+            "relative_l2": 0.1242019695824306,
+            "pred_norm_mean": 5.8336394878428095
+          },
+          "excluded": {
+            "mse": 0.052779332275094334,
+            "max_abs": 0.7344292933482222,
+            "relative_l2": 0.9353850535872077,
+            "pred_norm_mean": 4.7594572986671455
+          },
+          "weight_norm": 33.52674239154632,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 0.1,
+          "fit": {
+            "mse": 0.008861096241642673,
+            "max_abs": 0.359303509915712,
+            "relative_l2": 0.3621714474041172,
+            "pred_norm_mean": 4.9204508082166525
+          },
+          "excluded": {
+            "mse": 0.047232706218956866,
+            "max_abs": 0.6444791240137843,
+            "relative_l2": 0.8848708632065837,
+            "pred_norm_mean": 4.196280037414246
+          },
+          "weight_norm": 16.690920561993117,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        },
+        {
+          "lambda": 1.0,
+          "fit": {
+            "mse": 0.029893886189601235,
+            "max_abs": 0.5840542986681425,
+            "relative_l2": 0.6652144436312224,
+            "pred_norm_mean": 3.160081907497485
+          },
+          "excluded": {
+            "mse": 0.04347198399312749,
+            "max_abs": 0.642512476322182,
+            "relative_l2": 0.8489130520016354,
+            "pred_norm_mean": 2.8530485169055897
+          },
+          "weight_norm": 5.923701173451515,
+          "held_out_reversal_evaluation": "BLOCKED_decoder_dependency"
+        }
+      ]
+    }
+  ]
+}

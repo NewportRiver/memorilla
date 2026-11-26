@@ -1,0 +1,18 @@
+{
+  "status": "verified_for_inputs",
+  "inputs": [
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R1/original-generation.json",
+      "sha256": "2a1a2e245dcb79bc16fea9fbda72acbfb082fea4c0220a7875a86c1a5fa86e65",
+      "exists": true
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008V-R2/features.json",
+      "sha256": "4dbceffce6a1002640fa4347779844c7b3bd04f62edc29987f0b44cf60fb0b4c",
+      "exists": true
+    }
+  ],
+  "outside_git": true,
+  "optimizer_updates": 0,
+  "new_teacher_artifacts": "none"
+}

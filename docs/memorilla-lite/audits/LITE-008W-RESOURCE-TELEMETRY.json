@@ -1,0 +1,18 @@
+{
+  "status": "BLOCKED_BEFORE_W_EXECUTION",
+  "classification": "scientific_reference_evaluation_and_experimental_training_authorization",
+  "optimizer_updates": 0,
+  "algebraic_solver_operations": 24,
+  "decoder_forwards": 0,
+  "continuous_rss_monitor": "not used for algebraic-only diagnostic",
+  "limits": {
+    "production_rss": 268435456,
+    "scientific_reference_rss": 1073741824,
+    "training_rss": 1073741824,
+    "min_available": 536870912,
+    "threads": 1,
+    "subprocesses": 1,
+    "max_updates": 256,
+    "max_wall_seconds": 1800
+  }
+}

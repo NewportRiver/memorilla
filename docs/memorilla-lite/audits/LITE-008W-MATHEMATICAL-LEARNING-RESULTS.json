@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETED_ALGEBRAIC_ONLY",
+  "model": "z=EOS+W*x",
+  "fit_source": "eight retained R2 historical teachers",
+  "optimizer_updates": 0,
+  "decoder_functional_qualification": "UNEXECUTED",
+  "projection_artifact": "outside_git_not_created_for_W_due_to_decoder_prerequisite_block"
+}

@@ -1,0 +1,1 @@
+{"status":"UNEXECUTED","controls":["query_only","zero_memory","scale_matched_random","mean_training_teacher","mismatched_evidence","untrained_projection","soft_prompt","ordinary_text","minimum_norm","selected_ridge","query_conditioned"],"reason":"decoder-dependent independent evaluation blocked","optimizer_updates":0}
