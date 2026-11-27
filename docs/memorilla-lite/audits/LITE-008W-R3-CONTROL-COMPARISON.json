@@ -1,0 +1,1328 @@
+{
+  "status": "COMPLETED_EXCEPT_SOFT_PROMPT",
+  "summary": {
+    "minimum_norm": {
+      "reversals": 8,
+      "pairs": 8
+    },
+    "selected_ridge": {
+      "reversals": 8,
+      "pairs": 8
+    },
+    "query_only": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "zero_memory": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "scale_matched_random": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "mean_training_teacher": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "mismatched_evidence": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "untrained_projection": {
+      "reversals": 0,
+      "pairs": 8
+    }
+  },
+  "soft_prompt": "BLOCKED_BY_CUMULATIVE_BUDGET",
+  "rows": [
+    {
+      "id": "wdev_00",
+      "entity": "entity_w_wdev_00",
+      "textual_eligible": false,
+      "directions": [
+        {
+          "direction": "A",
+          "evidence": "Record quartz_wdev_00 stores value linen.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": 4.29309606552124,
+              "nll_a": 6.625753879547119,
+              "nll_b": 10.91884994506836,
+              "greedy_id": 16051,
+              "latent_norm": 6.241412162780762,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": 4.29309606552124,
+              "nll_a": 6.625753879547119,
+              "nll_b": 10.91884994506836,
+              "greedy_id": 16051,
+              "latent_norm": 6.241412162780762,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": 3.4860916137695312,
+              "nll_a": 12.085077285766602,
+              "nll_b": 15.571168899536133,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "zero_memory": {
+              "margin": 3.4860916137695312,
+              "nll_a": 12.085077285766602,
+              "nll_b": 15.571168899536133,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "scale_matched_random": {
+              "margin": 2.8155078887939453,
+              "nll_a": 11.526485443115234,
+              "nll_b": 14.34199333190918,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mean_training_teacher": {
+              "margin": 0.6587028503417969,
+              "nll_a": 9.440661430358887,
+              "nll_b": 10.099364280700684,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mismatched_evidence": {
+              "margin": -3.3611764907836914,
+              "nll_a": 10.34386920928955,
+              "nll_b": 6.982692718505859,
+              "greedy_id": 216,
+              "latent_norm": 6.685342311859131,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": 3.4860916137695312,
+              "nll_a": 12.085077285766602,
+              "nll_b": 15.571168899536133,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "ordinary_textual_evidence": {
+              "margin": 11.4140625,
+              "a_token_id": 28522,
+              "b_token_id": 35115,
+              "a_logit": 12.625,
+              "b_logit": 1.2109375
+            }
+          }
+        },
+        {
+          "direction": "B",
+          "evidence": "Record quartz_wdev_00 stores value amber.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": -3.3611764907836914,
+              "nll_a": 10.34386920928955,
+              "nll_b": 6.982692718505859,
+              "greedy_id": 216,
+              "latent_norm": 6.685342311859131,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": -3.3611764907836914,
+              "nll_a": 10.34386920928955,
+              "nll_b": 6.982692718505859,
+              "greedy_id": 216,
+              "latent_norm": 6.685342311859131,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": 3.4860916137695312,
+              "nll_a": 12.085077285766602,
+              "nll_b": 15.571168899536133,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "zero_memory": {
+              "margin": 3.4860916137695312,
+              "nll_a": 12.085077285766602,
+              "nll_b": 15.571168899536133,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "scale_matched_random": {
+              "margin": 2.8155078887939453,
+              "nll_a": 11.526485443115234,
+              "nll_b": 14.34199333190918,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mean_training_teacher": {
+              "margin": 0.6587028503417969,
+              "nll_a": 9.440661430358887,
+              "nll_b": 10.099364280700684,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mismatched_evidence": {
+              "margin": 4.29309606552124,
+              "nll_a": 6.625753879547119,
+              "nll_b": 10.91884994506836,
+              "greedy_id": 16051,
+              "latent_norm": 6.241412162780762,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": 3.4860916137695312,
+              "nll_a": 12.085077285766602,
+              "nll_b": 15.571168899536133,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "ordinary_textual_evidence": {
+              "margin": -5.9375,
+              "a_token_id": 28522,
+              "b_token_id": 35115,
+              "a_logit": 5.625,
+              "b_logit": 11.5625
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wdev_01",
+      "entity": "entity_w_wdev_01",
+      "textual_eligible": false,
+      "directions": [
+        {
+          "direction": "A",
+          "evidence": "Record quartz_wdev_01 stores value amber.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": 1.314676284790039,
+              "nll_a": 7.769543647766113,
+              "nll_b": 9.084219932556152,
+              "greedy_id": 216,
+              "latent_norm": 6.970953464508057,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": 1.314676284790039,
+              "nll_a": 7.769543647766113,
+              "nll_b": 9.084219932556152,
+              "greedy_id": 216,
+              "latent_norm": 6.970953464508057,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": -3.804781913757324,
+              "nll_a": 15.642319679260254,
+              "nll_b": 11.83753776550293,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "zero_memory": {
+              "margin": -3.804781913757324,
+              "nll_a": 15.642319679260254,
+              "nll_b": 11.83753776550293,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "scale_matched_random": {
+              "margin": -3.8767805099487305,
+              "nll_a": 13.975340843200684,
+              "nll_b": 10.098560333251953,
+              "greedy_id": 216,
+              "latent_norm": 5.201103687286377,
+              "reversal": false
+            },
+            "mean_training_teacher": {
+              "margin": 0.17368412017822266,
+              "nll_a": 9.874773979187012,
+              "nll_b": 10.048458099365234,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mismatched_evidence": {
+              "margin": -4.060234069824219,
+              "nll_a": 13.10248851776123,
+              "nll_b": 9.042254447937012,
+              "greedy_id": 216,
+              "latent_norm": 7.124513626098633,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": -3.804781913757324,
+              "nll_a": 15.642319679260254,
+              "nll_b": 11.83753776550293,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "ordinary_textual_evidence": {
+              "margin": 1.8125,
+              "a_token_id": 35115,
+              "b_token_id": 18540,
+              "a_logit": 11.0,
+              "b_logit": 9.1875
+            }
+          }
+        },
+        {
+          "direction": "B",
+          "evidence": "Record quartz_wdev_01 stores value marble.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": -4.060234069824219,
+              "nll_a": 13.10248851776123,
+              "nll_b": 9.042254447937012,
+              "greedy_id": 216,
+              "latent_norm": 7.124513626098633,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": -4.060234069824219,
+              "nll_a": 13.10248851776123,
+              "nll_b": 9.042254447937012,
+              "greedy_id": 216,
+              "latent_norm": 7.124513626098633,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": -3.804781913757324,
+              "nll_a": 15.642319679260254,
+              "nll_b": 11.83753776550293,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "zero_memory": {
+              "margin": -3.804781913757324,
+              "nll_a": 15.642319679260254,
+              "nll_b": 11.83753776550293,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "scale_matched_random": {
+              "margin": -3.8767805099487305,
+              "nll_a": 13.975340843200684,
+              "nll_b": 10.098560333251953,
+              "greedy_id": 216,
+              "latent_norm": 5.201103687286377,
+              "reversal": true
+            },
+            "mean_training_teacher": {
+              "margin": 0.17368412017822266,
+              "nll_a": 9.874773979187012,
+              "nll_b": 10.048458099365234,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mismatched_evidence": {
+              "margin": 1.314676284790039,
+              "nll_a": 7.769543647766113,
+              "nll_b": 9.084219932556152,
+              "greedy_id": 216,
+              "latent_norm": 6.970953464508057,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": -3.804781913757324,
+              "nll_a": 15.642319679260254,
+              "nll_b": 11.83753776550293,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "ordinary_textual_evidence": {
+              "margin": -9.03125,
+              "a_token_id": 35115,
+              "b_token_id": 18540,
+              "a_logit": 4.65625,
+              "b_logit": 13.6875
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wdev_02",
+      "entity": "entity_w_wdev_02",
+      "textual_eligible": true,
+      "directions": [
+        {
+          "direction": "A",
+          "evidence": "Record quartz_wdev_02 stores value marble.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": 1.693014144897461,
+              "nll_a": 10.940223693847656,
+              "nll_b": 12.633237838745117,
+              "greedy_id": 378,
+              "latent_norm": 7.34643030166626,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": 1.693014144897461,
+              "nll_a": 10.940223693847656,
+              "nll_b": 12.633237838745117,
+              "greedy_id": 378,
+              "latent_norm": 7.34643030166626,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": 0.3900947570800781,
+              "nll_a": 11.735882759094238,
+              "nll_b": 12.125977516174316,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "zero_memory": {
+              "margin": 0.3900947570800781,
+              "nll_a": 11.735882759094238,
+              "nll_b": 12.125977516174316,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "scale_matched_random": {
+              "margin": 0.4814167022705078,
+              "nll_a": 11.34844970703125,
+              "nll_b": 11.829866409301758,
+              "greedy_id": 24802,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mean_training_teacher": {
+              "margin": -0.7470130920410156,
+              "nll_a": 10.0444917678833,
+              "nll_b": 9.297478675842285,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mismatched_evidence": {
+              "margin": -3.4597463607788086,
+              "nll_a": 9.558761596679688,
+              "nll_b": 6.099015235900879,
+              "greedy_id": 16051,
+              "latent_norm": 6.452961444854736,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": 0.3900947570800781,
+              "nll_a": 11.735882759094238,
+              "nll_b": 12.125977516174316,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "ordinary_textual_evidence": {
+              "margin": 7.875,
+              "a_token_id": 18540,
+              "b_token_id": 28522,
+              "a_logit": 13.8125,
+              "b_logit": 5.9375
+            }
+          }
+        },
+        {
+          "direction": "B",
+          "evidence": "Record quartz_wdev_02 stores value linen.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": -3.4597463607788086,
+              "nll_a": 9.558761596679688,
+              "nll_b": 6.099015235900879,
+              "greedy_id": 16051,
+              "latent_norm": 6.452961444854736,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": -3.4597463607788086,
+              "nll_a": 9.558761596679688,
+              "nll_b": 6.099015235900879,
+              "greedy_id": 16051,
+              "latent_norm": 6.452961444854736,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": 0.3900947570800781,
+              "nll_a": 11.735882759094238,
+              "nll_b": 12.125977516174316,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "zero_memory": {
+              "margin": 0.3900947570800781,
+              "nll_a": 11.735882759094238,
+              "nll_b": 12.125977516174316,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "scale_matched_random": {
+              "margin": 0.4814167022705078,
+              "nll_a": 11.34844970703125,
+              "nll_b": 11.829866409301758,
+              "greedy_id": 24802,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mean_training_teacher": {
+              "margin": -0.7470130920410156,
+              "nll_a": 10.0444917678833,
+              "nll_b": 9.297478675842285,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mismatched_evidence": {
+              "margin": 1.693014144897461,
+              "nll_a": 10.940223693847656,
+              "nll_b": 12.633237838745117,
+              "greedy_id": 378,
+              "latent_norm": 7.34643030166626,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": 0.3900947570800781,
+              "nll_a": 11.735882759094238,
+              "nll_b": 12.125977516174316,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "ordinary_textual_evidence": {
+              "margin": -5.625,
+              "a_token_id": 18540,
+              "b_token_id": 28522,
+              "a_logit": 6.25,
+              "b_logit": 11.875
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wdev_03",
+      "entity": "entity_w_wdev_03",
+      "textual_eligible": false,
+      "directions": [
+        {
+          "direction": "A",
+          "evidence": "Record quartz_wdev_03 stores value cedar.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": 1.9162178039550781,
+              "nll_a": 8.138916969299316,
+              "nll_b": 10.055134773254395,
+              "greedy_id": 216,
+              "latent_norm": 6.5291948318481445,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": 1.9162178039550781,
+              "nll_a": 8.138916969299316,
+              "nll_b": 10.055134773254395,
+              "greedy_id": 216,
+              "latent_norm": 6.5291948318481445,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": 0.8727445602416992,
+              "nll_a": 14.589897155761719,
+              "nll_b": 15.462641716003418,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "zero_memory": {
+              "margin": 0.8727445602416992,
+              "nll_a": 14.589897155761719,
+              "nll_b": 15.462641716003418,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "scale_matched_random": {
+              "margin": -0.9920101165771484,
+              "nll_a": 14.787853240966797,
+              "nll_b": 13.795843124389648,
+              "greedy_id": 24802,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mean_training_teacher": {
+              "margin": -0.7927999496459961,
+              "nll_a": 10.642784118652344,
+              "nll_b": 9.849984169006348,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mismatched_evidence": {
+              "margin": -3.0755672454833984,
+              "nll_a": 9.54645824432373,
+              "nll_b": 6.470890998840332,
+              "greedy_id": 216,
+              "latent_norm": 6.626704216003418,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": 0.8727445602416992,
+              "nll_a": 14.589897155761719,
+              "nll_b": 15.462641716003418,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "ordinary_textual_evidence": {
+              "margin": 7.28125,
+              "a_token_id": 33952,
+              "b_token_id": 35115,
+              "a_logit": 13.1875,
+              "b_logit": 5.90625
+            }
+          }
+        },
+        {
+          "direction": "B",
+          "evidence": "Record quartz_wdev_03 stores value amber.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": -3.0755672454833984,
+              "nll_a": 9.54645824432373,
+              "nll_b": 6.470890998840332,
+              "greedy_id": 216,
+              "latent_norm": 6.626704216003418,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": -3.0755672454833984,
+              "nll_a": 9.54645824432373,
+              "nll_b": 6.470890998840332,
+              "greedy_id": 216,
+              "latent_norm": 6.626704216003418,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": 0.8727445602416992,
+              "nll_a": 14.589897155761719,
+              "nll_b": 15.462641716003418,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "zero_memory": {
+              "margin": 0.8727445602416992,
+              "nll_a": 14.589897155761719,
+              "nll_b": 15.462641716003418,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "scale_matched_random": {
+              "margin": -0.9920101165771484,
+              "nll_a": 14.787853240966797,
+              "nll_b": 13.795843124389648,
+              "greedy_id": 24802,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mean_training_teacher": {
+              "margin": -0.7927999496459961,
+              "nll_a": 10.642784118652344,
+              "nll_b": 9.849984169006348,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mismatched_evidence": {
+              "margin": 1.9162178039550781,
+              "nll_a": 8.138916969299316,
+              "nll_b": 10.055134773254395,
+              "greedy_id": 216,
+              "latent_norm": 6.5291948318481445,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": 0.8727445602416992,
+              "nll_a": 14.589897155761719,
+              "nll_b": 15.462641716003418,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "ordinary_textual_evidence": {
+              "margin": -4.78125,
+              "a_token_id": 33952,
+              "b_token_id": 35115,
+              "a_logit": 6.65625,
+              "b_logit": 11.4375
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wdev_04",
+      "entity": "entity_w_wdev_04",
+      "textual_eligible": false,
+      "directions": [
+        {
+          "direction": "A",
+          "evidence": "Record quartz_wdev_04 stores value linen.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": 1.5330476760864258,
+              "nll_a": 7.602168083190918,
+              "nll_b": 9.135215759277344,
+              "greedy_id": 16051,
+              "latent_norm": 6.139671802520752,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": 1.5330476760864258,
+              "nll_a": 7.602168083190918,
+              "nll_b": 9.135215759277344,
+              "greedy_id": 16051,
+              "latent_norm": 6.139671802520752,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": -0.3467063903808594,
+              "nll_a": 12.104105949401855,
+              "nll_b": 11.757399559020996,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "zero_memory": {
+              "margin": -0.3467063903808594,
+              "nll_a": 12.104105949401855,
+              "nll_b": 11.757399559020996,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "scale_matched_random": {
+              "margin": -0.11495208740234375,
+              "nll_a": 10.835092544555664,
+              "nll_b": 10.72014045715332,
+              "greedy_id": 24802,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mean_training_teacher": {
+              "margin": 0.7121963500976562,
+              "nll_a": 9.272354125976562,
+              "nll_b": 9.984550476074219,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mismatched_evidence": {
+              "margin": -3.088796615600586,
+              "nll_a": 12.202524185180664,
+              "nll_b": 9.113727569580078,
+              "greedy_id": 378,
+              "latent_norm": 7.023143768310547,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": -0.3467063903808594,
+              "nll_a": 12.104105949401855,
+              "nll_b": 11.757399559020996,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "ordinary_textual_evidence": {
+              "margin": 5.78125,
+              "a_token_id": 28522,
+              "b_token_id": 18540,
+              "a_logit": 12.0625,
+              "b_logit": 6.28125
+            }
+          }
+        },
+        {
+          "direction": "B",
+          "evidence": "Record quartz_wdev_04 stores value marble.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": -3.088796615600586,
+              "nll_a": 12.202524185180664,
+              "nll_b": 9.113727569580078,
+              "greedy_id": 378,
+              "latent_norm": 7.023143768310547,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": -3.088796615600586,
+              "nll_a": 12.202524185180664,
+              "nll_b": 9.113727569580078,
+              "greedy_id": 378,
+              "latent_norm": 7.023143768310547,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": -0.3467063903808594,
+              "nll_a": 12.104105949401855,
+              "nll_b": 11.757399559020996,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "zero_memory": {
+              "margin": -0.3467063903808594,
+              "nll_a": 12.104105949401855,
+              "nll_b": 11.757399559020996,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "scale_matched_random": {
+              "margin": -0.11495208740234375,
+              "nll_a": 10.835092544555664,
+              "nll_b": 10.72014045715332,
+              "greedy_id": 24802,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mean_training_teacher": {
+              "margin": 0.7121963500976562,
+              "nll_a": 9.272354125976562,
+              "nll_b": 9.984550476074219,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mismatched_evidence": {
+              "margin": 1.5330476760864258,
+              "nll_a": 7.602168083190918,
+              "nll_b": 9.135215759277344,
+              "greedy_id": 16051,
+              "latent_norm": 6.139671802520752,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": -0.3467063903808594,
+              "nll_a": 12.104105949401855,
+              "nll_b": 11.757399559020996,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "ordinary_textual_evidence": {
+              "margin": -7.625,
+              "a_token_id": 28522,
+              "b_token_id": 18540,
+              "a_logit": 5.9375,
+              "b_logit": 13.5625
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wdev_05",
+      "entity": "entity_w_wdev_05",
+      "textual_eligible": true,
+      "directions": [
+        {
+          "direction": "A",
+          "evidence": "Record quartz_wdev_05 stores value amber.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": 3.18196439743042,
+              "nll_a": 7.248116970062256,
+              "nll_b": 10.430081367492676,
+              "greedy_id": 216,
+              "latent_norm": 6.600233554840088,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": 3.18196439743042,
+              "nll_a": 7.248116970062256,
+              "nll_b": 10.430081367492676,
+              "greedy_id": 216,
+              "latent_norm": 6.600233554840088,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": -0.8977556228637695,
+              "nll_a": 15.45944881439209,
+              "nll_b": 14.56169319152832,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "zero_memory": {
+              "margin": -0.8977556228637695,
+              "nll_a": 15.45944881439209,
+              "nll_b": 14.56169319152832,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "scale_matched_random": {
+              "margin": -0.8679780960083008,
+              "nll_a": 14.206889152526855,
+              "nll_b": 13.338911056518555,
+              "greedy_id": 216,
+              "latent_norm": 5.201103687286377,
+              "reversal": false
+            },
+            "mean_training_teacher": {
+              "margin": 0.8023748397827148,
+              "nll_a": 9.78287410736084,
+              "nll_b": 10.585248947143555,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mismatched_evidence": {
+              "margin": -2.1723413467407227,
+              "nll_a": 10.257331848144531,
+              "nll_b": 8.084990501403809,
+              "greedy_id": 378,
+              "latent_norm": 6.389382839202881,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": -0.8977556228637695,
+              "nll_a": 15.45944881439209,
+              "nll_b": 14.56169319152832,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "ordinary_textual_evidence": {
+              "margin": 4.6875,
+              "a_token_id": 35115,
+              "b_token_id": 33952,
+              "a_logit": 11.25,
+              "b_logit": 6.5625
+            }
+          }
+        },
+        {
+          "direction": "B",
+          "evidence": "Record quartz_wdev_05 stores value cedar.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": -2.1723413467407227,
+              "nll_a": 10.257331848144531,
+              "nll_b": 8.084990501403809,
+              "greedy_id": 378,
+              "latent_norm": 6.389382839202881,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": -2.1723413467407227,
+              "nll_a": 10.257331848144531,
+              "nll_b": 8.084990501403809,
+              "greedy_id": 378,
+              "latent_norm": 6.389382839202881,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": -0.8977556228637695,
+              "nll_a": 15.45944881439209,
+              "nll_b": 14.56169319152832,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "zero_memory": {
+              "margin": -0.8977556228637695,
+              "nll_a": 15.45944881439209,
+              "nll_b": 14.56169319152832,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "scale_matched_random": {
+              "margin": -0.8679780960083008,
+              "nll_a": 14.206889152526855,
+              "nll_b": 13.338911056518555,
+              "greedy_id": 216,
+              "latent_norm": 5.201103687286377,
+              "reversal": true
+            },
+            "mean_training_teacher": {
+              "margin": 0.8023748397827148,
+              "nll_a": 9.78287410736084,
+              "nll_b": 10.585248947143555,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mismatched_evidence": {
+              "margin": 3.18196439743042,
+              "nll_a": 7.248116970062256,
+              "nll_b": 10.430081367492676,
+              "greedy_id": 216,
+              "latent_norm": 6.600233554840088,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": -0.8977556228637695,
+              "nll_a": 15.45944881439209,
+              "nll_b": 14.56169319152832,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "ordinary_textual_evidence": {
+              "margin": -7.1875,
+              "a_token_id": 35115,
+              "b_token_id": 33952,
+              "a_logit": 6.125,
+              "b_logit": 13.3125
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wdev_06",
+      "entity": "entity_w_wdev_06",
+      "textual_eligible": true,
+      "directions": [
+        {
+          "direction": "A",
+          "evidence": "Record quartz_wdev_06 stores value marble.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": 3.3832149505615234,
+              "nll_a": 7.901537895202637,
+              "nll_b": 11.28475284576416,
+              "greedy_id": 216,
+              "latent_norm": 6.769266605377197,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": 3.3832149505615234,
+              "nll_a": 7.901537895202637,
+              "nll_b": 11.28475284576416,
+              "greedy_id": 216,
+              "latent_norm": 6.769266605377197,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": 3.7295379638671875,
+              "nll_a": 11.745780944824219,
+              "nll_b": 15.475318908691406,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "zero_memory": {
+              "margin": 3.7295379638671875,
+              "nll_a": 11.745780944824219,
+              "nll_b": 15.475318908691406,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "scale_matched_random": {
+              "margin": 3.327336311340332,
+              "nll_a": 10.345108032226562,
+              "nll_b": 13.672444343566895,
+              "greedy_id": 24802,
+              "latent_norm": 5.201104164123535,
+              "reversal": true
+            },
+            "mean_training_teacher": {
+              "margin": -0.15747451782226562,
+              "nll_a": 9.977243423461914,
+              "nll_b": 9.819768905639648,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mismatched_evidence": {
+              "margin": -2.0741796493530273,
+              "nll_a": 8.723143577575684,
+              "nll_b": 6.648963928222656,
+              "greedy_id": 216,
+              "latent_norm": 6.590263843536377,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": 3.7295379638671875,
+              "nll_a": 11.745780944824219,
+              "nll_b": 15.475318908691406,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "ordinary_textual_evidence": {
+              "margin": 9.09375,
+              "a_token_id": 18540,
+              "b_token_id": 35115,
+              "a_logit": 13.75,
+              "b_logit": 4.65625
+            }
+          }
+        },
+        {
+          "direction": "B",
+          "evidence": "Record quartz_wdev_06 stores value amber.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": -2.0741796493530273,
+              "nll_a": 8.723143577575684,
+              "nll_b": 6.648963928222656,
+              "greedy_id": 216,
+              "latent_norm": 6.590263843536377,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": -2.0741796493530273,
+              "nll_a": 8.723143577575684,
+              "nll_b": 6.648963928222656,
+              "greedy_id": 216,
+              "latent_norm": 6.590263843536377,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": 3.7295379638671875,
+              "nll_a": 11.745780944824219,
+              "nll_b": 15.475318908691406,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "zero_memory": {
+              "margin": 3.7295379638671875,
+              "nll_a": 11.745780944824219,
+              "nll_b": 15.475318908691406,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "scale_matched_random": {
+              "margin": 3.327336311340332,
+              "nll_a": 10.345108032226562,
+              "nll_b": 13.672444343566895,
+              "greedy_id": 24802,
+              "latent_norm": 5.201104164123535,
+              "reversal": false
+            },
+            "mean_training_teacher": {
+              "margin": -0.15747451782226562,
+              "nll_a": 9.977243423461914,
+              "nll_b": 9.819768905639648,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mismatched_evidence": {
+              "margin": 3.3832149505615234,
+              "nll_a": 7.901537895202637,
+              "nll_b": 11.28475284576416,
+              "greedy_id": 216,
+              "latent_norm": 6.769266605377197,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": 3.7295379638671875,
+              "nll_a": 11.745780944824219,
+              "nll_b": 15.475318908691406,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "ordinary_textual_evidence": {
+              "margin": -1.875,
+              "a_token_id": 18540,
+              "b_token_id": 35115,
+              "a_logit": 9.375,
+              "b_logit": 11.25
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "wdev_07",
+      "entity": "entity_w_wdev_07",
+      "textual_eligible": false,
+      "directions": [
+        {
+          "direction": "A",
+          "evidence": "Record quartz_wdev_07 stores value cedar.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": 1.728867530822754,
+              "nll_a": 7.435209274291992,
+              "nll_b": 9.164076805114746,
+              "greedy_id": 216,
+              "latent_norm": 6.481510162353516,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": 1.728867530822754,
+              "nll_a": 7.435209274291992,
+              "nll_b": 9.164076805114746,
+              "greedy_id": 216,
+              "latent_norm": 6.481510162353516,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": -2.801569938659668,
+              "nll_a": 14.537992477416992,
+              "nll_b": 11.736422538757324,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "zero_memory": {
+              "margin": -2.801569938659668,
+              "nll_a": 14.537992477416992,
+              "nll_b": 11.736422538757324,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "scale_matched_random": {
+              "margin": -4.296600341796875,
+              "nll_a": 15.935098648071289,
+              "nll_b": 11.638498306274414,
+              "greedy_id": 216,
+              "latent_norm": 5.2011027336120605,
+              "reversal": false
+            },
+            "mean_training_teacher": {
+              "margin": -0.6000461578369141,
+              "nll_a": 10.672369003295898,
+              "nll_b": 10.072322845458984,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": false
+            },
+            "mismatched_evidence": {
+              "margin": -4.534272193908691,
+              "nll_a": 12.282485961914062,
+              "nll_b": 7.748213768005371,
+              "greedy_id": 216,
+              "latent_norm": 6.931815147399902,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": -2.801569938659668,
+              "nll_a": 14.537992477416992,
+              "nll_b": 11.736422538757324,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": false
+            },
+            "ordinary_textual_evidence": {
+              "margin": 3.9375,
+              "a_token_id": 33952,
+              "b_token_id": 18540,
+              "a_logit": 13.25,
+              "b_logit": 9.3125
+            }
+          }
+        },
+        {
+          "direction": "B",
+          "evidence": "Record quartz_wdev_07 stores value marble.",
+          "candidates": {
+            "minimum_norm": {
+              "margin": -4.534272193908691,
+              "nll_a": 12.282485961914062,
+              "nll_b": 7.748213768005371,
+              "greedy_id": 216,
+              "latent_norm": 6.931815147399902,
+              "reversal": true
+            },
+            "selected_ridge": {
+              "margin": -4.534272193908691,
+              "nll_a": 12.282485961914062,
+              "nll_b": 7.748213768005371,
+              "greedy_id": 216,
+              "latent_norm": 6.931815147399902,
+              "reversal": true
+            },
+            "query_only": {
+              "margin": -2.801569938659668,
+              "nll_a": 14.537992477416992,
+              "nll_b": 11.736422538757324,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "zero_memory": {
+              "margin": -2.801569938659668,
+              "nll_a": 14.537992477416992,
+              "nll_b": 11.736422538757324,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "scale_matched_random": {
+              "margin": -4.296600341796875,
+              "nll_a": 15.935098648071289,
+              "nll_b": 11.638498306274414,
+              "greedy_id": 216,
+              "latent_norm": 5.2011027336120605,
+              "reversal": true
+            },
+            "mean_training_teacher": {
+              "margin": -0.6000461578369141,
+              "nll_a": 10.672369003295898,
+              "nll_b": 10.072322845458984,
+              "greedy_id": 216,
+              "latent_norm": 5.201103210449219,
+              "reversal": true
+            },
+            "mismatched_evidence": {
+              "margin": 1.728867530822754,
+              "nll_a": 7.435209274291992,
+              "nll_b": 9.164076805114746,
+              "greedy_id": 216,
+              "latent_norm": 6.481510162353516,
+              "reversal": false
+            },
+            "untrained_projection": {
+              "margin": -2.801569938659668,
+              "nll_a": 14.537992477416992,
+              "nll_b": 11.736422538757324,
+              "greedy_id": 378,
+              "latent_norm": 2.9788949489593506,
+              "reversal": true
+            },
+            "ordinary_textual_evidence": {
+              "margin": -7.6875,
+              "a_token_id": 33952,
+              "b_token_id": 18540,
+              "a_logit": 6.1875,
+              "b_logit": 13.875
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_PARTIAL",
+  "frozen_manifest_sha256": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+  "fresh_teacher_directions": 10,
+  "fresh_teacher_pairs": 5,
+  "teacher_artifacts_outside_git": true,
+  "teacher_reload_verified": true,
+  "projection_artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/projection_selected.pt",
+  "projection_reload_verified": true,
+  "r2_ledger_preserved": true,
+  "production_mutation": false,
+  "protected_holdout_accessed": false,
+  "projection_artifact_sha256": "1d9d006799b8f80cfc52a15b489b7caa4d68525b2677fe5aadcd37af6ed6ed85"
+}

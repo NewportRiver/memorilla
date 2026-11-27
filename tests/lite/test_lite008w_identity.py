@@ -8,6 +8,10 @@ def test_complete_identity_is_content_bound():
 def test_case_target_collision_is_rejected():
  with pytest.raises(ValueError,match='collision'):
   reject_case_target_collision([base(),base('Record e stores cedar.')])
+def test_cross_manifest_collision_is_rejected():
+ other=base(); other['manifest_sha256']='n'*64
+ with pytest.raises(ValueError,match='collision'):
+  reject_case_target_collision([base(),other])
 def test_duplicate_full_identity_is_rejected():
  with pytest.raises(ValueError,match='duplicate'):
   from experiments.lite008w.identity import index_records

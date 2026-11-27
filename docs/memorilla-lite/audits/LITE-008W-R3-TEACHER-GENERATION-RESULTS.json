@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "eligible_training_entities": [
+    "wtrain_00",
+    "wtrain_01",
+    "wtrain_02",
+    "wtrain_04",
+    "wtrain_05"
+  ],
+  "complete_pairs": 5,
+  "directions_completed": 10,
+  "optimizer_updates": 160,
+  "updates_per_direction": 16,
+  "objective": "contrastive",
+  "initialization": "identical EOS per factual direction",
+  "decoder_frozen": true,
+  "encoder_frozen": true,
+  "failures": [],
+  "artifact_manifest": "LITE-008W-R3-TEACHER-ARTIFACT-MANIFEST.json",
+  "soft_deadline_seconds": 240,
+  "hard_deadline_seconds": 300,
+  "protected_final_holdout_accessed": false,
+  "outside_git": true
+}

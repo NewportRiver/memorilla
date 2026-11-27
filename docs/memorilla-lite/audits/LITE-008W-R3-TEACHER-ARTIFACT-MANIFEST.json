@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "artifact_count": 10,
+  "complete_pairs": 5,
+  "directions": [
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/0766a396e37f2d7587941888db634f8db9d1c08d00e6e1e955ef8ad4569da2dc.teacher.pt",
+      "sha256": "906f4793860ead9fffa4e7967568d96b75efc74e9a77efd0d02179782018f3a6",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/0766a396e37f2d7587941888db634f8db9d1c08d00e6e1e955ef8ad4569da2dc.json",
+      "metadata_sha256": "dbcaa6054b58849c682016e5f8dc8bb5016b53d28bc07571ecf6400e3e983e6c"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/161e1baf30b502eee307336e511827f05dba77ba78d48e612caf77abaa442195.teacher.pt",
+      "sha256": "f78abafd06393dd89049f0c0e4f673e1961507999f0dd5cda8a8b1c5929bb906",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/161e1baf30b502eee307336e511827f05dba77ba78d48e612caf77abaa442195.json",
+      "metadata_sha256": "c30a1e1caa2bbc08184f8dbb201ff7507ef08cda94098cfeb5611191cffe5b48"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/352a43b6385a25b6d5331a38aeae89f6fa9746770158d9bd3b3d34431b957d2e.teacher.pt",
+      "sha256": "19e02333f9e73dc3bb42ca1fcff776665d837bbf9f9a2bdc1d0d378ba5585368",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/352a43b6385a25b6d5331a38aeae89f6fa9746770158d9bd3b3d34431b957d2e.json",
+      "metadata_sha256": "4af058b8132e2fa22acc43217906c6cb4502b376bb206aeba31ef98d79f03134"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/6f1fa9ac3b4b0ae935475c69a37a2dbe105f2f753e52a2809757f3adf0356faf.teacher.pt",
+      "sha256": "bf35457edb6dd75b9d718cd9dd997fa737afbb8c0a72783fa434ca6777421a20",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/6f1fa9ac3b4b0ae935475c69a37a2dbe105f2f753e52a2809757f3adf0356faf.json",
+      "metadata_sha256": "3584080dbbaa5daaa22a2ff7753455c9952fe6b9c21bbbfd9873f6ef5d18be6d"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/76f33c22b05dfaa2f2c76fea4e82d40d86c9ff376d48c62bea2a1bbf6c7f1ce2.teacher.pt",
+      "sha256": "6e6b836ca468ff3297419d75e7986e12834a8b73aa12eecea6b8983422e80036",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/76f33c22b05dfaa2f2c76fea4e82d40d86c9ff376d48c62bea2a1bbf6c7f1ce2.json",
+      "metadata_sha256": "9eb9467a14141517a19375bb94be317124ab4cdec72c2267f53e714d468ef928"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/81e1e4ccbafd572b3c2c6130c9896325910106cc4048de454ec97f88d07daafa.teacher.pt",
+      "sha256": "4469c3a65acc6327f346f1ed44e6a5df97041ce26737bc94901846bcf4bf7d34",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/81e1e4ccbafd572b3c2c6130c9896325910106cc4048de454ec97f88d07daafa.json",
+      "metadata_sha256": "f9f253bd2f2b17712e125d0d82f7ad3dfb37f0a8c528a292c97fbdeb18150927"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/a02e8ebf8f8d9411856013dcd32b409b2abbb9a1cd5729658c423c139473478c.teacher.pt",
+      "sha256": "10674750621916bef0f8abad5be232c2d97f3e39b80e62237d3bf3ec96d05338",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/a02e8ebf8f8d9411856013dcd32b409b2abbb9a1cd5729658c423c139473478c.json",
+      "metadata_sha256": "ef722d193b6b286c173798b803d704bad6632485b0364c0d15f1bd57d4241411"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/af73c9ded908092eebd4df2d370cbde87199395b7e5c7df1b216cb0dcac911fa.teacher.pt",
+      "sha256": "ee7a419472798b8f9322f4fa8bdb1259ac5400d1235ec1714bb38e03fd6010fe",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/af73c9ded908092eebd4df2d370cbde87199395b7e5c7df1b216cb0dcac911fa.json",
+      "metadata_sha256": "1187be83bd06b8cf1e5d39b3b8d390f5a44d48b1d221e1786a9be74073c53d1a"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/d94bf98a308077251c3fe9b12192bb0ffa46d340b01e6c174dc0b228efa43120.teacher.pt",
+      "sha256": "c394049cb4ac6e9d109f03a8eb8e0ce04a1523d21dc2463a76c5a40d21b2e569",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/d94bf98a308077251c3fe9b12192bb0ffa46d340b01e6c174dc0b228efa43120.json",
+      "metadata_sha256": "0f8025ebd1f0243a17a29d38c8054dc9826bb130bba62ea211d184c6c3f5971c"
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/fa4758a2fb8229f59c9bf9db5b023e5cbb19d60c3cd15640fccab53e9b8e5114.teacher.pt",
+      "sha256": "8b4e77743509ac0971f1d9f63d005d46af9abb11698097a4f58894c3de17270b",
+      "bytes": 8005,
+      "metadata_path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/fa4758a2fb8229f59c9bf9db5b023e5cbb19d60c3cd15640fccab53e9b8e5114.json",
+      "metadata_sha256": "dbfb595e2123c399651beddcac6cf61ab46aca16fcf7385a867f79839d0968e7"
+    }
+  ],
+  "outside_git": true,
+  "reload_verified": true,
+  "optimizer_updates": 160,
+  "manifest_sha256": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f"
+}

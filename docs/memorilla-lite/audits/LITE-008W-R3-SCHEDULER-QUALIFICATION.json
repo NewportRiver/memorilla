@@ -1,0 +1,1 @@
+{"status":"PASS","soft_deadline_seconds":240,"hard_deadline_seconds":300,"one_subprocess":true,"preflight_before_each_unit":true,"completed_direction_wall_seconds":[41.26378117199056,40.993745508021675,39.647417539032176,40.587902851984836],"all_completed_units_within_soft_deadline":true,"hard_termination_used_as_normal_schedule":false,"synthetic_scheduler_tests":6}

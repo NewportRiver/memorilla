@@ -1,0 +1,596 @@
+{
+  "schema": "LITE-008W-R2-textual-competence-v1",
+  "status": "COMPLETED",
+  "rows": [
+    {
+      "id": "wtrain_00",
+      "entity": "entity_w_00",
+      "partition": "teacher_training",
+      "query_only": {
+        "margin": 3.34375,
+        "a_token_id": 18540,
+        "b_token_id": 33952,
+        "a_logit": 9.0,
+        "b_logit": 5.65625
+      },
+      "relevant": {
+        "margin": 7.59375,
+        "a_token_id": 18540,
+        "b_token_id": 33952,
+        "a_logit": 13.125,
+        "b_logit": 5.53125
+      },
+      "counterfactual": {
+        "margin": -3.625,
+        "a_token_id": 18540,
+        "b_token_id": 33952,
+        "a_logit": 8.4375,
+        "b_logit": 12.0625
+      },
+      "unrelated": {
+        "margin": 2.5625,
+        "a_token_id": 18540,
+        "b_token_id": 33952,
+        "a_logit": 9.5,
+        "b_logit": 6.9375
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wtrain_01",
+      "entity": "entity_w_01",
+      "partition": "teacher_training",
+      "query_only": {
+        "margin": -0.625,
+        "a_token_id": 33952,
+        "b_token_id": 28522,
+        "a_logit": 5.59375,
+        "b_logit": 6.21875
+      },
+      "relevant": {
+        "margin": 5.6875,
+        "a_token_id": 33952,
+        "b_token_id": 28522,
+        "a_logit": 12.125,
+        "b_logit": 6.4375
+      },
+      "counterfactual": {
+        "margin": -6.59375,
+        "a_token_id": 33952,
+        "b_token_id": 28522,
+        "a_logit": 4.59375,
+        "b_logit": 11.1875
+      },
+      "unrelated": {
+        "margin": 2.90625,
+        "a_token_id": 33952,
+        "b_token_id": 28522,
+        "a_logit": 7.3125,
+        "b_logit": 4.40625
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wtrain_02",
+      "entity": "entity_w_02",
+      "partition": "teacher_training",
+      "query_only": {
+        "margin": 1.65625,
+        "a_token_id": 28522,
+        "b_token_id": 35115,
+        "a_logit": 6.15625,
+        "b_logit": 4.5
+      },
+      "relevant": {
+        "margin": 9.5546875,
+        "a_token_id": 28522,
+        "b_token_id": 35115,
+        "a_logit": 11.3125,
+        "b_logit": 1.7578125
+      },
+      "counterfactual": {
+        "margin": -5.9375,
+        "a_token_id": 28522,
+        "b_token_id": 35115,
+        "a_logit": 4.3125,
+        "b_logit": 10.25
+      },
+      "unrelated": {
+        "margin": -0.3125,
+        "a_token_id": 28522,
+        "b_token_id": 35115,
+        "a_logit": 4.71875,
+        "b_logit": 5.03125
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wtrain_03",
+      "entity": "entity_w_03",
+      "partition": "teacher_training",
+      "query_only": {
+        "margin": -4.4375,
+        "a_token_id": 35115,
+        "b_token_id": 18540,
+        "a_logit": 4.4375,
+        "b_logit": 8.875
+      },
+      "relevant": {
+        "margin": 1.1875,
+        "a_token_id": 35115,
+        "b_token_id": 18540,
+        "a_logit": 10.125,
+        "b_logit": 8.9375
+      },
+      "counterfactual": {
+        "margin": -8.5625,
+        "a_token_id": 35115,
+        "b_token_id": 18540,
+        "a_logit": 4.25,
+        "b_logit": 12.8125
+      },
+      "unrelated": {
+        "margin": -3.5,
+        "a_token_id": 35115,
+        "b_token_id": 18540,
+        "a_logit": 6.0,
+        "b_logit": 9.5
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "predeclared textual rule not satisfied"
+      ]
+    },
+    {
+      "id": "wtrain_04",
+      "entity": "entity_w_04",
+      "partition": "teacher_training",
+      "query_only": {
+        "margin": 2.6875,
+        "a_token_id": 18540,
+        "b_token_id": 28522,
+        "a_logit": 8.9375,
+        "b_logit": 6.25
+      },
+      "relevant": {
+        "margin": 8.0625,
+        "a_token_id": 18540,
+        "b_token_id": 28522,
+        "a_logit": 13.0,
+        "b_logit": 4.9375
+      },
+      "counterfactual": {
+        "margin": -4.4375,
+        "a_token_id": 18540,
+        "b_token_id": 28522,
+        "a_logit": 7.125,
+        "b_logit": 11.5625
+      },
+      "unrelated": {
+        "margin": 5.3125,
+        "a_token_id": 18540,
+        "b_token_id": 28522,
+        "a_logit": 10.0,
+        "b_logit": 4.6875
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wtrain_05",
+      "entity": "entity_w_05",
+      "partition": "teacher_training",
+      "query_only": {
+        "margin": 1.0625,
+        "a_token_id": 33952,
+        "b_token_id": 35115,
+        "a_logit": 5.6875,
+        "b_logit": 4.625
+      },
+      "relevant": {
+        "margin": 6.6875,
+        "a_token_id": 33952,
+        "b_token_id": 35115,
+        "a_logit": 12.3125,
+        "b_logit": 5.625
+      },
+      "counterfactual": {
+        "margin": -4.15625,
+        "a_token_id": 33952,
+        "b_token_id": 35115,
+        "a_logit": 6.03125,
+        "b_logit": 10.1875
+      },
+      "unrelated": {
+        "margin": 1.34375,
+        "a_token_id": 33952,
+        "b_token_id": 35115,
+        "a_logit": 6.4375,
+        "b_logit": 5.09375
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wcal_00",
+      "entity": "entity_w_wcal_00",
+      "partition": "calibration",
+      "query_only": {
+        "margin": 3.125,
+        "a_token_id": 18540,
+        "b_token_id": 33952,
+        "a_logit": 9.4375,
+        "b_logit": 6.3125
+      },
+      "relevant": {
+        "margin": 7.59375,
+        "a_token_id": 18540,
+        "b_token_id": 33952,
+        "a_logit": 14.1875,
+        "b_logit": 6.59375
+      },
+      "counterfactual": {
+        "margin": -4.1875,
+        "a_token_id": 18540,
+        "b_token_id": 33952,
+        "a_logit": 9.125,
+        "b_logit": 13.3125
+      },
+      "unrelated": {
+        "margin": 2.0,
+        "a_token_id": 18540,
+        "b_token_id": 33952,
+        "a_logit": 10.4375,
+        "b_logit": 8.4375
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wcal_01",
+      "entity": "entity_w_wcal_01",
+      "partition": "calibration",
+      "query_only": {
+        "margin": -1.28125,
+        "a_token_id": 33952,
+        "b_token_id": 28522,
+        "a_logit": 6.28125,
+        "b_logit": 7.5625
+      },
+      "relevant": {
+        "margin": 5.1875,
+        "a_token_id": 33952,
+        "b_token_id": 28522,
+        "a_logit": 13.0,
+        "b_logit": 7.8125
+      },
+      "counterfactual": {
+        "margin": -7.28125,
+        "a_token_id": 33952,
+        "b_token_id": 28522,
+        "a_logit": 5.28125,
+        "b_logit": 12.5625
+      },
+      "unrelated": {
+        "margin": 2.5625,
+        "a_token_id": 33952,
+        "b_token_id": 28522,
+        "a_logit": 8.4375,
+        "b_logit": 5.875
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wdev_00",
+      "entity": "entity_w_wdev_00",
+      "partition": "independent_development",
+      "query_only": {
+        "margin": 2.46875,
+        "a_token_id": 28522,
+        "b_token_id": 35115,
+        "a_logit": 7.3125,
+        "b_logit": 4.84375
+      },
+      "relevant": {
+        "margin": 11.4140625,
+        "a_token_id": 28522,
+        "b_token_id": 35115,
+        "a_logit": 12.625,
+        "b_logit": 1.2109375
+      },
+      "counterfactual": {
+        "margin": -5.9375,
+        "a_token_id": 28522,
+        "b_token_id": 35115,
+        "a_logit": 5.625,
+        "b_logit": 11.5625
+      },
+      "unrelated": {
+        "margin": -5.5,
+        "a_token_id": 28522,
+        "b_token_id": 35115,
+        "a_logit": 6.3125,
+        "b_logit": 11.8125
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "predeclared textual rule not satisfied"
+      ]
+    },
+    {
+      "id": "wdev_01",
+      "entity": "entity_w_wdev_01",
+      "partition": "independent_development",
+      "query_only": {
+        "margin": -4.0625,
+        "a_token_id": 35115,
+        "b_token_id": 18540,
+        "a_logit": 4.6875,
+        "b_logit": 8.75
+      },
+      "relevant": {
+        "margin": 1.8125,
+        "a_token_id": 35115,
+        "b_token_id": 18540,
+        "a_logit": 11.0,
+        "b_logit": 9.1875
+      },
+      "counterfactual": {
+        "margin": -9.03125,
+        "a_token_id": 35115,
+        "b_token_id": 18540,
+        "a_logit": 4.65625,
+        "b_logit": 13.6875
+      },
+      "unrelated": {
+        "margin": 0.6875,
+        "a_token_id": 35115,
+        "b_token_id": 18540,
+        "a_logit": 11.25,
+        "b_logit": 10.5625
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "predeclared textual rule not satisfied"
+      ]
+    },
+    {
+      "id": "wdev_02",
+      "entity": "entity_w_wdev_02",
+      "partition": "independent_development",
+      "query_only": {
+        "margin": 1.625,
+        "a_token_id": 18540,
+        "b_token_id": 28522,
+        "a_logit": 8.9375,
+        "b_logit": 7.3125
+      },
+      "relevant": {
+        "margin": 7.875,
+        "a_token_id": 18540,
+        "b_token_id": 28522,
+        "a_logit": 13.8125,
+        "b_logit": 5.9375
+      },
+      "counterfactual": {
+        "margin": -5.625,
+        "a_token_id": 18540,
+        "b_token_id": 28522,
+        "a_logit": 6.25,
+        "b_logit": 11.875
+      },
+      "unrelated": {
+        "margin": 4.78125,
+        "a_token_id": 18540,
+        "b_token_id": 28522,
+        "a_logit": 10.625,
+        "b_logit": 5.84375
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wdev_03",
+      "entity": "entity_w_wdev_03",
+      "partition": "independent_development",
+      "query_only": {
+        "margin": 1.0,
+        "a_token_id": 33952,
+        "b_token_id": 35115,
+        "a_logit": 6.09375,
+        "b_logit": 5.09375
+      },
+      "relevant": {
+        "margin": 7.28125,
+        "a_token_id": 33952,
+        "b_token_id": 35115,
+        "a_logit": 13.1875,
+        "b_logit": 5.90625
+      },
+      "counterfactual": {
+        "margin": -4.78125,
+        "a_token_id": 33952,
+        "b_token_id": 35115,
+        "a_logit": 6.65625,
+        "b_logit": 11.4375
+      },
+      "unrelated": {
+        "margin": -3.125,
+        "a_token_id": 33952,
+        "b_token_id": 35115,
+        "a_logit": 8.4375,
+        "b_logit": 11.5625
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "predeclared textual rule not satisfied"
+      ]
+    },
+    {
+      "id": "wdev_04",
+      "entity": "entity_w_wdev_04",
+      "partition": "independent_development",
+      "query_only": {
+        "margin": -1.625,
+        "a_token_id": 28522,
+        "b_token_id": 18540,
+        "a_logit": 7.4375,
+        "b_logit": 9.0625
+      },
+      "relevant": {
+        "margin": 5.78125,
+        "a_token_id": 28522,
+        "b_token_id": 18540,
+        "a_logit": 12.0625,
+        "b_logit": 6.28125
+      },
+      "counterfactual": {
+        "margin": -7.625,
+        "a_token_id": 28522,
+        "b_token_id": 18540,
+        "a_logit": 5.9375,
+        "b_logit": 13.5625
+      },
+      "unrelated": {
+        "margin": -4.5625,
+        "a_token_id": 28522,
+        "b_token_id": 18540,
+        "a_logit": 5.9375,
+        "b_logit": 10.5
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "predeclared textual rule not satisfied"
+      ]
+    },
+    {
+      "id": "wdev_05",
+      "entity": "entity_w_wdev_05",
+      "partition": "independent_development",
+      "query_only": {
+        "margin": -0.9375,
+        "a_token_id": 35115,
+        "b_token_id": 33952,
+        "a_logit": 5.21875,
+        "b_logit": 6.15625
+      },
+      "relevant": {
+        "margin": 4.6875,
+        "a_token_id": 35115,
+        "b_token_id": 33952,
+        "a_logit": 11.25,
+        "b_logit": 6.5625
+      },
+      "counterfactual": {
+        "margin": -7.1875,
+        "a_token_id": 35115,
+        "b_token_id": 33952,
+        "a_logit": 6.125,
+        "b_logit": 13.3125
+      },
+      "unrelated": {
+        "margin": 3.0,
+        "a_token_id": 35115,
+        "b_token_id": 33952,
+        "a_logit": 11.4375,
+        "b_logit": 8.4375
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wdev_06",
+      "entity": "entity_w_wdev_06",
+      "partition": "independent_development",
+      "query_only": {
+        "margin": 3.96875,
+        "a_token_id": 18540,
+        "b_token_id": 35115,
+        "a_logit": 9.3125,
+        "b_logit": 5.34375
+      },
+      "relevant": {
+        "margin": 9.09375,
+        "a_token_id": 18540,
+        "b_token_id": 35115,
+        "a_logit": 13.75,
+        "b_logit": 4.65625
+      },
+      "counterfactual": {
+        "margin": -1.875,
+        "a_token_id": 18540,
+        "b_token_id": 35115,
+        "a_logit": 9.375,
+        "b_logit": 11.25
+      },
+      "unrelated": {
+        "margin": -0.75,
+        "a_token_id": 18540,
+        "b_token_id": 35115,
+        "a_logit": 10.375,
+        "b_logit": 11.125
+      },
+      "eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "id": "wdev_07",
+      "entity": "entity_w_wdev_07",
+      "partition": "independent_development",
+      "query_only": {
+        "margin": -3.0,
+        "a_token_id": 33952,
+        "b_token_id": 18540,
+        "a_logit": 6.3125,
+        "b_logit": 9.3125
+      },
+      "relevant": {
+        "margin": 3.9375,
+        "a_token_id": 33952,
+        "b_token_id": 18540,
+        "a_logit": 13.25,
+        "b_logit": 9.3125
+      },
+      "counterfactual": {
+        "margin": -7.6875,
+        "a_token_id": 33952,
+        "b_token_id": 18540,
+        "a_logit": 6.1875,
+        "b_logit": 13.875
+      },
+      "unrelated": {
+        "margin": -2.1875,
+        "a_token_id": 33952,
+        "b_token_id": 18540,
+        "a_logit": 8.375,
+        "b_logit": 10.5625
+      },
+      "eligible": false,
+      "rejection_reasons": [
+        "predeclared textual rule not satisfied"
+      ]
+    }
+  ],
+  "eligible_count": 10,
+  "eligible_ids": [
+    "wtrain_00",
+    "wtrain_01",
+    "wtrain_02",
+    "wtrain_04",
+    "wtrain_05",
+    "wcal_00",
+    "wcal_01",
+    "wdev_02",
+    "wdev_05",
+    "wdev_06"
+  ],
+  "forward_count": 64,
+  "latent_outcomes_used_for_selection": false,
+  "protected_final_holdout_accessed": false,
+  "optimizer_updates": 0,
+  "wall_seconds": 52.87572691508103
+}

@@ -1,0 +1,177 @@
+{
+  "status": "COMPLETED",
+  "selected_lambda": 0.001,
+  "selection_rule": "historical diagnostic plus training/calibration evidence only; independent data excluded",
+  "configs": {
+    "0.0": {
+      "lambda": 0.0,
+      "weight_norm": 51.026782220108615,
+      "residual_mse": 9.393427124886004e-32,
+      "residual_max_abs": 1.3877787807814457e-15,
+      "full_embedding_norm_mean": 6.829489843084024
+    },
+    "1e-06": {
+      "lambda": 1e-06,
+      "weight_norm": 51.02274387345943,
+      "residual_mse": 3.57717642053805e-11,
+      "residual_max_abs": 2.8253341120831887e-05,
+      "full_embedding_norm_mean": 6.829452201804519
+    },
+    "0.001": {
+      "lambda": 0.001,
+      "weight_norm": 47.389288814460606,
+      "residual_mse": 2.9610930471612597e-05,
+      "residual_max_abs": 0.025685625360113096,
+      "full_embedding_norm_mean": 6.7956827916907105
+    },
+    "0.01": {
+      "lambda": 0.01,
+      "weight_norm": 31.682088663000297,
+      "residual_mse": 0.000953589198738749,
+      "residual_max_abs": 0.1435235908744629,
+      "full_embedding_norm_mean": 6.64142686681596
+    },
+    "0.1": {
+      "lambda": 0.1,
+      "weight_norm": 16.343448568677047,
+      "residual_mse": 0.004636529319279222,
+      "residual_max_abs": 0.29683884916512426,
+      "full_embedding_norm_mean": 6.216636286861119
+    },
+    "1.0": {
+      "lambda": 1.0,
+      "weight_norm": 7.334530120772149,
+      "residual_mse": 0.017095747180191027,
+      "residual_max_abs": 0.49974120140230155,
+      "full_embedding_norm_mean": 5.083738464279239
+    }
+  },
+  "selected_artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/projection_selected.pt",
+  "selected_artifact_sha256": "1d9d006799b8f80cfc52a15b489b7caa4d68525b2677fe5aadcd37af6ed6ed85",
+  "training_rows": [
+    {
+      "key": [
+        "wtrain_00",
+        "B"
+      ],
+      "margin": -1.3677787780761719,
+      "nll_a": 8.28393840789795,
+      "nll_b": 6.916159629821777,
+      "preference": "B",
+      "reversal": true,
+      "latent_norm": 6.671184062957764
+    },
+    {
+      "key": [
+        "wtrain_04",
+        "B"
+      ],
+      "margin": -3.382152557373047,
+      "nll_a": 8.57390308380127,
+      "nll_b": 5.191750526428223,
+      "preference": "B",
+      "reversal": true,
+      "latent_norm": 6.870671272277832
+    },
+    {
+      "key": [
+        "wtrain_01",
+        "B"
+      ],
+      "margin": -6.376285791397095,
+      "nll_a": 10.078523635864258,
+      "nll_b": 3.702237844467163,
+      "preference": "B",
+      "reversal": true,
+      "latent_norm": 7.167547702789307
+    },
+    {
+      "key": [
+        "wtrain_02",
+        "B"
+      ],
+      "margin": -4.577628135681152,
+      "nll_a": 10.959233283996582,
+      "nll_b": 6.38160514831543,
+      "preference": "B",
+      "reversal": true,
+      "latent_norm": 6.752023696899414
+    },
+    {
+      "key": [
+        "wtrain_04",
+        "A"
+      ],
+      "margin": 5.205756664276123,
+      "nll_a": 5.841925144195557,
+      "nll_b": 11.04768180847168,
+      "preference": "A",
+      "reversal": true,
+      "latent_norm": 6.691983699798584
+    },
+    {
+      "key": [
+        "wtrain_05",
+        "B"
+      ],
+      "margin": -3.6822080612182617,
+      "nll_a": 8.26141357421875,
+      "nll_b": 4.579205513000488,
+      "preference": "B",
+      "reversal": true,
+      "latent_norm": 6.762718200683594
+    },
+    {
+      "key": [
+        "wtrain_02",
+        "A"
+      ],
+      "margin": 6.645028591156006,
+      "nll_a": 3.9038987159729004,
+      "nll_b": 10.548927307128906,
+      "preference": "A",
+      "reversal": true,
+      "latent_norm": 7.276332378387451
+    },
+    {
+      "key": [
+        "wtrain_05",
+        "A"
+      ],
+      "margin": 1.1573619842529297,
+      "nll_a": 7.113892555236816,
+      "nll_b": 8.271254539489746,
+      "preference": "A",
+      "reversal": true,
+      "latent_norm": 6.491793155670166
+    },
+    {
+      "key": [
+        "wtrain_01",
+        "A"
+      ],
+      "margin": 1.6592602729797363,
+      "nll_a": 7.580311298370361,
+      "nll_b": 9.239571571350098,
+      "preference": "A",
+      "reversal": true,
+      "latent_norm": 6.391427516937256
+    },
+    {
+      "key": [
+        "wtrain_00",
+        "A"
+      ],
+      "margin": 2.878763198852539,
+      "nll_a": 12.950145721435547,
+      "nll_b": 15.828908920288086,
+      "preference": "A",
+      "reversal": true,
+      "latent_norm": 6.881145477294922
+    }
+  ],
+  "training_reversals": 10,
+  "optimizer_updates": 0,
+  "algebraic_solver_operations": 6,
+  "wall_seconds": 8.265184843097813
+}
