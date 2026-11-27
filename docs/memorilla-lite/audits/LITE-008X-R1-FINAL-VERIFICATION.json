@@ -1,0 +1,30 @@
+{
+  "compiled_files": 4,
+  "parsed_json_files": 4,
+  "original_X_hashes_unchanged": true,
+  "projection_hash_unchanged": true,
+  "git_diff_check": "PASS",
+  "tracked_changes": "",
+  "matching_test_processes": [],
+  "file_sha256": {
+    "docs/memorilla-lite/audits/LITE-008X-R1-ARCHITECTURE-ALTERNATIVES.md": "6593bbda7a6810e9e5b33b3314e068aa4cf58a92b671d2bddafd0c9c0b77bcb7",
+    "docs/memorilla-lite/audits/LITE-008X-R1-BALANCED-RELEVANCE-PROTOCOL.md": "2a53b16ade2effaa837916764fb2836d0f75d602bb5c10ec1bd293bc380e89a1",
+    "docs/memorilla-lite/audits/LITE-008X-R1-CORRECTIVE-SOLUTIONS.md": "7eb3a3639fcb8f5933609b58b57d8be2d67010a436d79af2d6fd35772fb523ba",
+    "docs/memorilla-lite/audits/LITE-008X-R1-FAILED-TEST-OUTPUT.txt": "6b3c560c596e2090916a6254e5f5b1b7b46ad1de915f70a78f6bd2c46d91ab6e",
+    "docs/memorilla-lite/audits/LITE-008X-R1-GO-NOGO-DECISION.md": "1a751b16dcf887896334eb8511bcaac55a438058b89676916948f93fd9149bb9",
+    "docs/memorilla-lite/audits/LITE-008X-R1-IMMUTABLE-EVALUATOR-AUDIT.json": "84e9c10bf1d3dc8212053de2b331d7b7313e4ad6aa47343759331c7f348b48a2",
+    "docs/memorilla-lite/audits/LITE-008X-R1-INCREMENTAL-LEARNING-FEASIBILITY.md": "a7e6c071cac4d3ad78f2f47e2e67403922f0597a1a81120c1ed537939dbfdaf0",
+    "docs/memorilla-lite/audits/LITE-008X-R1-SOURCE-INTEGRITY-REVIEW.md": "b5dc62d659a691e3cb43930fccdd7647718924f9938d40732eca39f2acb7c45a",
+    "docs/memorilla-lite/audits/LITE-008X-R1-TEST-OUTPUT.txt": "818adbd622a1192c75e2204bf461a0e2a5a3cc0c5aeee3500aaedf917b451633",
+    "docs/memorilla-lite/audits/LITE-008X-R1-VERIFICATION-FAILED-ATTEMPT-2.json": "2f41d72b8cc93024eb0f24b47416ffe0f8b96b1403fdf01d1863aa5cf79b5dbc",
+    "docs/memorilla-lite/audits/LITE-008X-R1-VERIFICATION-FAILED-ATTEMPT.json": "ca74558a0e65b973dae9c6eadaf63e92bf44c9717dd538db16a0330448b0253f",
+    "docs/memorilla-lite/audits/LITE-008X-R1-VERIFICATION.json": "5adbc89e1f98f44756eb7727e15ffe49900433af944496e9061087491c05656c",
+    "experiments/lite008x_r1_audit.py": "29adf26daf219e46dbdeebbde10f01d104c6b93b2eb1b554e4608ad1efcb1750",
+    "experiments/lite008x_r1_immutable.py": "37b2e43b59b8e212a0a3f4f80117fc05f24670227c0dc6b1b41f4a731c60bc98",
+    "experiments/lite008x_r1_verify.py": "d907b7bfa09d3a0f055de2e75d5d6a05984b56a62fc825de99745b3ac7533bd6",
+    "tests/lite/test_lite008x_r1_immutable.py": "9dd617f6e9547d24c41afef94ddca52f3112d0abab2167a705e8c44813356dc7"
+  },
+  "parent_independent_hash_verification": "PASS: original reports, projection, ten teacher files and four raw latent files",
+  "parent_failed_attempt": "Overbroad teacher filename glob also matched checkpoints; corrected to exact .teacher.pt path. No artifacts altered.",
+  "worker_completion": "Timed out at 600s; partial work preserved; no scientific completion claimed"
+}

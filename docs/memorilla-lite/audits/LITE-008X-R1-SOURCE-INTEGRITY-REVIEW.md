@@ -1,0 +1,29 @@
+# LITE-008X-R1 source integrity review
+
+**New engineering addendum, not a recovered directive.** Baseline `f2c30c5926aa2c355acb8af5b5e0eeecec4a9846`, branch `feature/memorilla-lite-android`; initial tree clean. Original X-R1 directive/decision was not supplied or recovered. Scope is the delegated authorization, not inferred historical instructions. See [new decision](LITE-008X-R1-GO-NOGO-DECISION.md). Original X reports and code are preserved.
+
+## Findings A–G
+
+| Finding | Direct source / retained evidence | Consequence |
+|---|---|---|
+| A: unrelated evidence and eligibility | `experiments/lite008x_construct.py:23` always inserts answer B; retained manifest confirms 32/32. `lite008x_textual.py:17` requires unrelated margin > -1 while counterfactual <= -1. | Composite eligibility confounds unrelated relevance with answer-direction bias. Zero eligibility does not establish inability to reverse facts; the retained summary reports complete reversals separately. Raw margins are unavailable here, so eligibility cannot be recomputed. |
+| B: refits and weak joins | `lite008x_latent.py:9–13` keys features by `(id,target)` and executes `lstsq` plus `solve`; it does not load `projection_selected.pt`. | “Forward-only” excludes optimizer updates but not algebraic refitting. Selected-file immutability is not proof the selected tensor was evaluated. The source’s two solvers are independent, not an alias; historical outputs lack their complete projection identities. |
+| C: seed and pair repetition | `lite008x_construct.py:20` creates unused `rng`; lines 26–27 cycle familiar answers. Retained A has `linen / amber` four times and `marble / cedar` four times. | Declared seed does not randomize order/orientation; eight entities are not eight independent lexical pairings. |
+| D: controls | `lite008x_latent.py:20` assigns EOS to both query_eos and untrained_residual; opposite_fact and relation_swapped use the same feature. For non-D, evidence_order_permuted is unchanged. Random vector is drawn inside the direction loop. | Equivalent controls are not independent evidence. Random A/B reversal changes both fact and random latent; use one paired random vector per case in future. Genuine zero remains distinct from EOS. |
+| E: vocabulary isolation | `lite008x_construct.py:5–8,14–18` reads only W-R2 manifest; uses normalized strings/prefix morphology and standalone candidate tokens. | It does not establish isolation from all prior calibration/evidence/answers, tokenizer variants, or pretraining. Source comment “all W” overstates coverage. |
+| F: lost textual provenance | `lite008x_textual.py:19` writes raw rows to the same report path now holding only a summary; retained `raw_source` points to itself. Scoped cache contains only A–D latent JSON. | Raw textual rows were replaced or otherwise not retained at the referenced location. No recovery claimed. Summary is not a substitute for per-example logits, token sequences, or eligibility reasons. |
+| G: hash/scoring ambiguity | Construct source hashes an intermediate file then rewrites it. Retained manifest contains no `manifest_sha256`; external final-file hash is recorded below. Text uses full BF16 decoder (`lite008x_textual.py:11,14`), latent uses copied FP32 layers (`lite008p/p_experiment.py:26–32`). Text appends ` Answer:` while latent uses `Question: ... Answer:` and a slot. | Distinguish intermediate, final bytes, canonical row and tensor hashes. The retained file is not exactly the construct script’s final schema. Dtype and prompt/slot differences prevent treating existing results as matched numerical calibration. |
+
+## Retained artifact examination
+
+The machine-readable [immutable audit](LITE-008X-R1-IMMUTABLE-EVALUATOR-AUDIT.json) contains exact paths/hashes and original X report hashes. The retained selected projection matches both pre/post and historical expected SHA:
+`1d9d006799b8f80cfc52a15b489b7caa4d68525b2677fe5aadcd37af6ed6ed85`.
+This was byte hashing only; no pickle/tensor loading or reconstruction.
+
+Ten teacher files match their metadata hashes. The candidate R2 feature rows have matching query/evidence/entity/partition/encoder metadata, but **all ten feature manifest hashes differ from their teacher manifest hashes**. Feature manifest: `378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890`; teacher manifest: `5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f`. This may reflect manifest revision, but no authorized content-bound reconciliation proves it; do not silently normalize the discrepancy. Teacher decoder identity binds config/tokenizer, not all decoder weight bytes. Exact R3 feature recovery remains **NOT_CERTIFIED**. SVD/subspace diagnostics stopped before computation.
+
+Four raw latent group artifacts are retained, eight rows each, with hashes in the JSON. Their existence does not repair missing input/projection/output identities. The original selected-file integrity report cannot certify the dynamically refitted evaluation matrices.
+
+## Boundaries and verification
+
+No optimizer update, teacher generation, solver, projection refit, scientific decoder run, install/download, SQLite/production/protected-holdout access during the audit. Commit/push is reserved for parent closure. New JSON reference evaluator tests include mutations, hashes, content collisions, shape/dtype/nonfinite values, model inventory and repeatability. Exact test command/output and sampled telemetry are in `LITE-008X-R1-VERIFICATION.json`: **29 tests passed**, but supervisor certification failed at process teardown (`resource telemetry unavailable`). Initial Android `children` interface and missing optional `datasets` conftest failures are preserved; test scope was narrowed with `--confcutdir=tests/lite`, not dependencies installed. This is not a full regression or runtime qualification. No scientific computation was launched following identity/resource blockers.

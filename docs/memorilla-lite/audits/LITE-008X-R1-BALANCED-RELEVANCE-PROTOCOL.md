@@ -1,0 +1,26 @@
+# LITE-008X-R1 balanced relevance protocol
+
+**Prospective specification, not executed or accepted.** New addendum linked to [decision](LITE-008X-R1-GO-NOGO-DECISION.md). No latent acceptance authorization. No generated/frozen benchmark or tokenizer-length verification is claimed.
+
+## Scores and independent criteria
+
+Fix candidates A/B before encoding. Define `m = log p(A) - log p(B)` at the same scoring position. For a canonical A-target orientation: `m_q` query-only, `m_r` relevant A fact, `m_c` same-entity B counterfact, `m_u` unrelated evidence. Report reversal `m_r > 0 && m_c < 0` (strict; ties fail), and the separate effects `m_r-m_q`, `m_q-m_c`, `m_r-m_c`, `abs(m_u-m_q)`. Reverse candidate orientation in matched pairs and canonicalize signs before aggregation. Do not multiply fact effects with unrelated thresholds into a single eligibility label. Report raw values, per-condition denominators, paired estimates and uncertainty by entity/lexical-pair clusters, not directions as independent samples.
+
+Unrelated controls must balance **A, B, neither, both** in equal counts within each applicable category/template/orientation block. Include query-only, same-answer wrong entity, missing entity and conflicting same-entity evidence. Predeclare expected abstention/ambiguity rather than label whichever sign happens to appear “correct.” Report irrelevant evidence sensitivity separately from factual reversal. Neither/both cases require length-matched construction, not ad hoc extra text.
+
+## Deterministic generation and rejection ledger
+
+1. Use separate ordinary-text calibration, development evaluation and relational-development partitions. Entity sets are disjoint; no protected holdout use. Freeze prior-artifact inventory explicitly (training/calibration/dev strings, evidence, candidate strings and token sequences) before lexical isolation screening.
+2. Enumerate a balanced Cartesian schedule of category (familiar lexical/new entity, unfamiliar lexical, new template, relational), entity, lexical-pair orientation, template, unrelated class and evidence order. Use a seeded deterministic permutation only after enumeration; store RNG algorithm/seed and actual ordered IDs. Require equal counts per declared cell; if impossible, retain exact deficits and stop rather than silently weaken constraints.
+3. Generate disjoint entity pools and paired candidate swaps; ensure each familiar lexical pair occurs in both orientations, and avoid repeating only two pairs. Predeclare lexical reuse and distinguish entity independence from vocabulary independence. Normalize text, morphological families and token forms against the frozen prior inventory; report every excluded candidate and reason. No claim about pretraining isolation.
+4. Tokenize **each full actual scoring context**, including prefixes, separators, `Answer:` suffix, BOS/EOS, slot placeholder and candidate continuation as the scorer uses it. Verify candidate continuation IDs in context, not just `tokenizer(' '+answer)`. Store full input IDs, candidate IDs and observed sequence length for every variant. Reject multi-token answers if using one-token scores; reject length >32 (including candidate when actually forwarded), not truncate. Batch=1; slot=1. Track tokenizer artifact hash and settings. Existing X length fields omit final scoring suffix and are not a valid new freeze.
+5. Rejection ledger row: attempted ID, partition/entity/category/template/orientation/order, exact strings, prior collision details, full token IDs/lengths, reason, deterministic replacement attempt. Freeze ledger and accepted manifest separately; external final-file SHA and canonical row-content hash are different fields. Never embed a purported self-hash of final bytes.
+6. Assert partition/entity disjointness, complete cell counts, no duplicate complete identities, no same-key different-content rows, A/B orientation balance and accepted/rejected accounting. Persist canonical manifest/order/ledger/model hashes before any scoring. No latent score may influence generation, acceptance or exclusion.
+
+## Text-only calibration and relational test
+
+Ordinary-text calibration chooses only textual relevance/noise tolerances on its own partition. Freeze them before development evaluation. No latent scores, latent reversal rates or projection selection may influence thresholds. Unrelated effects should be stratified by unrelated A/B/neither/both, not averaged to cancel opposite signs. Textual inadequacy blocks a category’s latent acceptance, but does not erase negative results.
+
+Relational packets use exactly the same word multiset with assignments swapped: `e1=A; e2=B` versus `e1=B; e2=A`. Query **both e1 and e2**, both candidate orientations, both evidence orders. The correct answer must reverse with assignment and with queried entity; record both-query success as the unit. Include wrong-entity same-answer, relation-swapped, conflict and missing-record controls without external relevance filtering. X queried only the first entity in retained D rows; current both-query relational execution is **INCOMPLETE**.
+
+No benchmark generation, actual contextual tokenization, matched scoring or relational scoring was launched after identity/resource blockers. This is an actionable design, not a claim of benchmark completion.

@@ -1,0 +1,365 @@
+{
+  "schema": "LITE-008X-R1-immutable-audit-v1",
+  "scope": "new engineering addendum; original R1 directive unavailable",
+  "baseline": "f2c30c5926aa2c355acb8af5b5e0eeecec4a9846",
+  "status": "PARTIAL_IDENTITY_BLOCKED",
+  "projection": {
+    "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/projection_selected.pt",
+    "expected_sha256": "1d9d006799b8f80cfc52a15b489b7caa4d68525b2677fe5aadcd37af6ed6ed85",
+    "pre_sha256": "1d9d006799b8f80cfc52a15b489b7caa4d68525b2677fe5aadcd37af6ed6ed85",
+    "post_sha256": "1d9d006799b8f80cfc52a15b489b7caa4d68525b2677fe5aadcd37af6ed6ed85",
+    "matches_expected": true,
+    "tensor_deserialized": false,
+    "numerical_evaluation": "BLOCKED: incomplete decoder content identity and cross-manifest feature binding; no PT-to-JSON conversion"
+  },
+  "features": {
+    "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R2/features.json",
+    "sha256": "a5bfd330dd8948852dfb58a344f87c042a7909af624080e67c14da64bb01ebf8",
+    "count": 12,
+    "exact_R3_training_feature_recovery": "NOT_CERTIFIED"
+  },
+  "teachers": [
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/0766a396e37f2d7587941888db634f8db9d1c08d00e6e1e955ef8ad4569da2dc.json",
+      "metadata_sha256": "dbcaa6054b58849c682016e5f8dc8bb5016b53d28bc07571ecf6400e3e983e6c",
+      "artifact_sha256": "906f4793860ead9fffa4e7967568d96b75efc74e9a77efd0d02179782018f3a6",
+      "expected_sha256": "906f4793860ead9fffa4e7967568d96b75efc74e9a77efd0d02179782018f3a6",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_00",
+        "B"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/161e1baf30b502eee307336e511827f05dba77ba78d48e612caf77abaa442195.json",
+      "metadata_sha256": "c30a1e1caa2bbc08184f8dbb201ff7507ef08cda94098cfeb5611191cffe5b48",
+      "artifact_sha256": "f78abafd06393dd89049f0c0e4f673e1961507999f0dd5cda8a8b1c5929bb906",
+      "expected_sha256": "f78abafd06393dd89049f0c0e4f673e1961507999f0dd5cda8a8b1c5929bb906",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_04",
+        "B"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/352a43b6385a25b6d5331a38aeae89f6fa9746770158d9bd3b3d34431b957d2e.json",
+      "metadata_sha256": "4af058b8132e2fa22acc43217906c6cb4502b376bb206aeba31ef98d79f03134",
+      "artifact_sha256": "19e02333f9e73dc3bb42ca1fcff776665d837bbf9f9a2bdc1d0d378ba5585368",
+      "expected_sha256": "19e02333f9e73dc3bb42ca1fcff776665d837bbf9f9a2bdc1d0d378ba5585368",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_01",
+        "B"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/6f1fa9ac3b4b0ae935475c69a37a2dbe105f2f753e52a2809757f3adf0356faf.json",
+      "metadata_sha256": "3584080dbbaa5daaa22a2ff7753455c9952fe6b9c21bbbfd9873f6ef5d18be6d",
+      "artifact_sha256": "bf35457edb6dd75b9d718cd9dd997fa737afbb8c0a72783fa434ca6777421a20",
+      "expected_sha256": "bf35457edb6dd75b9d718cd9dd997fa737afbb8c0a72783fa434ca6777421a20",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_02",
+        "B"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/76f33c22b05dfaa2f2c76fea4e82d40d86c9ff376d48c62bea2a1bbf6c7f1ce2.json",
+      "metadata_sha256": "9eb9467a14141517a19375bb94be317124ab4cdec72c2267f53e714d468ef928",
+      "artifact_sha256": "6e6b836ca468ff3297419d75e7986e12834a8b73aa12eecea6b8983422e80036",
+      "expected_sha256": "6e6b836ca468ff3297419d75e7986e12834a8b73aa12eecea6b8983422e80036",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_04",
+        "A"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/81e1e4ccbafd572b3c2c6130c9896325910106cc4048de454ec97f88d07daafa.json",
+      "metadata_sha256": "f9f253bd2f2b17712e125d0d82f7ad3dfb37f0a8c528a292c97fbdeb18150927",
+      "artifact_sha256": "4469c3a65acc6327f346f1ed44e6a5df97041ce26737bc94901846bcf4bf7d34",
+      "expected_sha256": "4469c3a65acc6327f346f1ed44e6a5df97041ce26737bc94901846bcf4bf7d34",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_05",
+        "B"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/a02e8ebf8f8d9411856013dcd32b409b2abbb9a1cd5729658c423c139473478c.json",
+      "metadata_sha256": "ef722d193b6b286c173798b803d704bad6632485b0364c0d15f1bd57d4241411",
+      "artifact_sha256": "10674750621916bef0f8abad5be232c2d97f3e39b80e62237d3bf3ec96d05338",
+      "expected_sha256": "10674750621916bef0f8abad5be232c2d97f3e39b80e62237d3bf3ec96d05338",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_02",
+        "A"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/af73c9ded908092eebd4df2d370cbde87199395b7e5c7df1b216cb0dcac911fa.json",
+      "metadata_sha256": "1187be83bd06b8cf1e5d39b3b8d390f5a44d48b1d221e1786a9be74073c53d1a",
+      "artifact_sha256": "ee7a419472798b8f9322f4fa8bdb1259ac5400d1235ec1714bb38e03fd6010fe",
+      "expected_sha256": "ee7a419472798b8f9322f4fa8bdb1259ac5400d1235ec1714bb38e03fd6010fe",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_05",
+        "A"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/d94bf98a308077251c3fe9b12192bb0ffa46d340b01e6c174dc0b228efa43120.json",
+      "metadata_sha256": "0f8025ebd1f0243a17a29d38c8054dc9826bb130bba62ea211d184c6c3f5971c",
+      "artifact_sha256": "c394049cb4ac6e9d109f03a8eb8e0ce04a1523d21dc2463a76c5a40d21b2e569",
+      "expected_sha256": "c394049cb4ac6e9d109f03a8eb8e0ce04a1523d21dc2463a76c5a40d21b2e569",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_01",
+        "A"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    },
+    {
+      "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R3/teachers/fa4758a2fb8229f59c9bf9db5b023e5cbb19d60c3cd15640fccab53e9b8e5114.json",
+      "metadata_sha256": "dbfb595e2123c399651beddcac6cf61ab46aca16fcf7385a867f79839d0968e7",
+      "artifact_sha256": "8b4e77743509ac0971f1d9f63d005d46af9abb11698097a4f58894c3de17270b",
+      "expected_sha256": "8b4e77743509ac0971f1d9f63d005d46af9abb11698097a4f58894c3de17270b",
+      "artifact_matches": true,
+      "key": [
+        "wtrain_00",
+        "A"
+      ],
+      "candidate_feature_count": 1,
+      "feature_metadata_mismatches": [
+        "manifest_sha256"
+      ],
+      "feature_manifest": "378a3a8c8215deb3fcd73ad5fd11826ab543bb133afea2395a155b86508e1890",
+      "teacher_manifest": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+      "decoder_has_weight_hash": false
+    }
+  ],
+  "retained_raw_latent": [
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008X/A-LATENT-EVALUATION.json",
+      "sha256": "d196af9f30da5fc53e1184178571a96225eca1a6d4d85c9048fddd2b371018c5",
+      "rows": 8,
+      "group": "A",
+      "keys": [
+        "candidate_independent_representation",
+        "group",
+        "optimizer_updates",
+        "protected_final_holdout_accessed",
+        "rows",
+        "status",
+        "summary",
+        "wall_seconds"
+      ]
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008X/B-LATENT-EVALUATION.json",
+      "sha256": "ad6d06b95bcf0d9919f4adbfe14d1922251b40e3032e8675e3fa7fdbc9dbe8a6",
+      "rows": 8,
+      "group": "B",
+      "keys": [
+        "candidate_independent_representation",
+        "group",
+        "optimizer_updates",
+        "protected_final_holdout_accessed",
+        "rows",
+        "status",
+        "summary",
+        "wall_seconds"
+      ]
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008X/C-LATENT-EVALUATION.json",
+      "sha256": "2f392f9d09d0da625965f5649073c45602941f36d3c158f1ac56ea2c4392ed83",
+      "rows": 8,
+      "group": "C",
+      "keys": [
+        "candidate_independent_representation",
+        "group",
+        "optimizer_updates",
+        "protected_final_holdout_accessed",
+        "rows",
+        "status",
+        "summary",
+        "wall_seconds"
+      ]
+    },
+    {
+      "path": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008X/D-LATENT-EVALUATION.json",
+      "sha256": "af7dec426cf4ee53bf30aab6d79017763cc5f92e4efec3e5e869192a09803bc9",
+      "rows": 8,
+      "group": "D",
+      "keys": [
+        "candidate_independent_representation",
+        "group",
+        "optimizer_updates",
+        "protected_final_holdout_accessed",
+        "rows",
+        "status",
+        "summary",
+        "wall_seconds"
+      ]
+    }
+  ],
+  "raw_textual": {
+    "summary_path": "/data/data/com.termux/files/home/memorilla-lite-workspace/docs/memorilla-lite/audits/LITE-008X-TEXTUAL-COMPETENCE-RESULTS.json",
+    "has_rows": false,
+    "raw_source": "LITE-008X-TEXTUAL-COMPETENCE-RESULTS.json",
+    "cache_inventory": [
+      "A-LATENT-EVALUATION.json",
+      "B-LATENT-EVALUATION.json",
+      "C-LATENT-EVALUATION.json",
+      "D-LATENT-EVALUATION.json"
+    ],
+    "status": "NOT_RECOVERED_IN_SCOPED_LOCATIONS"
+  },
+  "manifest": {
+    "file_sha256": "86f7c3d83c25ddfe8e8d53e9f140ddc54adaaebabaf99eba219d55d6cb96e99a",
+    "embedded_sha256": null,
+    "embedded_matches_final_file": false,
+    "unrelated_answer_b_count": 32,
+    "rows": 32,
+    "A_pair_counts": {
+      "linen / amber": 4,
+      "marble / cedar": 4
+    },
+    "D_queried_entities": [
+      "d00a",
+      "d01a",
+      "d02a",
+      "d03a",
+      "d04a",
+      "d05a",
+      "d06a",
+      "d07a"
+    ]
+  },
+  "reference_evaluator": {
+    "module": "experiments/lite008x_r1_immutable.py",
+    "adapter": "JSON float32 reference matvec only; not bitwise Torch FP32 accumulation",
+    "real_frozen_artifact_executed": false,
+    "complete_model_inventory_required": true,
+    "input_projection_output_hashes": true,
+    "pre_post_hash_checks": true,
+    "tests_report": "LITE-008X-R1-VERIFICATION.json"
+  },
+  "estimates": {
+    "feature_dimension": 384,
+    "decoder_dimension_from_local_config": 576,
+    "dense_parameters": 221184,
+    "dense_fp32_bytes": 884736,
+    "S_float64_bytes": 1179648,
+    "T_float64_bytes": 1769472,
+    "S_T_W_bytes": 3833856,
+    "rank8_parameters": 7680,
+    "rank8_fp32_bytes": 30720,
+    "retrieval_1000_fp32_feature_bytes": 1536000,
+    "structured_example_d768_dense_fp32_bytes": 1769472,
+    "structured_example_d768_S_T_W_bytes": 10027008,
+    "teacher_1000_slot_fp32_bytes": 2304000,
+    "decoder_embedding_bf16_bytes": 56623104,
+    "decoder_embedding_fp32_bytes": 113246208,
+    "production_ceiling_bytes": 268435456
+  },
+  "original_X_report_hashes": {
+    "docs/memorilla-lite/audits/LITE-008X-ARTIFACT-INTEGRITY.json": "4fa99a7f8c73f2d95fd7c7bd7406e52592d10a007cd93f4268b4068327e945bf",
+    "docs/memorilla-lite/audits/LITE-008X-CONTROL-COMPARISON.json": "cf4e3585dd6f1ad70b827b11bbf4dc89b457e29a793c99618e2bd0d8b8999edc",
+    "docs/memorilla-lite/audits/LITE-008X-DATASET-MANIFEST.json": "86f7c3d83c25ddfe8e8d53e9f140ddc54adaaebabaf99eba219d55d6cb96e99a",
+    "docs/memorilla-lite/audits/LITE-008X-EXPERIMENT-PROTOCOL.md": "dac89e24b8baaa443e02e200d9aef540326dc1a1eb0c5f68fac879f37031f72f",
+    "docs/memorilla-lite/audits/LITE-008X-FAMILIAR-VOCABULARY-RESULTS.json": "118d64e438c2f312c39b310b61e3527e67f8713ae4e03cb59ddf1c7ad021a498",
+    "docs/memorilla-lite/audits/LITE-008X-GO-NOGO-DECISION.md": "c3418bc2b3c96872573eae8bf64d858e7529cd0789e6c46a1d11acfd25a9c3bc",
+    "docs/memorilla-lite/audits/LITE-008X-NEXT-ARCHITECTURE-DECISION.md": "778a55ca0f0cc3766a2c481ffdedb4f424d9924703350adbffba77adc520c2e6",
+    "docs/memorilla-lite/audits/LITE-008X-PRIOR-EVIDENCE-AUDIT.md": "6cf2375d27c6c172145b08c3ca39ee55bebef547cd9f7a285611a8292fffdb5b",
+    "docs/memorilla-lite/audits/LITE-008X-REGRESSION-RESULTS.json": "1e190776f5f4da61438765f5aa3e21e0ef5b94b4bdc73c3db21aabee245733c9",
+    "docs/memorilla-lite/audits/LITE-008X-RELATIONAL-BINDING-RESULTS.json": "2057298b9361aea55ef465c3de9452222f87c235c59196eab90589d32e41fe5e",
+    "docs/memorilla-lite/audits/LITE-008X-RESOURCE-TELEMETRY.json": "77ba81a50381fec606d4fa933ae310e1128f882b4e33c98479b1cc6dfed96972",
+    "docs/memorilla-lite/audits/LITE-008X-SCIENTIFIC-LIMITATIONS.md": "3e4c3d7d44e058a18757936036001ef9acbc3a8bf10a66ac1b0b3461d54457d9",
+    "docs/memorilla-lite/audits/LITE-008X-SEMANTIC-SHORTCUT-ANALYSIS.md": "b57e55668f1c6000ecbfa2785f85c1415e7ce66b69a548c804bc5ac7f69306fe",
+    "docs/memorilla-lite/audits/LITE-008X-TEMPLATE-GENERALIZATION-RESULTS.json": "da48a29b654f03ed79758321ae7de8f86ffcf8dc85146e09a935712dfce727fd",
+    "docs/memorilla-lite/audits/LITE-008X-TEXTUAL-COMPETENCE-RESULTS.json": "062e79db9c05411fdea284be08b9768958008f78f16d87480a864ef970ac5eab",
+    "docs/memorilla-lite/audits/LITE-008X-UNFAMILIAR-VOCABULARY-RESULTS.json": "a8bd1c90b024a874c1172632e55dce3698ea15defb89ecc861a190fc427cd97e",
+    "docs/memorilla-lite/audits/LITE-008X-VOCABULARY-ISOLATION.json": "5f6882f68954a16d0be52a4a9aa3a452599f31ad340e18a68d639496eee5af99"
+  },
+  "counters": {
+    "optimizer_updates": 0,
+    "teacher_generation": 0,
+    "projection_refits": 0,
+    "solver_operations": 0,
+    "decoder_forwards": 0,
+    "scientific_subprocesses": 0,
+    "scientific_seconds": 0
+  },
+  "blocked_phases": [
+    "matched BF16/FP32 calibration",
+    "exact training feature SVD/subspace",
+    "real frozen projection forward",
+    "new benchmark tokenization and freezing",
+    "relational both-query execution",
+    "prospective latent acceptance (not authorized)"
+  ]
+}

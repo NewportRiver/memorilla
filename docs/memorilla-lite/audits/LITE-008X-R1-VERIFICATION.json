@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--confcutdir=tests/lite",
+    "tests/lite/test_lite008x_r1_immutable.py",
+    "tests/lite/test_lite008x.py",
+    "tests/lite/test_lite008w_identity.py",
+    "tests/lite/test_lite008w_r4_controls.py"
+  ],
+  "kind": "engineering fixtures; no scientific model execution",
+  "sampling_interval_seconds": 0.01,
+  "hard_timeout_seconds": 300,
+  "scientific_seconds": 0,
+  "optimizer_updates": 0,
+  "solver_operations": 0,
+  "decoder_forwards": 0,
+  "status": "BLOCKED_OR_FAILED",
+  "blocker": "RuntimeError('resource telemetry unavailable')",
+  "peak_sampled_rss_bytes": 233267200,
+  "minimum_sampled_available_bytes": 1203359744,
+  "wall_seconds": 4.385301367030479,
+  "child_reaped": true,
+  "monitoring": "10ms sampled; transient peaks between samples not certified"
+}
