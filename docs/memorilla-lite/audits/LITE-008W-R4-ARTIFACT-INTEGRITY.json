@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "5f19e7a607d5107784672beb98cf863bfbe8a3f41afa3f611ea57a6fe654ef0f",
+  "selected_projection_sha256": "1d9d006799b8f80cfc52a15b489b7caa4d68525b2677fe5aadcd37af6ed6ed85",
+  "teacher_artifacts": [
+    {
+      "identity": "fa4758a2fb8229f59c9bf9db5b023e5cbb19d60c3cd15640fccab53e9b8e5114",
+      "case_id": "wtrain_00",
+      "target": "A",
+      "artifact_sha256": "8b4e77743509ac0971f1d9f63d005d46af9abb11698097a4f58894c3de17270b",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "0766a396e37f2d7587941888db634f8db9d1c08d00e6e1e955ef8ad4569da2dc",
+      "case_id": "wtrain_00",
+      "target": "B",
+      "artifact_sha256": "906f4793860ead9fffa4e7967568d96b75efc74e9a77efd0d02179782018f3a6",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "d94bf98a308077251c3fe9b12192bb0ffa46d340b01e6c174dc0b228efa43120",
+      "case_id": "wtrain_01",
+      "target": "A",
+      "artifact_sha256": "c394049cb4ac6e9d109f03a8eb8e0ce04a1523d21dc2463a76c5a40d21b2e569",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "352a43b6385a25b6d5331a38aeae89f6fa9746770158d9bd3b3d34431b957d2e",
+      "case_id": "wtrain_01",
+      "target": "B",
+      "artifact_sha256": "19e02333f9e73dc3bb42ca1fcff776665d837bbf9f9a2bdc1d0d378ba5585368",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "a02e8ebf8f8d9411856013dcd32b409b2abbb9a1cd5729658c423c139473478c",
+      "case_id": "wtrain_02",
+      "target": "A",
+      "artifact_sha256": "10674750621916bef0f8abad5be232c2d97f3e39b80e62237d3bf3ec96d05338",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "6f1fa9ac3b4b0ae935475c69a37a2dbe105f2f753e52a2809757f3adf0356faf",
+      "case_id": "wtrain_02",
+      "target": "B",
+      "artifact_sha256": "bf35457edb6dd75b9d718cd9dd997fa737afbb8c0a72783fa434ca6777421a20",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "76f33c22b05dfaa2f2c76fea4e82d40d86c9ff376d48c62bea2a1bbf6c7f1ce2",
+      "case_id": "wtrain_04",
+      "target": "A",
+      "artifact_sha256": "6e6b836ca468ff3297419d75e7986e12834a8b73aa12eecea6b8983422e80036",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "161e1baf30b502eee307336e511827f05dba77ba78d48e612caf77abaa442195",
+      "case_id": "wtrain_04",
+      "target": "B",
+      "artifact_sha256": "f78abafd06393dd89049f0c0e4f673e1961507999f0dd5cda8a8b1c5929bb906",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "af73c9ded908092eebd4df2d370cbde87199395b7e5c7df1b216cb0dcac911fa",
+      "case_id": "wtrain_05",
+      "target": "A",
+      "artifact_sha256": "ee7a419472798b8f9322f4fa8bdb1259ac5400d1235ec1714bb38e03fd6010fe",
+      "bytes": 8005,
+      "completed_updates": 16
+    },
+    {
+      "identity": "81e1e4ccbafd572b3c2c6130c9896325910106cc4048de454ec97f88d07daafa",
+      "case_id": "wtrain_05",
+      "target": "B",
+      "artifact_sha256": "4469c3a65acc6327f346f1ed44e6a5df97041ce26737bc94901846bcf4bf7d34",
+      "bytes": 8005,
+      "completed_updates": 16
+    }
+  ],
+  "soft_prompt_sha256": "b5b34ea7fa9d68659753f94ab9465d9df2c5835dd2a8f2b60c5fa114d8e736b7",
+  "soft_prompt_reload_verified": true,
+  "projection_reproduction_deterministic": true,
+  "production_mutation": false,
+  "protected_holdout_accessed": false
+}

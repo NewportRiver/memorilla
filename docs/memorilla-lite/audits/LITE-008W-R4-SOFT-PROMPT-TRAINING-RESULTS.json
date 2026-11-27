@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETED",
+  "artifact": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R4/dd5bf13863707936678b156c4a94b8f08b479979ac2441592214d26aefa2abcb.soft_prompt.pt",
+  "artifact_sha256": "b5b34ea7fa9d68659753f94ab9465d9df2c5835dd2a8f2b60c5fa114d8e736b7",
+  "metadata": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008W-R4/repro1.json",
+  "metadata_sha256": "b3277a9a6e568e7c418a2b93933c03b60f3af08268186b320111700ff8d90070",
+  "updates": 32,
+  "trajectory_entries": 32,
+  "balanced_directions": {
+    "A": 16,
+    "B": 16
+  },
+  "training_entities": [
+    "wtrain_00",
+    "wtrain_01",
+    "wtrain_02",
+    "wtrain_04",
+    "wtrain_05"
+  ],
+  "decoder_frozen": true,
+  "encoder_frozen": true,
+  "memory_independent": true,
+  "reload_verified": true
+}

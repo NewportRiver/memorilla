@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "w2_updates": 128,
+  "w3_updates": 160,
+  "r4_updates": 32,
+  "combined_updates": 320,
+  "new_ceiling": 320,
+  "additional_r4_authorization": 32,
+  "teacher_generation_updates": 0,
+  "projection_optimization_updates": 0,
+  "decoder_refinement_updates": 0
+}

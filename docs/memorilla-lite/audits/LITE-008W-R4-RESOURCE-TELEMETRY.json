@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "w2_updates": 128,
+  "w3_updates": 160,
+  "w4_updates": 32,
+  "combined_updates": 320,
+  "soft_deadline_seconds": 240,
+  "hard_deadline_seconds": 300,
+  "cumulative_window_seconds": 1800,
+  "cpu_only": true,
+  "threads": 1,
+  "subprocesses": 1,
+  "production_rss_ceiling_bytes": 268435456,
+  "scientific_rss_ceiling_bytes": 1073741824,
+  "training_rss_ceiling_bytes": 1073741824,
+  "persistent_processes": false,
+  "continuous_peak_rss": "not available; bounded launcher/preflight telemetry only"
+}

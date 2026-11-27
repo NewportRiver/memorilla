@@ -1,0 +1,38 @@
+{
+  "status": "CORRECTED_R3_CONTROL_REPORT",
+  "supersedes": "LITE-008W-R3-CONTROL-COMPARISON.json only for control labeling and execution-path interpretation; historical R3 preserved unchanged",
+  "minimum_norm": {
+    "reversals": 8,
+    "pairs": 8
+  },
+  "selected_ridge": {
+    "reversals": 8,
+    "pairs": 8
+  },
+  "soft_prompt": {
+    "reversals": 0,
+    "pairs": 8
+  },
+  "query_only": {
+    "reversals": 0,
+    "pairs": 8
+  },
+  "zero_embedding": {
+    "reversals": 0,
+    "pairs": 8
+  },
+  "untrained_residual_projection": {
+    "reversals": 0,
+    "pairs": 8
+  },
+  "same_entity_opposite_evidence": {
+    "reversals": 0,
+    "pairs": 8
+  },
+  "unrelated_entity_evidence": {
+    "reversals": 0,
+    "pairs": 8
+  },
+  "correction": "R3 minimum_norm was accidentally evaluated with selected ridge; R4 recomputed independent matrices and reran both paths",
+  "eos_equivalence": "query_only and untrained_residual_projection are EOS-equivalent by construction; zero_embedding is distinct"
+}
