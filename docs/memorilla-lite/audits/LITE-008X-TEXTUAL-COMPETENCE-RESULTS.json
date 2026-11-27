@@ -1,0 +1,42 @@
+{
+  "status": "COMPLETED",
+  "by_group": {
+    "A": {
+      "pairs": 8,
+      "eligible": 0,
+      "relevant_correct": 8,
+      "counterfactual_correct": 8,
+      "complete_reversals": 8,
+      "unrelated_correct": 0
+    },
+    "B": {
+      "pairs": 8,
+      "eligible": 0,
+      "relevant_correct": 8,
+      "counterfactual_correct": 8,
+      "complete_reversals": 8,
+      "unrelated_correct": 0
+    },
+    "C": {
+      "pairs": 8,
+      "eligible": 0,
+      "relevant_correct": 8,
+      "counterfactual_correct": 8,
+      "complete_reversals": 8,
+      "unrelated_correct": 0
+    },
+    "D": {
+      "pairs": 8,
+      "eligible": 0,
+      "relevant_correct": 6,
+      "counterfactual_correct": 7,
+      "complete_reversals": 5,
+      "unrelated_correct": 0
+    }
+  },
+  "all_pairs": 32,
+  "eligible_total": 0,
+  "criterion": "abs(query margin)<=4; relevant>=1; counterfactual<=-1; unrelated>-1",
+  "optimizer_updates": 0,
+  "raw_source": "LITE-008X-TEXTUAL-COMPETENCE-RESULTS.json"
+}

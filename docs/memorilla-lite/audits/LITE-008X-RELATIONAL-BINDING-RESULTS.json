@@ -1,0 +1,73 @@
+{
+  "group": "D",
+  "status": "EXPLORATORY_INSUFFICIENT_TEXTUAL_COVERAGE",
+  "textual": {
+    "pairs": 8,
+    "eligible": 0,
+    "relevant_correct": 6,
+    "counterfactual_correct": 7,
+    "complete_reversals": 5,
+    "unrelated_correct": 0
+  },
+  "latent_summary": {
+    "ridge": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "minimum_norm": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "query_eos": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "zero_embedding": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "untrained_residual": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "random": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "mean_teacher": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "soft_prompt": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "opposite_fact": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "unrelated_entity": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "answer_value_only": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "entity_only": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "relation_swapped": {
+      "reversals": 0,
+      "pairs": 8
+    },
+    "evidence_order_permuted": {
+      "reversals": 0,
+      "pairs": 8
+    }
+  },
+  "acceptance_threshold": 6,
+  "relational_acceptance": false,
+  "raw_artifact_outside_git": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008X/D-LATENT-EVALUATION.json"
+}

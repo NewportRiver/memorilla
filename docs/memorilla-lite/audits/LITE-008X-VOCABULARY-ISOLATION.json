@@ -1,0 +1,362 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "86f7c3d83c25ddfe8e8d53e9f140ddc54adaaebabaf99eba219d55d6cb96e99a",
+  "manifest_content_sha256": "484614d0783314e7a6e7b063103b17c34123a90780c22b9135b59dd3e03b1415",
+  "familiar_values": [
+    "linen",
+    "amber",
+    "marble",
+    "cedar"
+  ],
+  "unfamiliar_values": {
+    "B": [
+      "cobalt",
+      "saffron",
+      "granite",
+      "bronze",
+      "tundra",
+      "silk",
+      "panda",
+      "copper",
+      "violet",
+      "indigo",
+      "falcon",
+      "ivory",
+      "harbor",
+      "meadow",
+      "lantern",
+      "willow"
+    ],
+    "C": [
+      "salmon",
+      "plum",
+      "coral",
+      "bison",
+      "nickel",
+      "moss",
+      "canyon",
+      "delta",
+      "island",
+      "orchid",
+      "platinum",
+      "spruce",
+      "maple",
+      "pearl",
+      "scarlet",
+      "beacon"
+    ]
+  },
+  "prior_normalized_words_count": 83,
+  "accepted_unfamiliar_values": [
+    "cobalt",
+    "saffron",
+    "granite",
+    "bronze",
+    "tundra",
+    "silk",
+    "panda",
+    "copper",
+    "violet",
+    "indigo",
+    "falcon",
+    "ivory",
+    "harbor",
+    "meadow",
+    "lantern",
+    "willow",
+    "salmon",
+    "plum",
+    "coral",
+    "bison",
+    "nickel",
+    "moss",
+    "canyon",
+    "delta",
+    "island",
+    "orchid",
+    "platinum",
+    "spruce",
+    "maple",
+    "pearl",
+    "scarlet",
+    "beacon",
+    "cactus",
+    "dolphin",
+    "elm"
+  ],
+  "rejected_candidates": [
+    {
+      "value": "walrus",
+      "normalized": "walrus",
+      "token_ids": [
+        9747,
+        7099
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "otter",
+      "normalized": "otter",
+      "token_ids": [
+        19182,
+        352
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "crimson",
+      "normalized": "crimson",
+      "token_ids": [
+        6294,
+        2034
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "quartzite",
+      "normalized": "quartzite",
+      "token_ids": [
+        24802,
+        663
+      ],
+      "reason": "prior/morphological collision"
+    },
+    {
+      "value": "badger",
+      "normalized": "badger",
+      "token_ids": [
+        3309,
+        2008
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "basalt",
+      "normalized": "basalt",
+      "token_ids": [
+        36472
+      ],
+      "reason": "prior/morphological collision"
+    },
+    {
+      "value": "ambergris",
+      "normalized": "ambergris",
+      "token_ids": [
+        744,
+        5799,
+        4593
+      ],
+      "reason": "prior/morphological collision"
+    },
+    {
+      "value": "teal",
+      "normalized": "teal",
+      "token_ids": [
+        543,
+        272
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "cedarwood",
+      "normalized": "cedarwood",
+      "token_ids": [
+        33952,
+        5463
+      ],
+      "reason": "prior/morphological collision"
+    },
+    {
+      "value": "topaz",
+      "normalized": "topaz",
+      "token_ids": [
+        1466,
+        1437
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "pebble",
+      "normalized": "pebble",
+      "token_ids": [
+        29418,
+        854
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "ochre",
+      "normalized": "ochre",
+      "token_ids": [
+        263,
+        45555
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "marten",
+      "normalized": "marten",
+      "token_ids": [
+        11708,
+        264
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "linenette",
+      "normalized": "linenette",
+      "token_ids": [
+        28522,
+        7103
+      ],
+      "reason": "prior/morphological collision"
+    },
+    {
+      "value": "sable",
+      "normalized": "sable",
+      "token_ids": [
+        262,
+        515
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "bronzeleaf",
+      "normalized": "bronzeleaf",
+      "token_ids": [
+        17974,
+        18857
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "violetblue",
+      "normalized": "violetblue",
+      "token_ids": [
+        33871,
+        16591
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "falconry",
+      "normalized": "falconry",
+      "token_ids": [
+        39967,
+        541
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "tulip",
+      "normalized": "tulip",
+      "token_ids": [
+        31083,
+        508
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "mustard",
+      "normalized": "mustard",
+      "token_ids": [
+        26696
+      ],
+      "reason": "prior/morphological collision"
+    },
+    {
+      "value": "onyx",
+      "normalized": "onyx",
+      "token_ids": [
+        335,
+        36604
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "ruby",
+      "normalized": "ruby",
+      "token_ids": [
+        6460,
+        105
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "citrine",
+      "normalized": "citrine",
+      "token_ids": [
+        3064,
+        7111
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "raven",
+      "normalized": "raven",
+      "token_ids": [
+        689,
+        1241
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "marigold",
+      "normalized": "marigold",
+      "token_ids": [
+        49072,
+        793
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "azure",
+      "normalized": "azure",
+      "token_ids": [
+        21293,
+        424
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "geode",
+      "normalized": "geode",
+      "token_ids": [
+        2417,
+        1182
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "granule",
+      "normalized": "granule",
+      "token_ids": [
+        11306,
+        1951
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "pumice",
+      "normalized": "pumice",
+      "token_ids": [
+        273,
+        382,
+        569
+      ],
+      "reason": "not_single_token"
+    },
+    {
+      "value": "rhodium",
+      "normalized": "rhodium",
+      "token_ids": [
+        10390,
+        20870
+      ],
+      "reason": "not_single_token"
+    }
+  ],
+  "single_token_required": true,
+  "pretrained_unseen_claim": false,
+  "protected_holdout_accessed": false
+}

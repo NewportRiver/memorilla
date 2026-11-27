@@ -1,0 +1,1653 @@
+{
+  "schema": "LITE-008X-dataset-v1",
+  "status": "FROZEN",
+  "seed": 8008,
+  "manifest_source": "new deterministic content; no protected holdout",
+  "groups": {
+    "A": {
+      "pairs": 8,
+      "values": [
+        "linen",
+        "amber",
+        "marble",
+        "cedar"
+      ]
+    },
+    "B": {
+      "pairs": 8,
+      "values": [
+        "cobalt",
+        "saffron",
+        "granite",
+        "bronze",
+        "tundra",
+        "silk",
+        "panda",
+        "copper",
+        "violet",
+        "indigo",
+        "falcon",
+        "ivory",
+        "harbor",
+        "meadow",
+        "lantern",
+        "willow"
+      ]
+    },
+    "C": {
+      "pairs": 8,
+      "values": [
+        "salmon",
+        "plum",
+        "coral",
+        "bison",
+        "nickel",
+        "moss",
+        "canyon",
+        "delta",
+        "island",
+        "orchid",
+        "platinum",
+        "spruce",
+        "maple",
+        "pearl",
+        "scarlet",
+        "beacon"
+      ]
+    },
+    "D": {
+      "pairs": 8,
+      "values": [
+        "cobalt",
+        "saffron",
+        "granite",
+        "bronze",
+        "tundra",
+        "silk",
+        "panda",
+        "copper",
+        "violet",
+        "indigo",
+        "falcon",
+        "ivory",
+        "harbor",
+        "meadow",
+        "lantern",
+        "willow"
+      ]
+    }
+  },
+  "vocabulary_isolation": {
+    "familiar_values": [
+      "linen",
+      "amber",
+      "marble",
+      "cedar"
+    ],
+    "unfamiliar_values": {
+      "B": [
+        "cobalt",
+        "saffron",
+        "granite",
+        "bronze",
+        "tundra",
+        "silk",
+        "panda",
+        "copper",
+        "violet",
+        "indigo",
+        "falcon",
+        "ivory",
+        "harbor",
+        "meadow",
+        "lantern",
+        "willow"
+      ],
+      "C": [
+        "salmon",
+        "plum",
+        "coral",
+        "bison",
+        "nickel",
+        "moss",
+        "canyon",
+        "delta",
+        "island",
+        "orchid",
+        "platinum",
+        "spruce",
+        "maple",
+        "pearl",
+        "scarlet",
+        "beacon"
+      ]
+    },
+    "prior_normalized_words_count": 83,
+    "rejected_candidates": [
+      {
+        "value": "walrus",
+        "normalized": "walrus",
+        "token_ids": [
+          9747,
+          7099
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "otter",
+        "normalized": "otter",
+        "token_ids": [
+          19182,
+          352
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "crimson",
+        "normalized": "crimson",
+        "token_ids": [
+          6294,
+          2034
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "quartzite",
+        "normalized": "quartzite",
+        "token_ids": [
+          24802,
+          663
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "badger",
+        "normalized": "badger",
+        "token_ids": [
+          3309,
+          2008
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "basalt",
+        "normalized": "basalt",
+        "token_ids": [
+          36472
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "ambergris",
+        "normalized": "ambergris",
+        "token_ids": [
+          744,
+          5799,
+          4593
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "teal",
+        "normalized": "teal",
+        "token_ids": [
+          543,
+          272
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "cedarwood",
+        "normalized": "cedarwood",
+        "token_ids": [
+          33952,
+          5463
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "topaz",
+        "normalized": "topaz",
+        "token_ids": [
+          1466,
+          1437
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "pebble",
+        "normalized": "pebble",
+        "token_ids": [
+          29418,
+          854
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "ochre",
+        "normalized": "ochre",
+        "token_ids": [
+          263,
+          45555
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "marten",
+        "normalized": "marten",
+        "token_ids": [
+          11708,
+          264
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "linenette",
+        "normalized": "linenette",
+        "token_ids": [
+          28522,
+          7103
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "sable",
+        "normalized": "sable",
+        "token_ids": [
+          262,
+          515
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "bronzeleaf",
+        "normalized": "bronzeleaf",
+        "token_ids": [
+          17974,
+          18857
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "violetblue",
+        "normalized": "violetblue",
+        "token_ids": [
+          33871,
+          16591
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "falconry",
+        "normalized": "falconry",
+        "token_ids": [
+          39967,
+          541
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "tulip",
+        "normalized": "tulip",
+        "token_ids": [
+          31083,
+          508
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "mustard",
+        "normalized": "mustard",
+        "token_ids": [
+          26696
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "onyx",
+        "normalized": "onyx",
+        "token_ids": [
+          335,
+          36604
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "ruby",
+        "normalized": "ruby",
+        "token_ids": [
+          6460,
+          105
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "citrine",
+        "normalized": "citrine",
+        "token_ids": [
+          3064,
+          7111
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "raven",
+        "normalized": "raven",
+        "token_ids": [
+          689,
+          1241
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "marigold",
+        "normalized": "marigold",
+        "token_ids": [
+          49072,
+          793
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "azure",
+        "normalized": "azure",
+        "token_ids": [
+          21293,
+          424
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "geode",
+        "normalized": "geode",
+        "token_ids": [
+          2417,
+          1182
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "granule",
+        "normalized": "granule",
+        "token_ids": [
+          11306,
+          1951
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "pumice",
+        "normalized": "pumice",
+        "token_ids": [
+          273,
+          382,
+          569
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "rhodium",
+        "normalized": "rhodium",
+        "token_ids": [
+          10390,
+          20870
+        ],
+        "reason": "not_single_token"
+      }
+    ],
+    "single_token_required": true
+  },
+  "rows": [
+    {
+      "id": "xa_00",
+      "group": "A",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_a_00",
+      "query": "What value does record xentity_a_00 store?",
+      "answer_a": "linen",
+      "answer_b": "amber",
+      "evidence_a": "Record xentity_a_00 stores value linen.",
+      "evidence_b": "Record xentity_a_00 stores value amber.",
+      "unrelated_evidence": "Record unrelated_0 stores value amber.",
+      "entities": [
+        "xentity_a_00"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          28522
+        ],
+        "b": [
+          35115
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "c8da9dac61fac06c93597704bb512e4bc1c22bce2820125a23574cf22aa1ebda"
+    },
+    {
+      "id": "xa_01",
+      "group": "A",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_a_01",
+      "query": "What value does record xentity_a_01 store?",
+      "answer_a": "marble",
+      "answer_b": "cedar",
+      "evidence_a": "Record xentity_a_01 stores value marble.",
+      "evidence_b": "Record xentity_a_01 stores value cedar.",
+      "unrelated_evidence": "Record unrelated_1 stores value cedar.",
+      "entities": [
+        "xentity_a_01"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          18540
+        ],
+        "b": [
+          33952
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "1f777cbe4f7651cd84d23442ba8a22dc833be1fc628739d9aab9074fbc86d87b"
+    },
+    {
+      "id": "xa_02",
+      "group": "A",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_a_02",
+      "query": "What value does record xentity_a_02 store?",
+      "answer_a": "linen",
+      "answer_b": "amber",
+      "evidence_a": "Record xentity_a_02 stores value linen.",
+      "evidence_b": "Record xentity_a_02 stores value amber.",
+      "unrelated_evidence": "Record unrelated_2 stores value amber.",
+      "entities": [
+        "xentity_a_02"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          28522
+        ],
+        "b": [
+          35115
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "0f533ca1cc4510ba823c5291262c479b711b6490d3a58a02945c34982b4eef96"
+    },
+    {
+      "id": "xa_03",
+      "group": "A",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_a_03",
+      "query": "What value does record xentity_a_03 store?",
+      "answer_a": "marble",
+      "answer_b": "cedar",
+      "evidence_a": "Record xentity_a_03 stores value marble.",
+      "evidence_b": "Record xentity_a_03 stores value cedar.",
+      "unrelated_evidence": "Record unrelated_3 stores value cedar.",
+      "entities": [
+        "xentity_a_03"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          18540
+        ],
+        "b": [
+          33952
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "5fa1509b2832d3d3fd4b369a7eb948f6d73cd603623f84b37b66911944f72b2d"
+    },
+    {
+      "id": "xa_04",
+      "group": "A",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_a_04",
+      "query": "What value does record xentity_a_04 store?",
+      "answer_a": "linen",
+      "answer_b": "amber",
+      "evidence_a": "Record xentity_a_04 stores value linen.",
+      "evidence_b": "Record xentity_a_04 stores value amber.",
+      "unrelated_evidence": "Record unrelated_4 stores value amber.",
+      "entities": [
+        "xentity_a_04"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          28522
+        ],
+        "b": [
+          35115
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "7bf77e8fbc1be368dff39eca4a4294530e998f05402a0819ef6d00c6a5979b2c"
+    },
+    {
+      "id": "xa_05",
+      "group": "A",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_a_05",
+      "query": "What value does record xentity_a_05 store?",
+      "answer_a": "marble",
+      "answer_b": "cedar",
+      "evidence_a": "Record xentity_a_05 stores value marble.",
+      "evidence_b": "Record xentity_a_05 stores value cedar.",
+      "unrelated_evidence": "Record unrelated_5 stores value cedar.",
+      "entities": [
+        "xentity_a_05"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          18540
+        ],
+        "b": [
+          33952
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "0bd3b29b48ec1301df7690cadbef95c2a4c6ccac5ce420481f31582e3479ac09"
+    },
+    {
+      "id": "xa_06",
+      "group": "A",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_a_06",
+      "query": "What value does record xentity_a_06 store?",
+      "answer_a": "linen",
+      "answer_b": "amber",
+      "evidence_a": "Record xentity_a_06 stores value linen.",
+      "evidence_b": "Record xentity_a_06 stores value amber.",
+      "unrelated_evidence": "Record unrelated_6 stores value amber.",
+      "entities": [
+        "xentity_a_06"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          28522
+        ],
+        "b": [
+          35115
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "fbc4e367ebb27016a12000ee14b6b79bb509b3c0c73a14297d5db9d352e2fa10"
+    },
+    {
+      "id": "xa_07",
+      "group": "A",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_a_07",
+      "query": "What value does record xentity_a_07 store?",
+      "answer_a": "marble",
+      "answer_b": "cedar",
+      "evidence_a": "Record xentity_a_07 stores value marble.",
+      "evidence_b": "Record xentity_a_07 stores value cedar.",
+      "unrelated_evidence": "Record unrelated_7 stores value cedar.",
+      "entities": [
+        "xentity_a_07"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          18540
+        ],
+        "b": [
+          33952
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "b616360623eadfd63610bff01d80f91683c4f7b3e68fcf661d4b48c55bcc6f88"
+    },
+    {
+      "id": "xb_00",
+      "group": "B",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_b_00",
+      "query": "What value does record xentity_b_00 store?",
+      "answer_a": "cobalt",
+      "answer_b": "saffron",
+      "evidence_a": "Record xentity_b_00 stores value cobalt.",
+      "evidence_b": "Record xentity_b_00 stores value saffron.",
+      "unrelated_evidence": "Record unrelated_0 stores value saffron.",
+      "entities": [
+        "xentity_b_00"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          36026
+        ],
+        "b": [
+          45103
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "937e5123317a8d6b9209adf4c662f81b0b1249844a3cfb0745828e845e0ae397"
+    },
+    {
+      "id": "xb_01",
+      "group": "B",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_b_01",
+      "query": "What value does record xentity_b_01 store?",
+      "answer_a": "granite",
+      "answer_b": "bronze",
+      "evidence_a": "Record xentity_b_01 stores value granite.",
+      "evidence_b": "Record xentity_b_01 stores value bronze.",
+      "unrelated_evidence": "Record unrelated_1 stores value bronze.",
+      "entities": [
+        "xentity_b_01"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          24361
+        ],
+        "b": [
+          17974
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "9a77ec361e48d6ed9f394686563d95f1c4627fcb05ba2fbfcae975d248a2845f"
+    },
+    {
+      "id": "xb_02",
+      "group": "B",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_b_02",
+      "query": "What value does record xentity_b_02 store?",
+      "answer_a": "tundra",
+      "answer_b": "silk",
+      "evidence_a": "Record xentity_b_02 stores value tundra.",
+      "evidence_b": "Record xentity_b_02 stores value silk.",
+      "unrelated_evidence": "Record unrelated_2 stores value silk.",
+      "entities": [
+        "xentity_b_02"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          37632
+        ],
+        "b": [
+          15503
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "544e675bbe3574850357e5ff0468f8006a5753f4e3663eb2f7aa7347e205b192"
+    },
+    {
+      "id": "xb_03",
+      "group": "B",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_b_03",
+      "query": "What value does record xentity_b_03 store?",
+      "answer_a": "panda",
+      "answer_b": "copper",
+      "evidence_a": "Record xentity_b_03 stores value panda.",
+      "evidence_b": "Record xentity_b_03 stores value copper.",
+      "unrelated_evidence": "Record unrelated_3 stores value copper.",
+      "entities": [
+        "xentity_b_03"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          46954
+        ],
+        "b": [
+          8548
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "922486f978a81690204f005a3aa1bcf49afd097592d7719ad427bf641e46c598"
+    },
+    {
+      "id": "xb_04",
+      "group": "B",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_b_04",
+      "query": "What value does record xentity_b_04 store?",
+      "answer_a": "violet",
+      "answer_b": "indigo",
+      "evidence_a": "Record xentity_b_04 stores value violet.",
+      "evidence_b": "Record xentity_b_04 stores value indigo.",
+      "unrelated_evidence": "Record unrelated_4 stores value indigo.",
+      "entities": [
+        "xentity_b_04"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          33871
+        ],
+        "b": [
+          48601
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "68d8092c2fff46beef1d77d403652f4a42bc11c22c88519d8bb3c78f12be52d6"
+    },
+    {
+      "id": "xb_05",
+      "group": "B",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_b_05",
+      "query": "What value does record xentity_b_05 store?",
+      "answer_a": "falcon",
+      "answer_b": "ivory",
+      "evidence_a": "Record xentity_b_05 stores value falcon.",
+      "evidence_b": "Record xentity_b_05 stores value ivory.",
+      "unrelated_evidence": "Record unrelated_5 stores value ivory.",
+      "entities": [
+        "xentity_b_05"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          39967
+        ],
+        "b": [
+          26471
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "a9a1b32049c64be99ed317a77a7704033e7f1c5596e0e93c75bb3691b2e0719e"
+    },
+    {
+      "id": "xb_06",
+      "group": "B",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_b_06",
+      "query": "What value does record xentity_b_06 store?",
+      "answer_a": "harbor",
+      "answer_b": "meadow",
+      "evidence_a": "Record xentity_b_06 stores value harbor.",
+      "evidence_b": "Record xentity_b_06 stores value meadow.",
+      "unrelated_evidence": "Record unrelated_6 stores value meadow.",
+      "entities": [
+        "xentity_b_06"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          19890
+        ],
+        "b": [
+          32350
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "5ae9afac29d1f0bee17a04f492c8d0c5b509a5a5a32c5c5e618c4fffe0edb026"
+    },
+    {
+      "id": "xb_07",
+      "group": "B",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_b_07",
+      "query": "What value does record xentity_b_07 store?",
+      "answer_a": "lantern",
+      "answer_b": "willow",
+      "evidence_a": "Record xentity_b_07 stores value lantern.",
+      "evidence_b": "Record xentity_b_07 stores value willow.",
+      "unrelated_evidence": "Record unrelated_7 stores value willow.",
+      "entities": [
+        "xentity_b_07"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          44588
+        ],
+        "b": [
+          34847
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 25,
+        "evidence_b": 25
+      },
+      "content_hash": "a47130de76910f409d8e700df39da5eeadaea24a3bb67fe5c95456eeb916d03b"
+    },
+    {
+      "id": "xc_00",
+      "group": "C",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_c_00",
+      "query": "What value does record xentity_c_00 store?",
+      "answer_a": "salmon",
+      "answer_b": "plum",
+      "evidence_a": "The archive entry xentity_c_00 is assigned the value salmon.",
+      "evidence_b": "The archive entry xentity_c_00 is assigned the value plum.",
+      "unrelated_evidence": "Record unrelated_0 stores value plum.",
+      "entities": [
+        "xentity_c_00"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          11701
+        ],
+        "b": [
+          18526
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 29,
+        "evidence_b": 29
+      },
+      "content_hash": "c3942fc7051bf937c86e197fc9256401b7b4e9cd91d4a222433cc6e764869331"
+    },
+    {
+      "id": "xc_01",
+      "group": "C",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_c_01",
+      "query": "What value does record xentity_c_01 store?",
+      "answer_a": "coral",
+      "answer_b": "bison",
+      "evidence_a": "For identifier xentity_c_01, the recorded attribute is coral.",
+      "evidence_b": "For identifier xentity_c_01, the recorded attribute is bison.",
+      "unrelated_evidence": "Record unrelated_1 stores value bison.",
+      "entities": [
+        "xentity_c_01"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          12536
+        ],
+        "b": [
+          27273
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 29,
+        "evidence_b": 29
+      },
+      "content_hash": "0df256ec19f04a1b0ef535fafcf246df1c32fa1e2e48fa8293f34c129273cc2b"
+    },
+    {
+      "id": "xc_02",
+      "group": "C",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_c_02",
+      "query": "What value does record xentity_c_02 store?",
+      "answer_a": "nickel",
+      "answer_b": "moss",
+      "evidence_a": "A ledger labels xentity_c_02 with nickel.",
+      "evidence_b": "A ledger labels xentity_c_02 with moss.",
+      "unrelated_evidence": "Record unrelated_2 stores value moss.",
+      "entities": [
+        "xentity_c_02"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          22635
+        ],
+        "b": [
+          21288
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 26,
+        "evidence_b": 26
+      },
+      "content_hash": "88e740fe551fcf70498dca59d1099deb5491cd5f298363f489f36e8e744841dd"
+    },
+    {
+      "id": "xc_03",
+      "group": "C",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_c_03",
+      "query": "What value does record xentity_c_03 store?",
+      "answer_a": "canyon",
+      "answer_b": "delta",
+      "evidence_a": "The archive entry xentity_c_03 is assigned the value canyon.",
+      "evidence_b": "The archive entry xentity_c_03 is assigned the value delta.",
+      "unrelated_evidence": "Record unrelated_3 stores value delta.",
+      "entities": [
+        "xentity_c_03"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          35580
+        ],
+        "b": [
+          15184
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 29,
+        "evidence_b": 29
+      },
+      "content_hash": "baf4faa500fde0fceae4d5e7280791aa6180233e93a359f6669888f9ecb210ca"
+    },
+    {
+      "id": "xc_04",
+      "group": "C",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_c_04",
+      "query": "What value does record xentity_c_04 store?",
+      "answer_a": "island",
+      "answer_b": "orchid",
+      "evidence_a": "For identifier xentity_c_04, the recorded attribute is island.",
+      "evidence_b": "For identifier xentity_c_04, the recorded attribute is orchid.",
+      "unrelated_evidence": "Record unrelated_4 stores value orchid.",
+      "entities": [
+        "xentity_c_04"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          5432
+        ],
+        "b": [
+          33705
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 29,
+        "evidence_b": 29
+      },
+      "content_hash": "e8f1bc78231713b3fda3e63617f859e9d3c3ea700c57678f35e77c4054884714"
+    },
+    {
+      "id": "xc_05",
+      "group": "C",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_c_05",
+      "query": "What value does record xentity_c_05 store?",
+      "answer_a": "platinum",
+      "answer_b": "spruce",
+      "evidence_a": "A ledger labels xentity_c_05 with platinum.",
+      "evidence_b": "A ledger labels xentity_c_05 with spruce.",
+      "unrelated_evidence": "Record unrelated_5 stores value spruce.",
+      "entities": [
+        "xentity_c_05"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          33792
+        ],
+        "b": [
+          33745
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 26,
+        "evidence_b": 26
+      },
+      "content_hash": "101804398f3cfa3fb018a29ebf5e767e6e62dab0cb1b896ae86437ce82cf5843"
+    },
+    {
+      "id": "xc_06",
+      "group": "C",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_c_06",
+      "query": "What value does record xentity_c_06 store?",
+      "answer_a": "maple",
+      "answer_b": "pearl",
+      "evidence_a": "The archive entry xentity_c_06 is assigned the value maple.",
+      "evidence_b": "The archive entry xentity_c_06 is assigned the value pearl.",
+      "unrelated_evidence": "Record unrelated_6 stores value pearl.",
+      "entities": [
+        "xentity_c_06"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          24639
+        ],
+        "b": [
+          34372
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 29,
+        "evidence_b": 29
+      },
+      "content_hash": "c6b20335db2483d291383ed6375c9eeb106d472c23e09d2e19bcb3b70742b5ab"
+    },
+    {
+      "id": "xc_07",
+      "group": "C",
+      "partition": "lite008x_evaluation",
+      "entity": "xentity_c_07",
+      "query": "What value does record xentity_c_07 store?",
+      "answer_a": "scarlet",
+      "answer_b": "beacon",
+      "evidence_a": "For identifier xentity_c_07, the recorded attribute is scarlet.",
+      "evidence_b": "For identifier xentity_c_07, the recorded attribute is beacon.",
+      "unrelated_evidence": "Record unrelated_7 stores value beacon.",
+      "entities": [
+        "xentity_c_07"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          38247
+        ],
+        "b": [
+          37257
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 13,
+        "evidence_a": 29,
+        "evidence_b": 29
+      },
+      "content_hash": "01ec1bc3944428f65c49632d3c7992891e6ef3450cb617f09bcf383f3ec09186"
+    },
+    {
+      "id": "xd_00",
+      "group": "D",
+      "partition": "lite008x_evaluation",
+      "entity": "d00a",
+      "query": "Value d00a?",
+      "answer_a": "cobalt",
+      "answer_b": "saffron",
+      "evidence_a": "d00a=cobalt; d00b=saffron.",
+      "evidence_b": "d00a=saffron; d00b=cobalt.",
+      "unrelated_evidence": "Record unrelated_0 stores value saffron.",
+      "entities": [
+        "d00a",
+        "d00b"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          36026
+        ],
+        "b": [
+          45103
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 6,
+        "evidence_a": 23,
+        "evidence_b": 23
+      },
+      "content_hash": "4f0b32e8a8c6d17107b4e53078265abf4c22b18eae167a486a37589b97c1b30b"
+    },
+    {
+      "id": "xd_01",
+      "group": "D",
+      "partition": "lite008x_evaluation",
+      "entity": "d01a",
+      "query": "Value d01a?",
+      "answer_a": "granite",
+      "answer_b": "bronze",
+      "evidence_a": "d01a=granite; d01b=bronze.",
+      "evidence_b": "d01a=bronze; d01b=granite.",
+      "unrelated_evidence": "Record unrelated_1 stores value bronze.",
+      "entities": [
+        "d01a",
+        "d01b"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          24361
+        ],
+        "b": [
+          17974
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 6,
+        "evidence_a": 23,
+        "evidence_b": 23
+      },
+      "content_hash": "ee38819db0aa812031b542294275ebaf33a770358724974bfa2933aa9c0b28c6"
+    },
+    {
+      "id": "xd_02",
+      "group": "D",
+      "partition": "lite008x_evaluation",
+      "entity": "d02a",
+      "query": "Value d02a?",
+      "answer_a": "tundra",
+      "answer_b": "silk",
+      "evidence_a": "d02a=tundra; d02b=silk.",
+      "evidence_b": "d02a=silk; d02b=tundra.",
+      "unrelated_evidence": "Record unrelated_2 stores value silk.",
+      "entities": [
+        "d02a",
+        "d02b"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          37632
+        ],
+        "b": [
+          15503
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 6,
+        "evidence_a": 22,
+        "evidence_b": 22
+      },
+      "content_hash": "9a1027bcfcb25075c9b2abb5929028e27aefbe6e2227887a98e9c7435ad7587b"
+    },
+    {
+      "id": "xd_03",
+      "group": "D",
+      "partition": "lite008x_evaluation",
+      "entity": "d03a",
+      "query": "Value d03a?",
+      "answer_a": "panda",
+      "answer_b": "copper",
+      "evidence_a": "d03a=panda; d03b=copper.",
+      "evidence_b": "d03a=copper; d03b=panda.",
+      "unrelated_evidence": "Record unrelated_3 stores value copper.",
+      "entities": [
+        "d03a",
+        "d03b"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          46954
+        ],
+        "b": [
+          8548
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 6,
+        "evidence_a": 22,
+        "evidence_b": 22
+      },
+      "content_hash": "0ec3f572025f76a16c7e5efbc82a46de1a1f34f625792b3cea0b5cdf1b1902aa"
+    },
+    {
+      "id": "xd_04",
+      "group": "D",
+      "partition": "lite008x_evaluation",
+      "entity": "d04a",
+      "query": "Value d04a?",
+      "answer_a": "violet",
+      "answer_b": "indigo",
+      "evidence_a": "d04a=violet; d04b=indigo.",
+      "evidence_b": "d04a=indigo; d04b=violet.",
+      "unrelated_evidence": "Record unrelated_4 stores value indigo.",
+      "entities": [
+        "d04a",
+        "d04b"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          33871
+        ],
+        "b": [
+          48601
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 6,
+        "evidence_a": 22,
+        "evidence_b": 22
+      },
+      "content_hash": "9c6029d1fd463f5c0d349695f0963aeeba2e00a560af24decd1927f664aba4a3"
+    },
+    {
+      "id": "xd_05",
+      "group": "D",
+      "partition": "lite008x_evaluation",
+      "entity": "d05a",
+      "query": "Value d05a?",
+      "answer_a": "falcon",
+      "answer_b": "ivory",
+      "evidence_a": "d05a=falcon; d05b=ivory.",
+      "evidence_b": "d05a=ivory; d05b=falcon.",
+      "unrelated_evidence": "Record unrelated_5 stores value ivory.",
+      "entities": [
+        "d05a",
+        "d05b"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          39967
+        ],
+        "b": [
+          26471
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 6,
+        "evidence_a": 22,
+        "evidence_b": 22
+      },
+      "content_hash": "413fe30f333eb79ea06ef820dbbbbfe7361483ddae16e369f4996311af9ba77e"
+    },
+    {
+      "id": "xd_06",
+      "group": "D",
+      "partition": "lite008x_evaluation",
+      "entity": "d06a",
+      "query": "Value d06a?",
+      "answer_a": "harbor",
+      "answer_b": "meadow",
+      "evidence_a": "d06a=harbor; d06b=meadow.",
+      "evidence_b": "d06a=meadow; d06b=harbor.",
+      "unrelated_evidence": "Record unrelated_6 stores value meadow.",
+      "entities": [
+        "d06a",
+        "d06b"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          19890
+        ],
+        "b": [
+          32350
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 6,
+        "evidence_a": 23,
+        "evidence_b": 23
+      },
+      "content_hash": "d6fec889fa269cb9fe49d7c9f925e96ec5ce79b126944846bd7a2eb3d39bc314"
+    },
+    {
+      "id": "xd_07",
+      "group": "D",
+      "partition": "lite008x_evaluation",
+      "entity": "d07a",
+      "query": "Value d07a?",
+      "answer_a": "lantern",
+      "answer_b": "willow",
+      "evidence_a": "d07a=lantern; d07b=willow.",
+      "evidence_b": "d07a=willow; d07b=lantern.",
+      "unrelated_evidence": "Record unrelated_7 stores value willow.",
+      "entities": [
+        "d07a",
+        "d07b"
+      ],
+      "candidate_token_ids": {
+        "a": [
+          44588
+        ],
+        "b": [
+          34847
+        ]
+      },
+      "sequence_token_lengths": {
+        "query": 6,
+        "evidence_a": 22,
+        "evidence_b": 22
+      },
+      "content_hash": "11a5039b4955cbd1d73b866a8ee417dd57d821de269604f55446cc6aa9023e64"
+    }
+  ],
+  "candidate_generation_decisions": {
+    "candidate_pool_size": 65,
+    "accepted_values": [
+      "cobalt",
+      "saffron",
+      "granite",
+      "bronze",
+      "tundra",
+      "silk",
+      "panda",
+      "copper",
+      "violet",
+      "indigo",
+      "falcon",
+      "ivory",
+      "harbor",
+      "meadow",
+      "lantern",
+      "willow",
+      "salmon",
+      "plum",
+      "coral",
+      "bison",
+      "nickel",
+      "moss",
+      "canyon",
+      "delta",
+      "island",
+      "orchid",
+      "platinum",
+      "spruce",
+      "maple",
+      "pearl",
+      "scarlet",
+      "beacon",
+      "cactus",
+      "dolphin",
+      "elm"
+    ],
+    "rejected": [
+      {
+        "value": "walrus",
+        "normalized": "walrus",
+        "token_ids": [
+          9747,
+          7099
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "otter",
+        "normalized": "otter",
+        "token_ids": [
+          19182,
+          352
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "crimson",
+        "normalized": "crimson",
+        "token_ids": [
+          6294,
+          2034
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "quartzite",
+        "normalized": "quartzite",
+        "token_ids": [
+          24802,
+          663
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "badger",
+        "normalized": "badger",
+        "token_ids": [
+          3309,
+          2008
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "basalt",
+        "normalized": "basalt",
+        "token_ids": [
+          36472
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "ambergris",
+        "normalized": "ambergris",
+        "token_ids": [
+          744,
+          5799,
+          4593
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "teal",
+        "normalized": "teal",
+        "token_ids": [
+          543,
+          272
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "cedarwood",
+        "normalized": "cedarwood",
+        "token_ids": [
+          33952,
+          5463
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "topaz",
+        "normalized": "topaz",
+        "token_ids": [
+          1466,
+          1437
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "pebble",
+        "normalized": "pebble",
+        "token_ids": [
+          29418,
+          854
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "ochre",
+        "normalized": "ochre",
+        "token_ids": [
+          263,
+          45555
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "marten",
+        "normalized": "marten",
+        "token_ids": [
+          11708,
+          264
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "linenette",
+        "normalized": "linenette",
+        "token_ids": [
+          28522,
+          7103
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "sable",
+        "normalized": "sable",
+        "token_ids": [
+          262,
+          515
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "bronzeleaf",
+        "normalized": "bronzeleaf",
+        "token_ids": [
+          17974,
+          18857
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "violetblue",
+        "normalized": "violetblue",
+        "token_ids": [
+          33871,
+          16591
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "falconry",
+        "normalized": "falconry",
+        "token_ids": [
+          39967,
+          541
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "tulip",
+        "normalized": "tulip",
+        "token_ids": [
+          31083,
+          508
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "mustard",
+        "normalized": "mustard",
+        "token_ids": [
+          26696
+        ],
+        "reason": "prior/morphological collision"
+      },
+      {
+        "value": "onyx",
+        "normalized": "onyx",
+        "token_ids": [
+          335,
+          36604
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "ruby",
+        "normalized": "ruby",
+        "token_ids": [
+          6460,
+          105
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "citrine",
+        "normalized": "citrine",
+        "token_ids": [
+          3064,
+          7111
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "raven",
+        "normalized": "raven",
+        "token_ids": [
+          689,
+          1241
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "marigold",
+        "normalized": "marigold",
+        "token_ids": [
+          49072,
+          793
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "azure",
+        "normalized": "azure",
+        "token_ids": [
+          21293,
+          424
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "geode",
+        "normalized": "geode",
+        "token_ids": [
+          2417,
+          1182
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "granule",
+        "normalized": "granule",
+        "token_ids": [
+          11306,
+          1951
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "pumice",
+        "normalized": "pumice",
+        "token_ids": [
+          273,
+          382,
+          569
+        ],
+        "reason": "not_single_token"
+      },
+      {
+        "value": "rhodium",
+        "normalized": "rhodium",
+        "token_ids": [
+          10390,
+          20870
+        ],
+        "reason": "not_single_token"
+      }
+    ]
+  },
+  "optimizer_updates": 0,
+  "manifest_sha256_pending": true,
+  "manifest_content_sha256": "484614d0783314e7a6e7b063103b17c34123a90780c22b9135b59dd3e03b1415"
+}

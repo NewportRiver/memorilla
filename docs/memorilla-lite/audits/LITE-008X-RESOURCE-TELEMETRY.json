@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETED_WITH_TEXTUAL_BLOCKER",
+  "optimizer_updates": 0,
+  "groups_completed": 4,
+  "pairs_evaluated": 32,
+  "forward_only": true,
+  "soft_deadline_seconds": 240,
+  "hard_deadline_seconds": 300,
+  "cumulative_window_seconds": 1800,
+  "cpu_only": true,
+  "threads": 1,
+  "subprocesses": 1,
+  "max_sequence_length": 32,
+  "latent_slots": 1,
+  "production_rss_ceiling_bytes": 268435456,
+  "scientific_rss_ceiling_bytes": 1073741824,
+  "persistent_processes": false,
+  "peak_rss": "not continuously measured"
+}

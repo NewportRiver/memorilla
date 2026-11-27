@@ -1,0 +1,258 @@
+{
+  "status": "COMPLETED_FORWARD_ONLY",
+  "group_summaries": {
+    "A": {
+      "ridge": {
+        "reversals": 4,
+        "pairs": 8
+      },
+      "minimum_norm": {
+        "reversals": 4,
+        "pairs": 8
+      },
+      "query_eos": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "zero_embedding": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "untrained_residual": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "random": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "mean_teacher": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "soft_prompt": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "opposite_fact": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "unrelated_entity": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "answer_value_only": {
+        "reversals": 4,
+        "pairs": 8
+      },
+      "entity_only": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "relation_swapped": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "evidence_order_permuted": {
+        "reversals": 4,
+        "pairs": 8
+      }
+    },
+    "B": {
+      "ridge": {
+        "reversals": 2,
+        "pairs": 8
+      },
+      "minimum_norm": {
+        "reversals": 2,
+        "pairs": 8
+      },
+      "query_eos": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "zero_embedding": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "untrained_residual": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "random": {
+        "reversals": 1,
+        "pairs": 8
+      },
+      "mean_teacher": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "soft_prompt": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "opposite_fact": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "unrelated_entity": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "answer_value_only": {
+        "reversals": 1,
+        "pairs": 8
+      },
+      "entity_only": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "relation_swapped": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "evidence_order_permuted": {
+        "reversals": 2,
+        "pairs": 8
+      }
+    },
+    "C": {
+      "ridge": {
+        "reversals": 1,
+        "pairs": 8
+      },
+      "minimum_norm": {
+        "reversals": 1,
+        "pairs": 8
+      },
+      "query_eos": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "zero_embedding": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "untrained_residual": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "random": {
+        "reversals": 2,
+        "pairs": 8
+      },
+      "mean_teacher": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "soft_prompt": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "opposite_fact": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "unrelated_entity": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "answer_value_only": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "entity_only": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "relation_swapped": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "evidence_order_permuted": {
+        "reversals": 1,
+        "pairs": 8
+      }
+    },
+    "D": {
+      "ridge": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "minimum_norm": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "query_eos": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "zero_embedding": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "untrained_residual": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "random": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "mean_teacher": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "soft_prompt": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "opposite_fact": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "unrelated_entity": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "answer_value_only": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "entity_only": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "relation_swapped": {
+        "reversals": 0,
+        "pairs": 8
+      },
+      "evidence_order_permuted": {
+        "reversals": 0,
+        "pairs": 8
+      }
+    }
+  },
+  "controls": [
+    "query_eos",
+    "zero_embedding",
+    "untrained_residual",
+    "random",
+    "mean_teacher",
+    "soft_prompt",
+    "opposite_fact",
+    "unrelated_entity",
+    "answer_value_only",
+    "entity_only",
+    "relation_swapped",
+    "evidence_order_permuted",
+    "ordinary_textual"
+  ],
+  "equivalent_controls": {
+    "query_eos_and_untrained_residual": "EOS-equivalent by construction",
+    "zero_embedding": "genuine zero vector and distinct"
+  },
+  "optimizer_updates": 0,
+  "raw_artifacts_outside_git": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008X"
+}

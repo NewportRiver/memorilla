@@ -1,0 +1,8 @@
+{
+  "status": "CONDITIONAL",
+  "qualified_interpreter": "/data/data/com.termux/files/home/.cache/memorilla-lite/LITE-008D-R4/venv/bin/python",
+  "x_targeted_tests": "20 passed",
+  "datasets_dependent_collection": "BLOCKED: ModuleNotFoundError datasets",
+  "optimizer_updates_in_fixtures": 0,
+  "full_regression_claim": false
+}
